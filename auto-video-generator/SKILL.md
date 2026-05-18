@@ -133,7 +133,7 @@ It tries provider scripts in order and stops at the first success:
 7. `scripts/generate_runway.py --mode image` if `RUNWAYML_API_SECRET` is available.
 8. Ask the user for another provider, uploaded images, or manual assets.
 
-Local image defaults target low VRAM machines: SD 1.5 realistic/cinematic checkpoint, batch size 1, 512x768 generation, DPM++ 2M Karras, CFG around 6.5, tiled VAE, light hires pass, and final upscale to 1080x1920. Do not use FLUX as the default on 2GB VRAM.
+Local image defaults target low VRAM machines: SD 1.5 realistic/cinematic checkpoint, auto checkpoint/VAE/upscaler selection from ComfyUI, batch size 1, 512x768 generation, DPM++ 2M Karras, CFG around 6.5, tiled VAE, light hires pass, and final upscale to 1080x1920. Use `scripts/generate_images_comfy_local.py --inspect-only` to inspect available local models. Do not use FLUX as the default on 2GB VRAM.
 
 ## Video Generation
 

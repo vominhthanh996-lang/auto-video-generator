@@ -41,6 +41,40 @@ RATIO_TO_SIZE = {
     "16:9": (768, 512),
 }
 
+CHECKPOINT_PREFERENCES = [
+    "realisticvision",
+    "cyberrealistic",
+    "epicrealism",
+    "photon",
+    "majicmixrealistic",
+    "deliberate",
+    "dreamshaper",
+]
+
+CHECKPOINT_AVOID = [
+    "xl",
+    "sdxl",
+    "flux",
+    "turbo",
+    "lightning",
+    "anime",
+    "toon",
+]
+
+VAE_PREFERENCES = [
+    "vae-ft-mse-840000-ema-pruned",
+    "vae-ft-mse",
+    "clearvae",
+]
+
+UPSCALER_PREFERENCES = [
+    "4x-ultrasharp",
+    "4x_foolhardy_remacri",
+    "remacri",
+    "realesrgan_x2plus",
+    "realesrgan",
+]
+
 
 def request_json(base_url: str, path: str, payload: dict[str, Any] | None = None, timeout: int = 30) -> Any:
     data = None if payload is None else json.dumps(payload).encode("utf-8")
@@ -91,6 +125,104 @@ def scene_prompt(scene: dict[str, Any]) -> str:
 
 def size_for_ratio(ratio: str) -> tuple[int, int]:
     return RATIO_TO_SIZE.get(ratio, RATIO_TO_SIZE["9:16"])
+
+
+def node_choices(object_info: dict[str, Any], class_type: str, input_name: str) -> list[str]:
+    node = object_info.get(class_type, {})
+    required = node.get("input", {}).get("required", {})
+    optional = node.get("input", {}).get("optional", {})
+    spec = required.get(input_name) or optional.get(input_name) or []
+    if isinstance(spec, list) and spec and isinstance(spec[0], list):
+        return [str(item) for item in spec[0]]
+    return []
+
+
+def score_name(name: str, preferred: list[str], avoid: list[str] | None = None) -> int:
+    lower = name.lower()
+    score = 0
+    for index, token in enumerate(preferred):
+        if token in lower:
+            score += 100 - index * 8
+    for token in avoid or []:
+        if token in lower:
+            score -= 65
+    if name.endswith(".safetensors"):
+        score += 8
+    if "pruned" in lower or "fp16" in lower:
+        score += 5
+    return score
+
+
+def choose_model(requested: str, available: list[str], preferred: list[str], avoid: list[str] | None = None, required: bool = True) -> str:
+    requested = requested.strip()
+    if requested and requested.lower() != "auto":
+        if requested in available:
+            return requested
+        if required:
+            choices = "\n  - ".join(available[:30])
+            raise SystemExit(f"Model not found in ComfyUI: {requested}\nAvailable examples:\n  - {choices}")
+        return ""
+    if not available:
+        if required:
+            raise SystemExit("No compatible model choices were reported by ComfyUI.")
+        return ""
+    return max(available, key=lambda name: score_name(name, preferred, avoid))
+
+
+def filter_loras(requested: list[str], available: list[str]) -> list[str]:
+    if not requested:
+        return []
+    kept = []
+    available_lookup = {name.lower(): name for name in available}
+    for value in requested:
+        name = value.split(":", 1)[0].strip()
+        if name.lower() in available_lookup:
+            kept.append(value.replace(name, available_lookup[name.lower()], 1))
+        else:
+            print(f"Skipping missing LoRA: {name}")
+    return kept
+
+
+def apply_preset(args: argparse.Namespace) -> None:
+    if args.preset == "safe":
+        if not args.width and not args.height:
+            args.width, args.height = 512, 704
+        args.steps = min(args.steps, 20)
+        args.hires_scale = min(args.hires_scale, 1.25)
+        args.hires_steps = min(args.hires_steps, 8)
+        args.vae_tile_size = min(args.vae_tile_size, 320)
+    elif args.preset == "quality":
+        if not args.width and not args.height:
+            args.width, args.height = 576, 832
+        args.steps = max(args.steps, 26)
+        args.hires_scale = max(args.hires_scale, 1.5)
+        args.hires_steps = max(args.hires_steps, 12)
+
+
+def inspect_comfy(args: argparse.Namespace) -> dict[str, Any]:
+    request_json(args.comfy_url, "/system_stats", timeout=10)
+    object_info = request_json(args.comfy_url, "/object_info", timeout=20)
+    return {
+        "checkpoints": node_choices(object_info, "CheckpointLoaderSimple", "ckpt_name"),
+        "vaes": node_choices(object_info, "VAELoader", "vae_name"),
+        "loras": node_choices(object_info, "LoraLoader", "lora_name"),
+        "upscalers": node_choices(object_info, "UpscaleModelLoader", "model_name"),
+        "samplers": node_choices(object_info, "KSampler", "sampler_name"),
+        "schedulers": node_choices(object_info, "KSampler", "scheduler"),
+    }
+
+
+def resolve_local_models(args: argparse.Namespace) -> dict[str, Any]:
+    inventory = inspect_comfy(args)
+    args.checkpoint = choose_model(args.checkpoint, inventory["checkpoints"], CHECKPOINT_PREFERENCES, CHECKPOINT_AVOID, required=True)
+    args.vae = choose_model(args.vae, inventory["vaes"], VAE_PREFERENCES, required=False)
+    args.upscale_model = choose_model(args.upscale_model, inventory["upscalers"], UPSCALER_PREFERENCES, required=False)
+    args.lora = filter_loras(args.lora, inventory["loras"])
+    if inventory["samplers"] and args.sampler not in inventory["samplers"]:
+        args.sampler = "euler_ancestral" if "euler_ancestral" in inventory["samplers"] else inventory["samplers"][0]
+    if inventory["schedulers"] and args.scheduler not in inventory["schedulers"]:
+        args.scheduler = "karras" if "karras" in inventory["schedulers"] else inventory["schedulers"][0]
+    return inventory
 
 
 def parse_loras(values: list[str]) -> list[tuple[str, float, float]]:
@@ -169,15 +301,18 @@ def build_sd15_workflow(args: argparse.Namespace, prompt: str, seed: int, width:
         "1": {
             "class_type": "CheckpointLoaderSimple",
             "inputs": {"ckpt_name": args.checkpoint},
-        },
-        "2": {
-            "class_type": "VAELoader",
-            "inputs": {"vae_name": args.vae},
-        },
+        }
     }
     model_ref: list[Any] = ["1", 0]
     clip_ref: list[Any] = ["1", 1]
-    vae_ref: list[Any] = ["2", 0] if args.vae else ["1", 2]
+    if args.vae:
+        workflow["2"] = {
+            "class_type": "VAELoader",
+            "inputs": {"vae_name": args.vae},
+        }
+        vae_ref: list[Any] = ["2", 0]
+    else:
+        vae_ref = ["1", 2]
     model_ref, clip_ref, next_id = add_loras(workflow, model_ref, clip_ref, parse_loras(args.lora))
 
     pos_id = str(next_id)
@@ -342,11 +477,12 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate storyboard images locally with a low-VRAM cinematic ComfyUI workflow.")
-    parser.add_argument("--storyboard", required=True, type=Path)
+    parser.add_argument("--storyboard", type=Path)
     parser.add_argument("--comfy-url", default=os.environ.get("COMFYUI_URL", "http://127.0.0.1:8188"))
-    parser.add_argument("--checkpoint", default=os.environ.get("SD15_CHECKPOINT", "realisticVisionV60B1_v51VAE.safetensors"))
-    parser.add_argument("--vae", default=os.environ.get("SD15_VAE", "vae-ft-mse-840000-ema-pruned.safetensors"))
+    parser.add_argument("--checkpoint", default=os.environ.get("SD15_CHECKPOINT", "auto"))
+    parser.add_argument("--vae", default=os.environ.get("SD15_VAE", "auto"))
     parser.add_argument("--lora", action="append", default=[], help="Optional LoRA name or name:model_strength:clip_strength.")
+    parser.add_argument("--preset", choices=["safe", "balanced", "quality"], default="balanced")
     parser.add_argument("--aspect-ratio", default="9:16")
     parser.add_argument("--width", type=int, default=0)
     parser.add_argument("--height", type=int, default=0)
@@ -361,7 +497,7 @@ def main() -> None:
     parser.add_argument("--tiled-vae", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--vae-tile-size", type=int, default=384)
     parser.add_argument("--vae-overlap", type=int, default=48)
-    parser.add_argument("--upscale-model", default=os.environ.get("SD_UPSCALE_MODEL", ""))
+    parser.add_argument("--upscale-model", default=os.environ.get("SD_UPSCALE_MODEL", "auto"))
     parser.add_argument("--final-width", type=int, default=1080)
     parser.add_argument("--final-height", type=int, default=1920)
     parser.add_argument("--negative-prompt", default=DEFAULT_NEGATIVE)
@@ -370,8 +506,35 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=23052026)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--poll-seconds", type=float, default=2.0)
+    parser.add_argument("--inspect-only", action="store_true", help="Print ComfyUI model inventory and selected local settings, then exit.")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
+
+    apply_preset(args)
+    inventory = resolve_local_models(args)
+    selected = {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "preset": args.preset,
+        "checkpoint": args.checkpoint,
+        "vae": args.vae or "checkpoint-embedded",
+        "loras": args.lora,
+        "upscale_model": args.upscale_model or "final-lanczos-only",
+        "steps": args.steps,
+        "cfg": args.cfg,
+        "sampler": args.sampler,
+        "scheduler": args.scheduler,
+        "hires_scale": args.hires_scale,
+        "hires_denoise": args.hires_denoise,
+        "tiled_vae": args.tiled_vae,
+        "vae_tile_size": args.vae_tile_size,
+        "final_size": f"{args.final_width}x{args.final_height}",
+    }
+    if args.inspect_only:
+        print(json.dumps({"selected": selected, "inventory_counts": {key: len(value) for key, value in inventory.items()}, "inventory_preview": {key: value[:20] for key, value in inventory.items()}}, ensure_ascii=False, indent=2))
+        return
+    if not args.storyboard:
+        parser.error("--storyboard is required unless --inspect-only is used.")
 
     storyboard = args.storyboard.resolve()
     storyboard_dir = storyboard.parent
@@ -381,14 +544,13 @@ def main() -> None:
     scenes = config.get("scenes") or []
     if not scenes:
         raise SystemExit("Storyboard has no scenes.")
-    request_json(args.comfy_url, "/system_stats", timeout=10)
     generated = []
     for index, scene in enumerate(scenes):
         path = generate_scene(args, scene, index, storyboard_dir, assets_dir)
         generated.append(str(path))
         print(f"Generated local SD image: {path}")
     storyboard.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"provider": "comfy-local", "mode": "sd15-low-vram", "storyboard": str(storyboard), "images": generated}, ensure_ascii=False, indent=2))
+    print(json.dumps({**selected, "storyboard": str(storyboard), "images": generated}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

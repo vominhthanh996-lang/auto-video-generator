@@ -45,7 +45,8 @@ Use `scripts/generate_with_fallback.py --kind image` to automatically try this c
 The local provider is tuned for the user's 2GB VRAM GPU. It uses SD 1.5 realistic/cinematic checkpoints by default, keeps batch size at 1, generates small, then upscales.
 
 ```powershell
-python scripts/generate_images_comfy_local.py --storyboard path\to\storyboard.json --checkpoint realisticVisionV60B1_v51VAE.safetensors --vae vae-ft-mse-840000-ema-pruned.safetensors --overwrite
+python scripts/generate_images_comfy_local.py --inspect-only
+python scripts/generate_images_comfy_local.py --storyboard path\to\storyboard.json --preset balanced --overwrite
 ```
 
 Requirements:
@@ -63,6 +64,19 @@ Useful environment variables:
 - `SD15_VAE`
 - `SD_UPSCALE_MODEL`
 
+Model selection:
+
+- `--checkpoint auto` scans ComfyUI and prefers SD 1.5 realistic/cinematic checkpoints.
+- `--vae auto` prefers `vae-ft-mse-840000-ema-pruned` if available, otherwise uses the checkpoint VAE.
+- `--upscale-model auto` prefers 4x-UltraSharp, Remacri, then RealESRGAN if available.
+- `--lora name.safetensors:0.45` is optional. Missing LoRAs are skipped instead of crashing the whole batch.
+
+Presets:
+
+- `--preset safe`: 512x704, fewer steps, lighter hires pass.
+- `--preset balanced`: 512x768, stable default for 2GB VRAM.
+- `--preset quality`: 576x832, better detail if the current ComfyUI setup can hold it.
+
 Default 2GB VRAM settings:
 
 - Resolution: `512x768`
@@ -74,6 +88,7 @@ Default 2GB VRAM settings:
 - Hires scale: `1.5`
 - Hires denoise: `0.34`
 - Tiled VAE: enabled
+- VAE tile size: `384`
 - Final scale: `1080x1920`
 
 Recommended checkpoints to test first:
