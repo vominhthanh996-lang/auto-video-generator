@@ -83,6 +83,9 @@ def request_json(base_url: str, path: str, payload: dict[str, Any] | None = None
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             raw = response.read()
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise SystemExit(f"ComfyUI HTTP error {exc.code} at {path}: {detail}") from exc
     except urllib.error.URLError as exc:
         raise SystemExit(f"ComfyUI is not reachable at {base_url}: {exc}") from exc
     return json.loads(raw.decode("utf-8")) if raw else {}
@@ -169,6 +172,16 @@ def choose_model(requested: str, available: list[str], preferred: list[str], avo
     return max(available, key=lambda name: score_name(name, preferred, avoid))
 
 
+def choose_optional_model(requested: str, available: list[str], preferred: list[str], avoid: list[str] | None = None) -> str:
+    requested = requested.strip()
+    if requested and requested.lower() != "auto":
+        return choose_model(requested, available, preferred, avoid, required=False)
+    if not available:
+        return ""
+    best = max(available, key=lambda name: score_name(name, preferred, avoid))
+    return best if score_name(best, preferred, avoid) > 0 else ""
+
+
 def filter_loras(requested: list[str], available: list[str]) -> list[str]:
     if not requested:
         return []
@@ -215,8 +228,8 @@ def inspect_comfy(args: argparse.Namespace) -> dict[str, Any]:
 def resolve_local_models(args: argparse.Namespace) -> dict[str, Any]:
     inventory = inspect_comfy(args)
     args.checkpoint = choose_model(args.checkpoint, inventory["checkpoints"], CHECKPOINT_PREFERENCES, CHECKPOINT_AVOID, required=True)
-    args.vae = choose_model(args.vae, inventory["vaes"], VAE_PREFERENCES, required=False)
-    args.upscale_model = choose_model(args.upscale_model, inventory["upscalers"], UPSCALER_PREFERENCES, required=False)
+    args.vae = choose_optional_model(args.vae, inventory["vaes"], VAE_PREFERENCES)
+    args.upscale_model = choose_optional_model(args.upscale_model, inventory["upscalers"], UPSCALER_PREFERENCES)
     args.lora = filter_loras(args.lora, inventory["loras"])
     if inventory["samplers"] and args.sampler not in inventory["samplers"]:
         args.sampler = "euler_ancestral" if "euler_ancestral" in inventory["samplers"] else inventory["samplers"][0]
@@ -267,6 +280,8 @@ def maybe_tiled_decode(args: argparse.Namespace, workflow: dict[str, Any], sampl
                 "vae": vae_ref,
                 "tile_size": args.vae_tile_size,
                 "overlap": args.vae_overlap,
+                "temporal_size": 64,
+                "temporal_overlap": 8,
             },
         }
     else:
@@ -286,6 +301,8 @@ def maybe_tiled_encode(args: argparse.Namespace, workflow: dict[str, Any], image
                 "vae": vae_ref,
                 "tile_size": args.vae_tile_size,
                 "overlap": args.vae_overlap,
+                "temporal_size": 64,
+                "temporal_overlap": 8,
             },
         }
     else:

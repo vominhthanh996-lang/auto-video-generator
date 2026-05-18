@@ -1,0 +1,25 @@
+{
+  "title": "Cozy Cabin Storm Premium Keyframe Test",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "id": "cozy-cabin-storm",
+      "duration": 12,
+      "image": "assets/cozy-cabin-storm-premium.png",
+      "image_prompt": "small cozy wooden cabin deep in a dark forest during a violent nighttime storm, warm yellow orange fireplace glow through rain covered windows, cold blue moonlit forest outside, heavy rain, wet reflective ground, wind bending pine trees, fog drifting between trees, soft smoke from chimney, subtle floating fireflies near the cabin, cinematic backlit composition, strong warm safe interior versus chaotic cold exterior, realistic wood texture, realistic wet leaves, emotional peaceful lonely atmosphere, slow travel film mood, shot from low angle looking toward the cabin, 35mm cinema lens, volumetric mist, soft bloom, realistic shadows, atmospheric perspective, ultra detailed environment, premium cinematic film still, natural colors, not oversaturated",
+      "text": "Có những ngày mưa chỉ muốn cả thế giới đừng tìm mình nữa.",
+      "narration": "",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052026,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    }
+  ]
+}
