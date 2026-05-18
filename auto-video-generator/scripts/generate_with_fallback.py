@@ -13,6 +13,11 @@ PYTHON = sys.executable
 
 IMAGE_PROVIDERS = [
     {
+        "name": "comfy-local",
+        "env": "",
+        "cmd": [PYTHON, str(ROOT / "generate_images_comfy_local.py")],
+    },
+    {
         "name": "openai",
         "env": "OPENAI_API_KEY",
         "cmd": [PYTHON, str(ROOT / "generate_assets_openai.py")],

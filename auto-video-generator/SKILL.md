@@ -34,8 +34,8 @@ Use this skill to turn a user-provided idea, script, or text into a finished nar
    - Duration in seconds
 3. Generate assets:
    - Generate narration with Edge TTS by default using `scripts/generate_voice_edge.py`.
-   - Generate scene images with the configured online image provider.
-   - Try image providers in this order unless the user asks otherwise: OpenAI, Replicate, fal.ai, Stability AI, Pollinations AI, Runway, then manual/local assets.
+   - Generate scene images with the configured image provider.
+   - Try image providers in this order unless the user asks otherwise: local SD 1.5 ComfyUI, OpenAI, Replicate, fal.ai, Stability AI, Pollinations AI, Runway, then manual/local assets.
    - Keep every generated file in the project's output folder.
 4. Render the video:
    - Write a `storyboard.json` file using the schema in `references/brief_schema.md`.
@@ -124,13 +124,16 @@ python scripts/generate_with_fallback.py --storyboard path\to\storyboard.json --
 
 It tries provider scripts in order and stops at the first success:
 
-1. `scripts/generate_assets_openai.py` if `OPENAI_API_KEY` is available and billing is healthy.
-2. `scripts/generate_images_replicate.py` if `REPLICATE_API_TOKEN` is available.
-3. `scripts/generate_images_fal.py` if `FAL_KEY` is available.
-4. `scripts/generate_images_stability.py` if `STABILITY_API_KEY` is available.
-5. `scripts/generate_images_pollinations.py` if `POLLINATIONS_API_KEY` is available.
-6. `scripts/generate_runway.py --mode image` if `RUNWAYML_API_SECRET` is available.
-7. Ask the user for another provider, uploaded images, or manual assets.
+1. `scripts/generate_images_comfy_local.py` if local ComfyUI is running.
+2. `scripts/generate_assets_openai.py` if `OPENAI_API_KEY` is available and billing is healthy.
+3. `scripts/generate_images_replicate.py` if `REPLICATE_API_TOKEN` is available.
+4. `scripts/generate_images_fal.py` if `FAL_KEY` is available.
+5. `scripts/generate_images_stability.py` if `STABILITY_API_KEY` is available.
+6. `scripts/generate_images_pollinations.py` if `POLLINATIONS_API_KEY` is available.
+7. `scripts/generate_runway.py --mode image` if `RUNWAYML_API_SECRET` is available.
+8. Ask the user for another provider, uploaded images, or manual assets.
+
+Local image defaults target low VRAM machines: SD 1.5 realistic/cinematic checkpoint, batch size 1, 512x768 generation, DPM++ 2M Karras, CFG around 6.5, tiled VAE, light hires pass, and final upscale to 1080x1920. Do not use FLUX as the default on 2GB VRAM.
 
 ## Video Generation
 

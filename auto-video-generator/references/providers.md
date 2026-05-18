@@ -29,15 +29,68 @@ Use `scripts/generate_voice_edge.py` for normal work. Use `scripts/generate_voic
 
 Provider order:
 
-1. OpenAI image generation via `scripts/generate_assets_openai.py`.
-2. Replicate image generation via `scripts/generate_images_replicate.py`.
-3. fal.ai image generation via `scripts/generate_images_fal.py`.
-4. Stability AI image generation via `scripts/generate_images_stability.py`.
-5. Pollinations AI image generation via `scripts/generate_images_pollinations.py`.
-6. Runway image generation via `scripts/generate_runway.py --mode image`.
-7. Manual/local image assets.
+1. Local SD 1.5 through ComfyUI via `scripts/generate_images_comfy_local.py`.
+2. OpenAI image generation via `scripts/generate_assets_openai.py`.
+3. Replicate image generation via `scripts/generate_images_replicate.py`.
+4. fal.ai image generation via `scripts/generate_images_fal.py`.
+5. Stability AI image generation via `scripts/generate_images_stability.py`.
+6. Pollinations AI image generation via `scripts/generate_images_pollinations.py`.
+7. Runway image generation via `scripts/generate_runway.py --mode image`.
+8. Manual/local image assets.
 
 Use `scripts/generate_with_fallback.py --kind image` to automatically try this chain and stop at the first successful provider.
+
+### Local SD 1.5 Low-VRAM
+
+The local provider is tuned for the user's 2GB VRAM GPU. It uses SD 1.5 realistic/cinematic checkpoints by default, keeps batch size at 1, generates small, then upscales.
+
+```powershell
+python scripts/generate_images_comfy_local.py --storyboard path\to\storyboard.json --checkpoint realisticVisionV60B1_v51VAE.safetensors --vae vae-ft-mse-840000-ema-pruned.safetensors --overwrite
+```
+
+Requirements:
+
+- ComfyUI running at `http://127.0.0.1:8188` or `COMFYUI_URL`.
+- SD 1.5 realistic/cinematic checkpoint in ComfyUI `models/checkpoints`.
+- SD 1.5 VAE in ComfyUI `models/vae`, recommended `vae-ft-mse-840000-ema-pruned.safetensors`.
+- Optional LoRAs in ComfyUI `models/loras`.
+- Optional upscale model in ComfyUI `models/upscale_models`.
+
+Useful environment variables:
+
+- `COMFYUI_URL`
+- `SD15_CHECKPOINT`
+- `SD15_VAE`
+- `SD_UPSCALE_MODEL`
+
+Default 2GB VRAM settings:
+
+- Resolution: `512x768`
+- Batch size: `1`
+- Steps: `24`
+- CFG: `6.5`
+- Sampler: `dpmpp_2m`
+- Scheduler: `karras`
+- Hires scale: `1.5`
+- Hires denoise: `0.34`
+- Tiled VAE: enabled
+- Final scale: `1080x1920`
+
+Recommended checkpoints to test first:
+
+- Realistic Vision v6 / v5.1
+- CyberRealistic v4.x
+- epiCRealism
+- Photon
+- DreamShaper 8 for more stylized cinematic scenes
+
+Recommended upscalers:
+
+- 4x-UltraSharp
+- 4x_foolhardy_Remacri
+- RealESRGAN_x2plus
+
+Optional experimental mode: SDXL Turbo or FLUX can be tested only if a quantized/low-VRAM ComfyUI setup is already stable. They are not the default for 2GB VRAM.
 
 ## Video Providers
 
