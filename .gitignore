@@ -1,0 +1,29 @@
+# Local test artifacts
+codex_excel_test.xlsx
+
+# Generated media and local outputs
+video-projects/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.m4a
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+*.key
+secrets/
+
+# OS/editor
+Thumbs.db
+.DS_Store
+.vscode/
