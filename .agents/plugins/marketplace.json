@@ -1,0 +1,20 @@
+{
+  "name": "local-tools",
+  "interface": {
+    "displayName": "Local Tools"
+  },
+  "plugins": [
+    {
+      "name": "outlook-mail",
+      "source": {
+        "source": "local",
+        "path": "./plugins/outlook-mail"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

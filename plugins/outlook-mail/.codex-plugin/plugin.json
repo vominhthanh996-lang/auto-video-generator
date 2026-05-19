@@ -1,0 +1,38 @@
+{
+  "name": "outlook-mail",
+  "version": "0.1.0",
+  "description": "Local helper for reading the signed-in user's Outlook mail through Microsoft Graph.",
+  "author": {
+    "name": "Thanh local",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "outlook",
+    "mail",
+    "microsoft-graph"
+  ],
+  "interface": {
+    "displayName": "Outlook Mail",
+    "shortDescription": "Read today's Outlook mail with Microsoft Graph.",
+    "longDescription": "A local helper that signs in with Microsoft Graph device code flow and reads Outlook inbox messages using delegated Mail.Read permission.",
+    "developerName": "Thanh local",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Show my Outlook mail received today.",
+      "Search my Outlook inbox.",
+      "Summarize today's important Outlook messages."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

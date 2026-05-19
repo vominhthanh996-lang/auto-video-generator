@@ -22,6 +22,7 @@ venv/
 .env.*
 *.key
 secrets/
+plugins/outlook-mail/.secrets/
 
 # OS/editor
 Thumbs.db
