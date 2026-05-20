@@ -3,7 +3,8 @@ param(
   [string]$Folder = "Inbox",
   [datetime]$Date = (Get-Date),
   [switch]$InboxOnly,
-  [int]$PreviewChars = 1200
+  [int]$PreviewChars = 1200,
+  [int]$SinceHours = 0
 )
 
 $ErrorActionPreference = "Stop"
@@ -52,9 +53,14 @@ try {
 }
 $namespace = $outlook.GetNamespace("MAPI")
 
-$dayStart = Get-Date -Date $Date -Hour 0 -Minute 0 -Second 0
-$dayEnd = $dayStart.AddDays(1)
-$filter = "[ReceivedTime] >= '$($dayStart.ToString("g"))' AND [ReceivedTime] < '$($dayEnd.ToString("g"))'"
+if ($SinceHours -gt 0) {
+  $rangeEnd = Get-Date
+  $rangeStart = $rangeEnd.AddHours(-$SinceHours)
+} else {
+  $rangeStart = Get-Date -Date $Date -Hour 0 -Minute 0 -Second 0
+  $rangeEnd = $rangeStart.AddDays(1)
+}
+$filter = "[ReceivedTime] >= '$($rangeStart.ToString("g"))' AND [ReceivedTime] < '$($rangeEnd.ToString("g"))'"
 $messages = New-Object System.Collections.Generic.List[object]
 
 function Read-MailFolder {
@@ -101,7 +107,9 @@ $sortedMessages = @($messages | Sort-Object ReceivedTime -Descending)
   Source = "Outlook Desktop COM"
   Mailbox = $namespace.CurrentUser.Name
   Scope = $(if ($InboxOnly) { "Default Inbox" } else { "All Outlook folders" })
-  Date = $dayStart.ToString("yyyy-MM-dd")
+  Date = $Date.ToString("yyyy-MM-dd")
+  RangeStart = $rangeStart.ToString("yyyy-MM-dd HH:mm:ss")
+  RangeEnd = $rangeEnd.ToString("yyyy-MM-dd HH:mm:ss")
   Count = $sortedMessages.Count
   Messages = $sortedMessages
 } | ConvertTo-Json -Depth 5
