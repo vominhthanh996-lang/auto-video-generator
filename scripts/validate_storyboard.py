@@ -59,7 +59,7 @@ def text_problems(text, language):
 def main():
     parser = argparse.ArgumentParser(description="Validate storyboard text, image assets, and audio assets before rendering.")
     parser.add_argument("--storyboard", required=True, type=Path)
-    parser.add_argument("--stage", choices=["text", "assets", "all"], default="all")
+    parser.add_argument("--stage", choices=["text", "voice", "assets", "all"], default="all")
     parser.add_argument("--min-audio-seconds", type=float, default=1.0)
     args = parser.parse_args()
 
@@ -83,12 +83,13 @@ def main():
             for problem in text_problems(text, language):
                 errors.append(f"Scene {index:03d}: text encoding looks broken: {problem}.")
 
-    if args.stage in {"assets", "all"}:
+    if args.stage in {"voice", "assets", "all"}:
         for index, scene in enumerate(scenes, 1):
-            image = resolve(base, scene.get("image"))
             audio = resolve(base, scene.get("audio"))
-            if not image or not image.exists():
-                errors.append(f"Scene {index:03d}: missing image: {image}")
+            if args.stage in {"assets", "all"}:
+                image = resolve(base, scene.get("image"))
+                if not image or not image.exists():
+                    errors.append(f"Scene {index:03d}: missing image: {image}")
             if not audio or not audio.exists():
                 errors.append(f"Scene {index:03d}: missing audio: {audio}")
             elif audio.stat().st_size < 1024:

@@ -21,16 +21,19 @@ from typing import Any
 
 
 DEFAULT_POSITIVE_SUFFIX = (
-    "cinematic composition, realistic lighting, warm and cool color contrast, volumetric fog, "
-    "soft bloom, atmospheric perspective, realistic shadows, subtle film grain, detailed environment, "
-    "35mm cinema lens, premium travel film still, emotional, immersive, natural colors"
+    "cinematic composition, strong readable silhouette, clear foreground midground background, "
+    "realistic lighting, warm practical light against cold toxic atmosphere, volumetric fog and dust, "
+    "wet rusted metal, cracked concrete, torn fabric, soft bloom, atmospheric perspective, "
+    "realistic shadows, subtle film grain, detailed environment, 35mm cinema lens, "
+    "premium survival film still, emotional, immersive, muted natural colors, not oversaturated"
 )
 
 DEFAULT_NEGATIVE = (
     "low quality, blurry, jpeg artifacts, cartoon, anime, illustration, plastic skin, oversaturated, "
     "bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, "
     "watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, random dots, "
-    "white speckles, noisy, over-sharpened, waxy skin"
+    "white speckles, noisy, over-sharpened, waxy skin, empty landscape, generic fantasy art, "
+    "beauty portrait, fashion photo, clean clothes, modern city, cute pose"
 )
 
 RATIO_TO_SIZE = {

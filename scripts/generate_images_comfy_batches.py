@@ -3,11 +3,22 @@ import argparse
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 
-def run(cmd):
-    subprocess.run(cmd, check=True)
+def priority_flag(priority):
+    if sys.platform != "win32":
+        return 0
+    if priority == "idle":
+        return getattr(subprocess, "IDLE_PRIORITY_CLASS", 0)
+    if priority == "below-normal":
+        return getattr(subprocess, "BELOW_NORMAL_PRIORITY_CLASS", 0)
+    return 0
+
+
+def run(cmd, priority):
+    subprocess.run(cmd, check=True, creationflags=priority_flag(priority))
 
 
 def count_existing_images(storyboard):
@@ -34,6 +45,8 @@ def main():
     parser.add_argument("--final-width", type=int, default=1080)
     parser.add_argument("--final-height", type=int, default=1920)
     parser.add_argument("--preset", choices=["safe", "balanced", "quality"], default="balanced")
+    parser.add_argument("--delay-between-batches", type=float, default=0.0)
+    parser.add_argument("--process-priority", choices=["normal", "below-normal", "idle"], default="normal")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
@@ -66,10 +79,13 @@ def main():
         if args.overwrite:
             cmd.append("--overwrite")
         print(f"Generating image batch {start}-{end}/{total}", flush=True)
-        run(cmd)
+        run(cmd, args.process_priority)
         existing, _ = count_existing_images(storyboard)
         print(json.dumps({"images": existing, "total": total}, ensure_ascii=False), flush=True)
         start = end + 1
+        if args.delay_between_batches > 0 and start <= total:
+            print(f"Cooling down for {args.delay_between_batches:g}s", flush=True)
+            time.sleep(args.delay_between_batches)
 
 
 if __name__ == "__main__":
