@@ -1,0 +1,108 @@
+{
+  "title": "Dreamy Cozy Scenes 05-10 Local Regeneration",
+  "aspect_ratio": "9:16",
+  "scenes": [
+    {
+      "id": "05-endless-grass-field-sunset",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\05-endless-grass-field-sunset.png",
+      "image_prompt": "back view of a young man and woman standing together in an endless grass field on a windy hill during golden sunset, huge cinematic clouds, warm sun rim light around their silhouettes, grass waves moving in layers, emotional freedom, romantic quiet loneliness, realistic clothing, natural body language, wide cinematic depth, soft haze, atmospheric perspective, shot on 35mm cinema lens, premium travel film still, realistic shadows, natural colors, not oversaturated, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052026,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    },
+    {
+      "id": "06-snowfall-forest-cabin",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\06-snowfall-forest-cabin.png",
+      "image_prompt": "lone traveler sitting beside a small cozy wooden cabin in a deep pine forest during heavy snowfall, warm fireplace glow visible from cabin window, orange light spilling softly onto snow, cold blue forest shadows, snowflakes falling in depth, quiet emotional winter atmosphere, realistic pine trees, soft smoke from chimney, peaceful lonely mood, cinematic composition, volumetric mist, shot on 35mm cinema lens, premium film still, detailed snow texture, realistic shadows, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052027,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    },
+    {
+      "id": "07-rooftop-cafe-above-clouds",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\07-rooftop-cafe-above-clouds.png",
+      "image_prompt": "romantic rooftop cafe built impossibly high above a city, clouds moving far beneath the terrace, a young couple quietly drinking coffee at a small table, warm hanging lights swinging gently in the wind, sunrise blue and gold atmosphere, cinematic cozy realism, realistic terrace details, soft steam from coffee cups, emotional dream place people want to escape to, strong depth, soft bloom, realistic shadows, shot on 35mm cinema lens, premium cinematic film still, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052028,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    },
+    {
+      "id": "08-pickup-truck-stargazing",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\08-pickup-truck-stargazing.png",
+      "image_prompt": "back view of a man and woman sitting in the bed of an old pickup truck parked in an open field at night, watching the Milky Way and occasional shooting stars, soft lantern glowing beside them, tall grass around the truck, peaceful intimate silence, realistic pickup truck texture, cinematic night sky, subtle fireflies, atmospheric haze, natural body language, shot on 35mm cinema lens, premium emotional film still, realistic lighting, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052029,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    },
+    {
+      "id": "09-cliffside-tent-futuristic-city",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\09-cliffside-tent-futuristic-city.png",
+      "image_prompt": "lone traveler sitting beside a windblown tent on a massive cliff edge at night, glowing futuristic city stretching infinitely far below, warm lantern beside the tent, cold blue fog waves drifting over the cliff, tent fabric moving aggressively in strong wind, back view, emotional escape atmosphere, realistic rocks and fabric, cinematic warm versus cool contrast, deep atmospheric perspective, soft bloom, shot on 35mm cinema lens, premium cinematic film still, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052030,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    },
+    {
+      "id": "10-blue-hour-beach",
+      "duration": 30,
+      "image": "C:\\Users\\thanh\\OneDrive\\Documents\\New project\\video-projects\\dreamy-cozy-10\\assets\\10-blue-hour-beach.png",
+      "image_prompt": "lonely young man standing on a quiet beach before sunrise, back view, calm ocean waves reflecting deep blue light, strong ocean wind moving his hoodie softly, faint warm horizon glow, wet sand reflections, peaceful melancholic atmosphere, realistic water texture, cinematic blue hour color grading, soft mist near horizon, natural posture, shot on 35mm cinema lens, premium emotional travel film still, subtle film grain, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052031,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    }
+  ]
+}

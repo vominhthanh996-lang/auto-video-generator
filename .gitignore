@@ -1,18 +1,40 @@
-__pycache__/
-*.py[cod]
-*.pyo
-.env
-.env.*
-*.key
-*.pem
-*.mp4
-*.mp3
-*.wav
-*.png
-*.jpg
-*.jpeg
-*.webp
+# Local test artifacts
+codex_excel_test.xlsx
+
+# Generated media and local outputs
+video-projects/
 output/
 assets/
 logs/
 temp/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# OS/editor
+Thumbs.db
+.DS_Store
+.vscode/

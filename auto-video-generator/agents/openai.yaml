@@ -1,0 +1,3 @@
+display_name: Auto Video Generator
+short_description: Generate narrated MP4 videos from text, AI images, and AI voiceover.
+default_prompt: Create a short narrated video from my text with AI-generated images, voiceover, on-screen text, subtitles, and an MP4 output.
