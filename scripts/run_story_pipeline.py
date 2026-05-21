@@ -320,6 +320,7 @@ def main():
     parser.add_argument("--language", default="vi")
     parser.add_argument("--voice", default="vi-female")
     parser.add_argument("--voice-style", choices=["plain", "story-emotional", "wasteland-dark"], default="story-emotional")
+    parser.add_argument("--character-bible", type=Path, help="Optional JSON file with persistent character voice traits.")
     parser.add_argument("--words-per-image", type=int, default=32)
     parser.add_argument("--min-scenes", type=int, default=50)
     parser.add_argument("--max-scenes", type=int, default=90)
@@ -401,6 +402,9 @@ def main():
         "--voice-style",
         args.voice_style,
     ]
+    character_bible = args.character_bible or (project / "character_voice_bible.json")
+    if character_bible.exists():
+        voice_cmd.extend(["--character-bible", str(character_bible)])
     if args.overwrite:
         image_cmd.append("--overwrite")
         voice_cmd.append("--overwrite")

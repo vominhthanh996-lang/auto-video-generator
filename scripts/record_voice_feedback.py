@@ -26,31 +26,56 @@ def clamp(value, low, high):
 
 def main():
     parser = argparse.ArgumentParser(description="Record voice feedback and gently tune future narration pacing.")
-    parser.add_argument("--feedback", required=True, choices=["too-fast", "too-slow", "too-flat", "too-dramatic", "good"])
+    parser.add_argument(
+        "--feedback",
+        required=True,
+        choices=["too-fast", "too-slow", "too-flat", "too-dramatic", "not-cold-enough", "not-evil-enough", "too-fake", "good"],
+    )
+    parser.add_argument("--character", default="", help="Optional character name for character-specific learning.")
+    parser.add_argument("--trait", default="", help="Optional trait/archetype for trait-specific learning.")
     parser.add_argument("--note", default="")
     parser.add_argument("--learning-file", type=Path, default=DEFAULT_PATH)
     args = parser.parse_args()
 
     data = load(args.learning_file)
     data["samples"] = int(data.get("samples", 0)) + 1
+    target = data
+    if args.character:
+        target = data.setdefault("characters", {}).setdefault(args.character, {"samples": 0})
+        target["samples"] = int(target.get("samples", 0)) + 1
+    elif args.trait:
+        target = data.setdefault("traits", {}).setdefault(args.trait, {"samples": 0})
+        target["samples"] = int(target.get("samples", 0)) + 1
+
     if args.feedback == "too-fast":
-        data["rate_delta"] = clamp(int(data.get("rate_delta", 0)) - 3, -18, 8)
-        data["sentence_pause_delta"] = clamp(float(data.get("sentence_pause_delta", 0)) + 0.08, -0.25, 0.6)
-        data["paragraph_pause_delta"] = clamp(float(data.get("paragraph_pause_delta", 0)) + 0.1, -0.3, 0.8)
+        target["rate_delta"] = clamp(int(target.get("rate_delta", 0)) - 3, -18, 8)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) + 0.08, -0.25, 0.6)
+        target["paragraph_pause_delta"] = clamp(float(target.get("paragraph_pause_delta", 0)) + 0.1, -0.3, 0.8)
     elif args.feedback == "too-slow":
-        data["rate_delta"] = clamp(int(data.get("rate_delta", 0)) + 3, -18, 8)
-        data["sentence_pause_delta"] = clamp(float(data.get("sentence_pause_delta", 0)) - 0.06, -0.25, 0.6)
-        data["paragraph_pause_delta"] = clamp(float(data.get("paragraph_pause_delta", 0)) - 0.08, -0.3, 0.8)
+        target["rate_delta"] = clamp(int(target.get("rate_delta", 0)) + 3, -18, 8)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) - 0.06, -0.25, 0.6)
+        target["paragraph_pause_delta"] = clamp(float(target.get("paragraph_pause_delta", 0)) - 0.08, -0.3, 0.8)
     elif args.feedback == "too-flat":
-        data["comma_pause_delta"] = clamp(float(data.get("comma_pause_delta", 0)) + 0.03, -0.12, 0.25)
-        data["sentence_pause_delta"] = clamp(float(data.get("sentence_pause_delta", 0)) + 0.08, -0.25, 0.6)
+        target["comma_pause_delta"] = clamp(float(target.get("comma_pause_delta", 0)) + 0.03, -0.12, 0.25)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) + 0.08, -0.25, 0.6)
     elif args.feedback == "too-dramatic":
-        data["comma_pause_delta"] = clamp(float(data.get("comma_pause_delta", 0)) - 0.03, -0.12, 0.25)
-        data["sentence_pause_delta"] = clamp(float(data.get("sentence_pause_delta", 0)) - 0.08, -0.25, 0.6)
+        target["comma_pause_delta"] = clamp(float(target.get("comma_pause_delta", 0)) - 0.03, -0.12, 0.25)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) - 0.08, -0.25, 0.6)
+    elif args.feedback == "not-cold-enough":
+        target["rate_delta"] = clamp(int(target.get("rate_delta", 0)) - 2, -18, 8)
+        target["pitch_delta"] = clamp(int(target.get("pitch_delta", 0)) - 1, -8, 8)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) + 0.05, -0.25, 0.6)
+    elif args.feedback == "not-evil-enough":
+        target["rate_delta"] = clamp(int(target.get("rate_delta", 0)) - 3, -18, 8)
+        target["pitch_delta"] = clamp(int(target.get("pitch_delta", 0)) - 2, -8, 8)
+        target["sentence_pause_delta"] = clamp(float(target.get("sentence_pause_delta", 0)) + 0.08, -0.25, 0.6)
+    elif args.feedback == "too-fake":
+        target["pitch_delta"] = clamp(int(target.get("pitch_delta", 0)) // 2, -8, 8)
+        target["comma_pause_delta"] = clamp(float(target.get("comma_pause_delta", 0)) - 0.02, -0.12, 0.25)
     if args.note:
-        notes = data.setdefault("notes", [])
+        notes = target.setdefault("notes", [])
         notes.append(args.note)
-        data["notes"] = notes[-20:]
+        target["notes"] = notes[-20:]
 
     args.learning_file.parent.mkdir(parents=True, exist_ok=True)
     args.learning_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")

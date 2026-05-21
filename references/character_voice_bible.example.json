@@ -1,0 +1,35 @@
+{
+  "description": "Example character voice bible for future story projects. Copy to a project folder and customize names/traits.",
+  "characters": {
+    "Lâm Tịch": {
+      "gender": "female",
+      "traits": ["honest", "afraid", "cold"],
+      "voice_note": "fragile but stubborn, soft inner voice, becomes sharper in survival danger"
+    },
+    "Tần Dã": {
+      "gender": "male",
+      "traits": ["cold", "righteous"],
+      "voice_note": "low, restrained, speaks little, calm under threat"
+    },
+    "Giả nhân giả nghĩa example": {
+      "gender": "male",
+      "traits": ["hypocrite"],
+      "voice_note": "polite surface, controlled pauses, slightly too smooth"
+    },
+    "Nịnh nọt example": {
+      "gender": "neutral",
+      "traits": ["flattering"],
+      "voice_note": "faster, brighter, less pause, eager to please"
+    }
+  },
+  "trait_reference": {
+    "honest": "slower, open, sincere, plain cadence",
+    "righteous": "steady, firm, grounded",
+    "evil": "lower, slower, heavier pause",
+    "hypocrite": "smooth, polite, controlled, slightly unnatural",
+    "flattering": "faster, brighter, eager",
+    "spoiled": "softer, higher, slightly stretched",
+    "cold": "slower, lower, distant",
+    "afraid": "faster, higher, shorter pauses"
+  }
+}
