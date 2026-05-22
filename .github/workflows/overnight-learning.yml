@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # GitHub may delay scheduled runs. This keeps trying every five minutes while testing.
+    # Scheduler refreshed: 2026-05-22T06:22:08Z
     - cron: "*/5 * * * *"
 
 permissions:
