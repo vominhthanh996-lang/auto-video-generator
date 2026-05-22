@@ -155,3 +155,60 @@ Quy trình mới:
 - Thêm script tự tạo `visual_bible.json` từ chương truyện.
 - Thêm chấm điểm ảnh: `khớp narration`, `đúng nhân vật`, `đúng đạo cụ`, `đúng hành động`.
 - Sau này nếu có model image-to-image/reference, dùng ảnh trước làm reference cho ảnh sau.
+
+---
+
+## 2026-05-22 02:46 UTC - Overnight Learning Checkpoint
+
+### Tao Đã Search/Học Từ Đâu
+
+- Microsoft Speech SSML voice and prosody documentation
+  URL: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-voice
+  Ghi chú: Official reference for rate, pitch, pauses, and speech synthesis markup.
+- Voices: audiobook narration and finding a narrator voice
+  URL: https://www.voices.com/blog/audiobook-narrators-find-voice/
+  Ghi chú: Practical narration guidance about choosing and sustaining a story voice.
+- StudioBinder storyboard and visual storytelling guides
+  URL: https://www.studiobinder.com/blog/what-is-a-storyboard/
+  Ghi chú: Storyboard basics for planning shots, action, and visual continuity.
+- Wikipedia: continuity editing
+  URL: https://en.wikipedia.org/wiki/Continuity_editing
+  Ghi chú: Explains continuity between shots so viewers understand space, time, and action.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=Vietnamese+audiobook+narration+emotional+pacing+YouTube
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=truyen+audio+ke+chuyen+dem+khuya+giong+doc+truyen+cam
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=AI+narrated+story+video+visual+continuity+storyboard
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=cinematic+storyboarding+continuity+character+action+progression
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+
+### Tao Học Được Gì Về Voice
+
+- Giữ một giọng kể nền ổn định trong cả tập; cảm xúc chỉ nên dao động nhẹ theo cảnh.
+- Đừng đọc nhanh để chạy chữ. Với truyện dài, sự dễ nghe quan trọng hơn tốc độ.
+- Thoại nhân vật cần khác lời dẫn, nhưng khác bằng nhịp/pause/độ chắc, không giả giọng quá lố.
+- Cần character bible để giữ tính cách giọng nhân vật qua nhiều chương.
+
+### Tao Học Được Gì Về Hình/Storyboard
+
+- Ảnh phải bám hành động trong audio trước, sau đó mới tối ưu cinematic.
+- Mỗi scene cần continuity anchors: nhân vật, địa điểm, đạo cụ, trạng thái vết thương/quần áo.
+- Storyboard phải có handoff rõ: scene sau tiếp nối hành động của scene trước.
+- Cần shot type theo beat: establishing, medium action, close prop, hiding POV.
+
+### Ảnh Hưởng Tới Pipeline Của Mình
+
+- Trước khi gen full phần 2, tạo storyboard + visual bible + audit rồi mới gen sample.
+- Contact sheet cần hiển thị MUST SHOW để so ảnh với narration nhanh.
+- Voice-plan và visual-plan nên được giữ lại để review từng scene thay vì sửa mò.
+
+### Việc Nên Làm Tiếp
+
+- Với phần 2, tạo `visual_bible.json` và `character_voice_bible.json` riêng trước khi gen full.
+- Audit storyboard trước, sau đó gen 3-5 ảnh mẫu để xem có khớp narration không.
+- Sau khi mày nghe audio phần 2, ghi feedback theo nhân vật/trait để generator học tiếp.
