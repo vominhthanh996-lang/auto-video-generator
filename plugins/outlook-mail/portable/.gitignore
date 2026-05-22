@@ -1,0 +1,8 @@
+reports*/
+*-test*/
+story-test*/
+excel-test*/
+excel-header-test*/
+*.xlsx
+*.json
+logs/
