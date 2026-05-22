@@ -170,6 +170,144 @@ def image_prompt(narration, style):
     return f"{visual}, {character_line}, {style}, {youtube_vibe}. Scene context: {compact}"
 
 
+def add_unique(items, value):
+    if value and value not in items:
+        items.append(value)
+
+
+def shot_type_for(narration, scene_index):
+    lower = narration.lower()
+    if scene_index == 1 or has_any(lower, ["bầu trời", "xa xa", "bức tường khổng lồ", "thành an toàn"]):
+        return "wide establishing shot showing place and scale"
+    if has_any(lower, ["thịt hộp", "kẹo", "tinh thạch", "còi", "dao", "than lọc", "vết thương"]):
+        return "close survival-detail shot focused on hands, props, and immediate stakes"
+    if has_any(lower, ["gầm xe", "trốn", "nín thở"]):
+        return "low claustrophobic point-of-view shot from cover"
+    if has_any(lower, ["chó", "thú", "gầm gừ", "móng vuốt", "xác"]):
+        return "medium tense action shot with predator, victim, and survivor positions readable"
+    return "medium cinematic story shot with clear blocking"
+
+
+def visual_prompt_data(narration, style, continuity=None, scene_index=1):
+    continuity = continuity or {}
+    compact = narration[:420].replace("\n", " ")
+    lower = narration.lower()
+    characters = []
+    setting = []
+    props = []
+    actions = []
+    mood = []
+    shot_type = shot_type_for(narration, scene_index)
+
+    if "lâm tịch" in lower or "nàng" in lower:
+        add_unique(characters, "Lam Tich, a fragile young female wasteland scavenger in a dirty torn coat, exhausted but stubborn")
+    if "tần dã" in lower:
+        add_unique(characters, "Tan Da, a wounded male mercenary in a black tactical coat, restrained and dangerous")
+    elif "người đàn ông" in lower or "lính đánh thuê" in lower:
+        add_unique(characters, "a wounded male mercenary in a black tactical coat")
+    if not characters:
+        add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
+
+    keyword_rules = [
+        (["bãi rác", "đống rác", "nhặt rác"], setting, "radioactive junkyard outside the city"),
+        (["tủ lạnh"], props, "rusted half-broken refrigerator"),
+        (["túi nhựa"], props, "hardened dead plastic bags like old skin"),
+        (["bầu trời đỏ", "trời màu đỏ"], setting, "heavy polluted crimson red sky"),
+        (["phế thổ", "đại nhiễm xạ", "nhiễm xạ", "ô nhiễm"], setting, "contaminated post-apocalyptic wasteland"),
+        (["mưa đen", "mưa độc"], setting, "black toxic rain residue and corroded wet surfaces"),
+        (["bức tường khổng lồ", "thành an toàn", "vào thành", "cổng thành", "sau bức tường là thành"], setting, "distant massive safe-zone wall beyond the wasteland"),
+        (["chó hai hàm", "chó", "thú biến dị", "biến dị", "gầm gừ", "móng vuốt"], actions, "mutated two-jawed dogs threatening the scene"),
+        (["xác", "người chết"], props, "fresh human corpse on the ground"),
+        (["xe tải lật"], props, "overturned truck beside the corpse"),
+        (["bức tường bê tông", "tường bê tông"], props, "collapsed concrete wall used as cover"),
+        (["gầm xe"], actions, "survivors hiding under the vehicle"),
+        (["còi"], props, "small metal whistle"),
+        (["thịt hộp"], props, "precious sealed can of meat"),
+        (["bánh nén", "bánh"], props, "compressed ration biscuit"),
+        (["kẹo"], props, "small unwrapped candy"),
+        (["tinh thạch"], props, "tiny crystal shard"),
+        (["dao"], props, "survival knife in a dirty hand"),
+        (["máu đen", "máu"], props, "dark blood stains"),
+        (["vết thương"], actions, "close survival treatment of a serious wound"),
+        (["gen sụp đổ"], mood, "body-horror genetic collapse tension"),
+        (["nước", "lon rỉ"], props, "rusty water can and unsafe scavenged water"),
+        (["than lọc"], props, "used poison-filtering charcoal"),
+        (["sợ", "nín thở", "run"], mood, "breathless fear and survival tension"),
+        (["im lặng", "một ngày", "sống thêm"], mood, "quiet lonely survival melancholy"),
+    ]
+    for words, target, phrase in keyword_rules:
+        if has_any(lower, words):
+            add_unique(target, phrase)
+
+    if has_any(lower, ["mở mắt", "tỉnh lại", "xuyên không", "chết một lần"]):
+        add_unique(actions, "surreal awakening after death, weak body lying among rust and ash")
+    if has_any(lower, ["lục", "túi", "chạm vào", "rút"]):
+        add_unique(actions, "dirty hands searching a pocket for survival supplies")
+    if has_any(lower, ["kéo", "bò", "trốn"]):
+        add_unique(actions, "desperate crawling and hiding from danger")
+    if has_any(lower, ["nhìn", "xa xa"]):
+        add_unique(actions, "small survivor looking toward something unreachable in the distance")
+
+    if not setting:
+        add_unique(setting, "hostile radioactive wasteland environment matching the narration")
+    if not actions:
+        add_unique(actions, "the exact action described in the narration, not a generic pose")
+    if not mood:
+        add_unique(mood, "tense cinematic survival mood")
+
+    must_show = []
+    for source in (characters, setting, actions, props):
+        for item in source:
+            add_unique(must_show, item)
+    must_show = must_show[:9]
+
+    prompt = (
+        "Faithfully illustrate this exact story beat from the narration, not a generic apocalypse wallpaper. "
+        f"CONTINUITY FROM PREVIOUS SCENE: {continuity.get('summary', 'start of sequence')}. "
+        f"MUST SHOW: {', '.join(must_show)}. "
+        f"Characters: {', '.join(characters)}. "
+        f"Setting: {', '.join(setting)}. "
+        f"Shot type: {shot_type}. "
+        f"Action: {', '.join(actions)}. "
+        f"Previous action handoff: {continuity.get('last_action', 'none')}. "
+        f"Persistent visual anchors: {', '.join(continuity.get('anchors', [])[:6]) if continuity.get('anchors') else 'keep character design and world style consistent'}. "
+        f"Important props: {', '.join(props) if props else 'only props described by the narration'}. "
+        f"Mood: {', '.join(mood)}. "
+        "Composition must make the story action readable at first glance, with foreground story objects, midground characters, and background world context. "
+        "Keep spatial logic from the previous scene unless the narration clearly changes location. "
+        "Avoid unrelated cabins, clean modern streets, fantasy armor, random portraits, extra characters, or objects not implied by the narration. "
+        f"{style}. Scene context: {compact}"
+    )
+    return {
+        "prompt": prompt,
+        "must_show": must_show,
+        "setting": setting,
+        "actions": actions,
+        "props": props,
+        "shot_type": shot_type,
+    }
+
+
+def update_visual_continuity(previous, visual):
+    anchors = list(previous.get("anchors") or [])
+    for key in ("must_show", "setting", "props"):
+        for item in visual.get(key) or []:
+            if any(token in item.lower() for token in ["lam tich", "tan da", "junkyard", "crimson red sky", "overturned truck", "concrete wall", "safe-zone wall", "can of meat"]):
+                add_unique(anchors, item)
+    anchors = anchors[-8:]
+    last_action = ", ".join((visual.get("actions") or [])[:2]) or previous.get("last_action", "none")
+    summary_parts = []
+    if anchors:
+        summary_parts.append("anchors: " + ", ".join(anchors[:5]))
+    if last_action:
+        summary_parts.append("last action: " + last_action)
+    return {
+        "anchors": anchors,
+        "last_action": last_action,
+        "summary": "; ".join(summary_parts) if summary_parts else "continue same story world and character identity",
+    }
+
+
 def build_storyboard(args):
     source = args.source.resolve()
     text = read_source(source)
@@ -183,7 +321,10 @@ def build_storyboard(args):
     groups, word_count = group_for_scenes(text, args.min_scenes, args.max_scenes, args.words_per_image)
     style = args.style or BASE_STYLE
     scenes = []
+    continuity = {"summary": "start of the story sequence", "anchors": [], "last_action": "none"}
     for index, narration in enumerate(groups, 1):
+        visual = visual_prompt_data(narration, style, continuity, index)
+        current_continuity = dict(continuity)
         scenes.append(
             {
                 "id": f"scene-{index:03d}",
@@ -193,10 +334,17 @@ def build_storyboard(args):
                 "narration": narration,
                 "subtitle": narration if args.subtitles else "",
                 "text": args.title if index == 1 and args.title_overlay else "",
-                "image_prompt": image_prompt(narration, style),
+                "image_prompt": visual["prompt"],
+                "visual_must_show": visual["must_show"],
+                "visual_setting": visual["setting"],
+                "visual_action": visual["actions"],
+                "visual_props": visual["props"],
+                "visual_shot_type": visual["shot_type"],
+                "visual_continuity": current_continuity,
                 "negative_prompt": DEFAULT_NEGATIVE,
             }
         )
+        continuity = update_visual_continuity(continuity, visual)
 
     config = {
         "title": args.title or source.stem,
@@ -204,6 +352,7 @@ def build_storyboard(args):
         "font": "Arial",
         "word_count": word_count,
         "words_per_image_target": args.words_per_image,
+        "visual_continuity_version": 1,
         "scenes": scenes,
         "music": None,
     }
@@ -258,7 +407,8 @@ def write_contact_sheet(project, storyboard):
     for index, scene in enumerate(config.get("scenes") or [], 1):
         image = html.escape(scene.get("image") or "")
         text = html.escape((scene.get("narration") or "")[:180])
-        cards.append(f"<figure><img src='{image}'><figcaption>{index:03d}. {text}</figcaption></figure>")
+        must = html.escape(", ".join(scene.get("visual_must_show") or [])[:220])
+        cards.append(f"<figure><img src='{image}'><figcaption><b>{index:03d}</b>. {text}<br><span>{must}</span></figcaption></figure>")
     page = """<!doctype html>
 <meta charset="utf-8">
 <title>Contact Sheet</title>
@@ -268,6 +418,7 @@ body{font-family:Arial,sans-serif;background:#111;color:#eee;margin:24px}
 figure{margin:0;background:#1c1c1c;padding:10px;border-radius:6px}
 img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 figcaption{font-size:12px;line-height:1.35;margin-top:8px;color:#ccc}
+figcaption span{display:block;margin-top:6px;color:#8fd0ff}
 </style>
 <div class="grid">""" + "\n".join(cards) + "</div>"
     path = project / "contact-sheet.html"

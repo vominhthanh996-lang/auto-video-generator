@@ -1,0 +1,36 @@
+{
+  "description": "Example visual bible for story image continuity. Copy into a project folder as visual_bible.json and customize per story.",
+  "world": {
+    "genre": "Vietnamese/Chinese wasteland apocalypse webnovel",
+    "base_palette": "polluted crimson sky, ash gray debris, rust brown metal, sickly green radiation hints, muted cinematic contrast",
+    "camera_language": "mostly side/back views, readable story action, grounded cinematic realism",
+    "avoid": ["clean modern city", "fantasy armor", "random beauty portraits", "unrelated cabins", "extra characters"]
+  },
+  "characters": {
+    "Lâm Tịch": {
+      "aliases": ["Lam Tich", "nàng", "cô gái"],
+      "appearance": "fragile sixteen-year-old female wasteland scavenger, thin body, dirty torn coat, cracked hands, exhausted but stubborn",
+      "continuity_anchors": ["dirty torn coat", "thin body", "cracked dirty hands", "wary side/back view"],
+      "avoid": ["glamorous beauty portrait", "clean clothes", "luxury outfit"]
+    },
+    "Tần Dã": {
+      "aliases": ["Tan Da", "người đàn ông", "lính đánh thuê"],
+      "appearance": "wounded male mercenary, black tactical coat, restrained dangerous aura, blood-stained abdomen",
+      "continuity_anchors": ["black tactical coat", "wounded abdomen", "restrained expression"],
+      "avoid": ["clean soldier uniform", "fantasy armor", "smiling hero pose"]
+    }
+  },
+  "locations": {
+    "Khu 17 ngoài thành": {
+      "appearance": "radioactive junkyard outside a distant safe-zone wall, red polluted sky, rusted appliances, broken concrete, toxic dust",
+      "anchors": ["radioactive junkyard", "red polluted sky", "rusted refrigerator", "collapsed concrete", "distant city wall"]
+    }
+  },
+  "props": {
+    "thịt hộp": "small precious sealed can of meat, survival treasure, dirty metal surface",
+    "còi kim loại": "small worn metal whistle",
+    "tinh thạch": "tiny crystal shard, subtle glow, not oversized fantasy gem",
+    "xe tải lật": "overturned truck used as cover",
+    "bức tường bê tông sập": "collapsed concrete wall used for hiding"
+  }
+}
