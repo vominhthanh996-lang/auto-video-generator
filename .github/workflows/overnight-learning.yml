@@ -3,8 +3,8 @@ name: Overnight Learning
 on:
   workflow_dispatch:
   schedule:
-    # GitHub may delay scheduled runs. This keeps trying twice per hour.
-    - cron: "*/30 * * * *"
+    # GitHub may delay scheduled runs. This keeps trying every five minutes while testing.
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
