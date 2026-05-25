@@ -47,6 +47,7 @@ def main():
     parser.add_argument("--preset", choices=["safe", "balanced", "quality"], default="balanced")
     parser.add_argument("--delay-between-batches", type=float, default=0.0)
     parser.add_argument("--process-priority", choices=["normal", "below-normal", "idle"], default="normal")
+    parser.add_argument("--skip-manual", action="store_true", help="Skip scenes marked image_provider=manual-chatgpt.")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
@@ -78,6 +79,8 @@ def main():
         ]
         if args.overwrite:
             cmd.append("--overwrite")
+        if args.skip_manual:
+            cmd.append("--skip-manual")
         print(f"Generating image batch {start}-{end}/{total}", flush=True)
         run(cmd, args.process_priority)
         existing, _ = count_existing_images(storyboard)

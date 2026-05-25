@@ -373,6 +373,22 @@ def count_assets(storyboard, key):
     return count, len(config.get("scenes") or [])
 
 
+def missing_manual_images(storyboard):
+    base = storyboard.parent
+    config = json.loads(storyboard.read_text(encoding="utf-8-sig"))
+    missing = []
+    for index, scene in enumerate(config.get("scenes") or [], start=1):
+        if scene.get("image_provider") != "manual-chatgpt":
+            continue
+        image = scene.get("image") or scene.get("manual_image_expected")
+        path = Path(image)
+        if not path.is_absolute():
+            path = base / path
+        if not path.exists():
+            missing.append({"scene": index, "path": str(path)})
+    return missing
+
+
 def probe_duration(path):
     result = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nk=1:nw=1", str(path)],
@@ -477,6 +493,10 @@ def main():
     parser.add_argument("--max-scenes", type=int, default=90)
     parser.add_argument("--batch-size", type=int, default=5)
     parser.add_argument("--image-preset", choices=["safe", "balanced", "quality"], default="balanced")
+    parser.add_argument("--image-mode", choices=["comfy", "hybrid-manual"], default="comfy")
+    parser.add_argument("--manual-image-ratio", type=float, default=0.5, help="For hybrid-manual, fraction of scenes assigned to ChatGPT manual images.")
+    parser.add_argument("--import-manual-images", action="store_true", help="Attach existing manual ChatGPT images before validation/render.")
+    parser.add_argument("--wait-for-manual-images", action="store_true", help="Stop after preparing prompts if manual images are still missing.")
     parser.add_argument(
         "--run-mode",
         choices=["work", "overnight"],
@@ -521,6 +541,23 @@ def main():
     scripts = Path(__file__).resolve().parent
     run([sys.executable, str(scripts / "validate_storyboard.py"), "--storyboard", str(storyboard), "--stage", "text"], env=env)
 
+    if args.image_mode == "hybrid-manual":
+        manual_cmd = [
+            sys.executable,
+            str(scripts / "prepare_manual_chatgpt_images.py"),
+            "--storyboard",
+            str(storyboard),
+            "--ratio",
+            str(args.manual_image_ratio),
+            "--width",
+            str(preset["width"]),
+            "--height",
+            str(preset["height"]),
+        ]
+        if args.import_manual_images:
+            manual_cmd.append("--import-existing")
+        run(manual_cmd, env=env)
+
     maybe_start_comfy(args)
 
     image_cmd = [
@@ -559,6 +596,8 @@ def main():
     if args.overwrite:
         image_cmd.append("--overwrite")
         voice_cmd.append("--overwrite")
+    if args.image_mode == "hybrid-manual":
+        image_cmd.append("--skip-manual")
 
     processes = []
     if not args.skip_images:
@@ -571,6 +610,18 @@ def main():
             raise SystemExit(f"{name} stage failed with exit code {code}")
 
     sync_durations(storyboard, args.duration_pad)
+    missing_manual = missing_manual_images(storyboard) if args.image_mode == "hybrid-manual" else []
+    if missing_manual:
+        summary_path = project / "manual-chatgpt-missing.json"
+        summary_path.write_text(json.dumps({"missing": missing_manual}, ensure_ascii=False, indent=2), encoding="utf-8")
+        message = (
+            f"Hybrid manual mode is waiting for {len(missing_manual)} ChatGPT image(s). "
+            f"Use prompts in {project / 'chatgpt_image_prompts.md'} and save files into "
+            f"{project / 'assets' / 'manual-chatgpt'}. Missing list: {summary_path}"
+        )
+        if args.wait_for_manual_images or not args.import_manual_images:
+            raise SystemExit(message)
+        print(message, flush=True)
     run([sys.executable, str(scripts / "validate_storyboard.py"), "--storyboard", str(storyboard), "--stage", "all"], env=env)
     contact_sheet = write_contact_sheet(project, storyboard)
 
