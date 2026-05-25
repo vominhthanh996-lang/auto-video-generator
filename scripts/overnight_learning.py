@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Cloud-friendly overnight learning logger.
+Cloud-friendly auto learning logger.
 
-This script is designed for GitHub Actions. It does not render media and does
-not need the user's local E: drive. It searches lightweight web result pages,
-summarizes practical lessons for the video pipeline, and appends a readable
-Vietnamese checkpoint to references/learning_sprint_log.md.
+This script is designed for GitHub Actions. It never renders media and never
+touches local project assets. Each run searches for fresh sources, skips links
+already written to the learning logs, and appends human-readable Vietnamese
+notes about voice, visuals, and pipeline improvements.
 """
 
 from __future__ import annotations
@@ -29,13 +29,36 @@ if hasattr(sys.stdout, "reconfigure"):
 
 
 DEFAULT_QUERIES = [
-    "Vietnamese audiobook narration emotional pacing YouTube",
-    "truyen audio ke chuyen dem khuya giong doc truyen cam",
-    "AI narrated story video visual continuity storyboard",
-    "cinematic storyboarding continuity character action progression",
-    "character consistent AI images story video continuity",
-    "post apocalyptic story video AI narration visuals",
+    "YouTube truyện mạt thế viral giọng đọc truyền cảm",
+    "YouTube truyện phế thổ audio viral hình ảnh AI",
+    "truyện audio Việt Nam giọng đọc nhân vật khác nhau",
+    "audiobook narration character voices consistency pacing emotion",
+    "viral AI narrated story videos visual continuity character consistency",
+    "post apocalyptic wasteland story video YouTube cinematic AI images",
+    "storyboard continuity character consistent AI images long story video",
+    "AI video story narration match visuals to audio",
 ]
+
+VIRAL_HINTS = [
+    "viral",
+    "youtube",
+    "truyện",
+    "truyen",
+    "mạt thế",
+    "mat the",
+    "phế thổ",
+    "phe tho",
+    "audiobook",
+    "narration",
+    "story",
+    "storyboard",
+    "continuity",
+    "character",
+    "ai video",
+]
+
+ACTION_ITEMS_PATH = Path("references/learning_action_items.md")
+
 
 @dataclass
 class SearchResult:
@@ -78,7 +101,7 @@ def fetch_url(url: str, timeout: int = 20) -> str:
         url,
         headers={
             "User-Agent": (
-                "Mozilla/5.0 (compatible; auto-video-generator-learning/1.0; "
+                "Mozilla/5.0 (compatible; auto-video-generator-learning/2.0; "
                 "+https://github.com/)"
             )
         },
@@ -144,31 +167,93 @@ def youtube_api_search(query: str, limit: int = 4) -> list[SearchResult]:
     return results
 
 
-def infer_lessons(results: list[SearchResult]) -> tuple[list[str], list[str], list[str]]:
+def normalize_url(url: str) -> str:
+    url = (url or "").strip()
+    if not url:
+        return ""
+    parsed = urllib.parse.urlparse(url)
+    query = urllib.parse.parse_qs(parsed.query)
+    if "youtube.com" in parsed.netloc and "v" in query:
+        return f"https://www.youtube.com/watch?v={query['v'][0]}"
+    if "youtu.be" in parsed.netloc:
+        video_id = parsed.path.strip("/")
+        return f"https://www.youtube.com/watch?v={video_id}" if video_id else url
+    clean_query = urllib.parse.urlencode(
+        {
+            key: value[0]
+            for key, value in sorted(query.items())
+            if not key.lower().startswith("utm_")
+        }
+    )
+    return urllib.parse.urlunparse(
+        (parsed.scheme, parsed.netloc.lower(), parsed.path.rstrip("/"), "", clean_query, "")
+    )
+
+
+def load_used_urls(paths: list[Path]) -> set[str]:
+    used: set[str] = set()
+    url_pattern = re.compile(r"https?://[^\s)>\"]+")
+    for path in paths:
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for url in url_pattern.findall(text):
+            used.add(normalize_url(url.rstrip(".,;]")))
+    return used
+
+
+def score_result(result: SearchResult) -> int:
+    haystack = f"{result.query} {result.title} {result.snippet} {result.url}".lower()
+    score = 0
+    for hint in VIRAL_HINTS:
+        if hint in haystack:
+            score += 2
+    if "youtube.com/watch" in result.url or "youtu.be/" in result.url:
+        score += 6
+    if any(word in haystack for word in ["official", "guide", "paper", "research"]):
+        score += 1
+    if result.title.endswith("_FAILED"):
+        score -= 20
+    return score
+
+
+def infer_lessons(results: list[SearchResult]) -> tuple[list[str], list[str], list[str], list[str]]:
     joined = " ".join((r.title + " " + r.snippet).lower() for r in results)
     voice = [
-        "Giữ một giọng kể nền ổn định trong cả tập; cảm xúc chỉ nên dao động nhẹ theo cảnh.",
-        "Đừng đọc nhanh để chạy chữ. Với truyện dài, sự dễ nghe quan trọng hơn tốc độ.",
-        "Thoại nhân vật cần khác lời dẫn, nhưng khác bằng nhịp/pause/độ chắc, không giả giọng quá lố.",
+        "Giọng kể chuyện phải ổn định, rõ chữ, có cảm xúc nền nhưng không kéo pause quá dài. Người nghe truyện dài cần cảm giác trôi, không bị ngắt vụn.",
+        "Mỗi nhân vật cần một lane giọng riêng khác narrator: tốc độ, pitch, độ lạnh/ấm, độ căng, kiểu ngắt câu. Lane đó phải giữ nhất quán từ đầu đến cuối.",
+        "Nhân vật không nên chỉ khác bằng giả giọng. Khác biệt nên đến từ tính cách: kẻ lạnh nói ít và chắc; người thật thà mềm hơn; phản diện nén giọng thấp; kẻ nịnh nọt có nhịp nhanh và mềm.",
+        "Voice plan cần ghi lý do vì sao scene dùng nhịp đó: narration, nội tâm, nguy hiểm gần, đối thoại, reveal, hoặc cao trào.",
     ]
     visual = [
-        "Ảnh phải bám hành động trong audio trước, sau đó mới tối ưu cinematic.",
-        "Mỗi scene cần continuity anchors: nhân vật, địa điểm, đạo cụ, trạng thái vết thương/quần áo.",
-        "Storyboard phải có handoff rõ: scene sau tiếp nối hành động của scene trước.",
+        "Ảnh phải bám câu đang đọc trước, đẹp sau. Nếu audio nói nhân vật đang bò dưới gầm xe thì hình phải có gầm xe, tư thế bò, mối nguy gần đó.",
+        "Vibe viral không chỉ là màu cinematic. Nó là khung hình dễ hiểu trong 1 giây: nhân vật rõ, nguy hiểm rõ, đạo cụ rõ, không gian đúng truyện.",
+        "Nhân vật phải có visual bible: tuổi, vóc dáng, tóc, quần áo, vết thương, đạo cụ đang cầm, trạng thái cảm xúc. Prompt sau không được tự đổi nhân vật.",
+        "Cảnh sau phải kế thừa cảnh trước: cùng bối cảnh, cùng hướng hành động, cùng đạo cụ, cùng mức thương tích. Tránh slideshow mỗi ảnh một thế giới.",
+        "Chuyển động nên hợp logic truyện: mưa/gió/bụi/khói/ánh đèn/cây/camera push nhẹ; nhân vật có hành động nhỏ đúng scene, không đứng tạo dáng vô nghĩa.",
     ]
     pipeline = [
-        "Trước khi gen full phần 2, tạo storyboard + visual bible + audit rồi mới gen sample.",
-        "Contact sheet cần hiển thị MUST SHOW để so ảnh với narration nhanh.",
-        "Voice-plan và visual-plan nên được giữ lại để review từng scene thay vì sửa mò.",
+        "Auto learning chỉ ghi log và action items. Không render, không gen thử, không overwrite part 1 assets.",
+        "Mỗi checkpoint phải ưu tiên link mới, không lặp lại YouTube/web URL đã học ở các lần trước.",
+        "Tạo `character_voice_bible.json` cho mỗi truyện: narrator + từng nhân vật + trait + pitch/rate/pause mục tiêu.",
+        "Tạo `visual_bible.json` và `scene_state.json` để giữ nhân vật, bối cảnh, đạo cụ và trạng thái xuyên suốt.",
+        "Thêm audit storyboard trước khi gen: mỗi scene phải có `must_show`, `current_action`, `location_anchor`, `previous_state`, `next_handoff`.",
+    ]
+    actions = [
+        "Đổi voice generator sang character-lane: narrator riêng, từng nhân vật riêng, giữ consistency bằng `character_voice_bible.json`.",
+        "Giảm pause quá dài trong voice style mặc định, ưu tiên nhịp kể tự nhiên và chỉ pause mạnh ở reveal/cao trào.",
+        "Dùng log hiện có để chặn trùng URL giữa các checkpoint; nếu đã học link rồi thì bỏ qua.",
+        "Thêm `learning_action_items.md` để gom việc nên code sau này, tách khỏi log học dài.",
+        "Thêm scoring cho storyboard: khớp audio, đúng nhân vật, đúng đạo cụ, đúng không gian, continuity với scene trước.",
     ]
 
     if "character" in joined or "voice" in joined:
-        voice.append("Cần character bible để giữ tính cách giọng nhân vật qua nhiều chương.")
+        voice.append("Khi nguồn nhắc character voice, áp dụng thành rule: một nhân vật đã có lane thì các chương sau phải reuse lane đó, không auto đổi voice.")
     if "storyboard" in joined or "continuity" in joined:
-        visual.append("Cần shot type theo beat: establishing, medium action, close prop, hiding POV.")
+        visual.append("Khi nguồn nhắc continuity/storyboard, áp dụng thành rule: shot sau phải có `previous_state` và `next_handoff`.")
     if "ai" in joined and "video" in joined:
-        pipeline.append("Nên thêm bước sample 3-5 ảnh trước khi tiêu tài nguyên cho cả chương.")
-    return voice, visual, pipeline
+        pipeline.append("AI image/video chỉ nên chạy sau khi storyboard pass audit; learning runner không gọi bất kỳ script gen asset nào.")
+    return voice, visual, pipeline, actions
 
 
 def format_result(result: SearchResult) -> str:
@@ -180,19 +265,19 @@ def format_result(result: SearchResult) -> str:
     return f"- {title}\n  URL: {url}\n  Ghi chú: {snippet}"
 
 
-def append_log(log_path: Path, results: list[SearchResult], dry_run: bool = False) -> str:
+def append_log(log_path: Path, action_path: Path, results: list[SearchResult], dry_run: bool = False) -> str:
     now = datetime.now(timezone.utc).astimezone()
-    voice, visual, pipeline = infer_lessons(results)
+    voice, visual, pipeline, actions = infer_lessons(results)
     source_lines = "\n".join(format_result(result) for result in results[:18])
     entry = f"""
 
 ---
 
-## {now:%Y-%m-%d %H:%M %Z} - Overnight Learning Checkpoint
+## {now:%Y-%m-%d %H:%M %Z} - Auto Learning Checkpoint
 
 ### Tao Đã Search/Học Từ Đâu
 
-{source_lines if source_lines else "- Không lấy được kết quả search trong lần chạy này."}
+{source_lines if source_lines else "- Không lấy được kết quả search mới trong lần chạy này."}
 
 ### Tao Học Được Gì Về Voice
 
@@ -206,23 +291,29 @@ def append_log(log_path: Path, results: list[SearchResult], dry_run: bool = Fals
 
 {chr(10).join("- " + item for item in pipeline)}
 
-### Việc Nên Làm Tiếp
+### Action Items Nên Cân Nhắc
 
-- Với phần 2, tạo `visual_bible.json` và `character_voice_bible.json` riêng trước khi gen full.
-- Audit storyboard trước, sau đó gen 3-5 ảnh mẫu để xem có khớp narration không.
-- Sau khi mày nghe audio phần 2, ghi feedback theo nhân vật/trait để generator học tiếp.
+{chr(10).join("- " + item for item in actions)}
 """
     entry = textwrap.dedent(entry).strip() + "\n"
     if not dry_run:
         log_path.parent.mkdir(parents=True, exist_ok=True)
         with log_path.open("a", encoding="utf-8") as handle:
             handle.write("\n" + entry)
+        action_path.parent.mkdir(parents=True, exist_ok=True)
+        with action_path.open("a", encoding="utf-8") as handle:
+            handle.write(
+                f"\n\n---\n\n## {now:%Y-%m-%d %H:%M %Z} - Auto Learning Action Items\n\n"
+                + "\n".join("- " + item for item in actions)
+                + "\n"
+            )
     return entry
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Append an overnight learning checkpoint log.")
+    parser = argparse.ArgumentParser(description="Append an auto learning checkpoint log.")
     parser.add_argument("--log", type=Path, default=Path("references/learning_sprint_log.md"))
+    parser.add_argument("--action-items", type=Path, default=ACTION_ITEMS_PATH)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--limit-per-query", type=int, default=3)
     args = parser.parse_args()
@@ -232,16 +323,22 @@ def main() -> int:
         results.extend(youtube_api_search(query, args.limit_per_query))
         results.extend(ddg_lite_search(query, args.limit_per_query))
 
+    used_urls = load_used_urls([args.log, args.action_items])
     seen = set()
     unique_results = []
-    for result in results:
-        key = (result.title, result.url)
+    for result in sorted(results, key=score_result, reverse=True):
+        clean_url = normalize_url(result.url)
+        if clean_url and clean_url in used_urls:
+            continue
+        key = (result.title.strip().lower(), clean_url)
         if key in seen:
             continue
         seen.add(key)
+        result.url = clean_url or result.url
         unique_results.append(result)
+
     if not unique_results or all(result.title.endswith("_FAILED") for result in unique_results):
-        unique_results = FALLBACK_RESULTS + [
+        unique_results = [result for result in FALLBACK_RESULTS if normalize_url(result.url) not in used_urls] + [
             SearchResult(
                 query,
                 "Search query prepared for next cloud run",
@@ -251,7 +348,7 @@ def main() -> int:
             for query in DEFAULT_QUERIES[:4]
         ]
 
-    entry = append_log(args.log, unique_results, dry_run=args.dry_run)
+    entry = append_log(args.log, args.action_items, unique_results, dry_run=args.dry_run)
     print(entry)
     return 0
 
