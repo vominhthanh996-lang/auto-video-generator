@@ -37,6 +37,12 @@ DEFAULT_QUERIES = [
     "post apocalyptic wasteland story video YouTube cinematic AI images",
     "storyboard continuity character consistent AI images long story video",
     "AI video story narration match visuals to audio",
+    "YouTube truyện ngôn tình viral giọng đọc cảm xúc hình ảnh AI",
+    "YouTube truyện tiên hiệp huyền huyễn viral audio storytelling",
+    "YouTube truyện đô thị tổng tài viral narration pacing",
+    "YouTube truyện kinh dị creepypasta narration suspense pacing",
+    "visual storytelling retention editing for YouTube story videos",
+    "YouTube audience retention storytelling thumbnails titles pacing",
 ]
 
 VIRAL_HINTS = [
@@ -55,6 +61,21 @@ VIRAL_HINTS = [
     "continuity",
     "character",
     "ai video",
+    "ngôn tình",
+    "ngon tinh",
+    "tiên hiệp",
+    "tien hiep",
+    "huyền huyễn",
+    "huyen huyen",
+    "đô thị",
+    "do thi",
+    "tổng tài",
+    "tong tai",
+    "kinh dị",
+    "kinh di",
+    "suspense",
+    "retention",
+    "thumbnail",
 ]
 
 ACTION_ITEMS_PATH = Path("references/learning_action_items.md")
@@ -238,6 +259,8 @@ def infer_lessons(results: list[SearchResult]) -> tuple[list[str], list[str], li
         "Tạo `character_voice_bible.json` cho mỗi truyện: narrator + từng nhân vật + trait + pitch/rate/pause mục tiêu.",
         "Tạo `visual_bible.json` và `scene_state.json` để giữ nhân vật, bối cảnh, đạo cụ và trạng thái xuyên suốt.",
         "Thêm audit storyboard trước khi gen: mỗi scene phải có `must_show`, `current_action`, `location_anchor`, `previous_state`, `next_handoff`.",
+        "Không khóa pipeline vào một thể loại. Mỗi truyện cần `genre_profile`: mạt thế, ngôn tình, tiên hiệp, đô thị, kinh dị, trinh thám, hài, hoặc lịch sử.",
+        "Mỗi `genre_profile` phải ảnh hưởng voice, visual style, shot pacing, prompt negative, nhạc nền và nhịp dựng.",
     ]
     actions = [
         "Đổi voice generator sang character-lane: narrator riêng, từng nhân vật riêng, giữ consistency bằng `character_voice_bible.json`.",
@@ -245,6 +268,8 @@ def infer_lessons(results: list[SearchResult]) -> tuple[list[str], list[str], li
         "Dùng log hiện có để chặn trùng URL giữa các checkpoint; nếu đã học link rồi thì bỏ qua.",
         "Thêm `learning_action_items.md` để gom việc nên code sau này, tách khỏi log học dài.",
         "Thêm scoring cho storyboard: khớp audio, đúng nhân vật, đúng đạo cụ, đúng không gian, continuity với scene trước.",
+        "Thêm `genre_profile.json` để pipeline đổi phong cách theo thể loại truyện thay vì dùng một vibe cố định.",
+        "Thêm thư viện `learning_topics.md`: voice, visual, retention, genre, prompt, motion, editing, thumbnail/title, QA.",
     ]
 
     if "character" in joined or "voice" in joined:
@@ -254,6 +279,23 @@ def infer_lessons(results: list[SearchResult]) -> tuple[list[str], list[str], li
     if "ai" in joined and "video" in joined:
         pipeline.append("AI image/video chỉ nên chạy sau khi storyboard pass audit; learning runner không gọi bất kỳ script gen asset nào.")
     return voice, visual, pipeline, actions
+
+
+def proactive_learning_skills() -> list[str]:
+    return [
+        "Voice acting: narrator voice, character voice lanes, emotion control, rate/pitch consistency, dialogue vs narration.",
+        "Vietnamese audiobook craft: cách ngắt câu tự nhiên, nhấn chữ, giữ hơi, đọc nội tâm, đọc cao trào mà không lố.",
+        "Genre grammar: mạt thế/phế thổ, ngôn tình, tiên hiệp, huyền huyễn, đô thị, tổng tài, kinh dị, trinh thám, hài, lịch sử.",
+        "Visual continuity: giữ mặt, dáng, trang phục, đạo cụ, vết thương, địa điểm và trạng thái scene qua nhiều ảnh.",
+        "Storyboard logic: chia beat, shot type, handoff, action progression, không để ảnh đi một đường audio đi một nẻo.",
+        "Cinematic image prompting: camera lens, composition, lighting, atmosphere, negative prompt, tránh plastic/oversaturated AI look.",
+        "Motion direction: chuyển động mưa, gió, tóc, áo, khói, bụi, camera push, character micro-action hợp lý.",
+        "Audience retention: hook 5-15 giây đầu, nhịp reveal, cliffhanger, emotional payoff, loop/ending cho TikTok và pacing dài cho YouTube.",
+        "Editing language: khi nào wide shot, close-up đạo cụ, POV, reaction shot, montage, silence, sound bridge.",
+        "Audio design: ambience, room tone, rain/wind/fire, reverb, nhạc nền theo genre, tránh nhạc lấn voice.",
+        "YouTube packaging: title, thumbnail, first frame, description, series naming, nhưng chỉ ghi học liệu, chưa tự làm nếu chưa được yêu cầu.",
+        "Quality assurance: checklist text/voice/image/audio/subtitle/duration/resolution trước khi render hoặc publish.",
+    ]
 
 
 def format_result(result: SearchResult) -> str:
@@ -294,6 +336,10 @@ def append_log(log_path: Path, action_path: Path, results: list[SearchResult], d
 ### Action Items Nên Cân Nhắc
 
 {chr(10).join("- " + item for item in actions)}
+
+### Skill Tao Chủ Động Học Thêm Để Pipeline Ngày Càng Xịn
+
+{chr(10).join("- " + item for item in proactive_learning_skills())}
 """
     entry = textwrap.dedent(entry).strip() + "\n"
     if not dry_run:
@@ -305,6 +351,8 @@ def append_log(log_path: Path, action_path: Path, results: list[SearchResult], d
             handle.write(
                 f"\n\n---\n\n## {now:%Y-%m-%d %H:%M %Z} - Auto Learning Action Items\n\n"
                 + "\n".join("- " + item for item in actions)
+                + "\n\n### Proactive Learning Skills\n\n"
+                + "\n".join("- " + item for item in proactive_learning_skills())
                 + "\n"
             )
     return entry
