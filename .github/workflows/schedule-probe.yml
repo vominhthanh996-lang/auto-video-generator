@@ -1,4 +1,4 @@
-name: Schedule Probe
+name: Auto Learning Runner
 
 on:
   workflow_dispatch:
@@ -6,13 +6,40 @@ on:
     - cron: "*/5 * * * *"
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: auto-learning-runner
+  cancel-in-progress: false
 
 jobs:
-  probe:
+  learn:
     runs-on: ubuntu-latest
     steps:
-      - name: Show scheduler tick
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Append learning checkpoint
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-          date -u
-          echo "Schedule probe fired."
+          python scripts/overnight_learning.py --log references/learning_sprint_log.md
+
+      - name: Commit learning log
+        run: |
+          git config user.name "auto-learning-bot"
+          git config user.email "auto-learning-bot@users.noreply.github.com"
+          git add references/learning_sprint_log.md
+          if git diff --cached --quiet; then
+            echo "No learning log changes to commit."
+          else
+            git commit -m "Append auto learning checkpoint"
+            git push
+          fi
