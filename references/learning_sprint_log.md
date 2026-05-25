@@ -383,3 +383,53 @@ Quy trình mới:
 - Với phần 2, tạo `visual_bible.json` và `character_voice_bible.json` riêng trước khi gen full.
 - Audit storyboard trước, sau đó gen 3-5 ảnh mẫu để xem có khớp narration không.
 - Sau khi mày nghe audio phần 2, ghi feedback theo nhân vật/trait để generator học tiếp.
+
+---
+
+## 2026-05-25 03:14 UTC - Auto Learning Checkpoint
+
+### Tao Đã Search/Học Từ Đâu
+
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=YouTube+truy%E1%BB%87n+m%E1%BA%A1t+th%E1%BA%BF+viral+gi%E1%BB%8Dng+%C4%91%E1%BB%8Dc+truy%E1%BB%81n+c%E1%BA%A3m
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=YouTube+truy%E1%BB%87n+ph%E1%BA%BF+th%E1%BB%95+audio+viral+h%C3%ACnh+%E1%BA%A3nh+AI
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=truy%E1%BB%87n+audio+Vi%E1%BB%87t+Nam+gi%E1%BB%8Dng+%C4%91%E1%BB%8Dc+nh%C3%A2n+v%E1%BA%ADt+kh%C3%A1c+nhau
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+- Search query prepared for next cloud run
+  URL: https://duckduckgo.com/?q=audiobook+narration+character+voices+consistency+pacing+emotion
+  Ghi chú: Fallback query URL because the current run could not parse live search results.
+
+### Tao Học Được Gì Về Voice
+
+- Giọng kể chuyện phải ổn định, rõ chữ, có cảm xúc nền nhưng không kéo pause quá dài. Người nghe truyện dài cần cảm giác trôi, không bị ngắt vụn.
+- Mỗi nhân vật cần một lane giọng riêng khác narrator: tốc độ, pitch, độ lạnh/ấm, độ căng, kiểu ngắt câu. Lane đó phải giữ nhất quán từ đầu đến cuối.
+- Nhân vật không nên chỉ khác bằng giả giọng. Khác biệt nên đến từ tính cách: kẻ lạnh nói ít và chắc; người thật thà mềm hơn; phản diện nén giọng thấp; kẻ nịnh nọt có nhịp nhanh và mềm.
+- Voice plan cần ghi lý do vì sao scene dùng nhịp đó: narration, nội tâm, nguy hiểm gần, đối thoại, reveal, hoặc cao trào.
+
+### Tao Học Được Gì Về Hình/Storyboard
+
+- Ảnh phải bám câu đang đọc trước, đẹp sau. Nếu audio nói nhân vật đang bò dưới gầm xe thì hình phải có gầm xe, tư thế bò, mối nguy gần đó.
+- Vibe viral không chỉ là màu cinematic. Nó là khung hình dễ hiểu trong 1 giây: nhân vật rõ, nguy hiểm rõ, đạo cụ rõ, không gian đúng truyện.
+- Nhân vật phải có visual bible: tuổi, vóc dáng, tóc, quần áo, vết thương, đạo cụ đang cầm, trạng thái cảm xúc. Prompt sau không được tự đổi nhân vật.
+- Cảnh sau phải kế thừa cảnh trước: cùng bối cảnh, cùng hướng hành động, cùng đạo cụ, cùng mức thương tích. Tránh slideshow mỗi ảnh một thế giới.
+- Chuyển động nên hợp logic truyện: mưa/gió/bụi/khói/ánh đèn/cây/camera push nhẹ; nhân vật có hành động nhỏ đúng scene, không đứng tạo dáng vô nghĩa.
+
+### Ảnh Hưởng Tới Pipeline Của Mình
+
+- Auto learning chỉ ghi log và action items. Không render, không gen thử, không overwrite part 1 assets.
+- Mỗi checkpoint phải ưu tiên link mới, không lặp lại YouTube/web URL đã học ở các lần trước.
+- Tạo `character_voice_bible.json` cho mỗi truyện: narrator + từng nhân vật + trait + pitch/rate/pause mục tiêu.
+- Tạo `visual_bible.json` và `scene_state.json` để giữ nhân vật, bối cảnh, đạo cụ và trạng thái xuyên suốt.
+- Thêm audit storyboard trước khi gen: mỗi scene phải có `must_show`, `current_action`, `location_anchor`, `previous_state`, `next_handoff`.
+
+### Action Items Nên Cân Nhắc
+
+- Đổi voice generator sang character-lane: narrator riêng, từng nhân vật riêng, giữ consistency bằng `character_voice_bible.json`.
+- Giảm pause quá dài trong voice style mặc định, ưu tiên nhịp kể tự nhiên và chỉ pause mạnh ở reveal/cao trào.
+- Dùng log hiện có để chặn trùng URL giữa các checkpoint; nếu đã học link rồi thì bỏ qua.
+- Thêm `learning_action_items.md` để gom việc nên code sau này, tách khỏi log học dài.
+- Thêm scoring cho storyboard: khớp audio, đúng nhân vật, đúng đạo cụ, đúng không gian, continuity với scene trước.
