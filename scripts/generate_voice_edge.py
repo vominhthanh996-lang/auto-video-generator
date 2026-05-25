@@ -32,52 +32,52 @@ VOICE_STYLES = {
         "paragraph_pause": 0.3,
     },
     "story-emotional": {
-        "rate": "-13%",
+        "rate": "-3%",
         "pitch": "-2Hz",
-        "comma_pause": 0.14,
-        "sentence_pause": 0.42,
-        "paragraph_pause": 0.9,
-        "dialogue_pause": 0.32,
-        "scene_pause": 1.15,
-        "danger_rate": "-8%",
-        "soft_rate": "-18%",
-        "dialogue_rate": "-10%",
-        "inner_rate": "-19%",
-        "reveal_rate": "-15%",
-        "list_rate": "-9%",
-        "cliffhanger_pause": 0.75,
-        "reveal_pause": 0.82,
-        "inner_pause": 0.62,
-        "list_pause": 0.22,
-        "hook_rate_delta": -2,
-        "release_rate_delta": -3,
+        "comma_pause": 0.04,
+        "sentence_pause": 0.16,
+        "paragraph_pause": 0.32,
+        "dialogue_pause": 0.12,
+        "scene_pause": 0.42,
+        "danger_rate": "-1%",
+        "soft_rate": "-7%",
+        "dialogue_rate": "-2%",
+        "inner_rate": "-8%",
+        "reveal_rate": "-5%",
+        "list_rate": "-1%",
+        "cliffhanger_pause": 0.32,
+        "reveal_pause": 0.34,
+        "inner_pause": 0.26,
+        "list_pause": 0.07,
+        "hook_rate_delta": 1,
+        "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 155,
+        "max_unit_chars": 185,
     },
     "wasteland-dark": {
-        "rate": "-15%",
+        "rate": "+3%",
         "pitch": "-3Hz",
-        "comma_pause": 0.16,
-        "sentence_pause": 0.5,
-        "paragraph_pause": 1.05,
-        "dialogue_pause": 0.36,
-        "scene_pause": 1.35,
-        "danger_rate": "-7%",
-        "soft_rate": "-20%",
-        "dialogue_rate": "-11%",
-        "inner_rate": "-22%",
-        "reveal_rate": "-17%",
-        "list_rate": "-10%",
-        "cliffhanger_pause": 0.9,
-        "reveal_pause": 0.95,
-        "inner_pause": 0.72,
-        "list_pause": 0.24,
-        "hook_rate_delta": -2,
-        "release_rate_delta": -4,
+        "comma_pause": 0.03,
+        "sentence_pause": 0.11,
+        "paragraph_pause": 0.24,
+        "dialogue_pause": 0.08,
+        "scene_pause": 0.32,
+        "danger_rate": "+5%",
+        "soft_rate": "-2%",
+        "dialogue_rate": "+4%",
+        "inner_rate": "-4%",
+        "reveal_rate": "+0%",
+        "list_rate": "+4%",
+        "cliffhanger_pause": 0.24,
+        "reveal_pause": 0.25,
+        "inner_pause": 0.2,
+        "list_pause": 0.05,
+        "hook_rate_delta": 2,
+        "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 145,
+        "max_unit_chars": 190,
     },
 }
 
@@ -225,7 +225,7 @@ def load_character_bible(path):
     if not path or not path.exists():
         return {}
     data = json.loads(path.read_text(encoding="utf-8-sig"))
-    return data.get("characters") or {}
+    return data
 
 
 def apply_learning(profile, learning):
@@ -297,13 +297,59 @@ def detect_archetypes(text, profile):
 def matched_characters(text, profile):
     lower = text.lower()
     matches = []
-    bible = profile.get("_character_bible") or {}
+    bible = (profile.get("_character_bible") or {}).get("characters") or {}
     for character_name, character in bible.items():
         aliases = [character_name]
         aliases.extend(character.get("aliases") or [])
         if any(str(alias).lower() in lower for alias in aliases):
             matches.append((character_name, character))
     return matches
+
+
+def resolve_voice(value):
+    if not value:
+        return None
+    return VOICE_PRESETS.get(value, value)
+
+
+def character_voice(character):
+    return resolve_voice((character or {}).get("voice"))
+
+
+def voice_for_character(character_name, profile):
+    bible = (profile.get("_character_bible") or {}).get("characters") or {}
+    return character_voice(bible.get(character_name))
+
+
+def speaker_from_context(text, profile):
+    matches = matched_characters(text, profile)
+    if not matches:
+        return None
+    return matches[0][0]
+
+
+def voice_for_text(text, default_voice, profile, speaker_hint=None):
+    bible = profile.get("_character_bible") or {}
+    narrator = (bible.get("narrator") or {}).get("voice")
+    narrator_voice = resolve_voice(narrator) or default_voice
+    if not is_dialogue(text):
+        return narrator_voice
+    if speaker_hint:
+        voice = voice_for_character(speaker_hint, profile)
+        resolved = resolve_voice(voice)
+        if resolved:
+            return resolved
+    for _character_name, character in matched_characters(text, profile):
+        voice = resolve_voice(character.get("voice"))
+        if voice:
+            return voice
+    lane = dialogue_lane(text)
+    defaults = bible.get("defaults") or {}
+    voice = defaults.get(f"{lane}_dialogue_voice") or defaults.get("dialogue_voice")
+    resolved = resolve_voice(voice)
+    if resolved:
+        return resolved
+    return narrator_voice
 
 
 def archetype_delta(traits, key):
@@ -519,30 +565,38 @@ def make_silence(path, seconds):
 async def synthesize_performed(text, output, voice, profile):
     units = split_performance_units(text, int(profile.get("max_unit_chars", 180)))
     if len(units) == 1:
-        await synthesize_resilient(text, output, voice, profile["rate"], profile["pitch"])
-        return [{"type": classify_unit(text, profile), "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
+        selected_voice = voice_for_text(text, voice, profile)
+        await synthesize_resilient(text, output, selected_voice, profile["rate"], profile["pitch"])
+        return [{"type": classify_unit(text, profile), "voice": selected_voice, "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
 
     with tempfile.TemporaryDirectory(prefix="edge-tts-perform-") as temp_name:
         temp_dir = Path(temp_name)
         concat_items = []
         raw_plan = []
+        speaker_hint = None
         for index, unit in enumerate(units):
             unit_type = classify_unit(unit, profile)
             rate, pitch = apply_scene_arc(rate_for_text(unit, profile), pitch_for_text(unit, profile), index, len(units), profile, unit_type)
             gap = line_gap(unit, profile)
+            selected_voice = voice_for_text(unit, voice, profile, speaker_hint)
             raw_plan.append(
                 {
                     "unit": unit,
                     "type": unit_type,
+                    "voice": selected_voice,
                     "rate": rate,
                     "pitch": pitch,
                     "pause_after": round(gap, 3),
                 }
             )
+            if not is_dialogue(unit):
+                hinted = speaker_from_context(unit, profile)
+                if hinted:
+                    speaker_hint = hinted
         plan = smooth_performance_plan(raw_plan, profile)
         for index, item in enumerate(plan, 1):
             voice_path = temp_dir / f"voice-{index:03d}.mp3"
-            await synthesize_resilient(item["unit"], voice_path, voice, item["rate"], item["pitch"])
+            await synthesize_resilient(item["unit"], voice_path, item["voice"], item["rate"], item["pitch"])
             concat_items.append(voice_path)
             gap = item["pause_after"]
             if gap > 0 and index < len(units):
@@ -688,7 +742,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate narration with Microsoft Edge TTS.")
     parser.add_argument("--storyboard", required=True, type=Path)
     parser.add_argument("--voice", default="vi-female", help="Preset vi-female, vi-male, en-female, en-male, or full Edge voice name.")
-    parser.add_argument("--voice-style", choices=sorted(VOICE_STYLES), default="story-emotional")
+    parser.add_argument("--voice-style", choices=sorted(VOICE_STYLES), default="wasteland-dark")
     parser.add_argument("--learning-file", type=Path, default=Path(r"E:\ThanhMV\auto-video-generator\config\voice_learning.json"))
     parser.add_argument("--character-bible", type=Path, default=None)
     parser.add_argument("--rate", default="auto")

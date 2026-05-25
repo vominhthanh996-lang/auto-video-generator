@@ -433,3 +433,67 @@ Quy trình mới:
 - Dùng log hiện có để chặn trùng URL giữa các checkpoint; nếu đã học link rồi thì bỏ qua.
 - Thêm `learning_action_items.md` để gom việc nên code sau này, tách khỏi log học dài.
 - Thêm scoring cho storyboard: khớp audio, đúng nhân vật, đúng đạo cụ, đúng không gian, continuity với scene trước.
+
+---
+
+## 2026-05-25 12:00 Asia/Bangkok - Auto Learning Checkpoint 05
+
+### Nguồn đã kiểm tra
+
+- M Studio - AI Character Consistency in Storyboards 2026
+  URL: https://mstudio.ai/blog/storyboarding/ai-character-consistency-storyboards
+  Ghi chú: Character consistency nghĩa là frame 1 và frame 40 vẫn là cùng một người: cùng mặt, dáng, trang phục và visual identity.
+- AI Magicx - Long-form AI video with character consistency
+  URL: https://www.aimagicx.com/blog/long-form-ai-video-character-consistency-guide-2026
+  Ghi chú: Long-form cần character reference sheets, batch generation, consistency review, editing và color grading; sound design phải được đầu tư tương xứng với hình.
+- Seedance - Character Consistency Guide 2026
+  URL: https://www.seedance.tv/blog/seedance-character-consistency-guide-2026
+  Ghi chú: Image-to-video/reference workflow mạnh hơn text-to-video khi cần giữ cùng nhân vật qua nhiều cảnh.
+- Genra - AI Video Character Consistency Guide
+  URL: https://genra.ai/blog/ai-video-character-consistency-guide
+  Ghi chú: Storyboard mode/multi-shot planning phù hợp hơn cho long-form character series.
+- CANVAS - Continuity-Aware Narratives via Visual Agentic Storyboarding
+  URL: https://arxiv.org/abs/2604.13452
+  Ghi chú: Cần character continuity, persistent background anchors, location-aware planning.
+- Lights, Camera, Consistency - Multistage Pipeline for Character-Stable AI Video Stories
+  URL: https://arxiv.org/abs/2512.16954
+  Ghi chú: Visual anchoring rất quan trọng; bỏ anchoring làm character consistency rớt mạnh.
+- StoryBlender - Inter-Shot Consistent and Editable 3D Storyboard
+  URL: https://arxiv.org/abs/2604.03315
+  Ghi chú: Tách global assets khỏi shot-specific variables bằng continuity memory graph.
+- YouTube retention / storytelling pacing notes
+  Ghi chú: Video truyện dài không cần cắt nhanh kiểu shorts, nhưng 10 giây đầu phải rõ câu hỏi/hook và nhịp đọc không được ì.
+
+### Tao học được gì về voice
+
+- Lỗi thực tế vừa gặp: voice `wasteland-dark` đang đọc chậm và pause quá lâu. Cảm xúc nặng không đồng nghĩa với kéo giãn mọi câu.
+- Voice viral cho truyện dài cần `flow`: câu phải trôi, pause chỉ dùng ở điểm có ý nghĩa. Nếu pause nhiều, người nghe cảm giác máy đọc hoặc câu chuyện bị tụt lực.
+- Nên tách hai tham số: `emotion_weight` và `pause_weight`. Có thể giọng vẫn lạnh/nặng nhưng pause thấp hơn.
+- Narrator nên có tốc độ nền gần tự nhiên hơn; chỉ hạ tốc ở nội tâm, nguy hiểm gần, hoặc reveal.
+- Nhân vật cần voice lane riêng, nhưng lane không nên làm tổng audio chậm thêm. Thoại nhân vật khác narrator bằng tone/rhythm, không phải bằng pause dài.
+- Trước khi render full video, cần có bước `voice audit`: tính tổng duration, words per minute, average pause, scene quá dài bất thường.
+
+### Tao học được gì về hình/storyboard
+
+- Long-form nên ưu tiên reference/anchor trước motion. Nếu nhân vật và bối cảnh chưa khóa được, tăng motion chỉ làm lỗi rõ hơn.
+- Storyboard nên giữ `global assets`: nhân vật, bối cảnh, đạo cụ, mood màu. Mỗi shot chỉ đổi biến cục bộ: góc máy, hành động, khoảng cách camera, ánh sáng.
+- Với mode hybrid manual ChatGPT, prompt tổng phải cho ChatGPT đọc toàn bộ scene manual trước, lập character/setting sheet, rồi mới tạo từng ảnh.
+- Prompt từng scene cần có filename bắt buộc, must-show, current action, continuity from previous scene. Như vậy mày copy sang ChatGPT app sẽ ít bị lạc nhân vật hơn.
+- ComfyUI local nên nhận các scene đơn giản/nền/chuyển tiếp; ChatGPT manual nên nhận key scene khó: nhiều cảm xúc, nhiều nhân vật, cảnh mở, cảnh reveal, cảnh hành động khó.
+
+### Ảnh hưởng tới pipeline/code
+
+- Cần sửa voice preset `wasteland-dark`: tăng rate, giảm comma/sentence/paragraph pause, giữ tone lạnh bằng pitch/style thay vì kéo dài im lặng.
+- Thêm `voice_quality_report.json`: tổng số từ, tổng duration, WPM, scene longest, pause profile, cảnh nào quá chậm.
+- Thêm `--voice-speed-profile`: `natural`, `dramatic`, `fast-retention`, để chọn nhịp đọc theo mục tiêu.
+- Với hybrid manual, thêm prompt tổng ở đầu `chatgpt_image_prompts.md` để ChatGPT hiểu toàn bộ character/setting consistency trước khi làm từng scene.
+- Pipeline nên cho phép `--prepare-only` hoặc `--hybrid-prompts-only` để tạo prompt ChatGPT mà không tự chạy ComfyUI/voice nếu người dùng chỉ muốn chuẩn bị ảnh manual.
+- Không render tiếp khi voice audit fail hoặc khi người dùng đã nói voice không ổn.
+
+### Action items nên cân nhắc
+
+- Sửa ngay `wasteland-dark` cho nhanh hơn và ít pause hơn trước khi render lại chương 2.
+- Thêm `validate_voice_timing.py` để bắt cảnh đọc quá chậm.
+- Thêm prompt tổng cho `chatgpt_image_prompts.md`.
+- Thêm `hybrid-prompts-only` mode để chỉ tạo storyboard + prompt manual, chưa chạy asset nặng.
+- Thêm phân loại scene cho hybrid: `manual_priority_score` thay vì chia 50% đơn giản.

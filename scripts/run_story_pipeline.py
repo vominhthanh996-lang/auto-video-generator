@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import time
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -17,13 +18,13 @@ from video_presets import apply_video_format, preset_for
 
 
 BASE_STYLE = (
-    "premium cinematic post-apocalyptic webnovel keyframe, YouTube story visual, "
-    "one clear main subject, readable danger, emotional survival drama, "
-    "foreground debris framing, midground character action, background ruined world, "
-    "strong silhouette, warm practical light against cold toxic atmosphere, "
-    "volumetric dust and fog, realistic wet rusted metal, cracked concrete, torn cloth, "
-    "35mm cinema lens, shallow depth of field, dramatic rim light, subtle film grain, "
-    "muted natural colors, high contrast but not oversaturated, no text, no watermark"
+    "premium cinematic post-apocalyptic wasteland webnovel keyframe, grounded survival drama, "
+    "dirty realistic characters inside a torn tarp shelter or ruined junkyard when the scene implies shelter, "
+    "rusted barrels, broken plastic sheets, patched canvas, muddy floor, scavenged metal bowls, oil lantern or weak practical light, "
+    "foreground survival props, midground character action, background ruined industrial wasteland and dusty sky, "
+    "warm amber practical light against cold polluted daylight, realistic grime, torn cloth, sweat, ash, dried blood, "
+    "35mm cinema lens, shallow depth of field, dramatic rim light, subtle film grain, muted natural colors, "
+    "high contrast but not oversaturated, no text, no watermark"
 )
 
 DEFAULT_NEGATIVE = (
@@ -132,6 +133,12 @@ def has_any(text, words):
     return any(word in text for word in words)
 
 
+def normalize_vi(text):
+    decomposed = unicodedata.normalize("NFD", text.lower())
+    ascii_text = "".join(char for char in decomposed if unicodedata.category(char) != "Mn")
+    return ascii_text.replace("đ", "d")
+
+
 def image_prompt(narration, style):
     compact = narration[:360].replace("\n", " ")
     lower = narration.lower()
@@ -192,6 +199,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     continuity = continuity or {}
     compact = narration[:420].replace("\n", " ")
     lower = narration.lower()
+    plain = normalize_vi(narration)
     characters = []
     setting = []
     props = []
@@ -207,6 +215,23 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         add_unique(characters, "a wounded male mercenary in a black tactical coat")
     if not characters:
         add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
+
+    # Accent-safe story anchors. These keep chapter 2 from drifting into generic
+    # apocalypse wallpaper when the source text is proper UTF-8 Vietnamese.
+    if "lam tich" in plain or "nang" in plain:
+        characters = [
+            item for item in characters
+            if "exact survivor" not in item.lower() and "lone survivor" not in item.lower()
+        ]
+        add_unique(
+            characters,
+            "Lam Tich, a thin sixteen-year-old wasteland scavenger girl, dirty torn gray-brown coat, messy black hair tied back, soot on face, cracked lips, alert exhausted eyes",
+        )
+    if "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain:
+        add_unique(
+            characters,
+            "Tan Da, a wounded male mercenary in black tactical coat, feverish, unable to stand, dangerous even while weak",
+        )
 
     keyword_rules = [
         (["bãi rác", "đống rác", "nhặt rác"], setting, "radioactive junkyard outside the city"),
@@ -239,6 +264,23 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         if has_any(lower, words):
             add_unique(target, phrase)
 
+    ascii_keyword_rules = [
+        (["leu", "goc leu", "cua leu", "day dong"], setting, "inside a poor wasteland tarp shelter made from torn canvas, copper wire, rusted poles, patched plastic sheets"),
+        (["khu 17"], setting, "District 17 wasteland outside the safe city, dirty scrap tents and ruined industrial silhouettes"),
+        (["nap hop", "hai ngum", "nuoc", "nuoc sach"], props, "small metal can lid holding the last two sips of yellowish filtered water"),
+        (["vang nhat", "bui than", "mui ri sat", "than loc"], props, "murky yellow water with charcoal dust and rusty metallic residue"),
+        (["tan da nam", "nguoi han nong", "khong the nhuc nhich", "nua than duoi"], actions, "Tan Da lying in the shelter corner, feverish and unable to move his lower body"),
+        (["vet thuong bung", "mau van tham", "duong tim xanh", "gen sup do"], actions, "abdominal wound wrapped in dirty cloth, black blood seeping, blue-purple vein lines under the skin"),
+        (["dua nap hop", "ben moi", "uong"], actions, "Lam Tich carefully raising the metal can lid to Tan Da's lips"),
+        (["con lai co uong", "nhuong nuoc"], actions, "tense intimate survival moment as the wounded man leaves the last water for the girl"),
+        (["mat do", "bui", "khong khoc"], mood, "suppressed emotion, red dusty eyes, refusing to admit weakness"),
+        (["tieng buoc chan", "ba nguoi", "ngoai cua leu"], actions, "three threatening footsteps outside the shelter entrance"),
+        (["cam dao", "con dao gay", "luoi mo"], props, "broken survival knife gripped tightly in Lam Tich's dirty hand"),
+    ]
+    for words, target, phrase in ascii_keyword_rules:
+        if has_any(plain, words):
+            add_unique(target, phrase)
+
     if has_any(lower, ["mở mắt", "tỉnh lại", "xuyên không", "chết một lần"]):
         add_unique(actions, "surreal awakening after death, weak body lying among rust and ash")
     if has_any(lower, ["lục", "túi", "chạm vào", "rút"]):
@@ -263,6 +305,8 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
 
     prompt = (
         "Faithfully illustrate this exact story beat from the narration, not a generic apocalypse wallpaper. "
+        "Visual benchmark: gritty cinematic survival frame like a high-budget wasteland film still, dirty scavenger girl beside wounded black-clad man inside a torn tarp shelter, oil lantern glow, rusted barrels, muddy floor, ruined industrial wasteland visible outside when relevant. "
+        "Prioritize story accuracy, body language, dirty props, and readable interaction over beauty portrait. "
         f"CONTINUITY FROM PREVIOUS SCENE: {continuity.get('summary', 'start of sequence')}. "
         f"MUST SHOW: {', '.join(must_show)}. "
         f"Characters: {', '.join(characters)}. "
@@ -274,6 +318,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"Important props: {', '.join(props) if props else 'only props described by the narration'}. "
         f"Mood: {', '.join(mood)}. "
         "Composition must make the story action readable at first glance, with foreground story objects, midground characters, and background world context. "
+        "Use grounded Asian webnovel casting, natural faces, dirty damaged clothes, no idol beauty, no clean fantasy armor. "
         "Keep spatial logic from the previous scene unless the narration clearly changes location. "
         "Avoid unrelated cabins, clean modern streets, fantasy armor, random portraits, extra characters, or objects not implied by the narration. "
         f"{style}. Scene context: {compact}"
@@ -486,7 +531,7 @@ def main():
     parser.add_argument("--format", choices=["youtube", "tiktok"], default="youtube")
     parser.add_argument("--language", default="vi")
     parser.add_argument("--voice", default="vi-female")
-    parser.add_argument("--voice-style", choices=["plain", "story-emotional", "wasteland-dark"], default="story-emotional")
+    parser.add_argument("--voice-style", choices=["plain", "story-emotional", "wasteland-dark"], default="wasteland-dark")
     parser.add_argument("--character-bible", type=Path, help="Optional JSON file with persistent character voice traits.")
     parser.add_argument("--words-per-image", type=int, default=32)
     parser.add_argument("--min-scenes", type=int, default=50)
