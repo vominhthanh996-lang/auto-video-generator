@@ -499,6 +499,36 @@ def prepare_tts_text(text, profile):
     return spoken.strip()
 
 
+def sanitize_for_tts_fallback(text):
+    spoken = text.strip()
+    replacements = {
+        '"': " ",
+        "“": " ",
+        "”": " ",
+        "‘": " ",
+        "’": " ",
+        "「": " ",
+        "」": " ",
+        "『": " ",
+        "』": " ",
+    }
+    for old, new in replacements.items():
+        spoken = spoken.replace(old, new)
+    spoken = re.sub(r"[#*_`~]+", " ", spoken)
+    spoken = re.sub(r"\s*[-–—]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[;:]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[!?]+\s*", ". ", spoken)
+    spoken = re.sub(r"\s*[.]+\s*", ". ", spoken)
+    spoken = re.sub(r"\s*,\s*,+", ", ", spoken)
+    spoken = re.sub(r"\s+", " ", spoken)
+    return spoken.strip(" ,.")
+
+
+def has_spoken_content(text):
+    cleaned = sanitize_for_tts_fallback(text)
+    return bool(re.search(r"[\w\u00C0-\u024F]", cleaned))
+
+
 def rate_for_text(text, profile):
     archetypes = detect_archetypes(text, profile)
     if archetypes:
@@ -626,6 +656,9 @@ def make_silence(path, seconds):
 
 async def synthesize_performed(text, output, voice, profile):
     units = split_performance_units(text, int(profile.get("max_unit_chars", 180)))
+    units = [unit for unit in units if has_spoken_content(unit)]
+    if not units:
+        units = [text]
     if len(units) == 1:
         selected_voice = voice_for_text(text, voice, profile)
         await synthesize_resilient(prepare_tts_text(text, profile), output, selected_voice, profile["rate"], profile["pitch"])
@@ -717,7 +750,19 @@ async def synthesize_resilient(text, output, voice, rate, pitch):
                 output.unlink()
             await asyncio.sleep(2)
 
-    parts = split_text(text)
+    fallback_text = sanitize_for_tts_fallback(text)
+    if fallback_text and fallback_text != text:
+        for _ in range(3):
+            try:
+                await synthesize(fallback_text, output, voice, rate, pitch)
+                return
+            except Exception as exc:
+                last_error = exc
+                if output.exists() and output.stat().st_size == 0:
+                    output.unlink()
+                await asyncio.sleep(1)
+
+    parts = split_text(fallback_text or text)
     if len(parts) == 1:
         words = text.split()
         if len(words) > 8:

@@ -162,6 +162,80 @@ def size_for_ratio(ratio: str) -> tuple[int, int]:
     return RATIO_TO_SIZE.get(ratio, RATIO_TO_SIZE["9:16"])
 
 
+def scene_prompt(scene: dict[str, Any]) -> str:
+    prompt = (
+        scene.get("comfy_prompt")
+        or scene.get("image_prompt")
+        or scene.get("stability_prompt")
+        or scene.get("visual")
+        or scene.get("text")
+        or scene.get("narration")
+        or ""
+    )
+    prompt = str(prompt).strip()
+    if not prompt:
+        return ""
+    shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
+    action_text = ", ".join(str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()).lower()
+    lower_prompt = prompt.lower()
+    two_character_scene = (
+        ("woman" in lower_prompt and "man" in lower_prompt)
+        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
+        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
+    )
+    if "close" in shot_type or "detail" in shot_type:
+        face_control = (
+            "close survival detail shot, story-specific props and hands readable, "
+            "do not repeat the same full shelter composition, keep only the character parts needed for this action visible, "
+            "no solo glamour portrait"
+        )
+    elif "wide" in shot_type or "establishing" in shot_type:
+        face_control = (
+            "wide establishing cinematic shot, environment scale clearly visible, "
+            "characters smaller in frame but still identifiable, no repeated medium two-shot framing"
+        )
+    elif "action" in shot_type or "predator" in shot_type or "threat" in shot_type or "hiding" in action_text:
+        face_control = (
+            "dynamic cinematic action shot, readable movement and threat direction, "
+            "change camera angle from the calm shelter two-shot, maintain identity but not the same pose"
+        )
+    elif two_character_scene:
+        face_control = (
+            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
+            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
+            "injured black-clad man lying half-reclined on the right, warm oil lantern between them, torn tarp shelter, "
+            "no solo portrait, no close-up crop"
+        )
+    else:
+        face_control = (
+            "medium cinematic story shot, full head visible, clear natural Asian human face, "
+            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
+            "dirty post-apocalyptic survival drama, no close-up crop"
+        )
+    if face_control.lower() not in prompt.lower():
+        prompt = f"{face_control}, {prompt}"
+    if DEFAULT_POSITIVE_SUFFIX.lower() not in prompt.lower():
+        prompt = f"{prompt}, {DEFAULT_POSITIVE_SUFFIX}"
+    return prompt
+
+
+def scene_reference_policy(scene: dict[str, Any], default_reference: str, default_denoise: float) -> tuple[str, float | None]:
+    if not default_reference:
+        return "", None
+    shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
+    action_text = ", ".join(str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()).lower()
+    scene_id = str(scene.get("id") or "")
+    if scene_id.endswith("001"):
+        return default_reference, min(max(default_denoise, 0.30), 0.34)
+    if "close" in shot_type or "detail" in shot_type:
+        return "", None
+    if "wide" in shot_type or "establishing" in shot_type:
+        return default_reference, 0.42
+    if "action" in shot_type or "predator" in shot_type or "threat" in shot_type or "hiding" in action_text:
+        return default_reference, 0.52
+    return default_reference, default_denoise
+
+
 def node_choices(object_info: dict[str, Any], class_type: str, input_name: str) -> list[str]:
     node = object_info.get(class_type, {})
     required = node.get("input", {}).get("required", {})
@@ -559,7 +633,16 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
         raise SystemExit(f"Scene {index + 1} has no image prompt.")
     width, height = (args.width, args.height) if args.width and args.height else size_for_ratio(args.aspect_ratio)
     seed = args.seed + index if args.seed >= 0 else int(time.time() * 1000) % 2_147_483_647
-    workflow = build_sd15_workflow(args, prompt, seed, width, height)
+    scene_reference_image, scene_reference_denoise = scene_reference_policy(scene, args.reference_image, args.reference_denoise)
+    original_reference_image = args.reference_image
+    original_reference_denoise = args.reference_denoise
+    args.reference_image = scene_reference_image
+    args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
+    try:
+        workflow = build_sd15_workflow(args, prompt, seed, width, height)
+    finally:
+        args.reference_image = original_reference_image
+        args.reference_denoise = original_reference_denoise
     started_at = time.time()
     history = submit_and_wait(args.comfy_url, workflow, args.timeout, args.poll_seconds)
     try:
@@ -580,8 +663,8 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
         "size": f"{width}x{height}",
         "hires_scale": args.hires_scale,
         "upscale_model": args.upscale_model,
-        "reference_image": str(Path(args.reference_image).resolve()) if args.reference_image else "",
-        "reference_denoise": args.reference_denoise if args.reference_image else None,
+        "reference_image": str(Path(scene_reference_image).resolve()) if scene_reference_image else "",
+        "reference_denoise": scene_reference_denoise if scene_reference_image else None,
     }
     return output
 
