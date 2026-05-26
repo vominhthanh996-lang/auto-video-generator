@@ -22,9 +22,18 @@ BASE_STYLE = (
     "dirty realistic characters inside a torn tarp shelter or ruined junkyard when the scene implies shelter, "
     "rusted barrels, broken plastic sheets, patched canvas, muddy floor, scavenged metal bowls, oil lantern or weak practical light, "
     "foreground survival props, midground character action, background ruined industrial wasteland and dusty sky, "
-    "warm amber practical light against cold polluted daylight, realistic grime, torn cloth, sweat, ash, dried blood, "
+    "warm amber practical light against cold polluted daylight, realistic grime, torn cloth, sweat, ash, dirty bandages, dark stains on cloth, "
     "35mm cinema lens, shallow depth of field, dramatic rim light, subtle film grain, muted natural colors, "
-    "high contrast but not oversaturated, no text, no watermark"
+    "high contrast but not oversaturated, clear natural faces, readable eyes nose mouth and jaw, no text, no watermark"
+)
+
+REFERENCE_IMAGE_RECIPE = (
+    "Reference composition recipe from Thanh's approved ChatGPT sample: cinematic 16:9 shelter interior, "
+    "Lam Tich sits or kneels in the left third, her dirty but beautiful face readable in three-quarter profile; "
+    "Tan Da lies or half-reclines in the right third, black tactical clothing, bandaged injured abdomen, clear side-profile face; "
+    "a warm oil lantern glows between them as the visual anchor; torn tarp walls and hanging patched canvas frame the top and right side; "
+    "foreground has rusty bucket, bottle, scraps, dirty survival props; background opens to a ruined industrial wasteland with haze and distant structures; "
+    "lighting is warm amber lantern plus pale cold daylight from outside, deep shadows, realistic grime, no clean studio look"
 )
 
 DEFAULT_NEGATIVE = (
@@ -32,7 +41,26 @@ DEFAULT_NEGATIVE = (
     "bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, "
     "text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, "
     "empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, "
-    "white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin"
+    "white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, "
+    "blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, "
+    "cropped head, head out of frame, face out of frame, missing female character, missing male character, "
+    "single standing man, random gun pose"
+    ", melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, "
+    "missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, "
+    "over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
+)
+
+LAM_TICH_VISUAL = (
+    "Lam Tich, a beautiful fragile sixteen-year-old Asian wasteland scavenger girl with a lovely youthful maiden look, "
+    "soft delicate facial features under soot and grime, clear pretty eyes that still look tired and wary, cracked lips, "
+    "messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, "
+    "quiet stubborn survival beauty, pretty but believable in the wasteland, not glamorous, not clean, not doll-like"
+)
+
+TAN_DA_VISUAL = (
+    "Tan Da, an injured Asian male mercenary with a clear sharply rendered face, strong straight brows, "
+    "steady righteous eyes, principled protective aura, restrained masculine dignity, wet messy black hair, black tactical coat, "
+    "lying or half-reclining because he cannot stand, feverish but still upright in spirit, abdomen wrapped with dirty bandages, not villainous"
 )
 
 
@@ -144,14 +172,14 @@ def image_prompt(narration, style):
     lower = narration.lower()
     characters = []
     if "l\u00e2m t\u1ecbch" in lower:
-        characters.append("a fragile young female wasteland scavenger, dirty torn coat, exhausted but alert, side or back view")
+        characters.append(LAM_TICH_VISUAL)
     if "t\u1ea7n d\u00e3" in lower or "ng\u01b0\u1eddi \u0111\u00e0n \u00f4ng" in lower or "l\u00ednh \u0111\u00e1nh thu\u00ea" in lower:
-        characters.append("a wounded male mercenary in black tactical coat, half sitting in the debris, guarded expression")
+        characters.append(TAN_DA_VISUAL)
     character_line = ", ".join(characters) if characters else "a lone survivor in torn wasteland clothes, small human silhouette against a hostile world"
 
     visual = "wide cinematic survival scene in a radioactive wasteland, red dusty sky, ruined vehicles, polluted haze"
     if has_any(lower, ["ch\u00f3", "th\u00fa", "bi\u1ebfn d\u1ecb", "g\u1ea7m g\u1eeb", "m\u00f3ng vu\u1ed1t"]):
-        visual = "tense predator encounter, mutated two-jawed dogs tearing at a corpse beside an overturned truck, survivor hiding behind concrete"
+        visual = "tense predator encounter, mutated scavenger dogs threatening near an overturned truck, survivor hiding behind concrete"
     elif has_any(lower, ["b\u00e3i r\u00e1c", "\u0111\u1ed1ng r\u00e1c", "t\u1ee7 l\u1ea1nh", "t\u00fai nh\u1ef1a", "nh\u1eb7t r\u00e1c"]):
         visual = "scroll-stopping wasteland junkyard scene, rusted refrigerator, dead plastic bags, broken metal sheets, toxic red sky pressing down"
     elif has_any(lower, ["m\u01b0a", "m\u01b0a \u0111en", "m\u01b0a \u0111\u1ed9c"]):
@@ -161,9 +189,9 @@ def image_prompt(narration, style):
     elif has_any(lower, ["t\u01b0\u1eddng", "th\u00e0nh", "c\u1ed5ng th\u00e0nh", "v\u00e0o th\u00e0nh"]):
         visual = "massive safe-zone wall far beyond a polluted wasteland, tiny survivor looking toward unreachable clean city lights"
     elif has_any(lower, ["th\u1ecbt h\u1ed9p", "\u0111\u1ed3 \u0103n", "b\u00e1nh", "k\u1eb9o", "n\u01b0\u1edbc s\u1ea1ch", "tinh th\u1ea1ch"]):
-        visual = "close survival-detail shot, dirty hands reaching toward a precious can of meat and a tiny crystal among dust and blood"
+        visual = "close survival-detail shot, dirty hands reaching toward a precious can of meat and a tiny crystal among dust and ash"
     elif has_any(lower, ["m\u00e1u", "v\u1ebft th\u01b0\u01a1ng", "dao", "b\u0103ng", "gen s\u1ee5p \u0111\u1ed5"]):
-        visual = "dark medical survival moment, wounded mercenary with black blood and torn tactical coat, scavenger holding a knife under harsh rim light"
+        visual = "dark medical survival moment, injured mercenary with dirty bandages and torn tactical coat, scavenger holding a knife under harsh rim light"
     elif has_any(lower, ["g\u1ea7m xe", "c\u00f2i", "ba h\u01a1i", "m\u1ed9t h\u01a1i d\u00e0i"]):
         visual = "claustrophobic shot under an overturned truck, survivors pressed into mud while mutant claws scrape just outside"
     elif has_any(lower, ["xuy\u00ean kh\u00f4ng", "ch\u1ebft", "m\u1edf m\u1eaft", "k\u00fd \u1ee9c"]):
@@ -184,6 +212,9 @@ def add_unique(items, value):
 
 def shot_type_for(narration, scene_index):
     lower = narration.lower()
+    plain = normalize_vi(narration)
+    if has_any(plain, ["dua nap hop", "ben moi", "hai ngum", "nhuong nuoc", "nhin hai ngum nuoc"]):
+        return "approved reference medium two-shot: girl on left, wounded man reclining on right, lantern between them, faces readable"
     if scene_index == 1 or has_any(lower, ["bầu trời", "xa xa", "bức tường khổng lồ", "thành an toàn"]):
         return "wide establishing shot showing place and scale"
     if has_any(lower, ["thịt hộp", "kẹo", "tinh thạch", "còi", "dao", "than lọc", "vết thương"]):
@@ -207,31 +238,36 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     mood = []
     shot_type = shot_type_for(narration, scene_index)
 
-    if "lâm tịch" in lower or "nàng" in lower:
-        add_unique(characters, "Lam Tich, a fragile young female wasteland scavenger in a dirty torn coat, exhausted but stubborn")
-    if "tần dã" in lower:
-        add_unique(characters, "Tan Da, a wounded male mercenary in a black tactical coat, restrained and dangerous")
+    if "lâm tịch" in lower or "nàng" in lower or "cô" in lower:
+        add_unique(characters, LAM_TICH_VISUAL)
+    if "tần dã" in lower or "hắn" in lower:
+        add_unique(characters, TAN_DA_VISUAL)
     elif "người đàn ông" in lower or "lính đánh thuê" in lower:
-        add_unique(characters, "a wounded male mercenary in a black tactical coat")
-    if not characters:
-        add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
-
+        add_unique(characters, TAN_DA_VISUAL)
     # Accent-safe story anchors. These keep chapter 2 from drifting into generic
     # apocalypse wallpaper when the source text is proper UTF-8 Vietnamese.
-    if "lam tich" in plain or "nang" in plain:
+    if "lam tich" in plain or "nang" in plain or "co" in plain:
         characters = [
             item for item in characters
             if "exact survivor" not in item.lower() and "lone survivor" not in item.lower()
         ]
         add_unique(
             characters,
-            "Lam Tich, a thin sixteen-year-old wasteland scavenger girl, dirty torn gray-brown coat, messy black hair tied back, soot on face, cracked lips, alert exhausted eyes",
+            LAM_TICH_VISUAL,
         )
-    if "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain:
+    if "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain or "han" in plain:
         add_unique(
             characters,
-            "Tan Da, a wounded male mercenary in black tactical coat, feverish, unable to stand, dangerous even while weak",
+            TAN_DA_VISUAL,
         )
+    if not characters:
+        continuity_text = " ".join(continuity.get("anchors", []))
+        if "Lam Tich" in continuity_text:
+            add_unique(characters, LAM_TICH_VISUAL)
+        if "Tan Da" in continuity_text:
+            add_unique(characters, TAN_DA_VISUAL)
+    if not characters:
+        add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
 
     keyword_rules = [
         (["bãi rác", "đống rác", "nhặt rác"], setting, "radioactive junkyard outside the city"),
@@ -242,7 +278,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         (["mưa đen", "mưa độc"], setting, "black toxic rain residue and corroded wet surfaces"),
         (["bức tường khổng lồ", "thành an toàn", "vào thành", "cổng thành", "sau bức tường là thành"], setting, "distant massive safe-zone wall beyond the wasteland"),
         (["chó hai hàm", "chó", "thú biến dị", "biến dị", "gầm gừ", "móng vuốt"], actions, "mutated two-jawed dogs threatening the scene"),
-        (["xác", "người chết"], props, "fresh human corpse on the ground"),
+        (["xác", "người chết"], props, "ominous covered body-shaped bundle on the ground"),
         (["xe tải lật"], props, "overturned truck beside the corpse"),
         (["bức tường bê tông", "tường bê tông"], props, "collapsed concrete wall used as cover"),
         (["gầm xe"], actions, "survivors hiding under the vehicle"),
@@ -252,9 +288,9 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         (["kẹo"], props, "small unwrapped candy"),
         (["tinh thạch"], props, "tiny crystal shard"),
         (["dao"], props, "survival knife in a dirty hand"),
-        (["máu đen", "máu"], props, "dark blood stains"),
+        (["máu đen", "máu"], props, "dark stains on dirty cloth"),
         (["vết thương"], actions, "close survival treatment of a serious wound"),
-        (["gen sụp đổ"], mood, "body-horror genetic collapse tension"),
+        (["gen sụp đổ"], mood, "tense radiation sickness atmosphere"),
         (["nước", "lon rỉ"], props, "rusty water can and unsafe scavenged water"),
         (["than lọc"], props, "used poison-filtering charcoal"),
         (["sợ", "nín thở", "run"], mood, "breathless fear and survival tension"),
@@ -270,7 +306,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         (["nap hop", "hai ngum", "nuoc", "nuoc sach"], props, "small metal can lid holding the last two sips of yellowish filtered water"),
         (["vang nhat", "bui than", "mui ri sat", "than loc"], props, "murky yellow water with charcoal dust and rusty metallic residue"),
         (["tan da nam", "nguoi han nong", "khong the nhuc nhich", "nua than duoi"], actions, "Tan Da lying in the shelter corner, feverish and unable to move his lower body"),
-        (["vet thuong bung", "mau van tham", "duong tim xanh", "gen sup do"], actions, "abdominal wound wrapped in dirty cloth, black blood seeping, blue-purple vein lines under the skin"),
+        (["vet thuong bung", "mau van tham", "duong tim xanh", "gen sup do"], actions, "injured abdomen wrapped in dirty cloth, dark stains visible on fabric, blue-purple radiation sickness lines under the skin"),
         (["dua nap hop", "ben moi", "uong"], actions, "Lam Tich carefully raising the metal can lid to Tan Da's lips"),
         (["con lai co uong", "nhuong nuoc"], actions, "tense intimate survival moment as the wounded man leaves the last water for the girl"),
         (["mat do", "bui", "khong khoc"], mood, "suppressed emotion, red dusty eyes, refusing to admit weakness"),
@@ -304,9 +340,11 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     must_show = must_show[:9]
 
     prompt = (
-        "Faithfully illustrate this exact story beat from the narration, not a generic apocalypse wallpaper. "
-        "Visual benchmark: gritty cinematic survival frame like a high-budget wasteland film still, dirty scavenger girl beside wounded black-clad man inside a torn tarp shelter, oil lantern glow, rusted barrels, muddy floor, ruined industrial wasteland visible outside when relevant. "
-        "Prioritize story accuracy, body language, dirty props, and readable interaction over beauty portrait. "
+        "Premium cinematic realistic wasteland story frame with clear natural human faces and readable story blocking. "
+        "Visual benchmark: gritty cinematic survival frame like a high-budget wasteland film still, beautiful but grimy scavenger girl beside injured righteous black-clad man inside a torn tarp shelter, oil lantern glow, rusted barrels, muddy floor, ruined industrial wasteland visible outside when relevant. "
+        f"{REFERENCE_IMAGE_RECIPE}. "
+        "Prioritize story accuracy, body language, dirty props, readable interaction, consistent faces, and clear facial identity over generic wallpaper. "
+        "Faces must be close enough to read: natural eyes, natural nose, natural mouth, no melted features, no warped anatomy. "
         f"CONTINUITY FROM PREVIOUS SCENE: {continuity.get('summary', 'start of sequence')}. "
         f"MUST SHOW: {', '.join(must_show)}. "
         f"Characters: {', '.join(characters)}. "
@@ -318,7 +356,11 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"Important props: {', '.join(props) if props else 'only props described by the narration'}. "
         f"Mood: {', '.join(mood)}. "
         "Composition must make the story action readable at first glance, with foreground story objects, midground characters, and background world context. "
-        "Use grounded Asian webnovel casting, natural faces, dirty damaged clothes, no idol beauty, no clean fantasy armor. "
+        "For emotional survival beats, use the approved reference medium two-shot: Lam Tich left, Tan Da reclining right, lantern centered, dirty props in foreground, wasteland depth behind. "
+        "When both Lam Tich and Tan Da are in the scene, keep their body positions consistent with the reference; do not make Tan Da stand, do not crop heads or hide faces. "
+        "Use grounded Asian webnovel casting, natural faces, dirty damaged clothes, readable faces when characters are visible, no idol makeup, no clean fantasy armor. "
+        "Lam Tich should have a beautiful youthful maiden face, soft and memorable, but must remain weak, hungry, dirty, and believable in the wasteland. "
+        "Tan Da must not look like a faceless villain; show a clearer righteous protective expression whenever his face appears. "
         "Keep spatial logic from the previous scene unless the narration clearly changes location. "
         "Avoid unrelated cabins, clean modern streets, fantasy armor, random portraits, extra characters, or objects not implied by the narration. "
         f"{style}. Scene context: {compact}"
@@ -538,6 +580,8 @@ def main():
     parser.add_argument("--max-scenes", type=int, default=90)
     parser.add_argument("--batch-size", type=int, default=5)
     parser.add_argument("--image-preset", choices=["safe", "balanced", "quality"], default="balanced")
+    parser.add_argument("--image-reference", default="", help="Optional local reference image for ComfyUI img2img composition lock.")
+    parser.add_argument("--image-reference-denoise", type=float, default=0.28)
     parser.add_argument("--image-mode", choices=["comfy", "hybrid-manual"], default="comfy")
     parser.add_argument("--manual-image-ratio", type=float, default=0.5, help="For hybrid-manual, fraction of scenes assigned to ChatGPT manual images.")
     parser.add_argument("--import-manual-images", action="store_true", help="Attach existing manual ChatGPT images before validation/render.")
@@ -559,6 +603,8 @@ def main():
     parser.add_argument("--comfy-root", default=r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable")
     parser.add_argument("--skip-images", action="store_true")
     parser.add_argument("--skip-voice", action="store_true")
+    parser.add_argument("--skip-sfx", action="store_true", help="Skip subtle story-aware sound effects under narration.")
+    parser.add_argument("--sfx-volume", type=float, default=0.45, help="SFX mix volume after cleanup. Try 0.35-0.65.")
     parser.add_argument("--skip-render", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
@@ -620,11 +666,15 @@ def main():
         str(preset["height"]),
         "--preset",
         args.image_preset,
+        "--reference-denoise",
+        str(args.image_reference_denoise),
         "--delay-between-batches",
         str(args.image_delay),
         "--process-priority",
         args.image_priority,
     ]
+    if args.image_reference:
+        image_cmd.extend(["--reference-image", args.image_reference])
     voice_cmd = [
         sys.executable,
         str(scripts / "generate_voice_edge.py"),
@@ -653,6 +703,19 @@ def main():
         code = process.wait()
         if code != 0:
             raise SystemExit(f"{name} stage failed with exit code {code}")
+
+    if not args.skip_sfx:
+        sfx_cmd = [
+            sys.executable,
+            str(scripts / "add_story_sfx.py"),
+            "--storyboard",
+            str(storyboard),
+            "--volume",
+            str(args.sfx_volume),
+        ]
+        if args.overwrite:
+            sfx_cmd.append("--overwrite")
+        run(sfx_cmd, env=env)
 
     sync_durations(storyboard, args.duration_pad)
     missing_manual = missing_manual_images(storyboard) if args.image_mode == "hybrid-manual" else []

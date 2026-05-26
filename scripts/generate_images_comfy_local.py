@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import time
 import urllib.error
 import urllib.parse
@@ -21,6 +22,7 @@ from typing import Any
 
 
 DEFAULT_POSITIVE_SUFFIX = (
+    "clear natural human faces, anatomically correct eyes nose mouth and jaw, readable facial expression, "
     "cinematic composition, strong readable silhouette, clear foreground midground background, "
     "realistic lighting, warm practical light against cold toxic atmosphere, volumetric fog and dust, "
     "wet rusted metal, cracked concrete, torn fabric, soft bloom, atmospheric perspective, "
@@ -33,7 +35,11 @@ DEFAULT_NEGATIVE = (
     "bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, "
     "watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, random dots, "
     "white speckles, noisy, over-sharpened, waxy skin, empty landscape, generic fantasy art, "
-    "beauty portrait, fashion photo, clean clothes, modern city, cute pose"
+    "beauty portrait, fashion photo, clean clothes, modern city, cute pose, "
+    "melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, "
+    "missing nose, broken nose, bad mouth, fused lips, extra teeth, duplicate face, two faces on one head, "
+    "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
+    "solo portrait, single person, close-up portrait, extreme close-up, cropped body, missing second character"
 )
 
 RATIO_TO_SIZE = {
@@ -124,6 +130,29 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     prompt = str(prompt).strip()
     if not prompt:
         return ""
+    # SD 1.5 CLIP truncates long prompts, so put the essential face/composition
+    # control at the very front instead of burying it after story context.
+    lower_prompt = prompt.lower()
+    two_character_scene = (
+        ("woman" in lower_prompt and "man" in lower_prompt)
+        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
+        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
+    )
+    if two_character_scene:
+        face_control = (
+            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
+            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
+            "injured black-clad man lying half-reclined on the right, "
+            "warm oil lantern between them, torn tarp shelter, no solo portrait, no close-up crop"
+        )
+    else:
+        face_control = (
+            "medium cinematic story shot, full head visible, clear natural Asian human face, "
+            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
+            "dirty post-apocalyptic survival drama, no close-up crop"
+        )
+    if face_control.lower() not in prompt.lower():
+        prompt = f"{face_control}, {prompt}"
     if DEFAULT_POSITIVE_SUFFIX.lower() not in prompt.lower():
         prompt = f"{prompt}, {DEFAULT_POSITIVE_SUFFIX}"
     return prompt
@@ -316,6 +345,18 @@ def maybe_tiled_encode(args: argparse.Namespace, workflow: dict[str, Any], image
     return [str(node_id), 0], node_id + 1
 
 
+def prepare_reference_image(args: argparse.Namespace) -> str:
+    if not args.reference_image:
+        return ""
+    source = Path(args.reference_image).expanduser().resolve()
+    if not source.exists():
+        raise SystemExit(f"Reference image not found: {source}")
+    args.comfy_input_dir.mkdir(parents=True, exist_ok=True)
+    target = args.comfy_input_dir / f"auto_video_reference{source.suffix.lower() or '.png'}"
+    shutil.copy2(source, target)
+    return target.name
+
+
 def build_sd15_workflow(args: argparse.Namespace, prompt: str, seed: int, width: int, height: int) -> dict[str, Any]:
     workflow: dict[str, Any] = {
         "1": {
@@ -342,20 +383,43 @@ def build_sd15_workflow(args: argparse.Namespace, prompt: str, seed: int, width:
     next_id += 4
     workflow[pos_id] = {"class_type": "CLIPTextEncode", "inputs": {"clip": clip_ref, "text": prompt}}
     workflow[neg_id] = {"class_type": "CLIPTextEncode", "inputs": {"clip": clip_ref, "text": args.negative_prompt}}
-    workflow[latent_id] = {"class_type": "EmptyLatentImage", "inputs": {"width": width, "height": height, "batch_size": 1}}
+    reference_filename = prepare_reference_image(args)
+    if reference_filename:
+        load_id = latent_id
+        scale_id = str(next_id)
+        encode_id = str(next_id + 1)
+        next_id += 2
+        workflow[load_id] = {"class_type": "LoadImage", "inputs": {"image": reference_filename}}
+        workflow[scale_id] = {
+            "class_type": "ImageScale",
+            "inputs": {
+                "image": [load_id, 0],
+                "upscale_method": "lanczos",
+                "width": width,
+                "height": height,
+                "crop": "center",
+            },
+        }
+        workflow[encode_id] = {"class_type": "VAEEncode", "inputs": {"pixels": [scale_id, 0], "vae": vae_ref}}
+        latent_ref = [encode_id, 0]
+        first_denoise = args.reference_denoise
+    else:
+        workflow[latent_id] = {"class_type": "EmptyLatentImage", "inputs": {"width": width, "height": height, "batch_size": 1}}
+        latent_ref = [latent_id, 0]
+        first_denoise = 1.0
     workflow[sampler_id] = {
         "class_type": "KSampler",
         "inputs": {
             "model": model_ref,
             "positive": [pos_id, 0],
             "negative": [neg_id, 0],
-            "latent_image": [latent_id, 0],
+            "latent_image": latent_ref,
             "seed": seed,
             "steps": args.steps,
             "cfg": args.cfg,
             "sampler_name": args.sampler,
             "scheduler": args.scheduler,
-            "denoise": 1.0,
+            "denoise": first_denoise,
         },
     }
 
@@ -516,6 +580,8 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
         "size": f"{width}x{height}",
         "hires_scale": args.hires_scale,
         "upscale_model": args.upscale_model,
+        "reference_image": str(Path(args.reference_image).resolve()) if args.reference_image else "",
+        "reference_denoise": args.reference_denoise if args.reference_image else None,
     }
     return output
 
@@ -546,6 +612,9 @@ def main() -> None:
     parser.add_argument("--final-width", type=int, default=1080)
     parser.add_argument("--final-height", type=int, default=1920)
     parser.add_argument("--negative-prompt", default=DEFAULT_NEGATIVE)
+    parser.add_argument("--reference-image", default=os.environ.get("LOCAL_IMAGE_REFERENCE", ""), help="Optional local image used as img2img composition reference.")
+    parser.add_argument("--reference-denoise", type=float, default=0.28, help="Img2img denoise for --reference-image. Lower keeps composition, higher changes more.")
+    parser.add_argument("--comfy-input-dir", type=Path, default=Path(r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\ComfyUI\input"))
     parser.add_argument("--output-format", default="png")
     parser.add_argument("--prefix", default="auto-video-local")
     parser.add_argument("--comfy-output-dir", type=Path, default=Path(r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\ComfyUI\output"))
@@ -568,6 +637,8 @@ def main() -> None:
         "vae": args.vae or "checkpoint-embedded",
         "loras": args.lora,
         "upscale_model": args.upscale_model or "final-lanczos-only",
+        "reference_image": str(Path(args.reference_image).resolve()) if args.reference_image else "",
+        "reference_denoise": args.reference_denoise if args.reference_image else None,
         "steps": args.steps,
         "cfg": args.cfg,
         "sampler": args.sampler,

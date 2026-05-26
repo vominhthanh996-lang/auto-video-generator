@@ -45,6 +45,8 @@ def main():
     parser.add_argument("--final-width", type=int, default=1080)
     parser.add_argument("--final-height", type=int, default=1920)
     parser.add_argument("--preset", choices=["safe", "balanced", "quality"], default="balanced")
+    parser.add_argument("--reference-image", default="", help="Optional local reference image for ComfyUI img2img composition lock.")
+    parser.add_argument("--reference-denoise", type=float, default=0.28)
     parser.add_argument("--delay-between-batches", type=float, default=0.0)
     parser.add_argument("--process-priority", choices=["normal", "below-normal", "idle"], default="normal")
     parser.add_argument("--skip-manual", action="store_true", help="Skip scenes marked image_provider=manual-chatgpt.")
@@ -72,11 +74,15 @@ def main():
             str(args.final_height),
             "--preset",
             args.preset,
+            "--reference-denoise",
+            str(args.reference_denoise),
             "--start-scene",
             str(start),
             "--end-scene",
             str(end),
         ]
+        if args.reference_image:
+            cmd.extend(["--reference-image", args.reference_image])
         if args.overwrite:
             cmd.append("--overwrite")
         if args.skip_manual:

@@ -497,3 +497,123 @@ Quy trình mới:
 - Thêm prompt tổng cho `chatgpt_image_prompts.md`.
 - Thêm `hybrid-prompts-only` mode để chỉ tạo storyboard + prompt manual, chưa chạy asset nặng.
 - Thêm phân loại scene cho hybrid: `manual_priority_score` thay vì chia 50% đơn giản.
+
+---
+
+## 2026-05-25 14:05 Asia/Bangkok - Auto Learning Checkpoint 06
+
+### Nguồn đã kiểm tra
+
+- M Studio - AI Character Consistency in Storyboards 2026
+  URL: https://mstudio.ai/blog/storyboarding/ai-character-consistency-storyboards
+  Ghi chú: Nhấn mạnh storyboard dài phải giữ cùng khuôn mặt, trang phục, dáng người và visual identity qua nhiều frame.
+- Genra - AI Video Character Consistency Guide
+  URL: https://genra.ai/blog/ai-video-character-consistency-guide
+  Ghi chú: Multi-shot/storyboard mode và reference workflow giúp giảm lỗi nhân vật đổi mặt giữa các cảnh.
+- Vertical Motion - How to Keep AI Characters Consistent Across Scenes 2026
+  URL: https://motion.verticalstudio.ai/blog/ai-character-consistency-guide
+  Ghi chú: Frame chaining/keyframe stitching dùng frame trước làm neo cho frame sau để giữ continuity.
+- AI Magicx - AI Multi-Shot Video Character Consistency 2026
+  URL: https://www.aimagicx.com/blog/ai-multi-shot-video-character-consistency-2026
+  Ghi chú: Nếu không có multi-shot planning, người xem dễ bị rối vì đứt không gian, đứt đạo cụ, đứt nhân vật.
+- CANVAS: Continuity-Aware Narratives via Visual Agentic Storyboarding
+  URL: https://arxiv.org/abs/2604.13452
+  Ghi chú: Cần character continuity, persistent background anchors và location-aware planning; nghiên cứu báo cải thiện continuity đạo cụ/nhân vật/bối cảnh.
+- StoryBlender: Inter-Shot Consistent and Editable 3D Storyboard
+  URL: https://arxiv.org/abs/2604.03315
+  Ghi chú: Ý tưởng đáng học là tách global assets khỏi biến cục bộ từng shot bằng continuity memory graph.
+- CineAGI: Character-Consistent Movie Creation
+  URL: https://arxiv.org/abs/2604.23579
+  Ghi chú: Multi-scene video cần cinematic blueprint, character-centric tracking và audio-visual synchronization.
+
+### Tao học được gì về voice
+
+- Voice không được chỉ là preset tốc độ. Cần có voice director layer: narrator lane ổn định, character lane riêng, scene mood riêng.
+- Nhịp đọc truyện dài nên nhanh hơn bản cũ: câu thường trôi tự nhiên, pause ngắn; chỉ giữ pause rõ ở scene break, cliffhanger, reveal quan trọng.
+- Giọng nhân vật phải được suy ra từ người nói, không phải chỉ thấy tên ai trong câu là đổi giọng. Ví dụ Lâm Tịch gọi "Tần Dã" thì người nói vẫn là Lâm Tịch.
+- Đối thoại nên khác narration bằng voice/rhythm/pitch nhẹ, không diễn quá lố. Tần Dã cần ít hơi, trầm và chắc; Lâm Tịch yếu nhưng lì, không được đọc nhõng nhẽo.
+- Cần voice audit trước khi render: duration, WPM, đoạn quá chậm, pause trung bình, số lần đổi voice trong một scene.
+
+### Tao học được gì về hình/storyboard
+
+- Ảnh chưa khớp truyện vì pipeline vẫn nghĩ theo từng ảnh độc lập. Cần global visual bible + scene state trước khi gen bất kỳ ảnh nào.
+- Mỗi scene phải có: location_anchor, character_state, prop_state, current_action, previous_handoff, next_handoff. Không có mấy thứ này thì model dễ tạo ảnh đẹp nhưng sai truyện.
+- Với truyện phế thổ, vibe tốt không phải chỉ xám/tối. Frame phải đọc được trong 1 giây: ai đang làm gì, đang ở đâu, đạo cụ sống còn là gì, nguy hiểm ở đâu.
+- Character consistency nên khóa bằng reference sheet hoặc ít nhất prompt canonical rất ngắn và lặp lại: mặt, tóc, tuổi, áo, vết thương, đạo cụ. Không nên nhồi quá nhiều mô tả mới mỗi scene.
+- ComfyUI SD1.5 local nên giao các cảnh đơn giản/nền/đạo cụ; cảnh nhiều nhân vật hoặc cần đúng mặt nên đưa vào hybrid ChatGPT/manual hoặc dùng reference workflow.
+
+### Ảnh hưởng tới pipeline/code
+
+- Bắt buộc tạo `character_voice_bible.json` và `visual_bible.json` trước khi render phần 2 trở đi.
+- Thêm `scene_state.json` hoặc nhúng state vào storyboard: nhân vật đang bị thương thế nào, đang cầm gì, đang ở góc lều nào, đạo cụ còn lại bao nhiêu.
+- Thêm bước `voice_quality_report.json` sau gen voice sample/full: WPM, duration từng scene, pause profile, voice lane đã dùng.
+- Thêm bước visual audit trước image generation: nếu scene thiếu must_show hoặc action quá chung chung thì fail sớm, chưa gen ảnh.
+- Với mode hybrid, cần prompt tổng cho ChatGPT tạo/giữ character sheet trước, rồi mới tạo từng ảnh. Key scene khó ưu tiên manual, không chia 50/50 ngẫu nhiên.
+- Không render video full nếu sample image chưa đạt đúng nội dung hoặc voice audit báo quá chậm.
+
+### Action items nên cân nhắc
+
+- Sửa speaker detection: thoại lấy người nói từ câu dẫn trước dấu hai chấm, không chỉ dựa vào tên xuất hiện trong lời thoại.
+- Tạo `build_visual_bible.py` hoặc stage trong `run_story_pipeline.py` để sinh visual bible từ chương/truyện.
+- Tạo `validate_voice_timing.py` để đo WPM/pause và cảnh báo trước render.
+- Tạo `audit_storyboard_alignment.py` chấm điểm scene theo đúng nhân vật, đạo cụ, bối cảnh, hành động, handoff.
+- Tạo `hybrid_key_scene_selector` để chọn cảnh khó cho ChatGPT/manual: nhiều nhân vật, đối thoại cảm xúc, vết thương, đạo cụ quan trọng, hành động cần khớp.
+
+---
+
+## 2026-05-25 14:36 Asia/Bangkok - Auto Learning Checkpoint 07
+
+### Nguồn đã kiểm tra
+
+- Vois - Dialogue That Breathes: Pacing Techniques for AI Audiobooks
+  URL: https://vois.so/blog/audiobook-dialogue-pacing
+  Ghi chú: Dialogue cần nhịp thở tự nhiên, nhưng pause nên có chủ đích giữa lượt thoại, không chèn nghỉ máy móc sau từng mệnh đề.
+- Narration Box - Scene Breaks in AI Audiobooks
+  URL: https://narrationbox.com/blog/scene-break-section-pause-conventions-ai-audiobooks
+  Ghi chú: Scene break cần tín hiệu bằng pause/tone, còn trong cùng cảnh thì quá nhiều pause làm mất dòng kể.
+- CinemaDrop - Scene Continuity Image Generator
+  URL: https://www.cinemadrop.com/scene-continuity-image-generator
+  Ghi chú: Story-first storyboard phải giữ nhân vật, địa điểm, đạo cụ chung một visual DNA.
+- CinemaDrop - Consistent Prop Generator
+  URL: https://www.cinemadrop.com/consistent-prop-generator
+  Ghi chú: Hero props như dao gãy, nắp hộp nước, than lọc độc cần được giữ nhận diện qua nhiều shot.
+- M Studio - Character Consistency Feature
+  URL: https://mstudio.ai/features/consistent-characters
+  Ghi chú: Character profiles nên hoạt động như lớp khóa identity độc lập với model tạo ảnh.
+- Story2Board - Visual Continuity / CANVAS lessons
+  URL: https://story2board.com/blog/ai-storyboard-visual-continuity-canvas
+  Ghi chú: Cần appearance states: cùng nhân vật nhưng trạng thái áo, thương tích, đạo cụ thay đổi theo thời điểm truyện.
+- AxiomStory - AI Video Continuity
+  URL: https://axiomstory.com/blog/ai-video-continuity
+  Ghi chú: Mỗi shot phải kế thừa visual canon, current story state và production logic của shot trước/sau.
+
+### Tao học được gì về voice
+
+- Lỗi vừa gặp trong sample rất quan trọng: không nên chèn silence nhân tạo giữa mọi unit. TTS đã có ngắt câu tự nhiên; nếu thêm silence nữa sẽ thành cảm giác từng câu bị cắt rời.
+- Pause chỉ nên dùng ở scene break, chuyển POV, reveal lớn, hoặc giữa lượt thoại nhân vật. Trong cùng một câu thoại dài của một nhân vật, không được tự đổi speaker giữa chừng.
+- Speaker detection phải hiểu cấu trúc: câu dẫn trước dấu hai chấm xác định người nói; nội dung trong ngoặc kép phải giữ speaker đó cho tới khi đóng ngoặc.
+- Không được suy speaker chỉ vì tên xuất hiện trong lời thoại. Ví dụ Lâm Tịch gọi "Tần Dã" thì người nói vẫn là Lâm Tịch.
+- Voice plan cần log `active_dialogue_speaker`, `pause_inserted`, và cảnh báo nếu một quoted dialogue đổi voice giữa chừng.
+
+### Tao học được gì về hình/storyboard
+
+- Key props cần memory riêng giống nhân vật. Trong truyện phế thổ, đạo cụ nhỏ như nắp hộp nước, dao gãy, than lọc độc chính là "cốt truyện hình ảnh".
+- Visual continuity phải có appearance states: Lâm Tịch trước/sau bị thương, Tần Dã sốt cao/không đứng được, lượng nước còn hai ngụm, vết thương đang thấm máu.
+- Prompt ảnh không nên chỉ nói cinematic; phải có current action rõ: ai làm gì với đạo cụ nào, ở góc nào của lều, trạng thái từ scene trước là gì.
+- Cảnh nhiều nhân vật trong ComfyUI local dễ sai giới tính/mặt. Các key scene có đối thoại cảm xúc hoặc hai nhân vật nên ưu tiên hybrid/manual/reference workflow.
+
+### Ảnh hưởng tới pipeline/code
+
+- `wasteland-dark` nên mặc định không chèn silence giữa units (`max_inserted_pause = 0`) hoặc chỉ chèn ở scene break.
+- Cần thêm validator cho voice: nếu trong cùng quoted dialogue có hơn một voice thì fail trước khi render.
+- `voice-plan.json` nên ghi rõ speaker được suy ra từ đâu: narrator, character alias, dialogue context, fallback.
+- Storyboard nên lưu `prop_state` và `character_appearance_state` để ảnh sau không tự reset đồ vật/trạng thái nhân vật.
+- Hybrid selector nên ưu tiên manual cho scene có: hai nhân vật, close interaction, đạo cụ sống còn, thương tích, hoặc continuity dài.
+
+### Action items nên cân nhắc
+
+- Thêm `validate_voice_consistency.py`: kiểm tra pause quá dài, đổi voice giữa ngoặc kép, và WPM bất thường.
+- Sửa voice generator để chỉ thêm artificial silence ở scene break, không thêm sau mỗi sentence/clause.
+- Thêm `active_dialogue_speaker` vào voice plan cho debug dễ đọc.
+- Tạo `prop_bible.json` cho nắp hộp nước, dao gãy, than lọc độc, lon rỉ, thịt hộp.
+- Thêm visual audit rule: mỗi scene phải có ít nhất một action + một prop/location cụ thể nếu narration có mô tả.

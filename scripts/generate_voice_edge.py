@@ -53,31 +53,34 @@ VOICE_STYLES = {
         "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 185,
+        "max_unit_chars": 700,
     },
     "wasteland-dark": {
         "rate": "+3%",
         "pitch": "-3Hz",
-        "comma_pause": 0.03,
-        "sentence_pause": 0.11,
-        "paragraph_pause": 0.24,
-        "dialogue_pause": 0.08,
-        "scene_pause": 0.32,
+        "max_inserted_pause": 0.0,
+        "tight_punctuation": True,
+        "short_sentence_as_comma": True,
+        "comma_pause": 0.01,
+        "sentence_pause": 0.045,
+        "paragraph_pause": 0.12,
+        "dialogue_pause": 0.04,
+        "scene_pause": 0.2,
         "danger_rate": "+5%",
         "soft_rate": "-2%",
         "dialogue_rate": "+4%",
         "inner_rate": "-4%",
         "reveal_rate": "+0%",
         "list_rate": "+4%",
-        "cliffhanger_pause": 0.24,
-        "reveal_pause": 0.25,
-        "inner_pause": 0.2,
-        "list_pause": 0.05,
+        "cliffhanger_pause": 0.09,
+        "reveal_pause": 0.1,
+        "inner_pause": 0.08,
+        "list_pause": 0.02,
         "hook_rate_delta": 2,
         "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 190,
+        "max_unit_chars": 700,
     },
 }
 
@@ -101,25 +104,25 @@ CHARACTER_ARCHETYPES = {
         "hints": ("thật thà", "chân thật", "thành thật", "ngây ngô", "chất phác"),
         "rate_delta": -2,
         "pitch_delta": 0,
-        "pause_delta": 0.08,
+        "pause_delta": 0.03,
     },
     "righteous": {
         "hints": ("chính khí", "ngay thẳng", "chính trực", "kiên định", "bảo vệ", "không lùi"),
         "rate_delta": -1,
         "pitch_delta": -1,
-        "pause_delta": 0.04,
+        "pause_delta": 0.02,
     },
     "evil": {
         "hints": ("tà ác", "ác độc", "nham hiểm", "tàn nhẫn", "độc ác", "sát ý"),
         "rate_delta": -4,
         "pitch_delta": -3,
-        "pause_delta": 0.12,
+        "pause_delta": 0.05,
     },
     "hypocrite": {
         "hints": ("giả nhân giả nghĩa", "đạo mạo", "ra vẻ", "miệng thì", "ngoài mặt", "giả vờ tử tế"),
         "rate_delta": -3,
         "pitch_delta": 1,
-        "pause_delta": 0.1,
+        "pause_delta": 0.04,
     },
     "flattering": {
         "hints": ("nịnh nọt", "lấy lòng", "xun xoe", "cười nịnh", "dạ dạ", "vâng vâng"),
@@ -137,7 +140,7 @@ CHARACTER_ARCHETYPES = {
         "hints": ("lạnh lùng", "lạnh nhạt", "vô cảm", "bình tĩnh", "không cảm xúc", "lạnh xuống"),
         "rate_delta": -5,
         "pitch_delta": -2,
-        "pause_delta": 0.12,
+        "pause_delta": 0.04,
     },
     "afraid": {
         "hints": ("run rẩy", "sợ hãi", "hoảng", "kinh hãi", "tái mặt", "nín thở"),
@@ -328,6 +331,15 @@ def speaker_from_context(text, profile):
     return matches[0][0]
 
 
+def unit_opens_dialogue(text):
+    return any(mark in text for mark in ('"', "“", "‘", "「", "『"))
+
+
+def unit_closes_dialogue(text):
+    stripped = text.rstrip()
+    return stripped.endswith('"') or any(mark in text for mark in ("”", "’", "」", "』"))
+
+
 def voice_for_text(text, default_voice, profile, speaker_hint=None):
     bible = profile.get("_character_bible") or {}
     narrator = (bible.get("narrator") or {}).get("voice")
@@ -412,6 +424,39 @@ def line_gap(text, profile):
 def split_performance_units(text, max_chars=180):
     normalized = re.sub(r"[ \t]+", " ", text.strip())
     normalized = re.sub(r"\n{3,}", "\n\n", normalized)
+    max_chars = max(700, int(max_chars))
+    quote_pattern = re.compile(r'(".*?"|â€œ.*?â€|ã€Œ.*?ã€|ã€Ž.*?ã€)')
+    merged_pieces = []
+    for paragraph in re.split(r"\n\n+", normalized):
+        paragraph = paragraph.strip()
+        if not paragraph:
+            continue
+        position = 0
+        blocks = []
+        for match in quote_pattern.finditer(paragraph):
+            if match.start() > position:
+                blocks.append(paragraph[position:match.start()].strip())
+            blocks.append(match.group(0).strip())
+            position = match.end()
+        if position < len(paragraph):
+            blocks.append(paragraph[position:].strip())
+        for block in [item for item in blocks if item]:
+            if len(block) <= max_chars:
+                merged_pieces.append(block)
+                continue
+            current = ""
+            for sentence in re.split(r"(?<=[.!?â€¦ã€‚ï¼ï¼Ÿ])\s+", block):
+                sentence = sentence.strip()
+                if not sentence:
+                    continue
+                if current and len(current) + len(sentence) + 1 > max_chars:
+                    merged_pieces.append(current.strip())
+                    current = sentence
+                else:
+                    current = f"{current} {sentence}".strip()
+            if current:
+                merged_pieces.append(current.strip())
+    return merged_pieces or [text]
     pieces = []
     for paragraph in re.split(r"(\n\n+)", normalized):
         if not paragraph.strip():
@@ -435,6 +480,23 @@ def split_performance_units(text, max_chars=180):
             if current:
                 pieces.append(current.strip())
     return pieces or [text]
+
+
+def prepare_tts_text(text, profile):
+    if not profile.get("tight_punctuation"):
+        return text
+    spoken = re.sub(r"[ \t]+", " ", text.strip())
+    spoken = re.sub(r"\s*[,，]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[;；:：]\s*", ", ", spoken)
+    if profile.get("short_sentence_as_comma"):
+        spoken = re.sub(r"\s*[.。]\s+(?=\S)", ", ", spoken)
+        spoken = re.sub(r"\s*[!?！？]\s+(?=\S)", ", ", spoken)
+    else:
+        spoken = re.sub(r"\s*[.。]\s+(?=\S)", ". ", spoken)
+        spoken = re.sub(r"\s*[!?！？]\s+(?=\S)", "! ", spoken)
+    spoken = re.sub(r",\s*,+", ", ", spoken)
+    spoken = re.sub(r"\s+", " ", spoken)
+    return spoken.strip()
 
 
 def rate_for_text(text, profile):
@@ -566,7 +628,7 @@ async def synthesize_performed(text, output, voice, profile):
     units = split_performance_units(text, int(profile.get("max_unit_chars", 180)))
     if len(units) == 1:
         selected_voice = voice_for_text(text, voice, profile)
-        await synthesize_resilient(text, output, selected_voice, profile["rate"], profile["pitch"])
+        await synthesize_resilient(prepare_tts_text(text, profile), output, selected_voice, profile["rate"], profile["pitch"])
         return [{"type": classify_unit(text, profile), "voice": selected_voice, "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
 
     with tempfile.TemporaryDirectory(prefix="edge-tts-perform-") as temp_name:
@@ -574,11 +636,25 @@ async def synthesize_performed(text, output, voice, profile):
         concat_items = []
         raw_plan = []
         speaker_hint = None
+        active_dialogue_speaker = None
+        max_inserted_pause = profile.get("max_inserted_pause")
         for index, unit in enumerate(units):
+            hinted = speaker_from_context(unit, profile)
+            if hinted and not is_dialogue(unit):
+                speaker_hint = hinted
+            if unit_opens_dialogue(unit) and speaker_hint:
+                active_dialogue_speaker = speaker_hint
             unit_type = classify_unit(unit, profile)
+            if active_dialogue_speaker and not unit_type.startswith("dialogue"):
+                unit_type = f"dialogue-{active_dialogue_speaker}"
             rate, pitch = apply_scene_arc(rate_for_text(unit, profile), pitch_for_text(unit, profile), index, len(units), profile, unit_type)
             gap = line_gap(unit, profile)
-            selected_voice = voice_for_text(unit, voice, profile, speaker_hint)
+            if max_inserted_pause is not None:
+                gap = min(gap, float(max_inserted_pause))
+            if active_dialogue_speaker:
+                selected_voice = voice_for_character(active_dialogue_speaker, profile) or voice_for_text(unit, voice, profile, speaker_hint)
+            else:
+                selected_voice = voice_for_text(unit, voice, profile, speaker_hint)
             raw_plan.append(
                 {
                     "unit": unit,
@@ -589,14 +665,12 @@ async def synthesize_performed(text, output, voice, profile):
                     "pause_after": round(gap, 3),
                 }
             )
-            if not is_dialogue(unit):
-                hinted = speaker_from_context(unit, profile)
-                if hinted:
-                    speaker_hint = hinted
+            if active_dialogue_speaker and unit_closes_dialogue(unit):
+                active_dialogue_speaker = None
         plan = smooth_performance_plan(raw_plan, profile)
         for index, item in enumerate(plan, 1):
             voice_path = temp_dir / f"voice-{index:03d}.mp3"
-            await synthesize_resilient(item["unit"], voice_path, item["voice"], item["rate"], item["pitch"])
+            await synthesize_resilient(prepare_tts_text(item["unit"], profile), voice_path, item["voice"], item["rate"], item["pitch"])
             concat_items.append(voice_path)
             gap = item["pause_after"]
             if gap > 0 and index < len(units):
