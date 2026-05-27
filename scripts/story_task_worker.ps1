@@ -20,6 +20,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$PSNativeCommandUseErrorActionPreference = $false
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $defaultRepoRoot = Split-Path -Parent $scriptRoot
 $defaultWorkRoot = Split-Path -Parent $defaultRepoRoot
@@ -161,8 +162,22 @@ function Invoke-Step {
     )
     Write-Log ("START {0}" -f $Label)
     Update-TaskStatus -Overall "running" -CurrentNode $Label -Message ("Running: {0}" -f $Label)
-    & $script:PythonExe $FilePath @Arguments *>> $script:LogPath
-    $exitCode = $LASTEXITCODE
+    $stdoutPath = [System.IO.Path]::GetTempFileName()
+    $stderrPath = [System.IO.Path]::GetTempFileName()
+    try {
+        $processArgs = @($FilePath) + $Arguments
+        $process = Start-Process -FilePath $script:PythonExe -ArgumentList $processArgs -NoNewWindow -Wait -PassThru -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath
+        if ((Test-Path $stdoutPath) -and (Get-Item $stdoutPath).Length -gt 0) {
+            Get-Content -Path $stdoutPath -Raw | Out-File -FilePath $script:LogPath -Append -Encoding utf8
+        }
+        if ((Test-Path $stderrPath) -and (Get-Item $stderrPath).Length -gt 0) {
+            Get-Content -Path $stderrPath -Raw | Out-File -FilePath $script:LogPath -Append -Encoding utf8
+        }
+        $exitCode = $process.ExitCode
+    }
+    finally {
+        Remove-Item $stdoutPath, $stderrPath -ErrorAction SilentlyContinue
+    }
     if ($exitCode -ne 0) {
         Write-Log ("FAIL {0} (exit {1})" -f $Label, $exitCode)
         Update-TaskStatus -Overall "failed" -CurrentNode $Label -Message ("Failed: {0}" -f $Label)
@@ -266,13 +281,17 @@ function Initialize-Project {
         "--format", $script:Format,
         "--image-mode", $script:ImageMode,
         "--run-mode", $script:RunMode,
-        "--image-reference", $script:ImageReference,
-        "--image-reference-denoise", [string]$script:ImageReferenceDenoise,
         "--skip-images",
         "--skip-voice",
         "--skip-sfx",
         "--skip-render"
     )
+    if ($script:ImageReference) {
+        $args += @(
+            "--image-reference", $script:ImageReference,
+            "--image-reference-denoise", [string]$script:ImageReferenceDenoise
+        )
+    }
     Invoke-Step -Label "initialize project" -FilePath (Join-Path $script:RepoRoot "scripts\run_story_pipeline.py") -Arguments $args
 }
 
@@ -361,10 +380,14 @@ function Invoke-ImageStep {
         "--final-height", [string]$script:FinalHeight,
         "--preset", "balanced",
         "--start-scene", [string]$targetScene,
-        "--end-scene", [string]$targetScene,
-        "--reference-image", $script:ImageReference,
-        "--reference-denoise", [string]$script:ImageReferenceDenoise
+        "--end-scene", [string]$targetScene
     )
+    if ($script:ImageReference) {
+        $imageArgs += @(
+            "--reference-image", $script:ImageReference,
+            "--reference-denoise", [string]$script:ImageReferenceDenoise
+        )
+    }
     Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $script:RepoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
     Start-Sleep -Seconds 5
     return $false
@@ -375,16 +398,22 @@ function Invoke-FinalRender {
         render = @{ status = "running"; detail = "Rendering final mp4" }
     }
     $args = @(
-        "--source", $script:StorySource,
         "--project", $script:ProjectRoot,
         "--format", $script:Format,
         "--image-mode", $script:ImageMode,
         "--run-mode", $script:RunMode,
-        "--image-reference", $script:ImageReference,
-        "--image-reference-denoise", [string]$script:ImageReferenceDenoise,
         "--skip-images",
         "--skip-voice"
     )
+    if ($script:StorySource) {
+        $args = @("--source", $script:StorySource) + $args
+    }
+    if ($script:ImageReference) {
+        $args += @(
+            "--image-reference", $script:ImageReference,
+            "--image-reference-denoise", [string]$script:ImageReferenceDenoise
+        )
+    }
     Invoke-Step -Label "final render" -FilePath (Join-Path $script:RepoRoot "scripts\run_story_pipeline.py") -Arguments $args
 }
 
