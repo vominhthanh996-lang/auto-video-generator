@@ -129,7 +129,7 @@ def probe_duration(path):
         return 0.1
 
 
-def find_sfx_asset(library, cue, preferred_terms=()):
+def find_sfx_asset(library, cue, preferred_terms=(), selector_text=""):
     if not library or not library.exists():
         return None
     names = SFX_ASSET_NAMES.get(cue, (cue,))
@@ -150,9 +150,13 @@ def find_sfx_asset(library, cue, preferred_terms=()):
             if any(term in normalize(path.stem) for term in preferred_terms)
         ]
         if preferred:
-            return sorted(preferred, key=lambda item: item[0])[0][1]
+            matches = preferred
     if matches:
-        return sorted(matches, key=lambda item: item[0])[0][1]
+        ordered = [path for _duration, path in sorted(matches, key=lambda item: (item[0], item[1].name))]
+        if len(ordered) == 1:
+            return ordered[0]
+        selector = abs(hash(f"{cue}|{normalize(selector_text)}|{'-'.join(preferred_terms)}"))
+        return ordered[selector % len(ordered)]
     return None
 
 
@@ -291,7 +295,7 @@ def build_sfx_from_assets(path, duration, cues, library, volume, text):
     for cue in cues:
         context = sfx_context_for_cue(text, cue)
         preferred_terms = preferred_terms_for_cue(text, cue)
-        asset = find_sfx_asset(library, cue, preferred_terms)
+        asset = find_sfx_asset(library, cue, preferred_terms, text)
         if not asset:
             missing.append({"cue": cue, "context": context, "reason": "missing asset"})
             continue
@@ -459,7 +463,7 @@ def detect_cues(text):
     normalized = normalize(text)
     cues = []
     tense = suspense_score(normalized) >= 2
-    if tense and not has_any(normalized, FOOTSTEP_WORDS) and not has_any(normalized, SCRAPE_WORDS):
+    if tense:
         cues.append("suspense")
     if has_any(normalized, FOOTSTEP_WORDS):
         cues.append("footsteps")

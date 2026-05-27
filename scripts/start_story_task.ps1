@@ -21,6 +21,33 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+function Test-OpsBoardAlive {
+    try {
+        $response = Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/tasks" -UseBasicParsing -TimeoutSec 2
+        return $response.StatusCode -eq 200
+    }
+    catch {
+        return $false
+    }
+}
+
+function Ensure-OpsBoard {
+    param([string]$RepoRootPath)
+    if (Test-OpsBoardAlive) {
+        return
+    }
+    $boardScript = Join-Path $RepoRootPath "scripts\start_ops_board.ps1"
+    if (-not (Test-Path $boardScript)) {
+        return
+    }
+    Start-Process -FilePath "powershell.exe" -ArgumentList @(
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", $boardScript
+    ) -WindowStyle Hidden
+    Start-Sleep -Seconds 2
+}
+
 function Quote-Arg {
     param([string]$Value)
     '"' + ($Value -replace '"', '\"') + '"'
@@ -106,6 +133,8 @@ $startupContent = @"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$resumeScript" -ConfigPath "$configPath"
 "@
 Set-Content -Path $startupLauncher -Value $startupContent -Encoding ASCII
+
+Ensure-OpsBoard -RepoRootPath $repoRootResolved
 
 Start-Process -FilePath "powershell.exe" -ArgumentList @(
     "-NoProfile",

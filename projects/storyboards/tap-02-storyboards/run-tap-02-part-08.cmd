@@ -1,4 +1,8 @@
-@echo off
-setlocal
-powershell -NoProfile -ExecutionPolicy Bypass -File "E:\ThanhMV\auto-video-generator\scripts\start_story_task.ps1" -TaskName "AutoVideo-tap-02-part-08-YouTube-WorkLocal" -StoryboardPath "E:\ThanhMV\video-projects\tap-02-storyboards\phan-08-thu-duoi-duong-ham\storyboard.json" -ProjectRoot "E:\ThanhMV\video-projects\tap-02-storyboards\phan-08-thu-duoi-duong-ham" -Format youtube -RunMode work -ImageMode comfy -UseExistingStoryboard
-endlocal
+@echo off
+setlocal
+set "SCRIPT_DIR=%~dp0"
+for %%I in ("%SCRIPT_DIR%..\..") do set "REPO_ROOT=%%~fI"
+set "PROJECT_ROOT=%SCRIPT_DIR%phan-08-thu-duoi-duong-ham"
+set "STORYBOARD=%PROJECT_ROOT%\storyboard.json"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%REPO_ROOT%\scripts\start_story_task.ps1" -TaskName "AutoVideo-tap-02-part-08-YouTube-WorkLocal" -RepoRoot "%REPO_ROOT%" -StoryboardPath "%STORYBOARD%" -ProjectRoot "%PROJECT_ROOT%" -Format youtube -RunMode work -ImageMode comfy -UseExistingStoryboard
+endlocal

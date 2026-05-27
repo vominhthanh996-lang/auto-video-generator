@@ -736,7 +736,65 @@ def build_storyboard(args):
     apply_video_format(config, args.format)
     storyboard = project / "storyboard.json"
     storyboard.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    ensure_character_voice_bible(project, text, args.voice)
     return project, storyboard, config
+
+
+def ensure_character_voice_bible(project, text, narrator_voice):
+    bible_path = project / "character_voice_bible.json"
+    if bible_path.exists():
+        return bible_path
+
+    plain = normalize_vi(text)
+    characters = {}
+    if "lam tich" in plain:
+        characters["Lâm Tịch"] = {
+            "gender": "female",
+            "voice": "vi-female",
+            "aliases": ["Lam Tich", "lâm tịch", "nàng", "cô gái", "cô"],
+            "traits": ["honest", "afraid", "cold"],
+            "voice_note": "fragile but stubborn, soft inner voice, sharper under survival pressure",
+        }
+    if "tan da" in plain:
+        characters["Tần Dã"] = {
+            "gender": "male",
+            "voice": "vi-male",
+            "aliases": ["Tan Da", "tần dã", "hắn", "người đàn ông", "lính đánh thuê"],
+            "traits": ["cold", "righteous"],
+            "voice_note": "low, restrained, calm under threat, speaks little",
+        }
+    if "hau seo" in plain:
+        characters["Hậu Sẹo"] = {
+            "gender": "male",
+            "voice": "vi-male",
+            "aliases": ["Hau Seo", "hậu sẹo", "sẹo ca"],
+            "traits": ["evil"],
+            "voice_note": "rough and threatening, but not theatrical",
+        }
+    if "lao phung" in plain:
+        characters["Lão Phùng"] = {
+            "gender": "male",
+            "voice": "vi-male",
+            "aliases": ["Lao Phung", "lão phùng", "ông già"],
+            "traits": ["cold"],
+            "voice_note": "dry, old, pragmatic",
+        }
+
+    bible = {
+        "narrator": {
+            "voice": narrator_voice or "vi-female",
+            "voice_note": "stable dark wasteland narrator lane",
+        },
+        "defaults": {
+            "dialogue_voice": "vi-female",
+            "male_dialogue_voice": "vi-male",
+            "female_dialogue_voice": "vi-female",
+            "neutral_dialogue_voice": "vi-female",
+        },
+        "characters": characters,
+    }
+    bible_path.write_text(json.dumps(bible, ensure_ascii=False, indent=2), encoding="utf-8")
+    return bible_path
 
 
 def count_assets(storyboard, key):
