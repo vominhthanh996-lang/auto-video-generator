@@ -276,102 +276,98 @@ function Initialize-Project {
     Invoke-Step -Label "initialize project" -FilePath (Join-Path $script:RepoRoot "scripts\run_story_pipeline.py") -Arguments $args
 }
 
-function Invoke-VoiceUntilComplete {
+function Invoke-VoiceAttempt {
+    param([int]$Attempt)
     if ($script:SkipVoice) {
         Write-Log "VOICE skipped by request"
         Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice skipped" -NodeUpdates @{
             voice = @{ status = "skipped"; detail = "Voice generation skipped by config" }
         }
-        return $false
-    }
-    $maxAttempts = 12
-    for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
-        $state = Get-SceneState
-        if ($state.AudioCount -ge $state.SceneCount) {
-            Write-Log ("VOICE complete {0}/{1}" -f $state.AudioCount, $state.SceneCount)
-            Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice complete" -NodeUpdates @{
-                voice = @{ status = "done"; detail = ("Audio ready {0}/{1}" -f $state.AudioCount, $state.SceneCount) }
-            }
-            return $true
-        }
-        $voiceArgs = @(
-            "--storyboard", $script:Storyboard,
-            "--voice", $script:Voice,
-            "--voice-style", $script:VoiceStyle
-        )
-        if (Test-Path $script:CharacterBible) {
-            $voiceArgs += @("--character-bible", $script:CharacterBible)
-        }
-        Write-Log ("VOICE attempt {0}: current {1}/{2}" -f $attempt, $state.AudioCount, $state.SceneCount)
-        Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message ("Voice attempt {0}" -f $attempt) -NodeUpdates @{
-            voice = @{ status = "running"; detail = ("Attempt {0}, audio {1}/{2}" -f $attempt, $state.AudioCount, $state.SceneCount) }
-        }
-        try {
-            Invoke-Step -Label ("voice attempt {0}" -f $attempt) -FilePath (Join-Path $script:RepoRoot "scripts\generate_voice_edge.py") -Arguments $voiceArgs
-        }
-        catch {
-            Write-Log ("VOICE retry after error: {0}" -f $_.Exception.Message)
-            Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice retrying after error" -NodeUpdates @{
-                voice = @{ status = "warning"; detail = $_.Exception.Message }
-            }
-            Start-Sleep -Seconds 20
-        }
+        return $true
     }
     $state = Get-SceneState
-    Write-Log ("VOICE incomplete after retries: {0}/{1}" -f $state.AudioCount, $state.SceneCount)
-    Update-TaskStatus -Overall "warning" -CurrentNode "voice" -Message "Voice incomplete after retries" -NodeUpdates @{
-        voice = @{ status = "warning"; detail = ("Audio ready {0}/{1}" -f $state.AudioCount, $state.SceneCount) }
+    if ($state.AudioCount -ge $state.SceneCount) {
+        Write-Log ("VOICE complete {0}/{1}" -f $state.AudioCount, $state.SceneCount)
+        Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice complete" -NodeUpdates @{
+            voice = @{ status = "done"; detail = ("Audio ready {0}/{1}" -f $state.AudioCount, $state.SceneCount) }
+        }
+        return $true
+    }
+    $voiceArgs = @(
+        "--storyboard", $script:Storyboard,
+        "--voice", $script:Voice,
+        "--voice-style", $script:VoiceStyle
+    )
+    if (Test-Path $script:CharacterBible) {
+        $voiceArgs += @("--character-bible", $script:CharacterBible)
+    }
+    Write-Log ("VOICE attempt {0}: current {1}/{2}" -f $Attempt, $state.AudioCount, $state.SceneCount)
+    Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message ("Voice attempt {0}" -f $Attempt) -NodeUpdates @{
+        voice = @{ status = "running"; detail = ("Attempt {0}, audio {1}/{2}" -f $Attempt, $state.AudioCount, $state.SceneCount) }
+    }
+    try {
+        Invoke-Step -Label ("voice attempt {0}" -f $Attempt) -FilePath (Join-Path $script:RepoRoot "scripts\generate_voice_edge.py") -Arguments $voiceArgs
+    }
+    catch {
+        Write-Log ("VOICE retry after error: {0}" -f $_.Exception.Message)
+        Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice retrying after error" -NodeUpdates @{
+            voice = @{ status = "warning"; detail = $_.Exception.Message }
+        }
+    }
+    $after = Get-SceneState
+    if ($after.AudioCount -ge $after.SceneCount) {
+        Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice complete" -NodeUpdates @{
+            voice = @{ status = "done"; detail = ("Audio ready {0}/{1}" -f $after.AudioCount, $after.SceneCount) }
+        }
+        return $true
     }
     return $false
 }
 
-function Invoke-ImagesUntilComplete {
-    while ($true) {
-        $state = Get-SceneState
-        if ($state.ImageCount -ge $state.SceneCount) {
-            Write-Log ("IMAGES complete {0}/{1}" -f $state.ImageCount, $state.SceneCount)
-            Update-TaskStatus -Overall "running" -CurrentNode "images" -Message "Images complete" -NodeUpdates @{
-                images = @{ status = "done"; detail = ("Images ready {0}/{1}" -f $state.ImageCount, $state.SceneCount) }
-            }
-            return
+function Invoke-ImageStep {
+    $state = Get-SceneState
+    if ($state.ImageCount -ge $state.SceneCount) {
+        Write-Log ("IMAGES complete {0}/{1}" -f $state.ImageCount, $state.SceneCount)
+        Update-TaskStatus -Overall "running" -CurrentNode "images" -Message "Images complete" -NodeUpdates @{
+            images = @{ status = "done"; detail = ("Images ready {0}/{1}" -f $state.ImageCount, $state.SceneCount) }
         }
-
-        $targetScene = $null
-        for ($i = 0; $i -lt $state.Scenes.Count; $i++) {
-            $scene = $state.Scenes[$i]
-            $imagePath = $null
-            if ($scene.image) {
-                $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $script:ProjectRoot ([string]$scene.image) }
-            }
-            if (-not $imagePath -or -not (Test-Path $imagePath)) {
-                $targetScene = $i + 1
-                break
-            }
-        }
-
-        if (-not $targetScene) {
-            Write-Log "No missing image scene found, sleeping 5s"
-            Start-Sleep -Seconds 5
-            continue
-        }
-        Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Generating image scene {0}" -f $targetScene) -NodeUpdates @{
-            images = @{ status = "running"; detail = ("Current scene {0}, images {1}/{2}" -f $targetScene, $state.ImageCount, $state.SceneCount) }
-        }
-
-        $imageArgs = @(
-            "--storyboard", $script:Storyboard,
-            "--aspect-ratio", $script:AspectRatio,
-            "--final-width", [string]$script:FinalWidth,
-            "--final-height", [string]$script:FinalHeight,
-            "--preset", "balanced",
-            "--start-scene", [string]$targetScene,
-            "--end-scene", [string]$targetScene,
-            "--reference-image", $script:ImageReference,
-            "--reference-denoise", [string]$script:ImageReferenceDenoise
-        )
-        Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $script:RepoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
-        Start-Sleep -Seconds 8
+        return $true
     }
+
+    $targetScene = $null
+    for ($i = 0; $i -lt $state.Scenes.Count; $i++) {
+        $scene = $state.Scenes[$i]
+        $imagePath = $null
+        if ($scene.image) {
+            $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $script:ProjectRoot ([string]$scene.image) }
+        }
+        if (-not $imagePath -or -not (Test-Path $imagePath)) {
+            $targetScene = $i + 1
+            break
+        }
+    }
+
+    if (-not $targetScene) {
+        return $true
+    }
+    Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Generating image scene {0}" -f $targetScene) -NodeUpdates @{
+        images = @{ status = "running"; detail = ("Current scene {0}, images {1}/{2}" -f $targetScene, $state.ImageCount, $state.SceneCount) }
+    }
+
+    $imageArgs = @(
+        "--storyboard", $script:Storyboard,
+        "--aspect-ratio", $script:AspectRatio,
+        "--final-width", [string]$script:FinalWidth,
+        "--final-height", [string]$script:FinalHeight,
+        "--preset", "balanced",
+        "--start-scene", [string]$targetScene,
+        "--end-scene", [string]$targetScene,
+        "--reference-image", $script:ImageReference,
+        "--reference-denoise", [string]$script:ImageReferenceDenoise
+    )
+    Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $script:RepoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
+    Start-Sleep -Seconds 5
+    return $false
 }
 
 function Invoke-FinalRender {
@@ -506,14 +502,25 @@ try {
         storyboard = @{ status = "done"; detail = "Storyboard validated" }
     }
     Write-QASummary -Stage "storyboard-ready"
-    $voiceReady = Invoke-VoiceUntilComplete
-    Write-QASummary -Stage "voice-pass"
-    Invoke-ImagesUntilComplete
-    Write-QASummary -Stage "images-complete"
-    if (-not $voiceReady -and -not $script:SkipVoice) {
-        Write-Log "Retrying voice after images"
-        $voiceReady = Invoke-VoiceUntilComplete
-        Write-QASummary -Stage "voice-retry-finished"
+    $voiceReady = [bool]$script:SkipVoice
+    $imageReady = $false
+    $voiceAttempt = 0
+    while (-not ($voiceReady -and $imageReady)) {
+        if (-not $voiceReady -and -not $script:SkipVoice) {
+            $voiceAttempt++
+            $voiceReady = Invoke-VoiceAttempt -Attempt $voiceAttempt
+            Write-QASummary -Stage ("voice-pass-{0}" -f $voiceAttempt)
+        }
+        if (-not $imageReady) {
+            $imageReady = Invoke-ImageStep
+            Write-QASummary -Stage "image-step"
+        }
+        if ($voiceReady -and $imageReady) {
+            break
+        }
+        if ($voiceAttempt -ge 12 -and -not $voiceReady -and $imageReady) {
+            break
+        }
     }
     if ($voiceReady -or $script:SkipVoice) {
         Validate-StoryboardAll

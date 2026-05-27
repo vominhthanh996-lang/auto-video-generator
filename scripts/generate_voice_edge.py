@@ -848,12 +848,14 @@ async def main_async(args):
     start_index = max(0, args.start_scene - 1)
     end_index = args.end_scene if args.end_scene else len(scenes)
     end_index = min(len(scenes), end_index)
+    warnings = []
     voice_plan = {
         "storyboard": str(storyboard_path),
         "voice": voice,
         "voice_style": args.voice_style,
         "style": style,
         "scenes": [],
+        "warnings": warnings,
     }
     for index, scene in enumerate(scenes[start_index:end_index], start=start_index):
         text = scene.get("narration") or scene.get("subtitle") or scene.get("text")
@@ -868,17 +870,37 @@ async def main_async(args):
 
         needs_audio = not audio_path.exists() or audio_path.stat().st_size < 1024 or args.overwrite
         plan = None
+        generated = False
+        failed = False
         if needs_audio:
             print(f"Generating voice scene {index + 1}/{len(scenes)}: {audio_path}", flush=True)
-            plan = await synthesize_performed(text, audio_path, voice, style)
+            try:
+                plan = await synthesize_performed(text, audio_path, voice, style)
+                generated = True
+            except Exception as exc:
+                failed = True
+                warning = {
+                    "scene": index + 1,
+                    "id": scene.get("id") or f"scene-{index + 1:03d}",
+                    "error": str(exc),
+                }
+                warnings.append(warning)
+                print(f"WARNING scene {index + 1} voice failed: {exc}", file=sys.stderr, flush=True)
+                if audio_path.exists() and audio_path.stat().st_size < 1024:
+                    try:
+                        audio_path.unlink()
+                    except OSError:
+                        pass
 
-        scene["audio"] = relpath(audio_path, storyboard_dir)
+        if not failed:
+            scene["audio"] = relpath(audio_path, storyboard_dir)
         scene.setdefault("subtitle", text)
         voice_plan["scenes"].append(
             {
                 "id": scene.get("id") or f"scene-{index + 1:03d}",
-                "audio": scene["audio"],
-                "generated": bool(needs_audio),
+                "audio": scene.get("audio", relpath(audio_path, storyboard_dir)),
+                "generated": generated,
+                "failed": failed,
                 "unit_count": len(plan or split_performance_units(text, int(style.get("max_unit_chars", 180)))),
                 "plan": plan or [],
             }
@@ -886,10 +908,11 @@ async def main_async(args):
 
     storyboard_path.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
     (storyboard_dir / "voice-plan.json").write_text(json.dumps(voice_plan, ensure_ascii=False, indent=2), encoding="utf-8")
-    subprocess.run(
-        [sys.executable, str(Path(__file__).resolve().parent / "validate_storyboard.py"), "--storyboard", str(storyboard_path), "--stage", "voice"],
-        check=True,
-    )
+    if start_index == 0 and end_index == len(scenes):
+        subprocess.run(
+            [sys.executable, str(Path(__file__).resolve().parent / "validate_storyboard.py"), "--storyboard", str(storyboard_path), "--stage", "voice"],
+            check=True,
+        )
     print(json.dumps({"storyboard": str(storyboard_path), "scenes": len(scenes), "voice": voice, "voice_style": args.voice_style}, ensure_ascii=False, indent=2))
 
 
