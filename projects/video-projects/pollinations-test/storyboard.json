@@ -1,0 +1,16 @@
+{
+    "title":  "Pollinations test",
+    "width":  1080,
+    "height":  1920,
+    "fps":  30,
+    "scenes":  [
+                   {
+                       "id":  "scene-01",
+                       "duration":  3,
+                       "image_prompt":  "vertical cozy cinematic cabin interior at night, rain on window, warm lamp, ultra aesthetic, no text, no watermark",
+                       "narration":  "test",
+                       "text":  "",
+                       "subtitle":  ""
+                   }
+               ]
+}

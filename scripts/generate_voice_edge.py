@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import argparse
 import asyncio
 import json
@@ -66,8 +66,8 @@ VOICE_STYLES = {
         "max_inserted_pause": 0.0,
         "tight_punctuation": True,
         "short_sentence_as_comma": True,
-        "comma_pause": 0.01,
-        "sentence_pause": 0.045,
+        "comma_pause": 0.025,
+        "sentence_pause": 0.07,
         "paragraph_pause": 0.12,
         "dialogue_pause": 0.04,
         "scene_pause": 0.2,
@@ -934,3 +934,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

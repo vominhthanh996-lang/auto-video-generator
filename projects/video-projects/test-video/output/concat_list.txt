@@ -1,0 +1,2 @@
+file 'C:/Users/thanh/AppData/Local/Temp/auto-video-x8dni5bp/scene_000.mp4'
+file 'C:/Users/thanh/AppData/Local/Temp/auto-video-x8dni5bp/scene_001.mp4'

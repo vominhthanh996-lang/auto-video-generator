@@ -1,0 +1,52 @@
+{
+  "title": "Longform Smoke Test - Chapter 01",
+  "chapter": 1,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "background_color": "#111111",
+  "font": "Arial",
+  "scenes": [
+    {
+      "id": "ch01-sc001",
+      "duration": 12,
+      "image_prompt": "cinematic realistic story illustration, consistent characters, dramatic lighting. Scene placeholder ch01-sc001. Replace with a specific visual prompt. No text, no watermark.",
+      "narration": "[Vietnamese] Replace with narration for ch01-sc001.",
+      "text": "",
+      "subtitle": "[Vietnamese] Replace with narration for ch01-sc001."
+    },
+    {
+      "id": "ch01-sc002",
+      "duration": 12,
+      "image_prompt": "cinematic realistic story illustration, consistent characters, dramatic lighting. Scene placeholder ch01-sc002. Replace with a specific visual prompt. No text, no watermark.",
+      "narration": "[Vietnamese] Replace with narration for ch01-sc002.",
+      "text": "",
+      "subtitle": "[Vietnamese] Replace with narration for ch01-sc002."
+    },
+    {
+      "id": "ch01-sc003",
+      "duration": 12,
+      "image_prompt": "cinematic realistic story illustration, consistent characters, dramatic lighting. Scene placeholder ch01-sc003. Replace with a specific visual prompt. No text, no watermark.",
+      "narration": "[Vietnamese] Replace with narration for ch01-sc003.",
+      "text": "",
+      "subtitle": "[Vietnamese] Replace with narration for ch01-sc003."
+    },
+    {
+      "id": "ch01-sc004",
+      "duration": 12,
+      "image_prompt": "cinematic realistic story illustration, consistent characters, dramatic lighting. Scene placeholder ch01-sc004. Replace with a specific visual prompt. No text, no watermark.",
+      "narration": "[Vietnamese] Replace with narration for ch01-sc004.",
+      "text": "",
+      "subtitle": "[Vietnamese] Replace with narration for ch01-sc004."
+    },
+    {
+      "id": "ch01-sc005",
+      "duration": 12,
+      "image_prompt": "cinematic realistic story illustration, consistent characters, dramatic lighting. Scene placeholder ch01-sc005. Replace with a specific visual prompt. No text, no watermark.",
+      "narration": "[Vietnamese] Replace with narration for ch01-sc005.",
+      "text": "",
+      "subtitle": "[Vietnamese] Replace with narration for ch01-sc005."
+    }
+  ],
+  "music": null
+}

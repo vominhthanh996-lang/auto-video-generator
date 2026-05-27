@@ -1,0 +1,819 @@
+# Phần 1: Ba Ngày Đầu Không Được Chết
+
+## Chương 189: Hàng Nước Dài Hơn Cổng
+
+Hàng nước dài hơn cổng trước khi mặt trời lên hết.
+
+Trạm Lọc số Chín vốn không có cổng đúng nghĩa. Chỉ có hai trụ bê tông nghiêng, một đoạn xích gỉ, vài tấm xe rác dựng tạm và tấm biển cảnh báo cũ úp ngược, trên đó viết luật bằng than. Vậy mà chỉ qua một buổi sáng, hàng người đã kéo vượt qua cả hai trụ, vòng qua đống ống vỡ, men theo rãnh nước thải cũ rồi khuất sau mảng tường đổ.
+
+Người đến mang theo đủ thứ.
+
+Thùng nhựa, túi da, chai thủy tinh nứt, mũ bảo hộ, nồi, ống sắt bịt một đầu, thậm chí có người ôm một cái vỏ bình chữa cháy cũ, hy vọng đổ được nước vào đó.
+
+Họ cũng mang theo mùi.
+
+Mùi mồ hôi khô, mùi thuốc rẻ, mùi bột dinh dưỡng mốc, mùi máu cũ, mùi trẻ con sốt, mùi người già nhiều ngày không rửa, mùi hy vọng vừa mới nghe qua radio nên còn chưa biết có nên tin hay không.
+
+Di Mạn đứng cạnh máng lọc, tay cầm cốc đong.
+
+Mặt bà đen như đáy nồi.
+
+"Người sốt, mất máu, trẻ dưới mười hai. Lên trước."
+
+Không ai nhúc nhích ngay.
+
+Người trong hàng nhìn nhau.
+
+Một phụ nữ ôm đứa trẻ gầy bước lên nửa bước, rồi bị người đàn ông phía sau kéo tay.
+
+"Nó mười ba."
+
+Người phụ nữ cứng người.
+
+Đứa trẻ trong tay nàng nhỏ đến mức nói tám tuổi cũng có người tin. Nhưng trẻ phế thổ thường nhỏ hơn tuổi. Đói cắt chiều cao trước khi cắt mạng.
+
+Di Mạn nhìn đứa bé.
+
+"Tên?"
+
+Người phụ nữ đáp rất nhanh:
+
+"Hồ Tử."
+
+"Bao nhiêu tuổi?"
+
+"Mười..."
+
+Nàng khựng lại.
+
+Người đàn ông phía sau nói:
+
+"Mười ba. Ta biết nó. Nhà ở Chợ Gãy."
+
+Đứa trẻ nhắm mắt, môi nứt trắng.
+
+Người phụ nữ ôm con chặt hơn.
+
+"Nó sốt."
+
+Di Mạn đặt cốc xuống.
+
+"Sốt thì lên. Tuổi không quan trọng hơn sốt."
+
+Người đàn ông bất mãn:
+
+"Luật nói trẻ dưới mười hai."
+
+Di Mạn nhìn hắn.
+
+"Luật cũng nói người sốt uống trước. Ngươi biết đọc chữ chọn dòng có lợi cho mình à?"
+
+A Thất ngồi cạnh bảng ghi lượt, một tay băng vải, tay kia cầm than.
+
+"Tên người phản đối?"
+
+Người đàn ông lập tức im.
+
+A Thất cúi đầu viết lên mảnh ván:
+
+`Hồ Tử - sốt - một ngụm.`
+
+Rồi ngẩng lên:
+
+"Người phản đối không khai tên, tạm ghi là Miệng Rảnh."
+
+Trong hàng có tiếng cười khẽ.
+
+Người đàn ông đỏ mặt.
+
+Di Mạn không cười.
+
+"A Thất."
+
+"Vâng, xóa."
+
+Nó lấy tay áo lau chữ "Miệng Rảnh", rồi lẩm bẩm:
+
+"Tên hay vậy mà."
+
+Hồ Tử được đưa lên. Di Mạn cho nó một ngụm nước lọc tạm. Đứa trẻ nuốt rất khó, như cổ họng đã quên nước đi xuống thế nào. Người mẹ nhìn cái cốc, ánh mắt vừa biết ơn vừa đói.
+
+Di Mạn đưa cốc về phía nàng.
+
+"Người chăm bệnh nửa ngụm."
+
+Người mẹ sững ra.
+
+"Ta không sốt."
+
+"Ngươi ngã thì ai ôm nó?"
+
+Nàng nhận cốc bằng hai tay, uống nửa ngụm, rồi bật khóc.
+
+Không thành tiếng.
+
+Chỉ có vai run lên.
+
+Người trong hàng yên đi một chút.
+
+Lâm Tịch đứng bên trụ cổng, nhìn cảnh đó.
+
+Tay nàng vẫn đau. Vết băng Tần Dã buộc đêm qua đã thấm ẩm. Cổ họng nàng cũng khát, nhưng từ lúc trời sáng đến giờ nàng chỉ uống đúng một ngụm nhỏ. Không ai ép nàng. Cũng không ai cho nàng quên.
+
+Di Mạn thỉnh thoảng liếc qua như dao.
+
+Tần Dã ngồi dưới bóng tường, lưng tựa bao cát tạm. Mặt hắn trắng, môi nhợt, nhưng mắt vẫn không rời hàng người và các lối tiếp cận. Trên đùi hắn là bản đồ trạm vẽ bằng than lên mảnh ván. Bên cạnh là Kỷ Nam, đang đánh dấu vị trí có thể đặt bẫy không gây chết người.
+
+Không gây chết người.
+
+Đó là yêu cầu của Lâm Tịch.
+
+Kỷ Nam nghe xong chỉ hỏi:
+
+"Với người hay thú?"
+
+Lâm Tịch nói:
+
+"Người."
+
+"Nếu người đó muốn giết chúng ta?"
+
+"Bẫy giữ trước. Giết sau."
+
+Kỷ Nam nhìn nàng như nhìn cái máy bơm hỏng.
+
+Nhưng Tần Dã chỉ nói:
+
+"Làm được. Khó hơn."
+
+Khó hơn.
+
+Từ đó dường như đã trở thành tên khác của Trạm Số Chín.
+
+Ở máng lọc, lượt nước thứ mười hai vừa hết thì rắc rối đầu tiên thật sự tới.
+
+Ba người đàn ông đẩy một xe than vào hàng bên trái. Bao than cao hơn nửa thân người, bên ngoài buộc vải trắng bẩn, đúng dấu "không bắn" mà đêm qua họ đã quy định. Người đi đầu để râu lởm chởm, mắt nhỏ, vai rộng. Hắn nhìn tấm biển luật, đọc rất nhanh, rồi cười.
+
+"Than sạch đổi nước theo cân?"
+
+Trần Hòe, người phụ trách kiểm than, bước tới.
+
+"Mở bao."
+
+Người đàn ông đáp:
+
+"Mở thì bụi bay. Cân trước."
+
+Trần Hòe không nhúc nhích.
+
+"Mở bao."
+
+Hắn nhìn nàng.
+
+"Cô gái, bọn ta đẩy từ Chợ Gãy tới đây. Đi qua ổ quạ mù, qua hai nhóm cướp, qua cả đèn quét thành Nam. Các ngươi muốn than lọc thì đừng làm khó."
+
+Trần Hòe cười nhạt.
+
+"Ta từng bán than ở chợ. Đừng dạy ta mùi khó."
+
+Người đàn ông phía sau đặt tay lên cán dao.
+
+A Mục, đang đứng gần nhóm trẻ con, lập tức thấy.
+
+Nó không la.
+
+Nó nhặt một hòn đá, ném vào thùng sắt bên cạnh.
+
+Keng.
+
+Âm thanh vang lên đúng như đã hẹn.
+
+Kỷ Nam quay đầu.
+
+Tần Dã cũng nhìn sang.
+
+Lâm Tịch bước tới trước khi không khí kịp cháy.
+
+"Mở bao."
+
+Người râu lởm nhìn nàng.
+
+"Cô là Lâm Tịch?"
+
+"Ừ."
+
+"Nghe nói ở đây không hỏi giấy."
+
+"Không hỏi giấy. Hỏi hàng."
+
+"Nếu ta không mở?"
+
+"Không đổi."
+
+Hắn cười.
+
+"Vậy bọn ta uống phần người bệnh."
+
+Không khí quanh hàng lập tức căng lên.
+
+Người khu xám nhìn nhóm than. Người mới tới nhìn máng nước. Người bệnh nhìn cái cốc. Mỗi ánh mắt đều có thể biến thành bàn tay rất nhanh.
+
+Lâm Tịch nhìn người râu lởm.
+
+"Ngươi sốt?"
+
+"Ta khát."
+
+"Ai cũng khát."
+
+"Vậy dựa vào đâu người kia được uống?"
+
+Hắn chỉ Hồ Tử đang nằm trong lòng mẹ.
+
+"Nó có thể chết nếu không uống."
+
+"Ta cũng có thể chết."
+
+Lâm Tịch gật đầu.
+
+"Đúng. Nhưng ngươi còn đứng được, còn đẩy được xe, còn cầm được dao, còn mặc cả được. Nó không."
+
+Người râu lởm nheo mắt.
+
+"Luật của cô bảo vệ kẻ yếu."
+
+"Không." Lâm Tịch nói. "Luật bảo vệ hàng nước. Hôm nay để người mạnh chen trước, ngày mai không ai yếu sống tới lượt. Khi đó hàng nước biến thành chợ cướp. Chợ cướp thì bơm hỏng, người chết, nước mất. Ngươi cũng không còn gì uống."
+
+Hắn im một nhịp.
+
+Không phải bị cảm hóa.
+
+Mà vì câu đó đụng tới lợi ích của hắn.
+
+Lâm Tịch nói tiếp:
+
+"Muốn đổi nước, mở bao. Muốn cướp, bước qua vạch."
+
+Nàng chỉ vạch máu khô trước máng.
+
+Vạch ấy hôm qua do máu nàng nhỏ xuống. Qua một đêm đã sẫm lại, nhưng vẫn còn thấy.
+
+Người râu lởm nhìn vạch, rồi nhìn Kỷ Nam, Tần Dã, Lý Cù, Trần Hòe, đám người đang cầm gậy ống quanh trạm.
+
+Cuối cùng hắn nhổ xuống đất.
+
+"Mở."
+
+Bao than được cắt ra.
+
+Mùi dầu thối lập tức bốc lên.
+
+Trần Hòe lùi lại, mặt lạnh.
+
+"Than nhiễm dầu."
+
+Đám đông xôn xao.
+
+Người râu lởm lập tức nói:
+
+"Lớp trên dính thôi. Bên trong sạch."
+
+Trần Hòe đá bao than.
+
+Than vụn lăn ra, đen bóng, dính mùi hóa chất.
+
+"Dùng cái này lọc nước, người uống đi ngoài ra máu."
+
+Di Mạn từ máng lọc nhìn sang.
+
+"Đẩy ra."
+
+Người râu lởm đổi sắc.
+
+"Bọn ta mất nửa ngày đường!"
+
+Lâm Tịch nhìn hắn.
+
+"Vậy học cách đừng đem độc đổi nước."
+
+Một người phía sau hắn rút dao.
+
+Chỉ nửa tấc.
+
+Kỷ Nam bắn xuống đất trước mũi giày hắn.
+
+Đá vụn bắn lên.
+
+Người kia cứng đờ.
+
+Kỷ Nam nói:
+
+"Nửa tấc nữa, tay rơi."
+
+Lâm Tịch quay đầu nhìn Kỷ Nam.
+
+Hắn nhướng mắt.
+
+"Bẫy giữ trước. Giết sau. Ta chưa giết."
+
+A Thất lẩm bẩm:
+
+"Đúng luật một cách đáng sợ."
+
+Người râu lởm nắm chặt tay.
+
+Trong hàng, có người bắt đầu la:
+
+"Đuổi họ đi!"
+
+"Đốt than đó!"
+
+"Dám đem độc tới đổi nước!"
+
+Lâm Tịch nâng tay.
+
+Lần này đám đông im nhanh hơn hôm qua một chút.
+
+Chỉ một chút.
+
+Nhưng cũng là tiến bộ.
+
+Nàng nhìn nhóm người râu lởm.
+
+"Than độc không đổi được nước. Nhưng các ngươi đẩy xe tới đây, còn sức làm việc. Muốn uống, qua bên phải đào rãnh thoát nước. Làm hai giờ, mỗi người một ngụm theo phần làm."
+
+Người râu lởm sửng sốt.
+
+"Cô không đuổi?"
+
+"Ta muốn đuổi. Nhưng rãnh đang tắc."
+
+Di Mạn hừ một tiếng.
+
+"Nói thật ghê."
+
+Lâm Tịch nhìn hắn.
+
+"Làm hay đi?"
+
+Người râu lởm nhìn xe than độc, nhìn hàng người đang ghét mình, nhìn máng nước.
+
+Cuối cùng hắn cắn răng.
+
+"Làm."
+
+"Dao để ngoài vạch."
+
+"Không."
+
+"Vậy đi."
+
+Hai bên nhìn nhau.
+
+Mưa bụi đỏ lại bắt đầu lất phất.
+
+Người râu lởm chửi một câu, tháo dao ném xuống trước vạch.
+
+Hai người phía sau hắn cũng làm theo.
+
+A Mục chạy tới thu dao bằng một cái móc dài, không chạm tay trực tiếp. Nó học rất nhanh từ thành Nam: thứ nguy hiểm nên có khoảng cách.
+
+Trần Hòe đá bao than độc sang một bên.
+
+"Cái này xử lý sao?"
+
+Mộc Sanh từ khu máy nói:
+
+"Có thể dùng đốt ngoài rào tạo khói đuổi côn trùng. Không dùng gần nước."
+
+Lâm Tịch gật đầu.
+
+"Ghi lại. Than độc: không đổi nước, đổi việc xử lý."
+
+A Thất cúi xuống viết.
+
+"Luật càng ngày càng dài."
+
+Di Mạn nói:
+
+"Sống càng lâu luật càng dài."
+
+Hàng nước tiếp tục.
+
+Không yên ổn.
+
+Không đẹp.
+
+Nhưng không vỡ.
+
+Lâm Tịch đứng cạnh vạch máu, nhìn người râu lởm và đồng bọn bị đưa đi đào rãnh. Sau lưng nàng, Hồ Tử uống xong ngụm thứ hai, hơi thở đã bớt gấp.
+
+Một thắng nhỏ.
+
+Một cái giá nhỏ.
+
+Một buổi sáng chưa chết.
+
+Trên phế thổ, đôi khi như vậy đã đủ để người ta chịu bước sang giờ tiếp theo.
+
+## Chương 190: Người Giữ Cốc Đong
+
+Cốc đong trở thành thứ bị nhìn nhiều nhất ở Trạm Số Chín.
+
+Không phải Đèn Vàng.
+
+Không phải súng của Kỷ Nam.
+
+Không phải hộp thuốc của Thẩm Bạch.
+
+Là cái cốc sắt méo Di Mạn cầm trong tay.
+
+Trên thành cốc có ba vạch khắc bằng dao: một vạch trẻ nhỏ, một vạch người bệnh, một vạch người làm việc nặng. Vạch nào cũng thấp đến đáng thương. Nếu ở thế giới cũ của Lâm Tịch, số nước đó còn chưa đủ để một người súc miệng sau khi đánh răng. Ở đây, mỗi vạch đều có thể làm một người sống thêm tới lượt sau.
+
+Di Mạn không rời cốc.
+
+Ai tới xin thêm, bà nhìn.
+
+Ai giả vờ chưa uống, bà nhớ.
+
+Ai nhường phần cho người khác, bà ghi.
+
+Ai vừa uống xong đã liếm mép cốc, bà không mắng, chỉ quay cốc lại rửa bằng nước thô, rồi đặt xuống như đặt một cái cân.
+
+Đến giữa trưa, tay bà bắt đầu run.
+
+Lâm Tịch thấy.
+
+Không chỉ nàng thấy.
+
+Tần Dã cũng thấy. Hắn không nói với Di Mạn, chỉ gọi A Mục.
+
+"Đổi người giữ cốc."
+
+A Mục nhìn Di Mạn, rồi nhìn hàng nước.
+
+"Bà ấy chịu không?"
+
+"Không chịu thì càng phải đổi."
+
+A Mục nuốt nước bọt.
+
+"Ta nói?"
+
+"Ừ."
+
+"Anh muốn ta chết?"
+
+Tần Dã nhìn nó.
+
+"Ngươi nhỏ. Bà ấy đánh nhẹ hơn."
+
+A Mục không biết nên cảm ơn hay chửi.
+
+Nó đi tới bên máng lọc, đứng cạnh Di Mạn một lúc lâu.
+
+Di Mạn không quay đầu.
+
+"Muốn gì?"
+
+"Đổi ca."
+
+"Ai nói?"
+
+"Ta."
+
+"Ngươi?"
+
+"Và Tần Dã."
+
+"Biết ngay."
+
+Di Mạn đổ xong một phần nước cho người làm việc, ghi dấu lên bảng, rồi mới nhìn A Mục.
+
+"Ngươi biết đo không?"
+
+"Biết."
+
+"Biết ai đã uống chưa?"
+
+"Nhớ được một nửa."
+
+"Nửa còn lại?"
+
+"A Thất ghi."
+
+A Thất ở bàn ghi lượt lập tức ngẩng đầu:
+
+"Ta ghi rất đẹp."
+
+Di Mạn nhìn bảng của nó.
+
+Trên đó chữ xiêu vẹo, có vài ký hiệu chỉ nó hiểu.
+
+"Đẹp kiểu chuột bò qua than."
+
+"Nhưng ta hiểu."
+
+"Người khác phải hiểu."
+
+"Vậy ta sẽ vẽ thêm."
+
+Di Mạn thở ra.
+
+Bà nhìn hàng người, nhìn cái cốc, nhìn tay mình.
+
+Đúng là đang run.
+
+Không phải vì sợ.
+
+Vì từ sáng tới giờ bà chưa ăn, chưa uống đủ, chưa ngồi quá mười nhịp. Người giữ cốc nếu ngã xuống, hàng nước sẽ vỡ nhanh hơn bất cứ cái bơm nào.
+
+Bà đưa cốc cho A Mục.
+
+"Một vạch không được đầy quá."
+
+"Ừ."
+
+"Người bệnh uống chậm thì đỡ đầu họ. Đừng đổ."
+
+"Ừ."
+
+"Ai nhìn ngươi đáng thương mà xin thêm, không cho."
+
+"Ừ."
+
+"Ai chửi, gọi ta."
+
+A Mục ngẩng đầu.
+
+"Bà nghỉ mà."
+
+"Ta nghỉ tai thôi. Tay vẫn đánh được."
+
+A Mục nhận cốc.
+
+Cái cốc nhẹ.
+
+Nhưng khi cầm vào, nó thấy cổ tay mình nặng xuống.
+
+Người đầu tiên tới sau khi đổi ca là một phụ nữ có bụng lớn.
+
+Nàng không đứng ở hàng người bệnh. Chỉ đứng ở hàng thường, hai tay đặt dưới bụng, mặt tái.
+
+A Mục nhìn nàng.
+
+"Chị... có thai?"
+
+Người phụ nữ lập tức cảnh giác.
+
+"Không tính ưu tiên thì thôi."
+
+A Mục cầm cốc, nhìn bảng luật.
+
+Luật chưa ghi người có thai.
+
+Nó quay đầu nhìn Lâm Tịch.
+
+Đó là thói quen của trẻ con: gặp lỗ thủng trong luật thì nhìn người lớn nhất.
+
+Lâm Tịch đi tới.
+
+"Tên?"
+
+Người phụ nữ đáp:
+
+"Tô Mạch."
+
+"Mấy tháng?"
+
+"Không biết. Bụng bắt đầu nặng từ mùa bụi trước."
+
+Di Mạn từ góc nghỉ lập tức mở mắt.
+
+"Cho nàng ngồi. A Mục, nửa vạch người bệnh."
+
+Một người trong hàng bất mãn:
+
+"Luật không ghi!"
+
+Di Mạn đứng dậy.
+
+Lâm Tịch giơ tay ngăn bà.
+
+Nàng nhìn người vừa nói. Là một thanh niên gầy, trên vai có vết bỏng xạ, chắc cũng đang đau.
+
+"Đúng. Luật thiếu."
+
+Thanh niên không ngờ nàng nói vậy, hơi khựng.
+
+Lâm Tịch quay sang A Thất.
+
+"Ghi thêm: người mang thai tính như người bệnh nhẹ. Nửa vạch trước, sau khi khám lại tính tiếp."
+
+A Thất viết.
+
+"Khám ai?"
+
+Mọi người cùng nhìn Thẩm Bạch.
+
+Thẩm Bạch đang rửa dụng cụ, động tác dừng lại.
+
+"Ta không phải bác sĩ sản."
+
+Di Mạn nói:
+
+"Nhưng ngươi là bác sĩ."
+
+"Ta là bác sĩ gen."
+
+"Thai cũng có gen."
+
+A Thất suýt cười sặc.
+
+Thẩm Bạch nhìn Di Mạn, lần đầu tiên có vẻ không biết đáp sao cho tao nhã.
+
+Cuối cùng hắn nói:
+
+"Ta có thể kiểm cơ bản."
+
+Tô Mạch lập tức lùi lại.
+
+"Không."
+
+Không khí đông lại.
+
+Nàng ôm bụng, mặt trắng bệch.
+
+"Không cho áo trắng chạm."
+
+Thẩm Bạch không bước tới.
+
+Di Mạn nhìn nàng.
+
+"Vậy ta kiểm. Hắn đứng xa nói."
+
+Tô Mạch nhìn Di Mạn.
+
+"Bà biết?"
+
+"Ta từng đỡ đẻ hai lần trước tận thế. Một lần thành công."
+
+A Thất nhỏ giọng:
+
+"Một lần kia..."
+
+Di Mạn:
+
+"Im."
+
+Tô Mạch do dự rất lâu rồi gật đầu.
+
+Lâm Tịch nhìn cảnh đó, bỗng hiểu thêm một lỗ thủng khác của luật.
+
+Không phải ai có khả năng giúp cũng được phép giúp.
+
+Người bị phòng thí nghiệm, bị áo trắng, bị thành, bị đàn ông, bị cướp làm đau sẽ chọn chết gần hơn thay vì sống trong tay thứ mình sợ.
+
+Luật nếu không tính nỗi sợ, sẽ biến thành roi.
+
+Nàng nói với A Thất:
+
+"Ghi thêm: kiểm bệnh phải hỏi người được kiểm. Trừ khi bất tỉnh."
+
+A Thất nhìn nàng.
+
+"Luật dài thật."
+
+"Ghi."
+
+Nó cúi đầu ghi.
+
+Tần Dã ngồi xa, nhìn Lâm Tịch.
+
+Ánh mắt hắn bình tĩnh.
+
+Như đang thấy nàng nhặt từng viên đá đặt dưới một cái móng còn chưa thành hình.
+
+Tới lượt Tô Mạch uống, A Mục đong nửa vạch.
+
+Tay nó run.
+
+Nước suýt vượt vạch.
+
+Di Mạn ngồi ở góc nói:
+
+"Đổ lại."
+
+A Mục đỏ mặt, đổ lại vài giọt.
+
+Tô Mạch nhận cốc, uống rất chậm.
+
+Sau khi uống xong, nàng không trả cốc ngay.
+
+A Mục căng người.
+
+"Phải trả."
+
+Tô Mạch nhìn cốc.
+
+"Ta biết."
+
+Nhưng tay nàng vẫn siết.
+
+Trong một nhịp rất ngắn, mọi người đều thấy cái khả năng ấy: nàng có thể chạy. Có thể ôm cái cốc lao ra khỏi hàng, uống thêm, giữ lại, dùng nó đổi thứ khác.
+
+Một cái cốc đong ở Trạm Số Chín còn quý hơn bát sắt thường.
+
+A Mục nhìn nàng.
+
+Nó không gọi Kỷ Nam.
+
+Không gọi Lâm Tịch.
+
+Nó nói:
+
+"Nếu chị cầm cốc đi, lượt sau người khác không biết uống bao nhiêu."
+
+Tô Mạch run lên.
+
+A Mục nói tiếp:
+
+"Nếu không biết bao nhiêu, họ sẽ đánh nhau. Nếu đánh nhau, chị cũng không uống được."
+
+Tô Mạch nhìn nó.
+
+Nó chỉ là một thằng nhóc gầy, mặt còn nét trẻ con, tay cầm cốc cũng chưa chắc. Nhưng giọng nó lúc này không giống cầu xin. Nó giống đang nói một điều vừa học bằng nửa miếng bánh và một cái bình nước bị đá đổ.
+
+Tô Mạch trả cốc.
+
+"Xin lỗi."
+
+A Mục nhận lại, thở ra.
+
+"Không sao."
+
+Di Mạn ở góc nói:
+
+"Không phải không sao. Ghi lại: Tô Mạch, do dự giữ cốc, chưa phạm. Lần sau chú ý."
+
+Tô Mạch cứng người.
+
+A Mục nhìn Di Mạn.
+
+Bà nói:
+
+"Ghi không phải để nhục. Ghi để lần sau người giữ cốc biết nhìn."
+
+Lâm Tịch gật đầu.
+
+"Ghi."
+
+A Thất ghi.
+
+Tô Mạch không vui.
+
+Nhưng không đi.
+
+Đó là khởi đầu của trạm: không phải ai cũng vui, nhưng vẫn ở lại vì biết rời đi còn tệ hơn.
+
+Buổi trưa, khi hàng nước ngắn xuống một chút, A Mục đem cốc trả Di Mạn.
+
+Tay nó cũng run.
+
+"Ta không thích giữ cốc."
+
+Di Mạn nhận cốc.
+
+"Không ai nên thích."
+
+"Vì sao?"
+
+"Người thích giữ cốc lâu ngày sẽ thích giữ cổ người khác."
+
+A Mục ngẩn ra.
+
+Di Mạn nhìn nó.
+
+"Cho nên phải đổi ca."
+
+Nó gật đầu.
+
+Lâm Tịch đứng cách đó không xa, nghe thấy hết.
+
+Nàng nhìn cái cốc sắt méo.
+
+Hôm qua, nàng nghĩ người cầm vòi phải đứng trước mặt mọi người.
+
+Hôm nay nàng học thêm: người cầm vòi không được cầm quá lâu.
+
+Ở phía cổng, nhóm người râu lởm vẫn đang đào rãnh. Mồ hôi trộn bụi trên mặt họ. Một trong ba người ngẩng lên nhìn máng nước, ánh mắt không còn ngang như buổi sáng, nhưng cũng chưa dịu.
+
+Lâm Tịch biết họ sẽ còn gây chuyện.
+
+Người khát không biến thành người tốt sau một ngụm nước.
+
+Nhưng rãnh thoát nước đang sâu thêm từng chút.
+
+Cái cổng chưa có cánh đang học cách đứng.
+
+Và giữa trưa ngày đầu tiên, Trạm Số Chín chưa chết.

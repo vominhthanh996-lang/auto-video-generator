@@ -1,0 +1,417 @@
+# Phần 8: Bản Ghi Trong Máy Chết
+
+## Chương 243: Thứ Bị Nhốt Trong Kho
+
+Thứ bị nhốt trong Trạm Ghi Số 12 là một con thú không còn biết mình từng là gì.
+
+Nó có thân dài như chó, lưng cong, da mọc từng mảng vảy xám. Hai chân sau teo lại, hai chân trước dài quá mức, móng cào xuống nền bê tông nghe như kim loại. Trên cổ nó có vòng bạc mảnh, nhưng vòng đã ăn sâu vào thịt, khiến mỗi lần nó thở, máu đen lại rỉ ra một chút.
+
+Mộc Sanh nhìn nó, mặt tái đi.
+
+"Nó bị dùng làm vật giữ kho."
+
+Nàng nói xong liền hối hận.
+
+Vì A Thất nghe hiểu theo cách của nó.
+
+"Vật?"
+
+Mộc Sanh im.
+
+Con thú kéo lê chân sau qua nền bê tông. Vòng bạc trên cổ nó cọ vào thịt, mỗi lần cọ là da quanh đó giật lên. Nó không lao ngay tới. Nó đứng giữa những tủ hồ sơ đổ nát, mũi phập phồng, như đang cố phân biệt trước mặt mình là kẻ thả đau hay kẻ đem đau mới tới.
+
+A Thất nhìn nó, rồi nhìn máy chết.
+
+"Nó cũng bị nhốt như hồ sơ?"
+
+Sa Đinh giữ cung, giọng căng:
+
+"Đừng đặt tên cho thứ có thể cắn cổ ngươi."
+
+"Em chưa đặt tên."
+
+"Nghĩ thương cũng gần như đặt tên rồi."
+
+A Thất ngậm miệng.
+
+Nhưng mắt nó vẫn không rời vòng bạc.
+
+Ở Cổng Nước Xám, nó đã thấy quá nhiều đồ bị dùng sai: bát thủng dùng để uống nước, xe rác làm cổng, vải lọc làm cờ, người hận làm gác cổng. Nhưng con thú trước mặt là thứ bị dùng sai theo cách ác hơn. Nó không được biến thành thứ hữu ích. Nó bị biến thành khóa.
+
+Một cái khóa biết đau.
+
+A Thất trốn sau tủ hồ sơ lật đổ.
+
+"Giữ kho bằng thú bệnh? Ai nghĩ ra vậy?"
+
+Sa Đinh bắn một mũi tên vào nền trước mặt con thú, ép nó lùi.
+
+"Người không muốn trả lương cho lính gác."
+
+Ninh đứng cạnh cửa, chuông nhỏ trong tay. Nàng lắc nhẹ. Con thú lập tức quay đầu về phía âm thanh, lao tới. Sa Đinh kéo Ninh tránh ra, A Thất nhân cơ hội chui qua dãy tủ thấp.
+
+Trạm Ghi bên trong tối hơn họ tưởng. Không có giấy chất thành núi. Phần lớn hồ sơ đã được ép vào hộp kim loại và máy lưu trữ. Máy chết nằm giữa phòng, to bằng một cái quan tài đứng, mặt trước có khe thẻ và một màn hình nứt.
+
+A Thất đặt tay lên máy.
+
+Lạnh.
+
+"Không có điện."
+
+Mộc Sanh chạy tới, mở hộp điều khiển.
+
+"Nguồn dự phòng?"
+
+"Chết."
+
+"Sửa được không?"
+
+"Có điện thì sửa được."
+
+Sa Đinh vừa kéo dây né con thú vừa gắt:
+
+"Câu đó hay thật."
+
+A Thất nhìn quanh. Trong góc có một bộ pin cũ phồng lên, không dùng được. Dây dẫn bị chuột cắn. Một tấm bảng ghi: `Nguồn kích khẩn cấp: lõi sinh năng cấp Đồng trở lên.`
+
+Mộc Sanh đọc xong, im.
+
+A Thất hỏi:
+
+"Lõi sinh năng là gì?"
+
+"Lõi thú biến dị."
+
+Cả ba người nhìn con thú bị nhốt.
+
+Con thú cũng nhìn họ.
+
+Trong khoảnh khắc ấy, A Thất rất muốn nói không.
+
+Không phải vì sợ giết thú.
+
+Mà vì con thú đó không giống kẻ săn mồi ngoài hoang dã. Nó giống một người bị khóa trong nhiệm vụ quá lâu, đau đến mức chỉ còn biết cắn.
+
+Mộc Sanh nói:
+
+"Lõi của nó có thể kích máy."
+
+Sa Đinh nói:
+
+"Giết."
+
+Ninh lắc chuông, kéo con thú tránh xa A Thất.
+
+A Thất siết dụng cụ trong tay.
+
+"Có cách nào không giết không?"
+
+Sa Đinh nhìn nó như muốn mắng, nhưng cuối cùng không mắng.
+
+Mộc Sanh nhìn vòng bạc trên cổ thú.
+
+"Vòng điều khiển ăn vào thịt. Nếu tháo, nó có thể chết vì mất máu. Nếu không tháo, nó sẽ tiếp tục cắn đến chết."
+
+"Vậy vẫn là chết?"
+
+"Ừ."
+
+Con thú lao tới lần nữa. Sa Đinh bắn mũi tên móc dây, ghim vào lớp vảy vai. Ninh kéo chuông sang trái. Mộc Sanh ném bột cay. A Thất chui xuống dưới bàn điều khiển, nhìn thấy dây vòng bạc nối vào một hộp nhỏ sau gáy thú.
+
+Nó bỗng hiểu.
+
+"Không cần lõi. Hộp điều khiển có pin!"
+
+Sa Đinh quát:
+
+"Lấy được không?"
+
+"Nếu nó đứng yên!"
+
+Câu nói vừa ra khỏi miệng, A Thất đã muốn nuốt lại.
+
+Đứng yên.
+
+Nó nói về con thú như nói về một cái máy cần giữ cố định khi tháo ốc. Nhưng con thú không phải máy. Nó thở, nó đau, nó bị vòng bạc cắn vào cổ đến thịt phồng lên. Nó không đứng yên vì ngoan. Nó chỉ có thể đứng yên nếu bị lừa, bị thương, hoặc kiệt sức.
+
+A Thất bỗng nhớ tới lúc Tần Dã bị sốt gene, Lâm Tịch từng giữ vai hắn để Mộc Sanh châm thuốc. Khi ấy Tần Dã cũng không giãy, nhưng bàn tay hắn bấu vào mép giường đến bật máu.
+
+Đứng yên không có nghĩa không đau.
+
+Nó cắn răng.
+
+"Xin lỗi."
+
+Không biết nói với ai.
+
+Con thú không hiểu.
+
+Nhưng Ninh nghe thấy. Nàng nhìn A Thất một cái rất nhanh, rồi gật đầu.
+
+Ninh nhìn A Thất.
+
+Rồi nàng làm một việc rất điên.
+
+Nàng ném chuông vào góc phòng, sau đó tự chạy về hướng ngược lại, dùng tay gõ liên tục lên tủ sắt. Con thú bị hai âm thanh kéo xé, khựng một nhịp.
+
+Một nhịp thôi.
+
+A Thất lao ra, cắm mảnh kim loại Hắc Nha vào khe hộp sau gáy thú, bẩy mạnh.
+
+Hộp bật ra.
+
+Con thú gào lên.
+
+Không phải tiếng rít.
+
+Gần như tiếng khóc.
+
+Sa Đinh bắn mũi tên cuối vào chân nó, ghim xuống nền. Mộc Sanh nhào tới đè băng lên cổ thú, nhưng máu đen vẫn trào ra. Con thú quẫy hai lần, rồi nằm xuống, thở phì phò.
+
+A Thất cầm hộp pin, cả người run.
+
+"Nó còn sống."
+
+Mộc Sanh nhìn con thú.
+
+"Chưa biết được bao lâu."
+
+A Thất cắn răng, cắm hộp pin vào máy chết.
+
+Màn hình nứt lóe lên một vệt xanh yếu.
+
+Máy sống.
+
+Con thú sau lưng họ cũng còn thở.
+
+Không ai thấy thắng.
+
+Nhưng khe thẻ mở ra.
+
+## Chương 244: Bản Ghi TS-01
+
+Máy lưu trữ khởi động như một người già bị đánh thức giữa cơn sốt.
+
+Nó rít, nghẹn, màn hình chớp tắt. A Thất phải giữ dây nguồn bằng tay, vì chỉ cần buông ra, tiếp xúc sẽ mất. Mộc Sanh đứng bên cạnh đọc mã hồ sơ, Sa Đinh giữ cửa, Ninh quỳ cạnh con thú bị nhốt, tay đặt lên cổ nó để nghe nhịp thở.
+
+"Tìm TS-01." Mộc Sanh nói.
+
+A Thất nhập mã.
+
+Máy hiện lỗi.
+
+`Quyền truy cập không đủ.`
+
+A Thất chửi nhỏ.
+
+Mộc Sanh thử mã tử vong ngoại vi.
+
+Lỗi.
+
+Thử mã bệnh án khẩn cấp.
+
+Lỗi.
+
+Thử mã tuyến nước.
+
+Màn hình khựng lại.
+
+Một danh sách hiện ra, chữ vỡ nhưng đọc được:
+
+`TS-01 / Tần Sách / báo tử tạm thời / mẫu chữ ký / mẫu máu / hồ sơ chuyển tuyến.`
+
+Mộc Sanh nín thở.
+
+"Có."
+
+A Thất nhìn thời gian.
+
+Họ chỉ còn hơn một giờ để về.
+
+"Sao chép?"
+
+"Vào gì?"
+
+A Thất lấy từ túi ra mảnh thẻ Lương Tiêu đưa.
+
+"Cái này."
+
+Mộc Sanh nhìn mảnh thẻ cháy.
+
+"Không biết còn ghi được không."
+
+"Thử."
+
+Máy rít lên khi nhận thẻ. Màn hình hiện:
+
+`Thẻ cũ: TS-01/audio-fragment.`
+
+Sa Đinh quay đầu.
+
+"Audio?"
+
+A Thất không hiểu từ đó, nhưng hiểu tiếng.
+
+"Có giọng?"
+
+Mộc Sanh chọn phát thử.
+
+Loa máy rè một tiếng dài.
+
+Sau đó là một giọng đàn ông đứt quãng, méo vì nhiễu:
+
+`...không ký... tay ta... giữ... HN-07... nếu còn...`
+
+Máy tắt phụt.
+
+A Thất hét lên:
+
+"Không!"
+
+Nó đập nhẹ vào hộp nguồn, màn hình sáng lại rồi tối. Hộp pin nóng lên, bốc mùi khét.
+
+Mộc Sanh nắm vai nó.
+
+"Sao chép trước!"
+
+"Đang!"
+
+Thanh sao chép bò chậm như một con sâu bệnh.
+
+Mười phần trăm.
+
+Hai mươi.
+
+Bên ngoài trạm, tiếng động vang lên.
+
+Không phải thú.
+
+Tiếng động cơ.
+
+Sa Đinh nhìn qua khe cửa.
+
+"Có xe."
+
+A Thất không quay đầu.
+
+"Bao nhiêu?"
+
+"Hai. Không phải Thành Nam."
+
+Mộc Sanh mặt trắng.
+
+"Ngân Thụ?"
+
+Sa Đinh đáp:
+
+"Áo xám."
+
+Thanh sao chép: bốn mươi phần trăm.
+
+Ninh đứng dậy, chuông trong tay.
+
+Con thú bị nhốt cũng ngẩng đầu, như nghe thấy mùi người từng nhốt nó.
+
+A Thất nghiến răng.
+
+"Nhanh lên..."
+
+Máy không nghe.
+
+Nó chỉ là máy chết được kéo dậy bằng một hộp pin ăn cắp từ đau đớn của thú.
+
+Sáu mươi phần trăm.
+
+Tiếng bước chân ngoài cửa.
+
+Sa Đinh kéo cung.
+
+Mũi tên cuối cùng.
+
+Mộc Sanh cầm dao phẫu thuật nhỏ, tự biết nó gần như vô dụng.
+
+Ninh lắc chuông.
+
+Con thú bị nhốt nhìn nàng.
+
+Rồi nó quay đầu về phía cửa.
+
+Tám mươi phần trăm.
+
+Cửa thép bị đá mạnh.
+
+Một giọng ngoài kia nói:
+
+"Mở ra. Mẫu lưu trữ thuộc quyền thu hồi của Ngân Thụ."
+
+A Thất mắt đỏ lên.
+
+"Chờ chút thôi..."
+
+Chín mươi bảy.
+
+Chín mươi tám.
+
+Cửa bật ra.
+
+Con thú lao về phía những người áo xám bằng chút hơi cuối cùng của nó.
+
+Một trăm phần trăm.
+
+A Thất rút thẻ, hét:
+
+"Chạy!"
+
+Sa Đinh bắn mũi tên không còn đầu nhọn vào đèn treo, làm bóng tối sập xuống nửa phòng. Mộc Sanh kéo A Thất, Ninh kéo Mộc Sanh. Cả đội lao về lối thông gió phụ trong tiếng áo xám chửi và tiếng con thú quẫy lần cuối.
+
+A Thất quay đầu một lần.
+
+Nó không thấy rõ con thú.
+
+Chỉ thấy vòng bạc trên cổ nó lóe lên trong bóng tối rồi tắt.
+
+Khi chui ra ngoài, A Thất nôn khan. Không có gì trong bụng để nôn. Nó chỉ nôn ra nước bọt đắng và mùi thuốc sát trùng.
+
+Mộc Sanh tưởng nó bị độc, lập tức giữ mặt nó.
+
+"Mắt có mờ không?"
+
+A Thất lắc đầu.
+
+"Tai?"
+
+Lắc.
+
+"Vậy sao?"
+
+Nó ôm mảnh thẻ trong ngực.
+
+"Em lấy pin của nó."
+
+Mộc Sanh im.
+
+Sa Đinh ở bên cạnh nói:
+
+"Nó cứu chúng ta."
+
+"Vì em lấy pin."
+
+"Vì có người nhốt nó trước."
+
+A Thất ngẩng lên.
+
+Sa Đinh không giỏi an ủi. Câu hắn nói nghe cứng, thậm chí hơi lạnh. Nhưng đó là cách duy nhất hắn biết để đặt tội về đúng nơi.
+
+Ninh bước tới, đặt cái chuông nhỏ đã móp vào tay A Thất.
+
+Nàng gõ lên mu bàn tay nó hai cái.
+
+A Thất hiểu.
+
+Ghi lại.
+
+Đừng để nó chỉ là một con thú bị dùng xong rồi quên.
+
+Nó siết chuông.
+
+"Về em sẽ ghi."

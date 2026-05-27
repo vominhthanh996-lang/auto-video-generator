@@ -1,0 +1,447 @@
+# Phần 3: Một Cân Than Không Mua Được Công Bằng
+
+## Chương 213: Than Sạch
+
+Sáng ngày thứ hai của vùng cô lập, gió đổi hướng.
+
+Bụi đỏ từ phía nam thổi qua bãi xe nát, phủ lên tấm bạt chợ một lớp mỏng như da bệnh. Người ngoài vạch vừa ho vừa kéo cổ áo lên che miệng. Trong trạm, ba lò lọc còn cháy, nhưng lửa dưới đáy lò đã yếu đi rõ rệt.
+
+Than bẩn có thể làm nước nóng.
+
+Than sạch mới giữ được màng lọc không chết.
+
+Lâm Tịch ngồi trước kho, nhìn Di Mạn vét đáy bao than cuối cùng. Những cục than còn lại nhỏ bằng đầu ngón tay, lẫn đá vụn và một thứ bột xám khiến cổ họng người ta ngứa lên khi hít phải.
+
+Di Mạn phủi tay, nói:
+
+"Nếu dùng tiết kiệm, nửa ngày."
+
+A Thất ngồi xổm bên cạnh lò, mặt đen như vừa chui ra khỏi ống khói.
+
+"Nếu không tiết kiệm?"
+
+Di Mạn liếc nó.
+
+"Ngươi muốn nghe lời thật hay lời làm ngươi dễ ngủ?"
+
+A Thất im luôn.
+
+Tần Dã ngồi trên xe lăn ở mép sân. Hắn đã có thể dùng tay trái đẩy bánh xe chậm rãi, nhưng mỗi lần xoay mạnh, khớp ngón tay đều trắng bệch. Lâm Tịch thấy, nhưng không nói. Có những cố gắng nếu bị nhìn quá lâu sẽ biến thành xấu hổ.
+
+Mộc Sanh trải bảng kiểm nước ra trước mặt mọi người.
+
+"Than không đủ, hôm nay giảm số lô lọc. Người trong trạm một nửa khẩu phần. Người ngoài vạch chỉ cấp cho trẻ nhỏ, người sốt, người đổi công nặng."
+
+Tiếng xôn xao nổi lên ngay lập tức.
+
+Không phải ai cũng phản đối. Rất nhiều người chỉ đơn giản sợ.
+
+Sợ đến lượt mình khát.
+
+Sợ lúc mình sốt thì bảng đã hết tên.
+
+Sợ một nơi vừa được gọi là Cổng Nước Xám, ngày thứ hai đã không còn nước để gọi.
+
+Lâm Tịch đứng dậy, cổ họng khô đến đau.
+
+"Ghi rõ lên bảng. Ai bị giảm bao nhiêu, vì sao giảm. Người giữ cổng giảm trước."
+
+Di Mạn ngẩng đầu nhìn nàng.
+
+"Ngươi cũng giảm?"
+
+"Ta cũng giảm."
+
+Tần Dã không nói gì, chỉ lấy chiếc cốc sắt bên xe lăn đặt lên bàn.
+
+Trong cốc còn nửa phần nước sáng nay của hắn.
+
+"Của ta đưa vào lô bệnh."
+
+Lâm Tịch quay sang.
+
+"Không được."
+
+"Ta chưa hỏi."
+
+Giọng hắn rất bình, bình đến mức làm người nghe tức.
+
+Lâm Tịch nhìn bàn tay hắn. Gân xanh dưới da nổi lên, từng đường như dây thép kéo trong thịt. Gene của hắn vừa mới yên được vài ngày. Thiếu nước đối với người thường là khát. Đối với hắn, có thể là một vết nứt mới trong thân thể.
+
+Nàng muốn mắng.
+
+Nhưng ngoài vạch, một đứa bé đang ôm bụng ngồi dưới tấm bạt rách, môi nứt đến chảy máu.
+
+Thế là lời mắng kẹt trong cổ họng.
+
+Tần Dã nhìn nàng, ánh mắt không mềm, chỉ mệt.
+
+"Đừng để người ta nghĩ luật chỉ áp xuống dưới."
+
+Lâm Tịch cầm cốc nước của hắn, đặt cạnh cốc của mình.
+
+"Ghi bảng. Lâm Tịch giảm nửa phần. Tần Dã giảm nửa phần. Người giữ lò giảm nửa phần. Bù vào lô bệnh."
+
+A Thất cúi đầu ghi. Nét chữ của nó càng ngày càng ngay, nhưng chữ cuối vẫn hơi run.
+
+Đến giữa trưa, thương đội than đến.
+
+Bọn họ không đi vào từ đường lớn. Sáu chiếc xe kéo bọc da thú xám lăn qua vùng đá vỡ, bánh xe nghiền lên xương khô phát ra tiếng răng rắc. Trên xe chất bao than đen bóng, mỗi bao đều buộc dây đồng, có dấu nung hình chiếc cân.
+
+Người dẫn đầu là một gã đàn ông cao gầy, mắt nhỏ, râu mép tỉa rất sạch. Giữa phế thổ, người còn có thời gian tỉa râu thường không nghèo.
+
+Gã dừng ngoài vạch chợ, cười với Lâm Tịch.
+
+"Nghe nói Cổng Nước Xám thiếu than."
+
+Di Mạn đứng sau lưng Lâm Tịch, nhỏ giọng:
+
+"Không nghe cũng ngửi được. Lửa trong trạm yếu quá."
+
+Gã đàn ông vỗ bao than.
+
+"Than sạch từ hầm Bắc. Ít khói, ít bùn xạ, đốt lò lọc rất tốt. Một bao đổi hai mươi phần nước lọc."
+
+Ngoài chợ lặng đi.
+
+Hai mươi phần.
+
+Một bao than đổi được mạng của hai mươi người đang khát.
+
+Mộc Sanh cau mày:
+
+"Giá ngoài vùng nhiễm cao cũng chỉ mười hai phần."
+
+Gã nhún vai.
+
+"Ngoài vùng nhiễm không có bảng cô lập của Ngân Thụ."
+
+Hắn nói không lớn, nhưng đủ để mọi người nghe rõ.
+
+Than sạch không chỉ là than.
+
+Nó là dao đặt lên cổ lò lọc.
+
+Lâm Tịch nhìn từng bao than, rồi nhìn từng khuôn mặt phía sau mình. Mọi người đều hiểu nếu không có than, nước ngày mai sẽ ít hơn. Nếu nàng từ chối, kẻ chịu khát đầu tiên không phải nàng.
+
+Gã đàn ông cười nhẹ:
+
+"Ta không ép. Chỉ là đường xa, thú đêm nhiều. Hàng của ta có thể quay đầu."
+
+Tạ Khuông đứng ở vạch kiểm, cười khẩy:
+
+"Ngươi không ép. Ngươi chỉ đứng trước giếng nhà người khác bán thừng với giá quan tài."
+
+Mấy người trong thương đội lập tức đặt tay lên cán dao.
+
+Không khí căng như sợi dây ẩm.
+
+Tần Dã đẩy xe lăn ra trước nửa bước.
+
+"Than của ngươi kiểm trước."
+
+Gã đàn ông nhìn hắn.
+
+"Ta bán hàng, không bán lòng tin."
+
+Tần Dã đáp:
+
+"Ở đây lòng tin cũng phải qua cân."
+
+## Chương 214: Giá Bị Treo Lên
+
+Kiểm than mất gần một canh giờ.
+
+Mộc Sanh dùng kẹp sắt gắp từng cục than bỏ vào lò thử nhỏ. A Thất áp tai nghe tiếng cháy. Di Mạn ngửi khói, sau đó ho đến đỏ mắt. Tần Dã bảo Sa Đinh dùng dao cạo lớp ngoài một cục than lớn, bên trong quả nhiên đen đều, không có lõi bùn xạ.
+
+Than thật.
+
+Cái đau nhất của phế thổ không phải hàng giả.
+
+Mà là hàng thật được bán bằng giá khiến người ta muốn cúi đầu.
+
+Trong đám đông, một cô gái ôm em trai nhỏ bỗng bước lên.
+
+Nàng không lớn hơn Lâm Tịch bao nhiêu, tóc cắt lởm chởm, trên cổ có một vết sẹo dài do dây kim loại cứa. Nàng đặt xuống bàn kiểm một túi vải nhỏ.
+
+"Ta có ba viên tinh thạch vụn. Đổi giúp một phần than được không?"
+
+Di Mạn nhìn túi vải, rồi nhìn nàng.
+
+"Ngươi cần than làm gì?"
+
+"Em ta ho. Đêm lạnh. Nếu có than, ta đốt một chút trong lon."
+
+Mộc Sanh lập tức nói:
+
+"Không được đốt than trong lều kín. Nó sẽ chết trước khi hết ho."
+
+Cô gái ôm em trai chặt hơn.
+
+"Vậy ta làm sao?"
+
+Không ai trả lời ngay.
+
+Một bao than sạch ở trước mặt có thể giữ lò lọc sống, cũng có thể sưởi ấm một cái lon trong đêm, cũng có thể bị thương đội dùng làm dây thắt cổ cả trạm. Cùng một thứ, đặt vào tay khác nhau, thành mạng khác nhau.
+
+Gã thương nhân nhìn cảnh ấy, nụ cười nhạt như dầu nổi trên nước bẩn.
+
+"Thấy chưa? Nàng ấy cần than thật. Các ngươi giữ giá làm gì? Người nghèo đâu cần luật, họ cần ấm."
+
+Câu ấy rất độc.
+
+Nó mượn cái lạnh của đứa trẻ để đánh vào bảng luật.
+
+Lâm Tịch nhìn cô gái.
+
+"Em ngươi tên gì?"
+
+"Bình."
+
+"Tối nay đưa nó đến khu bệnh. Không đốt than trong lều. Nếu cần ấm, đổi công lấy chỗ nằm gần lò phụ."
+
+Cô gái siết túi tinh thạch.
+
+"Ta không muốn nợ."
+
+Lâm Tịch đáp:
+
+"Không nợ thì dễ chết một mình. Nợ ghi rõ, trả được."
+
+Gã thương nhân cười:
+
+"Nói hay. Nhưng lò phụ của ngươi cũng cần than của ta."
+
+Lâm Tịch quay sang hắn.
+
+"Cho nên ta mới đang nói giá với ngươi, không phải quỳ."
+
+Gã thương nhân chờ kết quả xong mới thong thả nói:
+
+"Hai mươi phần nước một bao. Nếu đổi mười bao, ta tặng thêm một bao vụn."
+
+Lâm Tịch hỏi:
+
+"Ngươi cần nước để uống hay để bán lại?"
+
+Gã cười.
+
+"Nước vào tay ta rồi là hàng của ta."
+
+Một vài người ngoài vạch bắt đầu xì xào. Có người nói đổi đi, than quan trọng. Có người mắng thương đội ăn máu. Có người nhìn Lâm Tịch như nhìn người đang cầm bát cơm của mình đem đặt lên bàn cân.
+
+Lâm Tịch biết mình đang đứng giữa hai cái sai.
+
+Không đổi, trạm thiếu than.
+
+Đổi, luật nước vừa dựng lên sẽ nghiêng về người có xe, có hàng, có dao.
+
+Nàng quay đầu hỏi Di Mạn:
+
+"Nếu không đổi, tối nay lò nào tắt trước?"
+
+"Lò số ba."
+
+"Lò số ba cấp cho ai?"
+
+Mộc Sanh đáp:
+
+"Khu ngoài vạch. Lô bệnh nhẹ."
+
+Một tiếng chửi bật ra từ đám đông. Không biết ai chửi ai. Có lẽ chửi cả đời này.
+
+Lâm Tịch nhắm mắt một chút.
+
+Nàng nhớ tới ngày đầu tỉnh lại trong thân xác này, cổ họng như bị tro nhét đầy, trước mắt là túi thịt người chết. Khi đó nàng nghĩ, sống thêm một ngày đã là thắng.
+
+Nhưng càng sống, một ngày càng không đủ.
+
+Người ta sẽ hỏi ngày đó sống bằng cách nào.
+
+Và sống qua ai.
+
+Nàng mở mắt.
+
+"Chúng ta đổi năm bao."
+
+Gã thương nhân lập tức cười.
+
+Lâm Tịch nói tiếp:
+
+"Mười phần nước một bao. Còn lại trả bằng công."
+
+Nụ cười của gã nhạt đi.
+
+"Công?"
+
+"Thương đội của ngươi vào vùng cô lập bán hàng, theo luật chợ, phải đóng phí kiểm. Phí đó ta không thu nước. Ta thu đường."
+
+Gã nheo mắt.
+
+Lâm Tịch chỉ ra phía bắc.
+
+"Đường qua mương xương bị sập. Xe của ngươi muốn quay về phải vòng ba mươi dặm. Chúng ta có người biết lối cũ qua trạm bơm. Đổi năm bao than, ta cấp năm mươi phần nước, thêm bản đồ đường an toàn đến rìa vùng cô lập."
+
+Gã im lặng.
+
+Tần Dã nhìn Lâm Tịch một cái rất khẽ.
+
+Đó không phải thắng.
+
+Đó là tìm thứ mình có mà đối phương chưa biết mình cần.
+
+Gã thương nhân cười lạnh:
+
+"Nếu ta không cần đường?"
+
+Ninh, người vẫn im lặng bên cạnh cột cổng, bỗng ngẩng đầu. Nàng đặt hai ngón tay lên cổ, rồi chỉ về phía xa.
+
+Sa Đinh hiểu ký hiệu của nàng trước tiên.
+
+"Có thú."
+
+Ngoài vùng đá đỏ, một đàn quạ mù bay vút lên, cánh xám loạn như tro bị ném. Bên dưới, bụi đất dâng thành một vệt dài.
+
+Tần Dã nói:
+
+"Chó hai hàm. Không dưới hai mươi con."
+
+Gã thương nhân quay phắt đầu.
+
+Sắc mặt hắn thay đổi.
+
+Những người kéo xe của hắn cũng nghe thấy.
+
+Một người trẻ nhất trong thương đội vô thức lùi về phía bao than. Hắn tưởng mình giấu được, nhưng bàn tay đã run đến mức dây buộc bên hông va vào móc sắt leng keng.
+
+Tần Dã nhìn hắn một cái.
+
+"Đường vòng phía nam có mương hở."
+
+Gã thương nhân cứng mặt.
+
+Tần Dã nói tiếp:
+
+"Xe nặng đi qua, bánh trước lún. Chó hai hàm không cần cắn người kéo đầu. Chúng cắn người đẩy sau."
+
+Người trẻ kia nuốt nước bọt.
+
+Gã thương nhân lạnh giọng:
+
+"Ngươi dọa người của ta?"
+
+Tần Dã đáp:
+
+"Ta đang định giá đường."
+
+Lâm Tịch hiểu ngay.
+
+Không chỉ than có giá.
+
+Thông tin cũng có giá.
+
+Đường sống cũng có giá.
+
+Trên phế thổ, người nghèo bị ép vì họ thường chỉ nhìn thấy món hàng trước mắt. Tần Dã dạy nàng nhìn thứ nằm sau món hàng: đường về, thú đuổi, bánh xe, người kéo, thời gian mặt trời lặn.
+
+Hàng thật, xe nặng, đường vòng xa, trời sắp tối.
+
+Phế thổ chưa bao giờ để kẻ ép giá được ép một cách yên ổn.
+
+Lâm Tịch nói:
+
+"Năm mươi phần nước, bản đồ đường qua trạm bơm, đổi năm bao than. Một bao vụn coi như phí vào chợ."
+
+Gã nhìn nàng rất lâu.
+
+"Ngươi học nhanh đấy."
+
+Lâm Tịch đáp:
+
+"Không nhanh thì chết."
+
+Cuối cùng thương đội đồng ý.
+
+Khi năm bao than được kéo vào cổng, người trong trạm không reo. Không ai có sức reo vì một cuộc đổi chác vẫn làm họ đau.
+
+Cô gái tên Bình đứng cạnh khu bệnh, nhìn từng bao than đi qua.
+
+Lâm Tịch gọi nàng lại.
+
+"Tinh thạch giữ lấy."
+
+Bình ngẩn ra.
+
+"Vậy em ta..."
+
+"Đổi công. Đêm nay ngươi lau lò phụ, sáng mai học cách đốt than không chết người. Sau đó ngươi dạy lại ba người khác."
+
+Bình siết túi tinh thạch nhỏ đến mức khớp tay trắng ra.
+
+"Ta dạy được?"
+
+Di Mạn ở bên cạnh nói:
+
+"Nếu không dạy được thì học tới khi dạy được. Ở đây không ai được quyền chỉ biết lạnh."
+
+Bình cúi đầu.
+
+Một lúc sau, nàng nói:
+
+"Vâng."
+
+Đó không phải thắng lợi lớn.
+
+Nhưng tối ấy, gần lò phụ có thêm một đứa bé ho ít hơn.
+
+Và trên bảng đổi công có thêm một dòng:
+
+`Bình: học đốt than sống, dạy lại người khác.`
+
+Lâm Tịch nhìn dòng chữ ấy, bỗng thấy năm bao than không chỉ mua thêm nước.
+
+Nó mua thêm một người biết cách không chết vì ấm.
+
+Lâm Tịch bảo A Thất treo giá lên bảng:
+
+`Than sạch: một bao đổi mười phần nước, một bản đồ đường, một lần kiểm công khai. Không ai được tự đổi nước riêng.`
+
+Tạ Khuông nhìn dòng chữ, đột nhiên hỏi:
+
+"Nếu lần sau có người mang thuốc cứu mạng đến, cũng không được tự đổi?"
+
+Lâm Tịch nói:
+
+"Không được."
+
+"Kể cả cứu Tần Dã?"
+
+Không khí lại lặng.
+
+Tần Dã nhìn Tạ Khuông, không giận.
+
+Lâm Tịch cũng nhìn hắn.
+
+Câu hỏi ấy không ác.
+
+Nó chỉ đặt dao đúng chỗ.
+
+Nàng nói:
+
+"Kể cả cứu hắn."
+
+Tạ Khuông gật đầu, như vừa ghét nàng thêm một chút, cũng tin nàng thêm một chút.
+
+Chiều hôm đó, lò số ba không tắt.
+
+Nhưng trên bảng luật có thêm một dòng:
+
+`Nước công không đổi riêng cho hàng quý. Hàng quý phải qua mắt người nghèo trước khi qua tay người giữ kho.`
+
+Đêm xuống, đàn chó hai hàm không đuổi theo thương đội.
+
+Chúng đứng trên sườn đất xa xa, mắt xanh lục trong bụi đỏ, nhìn về Cổng Nước Xám.
+
+Trên cổ con đầu đàn có một mảnh kim loại nhỏ.
+
+Dấu bạc của Ngân Thụ.

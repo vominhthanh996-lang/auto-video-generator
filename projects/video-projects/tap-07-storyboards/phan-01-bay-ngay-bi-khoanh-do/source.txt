@@ -1,0 +1,627 @@
+# Phần 1: Bảy Ngày Bị Khoanh Đỏ
+
+## Chương 209: Cái Thìa Gỗ Trên Cổng
+
+Cái thìa gỗ gõ vào tấm biển luật suốt đêm.
+
+Gió phế thổ không mạnh, nhưng dai. Nó luồn qua khe xe rác, qua đoạn xích gỉ, qua mảnh vải lọc buộc trên cổng, làm cái thìa nhỏ treo cạnh ba câu lõi cứ khẽ chạm vào mặt biển.
+
+Cộc.
+
+Cộc.
+
+Cộc.
+
+Không đủ lớn để đánh thức người ngủ sâu.
+
+Nhưng ở Cổng Nước Xám, không mấy ai ngủ sâu.
+
+Lâm Tịch ngồi dưới trụ bê tông số 9, lưng tựa tường, mắt nhìn cái thìa. Nàng đã nghe âm thanh ấy từ nửa đêm tới gần sáng. Mỗi lần nó gõ, nàng lại nhớ tên đứa trẻ.
+
+Miên Miên.
+
+Sáu tuổi.
+
+Thích thìa gỗ.
+
+Chết ngoài vạch trong đêm cổng đóng.
+
+Tên ấy đã được A Thất phát ba lần qua radio. Được Tiểu Mãn vẽ một cái thìa nhỏ cạnh bảng người chết. Được mẹ nó ngồi trong khu y tế lặp lại một lần duy nhất, rồi không nói nữa.
+
+Nhưng Lâm Tịch biết nhớ tên không làm món nợ nhẹ đi.
+
+Chỉ làm nó có hình.
+
+Tần Dã ngồi cách nàng một đoạn, trên đầu gối là bản đồ Cổng Nước Xám. Tay phải hắn đã cử động được nhiều hơn, nhưng vẫn chưa nâng nổi súng lâu. Đêm qua hắn cố vẽ đường rút, vẽ tới nửa chừng bút than rơi khỏi tay. Hắn nhìn nó một lúc, rồi dùng tay trái nhặt lên, vẽ tiếp.
+
+Không ai nhắc.
+
+Đó là cách dịu dàng của trạm.
+
+Không nhìn quá lâu vào chỗ đau của người khác.
+
+Di Mạn từ khu bếp tạm đi tới, đặt trước mặt hai người một bát nước muối nhạt.
+
+"Uống."
+
+Lâm Tịch nhận.
+
+"Đến lượt ta?"
+
+"Không. Đến lượt người ngồi làm mặt tang cả đêm."
+
+Tần Dã cầm bát bằng tay trái, uống một ngụm.
+
+"Mặn hơn hôm qua."
+
+"Có muối thì mặn. Ngươi muốn nước buồn à?"
+
+Hắn không cãi.
+
+Di Mạn nhìn Lâm Tịch.
+
+"Sáng nay đếm kho."
+
+"Ta biết."
+
+"Biết thì đứng dậy. Nhìn thìa không đẻ ra bột."
+
+Lâm Tịch ngẩng lên nhìn bà.
+
+Di Mạn không mềm giọng.
+
+"Nhớ người chết là việc phải làm. Nhưng người sống sẽ đói trước khi người chết bớt oan."
+
+Câu đó không dễ nghe.
+
+Nhưng đúng.
+
+Lâm Tịch uống hết phần nước muối nhạt, cổ họng đỡ rát một chút. Nàng đứng dậy. Đầu hơi choáng. Ba ngày gần như không ngủ làm thế giới có viền mờ, nhưng cổng vẫn ở đó, máng nước vẫn nhỏ giọt, hàng người đã bắt đầu dài ra.
+
+Ngày đầu tiên của bảy ngày cô lập bắt đầu bằng kiểm kho.
+
+Kho của Cổng Nước Xám không giống kho.
+
+Nó là ba góc tường được kẻ vạch bằng than: nước, thức ăn, thuốc. Bên cạnh là góc vật tư: dây, xương thú, vải lọc, than sạch, than nghi, lõi sứ, mảnh kim loại, một ít bột chống xạ rẻ tiền, vài con dao gửi chưa nhận.
+
+A Thất đứng giữa kho, cầm bảng, vẻ mặt như quan giữ ngân khố rất nghèo.
+
+"Nước lọc dùng uống: một thùng lớn, hai thùng nhỏ. Nếu chia theo luật hiện tại, đủ một ngày rưỡi."
+
+Di Mạn:
+
+"Nước thô?"
+
+"Năm thùng. Rửa, làm mát máy, lọc tiếp. Không uống trực tiếp nếu không muốn ruột nổi loạn."
+
+"Bột?"
+
+A Thất nhìn bảng, mặt tối đi.
+
+"Bột vàng còn một túi lớn, hai túi nhỏ. Nếu nấu cháo loãng cho người bệnh và trẻ, hai ngày. Nếu tính cả người làm đêm, một ngày."
+
+Không ai nói gì.
+
+"Muối?"
+
+"Nửa túi."
+
+Di Mạn nhắm mắt.
+
+Với bà, nửa túi muối có lẽ còn đau hơn nửa hộp thuốc.
+
+"Thuốc?"
+
+Thẩm Bạch đáp thay:
+
+"Thuốc hạ sốt còn bốn viên. Chống nhiễm trùng còn ba liều. Dung dịch sát khuẩn ít. Thuốc ổn định gen..."
+
+Hắn nhìn Tần Dã.
+
+"Nửa liều."
+
+Lâm Tịch cảm giác mọi ánh mắt đều muốn quay sang Tần Dã nhưng lại cố không quay.
+
+Tần Dã nói:
+
+"Ghi."
+
+A Thất ghi.
+
+"Than sạch?"
+
+Trần Hòe đáp:
+
+"Nếu lọc tiết kiệm, ba ngày. Nếu người tới thêm như hôm qua, chưa tới hai."
+
+Lâm Tịch nhìn bảng.
+
+Bảy ngày cô lập.
+
+Thức ăn hai ngày.
+
+Than hai ngày.
+
+Thuốc một cơn sốt.
+
+Tần Dã nửa liều.
+
+Cổng Nước Xám có tên, nhưng cái tên ấy không ăn được, không lọc nước được, không hạ sốt được.
+
+Một đứa bé trong góc kho giơ cái bát mẻ lên hỏi mẹ:
+
+"Hai ngày là mấy bữa?"
+
+Người mẹ nhìn cái bát trong tay nó.
+
+Bát ấy vốn không phải bát. Là nửa cái lon sữa bột cũ được mài mép cho bớt sắc. Mép lon vẫn cứa vào ngón tay nếu cầm vội, nên đứa bé luôn nâng bằng hai tay rất cẩn thận, như nâng một món đồ quý.
+
+Nàng không trả lời được.
+
+Không phải vì không biết đếm.
+
+Mà vì nếu nói ra, đứa trẻ sẽ biết nó phải bắt đầu đói từ bữa nào.
+
+Di Mạn bước tới, lấy cái lon trong tay đứa bé, nhìn đáy lon thủng một lỗ nhỏ.
+
+"Cái này đựng cháo sẽ rò."
+
+Đứa bé lập tức ôm lại.
+
+"Con uống nhanh."
+
+Không ai cười.
+
+A Thất quay mặt đi, lục trong đống vật tư, tìm được một mảnh thiếc mỏng.
+
+"Ta vá được."
+
+Di Mạn liếc nó.
+
+"Ngươi vá bát hay vá radio?"
+
+"Bát dễ hơn radio."
+
+"Vá hỏng thì sao?"
+
+"Thì em uống phần rò."
+
+Đứa bé nhìn nó, không hiểu đó là nói đùa hay nói thật.
+
+Lâm Tịch đứng bên bảng kho, bỗng thấy một cái tên lớn như Cổng Nước Xám cuối cùng vẫn phải rơi xuống một lỗ thủng nhỏ ở đáy lon.
+
+Nàng nói:
+
+"Ghi thêm một mục: bát, lon, nắp đựng nước. Ai có đồ thủng đem vá. Ai biết vá đổi công."
+
+Trần Hòe hỏi:
+
+"Vá bát cũng ghi vào luật?"
+
+Lâm Tịch đáp:
+
+"Nước rò khỏi bát cũng là nước mất."
+
+Thế là A Thất viết thêm trên bảng:
+
+`Đồ đựng nước cũng là kho.`
+
+Dòng chữ ấy rất nhỏ.
+
+Nhưng từ sáng hôm đó, bên cạnh kho nước có thêm một góc mới: góc vá bát. Một người đàn ông tay run vì đói được ứng trước nửa bát cháo loãng để hàn thiếc. Hắn ăn quay lưng lại với mọi người, như sợ ai nhìn thấy mình đói. Ăn xong, hắn vá cái lon thủng đầu tiên rất chậm, rất xấu, nhưng nước không rò nữa.
+
+Đứa bé ôm cái lon đã vá, cúi đầu thổi vào đáy lon.
+
+Không có giọt nào rơi ra.
+
+Nó cười.
+
+Một tiếng rất nhỏ.
+
+Nhỏ đến mức nếu không phải đang thiếu nước, có lẽ chẳng ai nghe.
+
+Nhưng hôm ấy mọi người đều nghe.
+
+Lý Cù chống gậy đứng bên cạnh.
+
+"Phải ngừng nhận người."
+
+Ngoài kho yên xuống.
+
+Đó là câu ai cũng nghĩ, nhưng ít người muốn nói.
+
+Di Mạn hỏi:
+
+"Ngừng thế nào? Đóng cổng?"
+
+Lý Cù nhìn cái thìa gỗ treo ngoài kia.
+
+"Nếu không muốn treo thêm thìa, phải nói trước."
+
+Sa Đinh, đội nhặt sắt cầu Đông, nói:
+
+"Ngừng nhận người khỏe. Chỉ nhận bệnh nặng và trẻ?"
+
+Hứa Đao cười khan:
+
+"Ai tới cũng sẽ nói mình bệnh."
+
+Vân Chẩm đang giặt vải bẩn ở góc thuốc, nhỏ giọng:
+
+"Có người bệnh thật không dám nói."
+
+Mọi người nhìn nàng.
+
+Nàng cúi đầu.
+
+"Ta nói thật."
+
+Lâm Tịch nhìn bảng kho.
+
+Không nhận người thì trái với cái tên Cổng Nước Xám vừa phát ra.
+
+Nhận hết thì trạm vỡ.
+
+Nàng nói:
+
+"Không đóng cổng. Nhưng từ hôm nay đổi luật nhận người."
+
+A Thất nâng than.
+
+"Bảng thứ sáu?"
+
+"Không. Ghi vào bảng cổng."
+
+Nàng nói chậm:
+
+"Người tới uống trong ngày phải đổi công hoặc vật. Người muốn ngủ trong cổng phải qua bàn người trạm. Khách nạn chỉ nhận nếu thật sự không qua nổi đêm ngoài vạch. Người khỏe tới sau phải dựng khu chờ ngoài cổng trước khi nhận nước."
+
+Lý Cù gật.
+
+"Tốt."
+
+Di Mạn thêm:
+
+"Khu chờ ngoài cổng phải có rãnh nước thải. Hôm qua mùi đã đủ giết người."
+
+Mộc Sanh:
+
+"Và không được đặt lửa gần túi mùi Đèn Vàng."
+
+Ninh lập tức gật mạnh.
+
+Thẩm Bạch đứng một bên, bỗng nói:
+
+"Các người đang tạo tầng cư trú."
+
+A Thất hỏi:
+
+"Là gì?"
+
+"Ngoài vạch, trong cổng, khu y tế, khu máy, khu cây. Mỗi tầng có quyền khác nhau."
+
+Di Mạn lạnh mặt:
+
+"Nói như vậy nghe rất giống thành Nam."
+
+Thẩm Bạch nhìn bà.
+
+"Vấn đề không phải có tầng. Vấn đề là tầng có cửa lên hay không."
+
+Câu đó làm mọi người im.
+
+Lâm Tịch nhìn hắn.
+
+Hiếm khi nàng ghét việc hắn nói đúng đến vậy.
+
+Nàng quay sang A Thất.
+
+"Ghi thêm: ngoài vạch có đường vào. Đường vào là làm việc, đổi hàng thật, hoặc bệnh thật. Không ai bị khóa mãi ở ngoài vì từng tới muộn."
+
+A Thất viết, rồi ngẩng đầu.
+
+"Câu này dài."
+
+"Viết."
+
+Nó viết.
+
+Ngoài cổng, cái thìa gỗ lại gõ vào bảng.
+
+Cộc.
+
+Như nhắc họ rằng mọi dòng luật mới đều phải đọc dưới mắt người không còn được vào.
+
+Đến giữa sáng, radio bắt được bản tin của Ngân Thụ.
+
+Không phải gửi riêng.
+
+Phát công khai qua tần số dân dụng:
+
+`Thông báo an toàn: vùng Trạm Lọc số Chín, thường gọi Cổng Nước Xám, đang trong thời gian cô lập bảy ngày. Nước chưa kiểm định có nguy cơ gây bệnh đường ruột và nhiễm xạ thứ cấp. Dân ngoài tường không nên tiếp cận. Mọi giao dịch với vùng cô lập tự chịu trách nhiệm.`
+
+Giọng máy sạch, nữ tính, nhẹ như đọc thời tiết.
+
+Người trong hàng hoang mang ngay.
+
+"Nước gây bệnh?"
+
+"Hôm qua Hồ Tử hết sốt mà."
+
+"Ta uống xong bụng vẫn đau."
+
+"Bụng ngươi đau từ trước!"
+
+Tiếng xì xào lan nhanh.
+
+Lâm Tịch nhìn máng nước.
+
+Tin giả không cần chứng minh.
+
+Nó chỉ cần khiến người khát nghi cái bát trong tay mình.
+
+Di Mạn cầm cốc đong, đập một cái lên bàn.
+
+"Ai sợ thì đừng uống. Ai uống thì xếp hàng. Ai vừa uống vừa chửi nước, ra đào rãnh cho đỡ rảnh."
+
+Tiếng xì xào giảm một nửa.
+
+A Thất thở ra.
+
+"Bà đúng là thuốc chống tin giả."
+
+Di Mạn:
+
+"Ta là người hết kiên nhẫn."
+
+Lâm Tịch nhìn radio.
+
+Bảy ngày cô lập không bắt đầu bằng lửa.
+
+Nó bắt đầu bằng kho thiếu và một câu nói trên sóng khiến người ta sợ chính ngụm nước đã cứu mình.
+
+## Chương 210: Nước Được Tin Hay Người Được Tin
+
+Người đầu tiên nôn sau bản tin là một thằng bé khỏe mạnh.
+
+Nó không nôn vì nước.
+
+Nó nôn vì sợ.
+
+Thằng bé tên Lư Tử, theo đội Chợ Gãy tới đổi xương thú lấy nước. Nó uống phần làm việc, ngồi chưa nóng chỗ đã nghe bản tin Ngân Thụ phát lại lần thứ hai. Mặt nó xanh đi, rồi ôm bụng nôn ra toàn nước vàng và bột ăn từ sáng.
+
+Đám đông lập tức lùi.
+
+"Thấy chưa!"
+
+"Nước có bệnh!"
+
+"Đừng uống nữa!"
+
+Máng nước bỗng thành thứ đáng sợ.
+
+Di Mạn lao tới trước, ngửi bãi nôn, mặt không đổi.
+
+"Nó ăn bột mốc."
+
+Người của Chợ Gãy phản bác:
+
+"Không mốc!"
+
+Di Mạn nhìn hắn.
+
+"Ngươi ăn thử?"
+
+Người kia im.
+
+Thẩm Bạch kiểm Lư Tử, nói:
+
+"Không sốt. Không co ruột do độc nước. Hoảng sợ, cộng thức ăn hỏng."
+
+Đám đông không yên.
+
+Vì người ta thường tin nỗi sợ nhanh hơn tin bác sĩ, nhất là khi bác sĩ mặc áo trắng.
+
+Lâm Tịch nhìn tình hình.
+
+Nếu nói nước không sao, họ sẽ hỏi nàng lấy gì bảo đảm.
+
+Nếu ép uống, nàng thành thứ Ngân Thụ muốn chứng minh.
+
+Nàng cầm một bát nước lọc tạm vừa ra khỏi máng.
+
+Mọi ánh mắt dồn tới.
+
+Di Mạn lập tức:
+
+"Không được làm trò uống chứng minh."
+
+Lâm Tịch dừng tay.
+
+Bà nói tiếp:
+
+"Ngươi uống, bọn họ sẽ nói mẫu sống uống không chết. Không chứng minh được gì."
+
+Thẩm Bạch gật đầu.
+
+"Đúng."
+
+Lâm Tịch đặt bát xuống.
+
+"Vậy chứng minh thế nào?"
+
+Mộc Sanh nói:
+
+"Theo dõi lô."
+
+Mọi người nhìn nàng.
+
+Nàng lau tay, bước tới máng nước.
+
+"Từ sáng đến giờ, nước từ ba lượt lọc khác nhau. Lư Tử uống lượt nào?"
+
+A Thất lập tức giở bảng.
+
+"Lượt ký hiệu than đen hai chấm. Cùng lượt có mười bảy người uống."
+
+"Mười bảy người kia đâu?"
+
+Đội ký hiệu chạy đi gọi.
+
+Mười bảy người được đưa tới, từng người nói tình trạng: một người đau bụng từ trước, hai người đói, một người ho, còn lại không sao. Không ai nôn.
+
+Mộc Sanh nói:
+
+"Nếu nước lô đó gây bệnh, không chỉ một người nôn vì nghe tin."
+
+Di Mạn cầm bột ăn của Lư Tử, bẻ ra. Bên trong có sợi mốc xanh.
+
+"Đây."
+
+Người Chợ Gãy đỏ mặt.
+
+"Bọn ta không biết."
+
+Trần Hòe lạnh nhạt:
+
+"Không biết không làm bột hết mốc."
+
+Lâm Tịch nhìn đám đông.
+
+"Từ giờ, đồ ăn đem vào khu chờ phải kiểm. Ai bán bột mốc đổi nước, xử như hàng giả. Ai ăn đồ mốc rồi đổ cho nước, cũng ghi lỗi."
+
+A Thất viết.
+
+Nhưng chuyện không dừng.
+
+Vì bản tin Ngân Thụ vẫn phát.
+
+Mỗi nửa giờ một lần.
+
+`Nước chưa kiểm định có nguy cơ gây bệnh.`
+
+`Vùng Cổng Nước Xám đang trong thời gian cô lập.`
+
+`Không tiếp xúc mẫu thực vật không rõ nguồn gốc.`
+
+Câu chữ sạch sẽ, lặp đi lặp lại, thấm vào đầu người như nước bẩn thấm vải.
+
+Đến chiều, hàng nước ngắn hơn.
+
+Không phải vì ít người khát.
+
+Vì nhiều người sợ.
+
+Máng lọc vẫn nhỏ giọt. Nước vẫn trong hơn trước. Nhưng người ta nhìn nó như nhìn một con dao giấu dưới bát.
+
+Di Mạn tức đến mức muốn đập radio.
+
+A Thất ôm radio chạy vòng quanh.
+
+"Đập máy phát ngoài kia, không đập con ta!"
+
+Tần Dã gọi Lâm Tịch.
+
+"Đừng chỉ chứng minh nước không độc. Chứng minh người kiểm nước đáng tin."
+
+"Bằng cách nào?"
+
+"Cho người không thuộc Chim Xám kiểm."
+
+Lâm Tịch hiểu.
+
+Nếu Mộc Sanh nói, người ta bảo Chim Xám tự bảo vệ mình.
+
+Nếu Thẩm Bạch nói, người ta sợ áo trắng.
+
+Nếu Di Mạn nói, người ta tin một nửa nhưng vẫn nghĩ bà giữ nồi nhà mình.
+
+Phải để người ngoài cầm mắt.
+
+Bàn người trạm họp gấp.
+
+Cuối cùng chọn ba người: Trần Hòe kiểm than, Sa Đinh đội cầu Đông, và Tạ Khuông, người có hận vì đêm đóng cổng.
+
+Khi Tạ Khuông được gọi, cả trạm im.
+
+Hắn đứng ngoài khu chờ, tay quấn băng, mắt đỏ vì thiếu ngủ.
+
+Lâm Tịch nói:
+
+"Ta muốn ngươi làm người kiểm nước."
+
+Hắn nhìn nàng rất lâu.
+
+"Ngươi tin ta?"
+
+"Không hoàn toàn."
+
+"Vậy sao gọi?"
+
+"Vì ngươi không có lý do che cho ta."
+
+Câu đó làm hắn cười một tiếng không vui.
+
+"Đúng."
+
+Di Mạn đặt trước mặt ba người ba cái cốc giống nhau. Mộc Sanh chỉ cách kiểm đơn giản: nhìn màu, ngửi mùi, nhỏ lên mảnh kim loại thử ăn mòn, để lắng, ghi ký hiệu lô. Thẩm Bạch bổ sung cách nhận biết phản ứng đường ruột sơ bộ, bị Di Mạn bắt nói lại bằng tiếng người.
+
+Tạ Khuông học rất nhanh.
+
+Không phải vì hắn thích trạm.
+
+Vì hắn muốn bắt được lỗi của trạm.
+
+Đó cũng là một loại đáng tin.
+
+Tối đó, radio Cổng Nước Xám phát bản tin đáp lại:
+
+`Nước lô than đen hai chấm: mười bảy người uống, một người nôn do bột mốc, không phát hiện bệnh lây qua nước. Người kiểm: Trần Hòe, Sa Đinh, Tạ Khuông. Ai uống nước bị đau bụng, báo bằng tên và lô nước. Không giấu, không đồn trống.`
+
+A Thất đọc xong, nhìn Tạ Khuông.
+
+"Ngươi muốn nói gì không?"
+
+Tạ Khuông cầm micro.
+
+Hắn im một lúc.
+
+Rồi nói:
+
+"Ta không thích Lâm Tịch. Nhưng lô nước này chưa giết ai."
+
+Radio rè đi.
+
+Trong hàng nước, có người bật cười khan.
+
+Di Mạn gật đầu.
+
+"Câu này đáng tin hơn khen."
+
+Lâm Tịch đứng dưới cổng, nghe tiếng thìa gỗ gõ nhẹ vào bảng luật.
+
+Nước cần được kiểm.
+
+Người giữ nước cũng cần được kiểm.
+
+Nếu không, Cổng Nước Xám sẽ chỉ là thành Nam nhỏ hơn, bẩn hơn.
+
+Đêm đó, bảng cổng thêm một dòng:
+
+`Nước được tin vì có người khác quyền kiểm. Người giữ nước được tin vì chịu bị kiểm.`
+
+A Thất viết xong, thở dài:
+
+"Câu này dài nhưng đẹp."
+
+Tiểu Mãn nhìn dòng chữ.
+
+"Vẽ con mắt được không?"
+
+Lâm Tịch gật.
+
+Cô bé vẽ một con mắt nhỏ cạnh cái bát nước.
+
+Con mắt hơi méo.
+
+Nhưng mở.

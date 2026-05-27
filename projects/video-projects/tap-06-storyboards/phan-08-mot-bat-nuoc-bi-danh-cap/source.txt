@@ -1,0 +1,441 @@
+# Phần 8: Một Bát Nước Bị Đánh Cắp
+
+## Chương 203: Đứa Trẻ Không Khóc
+
+Bát nước bị đánh cắp vào cuối ngày thứ ba.
+
+Không phải bởi cướp.
+
+Không phải bởi Hứa Đao.
+
+Không phải bởi người mới tới chưa đọc luật.
+
+Mà bởi Vân Chẩm.
+
+A Mục phát hiện trước. Nó đang dẫn đội ký hiệu kiểm chỗ nước thô rò dưới máng thì thấy Vân Chẩm bước quá nhanh qua góc khu y tế. Tay nàng ôm cái bát dưới áo, vai căng cứng. Người từng đói nhìn cách người khác giấu đồ rất giỏi.
+
+A Mục không la ngay.
+
+Nó đi theo.
+
+Vân Chẩm tới sau một bể lọc cạn. Đứa trẻ của nàng nằm ở đó, mặt xám, môi tím. Nó không khóc. Trẻ con không khóc thường tệ hơn khóc. Khóc là còn sức đòi thế giới nhìn mình.
+
+Vân Chẩm nâng đầu con, đổ nước vào môi nó.
+
+Nước chảy ra một nửa.
+
+"Nuốt đi. Con nuốt đi."
+
+Giọng nàng vỡ.
+
+A Mục đứng sau ống, tay lạnh đi.
+
+Theo luật, nàng ăn cắp.
+
+Theo mắt người, nàng là mẹ.
+
+Nó quay đầu chạy đi tìm Lâm Tịch.
+
+Khi Lâm Tịch tới, Vân Chẩm vẫn ôm con. Cái bát đã trống. Nàng nhìn thấy Lâm Tịch, mặt không còn màu máu.
+
+"Ta lấy."
+
+Không chối.
+
+Không xin.
+
+Chỉ nói vậy.
+
+Đứa trẻ trong lòng nàng thở rất nhẹ.
+
+Lâm Tịch hỏi:
+
+"Tên con?"
+
+"A Bình."
+
+"Bao lâu chưa tỉnh?"
+
+"Từ trưa."
+
+"Sao không báo khu y tế?"
+
+Vân Chẩm cười một tiếng khô.
+
+"Ta từng đem than giả. Người ta nhìn ta."
+
+Lâm Tịch im.
+
+Vì đúng.
+
+Người ta có nhìn.
+
+Kể cả khi Vân Chẩm làm việc kiểm than ba ngày, kể cả khi nàng phát hiện bao mốc, cái tên "than giả" vẫn bám lên lưng nàng như vết dầu. Đến lúc con nàng nặng hơn, nàng chọn ăn cắp trước khi xin. Vì nàng không tin mình xin sẽ được tin.
+
+Đó là lỗi của nàng.
+
+Cũng là lỗ thủng của trạm.
+
+Di Mạn tới sau, kiểm A Bình, mặt lập tức trầm xuống.
+
+"Nó cần thuốc, không chỉ nước."
+
+Vân Chẩm siết con.
+
+"Thuốc hết lượt."
+
+"Lượt không dùng cho trẻ sắp co giật."
+
+"Ta sợ..."
+
+Di Mạn cắt ngang:
+
+"Sợ thì báo. Ăn cắp làm chậm nó."
+
+Vân Chẩm cúi đầu, nước mắt rơi xuống mặt con.
+
+Đám người kéo tới rất nhanh.
+
+Tin "Vân Chẩm ăn cắp nước" lan nhanh hơn tin một đứa trẻ sắp chết.
+
+Hứa Đao là người nói lớn nhất:
+
+"Luật ghi rồi. Ăn cắp nước mất quyền uống một vòng."
+
+Trần Hòe nhìn Vân Chẩm, mặt khó xử.
+
+Lý Cù nói:
+
+"Nếu bỏ qua, đêm nay sẽ có mười bát mất."
+
+Sa Đinh nói:
+
+"Nếu phạt như thường, đứa trẻ chết."
+
+Mọi ánh mắt quay về Lâm Tịch.
+
+Đây là điều Tần Dã đã cảnh báo.
+
+Không phải thuốc của hắn.
+
+Không phải người thân của nàng.
+
+Nhưng là một đứa trẻ.
+
+Và một người mẹ sai vì sợ.
+
+Luật nằm trên bảng rất thẳng.
+
+Đời quỳ dưới đất rất cong.
+
+Lâm Tịch nhìn Vân Chẩm.
+
+"Ngươi phạm luật."
+
+Vân Chẩm gật đầu.
+
+"Ta biết."
+
+"Nước đã uống không lấy lại được. Nhưng lỗi phải trả."
+
+Nàng quay sang Di Mạn.
+
+"Cứu A Bình trước."
+
+Hứa Đao lập tức:
+
+"Vậy là bỏ qua!"
+
+Lâm Tịch quay lại nhìn hắn.
+
+"Không. Là cứu trước, phạt sau."
+
+"Phạt sao?"
+
+"Vân Chẩm mất quyền giữ than ba ngày. Chuyển sang khu y tế làm việc nặng dưới mắt Di Mạn: giặt vải bẩn, đổ nước thải, canh trẻ sốt. Phần nước của nàng giảm xuống phần giữ mạng trong hai vòng. Nhưng A Bình vẫn tính người bệnh."
+
+Một người trong hàng nói:
+
+"Vậy ai cũng lấy cho con rồi nói con bệnh."
+
+Di Mạn lạnh giọng:
+
+"Ta kiểm bệnh. Ngươi muốn giả co giật cho con à?"
+
+Người kia im.
+
+Lý Cù gõ gậy.
+
+"Ghi thêm: ăn cắp vì người bệnh vẫn là ăn cắp. Người bệnh không chịu phạt thay. Người ăn cắp làm việc trả."
+
+A Thất viết, mặt nặng.
+
+Vân Chẩm ngẩng lên.
+
+"Ta được ở lại?"
+
+Lâm Tịch đáp:
+
+"A Bình đang bệnh. Ngươi ở lại làm."
+
+Vân Chẩm cúi xuống, trán chạm nền bẩn.
+
+"Đừng lạy." Lâm Tịch nói.
+
+Nàng ngừng.
+
+Rồi hạ giọng:
+
+"Lần sau báo trước khi sợ biến thành trộm."
+
+Vân Chẩm bật khóc.
+
+A Bình được đưa vào khu y tế. Di Mạn dùng nửa viên thuốc hạ sốt, pha nước từng giọt. Đứa trẻ co giật một lần, rồi dần yên.
+
+Không ai thở phào lớn.
+
+Vì còn quá sớm.
+
+Đêm đó, Lâm Tịch ngồi trước bảng luật rất lâu.
+
+Tần Dã được A Mục đỡ tới cạnh nàng. Tay phải hắn đã cử động được hơn một chút, nhưng vẫn yếu.
+
+"Ngươi suýt phá luật."
+
+"Ừ."
+
+"Nhưng chưa phá."
+
+"Ta không biết."
+
+Hắn nhìn dòng mới A Thất vừa viết.
+
+"Biết. Ngươi cứu đứa trẻ trước, nhưng không xóa lỗi người mẹ."
+
+"Nghe tàn nhẫn."
+
+"Làm đội trưởng thường nghe tàn nhẫn hơn làm người tốt."
+
+Lâm Tịch cúi đầu.
+
+"Ta sợ có ngày mình quen."
+
+Tần Dã nói:
+
+"Vậy tiếp tục sợ."
+
+Nàng nhìn hắn.
+
+Hắn nói tiếp:
+
+"Sợ là vết đau của phần người. Đừng chữa hết."
+
+Trong trạm, A Bình sốt mê man. Vân Chẩm giặt vải bẩn bằng nước thô, khóc không ra tiếng. Di Mạn ngồi cạnh bếp thuốc, mắt đỏ vì thức.
+
+Bát nước bị đánh cắp không làm trạm vỡ.
+
+Nhưng nó làm ai cũng hiểu: luật ở đây không phải bức tường đá.
+
+Nó là dây.
+
+Căng quá đứt.
+
+Lỏng quá rối.
+
+Và người cầm dây sẽ bị cứa tay.
+
+## Chương 204: Bảng Luật Thứ Năm
+
+Bảng luật thứ năm được dựng cạnh khu y tế.
+
+Không ai vui khi dựng nó.
+
+A Thất viết chậm hơn thường. Tiểu Mãn ngồi cạnh, không vẽ thêm hình. Vân Chẩm đứng phía sau, tay còn ướt vì giặt vải, mắt sưng.
+
+Dòng đầu tiên:
+
+`Người bệnh nguy cấp cứu trước, xét lỗi sau.`
+
+Dòng thứ hai:
+
+`Ăn cắp nước vẫn là lỗi. Người bệnh không chịu phạt thay.`
+
+Dòng thứ ba:
+
+`Ai sợ không được tin, có thể báo qua người giữ cốc, khu y tế, hoặc đội ký hiệu.`
+
+Tiểu Mãn lúc này mới ngẩng đầu.
+
+"Đội ký hiệu cũng được báo?"
+
+Lâm Tịch gật đầu.
+
+"Các con thấy sớm."
+
+A Mục đứng cạnh, mặt nghiêm.
+
+"Nếu báo sai?"
+
+"Ghi sai. Học lại. Không phạt nếu không cố ý hại."
+
+Di Mạn thêm:
+
+"Nhưng không được lấy báo giả làm trò chơi."
+
+Mấy đứa trẻ đứng sau Tiểu Mãn đồng loạt gật đầu.
+
+Trạm từ đó có một thói quen mới: người không dám nói với người lớn có thể đặt một viên đá nhỏ trước nồi Mãn. Một viên đá nghĩa là có người bệnh nặng hơn vẻ ngoài. Hai viên là có người giấu nước. Ba viên là có nguy hiểm ngoài cổng.
+
+A Thất nói:
+
+"Chúng ta biến cái nồi thành hộp thư rồi."
+
+Tiểu Mãn ôm nồi, nghiêm túc:
+
+"Nó giữ được nước thì giữ được tin."
+
+Không ai phản đối được.
+
+Buổi chiều, viên đá đầu tiên xuất hiện.
+
+Một viên.
+
+Tiểu Mãn chạy đi gọi Di Mạn. Người được báo là một cậu bé từ Trạm Chợ Gãy, ngồi rất yên trong hàng, mặt không đỏ, không ho, nhưng móng tay tím. Mẹ nó nói nó chỉ mệt. Di Mạn kiểm xong, phát hiện nó mất nước nặng.
+
+Nó được đưa vào khu y tế trước khi ngất.
+
+Người mẹ ôm con khóc.
+
+Không biết ai đặt viên đá.
+
+Không ai hỏi.
+
+Tối đó xuất hiện hai viên.
+
+Có người giấu nước.
+
+Lần này là một người đàn ông khỏe mạnh, giấu nửa bát trong ống tre, định đem đổi lấy dao ngoài cổng. Bị bắt, hắn tức giận mắng:
+
+"Nước phần ta! Ta muốn làm gì thì làm!"
+
+Lý Cù gõ gậy:
+
+"Phần ngươi để uống. Muốn đổi thì đăng ký đổi. Nước giấu làm hàng rối."
+
+Người kia không phục.
+
+Hứa Đao bước tới, cười lạnh:
+
+"Ta từng nghĩ vậy. Sau đó đào rãnh hai ngày. Ngươi thích rãnh Đông hay rãnh Tây?"
+
+Người kia nhìn Hứa Đao, cuối cùng ngậm miệng.
+
+Lâm Tịch thấy cảnh đó, bỗng nhận ra người từng phạm luật nếu chưa bị đuổi, về sau có thể trở thành người giải thích luật thô nhất, hiệu quả nhất.
+
+Không phải vì họ đạo đức hơn.
+
+Vì họ biết cái giá.
+
+Đêm xuống, Tần Dã bảo Lâm Tịch đem tất cả bảng luật tới.
+
+"Tất cả?"
+
+"Ừ."
+
+A Thất nghe thấy lập tức đau khổ:
+
+"Ta vừa treo xong."
+
+Nhưng vẫn tháo.
+
+Năm bảng luật được đặt trên nền: nước, cổng, than, y tế, lỗi. Chữ của nhiều người khác nhau. Than đậm nhạt không đều. Có chỗ lem vì mưa bụi. Có chỗ bị trẻ con vẽ thêm ký hiệu. Có chỗ Di Mạn sửa thẳng tay, gạch ngang câu A Thất viết dài quá.
+
+Tần Dã nhìn rất lâu.
+
+"Quá nhiều."
+
+A Thất ôm ngực.
+
+"Công sức của ta."
+
+Tần Dã nói:
+
+"Người mới đọc không hết. Cổng loạn."
+
+Lâm Tịch ngồi xuống.
+
+"Vậy rút?"
+
+"Không rút nội dung. Chia lớp."
+
+Mộc Sanh hiểu trước.
+
+"Bảng cổng ghi điều bắt buộc trước khi vào. Bảng nước ghi lúc xếp hàng. Bảng y tế đặt ở khu y tế. Bảng xử lỗi để bàn người trạm."
+
+Tần Dã gật.
+
+"Và cần ba câu lõi."
+
+Di Mạn hỏi:
+
+"Ba câu nào?"
+
+Tần Dã nhìn Lâm Tịch.
+
+Nàng suy nghĩ.
+
+Rất lâu.
+
+"Một: nước không ai uống một mình."
+
+A Thất viết.
+
+"Hai: ai cầm phần của người khác phải đứng trước mặt mọi người."
+
+Lý Cù gật.
+
+"Ba?"
+
+Lâm Tịch nhìn khu y tế, nhìn cổng, nhìn Đèn Vàng.
+
+"Người không bị đem đổi lấy nước."
+
+Tần Dã nhắm mắt.
+
+"Được."
+
+Di Mạn đặt tay lên cốc đong.
+
+"Khắc lên bảng cổng."
+
+Mộc Sanh nói:
+
+"Ta khắc."
+
+A Thất lập tức:
+
+"Chữ ta đẹp hơn."
+
+Mọi người nhìn nó.
+
+Nó tự sửa:
+
+"Chữ ta... dễ nhận ra hơn."
+
+Cuối cùng, Mộc Sanh khắc nét, A Thất tô than, Tiểu Mãn vẽ ba ký hiệu: một bát nước, một con mắt, một người đứng cạnh cổng.
+
+Sáng hôm sau, người tới Trạm Số Chín không cần đọc hết năm bảng trước khi vào.
+
+Họ chỉ cần đọc ba câu đầu:
+
+Nước không ai uống một mình.
+
+Ai cầm phần của người khác phải đứng trước mặt mọi người.
+
+Người không bị đem đổi lấy nước.
+
+Sau đó mới tới hàng dài các dòng nhỏ hơn, rắc rối hơn, đau đầu hơn.
+
+Nhưng ba câu kia đứng ở cổng.
+
+Như ba cái đinh đóng vào một nơi chưa có tường.

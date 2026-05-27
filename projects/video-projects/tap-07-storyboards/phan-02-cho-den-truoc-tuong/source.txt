@@ -1,0 +1,627 @@
+# Phần 2: Chợ Đến Trước Tường
+
+## Chương 211: Tấm Bạt Đầu Tiên
+
+Chợ mọc lên trước khi Cổng Nước Xám kịp cho phép.
+
+Sáng ngày cô lập thứ hai, Lâm Tịch ra cổng thì thấy ngoài vạch đã có năm tấm bạt trải trên đất. Một tấm bán than vụn. Một tấm bán xương thú. Một tấm bán bột vàng đóng bánh nhỏ. Một tấm bán thuốc hạ sốt không nhãn. Tấm cuối cùng bán đủ thứ linh tinh: dây giày, ốc vít, vải lọc, kim gãy, hai cái muỗng sắt, một cái còi méo.
+
+Người bán ngồi sau tấm bạt, nhìn nàng như thể đã đóng sạp ở đây mười năm.
+
+Không ai rao hàng lớn tiếng.
+
+Chợ của người nghèo không mở bằng tiếng rao.
+
+Nó mở bằng mắt.
+
+Một người chỉ vào túi bột, người bán giơ hai ngón tay. Người mua lắc đầu, giơ một ngón và nửa mảnh dây đồng. Người bán nhìn dây đồng, cắn thử, nhổ ra một tiếng, rồi gật. Bên cạnh, một bà già nhặt xương dùng móng tay cạo lớp đen trên mẩu xương thú để chứng minh bên trong không mục. Một người đàn ông bán thuốc hạ sốt cứ đặt tay lên túi áo, như sợ chính món hàng của mình mọc chân chạy mất.
+
+Ở mép chợ, một thằng bé đội mũ len thủng hai lỗ ngồi trên thùng gỗ. Trước mặt nó không có hàng, chỉ có một miếng vải viết bằng than:
+
+`Tin mới, tin cũ, tin nghe lén. Không đúng không trả.`
+
+A Thất đọc xong, tức đến bật cười.
+
+"Không đúng không trả là gì?"
+
+Thằng bé đáp rất tự nhiên:
+
+"Tin sai cũng làm người ta sợ được. Sợ rồi thì đã dùng rồi, sao trả?"
+
+Lâm Tịch dừng lại.
+
+Tần Dã ở phía sau nói khẽ:
+
+"Chợ có tin là chuyện tốt."
+
+"Tốt?"
+
+"Tin không được bán ngoài sáng thì sẽ bán trong tối."
+
+Lâm Tịch nhìn thằng bé bán tin.
+
+"Vậy phải đặt luật cho tin?"
+
+"Đặt chậm là nó đặt luật cho ngươi."
+
+Thế là trước khi kịp quản than, quản bột, quản thuốc, Cổng Nước Xám đã phải nghĩ cách quản cả lời nói.
+
+Di Mạn nghe xong, mắng:
+
+"Một cái chợ chưa đủ bẩn, giờ còn bán cả gió."
+
+Thằng bé đội mũ len lập tức phản bác:
+
+"Gió miễn phí. Tin mới lấy tiền."
+
+Hứa Đao cười phun ra một tiếng.
+
+Lâm Tịch bảo A Thất ghi lên bảng tạm:
+
+`Tin được bán, nhưng phải ghi nguồn: thấy, nghe, đoán, hay bịa. Tin bịa không cấm, nhưng phải treo chữ bịa.`
+
+Thằng bé phản đối ngay:
+
+"Treo chữ bịa thì ai mua?"
+
+Di Mạn nói:
+
+"Ngươi có bản lĩnh thì bịa hay đến mức người ta biết bịa vẫn mua."
+
+Thằng bé suy nghĩ một lát, thấy cũng có lý, bèn sửa miếng vải:
+
+`Tin bịa nghe cho đỡ buồn: nửa giá.`
+
+Đám đông lần đầu tiên cười lớn hơn bình thường một chút.
+
+Tiếng cười ấy làm tường cũ bớt lạnh.
+
+Lý Cù chống gậy đứng cạnh cổng, mặt đen.
+
+"Ta đuổi, họ nói ngoài vạch không thuộc trạm."
+
+Hứa Đao cười:
+
+"Nói cũng có lý."
+
+Di Mạn nhìn hắn.
+
+"Ngươi vui vì thấy người khác cứng đầu giống mình?"
+
+"Ta vui vì có chợ."
+
+Không ai thật sự ghét chợ.
+
+Chợ nghĩa là có hàng.
+
+Có hàng nghĩa là người ta tin nơi này chưa chết ngay.
+
+Nhưng chợ trước cổng cũng nghĩa là rác, cướp, hàng giả, bệnh, đánh nhau, người có đồ chen ngang người không có đồ, và cái luật nước vừa dựng có thể bị một túi bột vàng đục thủng.
+
+Trần Hòe đi kiểm tấm bán than, chưa tới ba câu đã cãi nhau.
+
+"Than này ẩm."
+
+"Ẩm vì sương, không phải nước độc."
+
+"Ẩm tính giá khác."
+
+"Ngươi là ai mà tính?"
+
+Trần Hòe chỉ vào bảng cổng.
+
+"Người kiểm than."
+
+Người bán than nhìn bảng, rồi nhìn nàng.
+
+"Bảng trong cổng. Ta ngoài vạch."
+
+Trần Hòe quay đầu nhìn Lâm Tịch.
+
+Đúng.
+
+Lại một lỗ hổng.
+
+A Thất ôm bảng chạy tới, chưa gì đã thở dài.
+
+"Ta nghe thấy tiếng luật mới gọi tên mình."
+
+Bàn người trạm họp ngay ngoài cổng, trước mặt năm tấm bạt.
+
+Sa Đinh nói:
+
+"Nếu cấm chợ, họ đi chỗ khác. Chúng ta mất than, muối, tin."
+
+Lý Cù:
+
+"Nếu không cấm, ngoài vạch thành đống bẩn."
+
+Di Mạn:
+
+"Đống bẩn sẽ vào nước."
+
+Mộc Sanh:
+
+"Chợ phải cách máng ít nhất ba mươi bước, cuối hướng gió, có rãnh thải."
+
+Hứa Đao:
+
+"Và phí chỗ."
+
+Mọi người nhìn hắn.
+
+Hắn nhún vai.
+
+"Không thu phí bằng nước. Thu bằng việc. Ai trải bạt thì đào rãnh, gom rác, hoặc góp than đốt khử mùi. Không thì ai cũng tới trải."
+
+Lý Cù nhìn hắn như lần đầu thấy trong đống bùn có cục sắt dùng được.
+
+"Câu này được."
+
+Lâm Tịch gật đầu.
+
+"Chợ ngoài vạch được tồn tại, nhưng phải đọc luật chợ. Hàng ăn, thuốc, than, nước, vũ khí tách khu. Hàng chưa kiểm không được rao là sạch. Ai bán giả, mất quyền bạt ba ngày và làm việc xử lỗi."
+
+A Thất viết nhanh.
+
+"Tên chợ?"
+
+Không ai chuẩn bị.
+
+Tiểu Mãn đứng cạnh nồi Mãn, nhìn mấy tấm bạt.
+
+"Chợ Trước Cổng."
+
+Đơn giản.
+
+Đúng.
+
+Vậy là ghi.
+
+`Chợ Trước Cổng: ngoài vạch, có rãnh, có kiểm, có phí việc.`
+
+Người bán than phản đối đầu tiên.
+
+"Ta tới trước!"
+
+Hứa Đao vác xẻng tới.
+
+"Vậy đào rãnh trước."
+
+"Ta bán than!"
+
+"Than ẩm."
+
+"Ngươi..."
+
+Hứa Đao cười.
+
+"Ta từng đem than độc, tin ta đi, ngươi không thắng được vụ này."
+
+Người bán than tức nhưng cuối cùng cầm xẻng.
+
+Chợ được dời xuống cuối hướng gió.
+
+Việc dời năm tấm bạt mất cả buổi sáng và rất nhiều tiếng chửi. Nhưng đến trưa, Chợ Trước Cổng đã có rãnh thải nông, khu than riêng, khu thuốc riêng, khu đồ kim loại riêng. Tiểu Mãn cùng đội ký hiệu vẽ dấu lên từng khu: cục than, cái lá thuốc, cây kim, bát ăn.
+
+A Thất nhìn những hình vẽ.
+
+"Chúng ta đang có đường phố."
+
+Mộc Sanh:
+
+"Đừng nói sớm."
+
+"Tỷ luôn dập tắt thơ mộng."
+
+"Thơ mộng không đào rãnh."
+
+Khu thuốc là nơi rắc rối nhất.
+
+Người bán thuốc hạ sốt không nhãn là một bà già tóc bạc xanh, tự xưng là Bà Hôi. Không ai hỏi vì sao. Đến gần là hiểu.
+
+Bà đặt trước mặt năm viên thuốc màu trắng xám.
+
+"Một viên đổi một bát nước lọc."
+
+Di Mạn cười lạnh.
+
+"Một viên không nhãn đổi một bát nước? Ngươi bán thuốc hay bán mơ?"
+
+Bà Hôi đáp:
+
+"Không mua thì trẻ sốt chết."
+
+Không khí lạnh xuống.
+
+Đây là kiểu thương lượng tệ nhất: dùng người bệnh làm giá.
+
+Thẩm Bạch kiểm thuốc, nói:
+
+"Hai viên là hạ sốt thật nhưng cũ. Một viên là bột vôi. Hai viên không rõ."
+
+Bà Hôi lập tức:
+
+"Áo trắng nói bậy để bán thuốc của hắn!"
+
+Di Mạn cầm một viên bột vôi, bóp nát.
+
+"Vậy ngươi ăn viên này."
+
+Bà Hôi im.
+
+Đám đông xôn xao.
+
+Lâm Tịch nói:
+
+"Thuốc thật được đổi. Thuốc giả xử như hàng độc."
+
+Bà Hôi trừng mắt:
+
+"Ta già rồi!"
+
+Di Mạn:
+
+"Thuốc giả không kính già."
+
+Cuối cùng hai viên hạ sốt thật được đổi bằng nước và một phần bột. Viên giả bị nghiền trước mặt mọi người. Hai viên không rõ bị niêm lại, treo ở khu thuốc chờ kiểm sau.
+
+Chợ Trước Cổng học bài đầu tiên: có hàng không có nghĩa có quyền nói dối.
+
+Chiều đó, một người đàn ông đem tới một cái thìa gỗ.
+
+Từ xa, Lâm Tịch đã thấy Tiểu Mãn đứng khựng.
+
+Cái thìa ấy rất giống cái treo trên cổng.
+
+Nhỏ, cũ, tay cầm mòn.
+
+Người đàn ông giơ nó lên.
+
+"Đồ trẻ con trước tận thế. Đổi hai bát nước."
+
+Mẹ của Miên Miên, đang ngồi trong khu y tế, chậm rãi ngẩng đầu.
+
+Không khí quanh cổng như ngừng lại.
+
+Lâm Tịch bước tới.
+
+"Ngươi lấy ở đâu?"
+
+Người đàn ông thấy mọi người nhìn, hơi hoảng nhưng vẫn cố cứng.
+
+"Nhặt. Đồ nhặt được thì bán."
+
+Mẹ Miên Miên đứng dậy.
+
+"Trên cán có vết cắt hình trăng không?"
+
+Người đàn ông nhìn cái thìa.
+
+Có.
+
+Mặt hắn đổi sắc.
+
+Mẹ Miên Miên nói:
+
+"Đó là thìa của con ta."
+
+Người đàn ông lập tức:
+
+"Ta nhặt ngoài vạch. Người chết bỏ lại thì..."
+
+Lâm Tịch nắm cổ tay hắn.
+
+Không mạnh.
+
+Nhưng đủ.
+
+"Đồ của người chết ngoài vạch phải báo tên. Không được đem bán ở cổng người đó chết."
+
+"Luật nào ghi?"
+
+Chưa ghi.
+
+Nhưng sẽ ghi.
+
+A Thất đã cầm than.
+
+Mẹ Miên Miên đi tới, nhận cái thìa. Nàng không khóc. Chỉ cầm hai cái thìa: một cái treo trên cổng, một cái vừa tìm lại. Hai cái chạm nhau, phát ra tiếng rất nhỏ.
+
+Lâm Tịch nhìn người đàn ông.
+
+"Ngươi đào mộ?"
+
+"Ta nhặt!"
+
+Tạ Khuông từ khu kiểm nước bước tới.
+
+"Ta thấy hắn lục xác lúc sáng."
+
+Người đàn ông trắng mặt.
+
+Đám đông nổi giận ngay.
+
+Lâm Tịch nâng tay.
+
+"Không đánh."
+
+Nàng nói với người kia:
+
+"Ngươi làm khu chôn tên ba ngày. Tìm đồ người chết, báo lại. Đồ có người nhận trả người nhận. Đồ không người nhận ghi lên bảng, sau bảy ngày mới được đổi vào kho chung. Ngươi không được bán ở chợ trong bảy ngày."
+
+Người kia run giọng:
+
+"Ta đói."
+
+Mẹ Miên Miên nhìn hắn.
+
+"Con ta cũng đói."
+
+Không ai nói nữa.
+
+Tối đó, Chợ Trước Cổng có thêm một luật:
+
+`Đồ người chết không phải hàng ngay. Ghi tên trước, đổi sau.`
+
+Cái thìa thứ hai được treo cạnh cái thứ nhất.
+
+Gió thổi qua, hai cái thìa gõ vào nhau.
+
+Cộc.
+
+Cộc.
+
+Chợ đã tới trước tường.
+
+Và món hàng đầu tiên nó dạy cho Cổng Nước Xám là: nếu không đặt luật cho người chết, người sống sẽ đem cả ký ức ra đổi nước.
+
+## Chương 212: Giá Của Tin Đồn
+
+Tin đồn cũng được bán ở chợ.
+
+Không trải bạt.
+
+Không treo ký hiệu.
+
+Không cần cân.
+
+Nó đi qua miệng người nhanh hơn than qua tay Trần Hòe. Một câu nói nhỏ ở khu thuốc, nửa giờ sau thành tiếng xì xào ở hàng nước, tới chiều đã biến thành ba phiên bản khác nhau.
+
+Phiên bản một: nước Cổng Xám làm người uống mọc rêu trong bụng.
+
+Phiên bản hai: Đèn Vàng là cây ăn máu trẻ con nên mới đuổi được thú.
+
+Phiên bản ba: Lâm Tịch không phải người, ai nhìn mắt nàng lâu sẽ bị ghi tên vào danh sách Ngân Thụ.
+
+A Thất nghe tới phiên bản ba thì quay sang nhìn Lâm Tịch.
+
+"Ta nhìn chị hơi nhiều."
+
+Di Mạn:
+
+"Ngươi bị ghi từ lâu rồi. Vì nói nhiều."
+
+Nhưng tiếng cười chỉ che được một phần.
+
+Tin đồn làm người ta tránh Ninh.
+
+Khi Ninh ôm hộp Đèn Vàng đi qua khu chợ để đổi vị trí túi mùi, vài người lùi lại. Một đứa trẻ hỏi mẹ:
+
+"Cây ăn máu hả?"
+
+Người mẹ bịt miệng nó, kéo đi.
+
+Ninh đứng giữa đường, mặt trắng.
+
+Lâm Tịch đi tới cạnh cậu.
+
+"Không phải lỗi của cây."
+
+Ninh viết lên bảng nhỏ:
+
+`Nhưng họ sợ.`
+
+"Ừ."
+
+`Sợ rồi sẽ muốn đốt.`
+
+Lâm Tịch không trả lời ngay.
+
+Vì cậu nói đúng.
+
+Thứ người ta sợ, nếu không hiểu, sẽ muốn đốt.
+
+Nàng nhìn khu chợ.
+
+"Vậy cho họ nhìn."
+
+Ninh ôm hộp chặt hơn.
+
+`Không cho chạm.`
+
+"Không cho chạm. Chỉ nhìn."
+
+Buổi chiều, Cổng Nước Xám mở một buổi "đọc cây".
+
+Cái tên do A Thất đặt, bị Di Mạn chê nghe như trò lừa. Cuối cùng đổi thành "giải thích Đèn Vàng". Nhưng A Thất vẫn lén ghi trong góc bảng: đọc cây, không thu phí.
+
+Ninh đặt hộp Đèn Vàng lên bàn, cách mọi người một vạch. Lâm Tịch đứng cạnh. Thẩm Bạch đứng xa hơn, bị Di Mạn giám sát. Tạ Khuông, người kiểm nước không ưa Lâm Tịch, cũng được gọi tới làm người nhìn.
+
+Lâm Tịch nói:
+
+"Cây này không ăn máu. Đất trong hộp có phản ứng mùi làm thú gắn thẻ lệch hướng. Lấy đất phải có người nhìn. Không chạm rễ. Không dùng trẻ con làm mồi. Ai nói cây ăn máu, chỉ ra máu ở đâu."
+
+Một người trong đám đông hỏi:
+
+"Vậy sao Ngân Thụ muốn nó?"
+
+Thẩm Bạch đáp:
+
+"Vì nó sống được ở môi trường nhiều xạ và có khả năng ổn định một số phản ứng sinh học."
+
+Di Mạn:
+
+"Tiếng người."
+
+Thẩm Bạch thở ra.
+
+"Vì nó có thể giúp đất và người chịu độc tốt hơn. Có thể. Chưa chắc."
+
+Đám đông xôn xao.
+
+Một người khác hỏi:
+
+"Vậy nó quý hơn nước?"
+
+Ninh lập tức căng người.
+
+Lâm Tịch đáp:
+
+"Không đổi."
+
+"Cái gì cũng có giá."
+
+"Có. Giá của nó là cả trạm giữ nó, vì nó cũng giúp giữ trạm. Nhưng nó không bán lẻ."
+
+Tạ Khuông bỗng nói:
+
+"Ta thấy họ lấy đất cây kéo thú lệch. Không thấy cây ăn ai."
+
+Mọi người quay sang hắn.
+
+Lời của Tạ Khuông có trọng lượng lạ.
+
+Vì ai cũng biết hắn không thích Lâm Tịch.
+
+Một người bán xương thú hỏi:
+
+"Ngươi chắc?"
+
+Tạ Khuông lạnh mặt:
+
+"Ta mất người ngoài vạch vì cổng này. Nếu cây ăn trẻ, ta đã nói đầu tiên."
+
+Đám đông im.
+
+Tin đồn không chết ngay.
+
+Nhưng nó bị chặn lại một nhịp.
+
+Sau buổi giải thích, có người vẫn tránh Ninh. Nhưng cũng có một đứa trẻ chạy tới đặt trước vạch một nắm đất khô trong hộp nhỏ.
+
+"Cho cây."
+
+Ninh nhìn Lâm Tịch.
+
+Thẩm Bạch kiểm đất.
+
+"Nhiễm dầu. Không dùng."
+
+Đứa trẻ xụ mặt.
+
+Ninh nghĩ một chút, rồi lấy một hòn đá nhỏ sạch trong hộp mình đưa cho nó.
+
+Đổi.
+
+Đứa trẻ cầm hòn đá, chạy đi.
+
+Tiểu Mãn nhìn cảnh đó, nói:
+
+"Cây cũng có chợ."
+
+Di Mạn:
+
+"Đừng mở thêm chợ."
+
+A Thất nhỏ giọng:
+
+"Chợ Cây nghe cũng..."
+
+Mộc Sanh bịt miệng nó.
+
+Tin đồn thứ ba, về mắt Lâm Tịch, khó xử hơn.
+
+Không thể mở buổi cho người ta nhìn mắt nàng.
+
+Di Mạn nói:
+
+"Ai tin nhìn mắt bị ghi tên thì bảo họ nhắm mắt khi nhận nước."
+
+Nhưng Tần Dã không đồng ý.
+
+"Tin này không nhằm vào mắt. Nhằm vào danh sách."
+
+Lâm Tịch hiểu.
+
+Ngân Thụ muốn người ta sợ đứng chung tên với nàng. Sợ được ghi vào bảng Cổng Nước Xám, vì bảng đó có thể thành danh sách xử lý.
+
+Nếu người ta không dám ghi tên, bàn người trạm vỡ.
+
+Nếu không có tên, đốt lại dễ hơn.
+
+Nàng hỏi:
+
+"Làm sao?"
+
+Tần Dã nhìn cái thìa gỗ trên cổng.
+
+"Đọc cả tên người chết và người sống như nhau. Không để danh sách chỉ là thứ bị săn."
+
+Tối đó, radio phát một bản tin khác thường.
+
+Không phải xin hàng.
+
+Không phải cãi Ngân Thụ.
+
+Là đọc tên những người đã đổi công trong ngày: Vân Chẩm giặt vải, Hứa Đao đào rãnh, Sa Đinh gác thú, Tô Mạch khâu túi lọc, Tiểu Mãn vẽ ký hiệu, Tạ Khuông kiểm nước, mẹ Miên Miên treo thìa gỗ, Lư Tử nôn vì bột mốc nhưng sau đó giúp nhặt đá.
+
+Mỗi tên đi kèm một việc.
+
+Không phải danh sách bị xử lý.
+
+Danh sách đã làm một việc để trạm sống thêm một ngày.
+
+A Thất đọc tới khàn.
+
+Cuối bản tin, nó hỏi:
+
+"Ai sợ bị ghi tên thì có thể dùng tên muốn được gọi. Nhưng làm việc gì, chúng ta ghi việc đó. Người không chỉ là mã."
+
+Radio rè đi.
+
+Rất lâu sau, có một giọng từ xa đáp:
+
+`Ghi giúp: Bà Hôi bán thuốc giả, hôm nay đổi sang đun nước thô ba can. Đừng ghi tên thật.`
+
+Di Mạn nhướng mày.
+
+"Bà ta còn biết xấu hổ."
+
+A Thất cười:
+
+"Ghi: Bà Hôi, đun nước thô ba can, từng bán thuốc giả."
+
+Ngoài chợ, Bà Hôi la lên:
+
+"Đừng đọc đoạn sau!"
+
+Nhưng đã muộn.
+
+Mọi người cười.
+
+Không lớn.
+
+Nhưng đủ để tin đồn rách thêm một đường.
+
+Đêm ấy, Lâm Tịch đi qua khu chợ, thấy vài người vẫn tránh mắt nàng. Nhưng cũng có một người bán dây giày gật đầu chào, rất nhanh, như sợ bị ai nhìn thấy.
+
+Vậy cũng được.
+
+Tin tốt ở phế thổ không đến như mặt trời.
+
+Nó đến như lửa nhỏ trong lon rỉ.
+
+Dễ tắt.
+
+Nhưng đủ hơ ấm một bàn tay.

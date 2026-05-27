@@ -1,0 +1,323 @@
+# Phần 11: Đêm Nghe Người Chết Nói Nhỏ
+
+## Chương 249: Không Ai Ngủ Sau Radio
+
+Sau câu "ta nghe", radio im.
+
+Không phải kiểu im của máy tắt.
+
+Là kiểu im của một căn phòng có người vừa nhắc tên một người chết, rồi phát hiện ngoài cửa có tiếng thở.
+
+A Thất giữ tay trên nút nguồn, không dám ấn. Đèn xanh nhỏ trên module vẫn nhấp nháy. Mỗi lần nó sáng lên, bóng mặt Tần Dã lại hiện một chút trên vỏ sắt: xương gò má, khóe môi mím chặt, mắt tối đến mức nhìn không ra đau hay tỉnh.
+
+Lâm Tịch đứng cạnh hắn.
+
+Nàng chưa từng thấy toàn bộ Cổng Nước Xám im như vậy.
+
+Ngay cả đêm Miên Miên chết, nơi này vẫn có tiếng khóc, tiếng mắng, tiếng băng vải xé, tiếng nước đổ vào chậu. Nhưng bây giờ mọi âm thanh đều bị kéo xuống dưới cổ họng. Người ta sợ chỉ cần nói lớn, cái giọng trong radio sẽ biến mất, hoặc tệ hơn, thứ đang nghe ngoài bóng tối sẽ biết họ vừa nghe được gì.
+
+Tần Sách.
+
+Một người chết trên giấy.
+
+Một người gọi Tần Dã bằng mã cũ.
+
+Một người nói đừng giao HN-07 cho bất kỳ phe nào.
+
+Di Mạn là người đầu tiên cử động.
+
+Nàng cầm cái gáo, đi tới nồi cháo đã nguội, múc một muỗng, rồi đặt xuống. Không ai ăn. Nàng nhìn quanh một vòng, cuối cùng mắng:
+
+"Nhìn radio no được à?"
+
+Không ai trả lời.
+
+Nàng múc cháo vào bát, đặt bát đầu tiên trước mặt A Thất.
+
+"Ăn."
+
+"Em không đói."
+
+"Miệng ngươi không đói, tay ngươi đang run."
+
+A Thất nhìn xuống tay mình. Quả nhiên run. Nó cầm bát, cháo sóng sánh, suýt đổ lên module. Di Mạn giật bát lại, tức giận đến mức mắt đỏ.
+
+"Xa máy ra. Ngươi muốn đem thứ cả đội suýt chết lấy về nấu cháo hả?"
+
+A Thất cúi đầu.
+
+"Xin lỗi."
+
+Di Mạn khựng lại.
+
+Từ khi thằng bé trở về, nó đã nói xin lỗi quá nhiều. Xin lỗi vì dùng pin của Chuông. Xin lỗi vì để Ninh khàn giọng. Xin lỗi vì ngất trong bùn. Xin lỗi vì module chưa sao lưu xong. Cái miệng nó như thể nếu không liên tục xin lỗi, mảnh thẻ trong tay sẽ biến thành tội.
+
+Di Mạn đặt bát xuống trước mặt nó lần nữa, lần này nhẹ hơn.
+
+"Ăn trước. Xin lỗi sau. Người đói xin lỗi nghe không rõ."
+
+A Thất bưng bát, uống một ngụm.
+
+Cháo nguội, hơi mặn, có mùi khói. Nó nuốt xuống, rồi bỗng bật khóc không tiếng.
+
+Không ai trêu.
+
+Ninh ngồi cạnh nó, cổ quấn khăn, đưa cái chuông móp đặt vào giữa hai người. A Thất nhìn cái chuông, rồi nhìn module. Nó lấy than viết lên một mảnh gỗ nhỏ:
+
+`Chuông - nhớ sao lưu.`
+
+Viết xong mới ăn tiếp.
+
+Tần Dã vẫn đứng cạnh radio.
+
+Không, hắn không đứng. Hắn ngồi trên xe lăn. Nhưng lúc này không ai cảm thấy hắn thấp hơn người khác. Bóng hắn đổ trên nền đất dài và cứng, như một cánh cửa đóng.
+
+Lâm Tịch hỏi rất khẽ:
+
+"Anh muốn nghe lại không?"
+
+Tần Dã không đáp ngay.
+
+Bên ngoài, Ninh không thể gác vì cổ họng bị thương, nên Tạ Khuông thay nàng đứng dưới cổng. Lương Tiêu bị trói một tay vào cột giám sát, nhưng không phản kháng. Chu Kính đã rời đi, nhưng người của hắn có thể chưa xa. Đội áo xám biến mất, nhưng tiếng động cơ trong trí nhớ mọi người vẫn còn.
+
+Nghe lại nghĩa là xác nhận.
+
+Không nghe lại nghĩa là để nó lơ lửng trong đầu.
+
+Tần Dã nói:
+
+"Không phải bây giờ."
+
+Lâm Tịch gật.
+
+Nàng không hỏi vì sao.
+
+Hắn nhìn radio, nói tiếp:
+
+"Nếu nghe lại, ta sẽ muốn trả lời."
+
+"Vậy trả lời."
+
+"Không biết kênh."
+
+"A Thất tìm được."
+
+"Không biết ai đang nghe cùng."
+
+Câu ấy làm Lâm Tịch lạnh sống lưng.
+
+Tần Sách nói đừng đọc tên quá to. Chúng đang nghe.
+
+Chúng là ai?
+
+Thành Nam? Ngân Thụ? Hắc Nha? Hay một thứ ở giữa những cái tên đó, sạch hơn trên giấy và bẩn hơn trong hầm?
+
+Lâm Tịch nhìn quanh.
+
+"Từ giờ radio có luật mới."
+
+A Thất ngẩng đầu khỏi bát cháo.
+
+"Luật gì?"
+
+"Kênh lạ không phát to ngay. Ghi thời gian. Ghi người nghe. Ghi nội dung tóm tắt. Muốn trả lời phải có ba người đồng ý: người giữ radio, người giữ cổng, người bị gọi tên."
+
+Tạ Khuông ở ngoài cổng nói vọng vào:
+
+"Người giữ cổng là ta?"
+
+"Đêm nay là ngươi."
+
+"Vậy ta không đồng ý trả lời."
+
+Lâm Tịch nhìn Tần Dã.
+
+Tần Dã nói:
+
+"Ta cũng không."
+
+A Thất ôm bát, nhỏ giọng:
+
+"Em cũng không."
+
+Thế là Cổng Nước Xám có luật radio đầu tiên.
+
+Không phải để nói.
+
+Mà để biết lúc nào nên im.
+
+## Chương 250: Người Bị Gọi Không Phải Đồ Vật
+
+Lương Tiêu xin gặp Tần Dã sau nửa đêm.
+
+Tạ Khuông nói không.
+
+Lương Tiêu nói:
+
+"Vậy nói với người giữ cổng: nếu HN-07 muốn tìm Tần Sách, đừng đi theo kênh radio đầu tiên."
+
+Tạ Khuông nhìn hắn.
+
+"Ngươi vừa nói rồi."
+
+"Ta cần hắn nghe."
+
+"Ta nghe thay."
+
+"Ngươi là ai?"
+
+"Người đêm nay không cho ngươi vào."
+
+Lương Tiêu bật cười khàn, rồi ho đến gập người. Vết thương ở chân rỉ máu qua băng. Tạ Khuông nhìn thấy, mặt khó chịu.
+
+"Đừng ho ra chết ở chỗ ta gác."
+
+"Ngươi quan tâm?"
+
+"Ta ghét dọn xác."
+
+Lương Tiêu ngồi xuống đất, lưng tựa cột.
+
+"Hồi ở Hắc Nha, bọn ta không có người gác kiểu ngươi."
+
+"Kiểu gì?"
+
+"Vừa muốn đâm vừa sợ người ta chết sai chỗ."
+
+Tạ Khuông im một lúc.
+
+"Cổng Xám phiền vậy đó."
+
+Lương Tiêu nhìn cái thìa gỗ trên cổng.
+
+"Ta thấy."
+
+Không lâu sau, Lâm Tịch đi tới. Tần Dã không đi cùng.
+
+Lương Tiêu nhìn sau lưng nàng.
+
+"Hắn không gặp?"
+
+"Không."
+
+"Ngươi quyết thay?"
+
+"Hắn quyết. Ta đến nghe."
+
+Lương Tiêu nheo mắt.
+
+"Ngươi giữ hắn kỹ quá."
+
+Lâm Tịch nhìn hắn.
+
+"Không. Ta giữ quyền hắn được tự quyết khi nào bị quá khứ kéo ra giữa sân."
+
+Câu ấy làm Lương Tiêu im.
+
+Một lát sau, hắn nói:
+
+"Trong Hắc Nha, người bị gọi tên không có quyền không ra."
+
+"Ở đây có."
+
+"Kể cả khi cái tên đó liên quan đến mạng cả cổng?"
+
+Lâm Tịch không né câu hỏi.
+
+"Kể cả vậy."
+
+Lương Tiêu cười nhẹ.
+
+"Ngươi biết như vậy có thể chậm chết người không?"
+
+"Biết."
+
+"Vẫn làm?"
+
+"Nếu để cứu cổng mà biến hắn thành món đồ bị gọi ra dùng, vậy Cổng Xám khác Hắc Nha chỗ nào?"
+
+Lương Tiêu không cười nữa.
+
+Hắn nhìn Lâm Tịch rất lâu, như đang nhìn một thứ vừa non vừa cứng, dễ gãy nhưng chưa chịu cong.
+
+"Tần Sách cũng từng nói gần như vậy."
+
+Lâm Tịch hỏi:
+
+"Nói gì?"
+
+"Người bị thương không phải chìa khóa. Đừng nhét họ vào mọi ổ khóa chỉ vì họ vừa đúng hình."
+
+Gió đêm thổi qua cổng.
+
+Cái thìa gỗ gõ nhẹ.
+
+Lâm Tịch không biết Tần Sách thật sự là người thế nào. Một câu nói đẹp không đủ rửa sạch một đời. Nhưng nàng bắt đầu hiểu vì sao cái tên ấy có thể làm Tần Dã đau đến vậy.
+
+Người ta không đau nhất vì kẻ xấu sống lại.
+
+Người ta đau vì một người từng tốt có thể đã bị dùng, bị bẻ, hoặc bị biến thành thứ mình căm ghét.
+
+Lương Tiêu nói:
+
+"Nếu hắn muốn tìm Tần Sách, bảo hắn đừng tin tín hiệu dẫn đường. Người gửi tín hiệu biết thói quen Hắc Nha. Họ sẽ dùng mã cũ, điểm hẹn cũ, câu nói cũ."
+
+"Vậy tin gì?"
+
+Lương Tiêu nhìn cái thìa gỗ.
+
+"Tin thứ Tần Sách không biết."
+
+Lâm Tịch hiểu rất nhanh.
+
+"Cổng Nước Xám."
+
+"Ừ. Nếu người kia thật sự là Tần Sách, hắn không biết cái cổng này. Hắn không biết cái thìa, không biết Miên Miên, không biết Chuông. Hắn chỉ biết HN-07 cũ. Đừng để HN-07 cũ đi gặp hắn."
+
+Lâm Tịch nhìn vào trong sân.
+
+Tần Dã ngồi cạnh radio, mặt nghiêng trong ánh đèn thấp.
+
+HN-07 là mã.
+
+Tần Dã là người.
+
+Cổng Nước Xám không được giao người cho cái mã.
+
+Nàng gật đầu.
+
+"Ta sẽ nói."
+
+"Nói nhỏ thôi."
+
+"Biết."
+
+Lương Tiêu nhắm mắt.
+
+"Ở đây ai cũng thích ghi. Ghi thêm một dòng đi."
+
+"Dòng gì?"
+
+"Người bị gọi tên không phải đồ vật."
+
+Lâm Tịch nhìn hắn.
+
+"Ngươi cũng tính?"
+
+Hắn cười mệt.
+
+"Nếu còn chỗ trên bảng."
+
+Sáng hôm đó, bên cạnh luật radio, A Thất viết thêm một dòng:
+
+`Người bị gọi tên không phải đồ vật. Muốn dùng tên ai, hỏi người đó trước.`
+
+Di Mạn đọc xong, nói:
+
+"Dòng này dài."
+
+A Thất đáp:
+
+"Người cũng phiền mà."
+
+Không ai sửa.

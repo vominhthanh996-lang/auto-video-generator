@@ -1,0 +1,20 @@
+{
+  "title": "Stability image test",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "background_color": "#111111",
+  "font": "Arial",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "duration": 5,
+      "image_prompt": "Vertical cinematic illustration of a Vietnamese video creator planning an AI short film, warm studio lighting, modern desk setup, expressive and polished, no text, no watermark",
+      "narration": "Đây là ảnh thử nghiệm tạo bằng Stability AI.",
+      "text": "Stability test",
+      "subtitle": "Đây là ảnh thử nghiệm tạo bằng Stability AI.",
+      "image": "assets/scene-01.png"
+    }
+  ],
+  "music": null
+}

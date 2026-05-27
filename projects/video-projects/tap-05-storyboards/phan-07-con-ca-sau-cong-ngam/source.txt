@@ -1,0 +1,1075 @@
+# Phần 7: Con Cá Sấu Cống Ngầm
+
+## Chương 181: Thứ Quý Nhất Làm Mồi
+
+Không ai hỏi con cá sấu cống ngầm lớn bao nhiêu.
+
+Tiếng va từ đường ống đã trả lời.
+
+Lần thứ ba nó đập vào vách ống, bụi rỉ từ trần phòng bơm rơi xuống như mưa nâu. Nước dưới chân mọi người dâng lên một lớp sóng nhỏ, chạm vào bậc sắt, rồi rút xuống, để lại những vệt bọt xám.
+
+A Thất ngồi trên sàn, mặt không còn chút máu.
+
+Mộc Sanh đang quấn vải quanh cánh tay nó. Vết rạch dài, may không sâu tới gân, nhưng máu vẫn thấm đỏ lớp vải.
+
+A Thất nhìn tay mình, rồi nhìn nước đen.
+
+"Ta ghét cá sấu."
+
+Di Mạn ở trên nói:
+
+"Ngươi mới thấy con non."
+
+"Vậy ta ghét cả gia đình nó."
+
+Tiểu Mãn ngồi bên cạnh Hạ Tố, nghe vậy vô thức ôm cái nồi chặt hơn.
+
+Lâm Tịch nhìn xuống đường ống chính.
+
+Ống đủ rộng cho một người trưởng thành chui qua. Miệng ống bị lưới chắn gãy một nửa, bên trong tối đen. Tiếng nước ở đó sâu hơn những nơi khác, như có một cái họng lớn đang thở.
+
+Kỷ Nam kiểm đạn.
+
+"Nếu con mẹ chui ra, phòng này không giữ được."
+
+Lão Phùng nói:
+
+"Vậy đừng để nó chui ra."
+
+"Ngươi có kế?"
+
+"Ta có tuổi. Không có phép."
+
+Mộc Sanh đứng dậy.
+
+"Muốn khởi động bơm, phải mở nắp trục và lấy vật kẹt ra. Vật kẹt ở dưới nước, gần miệng ống."
+
+A Thất cười khô.
+
+"Tuyệt. Ngay cửa nhà cá sấu."
+
+Lâm Tịch hỏi:
+
+"Vật kẹt là gì?"
+
+"Chưa thấy rõ. A Thất gõ ba cái vì trục không quay, không phải gãy."
+
+Tần Dã từ tầng trên nói xuống:
+
+"Cá sấu cống ngầm giữ ổ bằng cách chặn dòng."
+
+Mọi người nhìn hắn.
+
+Hắn ngồi dựa vào lan can gãy, mặt trắng bệch, nhưng mắt rất tỉnh.
+
+"Nếu nước chảy mạnh, trứng trôi. Nó chặn van sạch để giữ nhiệt và thức ăn."
+
+Lâm Tịch hiểu.
+
+"Muốn nước, phải khiến nó rời van."
+
+"Ừ."
+
+Kỷ Nam nói:
+
+"Dùng máu."
+
+Di Mạn lập tức:
+
+"Không dùng người."
+
+Kỷ Nam nhìn bà.
+
+"Ta chưa nói người."
+
+Di Mạn lạnh mặt.
+
+"Ta nghe được cái chữ đó trong đầu ngươi."
+
+Kỷ Nam không phản bác.
+
+Vì có lẽ bà nghe đúng.
+
+Trong Hắc Nha, khi cần kéo thú khỏi ổ, cách rẻ nhất là máu sống. Một tù binh, một con vật còn thở, đôi khi một đồng đội không kịp cứu. Phế thổ không thiếu những cách hiệu quả làm người ta ghê tởm sau khi sống sót.
+
+Lâm Tịch nhìn quanh.
+
+Họ có gì?
+
+Ba túi nước vàng đã lọc một lần.
+
+Một ít thuốc.
+
+Thức ăn khô còn chưa đủ hai ngày.
+
+Một hộp Đèn Vàng.
+
+Một cái nồi méo.
+
+Một xe gấp.
+
+Máu của những người đang cố sống.
+
+Và xác ba con chó muối ở bãi biển, đã bỏ lại sau lưng.
+
+Không có mồi thịt.
+
+Không có thứ dư.
+
+Trong phế thổ, "dư" là chữ của người trong thành.
+
+A Mục từ ngoài chạy vào.
+
+"Đèn truy quét đang xuống mương. Khoảng nửa giờ."
+
+Kỷ Nam cau mày.
+
+"Nhanh hơn ta nghĩ."
+
+A Mục đưa ra một mảnh vải đen.
+
+"Ta thấy dấu chó đánh dấu. Có thể chúng theo mùi."
+
+Lâm Tịch nhìn mảnh vải.
+
+Mùi máu, mùi muối xạ, mùi người bệnh, mùi Đèn Vàng. Cả đội bây giờ giống một cái bát thức ăn đặt giữa phế thổ.
+
+Mộc Sanh nói:
+
+"Nửa giờ không đủ sửa bơm nếu còn cá sấu."
+
+"Nếu không sửa?"
+
+"Chúng ta chỉ lấy được nước tầng trên. Nhiễm nặng, lọc ba lần vẫn hên xui. Người bệnh uống có thể chết nhanh hơn."
+
+Tiểu Mãn nghe chữ chết, mặt trắng đi.
+
+Du Khâu nằm bên cạnh con, cố đưa tay che tai nó, nhưng tay hắn yếu quá, chỉ chạm được vào mép nồi.
+
+Lâm Tịch nhìn cái nồi.
+
+Nồi sắt cũ.
+
+Méo, nhưng dày.
+
+Giữ được nước.
+
+Nàng bỗng hỏi:
+
+"Cá sấu cống thích gì?"
+
+Tần Dã đáp:
+
+"Máu, nhiệt, rung động. Và khoáng sạch nếu đã sống lâu trong ống lọc."
+
+"Khoáng sạch?"
+
+Mộc Sanh quay sang hộp dụng cụ.
+
+"Lõi sứ lọc."
+
+A Thất lập tức hiểu.
+
+"Không được. Lõi sứ là để lọc nước."
+
+Lão Phùng cũng cau mày.
+
+"Chúng ta chỉ có một lõi không nứt hoàn toàn."
+
+Mộc Sanh nói:
+
+"Nếu dùng làm mồi, mất lõi. Nếu không dùng, không mở được bơm."
+
+Di Mạn nhìn Lâm Tịch.
+
+Lại một cái cân.
+
+Dùng lõi sứ làm mồi, họ có thể kéo cá sấu khỏi van, sửa bơm, lấy dòng nước tốt hơn. Nhưng sau đó thiết bị lọc tạm sẽ thiếu lõi, nước đầu ra vẫn phải xử lý khó hơn.
+
+Không dùng lõi, giữ khả năng lọc nhỏ, nhưng bỏ trạm.
+
+Lâm Tịch hỏi:
+
+"Có thay được lõi bằng gì?"
+
+Mộc Sanh đáp:
+
+"Nếu trạm còn kho vật tư, có thể có lõi cũ. Nhưng kho nằm phía sau phòng bơm, phải qua hành lang ngập."
+
+A Thất nhìn nước đen.
+
+"Lại hành lang ngập."
+
+"Ừ."
+
+"Ta đề nghị sau này nơi nào có nước nên kèm cầu khô."
+
+Di Mạn nói:
+
+"Sau này ngươi xây."
+
+"Ta xây cao hơn đầu."
+
+Lâm Tịch lấy lõi sứ từ túi ra.
+
+Lõi chỉ dài bằng cẳng tay, màu trắng ngà, miệng nứt một đường nhỏ nhưng thân còn nguyên. Từ lúc mua ở chợ tro, nó là cơ hội lọc nước duy nhất họ có thể nắm trong tay.
+
+Bây giờ nàng phải ném cơ hội đó cho một con thú.
+
+A Thất nhìn lõi, môi mấp máy.
+
+"Đội trưởng..."
+
+Lâm Tịch nói:
+
+"Ta biết."
+
+Nàng nhìn lên Tiểu Mãn.
+
+"Cho ta mượn nồi."
+
+Tiểu Mãn ngẩn ra.
+
+Hạ Tố lập tức ôm con.
+
+"Nồi?"
+
+Di Mạn cũng nhíu mày.
+
+"Lâm Tịch."
+
+Lâm Tịch nhìn Tiểu Mãn, không nhìn người lớn.
+
+"Ta muốn dùng nồi làm mồi rung. Không vứt. Sẽ trả."
+
+Tiểu Mãn ôm cái nồi rất chặt.
+
+Đó không chỉ là nồi.
+
+Đó là thứ mẹ nó giữ khi bị đẩy ra cổng. Là thứ cha nó nhìn thấy để biết con còn sống. Là vật duy nhất của gia đình nó chưa bị thành thu, thú cắn, hay đói ăn mất.
+
+Lâm Tịch không thúc.
+
+Nàng chờ.
+
+Tiểu Mãn hỏi:
+
+"Nếu nồi hỏng?"
+
+Lâm Tịch đáp:
+
+"Ta đền."
+
+"Bằng nồi khác?"
+
+"Nếu tìm được."
+
+"Nếu không?"
+
+Lâm Tịch im một chút.
+
+"Vậy bằng phần nước đầu tiên của ta."
+
+Di Mạn nhìn nàng.
+
+Tần Dã cũng nhìn nàng.
+
+Tiểu Mãn suy nghĩ rất lâu. Cuối cùng, cô bé đặt nồi xuống, hai tay đẩy về phía Lâm Tịch.
+
+"Không được để nó chìm."
+
+Lâm Tịch nhận lấy.
+
+"Ừ."
+
+Tiểu Mãn nói thêm:
+
+"Nó tên là Mãn."
+
+A Thất ngẩng đầu.
+
+"Nồi cũng có tên?"
+
+Tiểu Mãn ôm búp bê vải lọc.
+
+"Mẹ nói có tên thì khó mất hơn."
+
+A Thất cúi đầu nhìn cánh tay băng vải của mình, không nói nữa.
+
+Lâm Tịch buộc lõi sứ vào trong nồi bằng dây thép. Mộc Sanh gắn thêm một miếng kim loại rỗng để khi kéo dây, nồi sẽ gõ vào thành ống tạo rung. Di Mạn dùng vải thấm một chút máu từ băng tay A Thất.
+
+A Thất nhìn máu mình bị thấm đi, mặt đau như mất tiền.
+
+"Ta cũng góp mồi?"
+
+Di Mạn đáp:
+
+"Ngươi góp rồi. Im để máu khỏi chảy thêm."
+
+Kế hoạch rất đơn giản.
+
+Đơn giản thường đáng sợ.
+
+Kỷ Nam sẽ kéo nồi qua hành lang ngập về phía bể phụ, tạo mùi và rung. Khi cá sấu mẹ rời miệng ống, Mộc Sanh và Lão Phùng xuống mở nắp trục. A Thất ở trên điều chỉnh dây nguồn, Lâm Tịch giữ dây mồi, A Mục canh ngoài, Tần Dã quan sát hướng nước và tiếng động.
+
+"Ta xuống với Mộc Sanh." Lâm Tịch nói.
+
+Tần Dã lập tức:
+
+"Không."
+
+Lâm Tịch quay lên.
+
+"Ta giữ dây ở gần mới điều chỉnh được."
+
+"Kỷ Nam giữ."
+
+Kỷ Nam nói:
+
+"Ta kéo mồi. Không thể vừa kéo vừa giữ van."
+
+Mộc Sanh nhìn Lâm Tịch.
+
+"Nàng xuống được. Nhưng không đứng sát miệng ống."
+
+Di Mạn mắng:
+
+"Các ngươi bàn như đi hái rau."
+
+Lâm Tịch buộc lại cổ tay.
+
+"Không có rau để hái."
+
+Di Mạn nghẹn một lúc, cuối cùng chỉ nhét cho nàng một miếng vải khô.
+
+"Nếu bị thương nữa, tự quấn. Ta hết lời mắng rồi."
+
+Lâm Tịch nhận.
+
+Nồi Mãn được thả xuống nước.
+
+Tiếng kim loại chạm mặt nước vang lên rất khẽ.
+
+Tiểu Mãn nín thở.
+
+Lâm Tịch cầm dây, kéo thử.
+
+Trong ống vang lên tiếng cộc.
+
+Cộc.
+
+Cộc.
+
+Không lớn.
+
+Nhưng đều.
+
+Giống tiếng ai đó gõ cửa một căn nhà không nên mở.
+
+Kỷ Nam kéo dây phụ, đưa nồi dần về phía bể bên trái. Mùi máu loãng hòa vào nước. Lõi sứ trắng trong nồi lấp ló dưới ánh đèn.
+
+Ban đầu không có gì.
+
+Rồi tiếng thở trong ống thay đổi.
+
+Nước dưới miệng ống lõm xuống một chút.
+
+Một cái đầu dài trồi ra.
+
+Da xám đen, phủ rêu và vảy dày. Mắt nằm cao, vàng đục. Mõm nó có những mảnh kim loại cũ cắm vào da như đã sống nhiều năm giữa phế liệu. Hai bên hàm, lớp da phồng lên theo từng nhịp thở.
+
+Nó không lao ra.
+
+Nó nhìn nồi.
+
+Tần Dã nói rất khẽ:
+
+"Đừng kéo nhanh. Nó không săn thứ chạy. Nó săn thứ mắc kẹt."
+
+Lâm Tịch lập tức kéo chậm lại.
+
+Cộc.
+
+Cộc.
+
+Cộc.
+
+Nồi Mãn va vào thành bể.
+
+Con cá sấu cống ngầm trườn thêm nửa thân ra khỏi ống.
+
+Nó lớn hơn xe gấp.
+
+A Thất ở trên lầu gần như ngừng thở.
+
+Tiểu Mãn bị Hạ Tố che mắt, nhưng vẫn nhìn qua kẽ tay mẹ.
+
+Lâm Tịch cảm thấy dây trong tay nặng dần.
+
+Con thú đã ngậm mép nồi.
+
+Tiểu Mãn phát ra một tiếng rất nhỏ.
+
+Lâm Tịch không quay đầu.
+
+Nàng thả dây nửa nhịp, để nồi trượt theo lực cắn.
+
+Con cá sấu kéo nồi về phía bể phụ.
+
+Miệng ống chính trống ra.
+
+Mộc Sanh lập tức nhảy xuống nước.
+
+Lão Phùng theo sau.
+
+Nước đen bắn lên tận mặt Lâm Tịch.
+
+"Nắp trục!"
+
+A Thất la:
+
+"Bên trái, dưới tay tỷ nửa thước!"
+
+Mộc Sanh mò được nắp, cắm móc, vặn.
+
+Lão Phùng giữ thanh chắn.
+
+Con cá sấu bỗng dừng lại.
+
+Nó nhận ra nồi không phải thịt.
+
+Hoặc nhận ra có người đang chạm vào thứ nó dùng để giữ ổ.
+
+Đầu nó quay chậm về phía miệng ống.
+
+Tần Dã nói:
+
+"Kéo mạnh."
+
+Lâm Tịch kéo dây.
+
+Nồi Mãn bật khỏi hàm con thú, va mạnh vào thành bể.
+
+Cộc!
+
+Âm thanh lớn hơn trước rất nhiều.
+
+Con cá sấu quay phắt lại.
+
+Nó đớp.
+
+Dây trong tay Lâm Tịch căng đến mức cứa vào lòng bàn tay.
+
+Tiểu Mãn hét:
+
+"Nồi!"
+
+Lâm Tịch nghiến răng giữ.
+
+Không phải vì cái nồi quan trọng hơn mạng.
+
+Mà vì trong khoảnh khắc đó, nàng hiểu nếu để nó chìm, Tiểu Mãn sẽ mất thêm một thứ nữa vì quyết định của người lớn.
+
+Nàng không muốn luật đầu tiên của mình bắt đầu bằng việc mượn đồ trẻ con rồi làm mất.
+
+Mộc Sanh hét:
+
+"Kẹt bởi xương!"
+
+Lão Phùng chửi:
+
+"Xương gì cứng như sắt!"
+
+A Thất:
+
+"Kéo ra được không?"
+
+"Đang kéo!"
+
+Con cá sấu giật mạnh.
+
+Lâm Tịch trượt chân, cả người chúi về phía nước.
+
+Kỷ Nam lao tới giữ eo nàng.
+
+"Buông dây!"
+
+"Không!"
+
+"Ngươi điên à?"
+
+"Nó có tên!"
+
+Kỷ Nam sửng sốt.
+
+Một câu ngu ngốc.
+
+Một câu không đáng dùng mạng để nói.
+
+Nhưng chính vì ngu ngốc, nó làm Kỷ Nam nhớ tới bốn mươi ba người từng không còn tên trong báo cáo Hắc Nha, chỉ còn số tổn thất.
+
+Hắn nghiến răng, giữ chặt Lâm Tịch.
+
+"Vậy kéo."
+
+Hai người cùng kéo dây.
+
+Tần Dã ở trên chống tay đứng dậy.
+
+Không hẳn đứng.
+
+Hắn dựa vào lan can, một chân run bần bật, tay cầm súng.
+
+Di Mạn quay đầu thấy, mặt tái đi.
+
+"Tần Dã!"
+
+Hắn không đáp.
+
+Hắn ngắm vào mắt con cá sấu.
+
+Không bắn.
+
+Chỉ chờ.
+
+Vì một phát bắn lúc này có thể làm nó bỏ nồi, cũng có thể làm nó lao thẳng vào Lâm Tịch.
+
+Mộc Sanh và Lão Phùng cuối cùng kéo được vật kẹt ra.
+
+Một khúc xương dài, trắng xám, mắc đầy dây thép và rêu.
+
+Bơm chính rung lên.
+
+Chỉ một chút.
+
+Nhưng cả phòng nghe thấy.
+
+Mộc Sanh hét:
+
+"Nguồn!"
+
+A Thất cắm dây.
+
+"Đang!"
+
+Hắn đập tay lên bảng điều khiển.
+
+Không sáng.
+
+"Không lên!"
+
+Mộc Sanh:
+
+"Cầu chì phụ!"
+
+"Cái nào?"
+
+"Cái bên phải!"
+
+"Bên phải của tỷ hay bên phải của ta?"
+
+"Bên phải của cái bảng, đồ ngu!"
+
+A Thất cắm lại.
+
+Bảng điều khiển bật một đốm xanh.
+
+Bơm chính phát ra một tiếng rên dài.
+
+Con cá sấu cống ngầm buông nồi.
+
+Nó quay đầu.
+
+Nước dưới miệng ống bắt đầu hút mạnh.
+
+Mộc Sanh hét:
+
+"Ra!"
+
+Lão Phùng đẩy nàng lên trước.
+
+Con cá sấu lao về miệng ống, không phải để tấn công, mà để trở về ổ. Dòng hút từ bơm vừa khởi động kéo nước quanh nó xoáy xuống. Thân nó va vào thành bể, làm cả phòng rung lên.
+
+Lâm Tịch kéo dây lần cuối.
+
+Nồi Mãn bật khỏi nước, méo thêm một góc, lõi sứ bên trong vỡ làm hai, nhưng chưa chìm.
+
+Tiểu Mãn khóc òa.
+
+"Mãn!"
+
+A Thất trên bảng điều khiển cũng hét:
+
+"Bơm chạy!"
+
+Tiếng bơm ban đầu rất yếu.
+
+Như một người già vừa tỉnh sau cơn sốt.
+
+Rồi nó mạnh dần.
+
+Nước trong ống đổi hướng.
+
+Từ bể phụ, qua lớp lọc cũ, qua đường ống nứt, một dòng nước đục vàng phun ra ở máng xả bên ngoài.
+
+Không sạch.
+
+Không đủ uống ngay.
+
+Nhưng là nước từ tầng khoáng sâu, ít tanh hơn, ít mùi trứng thối hơn.
+
+Di Mạn nhìn dòng nước đó.
+
+Bà không cười.
+
+Bà ngồi xuống, lấy tay che mặt.
+
+Vai bà run lên một cái.
+
+Rất nhanh.
+
+Rồi thôi.
+
+Lâm Tịch ngồi bệt trong nước đen, lòng bàn tay rách, cổ tay bỏng muối, toàn thân ướt lạnh.
+
+Kỷ Nam buông nàng ra, thở dốc.
+
+"Vì một cái nồi."
+
+Lâm Tịch nhìn nồi Mãn nằm bên cạnh, lõi sứ vỡ trong lòng nó.
+
+"Vì mượn thì phải trả."
+
+Kỷ Nam nhìn nàng như nhìn một thứ rất khó hiểu.
+
+Trên tầng, Tần Dã cuối cùng mất sức, ngã trở lại cạnh lan can. Di Mạn và Ninh vội đỡ hắn.
+
+Hắn vẫn nhìn xuống Lâm Tịch.
+
+Khóe miệng có máu.
+
+Nhưng mắt hắn sáng.
+
+Không phải vì họ thắng.
+
+Họ chưa thắng.
+
+Truy binh còn sau lưng. Nước còn phải lọc. Trạm còn đầy trứng thú. Lõi sứ đã vỡ. Xe mất ắc quy. Người bệnh vẫn có thể chết trong đêm.
+
+Nhưng trong tiếng bơm già nua kia, lần đầu tiên từ khi rời thành Nam, có thứ gì đó không do Ngân Thụ mở, không do thẻ cư trú cấp, không do Thẩm Bạch đặt trước cửa.
+
+Nước đang chảy vì tay họ tự kéo nó ra khỏi miệng thú.
+
+## Chương 182: Dòng Nước Đục Đầu Tiên
+
+Dòng nước đầu tiên không ai được uống.
+
+Di Mạn nói câu đó khi mọi người còn đang nhìn máng xả như nhìn phép màu.
+
+"Không ai được uống."
+
+A Thất há miệng.
+
+"Một ngụm cũng không?"
+
+"Một giọt cũng không."
+
+"Nhưng nó nhìn có vẻ..."
+
+"Ngươi muốn ruột chảy ra để chứng minh nó bẩn?"
+
+A Thất ngậm miệng.
+
+Di Mạn đứng dậy, lau mặt bằng tay áo. Mắt bà hơi đỏ, nhưng giọng đã trở lại kiểu cắt rau.
+
+"Mộc Sanh, nước này qua được bể nào?"
+
+Mộc Sanh kiểm đồng hồ áp suất, rồi kiểm máng.
+
+"Qua bể khoáng, chưa qua lọc sứ. Lõi vỡ rồi. Có thể dùng để rửa, làm mát, lắng, sau đó lọc than tạm."
+
+Lão Phùng đặt khúc xương kẹt lên sàn.
+
+"Xương này giữ lại."
+
+A Thất nhìn ông.
+
+"Ông còn muốn giữ cả thứ suýt giết chúng ta?"
+
+"Cứng. Làm đòn bẩy tốt."
+
+"Người già phế thổ đáng sợ thật."
+
+Lão Phùng hừ.
+
+"Trẻ con phế thổ phí đồ mới đáng sợ."
+
+Tiểu Mãn chạy xuống cầu thang khi chắc chắn con cá sấu không trồi lên nữa. Cô bé lao tới cái nồi, ôm nó vào lòng.
+
+Nồi Mãn méo thêm một góc, đáy có vết cắn sâu, bên trong còn mắc hai mảnh lõi sứ vỡ. Tiểu Mãn dùng tay áo lau nước đen trên nồi, lau mãi một chỗ không sạch.
+
+Lâm Tịch ngồi xổm xuống trước mặt nó.
+
+"Xin lỗi."
+
+Tiểu Mãn ngẩng lên.
+
+"Nó còn dùng được không?"
+
+Di Mạn bước tới, nhận cái nồi, gõ nhẹ đáy.
+
+"Dùng được. Méo thì nấu chậm hơn chút, nhưng không rò."
+
+Tiểu Mãn thở phào như vừa nghe người thân qua cơn nguy.
+
+Lâm Tịch lấy túi nước của mình ra.
+
+Bên trong chỉ còn một ít.
+
+Nàng đưa cho cô bé.
+
+"Phần nước đầu tiên của ta."
+
+Tiểu Mãn nhìn túi nước, không nhận.
+
+"Chưa lọc mà."
+
+"Đây là nước cũ. Uống được."
+
+"Con không khát."
+
+Môi nó nứt.
+
+Không khát là lời nói dối trẻ con nghèo học rất nhanh.
+
+Lâm Tịch đặt túi nước vào tay nó.
+
+"Luật mượn đồ đã nói rồi."
+
+Tiểu Mãn ôm nồi bằng một tay, tay kia cầm túi nước. Nó nhìn mẹ. Hạ Tố nằm trên tầng, gật đầu rất khẽ.
+
+Cô bé uống một ngụm nhỏ.
+
+Rất nhỏ.
+
+Rồi đưa lại.
+
+"Còn cho chị."
+
+Lâm Tịch nhận, không uống.
+
+Nàng buộc túi lại.
+
+"Giữ cho cha ngươi."
+
+Tiểu Mãn do dự.
+
+"Vậy luật..."
+
+"Luật cũng phải biết người bệnh trước."
+
+Cô bé nhíu mày, rõ ràng thấy luật này phức tạp hơn cái nồi.
+
+A Mục đứng bên cạnh, bỗng nói:
+
+"Luật khó vậy ai nhớ?"
+
+Di Mạn đáp:
+
+"Người đói nhớ rất nhanh."
+
+Câu đó làm mọi người im một chút.
+
+Bên ngoài trạm lọc, tiếng đèn truy quét đã gần hơn.
+
+Kỷ Nam bước vào, áo ướt mưa bụi.
+
+"Có bốn xe từ cổng phụ. Hai xe dừng ở mương, một xe vòng tuyến đá, một xe mất dấu. Chúng ta có nhiều nhất hai mươi phút trước khi đội đầu tiên tới."
+
+Lâm Tịch đứng dậy.
+
+"Nước lấy được bao nhiêu?"
+
+Mộc Sanh nói:
+
+"Nếu không cần sạch ngay, hai thùng trong mười phút. Nếu lọc tạm, nửa thùng."
+
+Di Mạn lập tức:
+
+"Lọc tạm."
+
+Kỷ Nam cau mày.
+
+"Nửa thùng không đủ."
+
+Di Mạn nhìn hắn.
+
+"Hai thùng nước độc đủ để làm gì? Chôn tập thể à?"
+
+Kỷ Nam im.
+
+Lâm Tịch nói:
+
+"Lấy một thùng thô, nửa thùng lọc. Nước thô dùng rửa vết thương, làm mát máy, dụ thú nếu cần. Nước lọc cho người bệnh."
+
+Di Mạn nhìn nàng.
+
+Lần này bà không phản đối.
+
+Mộc Sanh và Lão Phùng bắt đầu dựng đường lọc tạm. Lõi sứ đã vỡ, nhưng hai mảnh lớn còn có thể kẹp giữa vải và than để lọc chậm. A Thất một tay bị thương, vẫn dùng tay còn lại giữ ống. Nó đau đến nghiến răng, nhưng không buông.
+
+Mộc Sanh nhìn nó.
+
+"Đau thì nói."
+
+"Nói xong hết đau không?"
+
+"Không."
+
+"Vậy khỏi."
+
+"Ngươi lớn hơn một chút rồi."
+
+A Thất ngẩng đầu.
+
+"Tỷ vừa khen ta?"
+
+"Ta đang nhận xét."
+
+"Ta coi là khen."
+
+"Tùy."
+
+A Thất cười.
+
+Rất nhanh.
+
+Rồi tiếp tục giữ ống.
+
+Tần Dã được Di Mạn dìu xuống tầng giữa để tránh phòng điều khiển nếu bị bắn từ xa. Hắn không còn sức tranh. Mỗi bước đều cần hai người đỡ, nhưng hắn vẫn cố nhìn bố trí trong trạm.
+
+Lâm Tịch đi tới cạnh hắn.
+
+"Anh nên nằm."
+
+"Ta đang nằm trong đầu."
+
+"Miệng anh thật sự càng bệnh càng khó nghe."
+
+"Vậy còn sống."
+
+Nàng muốn mắng, nhưng nhìn môi hắn trắng quá, lại mắng không nổi.
+
+Tần Dã nhìn máng nước.
+
+"Trạm này giữ được."
+
+Lâm Tịch khựng lại.
+
+"Anh chắc?"
+
+"Có nước, có tường, có tầng cao, có đường ống thoát. Khó giữ, nhưng không phải không thể."
+
+"Có cá sấu."
+
+"Cá sấu giữ van. Nếu xử lý ổ trứng, nó cũng là hàng rào."
+
+Lâm Tịch nhìn hắn.
+
+"Anh đang nghĩ dùng nó?"
+
+"Ta đang nghĩ đừng chết vì nó trước."
+
+"Rồi sau đó dùng nó?"
+
+Tần Dã không phủ nhận.
+
+Lâm Tịch nhìn xuống nước đen.
+
+"Ngân Thụ dùng thú làm hàng rào. Nếu chúng ta cũng dùng..."
+
+"Khác nhau ở luật."
+
+"Thú biết luật sao?"
+
+"Người cầm van biết."
+
+Câu đó làm Lâm Tịch nhớ tới lời mình vừa nói với Tiểu Mãn: ai cầm vòi nước cũng phải bị người khác nhìn.
+
+Tần Dã nhìn nàng.
+
+"Ngươi sợ mình giống chúng."
+
+"Ừ."
+
+"Tốt."
+
+"Tốt?"
+
+"Sợ thì còn kiểm."
+
+Hắn ho khẽ, rồi nói tiếp:
+
+"Ngày nào ngươi hết sợ, bảo Di Mạn tát."
+
+Di Mạn cách đó không xa đáp ngay:
+
+"Ta nghe rồi."
+
+Lâm Tịch quay đầu.
+
+Di Mạn đang lọc nước, không nhìn họ.
+
+"Yên tâm. Ta tát rất đau."
+
+Lâm Tịch bỗng bật cười.
+
+Rất nhỏ.
+
+Cười xong, mắt lại cay.
+
+Không phải vì vui.
+
+Vì mệt, vì khát, vì sợ, vì cuối cùng giữa trạm lọc đầy trứng thú và truy binh, nàng vẫn có người sẵn sàng tát mình nếu mình đi lệch.
+
+Đó có lẽ cũng là một loại giàu có.
+
+Giàu hơn tinh thạch.
+
+A Mục từ ngoài chạy vào lần nữa.
+
+"Đội truy tới mương ngoài. Nhưng... họ không đi thẳng vào."
+
+Kỷ Nam cau mày.
+
+"Vì sao?"
+
+"Có người khác chặn họ."
+
+Mọi người khựng lại.
+
+Lâm Tịch hỏi:
+
+"Ai?"
+
+A Mục thở dốc.
+
+"Người khu xám. Những người ở cổng Nam cũ. Họ đẩy xe rác chắn mương."
+
+A Thất tròn mắt.
+
+"Họ giúp chúng ta?"
+
+A Mục lắc đầu.
+
+"Không biết. Họ hét là máy nước hỏng chưa sửa, đòi thành trả nước."
+
+Di Mạn cười khan.
+
+"Tốt. Không phải giúp chúng ta. Giúp nước của họ."
+
+Lâm Tịch nhìn về phía ngoài trạm.
+
+Trong tiếng bơm già nua, nàng như nghe thấy rất xa có tiếng người la, tiếng kim loại va, tiếng bánh xe rác kéo trên đá.
+
+Nàng từng sợ vì mình mà khu xám bị phạt.
+
+Bây giờ khu xám đang dùng chính món phạt đó để làm thành Nam nghẹn thêm lần nữa.
+
+Không phải vì họ yêu nàng.
+
+Không phải vì họ muốn làm anh hùng.
+
+Chỉ vì hôm nay, có người thấy nước bị khóa không phải lỗi của từng nhà, mà là cái tay đang cầm vòi.
+
+Mộc Sanh nói:
+
+"Nước lọc tạm được rồi."
+
+Dòng nước qua vải, than, mảnh sứ vỡ nhỏ từng giọt vào cái bát sắt.
+
+Trong.
+
+Chưa hoàn toàn sạch.
+
+Nhưng trong hơn bất cứ thứ gì họ có từ khi rời thành.
+
+Di Mạn nâng bát lên, soi dưới đèn.
+
+Không uống.
+
+Bà đưa cho Lâm Tịch.
+
+"Đội trưởng thử?"
+
+Mọi người nhìn nàng.
+
+Lâm Tịch nhận bát.
+
+Nước trong bát phản chiếu mặt nàng méo mó vì ánh đèn rung. Cổ họng nàng khô đến đau. Cả người nàng run vì lạnh và mất sức.
+
+Nàng có thể uống.
+
+Nàng là người kéo dây, người quyết định dùng lõi sứ, người mượn nồi, người bị Ngân Thụ săn.
+
+Nhưng nếu nàng uống đầu tiên, luật chưa kịp viết đã có hình.
+
+Lâm Tịch đưa bát cho Hạ Tố.
+
+"Người sốt uống trước."
+
+Hạ Tố hoảng hốt lắc đầu.
+
+"Không, Tần..."
+
+Tần Dã nói:
+
+"Nàng uống."
+
+Hạ Tố nhìn hắn, rồi nhìn Lâm Tịch.
+
+Di Mạn gật đầu.
+
+Hạ Tố nhận bát bằng hai tay.
+
+Bà uống một ngụm.
+
+Rất nhỏ.
+
+Nước đi qua cổ họng bà, làm mắt bà đỏ lên.
+
+"Không đắng."
+
+Ba chữ ấy làm cả trạm lọc im đi.
+
+Không đắng.
+
+Trong phế thổ, đó đã là một lời khen xa xỉ.
+
+Tiểu Mãn ôm cái nồi méo, cười qua nước mắt.
+
+Bên ngoài, tiếng người khu xám và tiếng truy binh đang gần hơn.
+
+Bên dưới, con cá sấu cống ngầm va nhẹ vào đường ống, như nhắc họ rằng nước này chưa thật sự thuộc về ai.
+
+Lâm Tịch nhìn bát nước trong tay Hạ Tố.
+
+Nàng nói:
+
+"Từ giờ, nước ở đây không ai được uống một mình."
+
+Không ai vỗ tay.
+
+Không ai hô theo.
+
+Nhưng Di Mạn đặt bát thứ hai dưới máng lọc.
+
+A Thất giữ ống chặt hơn.
+
+Mộc Sanh chỉnh lại mảnh sứ vỡ.
+
+Lão Phùng đem tấm biển cảnh báo cũ đặt úp xuống đất.
+
+Tần Dã nhắm mắt, thở ra.
+
+Và ngoài kia, trong mưa bụi đỏ, những người từng bị đẩy khỏi cổng thành vẫn đang dùng xe rác chặn đường cho dòng nước đầu tiên chưa kịp có tên.

@@ -1,0 +1,477 @@
+# Phần 9: Tần Dã Kể Một Nửa
+
+## Chương 245: Người Vẽ Đường Chờ Người Về
+
+Giờ thứ năm, Tần Dã không nhìn đồng hồ.
+
+Hắn nhìn gió.
+
+Nhìn bụi trên đường đông.
+
+Nhìn mấy con quạ mù đậu trên khung xe cũ, mỗi lần chúng xao động là mắt hắn đổi hướng. Người khác chờ bằng cách đi qua đi lại, bằng cách hỏi "sao chưa về", bằng cách cầu nguyện nếu còn nhớ cầu nguyện là gì. Tần Dã chờ bằng cách biến mình thành một bản đồ sống.
+
+Trước mặt hắn có bốn viên đá nhỏ.
+
+Một viên là A Thất.
+
+Một viên là Ninh.
+
+Một viên là Mộc Sanh.
+
+Một viên là Sa Đinh.
+
+Mỗi lần hắn đoán họ đi qua một đoạn đường, hắn đẩy viên đá tương ứng lên một chút. Đến đoạn cống phụ, hắn đặt bốn viên thành hàng dọc. Đến trạm cân cũ, hắn tách viên Sa Đinh ra sau nửa đốt ngón tay. Đến Trạm Ghi Số 12, hắn đặt cả bốn viên cạnh một vệt than tròn.
+
+A Thất từng cười loại mô phỏng này của hắn giống trò trẻ con.
+
+Nhưng hôm nay không ai cười.
+
+Vì tất cả đều nhìn thấy: khi thời gian qua mà bốn viên đá chưa trở về, Tần Dã không nhúc nhích, nhưng ngón tay hắn siết cạnh bàn đến trắng bệch.
+
+Người vẽ đường luôn tự giết mình trước bằng mọi khả năng sai.
+
+Sai một khúc cua.
+
+Sai một mực nước.
+
+Sai một ổ thú.
+
+Sai một nhịp gió.
+
+Mỗi cái sai đều có thể biến một viên đá thành tên trên cổng.
+
+Lâm Tịch ngồi cạnh hắn.
+
+Không hỏi.
+
+Nàng sợ nếu mình hỏi, hắn sẽ phải trả lời bằng những thứ đang giết hắn từ bên trong.
+
+Chu Kính vẫn đứng ngoài vạch. Hắn đã ngừng phát thẻ, ngừng phát nước, chỉ thỉnh thoảng nhìn đồng hồ. Người sạch sẽ rất giỏi chờ khi thời gian đứng về phía mình.
+
+Lương Tiêu bị giữ trong khu giám sát, vết thương đã băng. Tạ Khuông đứng cạnh hắn, giáo không rời tay.
+
+"Nếu người của ngươi tới, ngươi làm gì?" Tạ Khuông hỏi.
+
+Lương Tiêu đáp:
+
+"Còn tùy họ bắn ai trước."
+
+"Trả lời kiểu đó dễ ăn giáo."
+
+"Nếu họ bắn ta trước, ta nằm xuống. Nếu bắn cổng trước, ta đứng lên. Được chưa?"
+
+Tạ Khuông hừ lạnh.
+
+"Ngươi nói như đứng lên là việc lớn."
+
+Lương Tiêu nhìn chân mình.
+
+"Với vài người, đúng vậy."
+
+Tạ Khuông im.
+
+Câu ấy không nên chạm vào hắn, nhưng chạm.
+
+Ở bàn bản đồ, Tần Dã bỗng nói:
+
+"Có tiếng xe."
+
+Lâm Tịch ngẩng lên.
+
+Nàng chưa nghe thấy gì.
+
+Nhưng vài giây sau, Ninh không có ở đây mà lá cờ trên cổng đã rung khác. Bụi đông nam bốc thành một đường mỏng.
+
+Không phải đội A Thất.
+
+Xe.
+
+Hai chiếc.
+
+Áo xám.
+
+Lương Tiêu chửi rất nhỏ.
+
+"Đội thu hồi mẫu."
+
+Chu Kính cũng nhìn thấy. Sắc mặt hắn đổi, rất nhanh rồi lại bình thường.
+
+Lâm Tịch bắt được khoảnh khắc ấy.
+
+"Không phải người của ngươi?"
+
+Chu Kính nói:
+
+"Thành Nam không chịu trách nhiệm với mọi nhóm đi lại trên phế thổ."
+
+"Nhưng ngươi biết họ."
+
+"Cô nên lo họ biết cô."
+
+Xe áo xám không tiến thẳng tới cổng. Chúng dừng ở khoảng cách xa, như đang chặn đường đội A Thất trở về. Tần Dã nhìn bụi, tay đặt lên bản đồ.
+
+"Chúng biết đường cống."
+
+Lương Tiêu nói:
+
+"Nếu có định vị của ta, chúng biết ta ở đây. Nhưng đội của các ngươi ở Trạm Ghi..."
+
+Hắn dừng.
+
+Tần Dã tiếp lời:
+
+"Có người khác báo."
+
+Lâm Tịch nhìn người bán xương bị trói, nhìn Chu Kính, nhìn đám người giữ thẻ tạm trú, nhìn cả những người trong cổng. Nghi ngờ là thứ bẩn. Một khi đổ ra, nó dính lên mọi bàn tay.
+
+Tần Dã nói:
+
+"Đừng tìm nội gián lúc này."
+
+Lâm Tịch nhìn những khuôn mặt quanh sân.
+
+Người từng nhận thẻ.
+
+Người từng uống nước Thành Nam.
+
+Người từng bán tin.
+
+Người từng suýt ký.
+
+Nếu nàng bắt đầu hỏi ai báo đường, mỗi người sẽ lập tức tìm một gương mặt để nghi. Cổng Nước Xám vừa học cách ghi nợ để không quên nhau, nhưng nghi ngờ có thể biến mọi dòng ghi thành dây siết cổ.
+
+Nàng ép mình rời mắt khỏi bảng tên.
+
+Nàng quay sang.
+
+"Vì sao?"
+
+"Vì đó là việc chúng muốn. Đội ngoài kia cần đường về, không cần chúng ta tự cắn nhau."
+
+Lâm Tịch hít một hơi.
+
+"Mở cổng phụ đông?"
+
+"Không. Chúng sẽ đoán. Mở rãnh nước cũ."
+
+"Rãnh đó ngập bùn."
+
+"A Thất biết bùn. Ninh nghe được nước. Sa Đinh sẽ chọn đường có bóng. Mộc Sanh không chạy nhanh, nên họ sẽ cần chỗ thấp để che."
+
+Hắn nói như nhìn thấy họ.
+
+Nhưng Lâm Tịch biết mỗi câu nói ấy đều đang cắt hắn. Nếu đoán sai, người chết là đội hắn vẽ đường đưa đi.
+
+Nàng đứng dậy.
+
+"Di Mạn, đốt khói ướt ở cổng đông. Tạ Khuông, giữ cửa chính như chưa biết gì. Hứa Đao, đưa ba người đào mở rãnh nước cũ. Lương Tiêu..."
+
+Lương Tiêu ngẩng đầu.
+
+"Ngươi biết đội áo xám bắn kiểu gì?"
+
+"Biết."
+
+"Dạy người tránh."
+
+Tạ Khuông lập tức:
+
+"Tin hắn?"
+
+Lâm Tịch đáp:
+
+"Không. Dùng hắn."
+
+Lương Tiêu cười khàn.
+
+"Câu này nghe quen."
+
+Tần Dã nhìn hắn.
+
+"Đừng làm nó quen quá."
+
+Lương Tiêu không cười nữa.
+
+Khói ướt bốc lên ở cổng đông. Mùi rơm mốc, bùn và than vụn phủ ra ngoài. Chu Kính nhìn khói, không ngăn. Có lẽ hắn cũng muốn xem Cổng Nước Xám lộ thêm bao nhiêu đường phụ.
+
+Rãnh nước cũ được mở sau kho than. Bùn đen tràn ra, mùi thối khiến Hứa Đao chửi liên tục. Nhưng rãnh dẫn tới một khe thấp sau bãi xe, đúng như Tần Dã nói.
+
+Mười phút sau, có tiếng chuông rất nhỏ từ dưới rãnh.
+
+Một tiếng.
+
+Rồi hai tiếng.
+
+Người đầu tiên chui ra là A Thất.
+
+Mặt nó trắng bệch, tay ôm chặt mảnh thẻ, sau lưng áo rách một đường dài.
+
+Nó vừa thấy Lâm Tịch đã hét:
+
+"Lấy được!"
+
+Sau đó ngã xuống bùn.
+
+Lâm Tịch lao tới đỡ nó, nhưng Tần Dã nhanh hơn nàng một nhịp bằng giọng nói.
+
+"Không rút thẻ khỏi tay nó."
+
+Mọi người khựng lại.
+
+A Thất ngất nửa tỉnh nửa mê, tay vẫn ôm mảnh thẻ chặt đến mức móng tay tím lại. Nếu giật ra có thể làm gãy thẻ, hoặc làm nó tỉnh trong hoảng loạn.
+
+Lâm Tịch quỳ xuống bùn.
+
+"A Thất, là ta."
+
+Nó mấp máy môi.
+
+"Đủ... một trăm..."
+
+"Biết. Về rồi."
+
+"Con thú..."
+
+"Về rồi nói."
+
+"Ghi..."
+
+"Sẽ ghi."
+
+Nghe chữ đó, tay nó mới lỏng ra một chút.
+
+Tần Dã nhìn viên đá nhỏ đại diện cho A Thất trên bàn. Nó vẫn nằm ở vệt than tròn của Trạm Ghi Số 12.
+
+Hắn chậm rãi đẩy viên đá về phía cổng.
+
+Không ai thấy động tác ấy ngoài Lâm Tịch.
+
+Nàng bỗng muốn khóc, nhưng không có thời gian.
+
+## Chương 246: Một Nửa Câu Chuyện
+
+Mộc Sanh về sau cùng.
+
+Vai nàng bị mảnh đạn sượt qua, máu thấm đỏ băng. Sa Đinh mất một mũi tên móc. Ninh không bị thương, nhưng cổ họng rớm máu vì trên đường về nàng đã dùng giọng cảnh báo một lần quá sức.
+
+Con thú trong Trạm Ghi không về.
+
+Không ai hỏi.
+
+A Thất chỉ nói một câu:
+
+"Nó chặn cửa."
+
+Vậy là đủ.
+
+Nhưng với A Thất thì chưa đủ.
+
+Nó tỉnh lại sau nửa bát nước muối loãng, câu đầu tiên vẫn là:
+
+"Phải ghi nó."
+
+Di Mạn tức giận:
+
+"Ngươi suýt chết, mở mắt ra hỏi thú?"
+
+"Nó chặn cửa."
+
+"Ta nghe rồi!"
+
+"Nó không có tên."
+
+Di Mạn nghẹn.
+
+Ở Cổng Nước Xám, câu "không có tên" bây giờ đã nặng hơn trước rất nhiều. Không có tên nghĩa là có thể bị tính thành hao tổn. Có thể bị bỏ qua. Có thể bị người sống dùng xong rồi quên vì quên thì nhẹ bụng.
+
+Lâm Tịch lấy bảng.
+
+"Đặt thế nào?"
+
+A Thất nhìn Ninh.
+
+Ninh gõ chuông nhỏ đã móp.
+
+A Thất nói:
+
+"Gọi là Chuông."
+
+Sa Đinh cau mày.
+
+"Thú giữ kho tên Chuông?"
+
+"Nó quay đầu vì chuông. Nó cũng cứu bọn em vì chuông."
+
+Không ai phản đối nữa.
+
+Lâm Tịch viết:
+
+`Chuông: thú bị nhốt giữ Trạm Ghi Số 12. Chết/chưa rõ sống vì chặn đội áo xám. Cổng Xám nợ một lần nhớ.`
+
+Tần Dã nhìn dòng chữ ấy, rất lâu không nói.
+
+Sau đó hắn nói:
+
+"Hắc Nha chưa từng ghi thú."
+
+Lâm Tịch đáp:
+
+"Vậy Cổng Xám ghi."
+
+Di Mạn đưa nước, mắng từng người một. Mắng A Thất ngu. Mắng Sa Đinh chậm. Mắng Mộc Sanh không biết né. Mắng Ninh không thương cổ họng. Mắng xong, tay nàng run khi lau máu trên vai Mộc Sanh.
+
+Thẻ ghi được đặt lên bàn.
+
+Chu Kính lập tức nói:
+
+"Chứng cứ chưa được xác nhận không có giá trị."
+
+Lâm Tịch đáp:
+
+"Vậy cùng nghe."
+
+"Không có thiết bị."
+
+A Thất thở hổn hển, giơ một hộp kim loại nhỏ.
+
+"Có."
+
+Nó không chỉ mang thẻ.
+
+Nó còn tháo cả module đọc dự phòng khỏi máy chết.
+
+Tần Dã nhìn nó.
+
+"Ai dạy ngươi tháo khi đang bị bắn?"
+
+A Thất nằm trên đất, cười yếu ớt.
+
+"Không ai. Em nghĩ nếu chỉ đem thẻ về mà không đọc được, Di Mạn sẽ đánh."
+
+Di Mạn lập tức:
+
+"Ta vẫn đánh."
+
+Nhưng mắt nàng đỏ.
+
+A Thất nối module vào pin tạm. Hộp phát ra tiếng rè. Thẩm Bạch giúp cố định dây. Mộc Sanh, dù vai còn chảy máu, vẫn đọc mã mở.
+
+Âm thanh đầu tiên là tiếng nhiễu.
+
+Sau đó là giọng đàn ông.
+
+Đứt quãng.
+
+Nhưng rõ hơn ở Trạm Ghi.
+
+`...ta, Tần Sách... xác nhận... không tự nguyện... tay bị giữ... HN-07 nếu còn sống... đừng tin bản ghi đầu tiên...`
+
+Tần Dã nhắm mắt.
+
+Không ai nói.
+
+Giọng trong máy tiếp tục:
+
+`...tuyến nước không được bán... họ cần chữ ký để mở quyền thu hồi... người ký không phải người bán nước... người ký là người bị giữ tay...`
+
+Tiếng nhiễu kéo dài.
+
+Rồi tắt.
+
+Chu Kính mặt không đổi, nhưng ngón tay trong găng khẽ động.
+
+Thẩm Bạch nói:
+
+"Bản ghi này chứng minh chữ ký trong hồ sơ có vấn đề."
+
+Chu Kính đáp:
+
+"Chứng minh một đoạn âm thanh chưa xác thực."
+
+Tần Dã mở mắt.
+
+"Còn một nửa."
+
+Mọi người nhìn hắn.
+
+Hắn nói:
+
+"Tần Sách từng dạy ta một câu. Không ký thay người chết. Không giữ tay người sống để ký."
+
+Lâm Tịch biết đây là phần hắn chưa muốn kể.
+
+Nhưng hắn đang tự mở.
+
+"Năm đó, nhiệm vụ tuyến nước ngoại vi không phải dẹp loạn. Là thu hồi quyền nước. Hắc Nha hộ tống đội hồ sơ. Có người không chịu ký bàn giao. Họ giữ tay người đó ấn dấu. Tần Sách đánh gãy tay đội trưởng."
+
+Lương Tiêu đứng trong khu giám sát, nói khẽ:
+
+"Đúng."
+
+Tần Dã nhìn mảnh thẻ TS-01.
+
+"Sau đó hắn bị điều sang đội trước. Ba ngày sau, báo tử."
+
+Lâm Tịch hỏi:
+
+"Ngươi tin hắn chết vì chống lệnh?"
+
+"Lúc đó ta mười lăm."
+
+Không phải câu trả lời.
+
+Nhưng cũng là câu trả lời.
+
+Mười lăm tuổi trong Hắc Nha, người ta tin thứ được nhét vào tay nếu trên đó có máu.
+
+Chu Kính nói:
+
+"Một câu chuyện cảm động không hủy được lệnh thu hồi."
+
+Lâm Tịch quay sang hắn.
+
+"Không. Nhưng nó hủy được lý do sáu giờ."
+
+"Cô không có quyền tuyên bố."
+
+Thẩm Bạch nói:
+
+"Có nghi vấn cưỡng ép chữ ký trong hồ sơ chuyển nhượng. Theo quy trình Thành Nam, lệnh thu hồi phải tạm dừng để đối chiếu bản gốc."
+
+Chu Kính nhìn hắn.
+
+"Ngươi nhớ quy trình thật kỹ."
+
+"Ta từng ký nhiều giấy khiến người khác không đọc được. Nên nhớ."
+
+Đám đông im lặng.
+
+Chu Kính đóng sổ.
+
+"Ta sẽ chuyển cấp."
+
+Lâm Tịch đáp:
+
+"Chuyển đi."
+
+Chu Kính lên xe.
+
+Trước khi đi, hắn nhìn Tần Dã.
+
+"Nếu Tần Sách chưa chết, ngươi nghĩ hắn đứng bên nào?"
+
+Tần Dã không trả lời.
+
+Xe Thành Nam rời khỏi vạch.
+
+Nhưng chiến thắng không ai reo.
+
+Vì câu hỏi đó ở lại.
+
+Nếu người chết chưa chết.
+
+Nếu người ký bị giữ tay.
+
+Nếu Tần Sách còn đâu đó trong bóng tối.
+
+Vậy người đó là nợ, là chứng cứ, hay là kẻ thù?

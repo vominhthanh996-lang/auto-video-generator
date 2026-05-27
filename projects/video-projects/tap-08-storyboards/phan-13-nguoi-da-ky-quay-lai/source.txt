@@ -1,0 +1,311 @@
+# Phần 13: Người Đã Ký Quay Lại
+
+## Chương 253: Vân Chẩm Ở Ngoài Vạch
+
+Vân Chẩm quay lại vào xế chiều.
+
+Không vào cổng.
+
+Nàng đứng ngoài vạch trắng, sau lưng là mẹ nàng đang ho khan trong một tấm chăn Thành Nam phát. Tấm chăn sạch hơn chăn của Cổng Nước Xám, mép vải còn nguyên, trên góc có dấu xanh của khu tạm trú. Nhưng mặt bà mẹ không khá hơn. Cái sạch phủ trên người bệnh đôi khi chỉ làm bệnh nhìn rõ hơn.
+
+A Thất thấy nàng trước.
+
+Nó đang sửa dây radio, tay dừng lại giữa chừng.
+
+Trong túi áo nó vẫn giữ cái kim xương Vân Chẩm từng để lại.
+
+"Tỷ..."
+
+Lâm Tịch quay ra.
+
+Vân Chẩm cúi đầu, không nhìn ai.
+
+"Ta không vào. Ta chỉ muốn hỏi... thuốc ho của mẹ ta dùng thế nào."
+
+Trên tay nàng là một gói thuốc nhỏ, giấy bọc sạch, chữ in rất đẹp.
+
+Mộc Sanh nhận qua vạch bằng kẹp gỗ. Thẩm Bạch đứng cạnh nhìn, sắc mặt đổi ngay.
+
+"Không cho bà ấy uống."
+
+Vân Chẩm hoảng.
+
+"Vì sao?"
+
+"Thuốc ức chế ho mạnh. Người phổi yếu uống vào có thể không ho được đờm, nghẹt trong đêm."
+
+Vân Chẩm nhìn gói thuốc, mặt trắng bệch.
+
+"Họ nói thuốc tốt."
+
+Thẩm Bạch đáp:
+
+"Tốt cho người cần im tiếng ho trong khu ngủ đông người. Không chắc tốt cho mẹ ngươi."
+
+Câu ấy làm tất cả im.
+
+Một thứ sạch.
+
+Một thứ thật.
+
+Nhưng dùng sai thì vẫn giết.
+
+Vân Chẩm siết gói thuốc đến nhăn giấy.
+
+"Ta đã ký rồi."
+
+Không ai nói.
+
+"Ta ký vì mẹ ta. Nếu thuốc cũng không dùng được, vậy ta ký làm gì?"
+
+Giọng nàng không lớn.
+
+Nhưng A Thất nghe như bị đánh.
+
+Nó bước tới một bước.
+
+Tạ Khuông giữ vai nó lại.
+
+"Đừng làm nàng xấu hổ thêm."
+
+A Thất đứng yên, mắt đỏ.
+
+Lâm Tịch hỏi:
+
+"Chỗ ngủ thế nào?"
+
+Vân Chẩm cười một tiếng rất ngắn.
+
+"Không gió. Nhưng đèn sáng cả đêm. Ai ho bị ghi. Ai nói chuyện bị ghi. Ai đi vệ sinh quá hai lần bị hỏi."
+
+Bà mẹ nàng kéo tay áo con gái.
+
+"Đừng nói nữa."
+
+Vân Chẩm lập tức im.
+
+Sự im lặng ấy còn rõ hơn mọi lời kể.
+
+Chu Kính không có ở đó. Nhưng cái bóng của hắn đứng trong cách Vân Chẩm ngậm miệng.
+
+Mộc Sanh lấy một gói lá khô đã kiểm độc từ kho y tế.
+
+"Đun với nước nóng, uống từng ngụm nhỏ. Không cắt ho ngay, nhưng loãng đờm. Nếu sốt, quay lại hỏi."
+
+Vân Chẩm không nhận.
+
+"Ta là lao động tạm trú của họ rồi."
+
+Lâm Tịch nói:
+
+"Ngươi vẫn từng để lại kim xương."
+
+"Cái đó không đáng thuốc."
+
+A Thất lấy cái kim trong túi ra, đặt lên bàn.
+
+"Đáng."
+
+Vân Chẩm nhìn cái kim.
+
+Nước mắt nàng rơi xuống rất nhanh, nhanh đến mức chính nàng cũng giật mình. Nàng quay mặt đi, lau bằng mu bàn tay.
+
+"Ta không phản bội các ngươi."
+
+Lâm Tịch đáp:
+
+"Ta biết."
+
+"Nhưng ta đã ký."
+
+"Ta cũng biết."
+
+"Vậy khác gì?"
+
+Lâm Tịch nhìn tấm chăn sạch trên vai mẹ nàng.
+
+"Khác ở chỗ ngươi còn quay lại hỏi trước khi cho mẹ uống thuốc."
+
+Vân Chẩm im.
+
+Mộc Sanh đẩy gói lá qua vạch.
+
+"Cầm. Không ghi nợ thuốc. Ghi nợ câu hỏi."
+
+"Câu hỏi cũng nợ?"
+
+"Ừ. Lần sau trước khi uống thứ gì, hỏi."
+
+Vân Chẩm nhận gói lá.
+
+Trước khi đi, nàng nói nhỏ:
+
+"Bên kia có danh sách người ho. Họ bảo ai ho nhiều sẽ chuyển sang lều riêng."
+
+Thẩm Bạch hỏi:
+
+"Lều riêng ở đâu?"
+
+"Sau xe đen. Có bạt kín."
+
+Mộc Sanh và Thẩm Bạch nhìn nhau.
+
+Bạt kín, người ho, thuốc ức chế ho.
+
+Đó không phải chăm sóc.
+
+Đó là giấu tiếng bệnh.
+
+Lâm Tịch ghi lên bảng:
+
+`Tin từ Vân Chẩm: khu tạm trú dùng thuốc cắt ho và chuyển người ho vào bạt kín. Cần kiểm.`
+
+A Thất nhìn dòng tên nàng.
+
+Lần này, nó không buồn vì nàng đã ký.
+
+Nó buồn vì người đã ký vẫn phải lén mang sự thật về như mang một cục than nóng trong tay.
+
+## Chương 254: Không Xóa Công Cũ
+
+Tối đó, có người phản đối việc ghi tin của Vân Chẩm.
+
+Hàn Cổ, người từng uống nước Thành Nam, nói:
+
+"Nàng ấy đã sang bên kia. Tin của nàng có thể là mồi."
+
+Tạ Khuông gật đầu.
+
+"Có thể."
+
+A Thất lập tức nổi nóng:
+
+"Nàng ấy không..."
+
+Lâm Tịch cắt lời:
+
+"Có thể."
+
+A Thất quay phắt sang, như bị phản bội.
+
+Lâm Tịch nhìn nó.
+
+"Tin nào cũng có thể là mồi. Vì vậy mới ghi nguồn, ghi lý do, không nuốt nguyên."
+
+A Thất mím môi.
+
+Di Mạn đặt nồi xuống.
+
+"Vậy xử sao?"
+
+Lâm Tịch nói:
+
+"Tin của Vân Chẩm không dùng để hành động ngay. Ghi vào bảng chờ kiểm. Người ho trong cổng không uống thuốc lạ. Ai có thân nhân bên khu tạm trú, không tự chạy sang hỏi."
+
+Hàn Cổ vẫn cau mày.
+
+"Nếu nàng ấy quay lại xin vào thì sao?"
+
+Câu hỏi ấy làm sân trong yên xuống.
+
+Ai cũng biết sẽ có ngày câu này xảy ra.
+
+Không chỉ với Vân Chẩm.
+
+Với bất kỳ ai đã ký, đã đi, đã uống nước bên kia, đã cầm thẻ, đã đứng ở lằn ranh giữa sống và phản.
+
+Tạ Khuông nói:
+
+"Kiểm."
+
+Bà Hôi nói:
+
+"Lột hết đồ."
+
+Di Mạn nói:
+
+"Cách ly."
+
+Mộc Sanh nói:
+
+"Kiểm bệnh trước."
+
+Thẩm Bạch nói:
+
+"Kiểm cả lý do quay lại."
+
+A Thất nói rất nhỏ:
+
+"Không được mắng trước."
+
+Mọi người nhìn nó.
+
+Nó cúi đầu.
+
+"Nếu mắng trước, người muốn quay lại sẽ không dám quay lại nữa."
+
+Tạ Khuông hỏi:
+
+"Vậy kẻ thật sự phản thì sao?"
+
+A Thất nghẹn.
+
+Lâm Tịch nói:
+
+"Cho nên cần luật."
+
+Nàng lấy than viết:
+
+`Người đã ký tạm trú muốn quay lại: đứng ngoài vạch, giao đồ mới nhận, khai thuốc/nước/việc đã làm, kiểm bệnh, cách ly một đêm, không bị mắng trước khi hỏi xong. Nếu giấu, treo tên. Nếu thật sự bị ép hoặc đổi ý, trả công lại từ đầu. Công cũ không xóa, lỗi mới không bỏ.`
+
+Hàn Cổ đọc xong.
+
+"Dài."
+
+Di Mạn đáp:
+
+"Người sống thì dài. Muốn ngắn thì ghi chết."
+
+Không ai nói nữa.
+
+A Thất nhìn dòng `công cũ không xóa`.
+
+Nó bỗng thấy trong lòng dễ thở hơn một chút.
+
+Không phải vì Vân Chẩm chắc chắn sẽ quay lại.
+
+Mà vì nếu nàng quay lại, cái kim xương kia vẫn còn chỗ để được tính.
+
+Đêm ấy, kho giữ hộ có thêm một ngăn nhỏ:
+
+`Công cũ của người đã đi.`
+
+Bên trong đặt cái kim xương của Vân Chẩm, một mảnh vải giặt của người đàn bà từng rời đi, nửa cái quai giỏ của ông già kéo xe chưa chắc ở lại, và ba tấm thẻ tạm trú gửi lại.
+
+Lâm Tịch nhìn ngăn ấy, nói:
+
+"Cái kho này càng ngày càng kỳ."
+
+Tần Dã ở bên cạnh đáp:
+
+"Nhà nào cũng vậy. Chứa nhiều thứ chưa biết nên vứt hay giữ."
+
+Nàng quay sang hắn.
+
+"Anh đang nói kho hay nói người?"
+
+"Cả hai."
+
+Không ai cười lớn.
+
+Nhưng Di Mạn đi ngang qua, lặng lẽ đặt vào kho một cái muỗng cháy cán.
+
+Lâm Tịch hỏi:
+
+"Cái này của ai?"
+
+"Của ta. Nhắc ta lần sau đừng nấu cháo lúc đang tức."
+
+Kho giữ hộ càng kỳ hơn.
+
+Nhưng kỳ theo cách làm người ta muốn sống thêm một ngày để xem ngày mai nó chứa cái gì.

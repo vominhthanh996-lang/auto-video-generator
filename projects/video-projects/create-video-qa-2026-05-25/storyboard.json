@@ -1,0 +1,16 @@
+﻿{
+  "title": "Create Video QA 2026-05-25",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "background_color": "#111111",
+  "font": "Arial",
+  "scenes": [],
+  "music": null,
+  "notes": {
+    "status": "waiting-for-brief",
+    "voice": "vi-female",
+    "aspect": "9:16",
+    "purpose": "Separate scratch project for video questions and iteration while another job is running."
+  }
+}

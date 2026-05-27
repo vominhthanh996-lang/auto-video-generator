@@ -1,0 +1,365 @@
+# Phần 4: Một Chữ Ký Có Mùi Thuốc Sát Trùng
+
+## Chương 235: Mùi Trên Mép Giấy
+
+Thẩm Bạch xin một góc yên tĩnh để kiểm giấy lần nữa.
+
+Ở Cổng Nước Xám, góc yên tĩnh là một khái niệm rất nghèo. Cuối cùng họ đặt bàn kiểm dưới mái tôn cạnh kho thuốc, nơi chỉ bị ba loại tiếng ồn làm phiền: tiếng lò lọc thở, tiếng người bệnh ho, và tiếng Chu Kính ngoài vạch thỉnh thoảng nhắc còn bao nhiêu giờ.
+
+Thẩm Bạch không phàn nàn.
+
+Hắn lấy từ hộp y tế ra những thứ còn dùng được: một mảnh kính vỡ, hai que thử đã cũ, một giọt dung dịch phản ứng, một miếng giấy hút ẩm, và cây bút sạch đến mức nhìn trong trạm này có vẻ kiêu ngạo.
+
+A Thất ngồi đối diện, mắt sáng rực.
+
+"Ta giúp gì?"
+
+"Đừng thở vào giấy."
+
+A Thất lập tức nín thở.
+
+Được ba nhịp thì mặt nó đỏ lên.
+
+Thẩm Bạch thở dài.
+
+"Thở nhẹ."
+
+Di Mạn đứng sau lưng hai người, tay cầm gáo.
+
+"Nếu cái giấy đó làm ngươi ngất vì nín thở, ta không nấu cháo tang đâu."
+
+A Thất lườm nàng, nhưng thở nhẹ thật.
+
+Thẩm Bạch dùng que gỗ chấm rất ít dung dịch lên mép giấy phụ do Chu Kính viết, rồi chấm lên mép bản sao lệnh thu hồi. Màu phản ứng khác nhau. Một bên chỉ ngả vàng. Một bên hiện xanh rất nhạt, gần như phải nghiêng dưới nắng mới thấy.
+
+"Đây."
+
+Lâm Tịch cúi xuống.
+
+"Nghĩa là gì?"
+
+"Dung dịch bảo quản protein. Thường dùng cho hồ sơ có mẫu máu, mẫu mô, hoặc chữ ký đi kèm xác nhận sinh học."
+
+Di Mạn nghe đến mẫu mô thì nhăn mặt.
+
+"Nói tiếng người."
+
+Thẩm Bạch đặt que xuống.
+
+"Chữ ký này có thể từng nằm trong hồ sơ bệnh án hoặc hồ sơ tử vong."
+
+A Thất hỏi:
+
+"Nếu lấy chữ ký từ giấy tử rồi ghép sang giấy chuyển nhượng thì sao chứng minh?"
+
+"Cần bản ghi gốc."
+
+"Trạm Ghi Số 12?"
+
+"Ừ."
+
+Mộc Sanh trải bản đồ ra. Bản đồ cũ của tuyến nước ngoại vi vốn đã rách, nay thêm mấy dấu than mới. Từ Cổng Nước Xám đến Trạm Ghi Số 12 có hai đường.
+
+Đường ngắn qua mương thú.
+
+Đường dài qua vùng bụi kính.
+
+Đường ngắn nhanh nhưng dễ bị thú.
+
+Đường dài ít thú hơn nhưng bụi kính có thể cắt phổi nếu gặp gió.
+
+Sa Đinh nhìn bản đồ.
+
+"Đi đường ngắn."
+
+Mộc Sanh phản đối:
+
+"Mương thú có chó hai hàm và cá sấu cống nhỏ."
+
+Sa Đinh nói:
+
+"Đường dài về không kịp sáu giờ."
+
+Tạ Khuông chỉ chân mình.
+
+"Ta không đi được."
+
+Lâm Tịch nhìn vết thương của hắn.
+
+"Ngươi ở lại giữ cổng."
+
+"Ta không xin đi."
+
+"Ta cũng không hỏi."
+
+Tạ Khuông nghẹn một chút, rồi hừ lạnh.
+
+Tần Dã ngồi bên bản đồ, từ đầu đến giờ chưa nói. Hắn nhìn tuyến đường ngắn, ngón tay dừng ở một ký hiệu rất mờ.
+
+"Ở đây có cống thoát phụ."
+
+Mộc Sanh cúi xuống.
+
+"Bản đồ không ghi."
+
+"Bản đồ dân sinh không ghi. Bản đồ Hắc Nha có."
+
+Không khí lại chùng xuống vì hai chữ Hắc Nha.
+
+Tần Dã không tránh.
+
+"Cống phụ đủ cho một người bò qua, có thể vòng khỏi ổ chó hai hàm. Nhưng cửa ra nằm dưới trạm cân cũ. Nếu bị kẹt, không quay đầu được."
+
+Lâm Tịch hỏi:
+
+"Ai biết đường?"
+
+"Ta."
+
+"Anh không đi được."
+
+"Ta có thể vẽ."
+
+A Thất lập tức kéo bảng lại.
+
+Tần Dã cầm than, vẽ rất chậm. Đường cống, đoạn gãy, chỗ bùn sâu, điểm cần buộc dây, hướng gió thường đẩy mùi thú. Mỗi nét vẽ của hắn đều là một mảnh quá khứ Hắc Nha bị đặt lên bàn chung.
+
+Không ai khen.
+
+Không ai cảm ơn quá lời.
+
+Điều đó làm Tần Dã dễ chịu hơn.
+
+Lâm Tịch nhìn bản đồ.
+
+"Đội đi: ta, A Thất, Ninh, Sa Đinh."
+
+Di Mạn lập tức nói:
+
+"Không."
+
+"Vì sao?"
+
+"Ngươi đi rồi ai đứng nói chuyện với tên giày sạch?"
+
+Lâm Tịch nhìn Chu Kính ngoài vạch.
+
+Đúng.
+
+Nếu nàng đi, Chu Kính sẽ ép cổng bằng thẻ, thuốc, nước và chữ. Nếu nàng ở, đội đi thiếu người đọc tình huống.
+
+Tần Dã nói:
+
+"Ngươi ở lại."
+
+Lâm Tịch quay sang.
+
+"Trạm Ghi cần người quyết."
+
+"Cổng cũng cần."
+
+"A Thất..."
+
+"A Thất đi. Ninh đi. Sa Đinh đi. Thêm Mộc Sanh."
+
+Mộc Sanh ngạc nhiên.
+
+"Ta?"
+
+"Trạm Ghi có thể có hồ sơ y tế, bẫy sinh học, ký hiệu bệnh án. Ngươi đọc được."
+
+Mộc Sanh im một lúc.
+
+"Ta không giỏi chạy."
+
+Sa Đinh nói:
+
+"Ta giỏi kéo."
+
+A Thất nuốt nước bọt.
+
+"Ta giỏi chui."
+
+Ninh gõ lên bàn một cái.
+
+Nàng giỏi nghe.
+
+Lâm Tịch nhìn từng người.
+
+Đây là cảm giác khó nhất từ khi nàng đến phế thổ: để người khác đi vào nguy hiểm thay mình.
+
+Nàng muốn đi.
+
+Nhưng muốn đi đôi khi chỉ là cách trốn khỏi việc ở lại chịu đòn sạch.
+
+"Được." Nàng nói. "Ta ở lại."
+
+Tần Dã nhìn nàng.
+
+Không khen.
+
+Nhưng ánh mắt hắn dịu đi rất nhẹ.
+
+## Chương 236: Bản Đồ Hắc Nha
+
+Trước khi đội đi, Tần Dã gọi A Thất lại.
+
+"Đưa tay."
+
+A Thất chìa tay ra, lòng bàn tay toàn vết xước.
+
+Tần Dã đặt vào tay nó một mảnh kim loại mỏng, màu đen, cạnh mòn.
+
+"Dao mở khóa cống."
+
+A Thất nhìn mảnh kim loại.
+
+"Của Hắc Nha?"
+
+"Ừ."
+
+Nó cầm như cầm than nóng.
+
+"Ta dùng được không?"
+
+"Dụng cụ không chọn người. Người chọn cách dùng."
+
+A Thất mím môi.
+
+"Nếu người ta thấy..."
+
+"Thì nói thật."
+
+"Nói Hắc Nha đưa?"
+
+"Nói Tần Dã đưa."
+
+A Thất ngẩng lên.
+
+Tần Dã nói:
+
+"Đừng để người khác đặt tên cho đồ trong tay ngươi trước."
+
+Câu ấy làm A Thất im rất lâu.
+
+Nó nhét mảnh kim loại vào túi áo trong, cẩn thận như nhét một câu chưa hiểu hết.
+
+Mộc Sanh chuẩn bị túi thuốc. Thật ra không có bao nhiêu: hai miếng băng, một lọ sát khuẩn đáy cạn, một viên hạ sốt, kim, chỉ, một gói bột chống tiêu chảy, và ba mảnh than hoạt tính. Nàng nhìn túi, cười khổ.
+
+"Mang túi này ra ngoài, ta cảm giác mình đang lừa bệnh nhân."
+
+Di Mạn đưa thêm một túi bột nướng nhỏ.
+
+"Thêm cái này, lừa được bụng."
+
+Mộc Sanh nhận lấy.
+
+"Kho bột..."
+
+"Ta biết kho bột còn bao nhiêu. Đừng nói như ta không biết đau."
+
+Mộc Sanh không nói nữa.
+
+Ninh đứng cạnh cổng, đang buộc chuông nhỏ vào cổ tay. Nàng không nói được nhiều, nhưng từ khi lấy lại một phần giọng, thỉnh thoảng vẫn phát ra những âm rất khẽ khi cảnh báo. Hôm nay nàng không dùng giọng. Có lẽ vì tiếng người ngoài vạch quá nhiều, nàng muốn giữ cổ họng cho lúc thật cần.
+
+Sa Đinh kiểm tên. Ba mũi tên thường, một mũi tên móc dây, một mũi tên gắn vải tẩm bột cay. Hắn đưa cho A Thất một đoạn dây.
+
+"Buộc eo."
+
+A Thất nhăn mặt.
+
+"Ta không phải thùng hàng."
+
+"Ngươi chui cống. Thùng hàng rơi còn nhặt được. Ngươi rơi khó hơn."
+
+A Thất ngoan ngoãn buộc.
+
+Lâm Tịch đứng trước đội đi, bỗng không biết nói gì.
+
+Trước kia nàng luôn là người đi.
+
+Đi nhặt đồ, đi tìm nước, đi kéo người, đi mở cửa. Bây giờ nàng phải đứng lại, nhìn những người khác mang theo một phần mạng của trạm bước ra ngoài.
+
+Nàng ghét cảm giác này.
+
+Tần Dã ở bên cạnh nói khẽ:
+
+"Đừng nói nhiều."
+
+"Vậy nói gì?"
+
+"Nói việc."
+
+Lâm Tịch hít một hơi.
+
+"Đi đường cống phụ. Không lấy đồ ngoài mục tiêu. Không cứu người lạ nếu làm hỏng thời hạn, trừ khi người đó có thể tự đi hoặc đổi được thông tin ngay. Gặp thú có thẻ bạc, không ham giết. Lấy bản ghi, về trước giờ thứ năm."
+
+A Thất hỏi:
+
+"Nếu bản ghi hỏng?"
+
+Lâm Tịch nhìn nó.
+
+"Mang thứ hỏng về. Thứ hỏng cũng nói được mình bị hỏng thế nào."
+
+Mộc Sanh gật.
+
+Ninh gõ hai cái lên cổ tay.
+
+Sa Đinh kéo khăn che mặt.
+
+Đội đi ra khỏi cổng nhỏ phía đông.
+
+Chu Kính nhìn thấy, lập tức hỏi:
+
+"Các ngươi phái người rời khỏi khu tranh chấp?"
+
+Lâm Tịch đáp:
+
+"Đi tìm chứng cứ."
+
+"Không có quyền."
+
+"Ngươi vừa cho sáu giờ chứng minh."
+
+"Chứng minh bằng hồ sơ sẵn có, không phải tự ý rời vùng."
+
+Lâm Tịch nhìn hắn.
+
+"Giấy của ngươi không ghi câu đó."
+
+Thẩm Bạch đứng sau, rất đúng lúc bổ sung:
+
+"Không ghi."
+
+Di Mạn nói nhỏ:
+
+"Chính tả lại cứu mạng."
+
+Chu Kính nhìn đoàn người khuất sau bãi xe nát, sắc mặt lạnh hơn.
+
+"Nếu họ chết ngoài kia, trách nhiệm thuộc về người ra lệnh."
+
+Lâm Tịch đáp:
+
+"Ở đây người đi biết mình đi đâu."
+
+"Cô nghĩ vậy là đủ?"
+
+"Không đủ."
+
+Nàng nhìn con đường bụi đỏ nơi A Thất vừa biến mất.
+
+"Nhưng tốt hơn bị người khác bảo mình chỉ được chết ở đâu."
+
+Chu Kính im lặng.
+
+Tần Dã nhìn bản đồ trong tay.
+
+Lâm Tịch biết hắn đang nghe từng tiếng gió, từng tiếng động xa, dù thân thể không thể đi cùng.
+
+Nàng cũng biết từ giờ đến khi đội trở về, hắn sẽ chết trong đầu mình rất nhiều lần.
+
+Vì hắn là người vẽ đường.
+
+Và người vẽ đường luôn tự hỏi mình đã bỏ sót cái hố nào.

@@ -1,0 +1,399 @@
+# Phần 7: Đêm Bột Vàng Bị Cướp
+
+## Chương 221: Kho Bị Mở
+
+Mưa bụi rơi vào đêm thứ tư.
+
+Không phải mưa sạch. Những hạt nước nhỏ như kim, dính lên da làm người ta ngứa rát. Mọi người kéo bạt che thùng lọc, úp chậu, cất dây phơi. Di Mạn đứng trong kho bột, đếm từng túi như đếm xương sườn của chính mình.
+
+"Bảy túi bột vàng sạch. Hai túi bột xám phải trộn than hoạt. Nửa bao muối. Ba lọ dầu."
+
+Nàng ghi xong, khóa kho bằng hai ổ khóa.
+
+Trước khi khóa, nàng còn cúi xuống sờ từng miệng bao.
+
+Ngón tay Di Mạn không mềm. Đầu ngón tay chai vì dao, vì lò, vì những năm tháng cầm nồi nhiều hơn cầm tay người khác. Nhưng khi nàng chạm vào bao bột, động tác lại nhẹ như sờ trán trẻ con.
+
+"Hồi trước tận thế," nàng bỗng nói, "ta từng ghét bột vàng."
+
+A Thất đang mắc chuông kho ngẩng lên.
+
+"Vì sao?"
+
+"Rẻ. Khô. Làm bánh hay dính răng. Khách gọi món có bột vàng thường là người keo kiệt, ăn xong còn chê."
+
+Nàng vỗ bao bột trước mặt.
+
+"Giờ nhìn nó ta muốn gọi từng bao là tổ tông."
+
+A Thất cười một tiếng.
+
+Di Mạn không cười.
+
+"Đừng cười. Một túi này nếu rơi xuống nước bẩn, tối nay có sáu người không ngủ được vì đói. Nếu bị mốc, ta phải cắt phần hỏng như cắt thịt mình. Nếu bị trộm..."
+
+Nàng dừng lại.
+
+Không nói tiếp.
+
+Lâm Tịch đứng ngoài cửa kho nghe, bỗng thấy kho bột không giống kho.
+
+Nó giống một căn phòng chứa những đêm chưa chết.
+
+Lâm Tịch hỏi:
+
+"Đủ mấy ngày?"
+
+"Nếu không thêm người, ba ngày."
+
+"Nếu thêm?"
+
+Di Mạn nhìn nàng.
+
+"Đừng hỏi câu làm ta muốn đánh ngươi."
+
+Lâm Tịch cười mệt.
+
+Đêm ấy, nàng ngủ được chưa đến nửa canh giờ thì chuông dây trong kho vang.
+
+Không phải chuông cổng.
+
+Chuông kho.
+
+Lâm Tịch bật dậy, dao trong tay còn nhanh hơn ý nghĩ. Tần Dã cũng tỉnh, bàn tay trái đã nắm lấy cán súng cũ treo bên xe lăn.
+
+Khi họ chạy đến kho, Di Mạn đang đứng trước cửa mở toang.
+
+Mặt nàng trắng bệch.
+
+Ổ khóa không bị phá.
+
+Chìa vẫn treo trên cổ nàng.
+
+Nhưng một túi bột vàng sạch đã biến mất.
+
+Sa Đinh lập tức phong cửa. A Thất bò xuống đất soi dấu chân. Mưa bụi làm nền đất ẩm, nhưng trước cửa kho có quá nhiều người qua lại. Mọi vết đều dính vào nhau.
+
+Di Mạn nắm chặt chìa khóa.
+
+"Ta không mở."
+
+Không ai nói nàng mở.
+
+Nhưng im lặng đôi khi còn nặng hơn lời nghi.
+
+Lâm Tịch bước vào kho. Mùi bột sạch rất nhạt, thơm như ký ức cũ. Bao bột bị lấy nằm ở góc trong, không phải chỗ dễ với tới. Kẻ lấy biết kho. Biết cách không đụng chuông cho đến lúc rời đi. Biết chìa không cần lấy nếu có thể luồn tay qua khe vách.
+
+A Thất tìm thấy một sợi chỉ trắng mắc trên đinh.
+
+Mộc Sanh nhìn thấy, sắc mặt đổi.
+
+"Vải khu y tế."
+
+Không ai muốn nghe câu đó.
+
+Khu y tế là nơi cứu người.
+
+Ở phế thổ, nơi cứu người nếu bắt đầu trộm thức ăn, nghĩa là đói đã bò vào tận giường bệnh.
+
+Di Mạn cầm dao đi thẳng đến khu y tế.
+
+Lâm Tịch kéo nàng lại.
+
+"Đừng cầm dao."
+
+"Ta không chém người."
+
+"Người đói nhìn dao sẽ nghĩ ngươi muốn chém."
+
+Di Mạn cắn răng, cuối cùng đặt dao xuống bàn.
+
+Khu y tế sáng đèn dầu. Bệnh nhân đau bụng đã đỡ hơn, nằm co trong chăn mỏng. Người phụ nữ sinh non mê man. Đứa bé sơ sinh ngủ trong hộp gỗ lót vải.
+
+Mộc Sanh kiểm từng túi, từng góc.
+
+Cuối cùng, dưới giường của một người đàn bà tên A Chi, họ tìm thấy nửa túi bột vàng.
+
+Nửa còn lại đã được nấu thành hồ.
+
+A Chi quỳ xuống ngay lập tức.
+
+"Ta lấy."
+
+Không ai kịp hỏi, nàng đã nói tiếp:
+
+"Con ta ba ngày chưa ăn no. Nó sốt mà cứ gọi đói. Ta biết phải ghi công, ta biết luật, ta biết... nhưng nó khóc không ra tiếng nữa."
+
+A Chi không gào khóc.
+
+Nàng nói rất nhanh, rất nhỏ, như sợ nếu nói chậm sẽ có ai đó cắt mất dũng khí cuối cùng của mình.
+
+"Ta có xếp hàng. Ba lần. Lần đầu Mộc Sanh nói nó chưa đến lượt cháo đêm vì còn nuốt được. Lần hai thì nồi hết. Lần ba thì nó ngủ rồi, ta tưởng ngủ là tốt. Nhưng nó ngủ mà tay cứ bấu áo ta. Ta bẻ ngón tay nó ra, nó lại bấu. Nó không có sức khóc nữa."
+
+Mộc Sanh đứng sau lưng Lâm Tịch, sắc mặt trắng bệch.
+
+Nàng nhớ đứa trẻ đó.
+
+Nhớ mình đã nhìn qua, đã đo trán, đã ghi "theo dõi".
+
+Theo dõi nghĩa là chưa chết ngay.
+
+Nhưng chưa chết ngay không có nghĩa là không đói.
+
+A Chi cúi đầu đập trán xuống đất một cái.
+
+"Ta biết ta sai. Nhưng nếu nó chết vì ta không dám sai, ta sống kiểu gì?"
+
+Đứa bé bên cạnh nàng nằm quay mặt vào tường. Môi nó dính một vệt hồ bột vàng.
+
+Di Mạn đứng rất lâu không nói.
+
+Rồi nàng quay đi.
+
+Vai nàng run.
+
+## Chương 222: Luật Không Đủ No
+
+Sáng hôm sau, A Chi bị đưa ra trước bảng.
+
+Không trói.
+
+Nhưng mọi người đều nhìn.
+
+Có người giận. Có người thương. Có người giận vì mình thương.
+
+Một túi bột vàng sạch có thể nấu cho cả khu bệnh một bữa. A Chi lấy một túi vì con mình. Cái sai rất rõ. Cái đau cũng rất rõ.
+
+Lâm Tịch đứng trước nàng, hỏi:
+
+"Ngươi biết luật kho?"
+
+A Chi gật đầu.
+
+"Biết."
+
+"Biết mà vẫn lấy?"
+
+"Biết."
+
+"Nếu ai cũng lấy?"
+
+A Chi cúi đầu, nước mắt rơi xuống bụi.
+
+"Thì kho hết. Ta biết."
+
+Đám đông xì xào.
+
+Di Mạn đột nhiên nói:
+
+"Nàng không mở khóa được một mình."
+
+Giọng nàng khàn đến mức mọi người quay lại nhìn.
+
+Di Mạn không nhìn A Chi. Nàng nhìn kho bột phía sau, như nhìn một cái nồi bị cháy đáy mà lỗi không nằm ở ngọn lửa duy nhất.
+
+Mọi người nhìn nàng.
+
+Di Mạn chỉ khe vách kho.
+
+"Muốn móc được bao bột trong góc, phải có người nhỏ con luồn tay. Hoặc có người chỉ vị trí."
+
+A Chi run lên.
+
+Lâm Tịch hỏi:
+
+"Ai giúp ngươi?"
+
+A Chi mím môi đến bật máu.
+
+Từ đám đông, một cậu bé bước ra.
+
+Không phải con A Chi.
+
+Là Lư Tử, đứa từng nôn vì bột mốc ở đầu tập.
+
+Nó cúi đầu.
+
+"Ta chỉ cho dì ấy. Ta từng dọn kho, biết bao sạch để đâu."
+
+A Thất nhìn nó, mắt đỏ lên.
+
+"Sao ngươi không nói với ta?"
+
+Lư Tử đáp rất nhỏ:
+
+"Nói thì phải xếp hàng. Em nó đói trước hàng."
+
+Câu ấy đánh vào mọi người mạnh hơn một cái tát.
+
+A Thất bước tới một bước, rồi dừng.
+
+Nó từng kéo Lư Tử đi nhặt đá, từng dạy Lư Tử phân biệt dây đồng thật với dây phủ màu, từng chia cho nó nửa miếng bột cháy vì thấy nó nhìn quá lâu. Nó cứ tưởng như vậy đã là thân.
+
+Nhưng trẻ con trong phế thổ học giấu đói nhanh hơn học gọi người lớn.
+
+A Thất hỏi:
+
+"Ngươi không tin ta à?"
+
+Lư Tử mím môi.
+
+"Tin."
+
+"Vậy sao không nói?"
+
+"Vì nếu nói, ngươi sẽ đi hỏi tỷ Lâm. Tỷ Lâm sẽ hỏi Mộc Sanh. Mộc Sanh sẽ hỏi bảng. Bảng sẽ hỏi lượt. Nó đói không biết trả lời bảng."
+
+A Thất nghẹn lại.
+
+Một cái bảng có thể làm người mạnh phải xếp sau người yếu.
+
+Nhưng một cái bảng cũng có thể khiến một đứa trẻ nghĩ cơn đói của em mình không đủ chữ để được nhìn thấy.
+
+Luật xếp hàng công bằng.
+
+Nhưng bụng trẻ con không biết đợi công bằng lớn lên.
+
+Lâm Tịch nhìn bảng kho. Từng dòng chữ nàng tự hào tối qua bỗng giống dây buộc cổ tay.
+
+Tần Dã nói khẽ, đủ cho nàng nghe:
+
+"Luật không đủ no. Nhưng không có luật thì người mạnh ăn trước."
+
+Lâm Tịch nhắm mắt.
+
+Nàng hiểu.
+
+Không thể tha như chưa có gì.
+
+Cũng không thể phạt như thể đói là tội riêng của A Chi.
+
+Nàng mở mắt.
+
+"A Chi lấy một túi bột sạch. Trả bằng mười ngày công khu y tế sau khi con hết sốt. Lư Tử giúp mở kho, trả bằng mười ngày công kiểm kho dưới mắt A Thất. Trong mười ngày đó, hai người ăn phần công, không ăn phần phạt."
+
+Một người hét:
+
+"Vậy là tha à?"
+
+Lâm Tịch nhìn sang.
+
+"Không. Là bắt trả."
+
+Người kia vẫn không phục.
+
+"Ta cũng có con đói. Ta không trộm. Vậy ta ngu à?"
+
+Lời ấy làm đám đông lặng đi theo một kiểu khác.
+
+Đây mới là chỗ khó nhất.
+
+Không phải xử kẻ sai.
+
+Mà là nhìn thẳng người đã cố không sai, và không để họ cảm thấy sự chịu đựng của mình là trò cười.
+
+Lâm Tịch quay sang người đó.
+
+Đó là một người cha gầy, tay còn dính bùn đào rãnh. Đứa con gái nhỏ của hắn đứng sau, ôm cái bát rỗng vào ngực.
+
+Lâm Tịch hỏi:
+
+"Hôm qua ngươi đổi công gì?"
+
+"Đào rãnh."
+
+"Mấy can?"
+
+"Hai."
+
+"Đã nhận nước?"
+
+"Nhận rồi."
+
+"Con ngươi có trong danh sách cháo đêm không?"
+
+Hắn im một chút.
+
+"Không. Nó chưa sốt."
+
+Lâm Tịch nhìn đứa bé. Đứa bé lập tức cúi mặt, như sợ ánh mắt cũng tính thành nợ.
+
+Nàng nói:
+
+"Từ hôm nay thêm danh sách trẻ đói chưa sốt. Nửa bát cháo loãng, đổi bằng công nhẹ sau. Người không trộm không được thua người trộm."
+
+Di Mạn gật đầu rất mạnh.
+
+"Đúng. Không thì ta cũng muốn đập nồi."
+
+Người cha nhìn Lâm Tịch, giận vẫn còn đó, nhưng sắc cạnh đã bớt một chút.
+
+"Ghi rõ. Đừng để mai lại hỏi lượt."
+
+A Thất cúi đầu ghi ngay.
+
+Lâm Tịch nói:
+
+"Ghi rõ."
+
+"Trộm đồ mà không đánh?"
+
+Tạ Khuông đứng ở cửa chính, đột nhiên nói:
+
+"Đánh xong bột có mọc lại không?"
+
+Người kia nghẹn.
+
+Di Mạn bước lên, giọng khàn:
+
+"Từ hôm nay mở nồi cháo đêm cho trẻ sốt, người già, người vừa sinh. Cháo loãng thôi. Ai nói không công bằng thì đến kho nhìn bảy túi bột rồi nói."
+
+Mộc Sanh bổ sung:
+
+"Người nhận cháo đêm phải ghi tên bệnh. Khỏi bệnh thì trả công nhẹ. Không để người bệnh biến thành kẻ trộm trước khi được gọi."
+
+A Chi khóc không thành tiếng.
+
+Lâm Tịch không đỡ nàng.
+
+Tha thứ công khai rất dễ biến thành món hàng. Nàng chỉ đặt nửa túi bột còn lại lên bàn, trước mặt mọi người.
+
+"Bột sạch không được trộm. Nhưng trẻ đói không được bỏ tới mức mẹ nó phải trộm."
+
+A Thất ghi luật mới lên bảng:
+
+`Kho là của chung. Đói cũng phải nói trước cửa kho. Người trộm trả công. Người để người bệnh đói đến phải trộm cũng trả công.`
+
+Đêm đó, nồi cháo đêm đầu tiên được nấu.
+
+Cháo rất loãng.
+
+Loãng đến mức có thể soi thấy đáy bát.
+
+Nhưng khi Di Mạn đưa bát đầu tiên cho đứa con của A Chi, thằng bé ôm bằng hai tay, uống từng ngụm nhỏ như sợ đánh thức thứ gì đó quý hơn mình.
+
+Lâm Tịch đứng ngoài ánh lửa.
+
+Tần Dã hỏi:
+
+"Đau à?"
+
+Nàng đáp:
+
+"Ừ."
+
+"Tốt."
+
+Nàng quay sang lườm hắn.
+
+Hắn nhìn nồi cháo.
+
+"Đau nghĩa là luật còn chạm vào người. Hết đau mới đáng sợ."
+
+Lâm Tịch im lặng rất lâu.
+
+Sau đó nàng lấy phần nước của mình, đổ một nửa vào nồi cháo.
+
+Không ai reo.
+
+Nhưng Di Mạn múc bát kế tiếp đầy hơn một chút.

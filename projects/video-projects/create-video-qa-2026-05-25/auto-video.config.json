@@ -1,0 +1,17 @@
+﻿{
+    "project":  "E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25",
+    "auto_video_repo":  "E:\\ThanhMV\\auto-video-generator",
+    "scripts_dir":  "E:\\ThanhMV\\auto-video-generator\\scripts",
+    "storyboard":  "E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\storyboard.json",
+    "assets_dir":  "E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\assets",
+    "output_dir":  "E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\output",
+    "logs_dir":  "E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\logs",
+    "default_voice":  "vi-female",
+    "default_format":  "tiktok",
+    "commands":  {
+                     "validate_text":  "python \"E:\\ThanhMV\\auto-video-generator\\scripts\\validate_storyboard.py\" --storyboard \"E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\storyboard.json\" --stage text",
+                     "generate_voice":  "python \"E:\\ThanhMV\\auto-video-generator\\scripts\\generate_voice_edge.py\" --storyboard \"E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\storyboard.json\" --voice vi-female --overwrite",
+                     "generate_images":  "python \"E:\\ThanhMV\\auto-video-generator\\scripts\\generate_with_fallback.py\" --storyboard \"E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\storyboard.json\" --kind image --overwrite",
+                     "render":  "python \"E:\\ThanhMV\\auto-video-generator\\scripts\\render_video.py\" --storyboard \"E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\storyboard.json\" --output \"E:\\ThanhMV\\video-projects\\create-video-qa-2026-05-25\\output\\create-video-qa-2026-05-25.mp4\" --format tiktok"
+                 }
+}

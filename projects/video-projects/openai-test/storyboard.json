@@ -1,0 +1,19 @@
+{
+    "title":  "OpenAI AI video test",
+    "width":  1080,
+    "height":  1920,
+    "fps":  30,
+    "background_color":  "#111111",
+    "font":  "Arial",
+    "scenes":  [
+                   {
+                       "id":  "scene-01",
+                       "duration":  5,
+                       "image_prompt":  "Vertical 9:16 cinematic digital illustration of a focused creator at a desk, glowing monitor, warm teal and amber lighting, clean modern workspace, no text, no watermark",
+                       "narration":  "Xin chào, đây là video đầu tiên được tạo tự động bằng AI.",
+                       "text":  "AI video test",
+                       "subtitle":  "Xin chào, đây là video đầu tiên được tạo tự động bằng AI."
+                   }
+               ],
+    "music":  null
+}

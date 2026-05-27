@@ -40,7 +40,20 @@
         "tan_da_position": "lying in the shelter corner",
         "door_state": "closed with torn cloth and wire"
       },
-      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
+      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052026,
+        "size": "768x512",
+        "hires_scale": 1.5,
+        "upscale_model": "",
+        "reference_image": "",
+        "reference_denoise": null
+      }
     },
     {
       "id": "scene-002",
@@ -80,7 +93,20 @@
         "door_state": "closed with torn cloth and wire",
         "summary": "anchors: inside the tarp shelter, Lam Tich raises the metal lid to Tan Da's lips and the two share the last water carefully; last action: Lam Tich raises the metal lid to Tan Da's lips and the two share the last water carefully; location: inside the tarp shelter"
       },
-      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
+      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052027,
+        "size": "768x512",
+        "hires_scale": 1.5,
+        "upscale_model": "",
+        "reference_image": "",
+        "reference_denoise": null
+      }
     },
     {
       "id": "scene-003",
@@ -124,7 +150,20 @@
         "door_state": "closed with torn cloth and wire",
         "summary": "anchors: inside the tarp shelter, Lam Tich raises the metal lid to Tan Da's lips and the two share the last water carefully, Lam Tich, a beautiful fragile sixteen-year-old Asian wasteland scavenger girl with a lovely youthful maiden look, soft delicate facial features under soot and grime, clear pretty eyes that still look tired and wary, cracked lips, messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, quiet stubborn survival beauty, pretty but believable in the wasteland, not glamorous, not clean, not doll-like, Tan Da, an injured Asian male mercenary with a clear sharply rendered face, strong straight brows, steady righteous eyes, principled protective aura, restrained masculine dignity, wet messy black hair, black tactical coat, lying or half-reclining because he cannot stand, feverish but still upright in spirit, abdomen wrapped with dirty bandages, not villainous; last action: the exact action described in the narration, with character positions inherited from the previous scene; location: inside the tarp shelter"
       },
-      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
+      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin, blurred face, faceless character, hidden male face, villain face, idol makeup, porcelain skin, cropped head, head out of frame, face out of frame, missing female character, missing male character, single standing man, random gun pose, melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, over-smoothed face, childlike doll face, face too far away, tiny unreadable face",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052028,
+        "size": "768x512",
+        "hires_scale": 1.5,
+        "upscale_model": "",
+        "reference_image": "",
+        "reference_denoise": null
+      }
     },
     {
       "id": "scene-004",

@@ -1,0 +1,133 @@
+{
+  "title": "Chương 12 - Tích trữ trước tận thế",
+  "aspect_ratio": "9:16",
+  "language": "vi",
+  "scenes": [
+    {
+      "id": "scene-01-water-delivery",
+      "duration": 14,
+      "image": "assets/scene-01-water-delivery.png",
+      "narration": "Hàn Thiên Dực sau khi cân nhắc kỹ lưỡng, lập tức liên hệ dịch vụ chuyển phát nhanh, đặt riêng cho mình một đơn hàng cực kỳ đặc biệt. Chỉ trong vòng một ngày, một chiếc xe tải thùng lớn đã lăn bánh đến trước cửa nhà hắn, mang theo đủ một trăm chiếc thùng nước loại cực đại.",
+      "text": "Một trăm thùng nước được giao đến trước cửa nhà.",
+      "image_prompt": "a large delivery truck parked in front of a modern house at dusk, workers unloading many huge blue water barrels, a calm but tense young Asian man watching silently, cinematic realistic novel illustration, apocalypse preparation mood, soft dramatic lighting, realistic street details, 35mm cinema lens, emotional suspense, premium film still, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052026,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-01.mp3",
+      "subtitle": "Hàn Thiên Dực sau khi cân nhắc kỹ lưỡng, lập tức liên hệ dịch vụ chuyển phát nhanh, đặt riêng cho mình một đơn hàng cực kỳ đặc biệt. Chỉ trong vòng một ngày, một chiếc xe tải thùng lớn đã lăn bánh đến trước cửa nhà hắn, mang theo đủ một trăm chiếc thùng nước loại cực đại."
+    },
+    {
+      "id": "scene-02-filling-water",
+      "duration": 16,
+      "image": "assets/scene-02-filling-water.png",
+      "narration": "Ngay sau khi xe tải rời đi, hắn không hề chần chừ mà bắt tay ngay vào việc. Từng vòi nước trong căn nhà đều được vặn mở tối đa, nước từ hệ thống cấp chảy ào ào như thác, rót vào từng chiếc thùng lớn xếp khắp phòng khách, phòng bếp, hành lang và sân sau.",
+      "text": "Nước chảy ào ạt khắp căn nhà.",
+      "image_prompt": "inside a house filled with dozens of huge water barrels, faucets running at full power, water splashing into containers, urgent survival preparation atmosphere, Asian man moving quickly between barrels, cinematic realism, dramatic indoor lighting, reflections on wet floor, tense apocalyptic mood, 35mm lens, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052027,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-02.mp3",
+      "subtitle": "Ngay sau khi xe tải rời đi, hắn không hề chần chừ mà bắt tay ngay vào việc. Từng vòi nước trong căn nhà đều được vặn mở tối đa, nước từ hệ thống cấp chảy ào ào như thác, rót vào từng chiếc thùng lớn xếp khắp phòng khách, phòng bếp, hành lang và sân sau."
+    },
+    {
+      "id": "scene-03-stockpiling-food",
+      "duration": 16,
+      "image": "assets/scene-03-stockpiling-food.png",
+      "narration": "Trong suốt những ngày ấy, Hàn Thiên Dực hầu như không có một phút nào rảnh rỗi. Hắn đem từng đồng tiền mà mình có ra dùng đến mức tận cùng, mua số lượng lớn thực phẩm chế biến sẵn, đồ ăn khô, thịt muối, gia vị, rượu vang và cả những món cao cấp đóng gói từ nhà hàng hạng sang.",
+      "text": "Tiền bạc đã mất đi ý nghĩa lâu dài.",
+      "image_prompt": "a young Asian man in a dim apartment surrounded by stacks of premium packaged food, canned goods, dried meat, wine bottles, survival supplies arranged like a fortress, cinematic realistic lighting, anxious preparation before apocalypse, warm interior light against cold blue shadows, premium film still, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052028,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-03.mp3",
+      "subtitle": "Trong suốt những ngày ấy, Hàn Thiên Dực hầu như không có một phút nào rảnh rỗi. Hắn đem từng đồng tiền mà mình có ra dùng đến mức tận cùng, mua số lượng lớn thực phẩm chế biến sẵn, đồ ăn khô, thịt muối, gia vị, rượu vang và cả những món cao cấp đóng gói từ nhà hàng hạng sang."
+    },
+    {
+      "id": "scene-04-shooting-range",
+      "duration": 15,
+      "image": "assets/scene-04-shooting-range.png",
+      "narration": "Ngoài việc mua sắm thực phẩm, hắn còn dành phần lớn thời gian để rèn luyện kỹ năng chiến đấu. Mỗi ngày, hắn đều đến trường bắn ở Thiên Hải Thị Trường, thuê riêng phòng tập, miệt mài luyện cung nỏ, súng ngắn và súng trường.",
+      "text": "Hắn biết vũ khí sẽ quyết định sự sống còn.",
+      "image_prompt": "cinematic indoor shooting range, determined young Asian man training with pistol and crossbow, spent shells and targets, cold industrial lighting, focused eyes, survival training before apocalypse, realistic weapons, dramatic shadows, premium action film still, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052029,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-04.mp3",
+      "subtitle": "Ngoài việc mua sắm thực phẩm, hắn còn dành phần lớn thời gian để rèn luyện kỹ năng chiến đấu. Mỗi ngày, hắn đều đến trường bắn ở Thiên Hải Thị Trường, thuê riêng phòng tập, miệt mài luyện cung nỏ, súng ngắn và súng trường."
+    },
+    {
+      "id": "scene-05-walmart-night",
+      "duration": 18,
+      "image": "assets/scene-05-walmart-night.png",
+      "narration": "Khoảng cách đến ngày tận thế chỉ còn chưa đầy một tuần. Một đêm, Hàn Thiên Dực lặng lẽ quay lại nhà kho, vẫn như bình thường lên ca trực. Wal-Mart duy trì giám sát hai mươi bốn trên hai mươi bốn, nhưng vào ban đêm, số lượng nhân viên trực giảm xuống chỉ còn khoảng mười người.",
+      "text": "Đêm đó, hắn quay lại nhà kho.",
+      "image_prompt": "massive warehouse exterior at night, lonely security shift atmosphere, young Asian warehouse supervisor walking under cold lights, huge retail distribution center, quiet parking lot, suspenseful cinematic realism, blue night color grading, slight fog, premium thriller film still, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052030,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-05.mp3",
+      "subtitle": "Khoảng cách đến ngày tận thế chỉ còn chưa đầy một tuần. Một đêm, Hàn Thiên Dực lặng lẽ quay lại nhà kho, vẫn như bình thường lên ca trực. Wal-Mart duy trì giám sát hai mươi bốn trên hai mươi bốn, nhưng vào ban đêm, số lượng nhân viên trực giảm xuống chỉ còn khoảng mười người."
+    },
+    {
+      "id": "scene-06-empty-warehouse",
+      "duration": 20,
+      "image": "assets/scene-06-empty-warehouse.png",
+      "narration": "Cứ thế, trong vòng hai giờ đồng hồ, toàn bộ nhà kho rộng hàng trăm ngàn mét vuông đã hoàn toàn trống rỗng. Nhìn cảnh tượng ấy, lòng Hàn Thiên Dực dâng trào sự thỏa mãn chưa từng có. Giờ đây, cho dù tận thế băng giá có đến, hắn cũng tin rằng bản thân đủ khả năng sống sót an toàn.",
+      "text": "Cả nhà kho biến thành khoảng không trống rỗng.",
+      "image_prompt": "enormous empty warehouse interior after all goods vanished, endless bare metal shelves, cold white industrial lights, young Asian man standing alone in the center with calm satisfaction, surreal apocalyptic thriller mood, cinematic realistic perspective, deep shadows, premium film still, vertical 9:16, no text, no watermark",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052031,
+        "size": "512x768",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      },
+      "audio": "assets/scene-06.mp3",
+      "subtitle": "Cứ thế, trong vòng hai giờ đồng hồ, toàn bộ nhà kho rộng hàng trăm ngàn mét vuông đã hoàn toàn trống rỗng. Nhìn cảnh tượng ấy, lòng Hàn Thiên Dực dâng trào sự thỏa mãn chưa từng có. Giờ đây, cho dù tận thế băng giá có đến, hắn cũng tin rằng bản thân đủ khả năng sống sót an toàn."
+    }
+  ]
+}

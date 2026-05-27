@@ -1,0 +1,743 @@
+# Phần 6: Dấu Hắc Nha
+
+## Chương 126: Mật Lệnh Trên Tường Trắng
+
+Mật lệnh Hắc Nha xuất hiện trên tường trắng của khu y tế lúc ba giờ sáng.
+
+Không ai viết bằng tay.
+
+Nó hiện lên trong màn hình kiểm tra sinh học cạnh giường Tần Dã, lẫn giữa các chỉ số mạch, nhiệt, phản ứng lõi. Một dòng chữ xanh rất nhỏ, nếu không phải Tần Dã mở mắt đúng lúc, có lẽ hệ thống đã tự xóa sau ba giây.
+
+`Sách còn sống. Đừng tin cửa sạch.`
+
+Tần Dã nhìn dòng chữ đến khi nó biến mất.
+
+Lâm Tịch đang ngủ gục trên ghế bên cạnh, tay vẫn đặt gần dao. Hắn không gọi nàng ngay. Một phần vì nàng đã hai đêm không ngủ đủ. Một phần vì cái tên "Sách" rơi vào lòng hắn như một viên đá ném xuống giếng cũ, rất lâu mới nghe tiếng.
+
+Tần Sách.
+
+Tên cũ của hắn.
+
+Hay tên của người anh trai chưa quay đầu?
+
+Hắn không chắc nữa.
+
+Ký ức sau khi trung hòa lõi không trở về trọn vẹn. Nó chỉ rơi từng mảnh: một hành lang trắng, tiếng giày quân dụng, Trình Sóc cười nói "07, ngươi nợ ta", một bàn tay rất giống tay hắn đặt lên bảng điều khiển, và một giọng nói lạnh hơn máy:
+
+`Nếu đội phải chết, để đội chết có giá trị.`
+
+Tần Dã nhắm mắt.
+
+Lâm Tịch tỉnh dậy.
+
+Nàng không hỏi hắn có sao không. Câu đó ở giữa đêm thường vô nghĩa.
+
+Nàng hỏi:
+
+"Đau chỗ nào?"
+
+"Trong đầu."
+
+"Lõi?"
+
+"Ký ức."
+
+Nàng ngồi thẳng.
+
+Hắn nói:
+
+"Có mật lệnh. Sách còn sống."
+
+Lâm Tịch im một lát.
+
+"Sách là ngươi hay người khác?"
+
+"Không biết."
+
+"Vậy tìm bằng cách nào?"
+
+Tần Dã nhìn màn hình đã trở lại chỉ số bình thường.
+
+"Mật lệnh dùng kênh Hắc Nha cũ. Muốn truy, cần vào sân kiểm của Trạm Lọc Ba. Ở đó có cổng quân sự cũ nối với hệ thống."
+
+"Ngươi đi được không?"
+
+"Không nên."
+
+"Ta hỏi đi được không."
+
+"Có thể. Nếu dùng thuốc."
+
+Lâm Tịch nhìn tủ thuốc khóa.
+
+Thuốc gene cao vẫn nằm trong Trạm Lọc, sau lớp kính và điều kiện giám sát. Một ống có thể giúp hắn ổn định, đi nhiều hơn, truy mật lệnh. Cũng có thể biến hồ sơ của hắn thành tài sản giám sát của Trạm Lọc.
+
+"Giá?"
+
+"Chưa biết."
+
+Hứa Linh từ giường bên kia lên tiếng:
+
+"Giá là người."
+
+Hai người quay lại.
+
+Bà bác sĩ già mở mắt, mặt đầy cáu vì bị đánh thức bởi câu chuyện nguy hiểm.
+
+"Thuốc gene cao không phải nước cháo. Ai mở hộp phải ghi người dùng, người giám sát, nơi dùng, phản ứng sau dùng. Nói ngắn gọn: muốn đi thêm vài bước, hắn phải để một hệ thống mới nắm cổ."
+
+Lâm Tịch hỏi:
+
+"Không dùng?"
+
+"Hắn có thể vẫn đi. Nhưng trả bằng đau và nguy cơ lõi phản ứng."
+
+Tần Dã nói:
+
+"Ta chọn không dùng."
+
+Lâm Tịch nhìn hắn.
+
+"Ngươi chọn nhanh quá."
+
+"Vì nếu dùng thuốc đó để tìm tên cũ, cái tên tìm được cũng nằm trong tay họ."
+
+Nàng không thích câu này.
+
+Vì nó đúng.
+
+Sáng hôm sau, Quan Dực mang nhiệm vụ mới tới: bão bụi đỏ đổi hướng, khu ngoài thành cần đội bảo trì kiểm tra sân kiểm phía Nam, nơi một số cảm biến tường chắn hỏng do mạch cũ Hắc Nha can thiệp.
+
+Lâm Tịch đọc nhiệm vụ.
+
+"Trùng hợp thật."
+
+Quan Dực đáp:
+
+"Trong hệ thống, trùng hợp thường là có người chưa khai báo."
+
+Tần Dã nhìn hắn.
+
+"Ngươi biết mật lệnh?"
+
+"Ta biết có tín hiệu lạ. Không biết nội dung."
+
+"Nếu ta vào sân kiểm, Ngân Thụ sẽ thấy."
+
+"Đúng."
+
+"Vậy vì sao còn đề xuất?"
+
+Quan Dực im một nhịp.
+
+"Vì nếu không sửa cảm biến, bão tới, cổng Nam đóng sai nhịp, khu xám ngập bụi trước."
+
+Lâm Tịch nhìn bản đồ khu xám.
+
+Nơi đó có hàng nước, có người đàn ông từng quỳ trước vòi, có những đứa trẻ tới nhìn mầm Đèn Vàng.
+
+Lại là lựa chọn cũ.
+
+Một người bị lộ thêm, đổi một khu ít bị bụi độc nuốt.
+
+Tần Dã nói:
+
+"Đi."
+
+Lâm Tịch không ngăn.
+
+Nàng chỉ nói:
+
+"Lần này không đi một mình."
+
+## Chương 127: Thuốc Gene Cao Được Mở Hộp
+
+Thuốc gene cao được mở hộp trong phòng kính.
+
+Lục Nghiêm đích thân mang ra. Ống thuốc nằm trong hộp lạnh, bên dưới có ba lớp niêm phong. Chất lỏng trong suốt đến mức gần như không tồn tại, chỉ khi ánh đèn đi qua mới hiện lên những sợi bạc rất mảnh.
+
+Tần Dã ngồi trên xe lăn.
+
+Lâm Tịch đứng cạnh.
+
+Hứa Linh đứng đối diện Lục Nghiêm, mặt như muốn đập hộp vào đầu hắn.
+
+"Điều kiện." Lâm Tịch nói.
+
+Lục Nghiêm đẩy bảng cam kết.
+
+"Bệnh nhân HN-07 nhận thuốc gene cao loại ổn định. Sau tiêm, trong 24 giờ chịu giám sát y tế của Trạm Lọc Ba. Mọi dữ liệu phản ứng thuộc hồ sơ y tế khu ngoài thành."
+
+"Không chuyển giao Ngân Thụ."
+
+"Trạm Lọc thuộc hệ thống liên kết."
+
+"Viết rõ: không chuyển giao Ngân Thụ trong 24 giờ."
+
+Lục Nghiêm nhìn nàng.
+
+"Ngươi không có quyền sửa."
+
+Hứa Linh nói:
+
+"Ta có quyền không cho tiêm nếu điều kiện làm bệnh nhân rơi vào nguy hiểm ngoài y tế."
+
+"Giấy phép của bà..."
+
+"Đang trong quy trình gia hạn, nhớ không? Các ngươi thích quy trình mà."
+
+Lục Nghiêm nhìn Quan Dực.
+
+Quan Dực đặt bút xuống.
+
+"Viết thêm điều khoản không chuyển giao trong 24 giờ, lý do: cần hoàn thành nhiệm vụ cảm biến bão bụi."
+
+Lâm Tịch nhìn hắn.
+
+Quan Dực tránh ánh mắt nàng.
+
+"Đừng cảm ơn. Đây là cách bảo vệ trách nhiệm của Sở."
+
+"Ta đâu có định cảm ơn."
+
+"Tốt."
+
+Tần Dã ký.
+
+Không ký Tần Sách.
+
+Ký Tần Dã.
+
+Lục Nghiêm nhìn chữ ký, hơi nhíu mày nhưng không nói.
+
+Kim tiêm đâm vào tay hắn.
+
+Thuốc đi vào máu.
+
+Phản ứng đến sau mười nhịp.
+
+Tần Dã cúi gập người, tay siết chặt tay vịn. Gân trên cổ nổi lên. Dưới da, những đường xanh từng là dấu hiệu lõi sụp nay chuyển thành bạc nhạt, chạy dọc xương như những sợi dây được kéo căng.
+
+Lâm Tịch muốn đưa tay, nhưng Hứa Linh giữ lại.
+
+"Đừng chạm lúc phản ứng đầu. Đau của hắn sẽ kéo cơ thể bám vào kích thích ngoài."
+
+"Nói dễ nghe hơn đi."
+
+"Chạm vào có thể làm hắn co giật mạnh hơn."
+
+Lâm Tịch thu tay.
+
+Tần Dã mở mắt.
+
+"Không sao."
+
+"Ngươi mặt trắng như xác."
+
+"Xác không nói."
+
+"Còn biết cãi là tốt."
+
+Phản ứng kéo dài nửa canh giờ.
+
+Khi kết thúc, Tần Dã thở ra, cả người như vừa bò khỏi nước sâu. Nhưng mắt hắn tỉnh. Tay không run nhiều. Hắn đặt chân xuống đất.
+
+Lâm Tịch lập tức căng người.
+
+Hắn nhìn nàng.
+
+"Ta thử."
+
+"Ta đếm."
+
+Hắn gật.
+
+Một.
+
+Hai.
+
+Ba.
+
+Mười.
+
+Mười chín.
+
+Đến bước thứ hai mươi, Tần Dã dừng lại.
+
+Không phải vì ngã.
+
+Vì hắn tự dừng.
+
+A Thất đứng ngoài phòng kính, mắt đỏ.
+
+"Tần ca..."
+
+Tần Dã vịn tường, quay đầu nhìn Lâm Tịch.
+
+"Hai mươi bước."
+
+Lâm Tịch không cười.
+
+Nàng nhìn bảng cam kết sau lưng Lục Nghiêm.
+
+Hai mươi bước đổi lấy 24 giờ bị giám sát.
+
+Một chiến thắng rất thật.
+
+Và một sợi dây mới buộc vào cổ.
+
+## Chương 128: Tần Dã Đi Qua Sân Kiểm
+
+Sân kiểm phía Nam nằm giữa hai lớp tường.
+
+Nơi này không cho dân thường vào. Một bên là cổng phụ kỹ thuật, một bên là đường tuần tra trên cao, ở giữa có dãy cảm biến bụi, máy phun khử xạ, tháp đèn và ba cột ăng-ten cũ mang dấu Hắc Nha.
+
+Gió bão đã tới gần.
+
+Bụi đỏ quất lên lớp kính chắn ngoài tường, phát ra tiếng rào rào như vô số móng tay cào. Đèn cảnh báo đổi sang vàng. Cửa khu xám bắt đầu đóng theo từng đoạn, nhưng cảm biến phía Nam nhấp nháy sai nhịp.
+
+Nếu nó đóng muộn, bụi tràn vào khu xám.
+
+Nếu nó đóng sớm, người ngoài sân kiểm bị kẹt giữa hai lớp cửa.
+
+Đội bảo trì tạm thời của Chim Xám được đưa vào sân bằng thẻ nhiệm vụ.
+
+Đường Tố đi cùng.
+
+"Các ngươi có ba mươi phút."
+
+A Thất nhìn trời đỏ ngoài kính.
+
+"Ba mươi phút nghe như lời nguyền."
+
+Mộc Sanh mở bảng cảm biến.
+
+"A Thất, dây xanh. A Mục, nhìn đường cáp cũ. Lâm Tịch, giữ chốt thủ công. Tần Dã..."
+
+Nàng dừng lại.
+
+Tần Dã đang đứng.
+
+Không ngồi xe.
+
+Hắn chống gậy kim loại do Lão Phùng từng sửa khung gửi vào qua đoàn nước của Bạch Nhĩ. Mỗi bước còn cứng, nhưng ổn. Thuốc gene cao cho hắn một thân thể gần giống người bình thường trong khoảng thời gian ngắn. Chính vì gần giống, Lâm Tịch càng sợ.
+
+Tần Dã nhìn cột ăng-ten Hắc Nha.
+
+"Ta xử lý mật lệnh."
+
+Đường Tố cau mày.
+
+"Ngươi không được truy cập quân sự."
+
+"Nếu không, cảm biến tiếp tục nhận lệnh cũ. Ngươi muốn cổng đóng bằng luật hay bằng bão?"
+
+Đường Tố im.
+
+"Ba phút." hắn nói.
+
+Tần Dã bước tới cột ăng-ten.
+
+Một.
+
+Hai.
+
+Ba.
+
+Lâm Tịch không đếm thành tiếng, nhưng trong lòng đếm từng bước.
+
+Hắn đi qua sân kiểm, áo bị gió từ khe tường thổi phần phật. Đèn vàng quét qua mặt hắn, làm đường nét gương mặt sắc hơn, lạ hơn. Có một khoảnh khắc, Lâm Tịch hiểu vì sao người trong tường nghe tên Tần Sách lại đổi sắc.
+
+Người như hắn, nếu từng đứng ở bên kia hệ thống, chắc chắn không phải người nhỏ.
+
+Tần Dã đặt tay lên bảng ăng-ten.
+
+Màn hình bật sáng:
+
+`Xác nhận Tần Sách.`
+
+Lâm Tịch nghe thấy qua kênh liên lạc.
+
+A Thất khựng tay.
+
+Đường Tố nhìn Tần Dã.
+
+Tần Dã không phản ứng.
+
+Hắn nhập một chuỗi mã.
+
+Màn hình hiện:
+
+`Lệnh cũ: mở kênh thu hồi HN.`
+
+`Lệnh ẩn: khóa khu xám khi bão đạt cấp đỏ.`
+
+Mộc Sanh chửi:
+
+"Khóa khu xám? Người trong đó thì sao?"
+
+Tần Dã đáp:
+
+"Bị bỏ lại trong vùng bụi để bảo vệ khu trên."
+
+Đường Tố sắc mặt thay đổi.
+
+"Không thể. Hệ thống sơ tán..."
+
+"Đã bị sửa."
+
+Tần Dã chuyển dữ liệu sang bảng của Đường Tố.
+
+"Nhìn luật của ngươi đi."
+
+Đường Tố nhìn.
+
+Lần đầu tiên, tay hắn siết mạnh đến mức găng trắng nhăn lại.
+
+Lâm Tịch giữ chốt thủ công.
+
+"Tần Dã, sửa được không?"
+
+"Được. Nhưng cần hủy lệnh Hắc Nha cũ bằng quyền Tần Sách."
+
+"Hậu quả?"
+
+"Người gửi mật lệnh biết ta đã dùng tên."
+
+"Dùng."
+
+Hắn im một nhịp.
+
+Rồi nhập:
+
+`Tần Sách xác nhận hủy.`
+
+Sân kiểm rung lên.
+
+Cảm biến phía Nam chuyển xanh.
+
+Cửa khu xám bắt đầu đóng đúng nhịp, để lại đường sơ tán chậm nhưng sống được.
+
+Đường Tố nhìn dòng lệnh.
+
+"Ai cài thứ này?"
+
+Tần Dã nhìn màn hình, nơi một chữ ký mã hóa hiện lên trong một phần giây.
+
+`TS-01`
+
+Hắn khàn giọng:
+
+"Một người dùng tên ta trước ta."
+
+## Chương 129: Bóng Lưng Tần Sách
+
+Bóng lưng ấy xuất hiện trong đoạn ghi hình cũ.
+
+Cột ăng-ten Hắc Nha lưu lại ba mươi giây dữ liệu trước khi lệnh bị sửa bảy năm trước. Mộc Sanh kéo được đoạn hình ra, nhưng hình mờ, nhiễu, mất tiếng. Chỉ thấy một người mặc áo khoác quân sự đen đứng trước bảng điều khiển sân kiểm.
+
+Dáng cao.
+
+Vai rộng.
+
+Tay trái có một vết sẹo dài.
+
+Người đó quay lưng với camera.
+
+Trên màn hình trước mặt hắn có tên:
+
+`Tần Sách - quyền hạn cấp một.`
+
+Tần Dã đứng trước hình ảnh ấy, mặt không cảm xúc.
+
+Lâm Tịch đứng cạnh, không nói.
+
+Bởi vì nàng thấy tay hắn đang run.
+
+Không phải run vì thuốc.
+
+Run vì có một cái tên đã từng ở đây, từng dùng quyền hạn của hắn, hoặc từng là hắn trước khi ký ức bị cắt.
+
+A Thất nhỏ giọng:
+
+"Có khi nào... là anh trai thật không?"
+
+Không ai trả lời.
+
+Mộc Sanh phóng hình.
+
+Người trong video nghiêng đầu một chút. Không thấy mặt. Nhưng trước khi dữ liệu tắt, hắn đặt một vật vào khe bảo trì dưới bảng điều khiển.
+
+A Mục lập tức nằm xuống tìm.
+
+"Có khe."
+
+Mộc Sanh mở bằng dụng cụ.
+
+Bên trong có một mảnh kim loại nhỏ, bọc vải chống nước. Trên đó khắc:
+
+`Nếu 07 còn sống, đừng để nó trở về Ngân Thụ. Nó không phải lỗi.`
+
+Tần Dã cầm mảnh kim loại.
+
+Mắt hắn tối đi.
+
+"Nó?"
+
+Lâm Tịch nghe chữ đó cũng thấy đau.
+
+Người để lại tin muốn cứu hắn, nhưng vẫn gọi hắn là nó.
+
+Hoặc người ấy đang nhắc tới thứ trong hắn.
+
+Đường Tố đứng phía sau.
+
+"Đoạn ghi này phải giao cho Tuần Tra."
+
+Tần Dã không buông.
+
+Lâm Tịch nhìn Đường Tố.
+
+"Ghi bản sao. Bản gốc là bằng chứng thân phận của hắn."
+
+"Theo quy định..."
+
+"Theo quy định, ngươi vừa thấy khu xám suýt bị khóa chết bằng lệnh cũ. Ngươi muốn đem mọi thứ về đúng quy trình và chờ người sửa hồ sơ xóa nó đi?"
+
+Đường Tố im.
+
+Gió bão đập lên kính chắn.
+
+Bên ngoài, bụi đỏ đã dày đến mức không thấy đường ray. Cửa khu xám đóng từng lớp, người bên trong chạy vào các hành lang trú. Nếu cảm biến không sửa, họ đã bị nhốt ở đoạn hở.
+
+Đường Tố nói:
+
+"Bản gốc các ngươi giữ trong 24 giờ. Sau đó giao niêm phong."
+
+"48 giờ."
+
+"24."
+
+"36."
+
+Hắn nhìn nàng.
+
+"Ngươi mặc cả với Tuần Tra Bạc?"
+
+"Ta học nhanh."
+
+Cuối cùng hắn đồng ý 36 giờ.
+
+Tần Dã cất mảnh kim loại.
+
+Trên đường rời sân kiểm, thuốc gene cao bắt đầu yếu. Bước chân hắn nặng dần. Đến bậc cửa cuối, đầu gối hắn khuỵu xuống.
+
+Lâm Tịch đỡ kịp.
+
+Hắn dựa vào nàng, thở khàn.
+
+"Ta vẫn chưa biết mình là ai."
+
+Nàng nói:
+
+"Biết thêm một điều rồi."
+
+"Gì?"
+
+"Có người từng muốn ngươi sống."
+
+Hắn im lặng rất lâu.
+
+"Và có người bây giờ cũng vậy."
+
+Lâm Tịch không nhìn hắn.
+
+"Ừ. Nhiều người. Đừng tự đắc."
+
+Hắn khẽ cười.
+
+Bên ngoài, bão bụi đỏ đập vào tường.
+
+Bên trong, cái tên Tần Sách bắt đầu có hình dạng.
+
+Không rõ là người cứu, người hại, hay một cái bóng cả hai đều phải vượt qua.
+
+## Chương 130: Người Anh Trai Chưa Quay Đầu
+
+Đêm đó, radio bắt được tín hiệu mới.
+
+Không phải Bạch Nhĩ.
+
+Không phải Ngân Thụ.
+
+Là kênh Hắc Nha cũ, rất yếu, phát từ đâu đó trong khu ngoài thành hoặc sâu hơn trong thành chính.
+
+A Thất chỉnh đến tay run.
+
+Giọng đàn ông trong radio trầm, nhiễu, nhưng rõ hơn lần trước:
+
+"HN-07. Nếu ngươi nghe được, đừng dùng thuốc gene cao lần hai. Lõi sẽ nhớ đường về."
+
+Tần Dã ngồi trên giường y tế, mặt tái.
+
+Lâm Tịch đứng cạnh radio.
+
+"Ngươi là ai?"
+
+Im lặng.
+
+Rồi giọng kia vang lên:
+
+"Người từng trả giá để nó quên mình."
+
+Tần Dã siết mảnh kim loại trong tay.
+
+"Tần Sách?"
+
+Giọng kia không trả lời trực tiếp.
+
+"Tên đó không nên được gọi trong tường."
+
+"Vậy ngươi là ai?"
+
+"Một cái bóng chưa chết."
+
+A Thất nhăn mặt, không nhịn được:
+
+"Nói chuyện cho rõ được không? Tụi ta nghèo, không có nước để đoán."
+
+Radio im một nhịp.
+
+Không biết vì nhiễu hay vì người kia thật sự bị câu này làm khựng.
+
+Lâm Tịch hỏi:
+
+"Ngươi muốn gì?"
+
+"Giữ 07 khỏi Ngân Thụ. Giữ mầm cây khỏi Sở Cư Trú. Và đừng tin người ký tên Quan Dực quá sớm."
+
+Quan Dực đứng ngay cửa.
+
+Hắn không hề báo trước mình tới. Mọi người quay lại nhìn hắn.
+
+Quan Dực đẩy kính.
+
+"Ta nghe thấy phần cuối."
+
+Radio tiếp tục:
+
+"Bão bụi đỏ chỉ là lớp đầu. Khi bão đạt cấp đỏ, thú biến dị leo tường sẽ tới khu xám. Nếu Chim Xám muốn có thẻ chính thức, hãy làm điều trong tường không dám làm: mở kho vũ khí cũ cho người cấp xám tự giữ cửa."
+
+Đường Tố, cũng vừa tới, sắc mặt lập tức thay đổi.
+
+"Kho vũ khí cũ bị niêm phong. Không ai được mở."
+
+Giọng radio nói:
+
+"Vậy nhìn người chết qua cửa niêm phong."
+
+Tín hiệu tắt.
+
+Trong phòng yên lặng.
+
+A Thất ôm radio.
+
+"Ta ghét người nói úp mở. Nhưng hắn nói nghe có lý."
+
+Đường Tố lạnh giọng:
+
+"Mở kho vũ khí cho dân cấp xám là vi phạm nghiêm trọng."
+
+Lâm Tịch nhìn hắn.
+
+"Nếu thú leo tường thật?"
+
+"Tuần Tra sẽ xử lý."
+
+Tần Dã khàn giọng:
+
+"Tuần Tra đóng khu trên trước. Khu xám nhận lệnh sơ tán sau. Vừa rồi ngươi thấy rồi."
+
+Đường Tố im.
+
+Quan Dực nói:
+
+"Nếu có bằng chứng thú leo tường, có thể xin quyền mở kho khẩn cấp."
+
+"Xin ai?"
+
+"Sở phòng vệ."
+
+"Bao lâu?"
+
+"Nhanh nhất hai giờ."
+
+A Mục nói:
+
+"Bão tới dưới một giờ."
+
+Lâm Tịch nhìn từng người.
+
+Đường Tố tin luật.
+
+Quan Dực biết lách luật.
+
+Tần Dã đang đau vì thuốc xuống.
+
+Mộc Sanh cần về xem A Hành.
+
+Ninh giấu mầm cây trong hộp y tế.
+
+A Thất ôm radio.
+
+Còn ngoài kia, khu xám có những người từng quỳ trước vòi nước, từng nhìn mầm cây, từng chưa biết Chim Xám là gì nhưng đã nhớ Lâm Tịch không quỳ.
+
+Nàng hỏi Đường Tố:
+
+"Nếu chúng ta không mở kho, ngươi chắc bảo vệ được họ?"
+
+Đường Tố không trả lời được.
+
+Lâm Tịch đứng dậy.
+
+"Vậy dẫn đường."
+
+"Ta chưa đồng ý."
+
+"Ngươi có thể bắt ta sau."
+
+"Ngươi luôn nói câu đó trước khi làm chuyện lớn?"
+
+"Không. Trước đây ta thường chạy trước."
+
+Đường Tố nhìn nàng, rồi nhìn bão đỏ ngoài cửa sổ.
+
+Cuối cùng hắn nói:
+
+"Kho vũ khí cũ ở dưới sân kiểm. Cửa khóa ba lớp."
+
+Mộc Sanh cầm dụng cụ.
+
+"Khóa là việc của ta."
+
+A Thất giơ pin.
+
+"Và của ta."
+
+Quan Dực thở dài.
+
+"Ta sẽ cần một báo cáo rất dài."
+
+Lâm Tịch đáp:
+
+"Viết sau khi còn sống."
+
+Trên tường, báo động bão chuyển từ vàng sang cam.
+
+Và trong bóng nhiễu của radio, cái bóng tự xưng chưa chết kia để lại câu cuối cùng, rất nhỏ, gần như chỉ Tần Dã nghe được:
+
+"07, đừng quay đầu tìm ta. Đi về phía người gọi ngươi bằng tên."
+
+Tần Dã nhìn Lâm Tịch.
+
+Nàng đang buộc dao, không biết mình vừa được đặt ở phía trước một quá khứ rất lớn.

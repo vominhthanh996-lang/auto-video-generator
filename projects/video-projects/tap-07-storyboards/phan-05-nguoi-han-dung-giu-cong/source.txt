@@ -1,0 +1,467 @@
+# Phần 5: Người Hận Đứng Giữ Cổng
+
+## Chương 217: Tạ Khuông
+
+Tạ Khuông đến xin gác cổng vào sáng ngày thứ ba.
+
+Hắn không vòng vo. Cũng không cúi đầu.
+
+Hắn đặt cây giáo gãy của mình lên bàn đăng ký, nói:
+
+"Ta muốn đứng ở cửa chính."
+
+Cây giáo ấy không giống vũ khí.
+
+Nó giống một thứ còn sót lại sau khi người ta đã dùng hết mọi thứ tốt hơn.
+
+Thân giáo ghép từ cán xẻng, mũi giáo là nửa lưỡi dao cắt sắt được mài lại. Chỗ buộc dây quấn bằng vải áo trẻ con, màu đã bạc gần như không nhận ra được ban đầu là xanh hay trắng. Khi Tạ Khuông đặt nó xuống, một ít bụi khô rơi ra từ khe dây.
+
+A Thất nhìn vết vải ấy lâu hơn cần thiết.
+
+Ở Cổng Nước Xám, người ta học rất nhanh cách đọc đồ vật.
+
+Một cái bát mẻ nói chủ nó từng làm rơi khi chạy.
+
+Một đôi giày lệch đế nói người mang nó đi đường xa hơn sức mình.
+
+Một mảnh vải trẻ con quấn trên cán giáo nói Tạ Khuông không chỉ hận vì nghe chuyện người khác chết.
+
+Lâm Tịch cũng thấy.
+
+Nàng không hỏi.
+
+Có những vết thương nếu bị hỏi trước mặt đám đông sẽ biến thành trò xem.
+
+A Thất đang ghi danh sách đổi công ngẩng lên nhìn hắn như nhìn một cục đá vừa tự nói.
+
+"Ngươi từng mắng tỷ ấy."
+
+Tạ Khuông đáp:
+
+"Ta vẫn mắng."
+
+Di Mạn đang chia bột suýt làm rơi dao.
+
+"Vậy ngươi xin gác làm gì?"
+
+Tạ Khuông nhìn về cái thìa gỗ trên cổng.
+
+"Để lần sau nàng muốn đóng cổng, có người đứng ngay bên cạnh hỏi nàng có chắc không."
+
+Không khí quanh bàn lạnh đi.
+
+Sa Đinh đặt tay lên cung. Hứa Đao nhổ nước bọt xuống đất. Mấy người từng sống qua đêm đóng cổng nhìn Tạ Khuông bằng ánh mắt khó chịu, nhưng cũng không ai phản bác được hắn hoàn toàn.
+
+Vì người chết ngoài cổng là thật.
+
+Vì tiếng khóc đêm đó là thật.
+
+Vì Lâm Tịch đã đóng cổng cũng là thật.
+
+Lâm Tịch bước ra từ kho nước. Nàng nghe hết.
+
+"Ngươi hận ta?"
+
+Tạ Khuông nhìn nàng.
+
+"Hận."
+
+Hắn nói chữ ấy rất thẳng.
+
+Không gầm, không run, không cố làm mình đáng thương.
+
+Chỉ như một người đưa ra món hàng thật trên bàn cân.
+
+Lâm Tịch bỗng thấy câu trả lời ấy đỡ đáng sợ hơn im lặng. Im lặng mới là thứ hay nuôi dao trong tay áo. Còn hận thù được đặt dưới nắng, ít nhất mọi người đều nhìn thấy nó có hình dạng gì.
+
+"Vậy ngươi cầm giáo đứng sau lưng ta, ta sao dám dùng?"
+
+Tạ Khuông nói:
+
+"Ta không đứng sau lưng. Ta đứng trước mặt."
+
+Câu ấy làm Lâm Tịch im một lúc.
+
+Tần Dã ở bên cạnh không lên tiếng. Hắn để nàng tự quyết. Gần đây hắn càng ít nói thay nàng, như thể cũng đang học cách rút tay khỏi một người đang phải tự đứng.
+
+Lâm Tịch hỏi:
+
+"Ngươi biết luật gác?"
+
+"Biết."
+
+"Người gác cổng ăn phần cuối."
+
+"Biết."
+
+"Người gác cổng không được tự mở cổng cứu người quen."
+
+"Biết."
+
+"Người gác cổng nếu nhận hàng riêng, đổi nước riêng, đánh người qua vạch, tên treo lên bảng."
+
+"Biết."
+
+"Người gác cổng nếu có ý kiến trái với ta, được nói trước mặt mọi người. Nhưng khi cổng đang bị đánh, nghe hiệu lệnh trước."
+
+Tạ Khuông nhìn nàng rất lâu.
+
+"Nếu hiệu lệnh sai?"
+
+Lâm Tịch đáp:
+
+"Sống qua trận đó rồi kéo ta xuống."
+
+Di Mạn hít một hơi.
+
+A Thất ngòi bút dừng giữa giấy.
+
+Tạ Khuông bỗng cười.
+
+Nụ cười không vui.
+
+"Được."
+
+Hắn cầm giáo gãy lên.
+
+"Ta đứng cửa chính."
+
+Đến lúc ấy, mẹ Miên Miên mới từ khu phơi vải đi tới.
+
+Bà vẫn mặc chiếc áo nâu cũ, tay áo ướt vì vừa giặt băng cho khu bệnh. Từ sau đêm treo thìa gỗ, bà rất ít nói. Người ta đưa nước, bà nhận. Người ta đưa công, bà làm. Ai nhắc tên Miên Miên, bà không khóc, chỉ cúi đầu như đang nghe một giọng nói từ dưới đất.
+
+Bà dừng trước mặt Tạ Khuông.
+
+"Ngươi đứng cổng vì ai?"
+
+Tạ Khuông nhìn bà, hàm siết lại.
+
+"Vì người chết ngoài đó."
+
+"Có tên không?"
+
+Hắn im.
+
+Một lúc sau, hắn nói:
+
+"A Nhĩ. Sáu tuổi. Cháu ta."
+
+Không ai trong sân động đậy.
+
+Lâm Tịch chưa từng nghe tên ấy.
+
+Đêm đó quá loạn. Tiếng khóc quá nhiều. Có những người chết đã kịp để lại tên, có những người chỉ để lại một khoảng trống trong tiếng gió.
+
+Mẹ Miên Miên gật đầu.
+
+"Viết lên."
+
+A Thất ngẩng đầu.
+
+"Viết ở đâu?"
+
+Bà chỉ cái thìa trên cổng.
+
+"Cạnh tên con ta. Nó không nên treo một mình."
+
+Tạ Khuông quay mặt đi rất nhanh.
+
+Nhưng không nhanh đến mức giấu được mắt đỏ.
+
+Lâm Tịch nhìn A Thất.
+
+"Ghi."
+
+A Thất lấy một miếng gỗ mỏng, viết thêm:
+
+`A Nhĩ, sáu tuổi, chết ngoài vạch đêm cổng đóng.`
+
+Tạ Khuông nhìn dòng chữ ấy như nhìn một vết thương vừa bị rửa bằng nước muối.
+
+Đau.
+
+Nhưng sạch hơn một chút.
+
+Tần Dã lúc này mới nói:
+
+"Giáo gãy đổi sang móc kéo. Chân ngươi phải được buộc dây lùi. Khi thú xông cổng, người hận cũng không được chết vô ích."
+
+Tạ Khuông nhìn hắn.
+
+"Ngươi quan tâm ta?"
+
+"Ta quan tâm cửa."
+
+Tạ Khuông lại cười, lần này hơi thật hơn một chút.
+
+Lâm Tịch bảo A Thất ghi tên.
+
+A Thất cúi xuống, viết chậm rãi:
+
+`Tạ Khuông: gác cửa chính. Lý do: hận người giữ cổng, nên đứng nhìn cổng.`
+
+Tạ Khuông liếc qua.
+
+"Bỏ câu sau."
+
+A Thất nghiêm túc:
+
+"Luật mới nói làm gì ghi nấy."
+
+Di Mạn không nhịn được, quay mặt đi cười.
+
+Tạ Khuông mắng một câu rất nhỏ.
+
+Nhưng hắn không bắt xóa.
+
+## Chương 218: Cửa Không Chỉ Có Khóa
+
+Buổi chiều, Cổng Nước Xám tập mở đóng lần đầu.
+
+Không phải diễn cho đẹp.
+
+Là diễn cho lúc thật sự có người chết ngoài kia, tay còn biết kéo chốt nào, mắt còn biết nhìn ai.
+
+Cửa chính của Trạm Số Chín vốn là hai tấm thép cũ, bản lề kêu như xương già. Lão Phùng đã gia cố thêm ba thanh ngang, A Thất lắp chuông dây, Ninh làm ký hiệu tay cho từng tình huống.
+
+Một tiếng chuông: người bệnh.
+
+Hai tiếng: hàng kiểm.
+
+Ba tiếng: thú.
+
+Chuông kéo dài: người xông cổng.
+
+Tạ Khuông đứng ngoài cùng, chân buộc dây lùi vào cột thép. Hắn nhìn sợi dây, mặt rất khó coi.
+
+"Trói chó à?"
+
+Tần Dã đáp:
+
+"Trói người sống."
+
+Lần tập thứ nhất, Hứa Đao giả làm người ôm con xin vào. Tạ Khuông theo bản năng nghiêng người mở vạch. Tần Dã ném một viên đá vào bánh xe cạnh hắn.
+
+"Sai."
+
+Tạ Khuông quay đầu, nổi giận:
+
+"Nó ôm trẻ con!"
+
+Hứa Đao lập tức mở áo. Trong ngực là một bó giẻ quấn dao.
+
+Tạ Khuông sững lại.
+
+Tần Dã nói:
+
+"Phế thổ biết ngươi mềm chỗ nào."
+
+Tạ Khuông đứng yên, mặt trắng xanh.
+
+Hắn không tức như mọi người tưởng.
+
+Hắn nhìn bó giẻ trong ngực Hứa Đao. Nhìn con dao giấu bên trong. Nhìn cách mảnh vải ngoài cùng được quấn hơi lỏng, giống một đứa trẻ đang ngủ không yên.
+
+"Đêm đó..." Hắn nói, giọng khàn. "Ta cũng thấy một người ôm trẻ con."
+
+Không ai cắt lời.
+
+"Ta muốn kéo vào. Nhưng đám đông đẩy tới. Rồi tiếng cổng đóng. Rồi không thấy nữa."
+
+Hứa Đao hạ bó giẻ xuống.
+
+Tần Dã nói:
+
+"Cho nên ngươi càng phải học nhìn kỹ."
+
+Tạ Khuông bật cười một tiếng rất nhỏ, gần như không phải cười.
+
+"Nhìn kỹ rồi mà vẫn là trẻ con thật thì sao?"
+
+Lâm Tịch đáp:
+
+"Thì mở lối bệnh. Người giữ dây đứng sau. Người gác không tự chết một mình."
+
+Tạ Khuông nhìn nàng.
+
+"Ngươi đã nghĩ lối đó trước đêm đóng cổng chưa?"
+
+Lâm Tịch im.
+
+Không có câu trả lời nào khiến nàng nhẹ hơn.
+
+"Chưa đủ."
+
+Nàng nói.
+
+Tạ Khuông gật đầu.
+
+"Vậy lần sau phải đủ."
+
+Không ai vỗ tay.
+
+Nhưng từ khoảnh khắc đó, buổi tập không còn là trò diễn.
+
+Nó là một cách người sống xin lỗi người chết bằng tay chân, dây thừng, chốt cửa và trí nhớ.
+
+Lần thứ hai, Di Mạn giả làm người bán bột sạch. A Thất kiểm túi ngoài, bỏ qua đường may trong. Ninh gõ lên bàn ba cái. Cắt đường may ra, bên trong là kim độc.
+
+A Thất mặt trắng bệch.
+
+"Ta..."
+
+Lâm Tịch đặt tay lên vai nó.
+
+"Sai trong tập còn rẻ."
+
+Lần thứ ba, Mộc Sanh giả sốt. Lâm Tịch muốn cho vào ngay. Tạ Khuông chặn nàng.
+
+"Kiểm nước bọt trước."
+
+Lâm Tịch khựng lại.
+
+Mộc Sanh cởi khăn, dưới lưỡi ngậm viên bột vàng.
+
+Tạ Khuông nhìn Lâm Tịch.
+
+"Ta nói rồi. Ta đứng để hỏi ngươi có chắc không."
+
+Lâm Tịch gật đầu.
+
+"Hỏi đúng."
+
+Một câu ấy làm rất nhiều người im lặng.
+
+Không phải vì nó lớn lao.
+
+Mà vì nó khó.
+
+Người cầm quyền khó nhất không phải nghe lời ca.
+
+Là để một người hận mình đứng cạnh và nói: ngươi sai.
+
+Đến chập tối, tập mở đóng kết thúc. Ai cũng mệt rã. Tạ Khuông tháo dây chân, cổ tay trầy một vệt dài do kéo chốt.
+
+Lâm Tịch đưa hắn một mảnh vải sạch.
+
+Hắn không nhận.
+
+"Giữ cho người sốt."
+
+"Người gác cũng cần tay."
+
+Tạ Khuông nhìn cổ tay mình.
+
+Vết trầy không sâu, nhưng rát. Loại rát nhỏ nhặt ấy rất dễ làm người ta cáu. Ở ngoài kia, hắn từng bỏ qua những vết như vậy. Rách thì rách, chảy máu thì liếm, đau thì nhịn. Người nghèo nếu dừng lại vì một vết trầy, rất nhanh sẽ bị người khác lấy mất chỗ đứng.
+
+Nhưng Cổng Nước Xám lại bắt người gác cổng băng cả vết trầy.
+
+Không phải vì thương hắn.
+
+Mà vì bàn tay ngày mai còn phải kéo chốt.
+
+Tạ Khuông bỗng thấy thứ gọi là luật ở đây phiền đến mức làm người ta muốn chửi, nhưng cũng phiền theo một kiểu khiến hắn không biết chửi từ đâu. Nó quản cả máu nhỏ, cả bát thủng, cả câu hỏi khi nhận nước. Nó không để người ta thoải mái chết rẻ.
+
+Hắn hỏi:
+
+"Nếu ta nhận vải, ghi nợ?"
+
+A Thất ở bên cạnh lập tức đáp:
+
+"Ghi công gác trừ vật tư băng bó. Không tính nợ riêng."
+
+"Sao ngươi biết nhanh vậy?"
+
+"Vì lúc nãy tỷ Lâm bắt em viết bảng mới."
+
+Tạ Khuông nhìn Lâm Tịch.
+
+"Ngươi thích bảng thật."
+
+Lâm Tịch đáp:
+
+"Ta thích người ta cãi nhau với bảng hơn cãi nhau bằng dao."
+
+Tạ Khuông nghĩ một lát, thấy câu này khó phản bác hơn hắn muốn.
+
+Tạ Khuông nhìn mảnh vải, cuối cùng cầm lấy.
+
+"Ta nhận vì cửa."
+
+"Ừ. Vì cửa."
+
+Đêm đó, đàn chó hai hàm lại xuất hiện ở sườn đất. Chúng không xông vào. Chỉ đi thành vòng xa, thỉnh thoảng cắn nhau, tiếng răng kép va vào nhau như hai miếng sắt gỉ.
+
+Tạ Khuông đứng gác dưới cái thìa gỗ.
+
+Lâm Tịch đi ngang, nghe hắn hỏi:
+
+"Đêm đó nếu ngươi không đóng, trong trạm chết bao nhiêu?"
+
+Nàng dừng lại.
+
+"Không biết."
+
+"Nếu đóng, ngoài cổng chết bao nhiêu?"
+
+"Ta biết một."
+
+Tạ Khuông ngẩng đầu nhìn cái thìa.
+
+"Vậy cứ treo."
+
+Lâm Tịch nói:
+
+"Ừ. Cứ treo."
+
+Tạ Khuông lại hỏi:
+
+"Nếu một ngày treo quá nhiều tên, cổng có chịu nổi không?"
+
+Lâm Tịch ngẩng đầu.
+
+Trên kia mới có hai miếng gỗ nhỏ. Gió thổi qua, chúng va vào nhau khẽ khàng. Tiếng ấy không giống chuông, cũng không giống cảnh báo. Nó giống hai người chết đang cố không làm phiền người sống.
+
+"Không chịu nổi thì thay cổng lớn hơn."
+
+Tạ Khuông nhìn nàng.
+
+"Ngươi nói nghe dễ."
+
+"Không dễ."
+
+"Vậy sao nói?"
+
+Lâm Tịch đáp:
+
+"Vì nếu không nói, ngày mai sẽ có người bảo tháo xuống cho nhẹ."
+
+Tạ Khuông im lặng rất lâu.
+
+Cuối cùng hắn đặt cây giáo gãy dựa vào chân cổng, lấy trong túi ra một sợi dây vải nhỏ buộc thêm vào cán. Sợi dây ấy cùng màu với mảnh vải quấn giáo.
+
+"A Nhĩ thích buộc dây vào mọi thứ. Nó nói như vậy đồ sẽ biết đường về."
+
+Lâm Tịch nhìn sợi dây.
+
+"Vậy buộc đi."
+
+"Nếu nó không về?"
+
+"Ít nhất cổng biết có người chờ."
+
+Gần nửa đêm, chuông cửa chính bỗng vang một tiếng.
+
+Một tiếng.
+
+Người bệnh.
+
+Tạ Khuông siết móc kéo, nhìn qua khe cửa.
+
+Bên ngoài, trong bụi đỏ, một phụ nữ ôm bụng quỳ xuống. Dưới váy nàng, máu chảy thành vệt đen.
+
+Nàng nói khàn:
+
+"Cứu con ta."
+
+Sau lưng nàng, bóng chó hai hàm đang tiến lại gần.

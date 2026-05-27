@@ -1,0 +1,22 @@
+{
+  "title": "Cozy Cabin Storm Viral Test",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "background_color": "#111111",
+  "font": "Arial",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "duration": 10,
+      "image_prompt": "Vertical 9:16 ultra realistic cinematic keyframe, cozy wooden cabin interior at night, warm amber fireplace glow and candlelight, large rain-streaked window, outside a massive violent thunderstorm with trees bending in wind, cold blue lightning, wet glass reflections, fog and smoke layers, strong warm safe interior versus cold chaotic outside contrast, magical unexpected detail: a tiny glowing storm cloud floating above a ceramic tea cup on the table, miniature lightning inside the cup reflection, hyper aesthetic TikTok vibe, immersive realistic lighting, rich textures, cinematic grading, first frame must be stunning, no text, no letters, no watermark",
+      "video_prompt": "Slow cinematic camera push-in from inside a cozy wooden cabin toward the rain-covered window. Warm fireplace and candlelight flicker softly in the foreground. Outside, violent rain lashes the glass, trees bend in the wind, cold blue lightning flashes behind them, fog drifts across the window, smoke curls slowly from the fireplace, reflections ripple on the wet glass. A tiny magical glowing storm cloud floats above a tea cup on the table, with miniature lightning pulsing inside it. Strong warm versus cool contrast, atmospheric emotional cozy realism, slow visually addictive motion in every layer, ultra realistic, cinematic TikTok aesthetic, no text, no watermark.",
+      "text": "",
+      "subtitle": "",
+      "image": "assets/scene-01.png",
+      "local_video": "output/local-scene-01.mp4"
+    }
+  ],
+  "music": null,
+  "local_video": "output/local-video.mp4"
+}

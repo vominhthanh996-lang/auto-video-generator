@@ -1,0 +1,19 @@
+{
+    "title":  "fal image and edge voice test",
+    "width":  1080,
+    "height":  1920,
+    "fps":  30,
+    "background_color":  "#111111",
+    "font":  "Arial",
+    "scenes":  [
+                   {
+                       "id":  "scene-01",
+                       "duration":  5,
+                       "image_prompt":  "Vertical 9:16 cinematic digital illustration of a Vietnamese creator editing a short video at a modern desk, warm practical lights, teal shadows, detailed but clean, no text, no watermark",
+                       "narration":  "Đây là video thử nghiệm dùng fal ai để tạo hình và Edge TTS để tạo giọng đọc.",
+                       "text":  "fal + Edge TTS",
+                       "subtitle":  "Đây là video thử nghiệm dùng fal ai để tạo hình và Edge TTS để tạo giọng đọc."
+                   }
+               ],
+    "music":  null
+}
