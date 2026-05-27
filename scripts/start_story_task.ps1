@@ -48,7 +48,12 @@ function Ensure-OpsBoard {
         "-ExecutionPolicy", "Bypass",
         "-File", $boardScript
     ) -WindowStyle Hidden
-    Start-Sleep -Seconds 2
+    for ($i = 0; $i -lt 10; $i++) {
+        Start-Sleep -Seconds 1
+        if (Test-OpsBoardAlive) {
+            return
+        }
+    }
 }
 
 function Quote-Arg {
