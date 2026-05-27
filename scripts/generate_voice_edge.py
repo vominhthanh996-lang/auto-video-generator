@@ -2,6 +2,7 @@
 import argparse
 import asyncio
 import json
+import os
 import sys
 import subprocess
 import tempfile
@@ -9,7 +10,11 @@ import re
 from pathlib import Path
 
 
-EXTRA_PACKAGES = Path(r"E:\ThanhMV\python-packages")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WORK_ROOT = REPO_ROOT.parent
+
+EXTRA_PACKAGES = Path(os.environ.get("AUTO_VIDEO_EXTRA_PACKAGES", str(WORK_ROOT / "python-packages")))
 if EXTRA_PACKAGES.exists():
     sys.path.insert(0, str(EXTRA_PACKAGES))
 
@@ -893,7 +898,7 @@ def main():
     parser.add_argument("--storyboard", required=True, type=Path)
     parser.add_argument("--voice", default="vi-female", help="Preset vi-female, vi-male, en-female, en-male, or full Edge voice name.")
     parser.add_argument("--voice-style", choices=sorted(VOICE_STYLES), default="wasteland-dark")
-    parser.add_argument("--learning-file", type=Path, default=Path(r"E:\ThanhMV\auto-video-generator\config\voice_learning.json"))
+    parser.add_argument("--learning-file", type=Path, default=REPO_ROOT / "config" / "voice_learning.json")
     parser.add_argument("--character-bible", type=Path, default=None)
     parser.add_argument("--rate", default="auto")
     parser.add_argument("--pitch", default="auto")

@@ -6,7 +6,8 @@ param(
 $ErrorActionPreference = "Stop"
 
 $configPathResolved = (Resolve-Path $ConfigPath).Path
-$repoRoot = "E:\ThanhMV\auto-video-generator"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
 $opsScript = Join-Path $repoRoot "scripts\start_ops_board.ps1"
 $workerScript = Join-Path $repoRoot "scripts\story_task_worker.ps1"
 

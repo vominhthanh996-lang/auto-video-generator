@@ -20,6 +20,10 @@ import uuid
 from pathlib import Path
 from typing import Any
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WORK_ROOT = REPO_ROOT.parent
+
 
 DEFAULT_POSITIVE_SUFFIX = (
     "clear natural human faces, anatomically correct eyes nose mouth and jaw, readable facial expression, "
@@ -697,10 +701,10 @@ def main() -> None:
     parser.add_argument("--negative-prompt", default=DEFAULT_NEGATIVE)
     parser.add_argument("--reference-image", default=os.environ.get("LOCAL_IMAGE_REFERENCE", ""), help="Optional local image used as img2img composition reference.")
     parser.add_argument("--reference-denoise", type=float, default=0.28, help="Img2img denoise for --reference-image. Lower keeps composition, higher changes more.")
-    parser.add_argument("--comfy-input-dir", type=Path, default=Path(r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\ComfyUI\input"))
+    parser.add_argument("--comfy-input-dir", type=Path, default=WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable" / "ComfyUI" / "input")
     parser.add_argument("--output-format", default="png")
     parser.add_argument("--prefix", default="auto-video-local")
-    parser.add_argument("--comfy-output-dir", type=Path, default=Path(r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\ComfyUI\output"))
+    parser.add_argument("--comfy-output-dir", type=Path, default=WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable" / "ComfyUI" / "output")
     parser.add_argument("--seed", type=int, default=23052026)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--poll-seconds", type=float, default=2.0)

@@ -4,14 +4,14 @@ param(
     [string]$StorySource = "",
     [string]$StoryboardPath = "",
 
-    [string]$RepoRoot = "E:\ThanhMV\auto-video-generator",
-    [string]$ProjectsRoot = "E:\ThanhMV\video-projects",
+    [string]$RepoRoot = "",
+    [string]$ProjectsRoot = "",
     [string]$ProjectRoot = "",
-    [string]$PythonExe = "C:\Users\thanh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe",
+    [string]$PythonExe = "python",
     [string]$Format = "youtube",
     [string]$RunMode = "work",
     [string]$ImageMode = "comfy",
-    [string]$ImageReference = "C:\Users\thanh\Downloads\fb8d05e9-8752-4bc9-912c-85580d64d714.png",
+    [string]$ImageReference = "",
     [double]$ImageReferenceDenoise = 0.28,
     [string]$Voice = "vi-female",
     [string]$VoiceStyle = "wasteland-dark",
@@ -20,6 +20,9 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$defaultRepoRoot = Split-Path -Parent $scriptRoot
+$defaultWorkRoot = Split-Path -Parent $defaultRepoRoot
 
 function Get-Slug {
     param([string]$Value)
@@ -409,6 +412,13 @@ if ($ConfigPath) {
     $UseExistingStoryboard = [bool]$config.UseExistingStoryboard
 }
 
+if (-not $RepoRoot) {
+    $RepoRoot = $defaultRepoRoot
+}
+if (-not $ProjectsRoot) {
+    $ProjectsRoot = Join-Path $defaultWorkRoot "video-projects"
+}
+
 if (-not $TaskName) {
     throw "TaskName is required."
 }
@@ -446,9 +456,10 @@ else {
     $script:Storyboard = Join-Path $script:ProjectRoot "storyboard.json"
 }
 $script:CharacterBible = Join-Path $script:ProjectRoot "character_voice_bible.json"
-$script:LogPath = Join-Path "E:\ThanhMV\temp" ("{0}.log" -f (Get-Slug $TaskName))
+$tempRoot = Join-Path (Split-Path -Parent $script:RepoRoot) "temp"
+$script:LogPath = Join-Path $tempRoot ("{0}.log" -f (Get-Slug $TaskName))
 $script:QASummaryPath = Join-Path $script:ProjectRoot "qa-summary.json"
-$script:StatusPath = Join-Path "E:\ThanhMV\temp\story-task-status" ((Get-Slug $TaskName) + ".json")
+$script:StatusPath = Join-Path (Join-Path $tempRoot "story-task-status") ((Get-Slug $TaskName) + ".json")
 
 if ($script:UseExistingStoryboard -and -not (Test-Path $script:Storyboard)) {
     throw "Storyboard not found: $($script:Storyboard)"

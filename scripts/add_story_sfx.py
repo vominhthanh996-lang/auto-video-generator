@@ -11,7 +11,10 @@ from pathlib import Path
 
 
 SAMPLE_RATE = 44100
-DEFAULT_SFX_LIBRARY = Path(r"E:\ThanhMV\sfx-library")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WORK_ROOT = REPO_ROOT.parent
+DEFAULT_SFX_LIBRARY = Path(rf"{WORK_ROOT}\sfx-library")
 
 
 SUSPENSE_WORDS = (

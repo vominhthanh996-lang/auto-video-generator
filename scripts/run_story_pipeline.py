@@ -17,6 +17,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from video_presets import apply_video_format, preset_for
 
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WORK_ROOT = REPO_ROOT.parent
+
+
 BASE_STYLE = (
     "premium cinematic post-apocalyptic wasteland webnovel keyframe, grounded survival drama, "
     "dirty realistic characters inside a torn tarp shelter or ruined junkyard when the scene implies shelter, "
@@ -917,7 +922,7 @@ def main():
     parser.add_argument("--source", required=True, type=Path, help="UTF-8 story text file.")
     parser.add_argument("--title", default="")
     parser.add_argument("--project", type=Path)
-    parser.add_argument("--root", default=r"E:\ThanhMV\video-projects")
+    parser.add_argument("--root", default=str(WORK_ROOT / "video-projects"))
     parser.add_argument("--format", choices=["youtube", "tiktok"], default="youtube")
     parser.add_argument("--language", default="vi")
     parser.add_argument("--voice", default="vi-female")
@@ -948,7 +953,7 @@ def main():
     parser.add_argument("--title-overlay", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--duration-pad", type=float, default=0.35)
     parser.add_argument("--start-comfy", action="store_true")
-    parser.add_argument("--comfy-root", default=r"E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable")
+    parser.add_argument("--comfy-root", default=str(WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable"))
     parser.add_argument("--skip-images", action="store_true")
     parser.add_argument("--skip-voice", action="store_true")
     parser.add_argument("--skip-sfx", action="store_true", help="Skip subtle story-aware sound effects under narration.")
@@ -973,7 +978,11 @@ def main():
     preset = preset_for(args.format)
     project, storyboard, config = build_storyboard(args)
     env = dict(os.environ)
-    env["TEMP"] = str(Path(args.root).resolve().parent / "temp") if "video-projects" in args.root else r"E:\ThanhMV\temp"
+    resolved_root = Path(args.root).resolve()
+    if "video-projects" in str(resolved_root):
+        env["TEMP"] = str(resolved_root.parent / "temp")
+    else:
+        env["TEMP"] = str(WORK_ROOT / "temp")
     env["TMP"] = env["TEMP"]
     Path(env["TEMP"]).mkdir(parents=True, exist_ok=True)
 

@@ -9,8 +9,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
-REPO_ROOT = Path(r"E:\ThanhMV\auto-video-generator")
-STATUS_DIR = Path(r"E:\ThanhMV\temp\story-task-status")
+REPO_ROOT = Path(__file__).resolve().parent.parent
+WORK_ROOT = REPO_ROOT.parent
+STATUS_DIR = WORK_ROOT / "temp" / "story-task-status"
 BOARD_ROOT = REPO_ROOT / "ops_board"
 
 

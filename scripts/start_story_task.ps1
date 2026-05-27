@@ -5,13 +5,13 @@ param(
     [string]$StorySource = "",
     [string]$StoryboardPath = "",
 
-    [string]$RepoRoot = "E:\ThanhMV\auto-video-generator",
-    [string]$ProjectsRoot = "E:\ThanhMV\video-projects",
+    [string]$RepoRoot = "",
+    [string]$ProjectsRoot = "",
     [string]$ProjectRoot = "",
     [string]$Format = "youtube",
     [string]$RunMode = "work",
     [string]$ImageMode = "comfy",
-    [string]$ImageReference = "C:\Users\thanh\Downloads\fb8d05e9-8752-4bc9-912c-85580d64d714.png",
+    [string]$ImageReference = "",
     [double]$ImageReferenceDenoise = 0.28,
     [string]$Voice = "vi-female",
     [string]$VoiceStyle = "wasteland-dark",
@@ -20,6 +20,9 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$defaultRepoRoot = Split-Path -Parent $scriptRoot
+$defaultWorkRoot = Split-Path -Parent $defaultRepoRoot
 
 function Test-OpsBoardAlive {
     try {
@@ -71,13 +74,22 @@ if (-not $StorySource -and -not $StoryboardPath) {
     throw "StorySource or StoryboardPath is required."
 }
 
+if (-not $RepoRoot) {
+    $RepoRoot = $defaultRepoRoot
+}
+if (-not $ProjectsRoot) {
+    $ProjectsRoot = Join-Path $defaultWorkRoot "video-projects"
+}
+
 $repoRootResolved = (Resolve-Path $RepoRoot).Path
+$workRootResolved = Split-Path -Parent $repoRootResolved
 $storySourceResolved = if ($StorySource) { (Resolve-Path $StorySource).Path } else { "" }
 $storyboardPathResolved = if ($StoryboardPath) { (Resolve-Path $StoryboardPath).Path } else { "" }
 $workerPath = Join-Path $repoRootResolved "scripts\story_task_worker.ps1"
-$configPath = Join-Path "E:\ThanhMV\temp" ((Get-Slug $taskNameClean) + ".json")
-$statusPath = Join-Path "E:\ThanhMV\temp\story-task-status" ((Get-Slug $taskNameClean) + ".json")
-$logPath = Join-Path "E:\ThanhMV\temp" ((Get-Slug $taskNameClean) + ".log")
+$tempRoot = Join-Path $workRootResolved "temp"
+$configPath = Join-Path $tempRoot ((Get-Slug $taskNameClean) + ".json")
+$statusPath = Join-Path (Join-Path $tempRoot "story-task-status") ((Get-Slug $taskNameClean) + ".json")
+$logPath = Join-Path $tempRoot ((Get-Slug $taskNameClean) + ".log")
 $resumeScript = Join-Path $repoRootResolved "scripts\resume_story_task_on_logon.ps1"
 $startupFolder = [Environment]::GetFolderPath("Startup")
 $startupLauncher = Join-Path $startupFolder ((Get-Slug $taskNameClean) + ".cmd")
@@ -91,7 +103,7 @@ New-Item -ItemType Directory -Force -Path (Split-Path -Parent $logPath) | Out-Nu
     RepoRoot = $repoRootResolved
     ProjectsRoot = $ProjectsRoot
     ProjectRoot = $ProjectRoot
-    PythonExe = "C:\Users\thanh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+    PythonExe = "python"
     Format = $Format
     RunMode = $RunMode
     ImageMode = $ImageMode
