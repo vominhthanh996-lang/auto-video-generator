@@ -46,6 +46,13 @@ setx RUNWAYML_API_SECRET_1 "..."
 setx RUNWAYML_API_SECRET_2 "..."
 ```
 
+Set machine-specific work roots only if you want to override auto-detection:
+
+```powershell
+setx AUTO_VIDEO_WORK_ROOT "D:\ThanhMV"
+setx COMFY_ROOT "D:\ThanhMV\tools\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable"
+```
+
 ## Short Video Flow
 
 ```powershell
@@ -58,8 +65,8 @@ python auto-video-generator\scripts\render_video.py --storyboard path\to\storybo
 
 ```powershell
 python auto-video-generator\scripts\create_longform_project.py --title "Story Title" --minutes 30 --chapter-minutes 5 --scene-duration 12
-python auto-video-generator\scripts\render_longform.py --manifest E:\ThanhMV\video-projects\story-title\manifest.json --chapter 1 --voice vi-female
-python auto-video-generator\scripts\render_longform.py --manifest E:\ThanhMV\video-projects\story-title\manifest.json --voice vi-female
+python auto-video-generator\scripts\render_longform.py --manifest D:\ThanhMV\video-projects\story-title\manifest.json --chapter 1 --voice vi-female
+python auto-video-generator\scripts\render_longform.py --manifest D:\ThanhMV\video-projects\story-title\manifest.json --voice vi-female
 ```
 
 ## Notes

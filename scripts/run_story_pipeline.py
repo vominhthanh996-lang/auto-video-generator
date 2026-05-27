@@ -14,6 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from path_defaults import default_comfy_root, default_projects_root, default_temp_root
 from video_presets import apply_video_format, preset_for
 
 
@@ -922,7 +923,7 @@ def main():
     parser.add_argument("--source", required=True, type=Path, help="UTF-8 story text file.")
     parser.add_argument("--title", default="")
     parser.add_argument("--project", type=Path)
-    parser.add_argument("--root", default=str(WORK_ROOT / "video-projects"))
+    parser.add_argument("--root", default=str(default_projects_root(REPO_ROOT)))
     parser.add_argument("--format", choices=["youtube", "tiktok"], default="youtube")
     parser.add_argument("--language", default="vi")
     parser.add_argument("--voice", default="vi-female")
@@ -953,7 +954,7 @@ def main():
     parser.add_argument("--title-overlay", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--duration-pad", type=float, default=0.35)
     parser.add_argument("--start-comfy", action="store_true")
-    parser.add_argument("--comfy-root", default=str(WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable"))
+    parser.add_argument("--comfy-root", default=str(default_comfy_root(REPO_ROOT)))
     parser.add_argument("--skip-images", action="store_true")
     parser.add_argument("--skip-voice", action="store_true")
     parser.add_argument("--skip-sfx", action="store_true", help="Skip subtle story-aware sound effects under narration.")
@@ -982,7 +983,7 @@ def main():
     if "video-projects" in str(resolved_root):
         env["TEMP"] = str(resolved_root.parent / "temp")
     else:
-        env["TEMP"] = str(WORK_ROOT / "temp")
+        env["TEMP"] = str(default_temp_root(REPO_ROOT))
     env["TMP"] = env["TEMP"]
     Path(env["TEMP"]).mkdir(parents=True, exist_ok=True)
 

@@ -38,13 +38,13 @@ python scripts/render_video.py --storyboard path\to\storyboard.json --output out
 For routine story videos, use the pipeline runner instead of manually calling each stage:
 
 ```powershell
-python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --batch-size 5 --start-comfy
-python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format tiktok --batch-size 5 --start-comfy
+python scripts/run_story_pipeline.py --source D:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --batch-size 5 --start-comfy
+python scripts/run_story_pipeline.py --source D:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format tiktok --batch-size 5 --start-comfy
 ```
 
 The runner:
 
-- writes all project files under `E:\ThanhMV\video-projects`
+- writes all project files under the detected work root, typically `D:\ThanhMV\video-projects` or `E:\ThanhMV\video-projects`
 - builds a UTF-8 storyboard from the source text
 - validates Vietnamese text before TTS
 - runs local ComfyUI image batches and Edge TTS voice in parallel
@@ -64,7 +64,7 @@ The pipeline splits scenes into:
 Recommended command:
 
 ```powershell
-python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --wait-for-manual-images --start-comfy
+python scripts/run_story_pipeline.py --source D:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --wait-for-manual-images --start-comfy
 ```
 
 Outputs for manual ChatGPT images:
@@ -78,7 +78,7 @@ Outputs for manual ChatGPT images:
 After the user saves the images, rerun:
 
 ```powershell
-python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --import-manual-images --skip-voice --skip-images
+python scripts/run_story_pipeline.py --source D:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --import-manual-images --skip-voice --skip-images
 ```
 
 Use `--skip-images` only when the ComfyUI half is already generated. Otherwise omit it so ComfyUI fills its assigned scenes.

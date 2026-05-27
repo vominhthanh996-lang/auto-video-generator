@@ -4,8 +4,9 @@ This file records the important working agreements, quality targets, and technic
 
 ## Working location
 
-- Main repo: `E:\ThanhMV\auto-video-generator`
-- Project outputs and temporary work should stay under `E:\ThanhMV`
+- Main repo may live on either machine-specific root, typically `D:\ThanhMV\...\auto-video-generator*` or `E:\ThanhMV\...\auto-video-generator*`
+- Project outputs and temporary work should stay under the machine work root, typically `D:\ThanhMV` or `E:\ThanhMV`
+- Prefer setting `AUTO_VIDEO_WORK_ROOT` and `COMFY_ROOT` per machine instead of hardcoding a drive letter in commands
 - Avoid using `C:` for story inputs, outputs, generated assets, or temp files unless a third-party app forces it
 
 ## Current branch
@@ -67,8 +68,8 @@ This file records the important working agreements, quality targets, and technic
 ## Recommended local command pattern
 
 ```powershell
-python E:\ThanhMV\auto-video-generator\scripts\run_story_pipeline.py `
-  --source "E:\ThanhMV\Content truyen\...\story.md" `
+python D:\ThanhMV\auto-video-generator\scripts\run_story_pipeline.py `
+  --source "D:\ThanhMV\Content truyen\...\story.md" `
   --format youtube `
   --image-mode comfy `
   --image-reference "C:\Users\thanh\Downloads\fb8d05e9-8752-4bc9-912c-85580d64d714.png" `

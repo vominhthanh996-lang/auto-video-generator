@@ -20,6 +20,8 @@ import uuid
 from pathlib import Path
 from typing import Any
 
+from path_defaults import default_comfy_input_dir, default_comfy_output_dir
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 WORK_ROOT = REPO_ROOT.parent
@@ -247,6 +249,10 @@ def node_choices(object_info: dict[str, Any], class_type: str, input_name: str) 
     spec = required.get(input_name) or optional.get(input_name) or []
     if isinstance(spec, list) and spec and isinstance(spec[0], list):
         return [str(item) for item in spec[0]]
+    if isinstance(spec, list) and len(spec) >= 2 and spec[0] == "COMBO" and isinstance(spec[1], dict):
+        options = spec[1].get("options", [])
+        if isinstance(options, list):
+            return [str(item) for item in options]
     return []
 
 
@@ -701,10 +707,10 @@ def main() -> None:
     parser.add_argument("--negative-prompt", default=DEFAULT_NEGATIVE)
     parser.add_argument("--reference-image", default=os.environ.get("LOCAL_IMAGE_REFERENCE", ""), help="Optional local image used as img2img composition reference.")
     parser.add_argument("--reference-denoise", type=float, default=0.28, help="Img2img denoise for --reference-image. Lower keeps composition, higher changes more.")
-    parser.add_argument("--comfy-input-dir", type=Path, default=WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable" / "ComfyUI" / "input")
+    parser.add_argument("--comfy-input-dir", type=Path, default=default_comfy_input_dir(REPO_ROOT))
     parser.add_argument("--output-format", default="png")
     parser.add_argument("--prefix", default="auto-video-local")
-    parser.add_argument("--comfy-output-dir", type=Path, default=WORK_ROOT / "ComfyUI_windows_portable_nvidia" / "ComfyUI_windows_portable" / "ComfyUI" / "output")
+    parser.add_argument("--comfy-output-dir", type=Path, default=default_comfy_output_dir(REPO_ROOT))
     parser.add_argument("--seed", type=int, default=23052026)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--poll-seconds", type=float, default=2.0)
