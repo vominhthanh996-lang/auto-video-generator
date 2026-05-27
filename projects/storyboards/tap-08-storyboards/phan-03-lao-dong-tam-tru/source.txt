@@ -1,0 +1,491 @@
+# Phần 3: Lao Động Tạm Trú
+
+## Chương 233: Đọc Điều Kiện
+
+Tờ điều kiện lao động tạm trú dài hơn một bát cháo.
+
+Đó là ý nghĩ đầu tiên của Di Mạn khi Thẩm Bạch trải nó ra trên bàn trước cổng. Chữ nhỏ, hàng dày, dấu đỏ nằm ở cuối như một cái miệng đã ăn no. Người đàn ông có con sốt đứng bên cạnh, tay vẫn chìa nửa chừng, không biết nên thu về hay tiếp tục nhận thẻ.
+
+Đứa con của hắn nằm trong khu bệnh, trán nóng.
+
+Còn giấy ở đây thì lạnh.
+
+Lâm Tịch nhìn hắn.
+
+"Tên ngươi?"
+
+"La Tứ."
+
+"Con?"
+
+"La Đậu."
+
+"Ngươi muốn ký vì La Đậu?"
+
+La Tứ gật đầu rất nhanh, như sợ ai đó nói thêm vài câu sẽ làm con hắn sốt cao hơn.
+
+"Vậy ngươi nghe hết rồi ký."
+
+Chu Kính nói:
+
+"Cô đang cản trở người dân tự nguyện đăng ký."
+
+Lâm Tịch không nhìn hắn.
+
+"Tự nguyện mà không biết mình bán cái gì thì gọi là bị lừa."
+
+Thẩm Bạch bắt đầu đọc.
+
+Giọng hắn không lớn, nhưng rõ.
+
+"Người đăng ký lao động tạm trú thuộc quyền điều phối của đơn vị quản lý Trạm Nước Số Chín trong thời hạn khẩn cấp..."
+
+A Thất ngồi bên cạnh, cầm than viết bản tiếng người lên tấm ván:
+
+`Ký rồi, họ bảo làm gì phải làm trong thời hạn khẩn cấp.`
+
+Thẩm Bạch đọc tiếp:
+
+"...không được tự ý rời khỏi khu vực được phân công, không được tham gia tổ chức tự quản chưa được công nhận..."
+
+A Thất viết:
+
+`Không được đi. Không được theo Cổng Xám nếu Thành Nam bảo Cổng Xám không hợp pháp.`
+
+La Tứ nuốt nước bọt.
+
+Chu Kính lạnh giọng:
+
+"Dịch sai lệch văn bản là vi phạm."
+
+Thẩm Bạch nhìn hắn.
+
+"Vậy ngươi tự dịch."
+
+Chu Kính không đáp.
+
+Di Mạn cười khẩy:
+
+"Sao vậy? Chữ sạch không nói tiếng người được à?"
+
+Thẩm Bạch đọc tiếp:
+
+"...khẩu phần nước và lương thực được cấp theo năng suất lao động và mức độ tuân thủ..."
+
+A Thất viết chậm hơn.
+
+Nó ngẩng đầu hỏi:
+
+"Nghĩa là nếu bệnh không làm được thì sao?"
+
+Chu Kính đáp:
+
+"Sẽ có mức hỗ trợ tối thiểu."
+
+"Ghi ở đâu?"
+
+Chu Kính im.
+
+A Thất viết:
+
+`Nước/cháo tùy họ chấm công. Bệnh chưa chắc có.`
+
+La Tứ rụt tay lại một chút.
+
+Người trong đám đông bắt đầu xì xào.
+
+Thẩm Bạch tiếp tục đọc. Càng đọc, tấm thẻ gỗ bốn chữ càng giống một cái móc câu. Nước có, nhưng treo trên năng suất. Cháo có, nhưng treo trên tuân thủ. Chỗ ngủ có, nhưng không ghi là cùng gia đình hay tách riêng. Miễn truy cứu có, nhưng chỉ miễn những hành vi trước thời điểm đăng ký; sau khi ký, chống lệnh quản lý bị xử nặng hơn.
+
+Một bà già hỏi:
+
+"Nếu ký rồi con ta bị đưa đi chỗ khác thì sao?"
+
+Chu Kính đáp:
+
+"Điều phối theo nhu cầu."
+
+A Thất viết:
+
+`Có thể bị tách.`
+
+Lần này, tiếng xôn xao biến thành tiếng chửi.
+
+Chu Kính đóng cặp giấy lại.
+
+"Cổng Nước Xám đang gieo sợ hãi để giữ người."
+
+Lâm Tịch nói:
+
+"Ngươi đang dùng sợ hãi để lấy người."
+
+"Ta đưa lựa chọn."
+
+"Vậy để họ đọc lựa chọn."
+
+La Tứ nhìn tấm thẻ. Tay hắn run dữ dội.
+
+"Nếu ta không ký, con ta có thuốc không?"
+
+Câu hỏi rơi xuống rất nặng.
+
+Mọi người đều quay sang Lâm Tịch.
+
+Đây là cái bẫy thật.
+
+Không phải cái bẫy nằm trong chữ.
+
+Mà nằm trong trán nóng của La Đậu.
+
+Nếu Lâm Tịch nói có, nàng phải lấy thuốc từ kho thuốc vốn chỉ còn vài viên. Nếu nói không, Chu Kính thắng mà không cần ký thêm chữ nào.
+
+Mộc Sanh bước ra trước.
+
+"La Đậu đã ở khu bệnh. Theo luật Cổng Xám, trẻ sốt chữa trước. Không liên quan cha nó ký hay không."
+
+La Tứ quay phắt sang.
+
+"Nhưng thuốc còn không?"
+
+Mộc Sanh im một nhịp.
+
+"Còn nửa viên hạ sốt và lau mát. Nếu sốt không hạ, phải đổi thuốc."
+
+Chu Kính lập tức nói:
+
+"Người đăng ký tạm trú được ưu tiên nhận thuốc theo điều phối."
+
+Di Mạn mắng:
+
+"Điều phối cái miệng ngươi. Thuốc đâu?"
+
+Chu Kính ra hiệu. Một lính hộ tống mở hộp nhỏ trên xe, bên trong có ba vỉ thuốc hạ sốt còn niêm.
+
+Ánh mắt của rất nhiều người thay đổi.
+
+Thuốc sạch.
+
+Không phải lời.
+
+Thuốc thật.
+
+La Tứ bước về phía thẻ.
+
+Lâm Tịch không chặn.
+
+Nàng nhìn Mộc Sanh.
+
+Mộc Sanh cắn môi đến trắng bệch.
+
+Thẩm Bạch bỗng nói:
+
+"Thuốc hạ sốt loại đó nếu trẻ thiếu nước nặng uống vào có thể tụt thân nhiệt. Phải có người theo dõi."
+
+Chu Kính nhìn hắn.
+
+"Bác sĩ Thành Nam đi theo chúng ta có thể theo dõi."
+
+"Vậy để bác sĩ đó vào khu bệnh trước, kiểm La Đậu trước mặt mọi người."
+
+Chu Kính dừng lại.
+
+Lâm Tịch hiểu ngay.
+
+"Không có bác sĩ?"
+
+Chu Kính đáp:
+
+"Đội y tế sẽ đến sau khi tiếp quản."
+
+Di Mạn bật cười thành tiếng.
+
+"Tức là có thuốc để dụ ký, không có người dùng thuốc?"
+
+Đám đông lại ồn lên.
+
+La Tứ đứng giữa vạch, cả người như bị kéo đôi. Một bên là thẻ. Một bên là con.
+
+Lâm Tịch bước tới, lấy từ túi mình ra viên tinh thạch nhỏ cuối cùng nàng giữ làm dự phòng.
+
+Nàng đặt lên bàn.
+
+"Ai trong chợ có thuốc hạ sốt trẻ dùng được, mang ra đổi. Cổng Xám mua bằng tinh thạch và công."
+
+Di Mạn quay sang nàng.
+
+"Đó là viên cuối?"
+
+"Ừ."
+
+"Ngươi định lấy gì phòng thân?"
+
+Lâm Tịch nhìn La Tứ.
+
+"Đêm nay phòng thân bằng việc hắn không phải bán mình trong lúc con sốt."
+
+Không ai nói gì.
+
+Bà Hôi bỗng chui ra khỏi đám đông, mặt rất khó coi.
+
+"Ta có nửa vỉ."
+
+Di Mạn lập tức nhìn bà như nhìn dao.
+
+"Lại thuốc giả?"
+
+Bà Hôi tức giận:
+
+"Thuốc thật! Ta bán giả đâu có nghĩa cả đời không cầm được đồ thật!"
+
+Mộc Sanh kiểm thuốc. Thẩm Bạch kiểm lại. Nửa vỉ cũ, nhưng còn dùng được.
+
+Bà Hôi nhìn viên tinh thạch, nuốt nước bọt.
+
+Sau đó bà quay mặt đi.
+
+"Không lấy tinh thạch. Ghi công đun nước một ngày ít hơn."
+
+Di Mạn ngẩn ra.
+
+"Bà đổi tốt vậy?"
+
+"Ta đang đầu tư."
+
+"Đầu tư gì?"
+
+Bà Hôi chỉ Chu Kính.
+
+"Đầu tư vào việc nhìn mặt hắn khó coi thêm một chút."
+
+La Tứ ngồi bệt xuống đất.
+
+Hắn không khóc.
+
+Nhưng tay hắn buông khỏi tấm thẻ.
+
+## Chương 234: Người Suýt Ký
+
+La Đậu hạ sốt vào cuối giờ thứ hai.
+
+Không hạ nhiều.
+
+Nhưng trán không còn nóng như than vùi. Mộc Sanh lau mồ hôi cho nó, Di Mạn ép nó uống từng ngụm nước nhỏ. La Tứ ngồi ngoài khu bệnh, hai tay ôm đầu, tấm thẻ lao động tạm trú đặt trên đất trước mặt.
+
+Hắn chưa ký.
+
+Nhưng cũng chưa trả.
+
+Tạ Khuông đứng cạnh hắn.
+
+"Muốn giữ làm kỷ niệm?"
+
+La Tứ khàn giọng:
+
+"Muốn xé."
+
+"Vậy xé."
+
+"Sợ."
+
+"Sợ gì?"
+
+La Tứ nhìn về phía xe đen của Chu Kính.
+
+"Sợ lát nữa con ta lại sốt."
+
+Tạ Khuông im.
+
+Hắn không thích La Tứ do dự. Nhưng hắn hiểu.
+
+Người có con sốt không sống trong cùng một thời gian với người khác. Với người khác, sáu giờ là thời hạn của trạm. Với La Tứ, sáu giờ là sáu lần đặt tay lên trán con.
+
+Lâm Tịch đi đến, ngồi xuống bên cạnh La Tứ.
+
+Nàng không đứng trước mặt hắn như thủ lĩnh. Nàng ngồi xuống đất, ngang với hắn. Đất còn ẩm, bụi dính vào gấu áo, nhưng nàng không phủi.
+
+"Ngươi có thể giữ thẻ."
+
+Tạ Khuông quay đầu.
+
+La Tứ cũng ngẩng lên.
+
+Lâm Tịch nói:
+
+"Giữ để nhớ hôm nay ngươi đã suýt ký vì cái gì. Nếu sau này ngươi muốn ký, đem ra đọc lại điều kiện trước."
+
+La Tứ nhìn tấm thẻ.
+
+"Các ngươi không đuổi ta?"
+
+"Không."
+
+"Ta suýt bán Cổng."
+
+"Ngươi suýt cứu con bằng cách duy nhất ngươi thấy."
+
+La Tứ cúi đầu, vai run.
+
+"Khác gì nhau?"
+
+Lâm Tịch không trả lời ngay.
+
+Nàng nhìn khu bệnh. La Đậu đang ngủ, miệng hé, hơi thở vẫn yếu nhưng đều. Một đứa trẻ ngủ có thể làm người lớn mềm đi rất nhanh, và kẻ cầm quyền hiểu điều đó hơn ai hết.
+
+"Khác ở chỗ bây giờ ngươi biết thêm một cách."
+
+"Nếu lần sau không có?"
+
+"Vậy lần sau chúng ta lại cãi."
+
+La Tứ cười một tiếng méo mó.
+
+"Cãi có cứu được mạng không?"
+
+"Hôm nay cứu được một chút."
+
+Tạ Khuông bỗng nói:
+
+"Một chút cũng tính."
+
+La Tứ nhìn hắn. Có lẽ không ngờ người gác cổng từng muốn đâm tất cả người chen hàng lại nói câu ấy.
+
+Tạ Khuông quay mặt đi.
+
+"Nhìn gì? Ta không nói lại."
+
+Lâm Tịch đứng dậy.
+
+"Nếu giữ thẻ, ghi lên bảng."
+
+La Tứ hỏi:
+
+"Ghi gì?"
+
+"La Tứ: người suýt ký. Lý do: con sốt. Tình trạng: chưa ký, giữ thẻ làm bằng chứng."
+
+La Tứ xấu hổ.
+
+"Phải ghi cả suýt ký?"
+
+"Ừ. Để người sau biết suýt ký không phải tội, nhưng giấu thẻ mới nguy hiểm."
+
+A Thất ghi dòng ấy lên bảng. Chữ "suýt" hơi méo vì nó viết vội.
+
+Rất nhanh, có người thứ hai đem thẻ tới.
+
+Một cô gái trẻ.
+
+"Ta cũng nhận."
+
+Người thứ ba là một ông già.
+
+"Ta chưa ký. Chỉ cầm."
+
+Người thứ tư không dám bước ra, chỉ ném thẻ từ ngoài vạch vào. Tấm thẻ rơi xuống đất, lăn hai vòng, dừng lại cạnh cái nút áo dưới chân cờ.
+
+Di Mạn nhặt lên.
+
+"Thẻ này không tự mọc ra. Ai cầm thì ra ghi."
+
+Một giọng trong đám đông lí nhí:
+
+"Ta."
+
+"Tên?"
+
+"Không muốn ghi tên."
+
+Lâm Tịch nói:
+
+"Vậy ghi: một người chưa muốn ghi tên, đã trả thẻ."
+
+Chu Kính đứng ngoài vạch, nhìn từng tấm thẻ quay về phía Cổng Nước Xám. Hắn không ngăn. Hắn chỉ ghi gì đó vào sổ.
+
+Thẩm Bạch thấy, thấp giọng:
+
+"Hắn đang ghi người dao động."
+
+Lâm Tịch đáp:
+
+"Chúng ta cũng ghi."
+
+"Khác nhau ở đâu?"
+
+Nàng nhìn bảng.
+
+"Hắn ghi để sau này bóp. Ta ghi để sau này hỏi."
+
+Thẩm Bạch không nói nữa.
+
+Đến cuối giờ thứ ba, Cổng Nước Xám thu lại mười chín tấm thẻ. Không phải ai nhận cũng trả. Có bảy người vẫn giữ, ba người ký.
+
+Ba người ký đứng ngoài vạch, tránh nhìn vào trong cổng.
+
+Trong đó có Vân Chẩm, cô gái từng để lại kim xương.
+
+A Thất nhìn thấy tên nàng trên danh sách Chu Kính, mặt trắng đi.
+
+"Tỷ..."
+
+Lâm Tịch cũng thấy.
+
+Vân Chẩm đứng cạnh mẹ mình. Bà mẹ run rẩy dựa vào nàng, mắt đục, tay nắm chặt thẻ như nắm bùa.
+
+Lâm Tịch đi tới vạch.
+
+"Vân Chẩm."
+
+Cô gái không ngẩng đầu.
+
+"Xin lỗi."
+
+A Thất muốn nói gì đó, nhưng Lâm Tịch giơ tay chặn.
+
+Nàng hỏi:
+
+"Mẹ ngươi cần gì?"
+
+Vân Chẩm cắn môi.
+
+"Chỗ ngủ không gió. Bà ấy ho ra máu. Ta không dám cược."
+
+Chu Kính ở bên cạnh nói:
+
+"Người đã đăng ký thuộc quản lý của Thành Nam."
+
+Lâm Tịch nhìn hắn.
+
+"Ta hỏi người bệnh cần gì. Không hỏi tài sản của ngươi."
+
+Chu Kính lạnh mặt.
+
+Vân Chẩm bỗng bật khóc.
+
+"Đừng hỏi nữa. Hỏi nữa ta không đi nổi."
+
+A Thất cúi đầu, tay nắm cái kim xương trong túi áo.
+
+Lâm Tịch lùi lại một bước.
+
+"Được."
+
+Nàng quay vào cổng.
+
+"Ghi: Vân Chẩm ký tạm trú vì mẹ ho máu. Cổng Xám không xóa công cũ. Nếu nàng quay lại, kiểm theo luật, không nhục mạ."
+
+Tạ Khuông cau mày.
+
+"Như vậy quá mềm."
+
+Lâm Tịch nhìn hắn.
+
+"Nếu không mềm chỗ này, sau này ai lỡ bước cũng chỉ còn đường đi luôn."
+
+Tạ Khuông im.
+
+Chu Kính nhìn Lâm Tịch, ánh mắt sâu hơn.
+
+Hắn đã lấy được ba người.
+
+Nhưng chưa lấy được quyền khiến người ở lại căm người rời đi.
+
+Và ở Cổng Nước Xám, đôi khi một thứ chưa bị lấy mất đã là thắng.

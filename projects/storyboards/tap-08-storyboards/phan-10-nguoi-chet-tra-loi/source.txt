@@ -1,0 +1,255 @@
+# Phần 10: Người Chết Trả Lời
+
+## Chương 247: Không Reo Khi Thắng
+
+Cổng Nước Xám thắng được sáu giờ.
+
+Không thắng được ngày mai.
+
+Chu Kính rút xe, đội áo xám biến mất trong bụi, nhưng không ai trong trạm tin họ đi luôn. Thành Nam sẽ mang giấy khác đến. Ngân Thụ sẽ mang người khác đến. Hắc Nha cũ có thể đã ngửi thấy HN-07 còn sống. Một đoạn ghi âm cứu họ khỏi bị thu hồi ngay, đồng thời mở một cái hố sâu hơn dưới chân Tần Dã.
+
+Di Mạn nấu cháo mặn.
+
+Mặn hơn thường lệ một chút.
+
+Không ai hỏi vì sao.
+
+Hôm nay có người chảy máu. Có người suýt ký. Có người uống nước Thành Nam. Có người quay về từ Trạm Ghi với mùi thú bệnh trên áo. Muối ít, nhưng nếu không cho vào, bữa tối sẽ giống một lời trừng phạt hơn là thức ăn.
+
+A Thất ngủ gục ngay cạnh module đọc, một tay vẫn đè lên mảnh thẻ TS-01. Di Mạn muốn lấy ra cất, nhưng nó mơ màng siết lại.
+
+"Không... chưa sao lưu..."
+
+Di Mạn đứng yên.
+
+Sau đó nàng lấy áo khoác phủ lên vai nó.
+
+"Ngủ cũng keo."
+
+Mộc Sanh ngồi cho Thẩm Bạch khâu vai. Nàng cắn một mảnh vải, không kêu. Ninh ngồi bên cạnh, cổ quấn khăn ấm, dùng ngón tay gõ chậm lên đầu gối. Sa Đinh ngồi xa hơn, lau cung, thỉnh thoảng nhìn Ninh như muốn mắng nhưng không dám.
+
+Lâm Tịch đi qua từng chỗ, ghi nợ.
+
+Nợ bột cho Bà Hôi.
+
+Nợ thuốc cho La Đậu.
+
+Nợ máu cho Mộc Sanh.
+
+Nợ một con thú bị nhốt không có tên.
+
+Đến dòng cuối, nàng dừng bút.
+
+Tần Dã nhìn thấy.
+
+"Ghi."
+
+"Ghi thế nào?"
+
+"Thú giữ kho Trạm Ghi Số 12. Không rõ loài. Chết vì chặn đội áo xám."
+
+Lâm Tịch viết.
+
+Không ai cười vì họ đang ghi tên thú.
+
+Ở Cổng Nước Xám, thứ gì trả giá cho người sống, dù không biết nói, cũng không nên biến mất như rác.
+
+Lương Tiêu đứng ngoài khu giám sát, nhìn bảng nợ.
+
+"Các ngươi ghi nhiều thứ thật."
+
+Tạ Khuông đáp:
+
+"Sợ quên."
+
+"Quên đôi khi dễ sống hơn."
+
+"Vậy ngươi quên được chưa?"
+
+Lương Tiêu im.
+
+Tạ Khuông cười lạnh.
+
+"Không quên được thì đừng dạy."
+
+Tần Dã đẩy xe tới dưới cột cờ. Hắn không cần ai giúp, nhưng bánh xe mắc vào một vệt bùn. Lâm Tịch bước tới định đẩy. Hắn giơ tay chặn.
+
+"Ta tự được."
+
+Nàng dừng lại.
+
+Hắn dùng sức, bánh xe thoát khỏi bùn. Động tác ấy nhỏ, nhưng làm trán hắn đổ mồ hôi.
+
+Lâm Tịch giả vờ không thấy.
+
+Tần Dã nhìn lá cờ.
+
+"Tần Sách từng nói, người chết không cần danh dự. Người sống mới cần danh dự của người chết để khỏi tự biến mình thành thứ quá xấu."
+
+Lâm Tịch đứng bên cạnh.
+
+"Anh tin ông ấy còn sống không?"
+
+Rất lâu sau, Tần Dã đáp:
+
+"Ta không biết."
+
+"Anh muốn ông ấy còn sống không?"
+
+Câu hỏi ấy còn khó hơn.
+
+Tần Dã nhìn mảnh thẻ trong tay A Thất.
+
+"Nếu hắn sống, ta phải hỏi vì sao không về."
+
+"Nếu hắn chết?"
+
+"Ta phải hỏi ai đã dùng tay hắn."
+
+Dù thế nào cũng phải hỏi.
+
+Không có con đường nào nhẹ.
+
+Lâm Tịch nói:
+
+"Vậy hỏi."
+
+Tần Dã quay sang.
+
+"Ngươi nói như dễ."
+
+"Không dễ. Nhưng Cổng Xám hôm nay đã sống nhờ một câu hỏi không bị nuốt xuống."
+
+Hắn nhìn nàng rất lâu.
+
+"Ngươi càng ngày càng biết dùng lời của ta đánh lại ta."
+
+"Học phí đắt mà."
+
+Tần Dã khẽ cười.
+
+Rất khẽ.
+
+Một nụ cười mệt, nhưng thật.
+
+## Chương 248: Giọng Nói Sau Nửa Đêm
+
+Nửa đêm, radio tự bật.
+
+A Thất bật dậy nhanh đến mức suýt đập đầu vào bàn. Nó đã nối module TS-01 với radio để sao lưu âm thanh, nhưng nguồn pin đáng lẽ đã tắt. Đèn nhỏ trên máy nhấp nháy xanh, yếu như mắt côn trùng trong bóng tối.
+
+Tiếng rè kéo dài.
+
+Mọi người trong sân thức dậy từng người một.
+
+Tần Dã là người đến đầu tiên.
+
+Lâm Tịch theo sau, khoác áo còn chưa cài.
+
+A Thất run giọng:
+
+"Em không bật."
+
+Không ai trách nó.
+
+Radio rè thêm một lúc, rồi phát ra đoạn âm thanh đã nghe:
+
+`...HN-07 nếu còn sống... đừng tin bản ghi đầu tiên...`
+
+Tần Dã cúi xuống.
+
+A Thất nói:
+
+"Nó tự lặp?"
+
+Thẩm Bạch kiểm dây.
+
+"Không. Có tín hiệu chèn."
+
+Da gáy Lâm Tịch lạnh đi.
+
+Radio rè mạnh.
+
+Sau đó, một giọng nói khác xuất hiện.
+
+Không phải bản ghi cũ.
+
+Giọng yếu, xa, méo vì nhiễu, nhưng đang nói trực tiếp:
+
+`HN-07.`
+
+Tần Dã bất động.
+
+Lương Tiêu trong khu giám sát đứng bật dậy.
+
+Giọng kia tiếp tục:
+
+`Nếu ngươi còn sống... đừng tin bản ghi đầu tiên.`
+
+Lâm Tịch nhìn Tần Dã.
+
+Mặt hắn trắng đến đáng sợ.
+
+`Người ký không phải người bán nước. Người ký là người bị giữ tay.`
+
+A Thất lắp bắp:
+
+"Giống... giống đoạn cũ..."
+
+Tần Dã nói:
+
+"Không giống."
+
+Giọng trong radio ho khan. Tiếng ho rất thật. Không phải tiếng trong bản lưu.
+
+`Cổng Xám... đừng giao HN-07 cho Thành Nam. Đừng giao cho Ngân Thụ. Đừng giao cho Hắc Nha.`
+
+Lâm Tịch bước tới gần radio.
+
+"Ngươi là ai?"
+
+Nhiễu kéo dài.
+
+Tưởng như tín hiệu sắp mất.
+
+Rồi giọng kia đáp:
+
+`Một người đã chết trên giấy.`
+
+Tần Dã nhắm mắt.
+
+Khi mở ra, mắt hắn không còn chỉ là đau.
+
+Còn có lửa.
+
+"Tần Sách."
+
+Radio im một nhịp.
+
+Sau đó giọng kia nói:
+
+`Đừng đọc tên ta quá to. Chúng đang nghe.`
+
+Bên ngoài cổng, trong bóng tối rất xa, có một điểm sáng bạc lóe lên rồi tắt.
+
+Ninh, dù cổ đang đau, vẫn bật ra một âm cảnh báo khàn.
+
+Không phải thú.
+
+Không phải xe.
+
+Người.
+
+Rất nhiều người.
+
+Lâm Tịch nhìn lá cờ xám trên cổng.
+
+Một ngày trước, họ treo cờ để nói mình là ai.
+
+Đêm nay, có người chết trên giấy gọi đến để bảo họ đừng đọc tên quá to.
+
+Tập 8 của Cổng Nước Xám kết thúc không bằng tiếng reo.
+
+Mà bằng tiếng Tần Dã đặt tay lên radio, giọng khàn nhưng vững:
+
+"Vậy nói nhỏ thôi. Ta nghe."

@@ -1,0 +1,455 @@
+# Phần 3: Than Sạch Và Than Giả
+
+## Chương 193: Mùi Dầu Trong Bao Than
+
+Mùi dầu không chịu tan.
+
+Dù Trần Hòe đã kéo bao than giả ra xa khỏi máng lọc, dù Mộc Sanh bắt người đào một hố riêng ở cuối hướng gió, dù Di Mạn dùng nước thô rửa lại nền ba lần, cái mùi đen bóng ấy vẫn bám trong không khí như một lời nhắc: thứ độc không cần vào nước mới làm người ta sợ.
+
+Người trong hàng bắt đầu nhìn nhau bằng ánh mắt khác.
+
+Ai mang bao tới cũng bị nhìn lâu hơn. Ai đưa thùng lên cân cũng bị hỏi nhiều hơn. Một ông già đem nửa túi than vụn sạch thật sự, nhưng vì bao ngoài dính vệt dầu cũ, suýt bị đẩy ra khỏi hàng. Ông ngồi bệt xuống đất, ôm túi than như ôm cháu, mắng Trần Hòe bằng giọng run:
+
+"Ta nhặt từng cục trong lò chết! Các ngươi nói giả là giả à?"
+
+Trần Hòe không mềm.
+
+"Mở ra kiểm."
+
+"Mở thì bụi bay mất!"
+
+"Không mở thì nước hỏng."
+
+Ông già nghẹn lại.
+
+Cuối cùng ông tự tay mở túi, run rẩy nhặt từng cục than đặt lên tấm sắt. Than khô, nhẹ, không bóng dầu. Trần Hòe bẻ một cục, ngửi, rồi đưa cho Di Mạn xem.
+
+"Sạch."
+
+Ông già đỏ mắt.
+
+"Ta nói rồi."
+
+Di Mạn đong cho ông một phần nước làm việc.
+
+"Lần sau dùng bao khác. Bao bẩn làm người tốt mất thời gian."
+
+Ông già nhận nước, miệng còn muốn cãi, nhưng nhìn hàng dài phía sau lại thôi.
+
+Lâm Tịch đứng cạnh cổng tạm, nhìn mọi thứ diễn ra.
+
+Từ sáng tới trưa, nàng đã học thêm một điều: luật không chỉ trừng phạt người xấu. Luật cũng làm người tốt phải chứng minh mình không xấu. Nếu chứng minh quá khó, người tốt sẽ tức. Nếu quá dễ, kẻ xấu sẽ chui qua.
+
+Giữa hai cái đó là một sợi dây rất mỏng.
+
+Và nàng đang bắt cả trạm đi trên đó.
+
+Người râu lởm, sau nửa ngày đào rãnh, cuối cùng được uống ngụm đầu tiên. Hắn nhận cốc từ tay A Mục, nhìn vạch nước thấp đến đáng thương, sắc mặt méo đi.
+
+"Đào nửa ngày được nhiêu đây?"
+
+A Mục đáp:
+
+"Ngươi đem than độc."
+
+"Ta đã đào."
+
+"Nên mới có."
+
+Người râu lởm nhìn nó, rồi uống cạn. Uống xong, hắn không trả cốc ngay.
+
+A Mục nhìn tay hắn.
+
+Hắn cười nhạt.
+
+"Sợ ta cướp?"
+
+"Ừ."
+
+Câu trả lời thẳng quá làm người kia nghẹn.
+
+A Mục nói:
+
+"Ngươi từng rút dao. Ta sợ là đúng."
+
+Người râu lởm cúi đầu nhìn cái cốc, rồi ném trả.
+
+"Tên ta là Hứa Đao."
+
+A Mục bắt cốc, hơi lùi nửa bước.
+
+"Tên nghe như cảnh báo."
+
+"Cha ta đặt. Hắn chết vì dao."
+
+A Mục không biết nói gì.
+
+Hứa Đao lau miệng.
+
+"Rãnh phía Tây còn tắc. Ta đào tiếp được đổi thêm không?"
+
+A Mục nhìn Lâm Tịch.
+
+Lâm Tịch gật đầu.
+
+"Đổi. Nhưng dao vẫn để ngoài vạch."
+
+Hứa Đao cười lạnh.
+
+"Biết rồi, đội trưởng Lâm."
+
+Hắn quay đi.
+
+A Mục nhìn theo, nhỏ giọng:
+
+"Hắn sẽ gây chuyện nữa."
+
+Lâm Tịch đáp:
+
+"Có thể."
+
+"Vậy sao giữ?"
+
+"Vì hắn đào rãnh nhanh."
+
+A Mục quay đầu nhìn nàng.
+
+Nàng nói:
+
+"Ta không cần thích hắn mới dùng hắn. Nhưng ta phải nhìn hắn."
+
+A Mục suy nghĩ rất lâu.
+
+"Vậy luật không phải để tin người?"
+
+"Luật là để khi chưa tin, vẫn có thể cùng làm."
+
+Câu đó vừa nói ra, chính Lâm Tịch cũng nhớ.
+
+Nàng phải nhớ. Vì càng nhiều người tới, nàng sẽ càng không có quyền chỉ chọn người mình thích.
+
+Buổi chiều, Trần Hòe phát hiện bao than giả thứ hai.
+
+Lần này không phải Hứa Đao.
+
+Là một người đàn bà gầy, trên lưng cõng đứa trẻ ngủ mê. Bao than của nàng sạch ở trên, nhưng giữa bao trộn bột nhựa đen. Nếu dùng lọc nước, mùi nhựa sẽ làm nước đắng và độc.
+
+Đám đông lập tức nổi giận.
+
+"Lại giả!"
+
+"Đuổi đi!"
+
+"Đứa trẻ kia có khi cũng giả bệnh!"
+
+Người đàn bà ôm bao than quỳ xuống.
+
+"Ta không biết. Ta đổi từ người khác. Ta thật sự không biết."
+
+Không ai tin ngay.
+
+Trong phế thổ, câu "không biết" quá rẻ. Ai cũng nói không biết sau khi bị bắt.
+
+Đứa trẻ trên lưng nàng ho khẽ.
+
+Ho rất khô.
+
+Di Mạn bước tới kiểm, mặt trầm xuống.
+
+"Nó sốt thật."
+
+Đám đông im bớt.
+
+Nhưng chỉ bớt.
+
+Một người nói:
+
+"Sốt thật thì được lừa à?"
+
+Người đàn bà khóc:
+
+"Ta đi từ đêm qua. Nó uống nước rãnh rồi. Ta chỉ muốn đổi than lấy một ngụm sạch."
+
+Lâm Tịch nhìn bao than giả, nhìn đứa trẻ, nhìn hàng người đang chờ.
+
+Nếu phạt nặng, đứa trẻ chịu.
+
+Nếu bỏ qua, luật rách.
+
+Di Mạn nhìn nàng.
+
+Tần Dã không có ở cổng. Hắn đang sốt trong khu nghỉ. Nhưng câu nói của hắn như vẫn nằm ở tai nàng: đừng vì ta phá luật.
+
+Không phải vì Tần Dã.
+
+Vì bất cứ ai.
+
+Lâm Tịch nói:
+
+"Than giả không đổi được nước. Người đem than giả phải làm việc kiểm than ba lượt, dưới mắt Trần Hòe. Đứa trẻ sốt uống theo lượt người bệnh. Người mẹ uống phần chăm bệnh sau khi làm xong lượt đầu."
+
+Người đàn bà ngẩng đầu.
+
+"Nó được uống?"
+
+"Nó không đem than giả."
+
+Đám đông có người bất mãn, nhưng Di Mạn đã cầm cốc.
+
+"Đứa trẻ lên."
+
+Trần Hòe nhìn Lâm Tịch.
+
+"Để nàng kiểm than? Nếu nàng lại lừa?"
+
+"Nàng kiểm dưới mắt ngươi. Nếu làm sai, ngươi dừng. Nếu làm đúng, nàng học được cách không bị lừa lần sau."
+
+Trần Hòe im một lúc rồi gật.
+
+Người đàn bà cúi đầu lạy.
+
+Lâm Tịch lùi một bước.
+
+"Không lạy. Làm việc."
+
+Người đàn bà khựng lại, rồi gật đầu, nước mắt rơi xuống bao than bẩn.
+
+Đêm đó, trên bảng luật thêm một dòng mới:
+
+`Hàng giả không đổi nước. Người đem hàng giả phải làm việc sửa lỗi. Trẻ bệnh không chịu tội thay hàng.`
+
+A Thất viết xong, thổi bụi than trên tay.
+
+"Bảng sắp không đủ chỗ."
+
+Di Mạn nói:
+
+"Vậy kiếm bảng khác."
+
+Lâm Tịch nhìn tấm biển.
+
+Luật dài hơn.
+
+Cũng nặng hơn.
+
+Vì mỗi dòng trên đó đều không phải nghĩ ra trong phòng sạch. Nó được viết bằng mùi dầu, tiếng ho, cơn khát, và ánh mắt của những người suýt đánh nhau vì một bao than.
+
+## Chương 194: Người Đổi Lỗi Lấy Việc
+
+Sáng ngày thứ hai, người đàn bà đem than giả tới ngồi bên cạnh Trần Hòe kiểm hàng.
+
+Tên nàng là Vân Chẩm.
+
+Không ai hỏi vì sao tên dịu như vậy lại rơi vào phế thổ. Ở đây, nhiều cái tên giống đồ còn sót lại từ một đời khác: Mỹ, An, Phúc, Lành. Người mang tên càng đẹp, đời thường càng không nương tay.
+
+Vân Chẩm không biết kiểm than.
+
+Lúc đầu nàng chỉ biết ngửi. Than nào cũng đen, than nào cũng bẩn, than nào cũng làm tay nàng lem. Trần Hòe mắng nàng bảy lần trong nửa buổi.
+
+"Không phải nhìn màu. Bẻ."
+
+"Bẻ nghe tiếng. Than sạch giòn."
+
+"Đừng đưa lên sát mũi như muốn ăn nó."
+
+"Cái này dính dầu. Ngửi không ra à?"
+
+Vân Chẩm cúi đầu:
+
+"Ta trước kia vá áo."
+
+Trần Hòe khựng lại.
+
+"Vậy nhìn sợi bao. Bao từng đựng dầu sẽ có vệt cứng ở góc may. Ngươi biết may thì nhìn góc."
+
+Từ đó, Vân Chẩm kiểm nhanh hơn.
+
+Lâm Tịch đứng xa nhìn.
+
+Nàng không biết Trần Hòe cố tình dạy hay chỉ mắng tới mắng lui rồi thuận tay chỉ. Nhưng kết quả là Vân Chẩm từ người phạm luật biến thành một đôi mắt nữa ở cổng.
+
+Không phải ai sai cũng nên bị ném ra.
+
+Nhưng ai sai mà ở lại phải có việc để trả.
+
+Đó là dòng luật thứ hai Lâm Tịch học từ than giả.
+
+Gần trưa, Hứa Đao kéo rãnh phía Tây thông được một đoạn. Nước thải đen chảy khỏi khu cổng, mùi hôi giảm đi rõ rệt. Hắn đứng dậy, cả người đầy bùn, đưa tay về phía A Mục.
+
+"Nước."
+
+A Mục kiểm bảng.
+
+"Hai lượt làm việc. Một ngụm rưỡi."
+
+"Rưỡi?"
+
+"Một ngụm của lượt đầu, nửa ngụm vì ngươi nghỉ giữa chừng chửi Lý Cù mười câu."
+
+Hứa Đao trừng nó.
+
+"Chửi cũng tính?"
+
+Lý Cù ở bàn ghi tên lạnh nhạt:
+
+"Chửi làm chậm việc. Ta còn đếm ít."
+
+Hứa Đao tức đến bật cười.
+
+"Trạm các ngươi đến chửi cũng tính nước?"
+
+Di Mạn đáp:
+
+"Nước ít, miệng cũng phải có giá."
+
+Hứa Đao nhìn quanh, thấy không ai đứng về phía mình, cuối cùng nhận một ngụm rưỡi.
+
+Uống xong, hắn nói:
+
+"Cổng phía Tây có lỗ. Đêm thú nhỏ chui vào được."
+
+Lâm Tịch nhìn hắn.
+
+"Ngươi thấy?"
+
+"Ta đào rãnh, mắt chưa mù."
+
+"Sao nói?"
+
+"Nếu thú vào, ta đang ngủ cũng bị cắn."
+
+Một lý do ích kỷ.
+
+Nhưng hữu dụng.
+
+Lâm Tịch gật đầu.
+
+"Dẫn Mộc Sanh đi xem. Nếu đúng, tính phần phát hiện."
+
+Hứa Đao nhướng mày.
+
+"Phát hiện cũng có nước?"
+
+"Nếu giúp trạm sống."
+
+Hắn nhìn nàng một lúc, rồi cười.
+
+"Đội trưởng Lâm, cô đang dạy đám xấu chúng ta kiếm nước bằng cách làm người tốt à?"
+
+Lâm Tịch đáp:
+
+"Không. Ta đang làm việc xấu trở nên lỗ vốn."
+
+Hứa Đao cười lớn.
+
+Lần này không nhiều ác ý.
+
+Mộc Sanh đi theo hắn kiểm lỗ cổng. Quả nhiên có một khe dưới xe rác, vừa đủ cho chuột răng thép và thú nhỏ chui vào. Nếu để qua đêm, khu trẻ con ngủ gần đó sẽ gặp nguy.
+
+Hứa Đao được ghi thêm nửa phần nước.
+
+Tin đó lan rất nhanh.
+
+Buổi chiều, bắt đầu có người chủ động báo chỗ dây lỏng, lỗ chuột, than nghi giả, người chen hàng. Không phải vì họ bỗng yêu trạm, mà vì họ hiểu: báo đúng cũng có phần. Báo bậy bị phạt lượt.
+
+A Thất ghi tới tay mỏi.
+
+"Ta cảm giác mình không phải thư ký. Ta là cái bơm chữ."
+
+Di Mạn liếc nó.
+
+"Bơm chữ cũng phải thay ca."
+
+"Ai thay?"
+
+A Mục vừa cầm cốc xong, mặt tái:
+
+"Đừng nhìn ta."
+
+Tiểu Mãn giơ tay.
+
+"Con biết vẽ dấu."
+
+Mọi người quay sang.
+
+Cô bé ôm nồi Mãn, mặt nghiêm túc.
+
+"Con vẽ một vòng là trẻ con, hai vạch là người bệnh, cái xẻng là làm việc."
+
+A Thất nhìn nó như nhìn đồng đội.
+
+"Được. Ta dạy ngươi hệ thống ký hiệu bí truyền của phòng radio."
+
+Mộc Sanh nói:
+
+"Không được bí truyền. Người khác phải đọc được."
+
+"Vậy hệ thống ký hiệu công khai của phòng radio."
+
+Tiểu Mãn ngồi xuống cạnh A Thất.
+
+Nó vẽ chậm, nét cong lệch, nhưng dễ nhìn. Một vòng nhỏ cho trẻ. Một dấu thập cho người bệnh. Một cái xẻng méo cho người làm việc. Di Mạn đi ngang qua nhìn, không khen, chỉ đặt cạnh nó nửa miếng bánh khô.
+
+Tiểu Mãn ngẩng đầu.
+
+"Con chưa tới lượt ăn."
+
+"Phần làm việc."
+
+Cô bé nhìn cái xẻng mình vừa vẽ, rồi nhìn bánh.
+
+Nó bẻ bánh làm đôi, đưa nửa cho A Thất.
+
+A Thất nhận rất tự nhiên.
+
+"Phòng radio ghi công ngươi."
+
+Lâm Tịch đứng ở cổng, nhìn cảnh ấy.
+
+Trạm Số Chín vẫn bẩn, vẫn thiếu, vẫn bị đánh dấu là ổ dịch. Nhưng trong cái ổ dịch ấy, một đứa trẻ bắt đầu học ghi lượt nước thay vì học giấu cốc.
+
+Đó là một thắng lợi nhỏ.
+
+Nhỏ đến mức Ngân Thụ có lẽ sẽ không ghi vào báo cáo.
+
+Nhưng Lâm Tịch ghi trong lòng.
+
+Tối đó, khi đổi ca, Lý Cù đem bảng ghi tới cho nàng.
+
+"Người sai được cho làm việc trả lỗi. Luật này nguy hiểm."
+
+Lâm Tịch nhìn ông.
+
+"Vì sao?"
+
+"Có kẻ sẽ cố tình sai để được ở lại."
+
+"Vậy phải nhìn."
+
+"Nhìn mệt lắm."
+
+"Ừ."
+
+Lý Cù hừ một tiếng.
+
+"Cô còn trẻ, trả lời toàn ừ."
+
+"Vì ông nói đúng."
+
+Ông già ngẩn ra, rồi quay mặt đi.
+
+"Đừng tưởng khen người già thì ta bớt mắng."
+
+"Ta không tưởng."
+
+Ông đặt bảng xuống.
+
+"Nhưng hôm nay... đỡ loạn hơn ta nghĩ."
+
+Nói xong, ông đi.
+
+Lâm Tịch nhìn bảng ghi bằng than, ký hiệu vụng về của Tiểu Mãn lẫn chữ xấu của A Thất, nét gạch cứng của Di Mạn, dấu chấm cẩn thận của Lý Cù.
+
+Một thành mới, nếu có, có lẽ không bắt đầu từ tường.
+
+Nó bắt đầu từ việc rất nhiều người viết cùng một bảng mà chưa xé nó.

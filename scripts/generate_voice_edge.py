@@ -401,7 +401,8 @@ def line_gap(text, profile):
         base = profile.get("dialogue_pause", profile["sentence_pause"])
         base += archetype_delta(archetypes, "pause_delta")
         base += learning_delta(text, archetypes, profile, "sentence_pause_delta")
-        return max(0.08, base)
+        minimum_gap = 0.02 if profile.get("tight_punctuation") else 0.08
+        return max(minimum_gap, base)
     if is_cliffhanger(text):
         return profile.get("cliffhanger_pause", profile["sentence_pause"] + 0.15)
     if is_reveal(text):
@@ -412,6 +413,8 @@ def line_gap(text, profile):
         return profile.get("list_pause", profile["comma_pause"])
     if "\n\n" in text:
         return profile["paragraph_pause"]
+    if profile.get("tight_punctuation") and text.endswith(("?", "!", ":", "...")):
+        return profile["sentence_pause"]
     if text.endswith(("?", "!", ":", "…", "...")):
         return profile["sentence_pause"] + 0.15
     if text.endswith((".", "。")):
@@ -654,6 +657,31 @@ def make_silence(path, seconds):
     )
 
 
+def trim_chunk_silence(path, aggressive=False):
+    temp_path = path.with_name(f"{path.stem}-trim{path.suffix}")
+    threshold = "-42dB" if aggressive else "-38dB"
+    stop_duration = "0.10" if aggressive else "0.14"
+    subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-i",
+            str(path),
+            "-af",
+            f"silenceremove=start_periods=1:start_silence=0:start_threshold={threshold}:stop_periods=-1:stop_duration={stop_duration}:stop_threshold={threshold}",
+            "-c:a",
+            "libmp3lame",
+            "-q:a",
+            "3",
+            str(temp_path),
+        ],
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    temp_path.replace(path)
+
+
 async def synthesize_performed(text, output, voice, profile):
     units = split_performance_units(text, int(profile.get("max_unit_chars", 180)))
     units = [unit for unit in units if has_spoken_content(unit)]
@@ -662,6 +690,7 @@ async def synthesize_performed(text, output, voice, profile):
     if len(units) == 1:
         selected_voice = voice_for_text(text, voice, profile)
         await synthesize_resilient(prepare_tts_text(text, profile), output, selected_voice, profile["rate"], profile["pitch"])
+        trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
         return [{"type": classify_unit(text, profile), "voice": selected_voice, "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
 
     with tempfile.TemporaryDirectory(prefix="edge-tts-perform-") as temp_name:
@@ -704,6 +733,7 @@ async def synthesize_performed(text, output, voice, profile):
         for index, item in enumerate(plan, 1):
             voice_path = temp_dir / f"voice-{index:03d}.mp3"
             await synthesize_resilient(prepare_tts_text(item["unit"], profile), voice_path, item["voice"], item["rate"], item["pitch"])
+            trim_chunk_silence(voice_path, aggressive=bool(profile.get("tight_punctuation")))
             concat_items.append(voice_path)
             gap = item["pause_after"]
             if gap > 0 and index < len(units):
@@ -713,6 +743,7 @@ async def synthesize_performed(text, output, voice, profile):
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in concat_items), encoding="utf-8")
         subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
     return [{key: value for key, value in item.items() if key != "unit"} for item in plan]
 
 

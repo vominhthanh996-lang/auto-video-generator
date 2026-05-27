@@ -92,6 +92,11 @@ def relpath(path, base):
         return str(path.resolve())
 
 
+def canonical_scene_audio_path(storyboard_dir, scene, index):
+    stem = Path(scene.get("id") or f"scene-{index:03d}").stem
+    return storyboard_dir / "assets" / f"{stem}.mp3"
+
+
 def normalize(text):
     return " ".join(str(text or "").translate(VI_ASCII).lower().split())
 
@@ -516,25 +521,44 @@ def main():
     for index, scene in enumerate(scenes, 1):
         text = scene.get("narration") or scene.get("subtitle") or ""
         cues = detect_cues(text)
-        voice_audio = scene.get("voice_audio") or scene.get("audio")
-        voice_path = resolve(storyboard_dir, voice_audio)
+        canonical_audio_path = canonical_scene_audio_path(storyboard_dir, scene, index)
+        existing_audio_path = resolve(storyboard_dir, scene.get("audio")) if scene.get("audio") else None
+        legacy_voice_path = resolve(storyboard_dir, scene.get("voice_audio")) if scene.get("voice_audio") else None
+
+        source_audio_path = None
+        if legacy_voice_path and legacy_voice_path.exists():
+            source_audio_path = legacy_voice_path
+        elif existing_audio_path and existing_audio_path.exists():
+            source_audio_path = existing_audio_path
+
+        if source_audio_path and source_audio_path.resolve() != canonical_audio_path.resolve():
+            canonical_audio_path.parent.mkdir(parents=True, exist_ok=True)
+            if not canonical_audio_path.exists() or args.overwrite:
+                shutil.copyfile(source_audio_path, canonical_audio_path)
+        elif source_audio_path and not canonical_audio_path.exists():
+            canonical_audio_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source_audio_path, canonical_audio_path)
+
+        scene["audio"] = relpath(canonical_audio_path, storyboard_dir)
+        if "voice_audio" in scene:
+            del scene["voice_audio"]
+
+        voice_path = canonical_audio_path
         if not cues or not voice_path or not voice_path.exists():
             report["scenes"].append({"scene": index, "cues": cues, "mixed": False})
             continue
 
         stem = Path(scene.get("id") or f"scene-{index:03d}").stem
         sfx_path = storyboard_dir / "assets" / "sfx" / f"{stem}-sfx-layer.wav"
-        mixed_path = storyboard_dir / "assets" / f"{stem}-final-audio.mp3"
-        if mixed_path.exists() and not args.overwrite:
-            scene["voice_audio"] = relpath(voice_path, storyboard_dir)
-            scene["audio"] = relpath(mixed_path, storyboard_dir)
+        temp_mixed_path = storyboard_dir / "assets" / "sfx" / f"{stem}-mixed-temp.mp3"
+        if scene.get("audio_postprocessed") and not args.overwrite:
+            scene["audio"] = relpath(voice_path, storyboard_dir)
             report["scenes"].append(
                 {
                     "scene": index,
                     "cues": cues,
                     "mixed": True,
                     "reused": True,
-                    "clean_voice": scene["voice_audio"],
                     "final_audio": scene["audio"],
                 }
             )
@@ -554,27 +578,31 @@ def main():
                         "cues": cues,
                         "mixed": False,
                         "duration": round(duration, 2),
-                        "clean_voice": relpath(voice_path, storyboard_dir),
+                        "final_audio": relpath(voice_path, storyboard_dir),
                         "missing_real_sfx": missing_assets or cues,
                         "message": f"Add real SFX files to {args.sfx_library} or rerun with --allow-generated-sfx.",
                     }
                 )
                 continue
-            mix_audio(voice_path, sfx_path, mixed_path, 1.0)
-            scene["voice_audio"] = relpath(voice_path, storyboard_dir)
-            scene["audio"] = relpath(mixed_path, storyboard_dir)
+            mix_audio(voice_path, sfx_path, temp_mixed_path, 1.0)
+            temp_mixed_path.replace(voice_path)
+            scene["audio"] = relpath(voice_path, storyboard_dir)
+            scene["audio_postprocessed"] = True
+            if "voice_audio" in scene:
+                del scene["voice_audio"]
             if not args.keep_sfx_assets:
                 for temp_sfx in sfx_path.parent.glob(f"{stem}-sfx-layer*"):
                     if temp_sfx.exists():
                         temp_sfx.unlink()
+                if temp_mixed_path.exists():
+                    temp_mixed_path.unlink()
         report["scenes"].append(
             {
                 "scene": index,
                 "cues": cues,
                 "mixed": not args.dry_run,
                 "duration": round(duration, 2),
-                "clean_voice": relpath(voice_path, storyboard_dir),
-                "final_audio": relpath(mixed_path, storyboard_dir),
+                "final_audio": relpath(voice_path, storyboard_dir),
                 "used_real_sfx": used_assets,
                 "missing_real_sfx": missing_assets,
             }

@@ -1,0 +1,467 @@
+# Phần 6: Người Cũ Của Hắc Nha
+
+## Chương 239: Người Gọi HN-07
+
+Trong lúc đội của A Thất mở cửa Trạm Ghi Số 12, Cổng Nước Xám đón một người khách không có trong dự tính.
+
+Hắn đến từ phía bắc, đi một mình, áo choàng bụi kéo thấp, một chân hơi khập khiễng. Không mang cờ Thành Nam, không treo dấu thương đội, không vào chợ. Hắn dừng ngoài vạch trắng, đặt hai tay lên chỗ mọi người có thể nhìn thấy.
+
+Tạ Khuông nâng giáo.
+
+"Đổi hàng?"
+
+Người kia lắc đầu.
+
+"Tìm người."
+
+"Tên?"
+
+Hắn nhìn qua vai Tạ Khuông, ánh mắt rơi thẳng lên Tần Dã đang ngồi bên bản đồ.
+
+"HN-07."
+
+Không khí quanh cổng lập tức đổi.
+
+Không nhiều người hiểu mã đó.
+
+Nhưng họ hiểu cách Tần Dã ngẩng đầu.
+
+Chậm.
+
+Lạnh.
+
+Như một lưỡi dao cũ vừa được rút khỏi bao.
+
+Lâm Tịch đứng cạnh hắn.
+
+"Ngươi là ai?"
+
+Người kia tháo khăn che mặt.
+
+Khuôn mặt hắn gầy, một bên má có vết sẹo kéo từ thái dương xuống cằm. Mắt phải đục. Trên cổ, lộ ra một mảnh thẻ gãy, chỉ còn nửa ký hiệu: `HN`.
+
+Tần Dã nói:
+
+"Lương Tiêu."
+
+Người kia cười rất khẽ.
+
+"Còn nhớ."
+
+Nụ cười ấy không làm khuôn mặt hắn mềm đi.
+
+Nó chỉ kéo vết sẹo trên má lệch thêm một chút, khiến người ta nhìn ra vết thương cũ từng sâu đến đâu. Một con mắt của Lương Tiêu đã đục, nhưng con còn lại rất tỉnh. Kiểu tỉnh của người ngủ chưa bao giờ thật sự ngủ, ăn chưa bao giờ quay lưng với cửa, và khi đứng trước một cái cổng lạ, việc đầu tiên là đếm xem có bao nhiêu mũi tên đang nhắm vào mình.
+
+Tạ Khuông ghét ánh mắt ấy ngay.
+
+Vì nó giống mắt Tần Dã lúc mới được đưa về Cổng Nước Xám.
+
+Khác ở chỗ Tần Dã khi đó bị liệt nửa người, còn người này vẫn đứng được.
+
+Một người còn đứng được mà mang ánh mắt ấy, thường đã để lại rất nhiều thứ nằm xuống phía sau.
+
+"Ngươi đáng lẽ ở mỏ bắc."
+
+"Đáng lẽ nhiều người đã chết."
+
+Di Mạn nghe câu đó, đặt dao thái bột xuống bàn.
+
+"Nói chuyện kiểu người chết sót lại nghe rất mệt."
+
+Lương Tiêu nhìn nàng.
+
+"Người sống sót thường làm người nấu ăn mệt?"
+
+"Người sống sót mà không chịu nói rõ mình đem cái gì tới mới mệt."
+
+Lương Tiêu im một chút, rồi gật đầu.
+
+"Ta đem tin. Đem nợ. Có thể đem cả đuôi."
+
+"Đuôi?"
+
+"Người theo sau."
+
+Tạ Khuông lập tức nâng giáo cao hơn.
+
+"Vậy ngươi còn đứng đó làm gì? Dẫn phiền phức tới rồi xin nước à?"
+
+Lương Tiêu nhìn cây giáo gãy, rồi nhìn miếng gỗ ghi tên A Nhĩ trên cổng.
+
+"Không xin nước."
+
+"Vậy xin gì?"
+
+"Xin trước khi các ngươi đâm ta, nghe xong thứ ta biết."
+
+Bà Hôi từ chợ chen giọng:
+
+"Nghe xong vẫn đâm được không?"
+
+Lương Tiêu đáp:
+
+"Tùy luật cổng."
+
+Mọi ánh mắt quay sang Lâm Tịch.
+
+Lâm Tịch bỗng thấy cái mệt của người giữ luật: luật không chỉ dùng lúc đối phương dễ ghét, mà nhất là lúc đối phương vừa dễ ghét vừa có ích.
+
+Tạ Khuông siết giáo.
+
+"Hắc Nha?"
+
+Lương Tiêu nhìn hắn.
+
+"Cũ."
+
+"Cũ thì không cắn người?"
+
+"Cũ nghĩa là răng gãy vài cái."
+
+Di Mạn từ trong sân đi ra, tay cầm dao thái bột.
+
+"Đùa không đúng lúc là bị đập."
+
+Lương Tiêu nhìn dao trong tay nàng, rồi nhìn lá cờ trên cổng.
+
+"Ta không đến đánh."
+
+Lâm Tịch hỏi:
+
+"Đến vì Tần Sách?"
+
+Lương Tiêu nhìn nàng kỹ hơn.
+
+"Ngươi là Lâm Tịch?"
+
+"Ừ."
+
+"Người nhặt HN-07 từ bãi chết?"
+
+Tần Dã lạnh giọng:
+
+"Nói việc."
+
+Lương Tiêu im một lúc.
+
+"Ta nghe tên Tần Sách trên radio chợ. Biết sẽ có người dùng nó tìm ngươi."
+
+"Ai?"
+
+"Không chắc. Nhưng không chỉ Thành Nam."
+
+Lâm Tịch hỏi:
+
+"Ngươi biết giấy chuyển nhượng?"
+
+"Không biết giấy. Biết người." Lương Tiêu nhìn Tần Dã. "Tần Sách không ký thay người chết."
+
+Lương Tiêu nói câu ấy không to, nhưng nó làm cả sân yên xuống.
+
+Không phải vì ai cũng hiểu Tần Sách.
+
+Mà vì trong mấy ngày qua, Cổng Nước Xám đã treo tên người chết lên cổng, ghi nợ người chết vào bảng, đọc tên người chết trong radio. Với họ, "không ký thay người chết" không còn là câu đạo đức xa xỉ. Nó chạm ngay vào cái thìa gỗ của Miên Miên, vào miếng gỗ của A Nhĩ, vào con thú chưa có tên ở Trạm Ghi Số 12 mà lúc này họ còn chưa biết sẽ phải ghi.
+
+Người chết không cầm bút.
+
+Nhưng người sống rất thích mượn tay họ.
+
+Câu ấy làm ngón tay Tần Dã khựng lại.
+
+Lương Tiêu nói tiếp:
+
+"Hắn từng đánh gãy tay một đội trưởng vì ép người bị thương ấn dấu vào giấy nhận tội. Hắn nói tay người không tỉnh không được dùng làm bút."
+
+Lâm Tịch nhớ tới hook cuối Tập 8 nàng chưa biết sẽ mở ra: người bị giữ tay.
+
+"Vậy nếu chữ ký là thật?"
+
+Lương Tiêu nhìn nàng.
+
+"Thì hoặc hắn bị giữ tay. Hoặc hắn không biết giấy dưới tay là gì. Hoặc người ký không phải hắn nhưng có tay hắn."
+
+Di Mạn rùng mình.
+
+"Câu cuối bỏ đi được không?"
+
+Thẩm Bạch bước tới.
+
+"Có thể dùng mẫu mô để tái tạo dấu tay, nhưng chữ ký thì khó hơn."
+
+Lương Tiêu nhìn hắn.
+
+"Trong Hắc Nha có người ký được bằng tay người khác."
+
+Tần Dã nói:
+
+"Câm."
+
+Giọng hắn không lớn.
+
+Nhưng như cửa sắt đóng lại.
+
+Không khí quanh Tần Dã thay đổi.
+
+Lâm Tịch đã thấy hắn lạnh, thấy hắn đau, thấy hắn phát sốt đến không phân biệt được hiện tại với chiến trường cũ. Nhưng khoảnh khắc này khác. Nó giống một cánh cửa trong người hắn bị đóng sầm, và phía sau cánh cửa đó có thứ mà hắn thà để mọi người hiểu lầm còn hơn mở ra giữa sân.
+
+Lương Tiêu hiểu.
+
+Nên hắn thật sự câm.
+
+Di Mạn cũng không mắng thêm.
+
+Ngay cả Bà Hôi, người thường không bỏ qua cơ hội chọc vào chỗ đau, cũng kéo cổ áo lên, giả vờ bận nhìn bụi.
+
+Có những bí mật bẩn đến mức không ai tử tế lại ép người khác kể trước bữa tối.
+
+Lương Tiêu ngậm miệng.
+
+Đám đông không hiểu hết, nhưng đủ hiểu chuyện này bẩn hơn một tờ giấy.
+
+Lâm Tịch quay sang Tần Dã.
+
+Hắn không nhìn nàng.
+
+"Ngươi đến giúp hay đến đâm?"
+
+Lương Tiêu đáp:
+
+"Đến trả nợ."
+
+"Nợ ai?"
+
+"Tần Sách. Và HN-07."
+
+Tần Dã cười lạnh.
+
+"Ta không nhớ mình cho ngươi vay."
+
+"Ngươi kéo ta khỏi mỏ bắc."
+
+"Ta kéo bốn người. Chỉ hai người sống."
+
+"Vậy ta nợ phần hai người chết."
+
+Câu ấy làm Tần Dã im.
+
+Lâm Tịch nghe trong đó một loại tính toán rất phế thổ: nợ không biến mất vì người cho nợ không nhận.
+
+Chu Kính ở ngoài vạch quan sát từ xa. Hắn không chen vào ngay, nhưng người của hắn đã ghi chép.
+
+Lâm Tịch thấy.
+
+Nàng hỏi Lương Tiêu:
+
+"Ngươi có chứng cứ?"
+
+Lương Tiêu lấy từ trong áo ra một mảnh vải dầu, mở ra. Bên trong là một mẩu thẻ ghi âm cũ, góc cháy đen.
+
+"Không chắc còn đọc được. Lấy từ xác một người giữ hồ sơ Hắc Nha. Trên nhãn có mã TS-01."
+
+Tần Dã nhìn mẩu thẻ.
+
+Mặt hắn không đổi.
+
+Nhưng Lâm Tịch thấy cốc nước bên tay hắn rung một vòng rất nhỏ.
+
+Thẩm Bạch nói:
+
+"Cần máy đọc."
+
+Lâm Tịch nhìn về phía đông.
+
+Trạm Ghi Số 12.
+
+Nếu đội A Thất còn sống, nơi đó có thể có máy.
+
+Nếu không...
+
+Nàng không nghĩ tiếp.
+
+## Chương 240: Nợ Không Vào Cổng Miễn Phí
+
+Lương Tiêu xin vào cổng.
+
+Không phải xin nước.
+
+Xin vào.
+
+Tạ Khuông lập tức nói:
+
+"Không."
+
+Di Mạn nói:
+
+"Không."
+
+Bà Hôi từ chợ nói vọng:
+
+"Không."
+
+Lương Tiêu nhìn quanh.
+
+"Ta còn chưa nói lý do."
+
+Bà Hôi đáp:
+
+"Hắc Nha xin vào cổng còn cần lý do gì? Cổng đâu có thiếu chuyện để chết."
+
+Tần Dã không nói.
+
+Lâm Tịch cũng không vội.
+
+Nàng hỏi:
+
+"Vì sao cần vào?"
+
+Lương Tiêu chỉ chân mình.
+
+"Vết cũ rách. Đi thêm sẽ để máu ngoài vạch. Máu gọi thú."
+
+Tạ Khuông cười lạnh.
+
+"Ngươi dùng thú dọa cổng?"
+
+"Ta nói sự thật."
+
+Sa Đinh không có ở đây. Người giữ cung hiện tại là Hứa Đao, hắn nhìn chân Lương Tiêu, rồi nhìn đất. Quả nhiên có vài giọt máu đen thấm qua lớp vải quấn.
+
+Mộc Sanh cũng không ở đây.
+
+Người có thể xử vết thương tốt nhất đã đi Trạm Ghi Số 12.
+
+Di Mạn quay sang Lâm Tịch.
+
+"Đừng nhìn ta. Ta nấu ăn, không vá lính đánh thuê."
+
+Thẩm Bạch nói:
+
+"Ta vá được."
+
+Bà Hôi lập tức:
+
+"Ngươi là bác sĩ phản thành, vá xong hắn phản cổng thì sao?"
+
+Thẩm Bạch nhìn bà.
+
+"Vậy lần sau ta học khâu người trung thành."
+
+Bà Hôi nghẹn một chút.
+
+Lâm Tịch nói:
+
+"Luật cổng."
+
+A Thất không có ở đây, nên Tiểu Mãn cầm bảng chạy tới thay. Chữ của nó còn trẻ con, nhưng rất cố gắng.
+
+Lâm Tịch đọc:
+
+"Người mang rủi ro vào cổng phải khai rủi ro, giao vũ khí, nhận người giám sát, trả công hoặc tin tương ứng. Nếu giấu, treo tên."
+
+Lương Tiêu gật.
+
+"Được."
+
+Hắn tháo dao bên hông, dao trong giày, kim dưới cổ tay, một sợi dây siết trong cổ áo, và cuối cùng là một mảnh xương mỏng giấu dưới lưỡi.
+
+Di Mạn nhìn đến món cuối, mặt xanh đi.
+
+"Ngươi ngậm thứ đó nói chuyện nãy giờ?"
+
+Lương Tiêu nhổ máu trong miệng.
+
+"Thói quen."
+
+Bà Hôi hét:
+
+"Không cho vào! Thói quen của hắn là kho vũ khí!"
+
+Tần Dã lúc này mới nói:
+
+"Còn một cái."
+
+Lương Tiêu nhìn hắn.
+
+Tần Dã chỉ vai trái.
+
+"Dưới da."
+
+Lương Tiêu im một lúc, rồi bật cười khàn.
+
+"Ngươi vẫn khó chịu như cũ."
+
+Hắn dùng dao của Tạ Khuông rạch một đường nhỏ trên vai, lấy ra một mảnh kim loại bằng móng tay, dính máu.
+
+"Định vị cũ. Hết pin rồi."
+
+Thẩm Bạch nhận lấy, kiểm.
+
+"Không hết hẳn."
+
+Không khí lạnh xuống.
+
+Lương Tiêu nhíu mày.
+
+"Không thể nào."
+
+Tần Dã nói:
+
+"Hắc Nha không làm đồ dễ chết vậy."
+
+Lâm Tịch nhìn mảnh định vị.
+
+"Ai đang theo?"
+
+Thẩm Bạch đáp:
+
+"Nếu còn tín hiệu yếu, trong bán kính gần có thể bắt."
+
+Ngoài cổng, Chu Kính bỗng quay đầu nhìn về phía bắc.
+
+Ninh không ở đây.
+
+Không ai nghe thay họ.
+
+Nhưng vài giây sau, những con quạ mù trên cột thép xa xa đồng loạt bay lên.
+
+Tạ Khuông siết giáo.
+
+"Thú?"
+
+Tần Dã nhìn mảnh định vị, mặt tối lại.
+
+"Không. Người."
+
+Lương Tiêu chửi một câu.
+
+"Ta bị bám."
+
+Bà Hôi tức đến giậm chân.
+
+"Ta nói không cho vào mà!"
+
+Lâm Tịch nhìn Lương Tiêu.
+
+"Ngươi trả nợ kiểu này?"
+
+Lương Tiêu cười méo.
+
+"Ta có thể trả thêm."
+
+"Bằng gì?"
+
+"Bằng cách nói cho ngươi biết: nếu người bám ta là đội cũ, chúng không đến vì ta."
+
+Hắn nhìn Tần Dã.
+
+"Chúng đến vì HN-07 và mẩu thẻ TS-01."
+
+Từ phía bắc, tiếng động cơ rất thấp bắt đầu nổi lên trong bụi.
+
+Chu Kính ngoài vạch khép sổ lại.
+
+Lâm Tịch chợt hiểu.
+
+Sáu giờ của Thành Nam chưa kết thúc.
+
+Nhưng một phe khác đã không định chờ giấy đọc xong.

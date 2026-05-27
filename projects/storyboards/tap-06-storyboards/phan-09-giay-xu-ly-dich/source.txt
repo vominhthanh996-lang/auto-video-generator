@@ -1,0 +1,577 @@
+# Phần 9: Giấy Xử Lý Dịch
+
+## Chương 205: Con Dấu Đỏ Từ Thành Nam
+
+Giấy xử lý dịch được đưa tới bằng một con drone nhỏ.
+
+Nó bay xiêu vẹo qua đàn thú gắn thẻ bạc, dưới bụng treo một ống kim loại. Khi tới trên cổng tạm, nó không hạ xuống ngay mà xoay ba vòng, như thể cũng không tin cái đống xe rác, bảng than, người xếp hàng và nồi méo bên dưới lại là thứ khiến thành Nam phải đóng dấu.
+
+A Thất ngẩng đầu nhìn, mắt sáng.
+
+"Máy bay nhỏ."
+
+Mộc Sanh nói:
+
+"Đừng nghĩ."
+
+"Ta chưa nói gì."
+
+"Mặt ngươi nói muốn tháo."
+
+Drone thả ống kim loại xuống ngoài vạch, rồi bay ngược về phía thành Nam. Kỷ Nam bắn một phát vào đất dưới nó, không trúng. Chỉ để nó biết đã bị nhìn.
+
+Ống kim loại lăn tới chân Lý Cù.
+
+Ông già nhìn nó như nhìn rắn.
+
+"Ai mở?"
+
+Thang Nhuệ bước tới.
+
+"Ta."
+
+Lâm Tịch nhìn bà.
+
+"Bà biết là gì?"
+
+"Có thể đoán."
+
+Ống mở ra bằng khóa cơ. Bên trong là một tờ giấy chống nước, đóng dấu đỏ của Sở Cư Trú thành Nam và một dấu bạc nhỏ của Ngân Thụ.
+
+Thang Nhuệ đọc.
+
+Giọng bà bình hơn mặt.
+
+"Trạm Lọc số Chín, khu Nam ngoài tường, được xác định là điểm tụ tập không phép có nguy cơ lây lan sinh học, kích động dân thải cư, chiếm dụng nguồn nước chưa kiểm định, tiếp xúc mẫu cấp một..."
+
+A Thất lẩm bẩm:
+
+"Nó gọi dài như vậy để khỏi nói người khát."
+
+Thang Nhuệ đọc tiếp:
+
+"Yêu cầu trong vòng sáu giờ: giao nộp đối tượng Lâm Tịch, mẫu thực vật liên quan, toàn bộ dữ liệu nước, giải tán đám đông, bàn giao trạm cho đội xử lý dịch. Nếu không, thành Nam có quyền dùng biện pháp đốt sạch khu nhiễm."
+
+Không ai nói gì.
+
+Hai chữ "đốt sạch" không cần giải thích.
+
+Người trong hàng bắt đầu lùi.
+
+Một người mẹ ôm con hỏi:
+
+"Đốt thật không?"
+
+Không ai trả lời ngay.
+
+Thẩm Bạch nhìn tờ giấy, sắc mặt không đẹp.
+
+Lâm Tịch hỏi:
+
+"Ông biết trước?"
+
+"Không phải mức này."
+
+"Nhưng biết sẽ có?"
+
+"Ta biết sẽ có phản ứng. Không biết họ chọn đốt."
+
+Kỷ Nam cười lạnh.
+
+"Ngạc nhiên vì chủ mình dùng lửa?"
+
+Thẩm Bạch đáp:
+
+"Ta ngạc nhiên vì họ dùng quá sớm."
+
+Câu đó còn lạnh hơn.
+
+Di Mạn giật tờ giấy từ tay Thang Nhuệ, nhìn dấu đỏ.
+
+"Sáu giờ."
+
+Lý Cù ngồi xuống, như đầu gối không chịu nổi.
+
+Sa Đinh đặt tay lên cung.
+
+Hứa Đao nhìn Lâm Tịch.
+
+"Giao ngươi ra, họ có thật sự tha trạm không?"
+
+Tần Dã nói:
+
+"Không."
+
+Hứa Đao quay sang.
+
+Tần Dã ngồi dựa cột, tay phải vẫn yếu nhưng mắt rất rõ.
+
+"Giao Lâm Tịch ra, trạm mất lý do đốt ngay, nhưng không mất lý do kiểm soát. Họ lấy cây, lấy dữ liệu, lấy bơm. Người ở lại bị phân loại. Người không có giấy bị đẩy đi."
+
+Thang Nhuệ không phản bác.
+
+Điều đó làm người ta hiểu hắn nói đúng.
+
+Một người trong đám đông run giọng:
+
+"Vậy không giao thì bị đốt. Giao thì cũng mất. Chúng ta làm gì?"
+
+Không ai có câu trả lời sạch.
+
+Lâm Tịch nhìn tờ giấy.
+
+Sáu giờ.
+
+Đó là đồng hồ đếm ngược đầu tiên của Trạm Số Chín.
+
+Không phải thiếu nước.
+
+Không phải thiếu thuốc.
+
+Là thiếu quyền được tồn tại.
+
+Nàng hỏi Thẩm Bạch:
+
+"Đốt bằng gì?"
+
+"Đội xử lý dịch thường dùng hỗn hợp cháy nhiệt cao, drone rải trước, đội mặt đất khóa sau. Nếu coi là sinh học, họ sẽ tránh tiếp xúc trực tiếp."
+
+Mộc Sanh hỏi:
+
+"Tầm drone?"
+
+Thẩm Bạch nhìn nàng.
+
+"Từ thành Nam tới đây đủ."
+
+A Thất nuốt nước bọt.
+
+"Bắn được không?"
+
+Kỷ Nam đáp:
+
+"Một vài cái. Không phải cả đàn."
+
+Tần Dã nói:
+
+"Không nên đợi drone tới."
+
+Lâm Tịch gật đầu.
+
+"Bàn người trạm họp."
+
+Lần này không ai cười vì mấy viên đá ghế.
+
+Bàn họp trên tấm cửa gãy được kéo ra giữa cổng. Tờ giấy xử lý dịch đặt ở trung tâm, như một con thú đỏ nằm im.
+
+Các ghế tới đủ: Lâm Tịch, Di Mạn, Mộc Sanh, Lý Cù, Hứa Đao, Sa Đinh. A Thất ghi. Tiểu Mãn ôm nồi Mãn ngồi sau Di Mạn. Thang Nhuệ đứng ngoài nhưng được mời làm người chứng kiến. Thẩm Bạch cũng đứng đó, dưới sự giám sát của Kỷ Nam.
+
+Lý Cù hỏi:
+
+"Đánh?"
+
+Kỷ Nam đáp thay:
+
+"Không đủ."
+
+Sa Đinh:
+
+"Chạy?"
+
+Mộc Sanh:
+
+"Xe không đủ, người bệnh quá nhiều, thú vây ngoài."
+
+Hứa Đao nhìn Lâm Tịch.
+
+"Giao người?"
+
+Di Mạn đặt dao xuống bàn.
+
+"Ai nói lại câu đó thì ra ngoài cổng."
+
+Hứa Đao giơ tay:
+
+"Ta hỏi để gạch."
+
+Lâm Tịch nhìn tờ giấy.
+
+"Không giao người. Không bỏ trạm. Không đợi bị đốt."
+
+A Thất ngẩng đầu.
+
+"Vậy còn gì?"
+
+Tần Dã nói:
+
+"Làm cho họ không thể đốt mà không bị nhìn."
+
+"Ta phát tin rồi."
+
+"Chưa đủ. Tin nói chúng ta ở đây. Giờ phải cho thấy trong sáu giờ này ai ở đây."
+
+Lâm Tịch hiểu.
+
+"Danh sách sống."
+
+Tần Dã gật.
+
+"Tên, tuổi nếu biết, bệnh, việc làm, nguồn tới. Phát ra liên tục. Để mỗi người bị đốt có tên."
+
+Lý Cù nhìn bảng tên.
+
+"Nhiều người không muốn khai."
+
+Di Mạn nói:
+
+"Muốn trạm giữ thì phải để trạm gọi tên. Không tên thì khi cháy chỉ là số."
+
+Tiểu Mãn ôm nồi Mãn, mặt trắng nhưng nói:
+
+"Tên khó mất hơn."
+
+Không ai nói gì trong một nhịp.
+
+Lâm Tịch gật đầu.
+
+"A Thất, mở phòng radio tạm."
+
+Mắt A Thất sáng lên giữa lúc không nên sáng.
+
+"Phòng radio tạm chính thức hoạt động?"
+
+"Hoạt động."
+
+"Cần bảng, dây, người đọc, người kiểm tên."
+
+"Lấy."
+
+Thang Nhuệ bỗng nói:
+
+"Máy phát xe an ninh dùng được ba giờ."
+
+Mọi người quay sang.
+
+Bà ta nhìn tờ giấy.
+
+"Nếu thành đốt, người của ta cũng nằm trong danh sách sống."
+
+Một câu ích kỷ.
+
+Nhưng đủ.
+
+Thẩm Bạch nói:
+
+"Ta có thiết bị ghi sinh hiệu. Có thể chứng minh người bệnh không phải ổ dịch hoạt tính."
+
+Di Mạn nhìn hắn.
+
+"Dịch hoạt tính là gì?"
+
+"Bị bệnh lây nguy hiểm."
+
+"Vậy nói họ là người sốt, người mất nước, người ho máu vì nghèo. Đừng nói chữ làm người khác tưởng họ là rác độc."
+
+Thẩm Bạch im một nhịp.
+
+"Được."
+
+Trong vòng nửa giờ, Trạm Số Chín chuyển từ hàng nước sang hàng tên.
+
+Mỗi người tới trước cổng, nói tên hoặc chọn tên muốn được gọi. A Thất ghi. Tiểu Mãn vẽ ký hiệu. Lý Cù kiểm. Sa Đinh đọc nhóm ngoài cổng. Di Mạn xác nhận người bệnh. Thang Nhuệ đọc tên lính thành Nam bị kẹt ở trạm. Thẩm Bạch buộc phải đọc rõ từng tình trạng bệnh bằng tiếng người.
+
+Vân Chẩm bế A Bình tới.
+
+"Vân Chẩm. Vá áo. Từng đem than giả. Đang làm khu y tế trả lỗi. Con là A Bình, sốt cao."
+
+A Thất ngẩng lên.
+
+"Không cần đọc lỗi."
+
+Vân Chẩm nói:
+
+"Cần. Để nếu chết, người ta biết ta không chỉ là lỗi."
+
+A Thất cúi đầu viết.
+
+Hứa Đao tới:
+
+"Hứa Đao. Đào rãnh. Từng đem than độc. Hiện giữ cổng dưới đất."
+
+Lý Cù hừ:
+
+"Nghe còn tự hào."
+
+"Ta đào đẹp."
+
+Tiểu Mãn tới sau cùng trong nhóm trẻ.
+
+"Tiểu Mãn. Giữ nồi Mãn. Đội ký hiệu."
+
+A Thất hỏi:
+
+"Tuổi?"
+
+"Không biết."
+
+Di Mạn nói:
+
+"Ghi: đủ lớn để giữ nồi, chưa đủ lớn để mất phần trẻ."
+
+A Thất viết y nguyên.
+
+Lâm Tịch đứng nhìn hàng tên dài ra.
+
+Mỗi cái tên là một sợi dây buộc người đó với trạm.
+
+Cũng là một sợi dây buộc trạm với nguy hiểm.
+
+Vì một khi đã gọi tên họ, nàng không thể dễ dàng nói "đóng cổng bỏ lại" nữa.
+
+Nhưng nếu không gọi, Ngân Thụ sẽ đốt một "ổ dịch".
+
+Gọi tên là cách đầu tiên để chống lại lửa.
+
+## Chương 206: Sáu Giờ Trước Khi Đốt
+
+Giờ thứ nhất, radio phát tên.
+
+Giọng A Thất khàn đi rất nhanh. Nó đọc tên, đọc việc, đọc bệnh, đọc luật. Cứ mười tên lại nhắc:
+
+`Trạm Số Chín có nước chưa đạt chuẩn. Người bệnh, mất máu, trẻ nhỏ uống trước. Chúng ta không bán người đổi nước. Thành Nam gửi giấy xử lý dịch trong sáu giờ. Đây là danh sách người sống đang ở trong trạm.`
+
+Ban đầu chỉ có tiếng nhiễu trả lời.
+
+Sau đó có giọng từ Trạm Chợ Gãy:
+
+`Nghe thấy. Đang ghi.`
+
+Rồi đội nhặt sắt cầu Đông:
+
+`Nghe thấy. Sa Đinh, mẹ ngươi hỏi ngươi còn sống không.`
+
+Sa Đinh đang gác cổng, mặt đột nhiên cứng lại.
+
+"Nói ta còn."
+
+A Thất lập tức đọc:
+
+`Sa Đinh còn sống, đang gác cổng, chưa uống lượt chiều vì nhường người bệnh.`
+
+Sa Đinh quay đầu:
+
+"Không cần nói câu sau!"
+
+A Thất:
+
+"Đã phát."
+
+Trong trạm có tiếng cười nhỏ.
+
+Giờ thứ hai, thành Nam phát tín hiệu nhiễu.
+
+Radio rè đi. Máy phát xe an ninh nóng lên. Mộc Sanh tháo vỏ, dùng nước thô làm mát ống dẫn nhiệt, mặt lạnh như đang mổ một con vật sống.
+
+"Nếu cứ phát, máy cháy."
+
+A Thất hỏi:
+
+"Cháy tới mức sửa được không?"
+
+"Tới mức ngươi khóc."
+
+"Vậy vẫn phát."
+
+Mộc Sanh nhìn nó.
+
+Nó không né.
+
+"Radio của ta từng chết một lần rồi. Phòng radio không thể chết trước khi có phòng."
+
+Mộc Sanh không nói gì nữa.
+
+Nàng nối thêm dây đồng Sa Đinh đổi tới.
+
+Giờ thứ ba, drone đầu tiên xuất hiện trên trời.
+
+Không mang ống giấy.
+
+Mang bình nhỏ dưới bụng.
+
+Kỷ Nam bắn rơi một cái. Sa Đinh bắn lệch hai cái để ép chúng lên cao. Mộc Sanh dùng tấm kim loại phản quang làm nhiễu cảm biến. Thang Nhuệ lấy mã an ninh thấp, khiến hai drone quay vòng một nhịp trước khi tiếp tục.
+
+Không đủ để thắng.
+
+Nhưng đủ để kéo thời gian.
+
+Thẩm Bạch nhìn bầu trời, nói:
+
+"Đây chỉ là thăm dò gió."
+
+Di Mạn hỏi:
+
+"Nghĩa là?"
+
+"Chúng đo hướng rải chất cháy."
+
+Tiểu Mãn ôm nồi Mãn chặt tới mức khớp tay trắng bệch.
+
+Lâm Tịch ngẩng đầu nhìn drone như nhìn những con ruồi bạc.
+
+"Phát tiếp."
+
+Giờ thứ tư, có nhóm người ngoài phế thổ bắt đầu tới gần.
+
+Không vào cổng.
+
+Họ đứng xa, giơ vải trắng, giơ bảng gỗ, giơ đèn. Không ít người chỉ tới để xem liệu thành Nam có thật sự đốt một nơi đầy tên hay không.
+
+Ngân Thụ thích bóng tối.
+
+Tần Dã nói đúng.
+
+Khi quá nhiều mắt nhìn, lửa vẫn có thể rơi, nhưng người châm lửa sẽ phải tính thêm giá.
+
+Giờ thứ năm, Thẩm Bạch nhận được tín hiệu riêng.
+
+Kỷ Nam phát hiện vì thiết bị hắn run rất nhẹ.
+
+"Đọc to."
+
+Thẩm Bạch nhìn màn hình.
+
+Lâm Tịch đứng trước mặt hắn.
+
+"Đọc."
+
+Hắn thở ra.
+
+"Lệnh cập nhật: nếu không thể tách mẫu sống khỏi đám đông mà không tạo sự kiện lan truyền, chuyển sang phương án cô lập dài hạn. Đội xử lý dịch giữ quyền đốt nếu xuất hiện dấu hiệu bạo loạn."
+
+A Thất lập tức:
+
+"Nghĩa là họ chưa đốt ngay?"
+
+Tần Dã nói:
+
+"Nghĩa là họ đợi chúng ta tự loạn."
+
+Như để chứng minh, ngoài cổng bỗng vang lên tiếng la.
+
+Một nhóm người mới tới cố chen qua cổng, nói có trẻ sắp chết. Phía sau họ, vài kẻ lợi dụng hỗn loạn đẩy ngã thùng vũ khí. Cung, dao, móc sắt rơi ra.
+
+Trong đám đông có người hét:
+
+"Thành sắp đốt rồi, còn xếp hàng cái gì!"
+
+Hỗn loạn lan rất nhanh.
+
+Nhanh hơn lửa.
+
+Lâm Tịch lao tới cổng. Kỷ Nam đã nâng súng, nhưng chưa bắn. Sa Đinh giữ cung. Hứa Đao dùng thân chặn thùng vũ khí, bị một người đấm vào mặt.
+
+Tiểu Mãn gõ nồi ba tiếng.
+
+Keng. Keng. Keng.
+
+Trẻ con nằm xuống.
+
+Di Mạn hét:
+
+"Người bệnh giữ chỗ! Ai chạy qua khu y tế, cắt nước!"
+
+Không đủ.
+
+Đám đông sợ bị đốt. Khi sợ bị lửa, luật nước nghe quá nhỏ.
+
+Lâm Tịch trèo lên xe rác.
+
+"Nghe!"
+
+Không ai nghe.
+
+Nàng rút dao, cắt dây buộc túi nước thô treo trên cổng.
+
+Túi nước rơi xuống, vỡ tung trước vạch.
+
+Nước thô bắn lên chân mọi người.
+
+Âm thanh nước đổ làm cả đám khựng lại.
+
+Trong phế thổ, tiếng nước rơi xuống đất còn đau hơn tiếng súng.
+
+Lâm Tịch đứng trên xe, giọng khàn:
+
+"Ai làm loạn thêm, túi tiếp theo là nước lọc."
+
+Mọi người cứng người.
+
+Di Mạn ở dưới nghiến răng:
+
+"Con bé này..."
+
+Lâm Tịch nhìn đám đông.
+
+"Thành muốn chờ chúng ta tự biến thành cớ để nó đốt. Ai muốn làm cái cớ đó, bước tiếp."
+
+Không ai bước.
+
+Một người ôm đứa trẻ sắp chết bật khóc:
+
+"Nó thật sự sắp chết!"
+
+Lâm Tịch chỉ khu y tế.
+
+"Đưa trẻ qua lối bệnh. Hai người đi cùng. Những người khác lùi. Ai cầm vũ khí đặt xuống. Không ai mất lượt vì vừa sợ. Nhưng ai nhân lúc sợ để cướp, xử theo cổng đêm."
+
+Hứa Đao nhổ máu trong miệng ra.
+
+"Ta làm chứng thằng áo xám kia cướp dao."
+
+Người áo xám lập tức bị ba người giữ lại.
+
+Hỗn loạn chậm lại.
+
+Chưa hết.
+
+Nhưng chậm.
+
+Giờ thứ sáu, drone không rải lửa.
+
+Chúng bay vòng trên cao, rồi rút về hướng thành Nam.
+
+Không ai dám reo.
+
+Vì lệnh chưa hủy.
+
+Chỉ hoãn.
+
+Thẩm Bạch nhìn thiết bị, đọc:
+
+"Phương án đốt trực tiếp tạm dừng. Trạm Số Chín chuyển sang cấp cô lập. Theo dõi bảy ngày."
+
+A Thất ngồi phịch xuống đất.
+
+"Bảy ngày nghe dài như cả đời."
+
+Di Mạn đáp:
+
+"Sống thêm bảy ngày rồi chửi."
+
+Lâm Tịch đứng trên xe rác, nhìn những gương mặt phía dưới. Sợ hãi, mệt mỏi, tức giận, nghi ngờ, nhẹ nhõm, khát.
+
+Họ sống qua sáu giờ.
+
+Nhưng cũng học được rằng chỉ cần một tin lửa, hàng nước có thể biến thành đám đông giẫm lên nhau.
+
+Đêm đó, nàng tự tay viết thêm vào bảng cổng:
+
+`Khi có lệnh đốt, không ai được chen qua cổng bệnh. Người sợ có thể nói sợ. Người nhân lúc sợ để cướp, xử theo cổng đêm.`
+
+A Thất nhìn dòng cuối.
+
+"Chúng ta vẫn chưa định nghĩa cổng đêm."
+
+Lâm Tịch nhìn bóng tối ngoài cổng.
+
+"Sắp phải định nghĩa rồi."

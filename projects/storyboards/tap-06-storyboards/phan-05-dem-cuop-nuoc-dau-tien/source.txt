@@ -1,0 +1,659 @@
+# Phần 5: Đêm Cướp Nước Đầu Tiên
+
+## Chương 197: Dây Bơm Bị Cắt
+
+Đêm thứ hai, cổng tạm đứng yên quá lâu.
+
+Đó là điều đầu tiên khiến Tần Dã nghi ngờ.
+
+Phế thổ không yên như vậy quanh một nơi có nước. Nếu người không gây chuyện, thú sẽ. Nếu thú im, gió sẽ mang bụi độc tới. Nếu cả gió cũng nhẹ, nghĩa là có thứ gì đó đang cúi thấp.
+
+Hắn nằm trong khu nghỉ, sốt chưa hạ, tay phải vẫn yếu. Nhưng mắt hắn nhìn ra cổng qua khe giữa hai tấm xe rác. Lâm Tịch vừa đi kiểm hàng nước trở về, thấy hắn chưa ngủ.
+
+"Anh lại nhìn cổng."
+
+"Ừ."
+
+"Đau đầu không?"
+
+"Có."
+
+"Vẫn nhìn?"
+
+"Vì yên quá."
+
+Lâm Tịch dừng lại.
+
+Nàng học được một việc: khi Tần Dã nói một thứ "quá" cái gì đó, tốt nhất nên tin.
+
+Nàng gọi Kỷ Nam.
+
+Kỷ Nam nghe xong, không hỏi thừa. Hắn ra cổng, vòng qua xe rác, cúi xuống kiểm đất. Một lát sau, hắn quay lại, mặt lạnh.
+
+"Có người bò qua rãnh phía Tây."
+
+Hứa Đao, đang ngủ gật sau ca đào, lập tức bật dậy.
+
+"Rãnh ta đào?"
+
+"Ừ."
+
+"Ta đã chèn gai."
+
+"Họ cắt."
+
+Hứa Đao chửi một câu rất bẩn, cầm xẻng chạy theo Kỷ Nam.
+
+Lâm Tịch gọi A Mục:
+
+"Đưa trẻ con lên tầng giữa. Không la."
+
+A Mục gật đầu, mặt trắng nhưng chạy rất nhanh.
+
+Di Mạn lập tức gom người bệnh. Mộc Sanh lao tới phòng bơm. A Thất ôm bảng ghi, muốn chạy theo nàng, bị Di Mạn kéo cổ áo.
+
+"Tay ngươi."
+
+"Ta chỉ..."
+
+"Ở lại giữ trẻ."
+
+A Thất há miệng, rồi nhìn Tiểu Mãn đang ôm nồi, nhìn Hồ Tử sốt, nhìn mấy đứa nhỏ mới tới. Nó nghiến răng.
+
+"Được."
+
+Phòng bơm tối hơn thường.
+
+Mộc Sanh vừa xuống đã nghe tiếng nước sai nhịp. Bơm chính vẫn chạy, nhưng rung động không đều. Nàng soi đèn xuống dây nguồn phụ.
+
+Dây bị cắt.
+
+Không đứt hẳn.
+
+Chỉ cắt gần hết, để nó cháy chậm.
+
+"Khốn kiếp."
+
+Đó là lần đầu Lâm Tịch nghe Mộc Sanh chửi như vậy.
+
+Nàng hỏi:
+
+"Sửa được không?"
+
+"Được nếu có năm phút không bị giết."
+
+"Ta kiếm năm phút."
+
+Kỷ Nam từ ngoài chạy vào.
+
+"Ba người. Có thể còn hai ngoài cổng. Không phải nhóm Hứa Đao."
+
+Hứa Đao theo sau, mặt đen như đáy nồi.
+
+"Đương nhiên không phải ta."
+
+Kỷ Nam liếc hắn.
+
+"Chưa ai hỏi."
+
+Một tiếng động vang dưới bể lọc.
+
+Không phải cá sấu.
+
+Là người trượt trên kim loại.
+
+Lâm Tịch nâng dao.
+
+Từ bóng tối giữa hai ống, một bóng người lao ra, tay cầm móc sắt nhắm vào cổ Mộc Sanh.
+
+Kỷ Nam đá hắn ngã trước khi móc chạm tới.
+
+Hứa Đao dùng xẻng đập vào cổ tay kẻ đó. Móc sắt rơi xuống. Người kia rên lên, nhưng lập tức cắn vào cổ tay Hứa Đao.
+
+Hứa Đao gầm:
+
+"Chó à!"
+
+Lâm Tịch kéo dây trói từ cột bơm, quấn vào chân kẻ đó. Nàng không đâm.
+
+Không phải vì mềm lòng.
+
+Vì cần biết còn ai.
+
+Kỷ Nam đè người kia xuống.
+
+"Ai phái?"
+
+Kẻ đó cười, miệng đầy bùn.
+
+"Nước không có chủ."
+
+Hứa Đao tát hắn một cái.
+
+"Đang hỏi ai phái."
+
+"Đói phái."
+
+Một câu rất phế thổ.
+
+Nhưng không đủ.
+
+Mộc Sanh hét:
+
+"Dây!"
+
+Lâm Tịch lập tức quay lại. Mạch dây phụ bắt đầu bốc khói. Nếu cháy, bơm dừng. Nếu bơm dừng, nước trong bể sẽ tràn ngược, cá sấu cống có thể phá van lần nữa.
+
+Mộc Sanh cần người giữ hai đầu dây.
+
+Lâm Tịch nắm một đầu.
+
+Dòng điện tê qua tay nàng.
+
+Không mạnh, nhưng đủ làm vết thương cũ nhói lên.
+
+Mộc Sanh quấn đồng, cắn vải, ép nối.
+
+"Đừng buông."
+
+"Không."
+
+Bên ngoài, tiếng kim loại va vang lên.
+
+Kẻ thứ hai đã tới cổng.
+
+Người gác đêm hô:
+
+"Có cướp!"
+
+Trạm thức dậy.
+
+Nhưng không vỡ ngay.
+
+Đó là điều khác với hai ngày trước.
+
+A Thất đứng trên tầng giữa, giọng khàn vì hét:
+
+"Trẻ con ngồi xuống! Người bệnh giữ chăn! Ai không có việc thì nằm thấp! Ai cầm nước đậy nắp!"
+
+Tiểu Mãn gõ nồi Mãn ba tiếng.
+
+Keng. Keng. Keng.
+
+Đó là tín hiệu trẻ con tập từ chiều: ba tiếng là nằm xuống.
+
+Mấy đứa trẻ lập tức nằm xuống sau bao cát.
+
+Di Mạn cầm dao đứng trước khu y tế.
+
+Một kẻ cướp leo qua xe rác, vừa thò đầu vào đã bị Lý Cù dùng gậy đập vào mặt. Sa Đinh của đội nhặt sắt, dù chưa được tính là người trạm, rút cây cung đã gửi trong thùng.
+
+Người giữ thùng là Hứa Đao không có mặt.
+
+Nàng nhìn Lý Cù.
+
+Ông già gật một cái.
+
+Sa Đinh bắn.
+
+Mũi tên ghim vào áo kẻ cướp, không trúng tim, nhưng kéo hắn ngã khỏi xe rác.
+
+Sau đó nàng lập tức đặt cung xuống lại ngoài vạch.
+
+"Mượn dùng."
+
+Lý Cù thở phì phò:
+
+"Ghi nợ giải thích sau."
+
+Trong phòng bơm, Mộc Sanh nối xong dây.
+
+Bơm rung mạnh, rồi ổn lại.
+
+Lâm Tịch buông tay, lòng bàn tay tê đến không cảm giác.
+
+Mộc Sanh nhìn nàng.
+
+"Bỏng?"
+
+"Không sao."
+
+"Câu đó cấm dùng ở khu máy."
+
+Lâm Tịch suýt cười, nhưng tiếng súng bên ngoài cắt ngang.
+
+Kỷ Nam kéo kẻ bị bắt đứng dậy, dí súng vào lưng hắn.
+
+"Ra."
+
+Lâm Tịch nói:
+
+"Sống."
+
+"Biết."
+
+Họ kéo người ra cổng.
+
+Cuộc cướp nước đầu tiên kết thúc trong chưa đầy mười phút.
+
+Một kẻ bị bắt. Một kẻ bị tên ghim vai. Một kẻ chạy mất trong bụi đỏ. Dây bơm suýt cháy. Ba bình nước lọc bị đổ. Một đứa trẻ bị xước vì lăn xuống nền. Không ai chết.
+
+Không ai chết.
+
+Câu đó làm Di Mạn ngồi xuống một lúc.
+
+Rồi bà đứng dậy, chỉ vào ba bình nước bị đổ.
+
+"Ghi thiệt hại."
+
+A Thất ôm bảng chạy xuống.
+
+"Ba bình nước."
+
+Di Mạn bổ sung:
+
+"Hai lượt thuốc bị chậm. Một dây bơm hỏng. Một đêm ngủ mất."
+
+Hứa Đao kéo kẻ bị bắt quỳ dưới cổng.
+
+"Còn một vết cắn của ta."
+
+Di Mạn liếc hắn.
+
+"Ngươi tự tìm người cắn."
+
+Hứa Đao:
+
+"Ta bị cắn!"
+
+Mộc Sanh từ phòng bơm đi ra.
+
+"Dây sửa được. Nhưng mất đoạn đồng tốt. Phải bù."
+
+Mọi ánh mắt rơi lên kẻ bị bắt.
+
+Hắn cười khàn.
+
+"Giết đi."
+
+Lâm Tịch nhìn hắn.
+
+"Tên?"
+
+"Không có."
+
+"Ai cũng có tên."
+
+"Không ở đây."
+
+Kỷ Nam nói:
+
+"Đám cướp nước thường bỏ tên khi vào việc. Để bị bắt không khai."
+
+Lâm Tịch cúi xuống.
+
+"Vậy ở đây gọi ngươi là Dây Cắt."
+
+Kẻ đó nhìn nàng như nhìn người điên.
+
+"Ngươi định làm gì?"
+
+"Bắt ngươi sửa thứ ngươi cắt."
+
+Hắn cười lớn.
+
+"Ta cắt dây bơm, ngươi cho ta ở lại làm việc?"
+
+"Không ở lại. Bị giữ. Làm dưới mắt người khác. Nước phần tù, không phần làm. Khi trả đủ dây đồng, thả ra ngoài cổng."
+
+Hứa Đao bất mãn:
+
+"Thả? Hắn cắt bơm!"
+
+Lâm Tịch nhìn hắn.
+
+"Ngươi đem than độc."
+
+"Khác!"
+
+"Đúng. Nên hắn bị trói."
+
+Hứa Đao nghẹn.
+
+Kỷ Nam nói:
+
+"Nếu thả, hắn dẫn người quay lại."
+
+Lâm Tịch đáp:
+
+"Nếu giết, đám ngoài kia cũng quay lại. Nhưng lần sau họ sẽ biết vào trạm là chết, không phải luật."
+
+Kỷ Nam nhìn nàng.
+
+"Có lúc giết mới giữ được luật."
+
+"Ta biết."
+
+"Nhưng không phải lần này?"
+
+Lâm Tịch nhìn dây bơm vừa được nối lại, nhìn ba bình nước đổ, nhìn những đứa trẻ vẫn run trên tầng.
+
+"Không phải lần đầu tiên."
+
+Đêm ấy, trên bảng luật thêm dòng:
+
+`Phá máy, cắt dây, làm hỏng nước: giữ lại sửa. Cướp có vũ khí gây chết người: xử theo cổng đêm.`
+
+A Thất viết xong, hỏi nhỏ:
+
+"Xử theo cổng đêm là gì?"
+
+Lâm Tịch nhìn ra bóng tối ngoài cổng.
+
+"Ngày mai viết."
+
+Vì có vài luật, chỉ khi thật sự cần mới nên đặt tên.
+
+## Chương 198: Người Chạy Mất
+
+Người chạy mất để lại một chiếc giày.
+
+Chiếc giày nằm ngoài rãnh phía Tây, mũi giày rách, đế buộc bằng dây điện. A Mục nhặt được lúc trời gần sáng. Nó không chạm tay trực tiếp, dùng que gỗ móc lên như móc một con thú nhỏ chết.
+
+Trong giày có một mảnh giấy.
+
+Không phải giấy lệnh.
+
+Một mảnh bao bột vàng, xé vội, trên đó vẽ sơ đồ Trạm Số Chín bằng than. Cổng tạm, máng lọc, khu y tế, phòng bơm đều được đánh dấu. Chỗ dây nguồn phụ có một vòng tròn.
+
+A Mục đem tới cho Lâm Tịch.
+
+"Có người chỉ đường."
+
+Lâm Tịch nhìn mảnh giấy.
+
+Không cần nói cũng biết.
+
+Người cắt dây không tự mò ra phòng bơm nhanh như vậy. Trạm mới lập hai ngày, sơ đồ chỉ người đã vào, đã nhìn, hoặc đã quan sát kỹ từ trên cao mới vẽ được.
+
+Tin này làm cả trạm lạnh đi.
+
+Hứa Đao lập tức:
+
+"Nội gián."
+
+Từ đó rơi xuống hàng nước như đá.
+
+Người cũ nhìn người mới.
+
+Người mới nhìn người cũ.
+
+Người khu xám nhìn đội nhặt sắt cầu Đông.
+
+Đội cầu Đông nhìn nhóm Chợ Gãy.
+
+Lính thành Nam nhìn ai cũng như nhìn tội phạm.
+
+Thẩm Bạch đứng một bên, không nói, nhưng ánh mắt rất rõ: đây là lý do tổ chức thích kiểm soát.
+
+Di Mạn đập cốc đong xuống bàn.
+
+"Ai nói nội gián nữa thì ra đào rãnh."
+
+Hứa Đao cau mày:
+
+"Không tìm thì chờ nó cắt dây lần hai?"
+
+"Tìm. Nhưng không cắn nhau ở hàng nước."
+
+Lâm Tịch nhìn Hứa Đao.
+
+"Ngươi biết cách điều tra đám cướp?"
+
+"Biết cách đánh cho khai."
+
+"Không dùng."
+
+"Vậy hỏi nó tự khai à?"
+
+Kẻ bị bắt, Dây Cắt, bị trói cạnh cột sắt, cười khàn.
+
+"Ta không biết ai đưa. Giày tự mọc giấy."
+
+Kỷ Nam đi tới, cúi xuống trước mặt hắn.
+
+"Ngươi có thể không biết tên. Nhưng biết cách giao."
+
+Dây Cắt im.
+
+Kỷ Nam nói:
+
+"Không khai tên, khai vật. Ai đưa? Tay sạch hay bẩn? Mùi gì? Giọng nam hay nữ? Đổi gì?"
+
+Dây Cắt nhìn hắn.
+
+"Ngươi từng làm nghề này."
+
+"Ừ."
+
+"Vậy biết ta nói xong cũng chết."
+
+"Ở đây chưa chắc."
+
+"Ngoài kia chắc."
+
+Kỷ Nam im một nhịp.
+
+Đây là sự thật.
+
+Lâm Tịch ngồi xuống trước Dây Cắt.
+
+"Ngươi cần gì để nói?"
+
+Hắn cười.
+
+"Nước."
+
+Đám đông nổi giận.
+
+"Hắn cắt dây còn đòi nước?"
+
+"Cho hắn uống bùn!"
+
+Di Mạn không nói.
+
+Bà nhìn Lâm Tịch.
+
+Lâm Tịch hỏi:
+
+"Theo luật, tù phá máy có phần nước giữ mạng không?"
+
+A Thất cúi nhìn bảng.
+
+"Chưa ghi."
+
+"Ghi. Người bị giữ cũng có phần nước giữ mạng. Không có phần làm. Muốn thêm, sửa lỗi."
+
+Dây Cắt nhìn nàng, nụ cười nhạt đi.
+
+"Ngươi thật sự ngu."
+
+"Có thể."
+
+"Cho kẻ địch uống?"
+
+"Không cho ngươi chết khát trước khi sửa dây."
+
+Di Mạn đong một phần rất nhỏ, đưa cho A Mục. A Mục đem tới, đặt trước mặt Dây Cắt, không đưa tận miệng.
+
+"Tay hắn bị trói." Hứa Đao nhắc.
+
+A Mục nói:
+
+"Hắn có miệng."
+
+Dây Cắt cúi xuống uống như chó.
+
+Không ai thấy dễ chịu.
+
+Nhưng không ai ngăn.
+
+Uống xong, hắn thở ra.
+
+"Mùi thuốc khử trùng."
+
+Kỷ Nam nheo mắt.
+
+"Người đưa giấy?"
+
+"Ừ. Tay đeo găng. Giọng qua mặt nạ. Không biết nam nữ. Đổi cho bọn ta một ống thuốc chống nhiễm trùng và hứa sau khi cắt bơm, đèn trạm tắt, chúng ta có thể lấy nước chạy."
+
+Mọi ánh mắt quay sang Thẩm Bạch.
+
+Thẩm Bạch bình tĩnh.
+
+"Thuốc chống nhiễm trùng của ta không phải loại duy nhất có mùi khử trùng."
+
+Hứa Đao cười lạnh.
+
+"Nhưng ngươi có."
+
+Thẩm Bạch nhìn hắn.
+
+"Nếu là ta, ta sẽ không vẽ sơ đồ bằng than trên bao bột."
+
+A Thất nhỏ giọng:
+
+"Câu này nghe vừa đúng vừa đáng ghét."
+
+Lâm Tịch nhìn Thẩm Bạch.
+
+"Ông kiểm hộp thuốc."
+
+"Được."
+
+"Di Mạn kiểm cùng."
+
+Di Mạn cầm dao đi theo.
+
+Kết quả: không mất ống chống nhiễm trùng nào trong hộp Thẩm Bạch.
+
+Nhưng điều đó không rửa sạch hắn. Chỉ rửa sạch cái hộp.
+
+Thang Nhuệ cũng kiểm túi y tế của đội an ninh. Mất một ống.
+
+Người lính mất nửa bàn tay tái mặt.
+
+"Kho đội..."
+
+Thang Nhuệ lạnh giọng:
+
+"Ai giữ?"
+
+Một lính trẻ bước ra, mặt trắng.
+
+"Ta. Nhưng ta không..."
+
+Kỷ Nam đi tới, ngửi tay áo hắn.
+
+"Mùi khử trùng. Mùi bột vàng."
+
+Người lính lùi lại.
+
+Thang Nhuệ đặt tay lên súng.
+
+Lâm Tịch nói:
+
+"Đừng."
+
+Thang Nhuệ nhìn nàng.
+
+"Hắn là người của ta."
+
+"Vậy hỏi trước mặt mọi người."
+
+Người lính trẻ run rẩy.
+
+"Ta chỉ... ta chỉ muốn đội về được. Nếu trạm mất bơm, mọi người sẽ phải quay về thành. Ta không muốn ở lại ổ dịch này."
+
+Đám người trạm lập tức phẫn nộ.
+
+Thang Nhuệ nhắm mắt.
+
+"Ngươi dùng cướp cắt bơm?"
+
+"Ta không nghĩ họ sẽ đụng người. Chỉ cắt dây..."
+
+Hứa Đao gầm:
+
+"Dây bơm là mạng!"
+
+Không ai phản bác.
+
+Lâm Tịch nhìn Thang Nhuệ.
+
+"Theo luật trạm, hắn phá máy gián tiếp, dùng người ngoài gây nguy hiểm. Phải sửa lỗi."
+
+Thang Nhuệ hỏi:
+
+"Sửa thế nào?"
+
+"Đội an ninh bù dây đồng, bù ba bình nước bị đổ bằng phần nước xe các bà còn giữ, và người lính đó làm dưới cổng ba ngày, không mang vũ khí. Nếu bà muốn đưa hắn đi, trước khi đi bù đủ."
+
+Thang Nhuệ nhìn nàng rất lâu.
+
+"Cô đang xử lính thành Nam?"
+
+"Không. Ta đang tính thiệt hại của trạm."
+
+"Nếu ta không đồng ý?"
+
+Lâm Tịch nhìn người lính bị thương từng uống nước ở đây, nhìn những người khu xám đang cầm xẻng, nhìn Sa Đinh đã đặt tay lên cung gửi trong thùng nhưng chưa rút.
+
+"Vậy bà mang người đi. Nhưng từ giờ đội an ninh thành Nam không vào hàng nước."
+
+Thang Nhuệ cứng mặt.
+
+Đó là đòn không lớn.
+
+Nhưng thật.
+
+Người của bà còn bị thương. Xe còn hỏng. Đêm ngoài phế thổ không an toàn. Không vào hàng nước nghĩa là phải tự rời đi trong tình trạng thiếu nước và mang theo lính mất máu.
+
+Cuối cùng bà nói:
+
+"Ta bù."
+
+Người lính trẻ sụp vai.
+
+Không ai vui.
+
+Nhưng trạm sống thêm một chút.
+
+Trưa hôm đó, trên bảng luật thêm dòng:
+
+`Người ngoài trạm gây hại trong trạm, tính theo thiệt hại của trạm. Không dùng chức, đội, giấy để xóa lỗi.`
+
+A Thất viết xong, thở dài:
+
+"Bảng thứ ba cũng sắp hết."
+
+Tiểu Mãn đưa nó một mảnh ván mới nhặt được.
+
+"Còn."
+
+A Thất nhìn cô bé.
+
+"Ngươi càng ngày càng giống người của phòng radio."
+
+Tiểu Mãn ôm nồi Mãn, nghiêm túc:
+
+"Con là người cổng."
+
+Lâm Tịch nghe thấy, quay đầu nhìn ra ngoài.
+
+Cổng tạm vẫn còn đó.
+
+Đêm cướp đầu tiên qua đi, nó nghiêng hơn, bẩn hơn, nhưng không đổ.
+
+Và bên cạnh cổng, một người lính thành Nam tháo giáp, cầm xẻng, bắt đầu đào rãnh dưới ánh mắt của những người từng bị hắn gọi là ổ dịch.

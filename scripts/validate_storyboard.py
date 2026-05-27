@@ -46,7 +46,7 @@ def text_problems(text, language):
     if "\ufffd" in text:
         problems.append("replacement-character")
     question_marks = text.count("?")
-    if question_marks >= 8:
+    if question_marks >= 12:
         problems.append(f"too-many-question-marks:{question_marks}")
     if language.startswith("vi"):
         letters = re.findall(r"[A-Za-z\u00c0-\u1ef9]", text)

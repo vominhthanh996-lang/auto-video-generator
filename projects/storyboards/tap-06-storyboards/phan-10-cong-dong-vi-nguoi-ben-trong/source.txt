@@ -1,0 +1,489 @@
+# Phần 10: Cổng Đóng Vì Người Bên Trong
+
+## Chương 207: Người Ngoài Vạch
+
+Đêm sau lệnh đốt bị hoãn, phế thổ đem tới một câu hỏi còn khó hơn lửa.
+
+Một đoàn người chạy tới từ hướng Tây.
+
+Khoảng hơn bốn mươi người. Có trẻ, có người già, có hai xe kéo, có ba người bị thương, có năm người cầm vũ khí nhưng giơ cao tay từ xa. Phía sau họ, bụi đỏ cuộn lên thành một vệt dài.
+
+A Mục thấy trước.
+
+Ba tiếng nồi vang lên.
+
+Keng. Keng. Keng.
+
+Trẻ con nằm xuống, người bệnh giữ chỗ, cổng tạm đóng nửa. Sa Đinh lên xe rác, Kỷ Nam vào vị trí, Hứa Đao giữ thùng vũ khí. Lý Cù cầm bảng tên. Di Mạn đứng ở lối bệnh.
+
+Đoàn người dừng ngoài vạch.
+
+Người đi đầu là một thanh niên mặt cháy xạ, mắt đỏ vì gió.
+
+"Cho vào! Đàn thú phía sau!"
+
+Lâm Tịch nhìn qua vai hắn.
+
+Phía xa có bóng thấp di chuyển.
+
+Không rõ bao nhiêu.
+
+Tần Dã được dìu ra, nhìn bụi.
+
+"Không chỉ thú."
+
+Kỷ Nam gật.
+
+"Có người đuổi."
+
+Thanh niên hét:
+
+"Chúng ta nghe radio! Trạm có luật! Trẻ con uống trước! Cho vào!"
+
+Tiếng khóc vang lên trong đoàn.
+
+Tiểu Mãn ôm nồi Mãn, mặt trắng.
+
+Di Mạn siết cốc đong.
+
+Lâm Tịch hỏi:
+
+"Có bao nhiêu người bệnh?"
+
+"Không biết! Cho vào rồi tính!"
+
+Không được.
+
+Tất cả trong nàng đều đau khi nghĩ hai chữ đó, nhưng không được.
+
+Cổng bên trong đã đầy. Khu y tế quá tải. Đàn thú gắn thẻ đang vòng ngoài. Nếu mở cả cổng cho hơn bốn mươi người chưa kiểm, trạm có thể vỡ trong một nhịp. Nếu trong đoàn có cướp trà trộn, nếu bệnh lây, nếu họ chen vào máng, những người bên trong sẽ chết cùng họ.
+
+Người ngoài vạch là người.
+
+Người trong cổng cũng là người.
+
+Cổng mở từ bên trong.
+
+Cũng phải có lúc đóng vì người bên trong.
+
+Lâm Tịch nghe cổ họng mình đau.
+
+"Không mở toàn cổng."
+
+Đám đông ngoài kia nổ tung.
+
+"Các ngươi cũng như thành!"
+
+"Luật chó má!"
+
+"Trẻ con ở đây!"
+
+"Các ngươi có nước!"
+
+Mỗi câu đều như đá ném vào mặt.
+
+Lâm Tịch đứng trên xe rác.
+
+"Mở lối bệnh. Mỗi lần năm người: trẻ, người mất máu, người không cầm vũ khí. Vũ khí bỏ ngoài. Người khỏe dựng rào ngoài vạch. Ai chen, cổng đóng hẳn."
+
+Thanh niên gào:
+
+"Không kịp!"
+
+Phía sau đoàn, tiếng thú hú vang.
+
+Đám người hoảng, bắt đầu xô lên.
+
+Sa Đinh kéo cung.
+
+Kỷ Nam nâng súng.
+
+Lâm Tịch giơ tay, không cho bắn.
+
+Hứa Đao hét:
+
+"Nếu họ xô vỡ cổng thì sao?"
+
+Lâm Tịch nhìn thanh niên ngoài vạch.
+
+"Ngươi muốn trẻ vào thì giữ người của ngươi. Nếu các ngươi tự xô, chúng ta đóng."
+
+Thanh niên nhìn nàng như muốn giết.
+
+Rồi quay lại, đấm thẳng vào một người đang chen.
+
+"Lùi! Trẻ trước!"
+
+Hỗn loạn chậm lại.
+
+Không phải vì họ tin Lâm Tịch.
+
+Vì họ cũng muốn có cánh cửa mở một khe còn hơn đóng hẳn.
+
+Lối bệnh mở.
+
+Năm người đầu vào: hai đứa trẻ, một người phụ nữ mất máu, một ông già thở khò khè, một thiếu niên cõng em. Di Mạn kiểm nhanh. Tiểu Mãn và đội ký hiệu dẫn họ vào khu chờ bệnh.
+
+Năm người thứ hai.
+
+Năm người thứ ba.
+
+Đàn thú gần hơn.
+
+Mùi Đèn Vàng pha loãng được treo dọc rãnh Nam, nhưng đêm nay gió đổi hướng. Mùi không kéo lệch được hết.
+
+Một con thú lao vào người ngoài vạch.
+
+Tiếng hét xé đêm.
+
+Cổng rung lên vì đám đông lại xô.
+
+Hứa Đao và Lý Cù ghì xe rác.
+
+Kỷ Nam bắn một phát, hạ con thú gần nhất.
+
+Đàn còn lại khựng, rồi tản ra.
+
+Nhưng phía sau bụi đỏ, ánh đèn người xuất hiện.
+
+Cướp.
+
+Tần Dã nói:
+
+"Họ bị dồn tới đây."
+
+Lâm Tịch hiểu.
+
+Không phải đoàn chạy nạn vô tình tới.
+
+Có người biết Trạm Số Chín sẽ khó đóng cổng trước trẻ con, nên dồn người tới làm vỡ cổng.
+
+Đây là bẫy.
+
+Một cái bẫy dùng người vô tội làm đầu đập cửa.
+
+Thanh niên ngoài vạch cũng thấy ánh đèn phía sau. Mặt hắn trắng bệch.
+
+"Cho chúng ta vào!"
+
+Lâm Tịch nhìn cổng.
+
+Bên trong là người bệnh, trẻ con, bơm nước, Đèn Vàng, Tần Dã, Di Mạn, cả những người mới học cách xếp hàng.
+
+Bên ngoài là bốn mươi người bị dồn, trong đó vẫn còn người yếu chưa vào.
+
+Không có lựa chọn sạch.
+
+Nàng nói:
+
+"Đóng cổng chính. Giữ lối bệnh."
+
+Không ai động trong nửa nhịp.
+
+Rồi Mộc Sanh kéo xích.
+
+Xe rác giữa cổng trượt vào vị trí.
+
+Cổng chính đóng.
+
+Tiếng chửi bên ngoài lập tức bùng lên.
+
+"Các ngươi bỏ chúng ta!"
+
+"Mở ra!"
+
+"Đồ trong thành!"
+
+Mỗi chữ đâm vào Lâm Tịch.
+
+Nàng đứng trên xe rác, mặt trắng.
+
+"Lối bệnh còn mở! Trẻ và người bị thương qua bên trái! Người khỏe dựng rào ngoài vạch! Muốn sống thì làm!"
+
+Thanh niên ngoài kia nhìn nàng bằng mắt đỏ.
+
+Rồi hắn kéo một xe gỗ đổ ngang trước vạch.
+
+"Dựng rào!"
+
+Một số người nghe theo.
+
+Một số vẫn chửi.
+
+Một số khóc.
+
+Cướp phía sau thấy cổng không vỡ như dự tính, bắt đầu bắn. Mũi tên và đạn rải vào đoàn người ngoài vạch.
+
+Trạm bắn trả.
+
+Không phải để cứu tất cả.
+
+Để giữ lối bệnh.
+
+Đêm đó dài như bị kéo bằng dây thép.
+
+Khi trời gần sáng, nhóm cướp rút.
+
+Đàn thú cũng bị mùi Đèn Vàng và xác đồng loại kéo lệch.
+
+Ngoài cổng, bảy người chết.
+
+Ba người trong số đó chưa kịp vào lối bệnh.
+
+Một đứa trẻ.
+
+Lâm Tịch đứng trước cổng đóng, nghe người bên ngoài khóc.
+
+Không ai trong trạm reo vì sống sót.
+
+Không ai dám nói quyết định đúng.
+
+Vì đúng không làm người chết sống lại.
+
+Thanh niên mặt cháy xạ bước tới trước vạch. Áo hắn rách, tay đầy máu. Hắn nhìn Lâm Tịch qua khe xe rác.
+
+"Tên ngươi là Lâm Tịch?"
+
+"Ừ."
+
+"Ta sẽ nhớ."
+
+Không phải lời cảm ơn.
+
+Cũng không hoàn toàn là lời nguyền.
+
+Lâm Tịch gật đầu.
+
+"Ta cũng nhớ."
+
+Đó là tiếng ác đầu tiên của Trạm Số Chín.
+
+Không phải từ kẻ thù.
+
+Từ người họ không cứu kịp.
+
+## Chương 208: Cổng Nước Xám
+
+Buổi sáng sau đêm đóng cổng, Trạm Số Chín không còn giống hôm qua.
+
+Cổng tạm vẫn đứng.
+
+Máng nước vẫn nhỏ.
+
+Bảng luật vẫn treo.
+
+Người vẫn xếp hàng.
+
+Nhưng trong không khí có một vết nứt mới.
+
+Người bên ngoài khu chờ nhìn người trong cổng bằng mắt khác. Người trong cổng tránh nhìn ra ngoài. Đội ký hiệu của Tiểu Mãn không chạy nhanh như trước. A Thất đọc tên người chết vào radio, giọng khàn tới mức gần như không ra hơi.
+
+`Bảy người chết ngoài vạch trong đêm cướp dồn người. Trạm Số Chín mở lối bệnh, đóng cổng chính. Chúng ta ghi tên được bốn người. Ba người chưa rõ tên. Ai biết, tới cổng báo.`
+
+Không ai muốn phát bản tin đó.
+
+Nhưng Lâm Tịch bắt phát.
+
+Nếu chỉ phát tên người sống để chống lệnh đốt, mà im lặng khi người chết vì quyết định của mình, vậy tên cũng thành công cụ.
+
+Thanh niên mặt cháy xạ quay lại vào buổi trưa.
+
+Hắn nói tên mình là Tạ Khuông.
+
+Hắn đem tên bảy người chết tới. Trong đó đứa trẻ tên Miên Miên, sáu tuổi, thích ôm một cái thìa gỗ. Mẹ nó sống, đang ở khu y tế của trạm. Khi nghe tên con được đọc trên radio, bà không khóc. Bà chỉ nhìn cái thìa gỗ trong tay, rất lâu.
+
+Lâm Tịch đứng trước mặt bà.
+
+"Ta đóng cổng."
+
+Người mẹ không ngẩng lên.
+
+"Ta biết."
+
+"Ta..."
+
+"Đừng xin lỗi."
+
+Lâm Tịch im.
+
+Người mẹ nói:
+
+"Nếu cô mở, có thể con ta vẫn chết. Có thể nhiều đứa trong kia cũng chết. Ta biết. Nhưng ta vẫn hận."
+
+Lâm Tịch siết tay.
+
+"Ừ."
+
+"Cô chịu được không?"
+
+Lâm Tịch nhìn bà.
+
+Không có câu trả lời nào tốt.
+
+"Ta phải chịu."
+
+Người mẹ gật đầu.
+
+"Vậy nhớ tên nó."
+
+"Miên Miên."
+
+"Nó thích thìa gỗ."
+
+"Ta nhớ."
+
+Người mẹ đưa cái thìa cho nàng.
+
+"Treo ở cổng. Để lần sau đóng cổng thì nhìn."
+
+Di Mạn đứng phía sau quay mặt đi.
+
+Lâm Tịch nhận cái thìa.
+
+Nhẹ.
+
+Nhẹ đến mức nặng không chịu nổi.
+
+Chiều đó, cái thìa gỗ được treo cạnh bảng luật.
+
+Không phải như chiến công.
+
+Như món nợ.
+
+Bàn người trạm họp trong im lặng. Họ thêm luật về đóng cổng:
+
+`Khi cổng chính đóng, lối bệnh phải giữ tới phút cuối nếu còn người giữ được.`
+
+`Người ra lệnh đóng cổng phải ghi tên người chết ngoài vạch nếu biết.`
+
+`Trạm không được gọi người chết là thiệt hại.`
+
+A Thất viết dòng cuối, tay run.
+
+Hứa Đao nhìn cái thìa, hiếm khi không nói gì.
+
+Sa Đinh đặt xuống bàn một bó mũi tên.
+
+"Đội cầu Đông ở lại bảy ngày. Người ngoài vạch đêm qua có người nhà ta quen."
+
+Lý Cù gật.
+
+"Ghi người trạm tạm."
+
+Thang Nhuệ đưa đội an ninh rời trạm lúc gần tối.
+
+Trước khi đi, bà đứng trước cổng, đọc ba câu lõi một lần. Không ai bắt. Bà tự đọc.
+
+Sau đó bà nói với Lâm Tịch:
+
+"Thành Nam sẽ không bỏ qua."
+
+"Ta biết."
+
+"Cô đóng cổng đêm qua. Tin đó sẽ truyền."
+
+"Ta biết."
+
+"Có người sẽ gọi cô là thủ lĩnh. Có người sẽ gọi cô là kẻ bỏ mặc."
+
+"Ta biết."
+
+Thang Nhuệ nhìn cái thìa gỗ.
+
+"Cô vẫn treo nó?"
+
+"Ừ."
+
+"Người trong thành thường cất những thứ như vậy đi."
+
+"Vậy nên ta treo."
+
+Thang Nhuệ không nói nữa. Bà dẫn lính đi, mang theo một người bị thương đã sống nhờ nước trạm, và một người lính trẻ Hắc Tử sau ba ngày làm khu y tế. Hắc Tử trước khi đi đặt lại một cuộn băng sạch cạnh Di Mạn.
+
+Di Mạn nhìn cuộn băng.
+
+"Trả lỗi chưa đủ."
+
+Hắn cúi đầu.
+
+"Ta biết."
+
+"Sống lâu chút rồi trả tiếp."
+
+Hắn ngẩng lên, mắt đỏ.
+
+"Vâng."
+
+Khi đội an ninh đi khuất, radio của A Thất bắt được một giọng xa:
+
+`Có phải đó là Cổng Nước Xám không?`
+
+A Thất ngẩn ra.
+
+"Ai?"
+
+Giọng kia rè rè:
+
+`Chỗ có nước đục, bảng luật, cái cổng xe rác. Người ta gọi vậy. Cổng Nước Xám.`
+
+Trong trạm, mọi người nhìn nhau.
+
+Trạm Số Chín là tên cũ.
+
+Cổng Nước Xám là tên người ngoài đặt.
+
+Một cái tên không sạch.
+
+Nhưng thật.
+
+Tiểu Mãn đứng cạnh trụ cổng, ôm nồi Mãn.
+
+"Tên thì khó mất hơn."
+
+Tần Dã ngồi trên bậc thềm, tay phải đã cử động được đủ để chạm vào bản đồ. Hắn nhìn Lâm Tịch.
+
+"Họ đặt tên rồi."
+
+Lâm Tịch nhìn cái thìa gỗ, nhìn bảng luật, nhìn hàng người, nhìn vệt máu cũ trước máng nước đã bị bụi phủ một phần.
+
+"Ừ."
+
+"Từ giờ khó chạy hơn."
+
+"Ta biết."
+
+"Cũng khó bị xóa hơn."
+
+Nàng quay sang hắn.
+
+Hắn không cười.
+
+Nhưng mắt hắn có ánh sáng rất mờ.
+
+Đêm đó, Trạm Số Chín phát bản tin mới:
+
+`Đây là Cổng Nước Xám, Trạm Lọc số Chín ngoài tường Nam. Chúng ta còn nước đục. Còn luật. Còn người bệnh. Còn nợ người chết ngoài vạch. Người tới đổi công lấy nước phải đọc luật. Người tới cướp, chúng ta chống. Người tới xem, hãy nhìn kỹ.`
+
+A Thất dừng một chút, rồi đọc câu cuối do Tiểu Mãn viết thêm:
+
+`Cổng mở từ bên trong. Có lúc cũng đóng vì người bên trong. Tên người chết sẽ treo trên cổng.`
+
+Radio rè đi.
+
+Ngoài phế thổ, không biết bao nhiêu người nghe thấy.
+
+Trong dữ liệu Ngân Thụ, đêm đó, mục tiêu xử lý đổi tên.
+
+Không còn chỉ là `mẫu sống Lâm Tịch`.
+
+Mà là:
+
+`Cụm xã hội Cổng Nước Xám - có khả năng tự tổ chức.`
+
+Lâm Tịch không nhìn thấy dòng chữ ấy.
+
+Nhưng khi gió đêm thổi qua cổng xe rác, làm cái thìa gỗ khẽ gõ vào tấm biển luật, nàng bỗng hiểu một điều.
+
+Thành mới không bắt đầu vào ngày mọi người vui vẻ gọi nó là nhà.
+
+Nó bắt đầu vào ngày có người hận nó, có người cần nó, có người đặt tên cho nó, và người bên trong vẫn phải mở mắt canh cổng tới sáng.

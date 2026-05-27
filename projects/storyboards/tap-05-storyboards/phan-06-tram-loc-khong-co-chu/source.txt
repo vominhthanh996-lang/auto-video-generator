@@ -1,0 +1,845 @@
+# Phần 6: Trạm Lọc Không Có Chủ
+
+## Chương 179: Tiếng Nhiễu Trong Mương Khô
+
+Radio của A Thất bắt đầu khóc lúc họ đi vào đoạn mương hẹp.
+
+Đó là cách A Thất gọi tiếng nhiễu.
+
+Nó không cho phép ai nói radio của nó "rè". Rè là từ dành cho đồ hỏng bị vứt ngoài chợ tro. Còn cái máy nhỏ nó ôm từ Khu 17 tới tận đây, qua đường ray phía Nam, qua thành Nam, qua Phế Đô Cấm Khu, dù vỏ nứt, dây lòi, nút chỉnh phải buộc bằng chỉ, vẫn là một thứ có tính tình.
+
+Tính tình của nó hôm nay rất tệ.
+
+"Nghe này." A Thất vừa đi vừa vặn nút. "Tiếng này là khóc. Tiếng này là chửi. Còn tiếng này..."
+
+Máy phát ra một tràng rít cao.
+
+Tiểu Mãn giật mình ôm nồi.
+
+Mộc Sanh nói:
+
+"Là sắp cháy."
+
+A Thất lập tức ôm radio vào ngực.
+
+"Tỷ đừng nói xui con ta."
+
+"Ngươi để nó phát tần số này thêm nửa giờ, nó sẽ cháy thật."
+
+"Vậy tỷ sửa."
+
+"Ta cần linh kiện."
+
+"Linh kiện nằm trong hộp tỷ giữ."
+
+"Hộp đó dùng sửa bơm nước."
+
+A Thất há miệng, rồi ngậm lại.
+
+Lần này nó không cãi được.
+
+Trong phế thổ, một cái radio và một cái bơm nước đặt lên cân, radio thường thua. Điều đáng buồn là nó thua đúng.
+
+Lâm Tịch đi phía trước xe, tay cầm dao gãy. Mương khô càng lúc càng thấp. Hai bên là tường đất lẫn bê tông cũ, trên bề mặt có những lỗ nhỏ đen như mắt kim.
+
+Kỷ Nam chỉ vào những lỗ ấy.
+
+"Ổ phụ."
+
+A Thất hạ giọng:
+
+"Chuột răng thép?"
+
+"Ừ."
+
+"To không?"
+
+"Con nhỏ bằng bàn tay. Con lớn bằng bắp chân. Đừng để chúng cắn dây xe."
+
+Lão Phùng cúi nhìn bánh xe gấp Hắc Nha.
+
+"Cắn dây xe làm gì?"
+
+Kỷ Nam đáp:
+
+"Chúng thích muối trong cao su cũ."
+
+A Thất rùng mình.
+
+"Tới chuột cũng biết chọn đồ tốt hơn ta."
+
+Di Mạn đang đi cạnh xe, một tay giữ Hạ Tố khỏi trượt khỏi đệm. Bà nói:
+
+"Ngươi nói ít lại, tiết kiệm nước miếng."
+
+A Thất lập tức mím môi.
+
+Đội tiếp tục đi.
+
+Tiếng bánh xe lăn trên đáy mương nghe rất rõ. Quá rõ. Mỗi vòng bánh nghiến qua sỏi đều giống đang gọi những thứ sống dưới đất: ở đây có thịt, có nước, có dây, có trẻ con, có người bệnh.
+
+Lâm Tịch nhìn A Thất.
+
+"Bắt đầu."
+
+A Thất không nhúc nhích ngay.
+
+Nó nhìn radio trong tay. Ngón cái đặt lên nút phát, nhưng không ấn.
+
+Mộc Sanh đi bên cạnh nó.
+
+"Sợ?"
+
+"Sợ nó chết."
+
+"Nó vốn hỏng."
+
+"Tỷ không hiểu."
+
+"Ta hiểu." Mộc Sanh nhìn đường phía trước. "Đồ hỏng còn theo mình lâu thì khó vứt hơn đồ tốt."
+
+A Thất ngẩng đầu.
+
+Mộc Sanh không nhìn nó.
+
+"Bật đi. Nếu cháy, ta giữ xác cho ngươi."
+
+"Tỷ an ủi nghe như đào mộ."
+
+"Hiệu quả là được."
+
+A Thất cúi xuống, áp trán vào radio một cái rất nhanh, như sợ người khác thấy.
+
+"Ngoan. La to một chút. Đừng chết."
+
+Nó bật nút.
+
+Tiếng nhiễu rít lên.
+
+Không lớn như còi thành, nhưng bén và dày, len vào những lỗ đen trên vách mương như một đàn kim nhỏ. Đèn trên thân radio nhấp nháy. A Thất vặn tần số theo hướng Kỷ Nam chỉ, rồi buộc máy vào một đoạn xương thú, cắm ở ngã rẽ bên trái.
+
+Tiếng nhiễu tiếp tục rít.
+
+Họ rẽ phải.
+
+Ban đầu không có gì xảy ra.
+
+Chỉ có tiếng mưa bụi đỏ lất phất trên miệng mương, tiếng xe nặng lăn, tiếng Hạ Tố ho cố nén, tiếng Du Khâu thở đứt quãng.
+
+Rồi trong vách mương vang lên tiếng sột soạt.
+
+Một lỗ.
+
+Hai lỗ.
+
+Mười lỗ.
+
+Những cái mõm nhỏ thò ra, răng trắng sáng như mảnh dao vụn. Mắt chuột răng thép rất bé, gần như bị da nhăn che khuất. Nhưng mũi chúng động liên tục, hít mùi nước, mùi máu, mùi cao su và mùi người.
+
+Tiểu Mãn cứng người.
+
+Lâm Tịch nói khẽ:
+
+"Không nhìn chúng."
+
+Cô bé lập tức cúi đầu, nhìn cái nồi trong lòng.
+
+Ninh ôm hộp Đèn Vàng, môi mím chặt. Hai lá cây nhỏ trong hộp khẽ dựng lên, như nghe thấy thứ gì dưới đất.
+
+Tần Dã nằm trên xe, mắt mở nửa. Cơn sốt làm mặt hắn trắng, nhưng giọng vẫn đều:
+
+"Bánh trái, nâng nhẹ."
+
+Mộc Sanh lập tức đỡ khung trái.
+
+"A Thất, đừng quay đầu. Đi đều."
+
+A Thất mồ hôi đầy trán.
+
+"Ta không quay. Ta chỉ đang tưởng tượng con ta bị cắn."
+
+"Nó ở bên trái. Chúng ta bên phải."
+
+"Tỷ vừa nhắc làm ta đau hơn."
+
+Những con chuột đầu tiên bò khỏi lỗ, lao về hướng tiếng nhiễu. Răng chúng cạo lên đá nghe ken két. Một con dừng lại giữa chừng, quay đầu về phía xe.
+
+Lâm Tịch nín thở.
+
+Kỷ Nam nhấc súng.
+
+Tần Dã nói:
+
+"Đừng bắn."
+
+Kỷ Nam không bắn.
+
+Tiếng súng sẽ kéo cả ổ tới.
+
+Con chuột đánh hơi. Mũi nó hướng về phía vết thương ở cổ tay Lâm Tịch.
+
+Máu đã khô, nhưng mùi muối xạ còn đó.
+
+Lâm Tịch chậm rãi lấy miếng vải băng bẩn ở cổ tay ra. Di Mạn nhìn thấy, sắc mặt đổi.
+
+"Đừng."
+
+Lâm Tịch không đáp.
+
+Nàng ném miếng vải về phía ngã rẽ trái, nơi radio đang rít.
+
+Miếng vải rơi xuống bùn khô.
+
+Con chuột lao theo ngay.
+
+Ba con khác cũng đổi hướng.
+
+Di Mạn nghiến răng.
+
+"Vết thương sẽ nhiễm."
+
+"Lát nữa rửa."
+
+"Lấy gì rửa?"
+
+Lâm Tịch không trả lời.
+
+Vì không có.
+
+Nước còn lại trên xe phải giữ cho người bệnh và lọc máy. Cổ tay nàng có thể đau thêm. Tần Dã có thể không qua được nếu thiếu một ngụm.
+
+Đó là cách phế thổ tính toán.
+
+Không công bằng.
+
+Nhưng rất giỏi bắt người ta im lặng.
+
+Đội đi qua đoạn ổ phụ trong gần mười phút.
+
+Mười phút ấy dài như một đêm.
+
+Tiếng nhiễu phía sau dần méo đi. Ban đầu là rít. Sau đó là khàn. Rồi từng đoạn đứt quãng, như người đang cố la khi bị bóp cổ.
+
+A Thất nghe thấy, mặt trắng bệch.
+
+"Nó không ổn."
+
+Mộc Sanh kéo tay nó.
+
+"Đi."
+
+"Nhưng..."
+
+"Đi."
+
+A Thất cắn răng.
+
+Nó đi.
+
+Đó là lần đầu Lâm Tịch thấy A Thất bỏ lại một món đồ của mình mà không quay đầu.
+
+Không phải vì nó không thương.
+
+Mà vì trên xe có người đang thở.
+
+Khi họ ra khỏi đoạn mương hẹp, tiếng nhiễu phía sau tắt hẳn.
+
+A Thất đứng lại.
+
+Không ai giục nó trong hai nhịp.
+
+Nó cúi đầu.
+
+"Nó chết rồi."
+
+Mộc Sanh nhìn về phía sau.
+
+"Có thể chỉ cháy mạch."
+
+"Cháy mạch cũng là chết đối với radio."
+
+"Vậy ta cứu xác."
+
+A Thất ngẩng lên.
+
+"Tỷ hứa?"
+
+Mộc Sanh thở ra.
+
+"Hứa. Nếu sống tới trạm lọc, ta tìm linh kiện cho nó."
+
+A Thất lau mặt bằng tay áo.
+
+"Nó thích nút đồng."
+
+"Ta tìm nút đồng."
+
+"Và dây bọc đỏ."
+
+"Được."
+
+"Và..."
+
+Di Mạn nói:
+
+"Ngươi còn đòi, ta tháo dây giày ngươi làm linh kiện."
+
+A Thất ngậm miệng.
+
+Lâm Tịch nhìn nó.
+
+"A Thất."
+
+"Gì?"
+
+"Nó cứu cả đội."
+
+A Thất cúi đầu, rất lâu mới nói:
+
+"Vậy nhớ ghi công cho nó. Đừng chỉ ghi tên ta."
+
+Lâm Tịch gật đầu.
+
+"Ừ."
+
+Tần Dã bỗng nói:
+
+"Đặt tên cho trạm lọc một cái phòng radio."
+
+A Thất nhìn hắn.
+
+"Thật?"
+
+"Nếu chiếm được."
+
+"Ngươi nói chuyện sao cũng có dao giống Mộc Sanh vậy?"
+
+Tần Dã nhắm mắt.
+
+"Học nàng."
+
+Mộc Sanh quay đầu nhìn hắn.
+
+"Ta không nhận học trò."
+
+Trong mưa bụi đỏ, vài người cười rất khẽ.
+
+Sau ổ chuột, mương mở rộng ra.
+
+Xa xa, bóng Trạm Lọc số Chín hiện lên dưới màn bụi: một khối bê tông lớn nứt dọc, các ống dẫn vươn ra khỏi thân như xương sườn gãy, trên đỉnh còn treo logo cũ của Sở Cư Trú đã bị gió mài mất nửa.
+
+Nhưng dưới chân trạm, giữa những rãnh bê tông đen, có tiếng nước.
+
+Rất nhỏ.
+
+Nhưng thật.
+
+Lâm Tịch dừng lại.
+
+Mọi người cũng dừng.
+
+Tiểu Mãn ngẩng đầu khỏi cái nồi.
+
+"Con nghe thấy..."
+
+Không ai bảo nó im.
+
+Vì tất cả đều nghe thấy.
+
+Nước đang chảy.
+
+Không phải tiếng máy cấp nước lạnh lẽo trong thành. Không phải tiếng vòi bị thẻ kiểm soát. Không phải mười hai nhịp rồi ngắt.
+
+Là tiếng nước tự chảy trong bóng tối, bẩn, nguy hiểm, có thể giết người, nhưng chưa thuộc về ai trong giấy tờ.
+
+A Thất hít một hơi.
+
+"Ta muốn khóc."
+
+Di Mạn nói:
+
+"Khóc ít thôi. Mất nước."
+
+Nhưng giọng bà cũng khàn.
+
+Lâm Tịch nhìn Trạm Lọc số Chín.
+
+Trong ngực nàng, một thứ gì đó vừa đau vừa sáng lên.
+
+Chưa phải hy vọng.
+
+Hy vọng là từ quá sạch.
+
+Đây chỉ là tiếng nước.
+
+Nhưng trên phế thổ, có lúc tiếng nước đã đủ khiến người ta đi thêm một đoạn.
+
+## Chương 180: Đống Sắt Chết Còn Thở
+
+Trạm Lọc số Chín không có cổng.
+
+Cổng đã bị tháo từ lâu, chỉ còn hai trụ bê tông nghiêng, giữa trụ treo một đoạn xích gỉ. Tấm biển cảnh báo rơi dưới đất, chữ trên đó bị rêu xám ăn mất một nửa.
+
+`Nguồn nước không đạt chuẩn...`
+
+`...tự chịu trách nhiệm...`
+
+`...không thuộc phạm vi cứu trợ...`
+
+A Thất đọc xong, cười khan.
+
+"Cách nói văn minh của 'uống chết kệ ngươi'."
+
+Di Mạn cúi nhặt tấm biển, phủi bụi.
+
+"Giữ lại."
+
+"Giữ làm gì?"
+
+"Sau này treo ngược lại. Nhắc mình đừng viết chữ giống vậy."
+
+Lâm Tịch nhìn bà.
+
+Di Mạn không nhìn lại, chỉ nhét tấm biển lên xe.
+
+Trạm lọc có ba tầng. Tầng trên là nhà điều khiển, kính vỡ gần hết. Tầng giữa là dãy bể lọc mở, trong bể phủ rêu xám và những mảng màng sinh học lấp lánh như dầu. Tầng dưới chìm một nửa trong nước đen, các đường ống lớn giao nhau như ruột của một con thú chết.
+
+Mùi ở đây rất nặng.
+
+Không chỉ mùi nước tù.
+
+Còn có mùi trứng thối, rỉ sắt, rong mục, xác thú và một thứ tanh ngọt rất khó chịu.
+
+Tần Dã ngửi thấy, nhíu mày.
+
+"Có trứng."
+
+Kỷ Nam gật đầu.
+
+"Cá sấu cống."
+
+A Thất lập tức lùi nửa bước.
+
+"Chưa tới phần cá sấu mà."
+
+Mộc Sanh nhìn nó.
+
+"Ngươi nghĩ chúng đọc outline à?"
+
+"Ta chỉ mong chúng có lễ phép."
+
+Lão Phùng kiểm nền.
+
+"Không đưa xe vào trong. Sàn nứt. Người bệnh để ở nhà điều khiển nếu lên được."
+
+Mộc Sanh quan sát cầu thang.
+
+"Cầu thang gãy đoạn giữa. Nhưng có thang bảo trì bên ngoài."
+
+Kỷ Nam nói:
+
+"Ta lên trước."
+
+Tần Dã mở mắt.
+
+"Không. Ngươi kiểm vòng ngoài. Nếu có truy binh, trạm lọc sẽ thành bẫy."
+
+Kỷ Nam nhìn hắn.
+
+"Ngươi ra lệnh cho ta?"
+
+"Đề nghị."
+
+"Nghe giống ra lệnh."
+
+"Vậy làm theo đề nghị nghe giống lệnh đó."
+
+Kỷ Nam cười lạnh, nhưng vẫn quay đi.
+
+A Thất nhỏ giọng:
+
+"Hai người này nếu làm hòa chắc trời rơi nước sạch."
+
+Di Mạn:
+
+"Đừng mong xa. Mong họ không bắn nhau trước."
+
+Lâm Tịch chia người rất nhanh.
+
+Kỷ Nam và A Mục kiểm vòng ngoài. A Mục không vui vì phải rời Tiểu Mãn, nhưng không cãi. Mộc Sanh, A Thất, Lão Phùng kiểm bơm và tuyến lọc. Di Mạn đưa người bệnh lên nhà điều khiển cùng Tiểu Mãn, Ninh và hộp Đèn Vàng. Lâm Tịch đi với nhóm máy.
+
+Tần Dã không được đi.
+
+Hắn nằm trên xe, nhìn nàng.
+
+"Ta biết máy."
+
+"Anh biết nằm."
+
+"Lâm Tịch."
+
+"Không."
+
+Hắn im.
+
+Lâm Tịch cúi xuống, hạ giọng:
+
+"Anh vừa bắn đèn, ho ra máu, sốt chưa hạ. Nếu anh xuống nước đen, ta sẽ trói anh vào xe."
+
+Tần Dã nhìn nàng.
+
+"Ngươi trói được?"
+
+"Có Di Mạn."
+
+Di Mạn từ phía sau nói:
+
+"Ta trói được."
+
+Tần Dã ngậm miệng.
+
+A Thất nhìn cảnh đó, thì thầm với Mộc Sanh:
+
+"Từ nay nếu đội trưởng và Di Mạn cùng nói không, tốt nhất đừng làm người."
+
+Mộc Sanh đáp:
+
+"Ngươi hiếm khi nói đúng."
+
+Nhóm máy đi xuống tầng giữa.
+
+Bể lọc đầu tiên đầy rêu xám. Rêu bám vào thành bể thành từng lớp dày, giữa các lớp có những hạt tròn trắng đục bằng đầu ngón tay.
+
+Lão Phùng soi đèn, mặt nhăn lại.
+
+"Trứng."
+
+A Thất lập tức lùi.
+
+"Đốt?"
+
+Mộc Sanh lắc đầu.
+
+"Đốt sinh khói độc. Với lại nếu trứng nhiều thế này, con mẹ ở gần."
+
+"Tỷ có thể đừng dùng chữ con mẹ không?"
+
+"Vậy dùng 'cá thể trưởng thành sinh sản'."
+
+"Còn đáng sợ hơn."
+
+Lâm Tịch nhìn những hạt trứng.
+
+Chúng không động.
+
+Nhưng Đèn Vàng trong hộp trên tầng bỗng rung nhẹ. Ninh đứng trên cầu thang, ôm hộp, mặt căng thẳng.
+
+"Lá... chỉ xuống dưới."
+
+Lâm Tịch ngẩng đầu.
+
+"Xuống bơm?"
+
+Ninh gật.
+
+Mộc Sanh nhìn bể lọc.
+
+"Bơm chính ở tầng dưới. Nếu Đèn Vàng phản ứng, có thể dưới đó còn nước chảy qua lớp khoáng sạch hơn."
+
+Lão Phùng nói:
+
+"Hoặc có thứ ăn khoáng sạch hơn."
+
+A Thất giơ tay.
+
+"Ta bỏ phiếu cho khả năng đầu."
+
+"Phiếu vô hiệu." Di Mạn từ trên nói vọng xuống. "Không ai hỏi."
+
+Họ đi tới phòng bơm.
+
+Cửa phòng bơm kẹt vì rỉ. Mộc Sanh dùng cờ lê nạy. Lão Phùng chêm xương thú vào khe. A Thất chui xuống dưới, tháo hai con ốc gần bản lề.
+
+"Ốc còn tốt."
+
+Lâm Tịch nhìn nó.
+
+"Ngươi đang vui?"
+
+"Trong đống chết mà thấy ốc tốt, ai không vui là kẻ không biết sống."
+
+Mộc Sanh nói:
+
+"Giữ lại."
+
+"Đương nhiên."
+
+Cửa mở ra.
+
+Bên trong tối và ẩm. Một nửa sàn ngập nước. Bơm chính nằm giữa phòng, to bằng một cái quan tài sắt, đường ống nối vào ba hướng. Trên thân bơm có vết móng cào sâu. Bảng điều khiển phủ rêu và phân thú.
+
+Mộc Sanh bước vào trước, đèn soi từng đoạn dây.
+
+Nàng không nói gì trong một lúc rất lâu.
+
+A Thất nhỏ giọng:
+
+"Chết hẳn?"
+
+Mộc Sanh quỳ xuống, đặt tay lên thân bơm.
+
+"Không."
+
+"Vậy?"
+
+"Nó còn thở."
+
+Lâm Tịch nghe kỹ.
+
+Dưới tiếng nước nhỏ giọt, dưới tiếng gió qua ống, quả thật có một tiếng rung rất mờ.
+
+Như tim của một con vật lớn đang ngủ dưới bùn.
+
+Mộc Sanh quay sang A Thất.
+
+"Cần nguồn phụ."
+
+"Nguồn nào?"
+
+"Ắc quy xe Hắc Nha."
+
+A Thất mặt cứng lại.
+
+"Nếu tháo ắc quy, xe không chạy trợ lực."
+
+Lão Phùng nói:
+
+"Không trợ lực, chúng ta kéo bằng tay."
+
+"Xe đang chở ba người bệnh."
+
+"Vậy phải có nước để ba người bệnh không chết."
+
+A Thất nhìn Lâm Tịch.
+
+Lựa chọn lại đặt lên bàn.
+
+Không tháo ắc quy, xe nhẹ kéo hơn, có đường rút nếu thất bại.
+
+Tháo ắc quy, có cơ hội khởi động bơm, nhưng nếu truy binh tới, họ phải kéo một chiếc xe nặng như đá bằng tay qua phế thổ.
+
+Lâm Tịch hỏi Mộc Sanh:
+
+"Khởi động được bao nhiêu khả năng?"
+
+"Nếu bơm không gãy trục, bốn phần."
+
+"Nếu gãy?"
+
+"Không có."
+
+"Có cách kiểm trước khi tháo ắc quy không?"
+
+Mộc Sanh chỉ xuống nước ngập.
+
+"Phải xuống mở nắp trục."
+
+A Thất nhìn nước đen.
+
+"Ở dưới có trứng."
+
+Lão Phùng cởi áo khoác.
+
+"Ta xuống."
+
+Di Mạn từ trên quát:
+
+"Ông già, ông muốn chết dưới đó à?"
+
+Lão Phùng ngẩng đầu.
+
+"Ta từng sửa cống ba mươi năm. Nước này chưa chắc bẩn bằng chỗ ta từng chui."
+
+Mộc Sanh nói:
+
+"Ta xuống. Ta biết trục."
+
+Lão Phùng lắc đầu.
+
+"Ngươi biết trục, nhưng ngươi còn cần tay để sửa. Ta xuống sờ. Ngươi ở trên nói."
+
+A Thất cắn răng.
+
+"Ta xuống."
+
+Mọi người nhìn nó.
+
+Nó cố tỏ ra bình tĩnh.
+
+"Ta nhỏ. Chui dễ. Nếu bị kẹt, kéo lên cũng nhẹ hơn Lão Phùng."
+
+Lão Phùng hừ.
+
+"Ngươi tưởng ngươi nói ta nặng ta không nghe?"
+
+"Ta đang tự hy sinh mà ông còn bắt lỗi?"
+
+Mộc Sanh nhìn A Thất.
+
+"Dưới nước có thể có dây điện rò."
+
+"Tỷ cắt nguồn rồi."
+
+"Có thể còn tụ."
+
+"Tỷ xả rồi."
+
+"Có thể có thú nhỏ."
+
+"Có thể tỷ sẽ sửa radio cho ta nếu ta sống."
+
+Mộc Sanh im.
+
+A Thất nở một nụ cười rất khó coi.
+
+"Ta không muốn con ta chết vô ích."
+
+Lâm Tịch bước tới.
+
+"Không cần chứng minh."
+
+A Thất nhìn nàng.
+
+"Ta biết. Nhưng ta muốn làm."
+
+Nó tháo giày, buộc dây quanh eo. Lão Phùng giữ dây. Mộc Sanh quấn một lớp vải quanh tay nó, đưa cho nó cái móc nhỏ.
+
+"Sờ thấy nắp tròn, gõ hai cái. Sờ thấy trục gãy, gõ ba cái. Sờ thấy thứ mềm động..."
+
+"Đừng nói."
+
+"Rút tay."
+
+"Cái đó ta biết."
+
+A Thất hít một hơi, rồi trượt xuống nước đen.
+
+Nước ngập tới ngực nó.
+
+Nó run lên vì lạnh.
+
+"Má ơi."
+
+Di Mạn ở trên nói:
+
+"Má ngươi không ở đây. Làm việc."
+
+A Thất cắn răng lặn xuống.
+
+Nước đen khép lại trên đầu nó.
+
+Một nhịp.
+
+Hai nhịp.
+
+Ba nhịp.
+
+Lâm Tịch siết tay.
+
+Tần Dã trên tầng điều khiển chống tay ngồi dậy nửa người. Di Mạn định đè xuống, nhưng hắn nói:
+
+"Để ta nhìn."
+
+Bốn nhịp.
+
+Năm nhịp.
+
+Dây quanh eo A Thất khẽ giật.
+
+Một cái.
+
+Hai cái.
+
+Mộc Sanh thở ra.
+
+"Thấy nắp."
+
+Dây lại giật.
+
+Một cái.
+
+Hai cái.
+
+Ba cái.
+
+Mộc Sanh mặt đổi sắc.
+
+"Trục..."
+
+Chưa nói hết, nước đen bỗng sủi lên.
+
+Dây quanh eo A Thất bị kéo mạnh về phía dưới.
+
+Lão Phùng lập tức ghì lại.
+
+"Kéo!"
+
+Lâm Tịch và Mộc Sanh cùng lao tới nắm dây.
+
+Nước bắn tung lên.
+
+A Thất trồi khỏi mặt nước, miệng phun một ngụm đen, mắt trợn trắng vì sợ.
+
+"Có cái gì dưới đó!"
+
+Một cái bóng dài lướt qua dưới nước.
+
+Không lớn bằng con cá sấu cống ngầm Kỷ Nam nhắc.
+
+Nhưng đủ lớn để kéo một đứa trẻ xuống.
+
+Mộc Sanh kéo A Thất lên sàn. Cánh tay nó bị rạch một đường dài, máu lập tức hòa vào nước.
+
+Dưới phòng bơm, tiếng nước đổi nhịp.
+
+Từ nhỏ giọt thành quẫy động.
+
+Kỷ Nam từ ngoài chạy vào.
+
+"Mùi máu lan rồi."
+
+Tần Dã nhìn xuống nước đen, giọng trầm:
+
+"Không phải con mẹ."
+
+A Thất ho sặc sụa.
+
+"Vậy là gì?"
+
+Tần Dã đáp:
+
+"Con non."
+
+Phòng bơm im trong nửa giây.
+
+Sau đó, từ đường ống chính phía dưới vang lên một tiếng va rất nặng.
+
+Như có thứ gì đó lớn hơn nhiều vừa nghe tiếng con mình kêu.
+
+Mộc Sanh nhìn bơm chính.
+
+"Trục chưa gãy. Nó bị kẹt."
+
+Lâm Tịch quay sang nàng.
+
+"Sửa được?"
+
+"Được."
+
+Một tiếng va nữa.
+
+Lần này cả phòng bơm rung lên.
+
+Mộc Sanh nói tiếp, mặt không đổi:
+
+"Nếu chúng ta còn sống đủ lâu."

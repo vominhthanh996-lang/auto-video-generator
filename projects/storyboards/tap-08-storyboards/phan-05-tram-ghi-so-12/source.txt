@@ -1,0 +1,395 @@
+# Phần 5: Trạm Ghi Số 12
+
+## Chương 237: Đường Cống Phụ
+
+Cống phụ của Hắc Nha nằm dưới một đống xe buýt cháy.
+
+Nếu không có bản đồ của Tần Dã, A Thất có bò qua đó mười lần cũng chỉ nghĩ đống sắt ấy là mộ xe. Mặt đất phủ kính vụn, dây cao su cháy và xương nhỏ không biết của thú hay người. Gió thổi qua khung xe, phát ra tiếng hú thấp như có ai đang ngủ mê trong bụng kim loại.
+
+Sa Đinh giơ tay.
+
+Cả đội dừng lại.
+
+Ninh quỳ xuống, đặt lòng bàn tay lên đất.
+
+Một nhịp.
+
+Hai nhịp.
+
+Nàng lắc đầu.
+
+Không có thú lớn gần đây.
+
+A Thất thở phào, rồi lập tức bị Mộc Sanh bịt miệng.
+
+"Thở nhỏ."
+
+Nó gật lia lịa.
+
+Sa Đinh kéo tấm sắt méo theo ký hiệu bản đồ. Bên dưới lộ ra một nắp cống hình tròn, nửa chìm trong bùn khô. Trên nắp có dấu cũ của Hắc Nha: một vệt đen giống móng chim cào.
+
+A Thất lấy mảnh kim loại Tần Dã đưa.
+
+Nó nhìn dấu Hắc Nha, tay khựng lại.
+
+Mộc Sanh hỏi nhỏ:
+
+"Sợ?"
+
+"Không."
+
+"Vậy làm đi."
+
+"Ta chỉ đang nghĩ..." A Thất nuốt nước bọt. "Đồ của người xấu nếu cứu người tốt, nó có tính là đồ tốt không?"
+
+Sa Đinh đáp:
+
+"Mở được cống rồi nghĩ."
+
+A Thất cắm mảnh kim loại vào khe khóa. Cơ cấu bên trong kêu một tiếng rất nhỏ. Nó xoay nửa vòng, dừng, rút ra, cắm lại lệch một chút như Tần Dã đã dặn. Lần thứ ba, nắp cống bật lên.
+
+Mùi ẩm mốc phả ra.
+
+Không thối như cống chính.
+
+Nhưng có mùi kim loại lạnh và một thứ mùi ngọt rất nhạt.
+
+Mộc Sanh lập tức nhíu mày.
+
+"Bào tử."
+
+Sa Đinh kéo khăn che kín hơn.
+
+"Độc?"
+
+"Không biết. Đừng chạm tường. Đừng thở mạnh. Nếu thấy nấm màu trắng thì tránh."
+
+A Thất nhìn miệng cống đen ngòm.
+
+"Sao mỗi lần đi đường tắt đều giống tự đưa mình vào bụng thứ gì đó?"
+
+Mộc Sanh đẩy nó xuống trước.
+
+"Vì đường rộng người khác lấy hết rồi."
+
+Cống rất hẹp.
+
+A Thất đi đầu, sau đó là Ninh, Mộc Sanh, Sa Đinh cuối cùng. Dây buộc giữa bốn người. Không ai được đứng thẳng. Đầu gối cọ lên nền xi măng ẩm, khuỷu tay quệt vào lớp rêu lạnh. Mỗi lần A Thất bò qua một đoạn gãy, nó phải dùng mảnh kim loại gõ nhẹ lên thành cống để báo.
+
+Một tiếng: đi được.
+
+Hai tiếng: thấp.
+
+Ba tiếng: dừng.
+
+Đi được nửa đoạn, Ninh bỗng kéo dây.
+
+Ba cái.
+
+Dừng.
+
+Tất cả nằm im trong bóng tối.
+
+Ban đầu A Thất chỉ nghe tiếng tim mình.
+
+Sau đó nó nghe thấy tiếng khác.
+
+Soạt.
+
+Soạt.
+
+Như móng nhỏ cào trên kim loại.
+
+Sa Đinh từ phía sau thì thầm:
+
+"Chuột răng thép."
+
+A Thất cảm giác da đầu mình dựng lên.
+
+Chuột răng thép không nguy hiểm nếu đi một con. Nhưng trong cống, chúng hiếm khi đi một con. Răng của chúng cắn dây đồng như cắn bột khô, và mùi máu có thể gọi cả ổ.
+
+Mộc Sanh mở túi, lấy ra một mảnh bột nướng.
+
+A Thất quay đầu, mắt trợn lên.
+
+Nó không nói, nhưng mặt viết rõ: đó là đồ ăn.
+
+Mộc Sanh bẻ mảnh bột làm đôi, nhét vào khe tường bên trái.
+
+"Đường sống hôm nay mua bằng nửa bữa."
+
+Mùi bột lan ra.
+
+Tiếng soạt đổi hướng.
+
+Một con chuột răng thép ló đầu khỏi khe tối. Mắt nó trắng đục, răng trước dài như hai mảnh kim. Nó ngửi mảnh bột, rồi lao tới cắn. Con thứ hai, thứ ba xuất hiện phía sau.
+
+Ninh kéo dây một cái.
+
+Đi.
+
+Cả đội bò qua đoạn hẹp, không ai thở mạnh. A Thất cảm giác một cái đuôi lạnh quệt qua cổ chân mình. Nó cắn chặt răng, không đá.
+
+Đá một cái, cả ổ sẽ biết thịt người mềm hơn bột.
+
+Khi họ ra khỏi đoạn cống, nửa mảnh bột đã biến mất, đổi lại là một lối sống.
+
+A Thất bò lên miệng thoát, nằm ngửa trên đất, thở như kéo từng mảnh kính ra khỏi phổi.
+
+Mộc Sanh trèo lên sau, nhìn nó.
+
+"Còn hỏi đồ Hắc Nha tốt hay xấu không?"
+
+A Thất giơ mảnh kim loại lên.
+
+"Tạm thời tính là đồ biết mở cửa."
+
+Ninh bỗng gõ hai cái lên nền.
+
+Sa Đinh lập tức kéo cung.
+
+Trước mặt họ, sau lớp bụi kính, Trạm Ghi Số 12 hiện ra.
+
+Một căn nhà thấp không cửa sổ, nửa chìm trong đất, trên tường còn sót biển chữ:
+
+`Lưu trữ khẩn cấp ngoại vi.`
+
+Dưới biển chữ, có vết móng mới.
+
+Không phải chuột.
+
+Lớn hơn.
+
+## Chương 238: Nhà Không Cửa Sổ
+
+Trạm Ghi Số 12 không giống nơi lưu ký ức.
+
+Nó giống một cái hộp bê tông bị ai chôn vội rồi quên mất. Tường dày, cửa thép, không cửa sổ. Những khe thông gió nhỏ bị lưới sắt che kín, bên trên mắc đầy lông thú xám. Xung quanh trạm không có cây. Chỉ có bụi kính phủ một lớp lấp lánh trên đất, đẹp theo kiểu làm người ta muốn bịt miệng.
+
+Mộc Sanh lấy khăn ướt lau lên mặt biển.
+
+Chữ bên dưới hiện rõ hơn:
+
+`Chỉ mở bằng mã y tế, mã tử vong, hoặc quyền quản lý tuyến.`
+
+A Thất nhìn ổ khóa.
+
+"Ta thử?"
+
+Mộc Sanh lắc đầu.
+
+"Ổ này có bẫy mực hủy giấy. Mở sai có thể phun chất ăn mòn vào khoang trong."
+
+Sa Đinh nhìn nàng.
+
+"Ngươi biết?"
+
+"Ta từng học cách đóng, không học cách mở."
+
+"Rất có ích."
+
+Mộc Sanh trừng hắn.
+
+Ninh bước tới gần cửa, đặt tai lên thép. Nàng nhắm mắt.
+
+Một lúc sau, nàng gõ ba cái.
+
+Bên trong có tiếng.
+
+A Thất lập tức lùi lại.
+
+Sa Đinh kéo cung.
+
+Tiếng bên trong không giống người. Không phải bước chân. Là tiếng kéo lê rất nhẹ, cách một quãng lại dừng, như có thứ gì đó bị mắc dây.
+
+Mộc Sanh thì thầm:
+
+"Có thể là thú mắc trong kho."
+
+A Thất mặt trắng.
+
+"Kho hồ sơ nuôi thú làm gì?"
+
+Sa Đinh đáp:
+
+"Hỏi nó sau khi bắn."
+
+Họ vòng quanh trạm. Ở phía sau có một cửa thông gió bị cắn cong. Vết răng trên lưới không sắc như chuột, cũng không rộng như chó hai hàm. Mộc Sanh nhặt một sợi lông mắc lại, xám trắng, đầu lông có ánh bạc.
+
+"Thú bị đánh dấu."
+
+Sa Đinh nhìn quanh.
+
+"Ngân Thụ?"
+
+"Hoặc thứ ăn phải đồ của Ngân Thụ."
+
+A Thất cúi xuống xem vết cắn.
+
+"Không vào được qua đây. Nhưng có thể đưa dây vào."
+
+"Dây làm gì?"
+
+"Mở chốt phụ từ trong nếu chốt còn."
+
+Mộc Sanh ngạc nhiên.
+
+"Ngươi chưa thấy bên trong."
+
+"Máy cũ đều giống người nghèo. Hay có một chốt phụ phòng lúc chủ bỏ chạy."
+
+Sa Đinh cười khẽ.
+
+"Triết lý của thợ máy."
+
+A Thất không để ý. Nó lấy dây móc, buộc vào mảnh kim loại Hắc Nha, luồn qua khe lưới cong. Tay nó rất khéo. Sợi dây đi vào, chạm một lần, rút ra, đổi góc, lại đi vào.
+
+Bên trong, tiếng kéo lê dừng lại.
+
+Ninh đột ngột kéo áo A Thất.
+
+Một cái gì đó đập mạnh vào cửa thông gió.
+
+Rầm.
+
+Lưới sắt cong thêm.
+
+A Thất ngã ngửa. Sa Đinh bắn ngay một mũi tên qua khe. Bên trong vang lên tiếng rít khô, không giống tiếng thú bình thường, mà giống hơi thoát khỏi một cái túi da.
+
+Mộc Sanh nhìn vệt chất lỏng bắn ra trên mũi tên.
+
+Màu xám.
+
+"Đừng chạm. Có độc mô."
+
+Sa Đinh nhổ mũi tên xuống đất, rắc bột than lên.
+
+Thứ bên trong lại kéo lê.
+
+Nhưng xa hơn.
+
+A Thất bò dậy, tay run.
+
+"Nó canh cửa."
+
+Mộc Sanh nói:
+
+"Không. Nó bị nhốt."
+
+Cả đội im.
+
+Bị nhốt nghĩa là có thể có người từng cố giữ nó ở trong.
+
+Hoặc cố giữ người khác ở ngoài.
+
+A Thất nhặt dây.
+
+"Ta cần thử lần nữa."
+
+Sa Đinh cau mày.
+
+"Nó vừa suýt cắn tay ngươi."
+
+"Nếu không mở, về tay không."
+
+"Tay không còn hơn mất tay."
+
+A Thất nhìn cửa thép.
+
+"Cổng đang chờ."
+
+Mộc Sanh đặt tay lên vai nó.
+
+"Chờ không có nghĩa muốn ngươi chết."
+
+A Thất mím môi.
+
+"Vậy làm sao?"
+
+Ninh giơ tay, chỉ vào mái.
+
+Trên mái trạm có một ống thông khí nhỏ, nắp nghiêng vì gỉ. Cao hơn đầu người một đoạn, nhưng Sa Đinh có dây móc.
+
+Sa Đinh nhìn Ninh.
+
+"Ngươi muốn lên?"
+
+Ninh gật.
+
+"Không."
+
+Ninh nhìn hắn.
+
+Sa Đinh cứng mặt.
+
+"Ngươi nhẹ nhất, ta biết. Nhưng bên trong có thú."
+
+Ninh chỉ vào tai mình, rồi chỉ vào ống thông khí.
+
+Nàng nghe được.
+
+Mộc Sanh nói:
+
+"Nếu nàng lên, chúng ta buộc hai dây. Một dây eo, một dây cổ tay. Có động là kéo."
+
+Sa Đinh vẫn không đồng ý.
+
+Ninh bước đến trước mặt hắn, gõ lên cung của hắn một cái.
+
+Sau đó chỉ vào mắt hắn, chỉ vào mình, chỉ vào cửa.
+
+A Thất dịch nhỏ:
+
+"Nàng nói ngươi nhìn cửa, nàng nghe bên trong."
+
+Sa Đinh nhìn Ninh rất lâu.
+
+Cuối cùng hắn đưa dây.
+
+"Ba nhịp không đáp, ta kéo."
+
+Ninh gật.
+
+Nàng leo lên mái nhẹ như một cái bóng. Dây căng qua tay Sa Đinh. A Thất nín thở. Mộc Sanh cầm sẵn băng. Bên trong trạm, thứ bị nhốt kéo lê một vòng, như cũng nghe thấy có người đang bò trên đầu mình.
+
+Ninh mở nắp thông khí.
+
+Bụi xám phụt lên.
+
+Nàng nhắm mắt, nghiêng tai xuống bóng tối.
+
+Một nhịp.
+
+Hai nhịp.
+
+Ba nhịp.
+
+Dây trên tay Sa Đinh căng lên.
+
+Hắn chuẩn bị kéo thì Ninh gõ mạnh một cái xuống mái.
+
+Không kéo.
+
+Rồi nàng thò tay vào ống thông khí, thả xuống một cái chuông nhỏ.
+
+Chuông rơi.
+
+Leng keng.
+
+Thứ bên trong lao về phía âm thanh.
+
+Cửa thông gió phía sau trống trong khoảnh khắc.
+
+A Thất hiểu ra, nhào tới luồn dây lần nữa.
+
+Lần này, mảnh kim loại móc trúng chốt.
+
+Nó kéo.
+
+Cửa thép chính bật ra một khe.
+
+Mùi giấy mốc, thuốc sát trùng và thú bệnh tràn ra cùng lúc.
+
+Mộc Sanh che miệng.
+
+"Vào nhanh. Trước khi nó quay lại."
