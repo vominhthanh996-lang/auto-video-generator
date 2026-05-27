@@ -4,12 +4,12 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-
 $configPathResolved = (Resolve-Path $ConfigPath).Path
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repoRoot = Split-Path -Parent $scriptRoot
 $opsScript = Join-Path $repoRoot "scripts\start_ops_board.ps1"
 $workerScript = Join-Path $repoRoot "scripts\story_task_worker.ps1"
+$cleanupScript = Join-Path $repoRoot "scripts\cleanup_duplicate_story_tasks.ps1"
 
 function Test-OpsBoardAlive {
     try {
@@ -28,6 +28,15 @@ if (-not (Test-OpsBoardAlive)) {
         "-File", $opsScript
     ) -WindowStyle Hidden
     Start-Sleep -Seconds 2
+}
+
+if (Test-Path $cleanupScript) {
+    Start-Process -FilePath "powershell.exe" -ArgumentList @(
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", $cleanupScript,
+        "-ConfigPath", $configPathResolved
+    ) -WindowStyle Hidden -Wait
 }
 
 $alreadyRunning = Get-CimInstance Win32_Process | Where-Object {
