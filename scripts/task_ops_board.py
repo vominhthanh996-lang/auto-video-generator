@@ -29,6 +29,12 @@ def read_task_statuses() -> list[dict]:
             data = json.loads(path.read_text(encoding="utf-8-sig"))
         except Exception:
             continue
+        if str(data.get("overall", "")).lower() == "terminated":
+            try:
+                path.unlink()
+            except Exception:
+                pass
+            continue
         data["_status_file"] = str(path)
         enrich_with_scheduler(data)
         tasks.append(data)
@@ -121,7 +127,9 @@ def get_worker_entries(task_name: str) -> list[dict]:
 
 
 def end_task(task_name: str) -> dict:
+    slug = slugify(task_name)
     status_path = STATUS_DIR / f"{slugify(task_name)}.json"
+    config_path = WORK_ROOT / "temp" / f"{slug}.json"
     startup_launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slugify(task_name)}.cmd"
     workers = get_worker_entries(task_name)
     killed: list[int] = []
@@ -145,22 +153,25 @@ def end_task(task_name: str) -> dict:
             startup_launcher.unlink()
         except Exception as exc:
             errors.append(f"startup launcher: {exc}")
+    if config_path.exists():
+        try:
+            config_path.unlink()
+        except Exception as exc:
+            errors.append(f"config remove: {exc}")
     if status_path.exists():
         try:
-            data = json.loads(status_path.read_text(encoding="utf-8-sig"))
-            data["overall"] = "terminated"
-            data["current_node"] = "terminated"
-            data["message"] = "Task ended from ops board"
-            data["updated_at"] = __import__("datetime").datetime.now().isoformat(timespec="seconds")
-            status_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            status_path.unlink()
         except Exception as exc:
-            errors.append(f"status update: {exc}")
+            errors.append(f"status remove: {exc}")
     return {
         "task": task_name,
         "killed": killed,
         "errors": errors,
         "status_file": str(status_path),
+        "config_file": str(config_path),
         "startup_launcher_removed": not startup_launcher.exists(),
+        "status_removed": not status_path.exists(),
+        "config_removed": not config_path.exists(),
     }
 
 
