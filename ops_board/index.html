@@ -157,6 +157,25 @@
       color: #9fd2ff;
       text-decoration: none;
     }
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 14px;
+    }
+    .btn {
+      border: 1px solid rgba(255,104,104,.45);
+      background: rgba(255,104,104,.12);
+      color: #ffd6d6;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn:disabled {
+      opacity: .6;
+      cursor: wait;
+    }
     .empty {
       padding: 32px;
       border: 1px dashed var(--line);
@@ -235,8 +254,26 @@
             <div class="links"><strong>QA:</strong> ${safe(task.qa_summary)}</div>
             <div class="links"><strong>Project:</strong> ${safe(task.project)}</div>
           </div>
+          <div class="actions">
+            <button class="btn" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
+          </div>
         </section>
       `;
+    }
+
+    async function endTask(taskName) {
+      const ok = confirm(`End task "${taskName}" now? This will stop the running worker and remove its auto-resume launcher.`);
+      if (!ok) return;
+      try {
+        const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/end`, { method: "POST" });
+        const payload = await response.json();
+        if (payload.errors && payload.errors.length) {
+          alert(`Task ended with warnings:\n${payload.errors.join("\n")}`);
+        }
+        await loadBoard();
+      } catch (error) {
+        alert(`Failed to end task: ${error.message}`);
+      }
     }
 
     async function loadBoard() {

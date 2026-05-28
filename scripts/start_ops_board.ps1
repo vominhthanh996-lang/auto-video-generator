@@ -20,32 +20,42 @@ function Test-OpsBoardAlive {
     }
 }
 
+function Get-OpsBoardProcesses {
+    Get-CimInstance Win32_Process | Where-Object {
+        $_.Name -match "python" -and $_.CommandLine -like "*task_ops_board.py*"
+    }
+}
+
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $logPath) | Out-Null
 
 if (Test-OpsBoardAlive) {
     exit 0
 }
 
-$alreadyRunning = Get-CimInstance Win32_Process | Where-Object {
-    $_.Name -match "python" -and $_.CommandLine -like "*task_ops_board.py*" -and $_.CommandLine -like "*8765*"
-}
-if ($alreadyRunning) {
-    Start-Sleep -Seconds 2
-    if (Test-OpsBoardAlive) {
-        exit 0
+$alreadyRunning = @(Get-OpsBoardProcesses)
+if ($alreadyRunning.Count -gt 0) {
+    foreach ($proc in $alreadyRunning) {
+        try {
+            Stop-Process -Id $proc.ProcessId -Force -ErrorAction Stop
+        }
+        catch {}
     }
+    Start-Sleep -Seconds 2
 }
 
-Start-Process -FilePath $pythonExe -ArgumentList @(
+$process = Start-Process -FilePath $pythonExe -ArgumentList @(
     $scriptPath,
     "--host", "127.0.0.1",
     "--port", "8765"
-) -RedirectStandardOutput $logPath -RedirectStandardError $errLogPath -WindowStyle Hidden
+) -RedirectStandardOutput $logPath -RedirectStandardError $errLogPath -WindowStyle Hidden -PassThru
 
-for ($i = 0; $i -lt 10; $i++) {
+for ($i = 0; $i -lt 20; $i++) {
     Start-Sleep -Seconds 1
     if (Test-OpsBoardAlive) {
         exit 0
+    }
+    if ($process.HasExited) {
+        break
     }
 }
 

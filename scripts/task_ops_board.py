@@ -6,13 +6,20 @@ import json
 import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 WORK_ROOT = REPO_ROOT.parent
 STATUS_DIR = WORK_ROOT / "temp" / "story-task-status"
 BOARD_ROOT = REPO_ROOT / "ops_board"
+
+
+def slugify(value: str) -> str:
+    slug = "".join(ch.lower() if ch.isalnum() else "-" for ch in value.strip())
+    while "--" in slug:
+        slug = slug.replace("--", "-")
+    return slug.strip("-") or "story-task"
 
 
 def read_task_statuses() -> list[dict]:
@@ -22,10 +29,66 @@ def read_task_statuses() -> list[dict]:
             data = json.loads(path.read_text(encoding="utf-8-sig"))
         except Exception:
             continue
+        overall = str(data.get("overall", "")).lower()
+        if overall in {"terminated", "success"}:
+            try:
+                path.unlink()
+            except Exception:
+                pass
+            continue
+        refresh_counts_from_assets(data)
         data["_status_file"] = str(path)
         enrich_with_scheduler(data)
         tasks.append(data)
     return tasks
+
+
+def refresh_counts_from_assets(task: dict) -> None:
+    storyboard_path = task.get("storyboard")
+    if not storyboard_path:
+        return
+    try:
+        storyboard = json.loads(Path(storyboard_path).read_text(encoding="utf-8-sig"))
+    except Exception:
+        return
+    scenes = list(storyboard.get("scenes") or [])
+    project_root = Path(task.get("project") or Path(storyboard_path).parent)
+    image_count = 0
+    audio_count = 0
+    for scene in scenes:
+        image_value = scene.get("image")
+        if image_value:
+            image_path = Path(image_value)
+            if not image_path.is_absolute():
+                image_path = project_root / image_value
+            if image_path.exists():
+                image_count += 1
+        audio_value = scene.get("audio")
+        if audio_value:
+            audio_path = Path(audio_value)
+            if not audio_path.is_absolute():
+                audio_path = project_root / audio_value
+            if audio_path.exists():
+                audio_count += 1
+    task["counts"] = {
+        "scenes": len(scenes),
+        "images": image_count,
+        "audio": audio_count,
+    }
+    nodes = task.setdefault("nodes", {})
+    voice_node = nodes.setdefault("voice", {"status": "pending", "detail": ""})
+    images_node = nodes.setdefault("images", {"status": "pending", "detail": ""})
+    if len(scenes):
+        if audio_count >= len(scenes):
+            voice_node["status"] = "done"
+            voice_node["detail"] = f"Audio ready {audio_count}/{len(scenes)}"
+        elif audio_count > 0 and str(voice_node.get("status", "")).lower() == "running":
+            voice_node["detail"] = f"Audio {audio_count}/{len(scenes)}"
+        if image_count >= len(scenes):
+            images_node["status"] = "done"
+            images_node["detail"] = f"Images ready {image_count}/{len(scenes)}"
+        elif image_count > 0 and str(images_node.get("status", "")).lower() == "running":
+            images_node["detail"] = f"Images {image_count}/{len(scenes)}"
 
 
 def enrich_with_scheduler(task: dict) -> None:
@@ -59,6 +122,109 @@ def enrich_with_scheduler(task: dict) -> None:
     }
 
 
+def get_worker_entries(task_name: str) -> list[dict]:
+    try:
+        result = subprocess.run(
+            [
+                "powershell",
+                "-NoProfile",
+                "-Command",
+                (
+                    "Get-CimInstance Win32_Process | "
+                    "Where-Object { $_.Name -eq 'powershell.exe' -and $_.CommandLine -like '*story_task_worker.ps1*' } | "
+                    "Select-Object ProcessId,CommandLine | ConvertTo-Json -Depth 4"
+                ),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+    except Exception:
+        return []
+    if result.returncode != 0 or not result.stdout.strip():
+        return []
+    try:
+        payload = json.loads(result.stdout)
+    except Exception:
+        return []
+    rows = payload if isinstance(payload, list) else [payload]
+    entries: list[dict] = []
+    for row in rows:
+        command_line = str(row.get("CommandLine") or "")
+        if not command_line:
+            continue
+        config_path = ""
+        if '-ConfigPath "' in command_line:
+            config_path = command_line.split('-ConfigPath "', 1)[1].split('"', 1)[0]
+        elif "-ConfigPath " in command_line:
+            config_path = command_line.split("-ConfigPath ", 1)[1].split(" ", 1)[0].strip()
+        config_task = ""
+        if config_path:
+            try:
+                config_task = json.loads(Path(config_path).read_text(encoding="utf-8-sig")).get("TaskName", "")
+            except Exception:
+                config_task = ""
+        if config_task == task_name:
+            entries.append(
+                {
+                    "pid": int(row.get("ProcessId")),
+                    "config_path": config_path,
+                    "command_line": command_line,
+                }
+            )
+    return entries
+
+
+def end_task(task_name: str) -> dict:
+    slug = slugify(task_name)
+    status_path = STATUS_DIR / f"{slugify(task_name)}.json"
+    config_path = WORK_ROOT / "temp" / f"{slug}.json"
+    startup_launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slugify(task_name)}.cmd"
+    workers = get_worker_entries(task_name)
+    killed: list[int] = []
+    errors: list[str] = []
+    for worker in workers:
+        pid = int(worker["pid"])
+        result = subprocess.run(
+            ["taskkill", "/PID", str(pid), "/T", "/F"],
+            capture_output=True,
+            text=True,
+            timeout=20,
+            check=False,
+        )
+        if result.returncode == 0:
+            killed.append(pid)
+        else:
+            detail = (result.stderr or result.stdout or "").strip()
+            errors.append(f"PID {pid}: {detail}")
+    if startup_launcher.exists():
+        try:
+            startup_launcher.unlink()
+        except Exception as exc:
+            errors.append(f"startup launcher: {exc}")
+    if config_path.exists():
+        try:
+            config_path.unlink()
+        except Exception as exc:
+            errors.append(f"config remove: {exc}")
+    if status_path.exists():
+        try:
+            status_path.unlink()
+        except Exception as exc:
+            errors.append(f"status remove: {exc}")
+    return {
+        "task": task_name,
+        "killed": killed,
+        "errors": errors,
+        "status_file": str(status_path),
+        "config_file": str(config_path),
+        "startup_launcher_removed": not startup_launcher.exists(),
+        "status_removed": not status_path.exists(),
+        "config_removed": not config_path.exists(),
+    }
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, directory=None, **kwargs):
         super().__init__(*args, directory=str(BOARD_ROOT), **kwargs)
@@ -75,6 +241,22 @@ class Handler(SimpleHTTPRequestHandler):
             self.wfile.write(body)
             return
         return super().do_GET()
+
+    def do_POST(self):
+        parsed = urlparse(self.path)
+        if parsed.path.startswith("/api/tasks/") and parsed.path.endswith("/end"):
+            middle = parsed.path[len("/api/tasks/") : -len("/end")].strip("/")
+            task_name = unquote(middle)
+            payload = end_task(task_name)
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        self.send_response(404)
+        self.end_headers()
 
 
 def main() -> int:
