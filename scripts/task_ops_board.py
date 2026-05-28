@@ -29,16 +29,66 @@ def read_task_statuses() -> list[dict]:
             data = json.loads(path.read_text(encoding="utf-8-sig"))
         except Exception:
             continue
-        if str(data.get("overall", "")).lower() == "terminated":
+        overall = str(data.get("overall", "")).lower()
+        if overall in {"terminated", "success"}:
             try:
                 path.unlink()
             except Exception:
                 pass
             continue
+        refresh_counts_from_assets(data)
         data["_status_file"] = str(path)
         enrich_with_scheduler(data)
         tasks.append(data)
     return tasks
+
+
+def refresh_counts_from_assets(task: dict) -> None:
+    storyboard_path = task.get("storyboard")
+    if not storyboard_path:
+        return
+    try:
+        storyboard = json.loads(Path(storyboard_path).read_text(encoding="utf-8-sig"))
+    except Exception:
+        return
+    scenes = list(storyboard.get("scenes") or [])
+    project_root = Path(task.get("project") or Path(storyboard_path).parent)
+    image_count = 0
+    audio_count = 0
+    for scene in scenes:
+        image_value = scene.get("image")
+        if image_value:
+            image_path = Path(image_value)
+            if not image_path.is_absolute():
+                image_path = project_root / image_value
+            if image_path.exists():
+                image_count += 1
+        audio_value = scene.get("audio")
+        if audio_value:
+            audio_path = Path(audio_value)
+            if not audio_path.is_absolute():
+                audio_path = project_root / audio_value
+            if audio_path.exists():
+                audio_count += 1
+    task["counts"] = {
+        "scenes": len(scenes),
+        "images": image_count,
+        "audio": audio_count,
+    }
+    nodes = task.setdefault("nodes", {})
+    voice_node = nodes.setdefault("voice", {"status": "pending", "detail": ""})
+    images_node = nodes.setdefault("images", {"status": "pending", "detail": ""})
+    if len(scenes):
+        if audio_count >= len(scenes):
+            voice_node["status"] = "done"
+            voice_node["detail"] = f"Audio ready {audio_count}/{len(scenes)}"
+        elif audio_count > 0 and str(voice_node.get("status", "")).lower() == "running":
+            voice_node["detail"] = f"Audio {audio_count}/{len(scenes)}"
+        if image_count >= len(scenes):
+            images_node["status"] = "done"
+            images_node["detail"] = f"Images ready {image_count}/{len(scenes)}"
+        elif image_count > 0 and str(images_node.get("status", "")).lower() == "running":
+            images_node["detail"] = f"Images {image_count}/{len(scenes)}"
 
 
 def enrich_with_scheduler(task: dict) -> None:

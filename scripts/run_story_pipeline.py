@@ -919,7 +919,7 @@ def maybe_start_comfy(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Run the local story-video pipeline with resumable image/audio stages.")
-    parser.add_argument("--source", required=True, type=Path, help="UTF-8 story text file.")
+    parser.add_argument("--source", type=Path, help="UTF-8 story text file.")
     parser.add_argument("--title", default="")
     parser.add_argument("--project", type=Path)
     parser.add_argument("--root", default=str(WORK_ROOT / "video-projects"))
@@ -961,6 +961,8 @@ def main():
     parser.add_argument("--skip-render", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
+    if not args.source and not args.project:
+        parser.error("the following arguments are required: --source (or provide --project for an existing storyboard project)")
     if args.run_mode == "work" or args.gentle_mode:
         args.batch_size = 1
         if args.image_delay <= 0:
@@ -976,7 +978,14 @@ def main():
             args.image_priority = "normal"
 
     preset = preset_for(args.format)
-    project, storyboard, config = build_storyboard(args)
+    if args.source:
+        project, storyboard, config = build_storyboard(args)
+    else:
+        project = args.project.resolve()
+        storyboard = project / "storyboard.json"
+        if not storyboard.exists():
+            raise SystemExit(f"Storyboard not found in project: {storyboard}")
+        config = json.loads(storyboard.read_text(encoding="utf-8-sig"))
     env = dict(os.environ)
     resolved_root = Path(args.root).resolve()
     if "video-projects" in str(resolved_root):
@@ -987,9 +996,10 @@ def main():
     Path(env["TEMP"]).mkdir(parents=True, exist_ok=True)
 
     scripts = Path(__file__).resolve().parent
-    run([sys.executable, str(scripts / "validate_storyboard.py"), "--storyboard", str(storyboard), "--stage", "text"], env=env)
+    if args.source:
+        run([sys.executable, str(scripts / "validate_storyboard.py"), "--storyboard", str(storyboard), "--stage", "text"], env=env)
 
-    if args.image_mode == "hybrid-manual":
+    if args.source and args.image_mode == "hybrid-manual":
         manual_cmd = [
             sys.executable,
             str(scripts / "prepare_manual_chatgpt_images.py"),
@@ -1006,7 +1016,8 @@ def main():
             manual_cmd.append("--import-existing")
         run(manual_cmd, env=env)
 
-    maybe_start_comfy(args)
+    if args.source:
+        maybe_start_comfy(args)
 
     image_cmd = [
         sys.executable,
@@ -1051,15 +1062,16 @@ def main():
     if args.image_mode == "hybrid-manual":
         image_cmd.append("--skip-manual")
 
-    processes = []
-    if not args.skip_images:
-        processes.append(("images", subprocess.Popen(image_cmd, env=env)))
-    if not args.skip_voice:
-        processes.append(("voice", subprocess.Popen(voice_cmd, env=env)))
-    for name, process in processes:
-        code = process.wait()
-        if code != 0:
-            raise SystemExit(f"{name} stage failed with exit code {code}")
+    if args.source:
+        processes = []
+        if not args.skip_images:
+            processes.append(("images", subprocess.Popen(image_cmd, env=env)))
+        if not args.skip_voice:
+            processes.append(("voice", subprocess.Popen(voice_cmd, env=env)))
+        for name, process in processes:
+            code = process.wait()
+            if code != 0:
+                raise SystemExit(f"{name} stage failed with exit code {code}")
 
     if not args.skip_sfx:
         sfx_cmd = [
@@ -1108,7 +1120,8 @@ def main():
     )
     contact_sheet = write_contact_sheet(project, storyboard)
 
-    output = project / "output" / f"{slugify(args.title or args.source.stem)}-{args.format}.mp4"
+    output_stem = args.title or (args.source.stem if args.source else project.name)
+    output = project / "output" / f"{slugify(output_stem)}-{args.format}.mp4"
     if not args.skip_render:
         run([sys.executable, str(scripts / "render_video.py"), "--storyboard", str(storyboard), "--output", str(output), "--format", args.format], env=env)
 
