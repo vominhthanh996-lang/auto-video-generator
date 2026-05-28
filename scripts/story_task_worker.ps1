@@ -369,6 +369,11 @@ function Invoke-ImageStep {
     if (-not $targetScene) {
         return $true
     }
+    $targetSceneData = $state.Scenes[$targetScene - 1]
+    $targetImagePath = $null
+    if ($targetSceneData.image) {
+        $targetImagePath = if ([System.IO.Path]::IsPathRooted([string]$targetSceneData.image)) { [string]$targetSceneData.image } else { Join-Path $script:ProjectRoot ([string]$targetSceneData.image) }
+    }
     Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Generating image scene {0}" -f $targetScene) -NodeUpdates @{
         images = @{ status = "running"; detail = ("Current scene {0}, images {1}/{2}" -f $targetScene, $state.ImageCount, $state.SceneCount) }
     }
@@ -403,7 +408,23 @@ function Invoke-ImageStep {
             "--reference-denoise", [string]$script:ImageReferenceDenoise
         )
     }
-    Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $script:RepoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
+    try {
+        Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $script:RepoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
+    }
+    catch {
+        Write-Log ("IMAGE retry after error on scene {0}: {1}" -f $targetScene, $_.Exception.Message)
+        Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Retrying image scene {0}" -f $targetScene) -NodeUpdates @{
+            images = @{ status = "warning"; detail = ("Scene {0} failed once, will retry" -f $targetScene) }
+        }
+        return $false
+    }
+    if ($targetImagePath -and -not (Test-Path $targetImagePath)) {
+        Write-Log ("IMAGE output missing after scene {0}: {1}" -f $targetScene, $targetImagePath)
+        Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Missing output for image scene {0}" -f $targetScene) -NodeUpdates @{
+            images = @{ status = "warning"; detail = ("Scene {0} did not produce an output file, retrying" -f $targetScene) }
+        }
+        return $false
+    }
     Start-Sleep -Seconds 5
     return $false
 }
