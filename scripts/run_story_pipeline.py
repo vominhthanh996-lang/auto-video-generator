@@ -35,7 +35,7 @@ BASE_STYLE = (
 
 REFERENCE_IMAGE_RECIPE = (
     "Reference composition recipe from Thanh's approved ChatGPT sample: cinematic 16:9 shelter interior, "
-    "Lam Tich sits or kneels in the left third, her dirty but beautiful face readable in three-quarter profile; "
+    "Lam Tich sits or kneels in the left third, her tired adult face readable in three-quarter profile; "
     "Tan Da lies or half-reclines in the right third, black tactical clothing, bandaged injured abdomen, clear side-profile face; "
     "a warm oil lantern glows between them as the visual anchor; torn tarp walls and hanging patched canvas frame the top and right side; "
     "foreground has rusty bucket, bottle, scraps, dirty survival props; background opens to a ruined industrial wasteland with haze and distant structures; "
@@ -54,13 +54,27 @@ DEFAULT_NEGATIVE = (
     ", melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, "
     "missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, "
     "over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
+    ", nude, naked, topless, shirtless woman, bare chest, bare torso, exposed breasts, exposed nipples, areola, "
+    "underboob, sideboob, cleavage focus, exposed navel, full bare abdomen, lingerie, bikini, underwear, "
+    "see-through clothing, wet revealing clothing, erotic pose, seductive pose, pin-up pose, reclining pin-up pose, spread legs, "
+    "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
+    "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing"
 )
 
 LAM_TICH_VISUAL = (
-    "Lam Tich, a beautiful fragile sixteen-year-old Asian wasteland scavenger girl with a lovely youthful maiden look, "
-    "soft delicate facial features under soot and grime, clear pretty eyes that still look tired and wary, cracked lips, "
-    "messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, "
-    "quiet stubborn survival beauty, pretty but believable in the wasteland, not glamorous, not clean, not doll-like"
+    "Lam Tich, a young adult Asian wasteland scavenger woman, early twenties, beautiful but non-sexualized, "
+    "soft tired facial features under soot and grime, clear wary eyes, cracked lips, messy black hair tied back with loose strands, "
+    "slim survival-worn body in rugged dirty layered gray-brown coat, torn jacket over a dark fitted survival top that fully covers chest and nipples, "
+    "tasteful small collarbone, shoulder edge, or forearm visible, practical trousers, boots, quiet stubborn survival dignity, "
+    "cinematic but believable in the wasteland, not glamorous, not explicit, not doll-like"
+)
+
+YOUTUBE_SAFE_VISUAL_RULE = (
+    "YouTube-safe visual rule: Lam Tich is depicted as an adult woman, not underage; keep her beautiful through face, "
+    "emotion, lighting, posture, and wasteland costume; rugged torn jacket is allowed only over a dark fitted survival top "
+    "that fully covers chest and nipples, with only small collarbone, shoulder edge, or forearm visible when natural for survival clothing; no nudity, no lingerie, "
+    "no bare chest, no exposed breasts, no nipple detail, no cleavage focus, no exposed navel, no full bare abdomen, no spread-leg pose, "
+    "no erotic pose, no reclining pin-up pose, no voyeuristic framing, no sexualized body focus, and no composition that makes breasts, buttocks, crotch, or bare skin the focal point."
 )
 
 TAN_DA_VISUAL = (
@@ -164,7 +178,11 @@ def read_source(path):
 
 
 def has_any(text, words):
-    return any(word in text for word in words)
+    for word in words:
+        pattern = r"(?<!\w)" + re.escape(word).replace(r"\ ", r"\s+") + r"(?!\w)"
+        if re.search(pattern, text):
+            return True
+    return False
 
 
 def normalize_vi(text):
@@ -376,7 +394,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"{shot_composition_rule}"
         "When both Lam Tich and Tan Da are in the scene, keep their body positions consistent with the reference; do not make Tan Da stand, do not crop heads or hide faces. "
         "Use grounded Asian webnovel casting, natural faces, dirty damaged clothes, readable faces when characters are visible, no idol makeup, no clean fantasy armor. "
-        "Lam Tich should have a beautiful youthful maiden face, soft and memorable, but must remain weak, hungry, dirty, and believable in the wasteland. "
+        "Lam Tich must read as an adult woman, attractive through face, emotion, lighting, and posture, with modest damaged survival clothing and no sexualized framing. "
         "Tan Da must not look like a faceless villain; show a clearer righteous protective expression whenever his face appears. "
         "Keep spatial logic from the previous scene unless the narration clearly changes location. "
         "Avoid unrelated cabins, clean modern streets, fantasy armor, random portraits, extra characters, or objects not implied by the narration. "
@@ -384,6 +402,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     )
     return {
         "prompt": prompt,
+        "characters": characters,
         "must_show": must_show,
         "setting": setting,
         "actions": actions,
@@ -470,14 +489,28 @@ def detect_scene_state(narration, continuity=None):
     continuity = continuity or {}
     plain = normalize_vi(narration)
     state = {
-        "location": continuity.get("location", "inside the tarp shelter"),
+        "location": continuity.get("location", "story-defined location matching the narration"),
         "focus": "interaction",
         "threat": continuity.get("threat", "low"),
-        "lam_tich_position": continuity.get("lam_tich_position", "near the lantern inside the shelter"),
-        "tan_da_position": continuity.get("tan_da_position", "lying in the shelter corner"),
-        "door_state": continuity.get("door_state", "closed with torn cloth and wire"),
+        "lam_tich_position": continuity.get("lam_tich_position", "position defined by the current narration"),
+        "tan_da_position": continuity.get("tan_da_position", ""),
+        "door_state": continuity.get("door_state", ""),
         "prop_focus": [],
     }
+    if has_any(plain, ["xuyen khong", "mat the", "ngoai thanh", "nhat rac", "phe tho"]):
+        state["location"] = "open post-apocalyptic wasteland outside the safe city"
+        state["focus"] = "survival-introduction"
+        state["threat"] = "ambient"
+        state["lam_tich_position"] = "moving through the wasteland or bracing herself in the open"
+        state["tan_da_position"] = ""
+        state["door_state"] = ""
+    if has_any(plain, ["khu 17 chay", "chay len", "lua", "khoi", "gao", "bo chay", "ten thep"]):
+        state["location"] = "burning scrap-lane alleys of District 17 with smoke, fire, and fleeing survivors"
+        state["focus"] = "mass-chaos"
+        state["threat"] = "high"
+        state["lam_tich_position"] = "moving through smoke, fire, and panicked crowds"
+        state["tan_da_position"] = ""
+        state["door_state"] = ""
     if has_any(plain, ["ngoai cua leu", "qua khe ton", "bong nguoi", "hau seo", "tieng buoc chan"]):
         state["location"] = "at the shelter doorway with outside shadows pressing close"
         state["focus"] = "doorway-threat"
@@ -511,6 +544,8 @@ def detect_scene_state(narration, continuity=None):
 def shot_type_for(narration, scene_index):
     lower = narration.lower()
     plain = normalize_vi(narration)
+    if has_any(plain, ["khu 17 chay", "chay len", "lua", "khoi", "gao", "bo chay", "ten thep"]):
+        return "wide or medium survival action shot with burning shelters, fleeing survivors, and attack direction readable"
     if has_any(plain, ["nap hop", "hai ngum", "vang nhat", "bui than", "than loc", "mui ri sat"]):
         return "close insert shot on water, metal lid, dirty cloth filter, and trembling hands"
     if has_any(plain, ["nguoi han nong", "sot", "gen sup do", "vet thuong bung", "nua than duoi"]):
@@ -547,15 +582,19 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     shot_type = shot_type_for(narration, scene_index)
     scene_state = detect_scene_state(narration, continuity)
 
-    if "lam tich" in plain:
+    mentions_lam_tich = "lam tich" in plain or has_any(plain, ["nang", "co gai", "nu chinh"])
+    mentions_tan_da = "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain
+    if mentions_lam_tich:
         add_unique(characters, LAM_TICH_VISUAL)
-    if "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain:
+    if mentions_tan_da:
         add_unique(characters, TAN_DA_VISUAL)
     if not characters:
         continuity_text = " ".join(continuity.get("anchors", []))
         if "Lam Tich" in continuity_text:
             add_unique(characters, LAM_TICH_VISUAL)
-        if "Tan Da" in continuity_text:
+        if "Tan Da" in continuity_text and (
+            "two-shot" in shot_type or scene_state["focus"] in {"tan-da-condition", "aftermath", "doorway-threat"}
+        ):
             add_unique(characters, TAN_DA_VISUAL)
     if not characters:
         add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
@@ -578,7 +617,14 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
             add_unique(target, phrase)
 
     focus = scene_state["focus"]
-    if focus == "water-detail":
+    if focus == "survival-introduction":
+        characters = [LAM_TICH_VISUAL]
+        actions = ["Lam Tich crosses the ruined wasteland in the exact survival beat described by the narration"]
+        mood = ["bleak introduction, exhaustion, and disbelief at the apocalypse"]
+    elif focus == "mass-chaos":
+        actions = ["the exact action described in the narration"]
+        mood = ["mass panic, fire, smoke, and survival under attack"]
+    elif focus == "water-detail":
         characters = [LAM_TICH_VISUAL]
         actions = ["Lam Tich studies the last two sips of dirty water and the charcoal residue in the lid"]
         mood = ["thirst, hesitation, and fragile survival calculation"]
@@ -603,10 +649,8 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         if has_any(plain, ["dua nap hop", "ben moi", "uong", "nhuong nuoc"]):
             actions = ["Lam Tich raises the metal lid to Tan Da's lips and the two share the last water carefully"]
             mood = ["intimate survival trust under exhaustion"]
-        elif has_any(plain, ["quay dau", "nhin han", "hoi"]):
-            actions = ["the exact action described in the narration, with character positions inherited from the previous scene"]
         else:
-            actions = ["the exact action described in the narration, with character positions inherited from the previous scene"]
+            actions = ["the exact action described in the narration"]
         mood = mood or ["tense cinematic survival mood"]
 
     for prop in scene_state.get("prop_focus", []):
@@ -620,23 +664,31 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
 
     reference_recipe = (
         REFERENCE_IMAGE_RECIPE
-        if "two-shot" in shot_type or scene_index == 1
+        if "two-shot" in shot_type
         else "Use the approved sample only as character identity, face quality, clothing language, and shelter material reference, not as a fixed repeated composition"
     )
+    scene_state_parts = [f"location={scene_state['location']}", f"threat={scene_state['threat']}"]
+    if any("Lam Tich" in item for item in characters):
+        scene_state_parts.append(f"Lam Tich position={scene_state['lam_tich_position']}")
+    if any("Tan Da" in item for item in characters) and scene_state.get("tan_da_position"):
+        scene_state_parts.append(f"Tan Da position={scene_state['tan_da_position']}")
+    if scene_state.get("door_state") and "door" in scene_state["location"]:
+        scene_state_parts.append(f"door state={scene_state['door_state']}")
     prompt = (
         "Premium cinematic realistic wasteland story frame with strong story accuracy and scene-to-scene continuity. "
         f"{reference_recipe}. "
         "Do not turn every scene into the same two-character shelter shot. "
+        "The current narration is the highest-priority source of truth. "
         "The frame must illustrate the exact beat being narrated right now. "
         f"CONTINUITY FROM PREVIOUS SCENE: {continuity.get('summary', 'start of sequence')}. "
-        f"Current scene state: location={scene_state['location']}; threat={scene_state['threat']}; Lam Tich position={scene_state['lam_tich_position']}; Tan Da position={scene_state['tan_da_position']}; door state={scene_state['door_state']}. "
+        f"Current scene state: {'; '.join(scene_state_parts)}. "
         f"MUST SHOW: {', '.join(must_show)}. "
         f"Characters: {', '.join(characters)}. "
         f"Setting: {', '.join(setting)}. "
         f"Shot type: {shot_type}. "
         f"Action: {', '.join(actions)}. "
         f"Previous action handoff: {continuity.get('last_action', 'none')}. "
-        f"Persistent visual anchors: {', '.join(continuity.get('anchors', [])[:6]) if continuity.get('anchors') else 'keep character design and world style consistent'}. "
+        f"Persistent visual anchors: {', '.join(continuity.get('anchors', [])[:4]) if continuity.get('anchors') else 'keep character design and world style consistent'}. "
         f"Important props: {', '.join(props) if props else 'only props described by the narration'}. "
         f"Mood: {', '.join(mood)}. "
         "Use grounded Asian webnovel casting, realistic dirty survival clothing, readable faces only when the story beat needs the face visible, and keep spatial logic consistent from one scene to the next. "
@@ -645,6 +697,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     )
     return {
         "prompt": prompt,
+        "characters": characters,
         "must_show": must_show,
         "setting": setting,
         "actions": actions,
@@ -656,28 +709,26 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
 
 def update_visual_continuity(previous, visual):
     anchors = list(previous.get("anchors") or [])
-    for key in ("must_show", "setting", "props"):
+    for key in ("characters", "setting"):
         for item in visual.get(key) or []:
-            if any(token in item.lower() for token in ["lam tich", "tan da", "shelter", "water", "knife", "whistle", "ash bucket", "door gap"]):
+            if any(token in item.lower() for token in ["lam tich", "tan da", "district 17", "wasteland", "tarp shelter", "safe city"]):
                 add_unique(anchors, item)
-    anchors = anchors[-8:]
+    anchors = anchors[-6:]
     last_action = ", ".join((visual.get("actions") or [])[:2]) or previous.get("last_action", "none")
     scene_state = visual.get("scene_state") or {}
     summary_parts = []
     if anchors:
-        summary_parts.append("anchors: " + ", ".join(anchors[:5]))
-    if last_action:
-        summary_parts.append("last action: " + last_action)
+        summary_parts.append("stable anchors: " + ", ".join(anchors[:4]))
     if scene_state.get("location"):
         summary_parts.append("location: " + scene_state["location"])
     return {
         "anchors": anchors,
         "last_action": last_action,
-        "location": scene_state.get("location", previous.get("location", "inside the shelter")),
+        "location": scene_state.get("location", previous.get("location", "story-defined location matching the narration")),
         "threat": scene_state.get("threat", previous.get("threat", "low")),
-        "lam_tich_position": scene_state.get("lam_tich_position", previous.get("lam_tich_position", "near the lantern inside the shelter")),
-        "tan_da_position": scene_state.get("tan_da_position", previous.get("tan_da_position", "lying in the shelter corner")),
-        "door_state": scene_state.get("door_state", previous.get("door_state", "closed with torn cloth and wire")),
+        "lam_tich_position": scene_state.get("lam_tich_position", previous.get("lam_tich_position", "position defined by the current narration")),
+        "tan_da_position": scene_state.get("tan_da_position", previous.get("tan_da_position", "")),
+        "door_state": scene_state.get("door_state", previous.get("door_state", "")),
         "summary": "; ".join(summary_parts) if summary_parts else "continue same story world and character identity",
     }
 
@@ -699,11 +750,11 @@ def build_storyboard(args):
         "summary": "start of the story sequence",
         "anchors": [],
         "last_action": "none",
-        "location": "inside the tarp shelter",
+        "location": "story-defined location matching the narration",
         "threat": "low",
-        "lam_tich_position": "near the lantern inside the shelter",
-        "tan_da_position": "lying in the shelter corner",
-        "door_state": "closed with torn cloth and wire",
+        "lam_tich_position": "position defined by the current narration",
+        "tan_da_position": "",
+        "door_state": "",
     }
     for index, narration in enumerate(groups, 1):
         visual = visual_prompt_data(narration, style, continuity, index)
