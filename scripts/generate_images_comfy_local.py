@@ -12,6 +12,7 @@ import argparse
 import json
 import os
 import shutil
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -20,7 +21,8 @@ import uuid
 from pathlib import Path
 from typing import Any
 
-from path_defaults import default_comfy_input_dir, default_comfy_output_dir
+from PIL import Image
+from path_defaults import default_comfy_input_dir, default_comfy_output_dir, default_comfy_root
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
@@ -29,6 +31,11 @@ WORK_ROOT = REPO_ROOT.parent
 
 DEFAULT_POSITIVE_SUFFIX = (
     "clear natural human faces, anatomically correct eyes nose mouth and jaw, readable facial expression, "
+    "the word woman means a clearly adult female character with feminine facial structure and feminine body language, "
+    "the word man means a clearly adult male character with masculine facial structure and masculine body language, "
+    "female characters must read clearly female, male characters must read clearly male, no androgynous face, no gender ambiguity, "
+    "for Lam Tich scenes: exceptionally beautiful readable female face, clearly visible face, expressive eyes, feminine facial structure, short black hair framing the face without covering it, subtly glamorous and captivating without explicit sexualization, "
+    "for Tan Da scenes: exceptionally handsome readable male face, sharp masculine jawline, strong brows, steady heroic eyes, masculine neck and shoulders, rugged protective aura, "
     "cinematic composition, strong readable silhouette, clear foreground midground background, "
     "realistic lighting, warm practical light against cold toxic atmosphere, volumetric fog and dust, "
     "wet rusted metal, cracked concrete, torn fabric, soft bloom, atmospheric perspective, "
@@ -44,8 +51,16 @@ DEFAULT_NEGATIVE = (
     "beauty portrait, fashion photo, clean clothes, modern city, cute pose, "
     "melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, "
     "missing nose, broken nose, bad mouth, fused lips, extra teeth, duplicate face, two faces on one head, "
+    "fused bodies, merged bodies, overlapping bodies, detached head, floating head, extra person fragment, extra arm, extra hand, extra leg, missing arm, missing leg, tangled limbs, broken wrists, broken elbows, broken knees, impossible pose, "
     "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
-    "solo portrait, single person, close-up portrait, extreme close-up, cropped body, missing second character"
+    "solo portrait, single person, close-up portrait, extreme close-up, cropped body, missing second character, "
+    "nude, naked, topless, shirtless woman, bare chest, bare torso, exposed torso, exposed breasts, exposed nipples, areola, "
+    "underboob, sideboob, cleavage focus, exposed navel, full bare abdomen, lingerie, bikini, underwear, bra, bralette, crop top, deep neckline, off-shoulder, bare shoulders, "
+    "see-through clothing, wet revealing clothing, erotic pose, seductive pose, pin-up pose, reclining pin-up pose, spread legs, "
+    "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
+    "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
+    "open jacket with bare torso, open jacket, unbuttoned jacket, open shirt, wardrobe malfunction, boudoir, sultry expression, bedroom eyes, glamour pose, visible chest skin, visible torso skin, visible stomach skin, "
+    "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure, weak jawline on male lead, soft feminine male face, villain glare on male lead"
 )
 
 RATIO_TO_SIZE = {
@@ -57,13 +72,16 @@ RATIO_TO_SIZE = {
 }
 
 CHECKPOINT_PREFERENCES = [
+    "ytsafe_mix",
+    "dreamsafe",
+    "rv6mix",
+    "dreamshaper",
     "realisticvision",
     "cyberrealistic",
     "epicrealism",
     "photon",
     "majicmixrealistic",
     "deliberate",
-    "dreamshaper",
 ]
 
 CHECKPOINT_AVOID = [
@@ -89,6 +107,81 @@ UPSCALER_PREFERENCES = [
     "realesrgan_x2plus",
     "realesrgan",
 ]
+
+SAFETY_RETRY_POSITIVE = (
+    "fully clothed, chest and torso fully covered, no cleavage, no bikini, no lingerie, "
+    "practical survival outfit with secure top coverage, YouTube-safe framing"
+)
+
+SAFETY_RETRY_NEGATIVE = (
+    "nudity, nipples, areola, sideboob, underboob, cleavage, exposed breasts, exposed buttocks, thong, bikini, lingerie, "
+    "open shirt, open jacket, bra visible, underwear visible, see-through clothing, erotic framing, erotic pose"
+)
+
+
+class SafetyClassifierClient:
+    def __init__(self, process: subprocess.Popen[str], model_name: str) -> None:
+        self.process = process
+        self.model_name = model_name
+
+    def classify(self, image_path: Path, threshold: float) -> dict[str, Any]:
+        if not self.process.stdin or not self.process.stdout:
+            raise SystemExit("NSFW classifier process is missing stdio pipes.")
+        payload = {"image": str(image_path.resolve()), "threshold": threshold}
+        self.process.stdin.write(json.dumps(payload, ensure_ascii=False) + "\n")
+        self.process.stdin.flush()
+        line = self.process.stdout.readline()
+        if not line:
+            stderr = ""
+            if self.process.stderr:
+                try:
+                    stderr = self.process.stderr.read()
+                except Exception:
+                    stderr = ""
+            raise SystemExit(f"NSFW classifier process exited unexpectedly. {stderr}".strip())
+        result = json.loads(line)
+        if "error" in result:
+            raise SystemExit(f"NSFW classifier error: {result['error']}")
+        return result
+
+    def close(self) -> None:
+        try:
+            if self.process.stdin:
+                self.process.stdin.close()
+        except Exception:
+            pass
+        try:
+            self.process.terminate()
+            self.process.wait(timeout=5)
+        except Exception:
+            try:
+                self.process.kill()
+            except Exception:
+                pass
+
+
+def start_safety_classifier(args: argparse.Namespace) -> SafetyClassifierClient | None:
+    if not args.enable_nsfw_classifier:
+        return None
+    helper = (SCRIPT_DIR / "check_image_safety.py").resolve()
+    comfy_python = (default_comfy_root(REPO_ROOT) / "python_embeded" / "python.exe").resolve()
+    if not helper.exists():
+        raise SystemExit(f"Safety helper script is missing: {helper}")
+    if not comfy_python.exists():
+        raise SystemExit(f"Comfy embedded Python was not found: {comfy_python}")
+    env = os.environ.copy()
+    env.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
+    process = subprocess.Popen(
+        [str(comfy_python), str(helper), "--serve", "--model", args.nsfw_classifier_model],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        bufsize=1,
+        env=env,
+    )
+    return SafetyClassifierClient(process, args.nsfw_classifier_model)
 
 
 def request_json(base_url: str, path: str, payload: dict[str, Any] | None = None, timeout: int = 30) -> Any:
@@ -139,23 +232,30 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     # SD 1.5 CLIP truncates long prompts, so put the essential face/composition
     # control at the very front instead of burying it after story context.
     lower_prompt = prompt.lower()
+    must_show_text = " ".join(str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()).lower()
+    combined_text = f"{lower_prompt} {must_show_text} {action_text}"
     two_character_scene = (
-        ("woman" in lower_prompt and "man" in lower_prompt)
-        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
-        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
+        ("lam tich" in combined_text and "tan da" in combined_text)
+        or ("two share" in combined_text)
+        or ("two measure the next danger together" in combined_text)
     )
     if two_character_scene:
         face_control = (
             "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
-            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
+            "beautiful adult Asian scavenger woman in rugged layered wasteland clothing kneeling on the left, "
+            "summer wasteland outfit, lightweight fitted short-sleeve or sleeveless outer layer over a secure dark inner top that fully covers chest and torso, tasteful collarbone, arms, and some legs visible, "
+            "soft tired natural face under grime, "
             "injured black-clad man lying half-reclined on the right, "
-            "warm oil lantern between them, torn tarp shelter, no solo portrait, no close-up crop"
+            "warm oil lantern between them, torn tarp shelter, no solo portrait, no close-up crop, "
+            "YouTube-safe survival drama, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
     else:
         face_control = (
             "medium cinematic story shot, full head visible, clear natural Asian human face, "
             "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
-            "dirty post-apocalyptic survival drama, no close-up crop"
+            "dirty post-apocalyptic survival drama, lightweight summer wasteland outfit with secure chest coverage, fitted outer layer, and practical short bottoms, "
+            "tasteful collarbone, arms, and some legs visible, no close-up crop, "
+            "YouTube-safe, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
     if face_control.lower() not in prompt.lower():
         prompt = f"{face_control}, {prompt}"
@@ -184,39 +284,62 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
     action_text = ", ".join(str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()).lower()
     lower_prompt = prompt.lower()
+    must_show_text = " ".join(str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()).lower()
+    combined_text = f"{lower_prompt} {must_show_text} {action_text}"
     two_character_scene = (
-        ("woman" in lower_prompt and "man" in lower_prompt)
-        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
-        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
+        ("lam tich" in combined_text and "tan da" in combined_text)
+        or ("two share" in combined_text)
+        or ("two measure the next danger together" in combined_text)
     )
     if "close" in shot_type or "detail" in shot_type:
         face_control = (
-            "close survival detail shot, story-specific props and hands readable, "
-            "do not repeat the same full shelter composition, keep only the character parts needed for this action visible, "
-            "no solo glamour portrait"
+            "close survival detail shot, story-specific props and hands readable, face optional, "
+            "keep only face, hands, sleeves, or props visible for this action, no chest visible, no torso visible, no shoulder visible, no twisted limbs, no overlapping bodies, "
+            "do not repeat the same full shelter composition, no solo glamour portrait, "
+            "fully clothed with practical layered survival jacket and covered long-sleeved shirt, no nudity, no bare chest, no exposed torso, no exposed shoulders, no cleavage focus, no exposed navel, no sexualized pose"
         )
+        if "lam tich" in combined_text:
+            face_control = (
+                "close or medium-close survival character shot, Lam Tich's face clearly visible and readable, exceptionally beautiful female face, expressive eyes, short black hair framing the face, clearly feminine features, subtly glamorous presence, "
+                "hands or props may share frame but her face must remain visible, no chest visible, no torso visible, no shoulder visible, no twisted limbs, "
+                "no solo glamour portrait, no fashion beauty pose, fully clothed with practical layered survival jacket and covered long-sleeved shirt, "
+                "no nudity, no bare chest, no exposed torso, no exposed shoulders, no cleavage focus, no exposed navel, no sexualized pose"
+            )
     elif "wide" in shot_type or "establishing" in shot_type:
         face_control = (
             "wide establishing cinematic shot, environment scale clearly visible, "
-            "characters smaller in frame but still identifiable, no repeated medium two-shot framing"
+            "characters smaller in frame but still identifiable, no repeated medium two-shot framing, "
+            "summer wasteland outfit with secure chest and torso coverage, practical short bottoms, and tasteful collarbone, arms, and legs visibility, never a focal point, no nudity, no bare chest, no exposed torso, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
+        if "lam tich" in combined_text:
+            face_control = (
+                "wide or medium-wide establishing shot with Lam Tich still readable in the foreground or midground, her face clearly visible and identifiable, exceptionally beautiful female face, short black hair, clearly feminine features, subtle glamorous presence, "
+                "do not make Lam Tich a tiny unreadable silhouette, environment scale visible but face still readable, "
+                "summer wasteland outfit with secure chest and torso coverage, practical short bottoms, "
+                "allow a modest natural neckline and tasteful collarbone hint plus visible arms and legs, never a focal point, no nudity, no bare chest, no exposed torso, no navel, no sexualized pose, no chest-or-waist focal framing"
+            )
     elif "action" in shot_type or "predator" in shot_type or "threat" in shot_type or "hiding" in action_text:
         face_control = (
             "dynamic cinematic action shot, readable movement and threat direction, "
-            "change camera angle from the calm shelter two-shot, maintain identity but not the same pose"
+            "change camera angle from the calm shelter two-shot, maintain identity but not the same pose, "
+            "summer wasteland outfit with secure chest and torso coverage, practical short bottoms, modest neckline, visible arms and legs, never a focal point, no nudity, no bare chest, no exposed torso, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
     elif two_character_scene:
         face_control = (
-            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
-            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
-            "injured black-clad man lying half-reclined on the right, warm oil lantern between them, torn tarp shelter, "
-            "no solo portrait, no close-up crop"
+            "medium two-character cinematic shot, both full heads visible, both faces readable, two clearly separate bodies, no body overlap, no one lying across the other, no detached head, "
+            "beautiful short-haired adult Asian scavenger woman in rugged layered wasteland clothing kneeling on the left, exceptionally beautiful clearly female face, "
+            "summer wasteland outfit with a flattering lightweight fitted outer layer over a secure dark inner top that fully covers chest and torso, practical short bottoms, "
+            "soft tired natural face under grime, quietly attractive and subtly glamorous without explicit sexualization, Lam Tich face clearly visible and readable, allow a modest natural neckline and tasteful collarbone hint plus visible arms and legs, never a focal point, "
+            "injured black-clad man lying half-reclined on the right on his own separate bedding or ground space, clearly male face and masculine structure, exceptionally handsome weathered face, sharp jawline, steady heroic eyes, broad shoulders and strong arms visible through clothing, warm oil lantern between them, torn tarp shelter, "
+            "no solo portrait, no close-up crop, YouTube-safe survival drama, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
     else:
         face_control = (
-            "medium cinematic story shot, full head visible, clear natural Asian human face, "
-            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
-            "dirty post-apocalyptic survival drama, no close-up crop"
+            "medium cinematic story shot, half-body preferred over full-body when anatomy is complex, both hands or clear body action visible, full head visible, clear natural beautiful Asian human face, short rough layered hair, clearly female face when the scene is Lam Tich, clearly male face when the scene is Tan Da, "
+            "readable eyes nose mouth and jaw, no facial deformity, no androgynous face, story-accurate character blocking, no glamour portrait framing, "
+            "dirty post-apocalyptic survival drama, summer wasteland outfit with a flattering lightweight fitted outer layer over a secure dark inner top that fully covers chest and torso, practical short bottoms, allow a modest natural neckline and tasteful collarbone hint, visible arms and legs, no visible chest skin, quietly attractive and subtly glamorous without explicit sexualization, Lam Tich face must stay clearly visible and readable when she is the scene focus, Tan Da must read as exceptionally handsome masculine adult male with sharp jawline, steady heroic eyes, strong shoulders and arms through posture and clothing, no tangled limbs, no impossible pose, "
+            "no close-up crop, no fashion pose, "
+            "YouTube-safe, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
         )
     if face_control.lower() not in prompt.lower():
         prompt = f"{face_control}, {prompt}"
@@ -315,14 +438,29 @@ def filter_loras(requested: list[str], available: list[str]) -> list[str]:
 def apply_preset(args: argparse.Namespace) -> None:
     if args.preset == "safe":
         if not args.width and not args.height:
-            args.width, args.height = 512, 704
+            safe_sizes = {
+                "16:9": (896, 504),
+                "9:16": (432, 768),
+                "3:4": (576, 768),
+                "2:3": (512, 768),
+                "1:1": (576, 576),
+            }
+            args.width, args.height = safe_sizes.get(args.aspect_ratio, size_for_ratio(args.aspect_ratio))
         args.steps = min(args.steps, 20)
-        args.hires_scale = min(args.hires_scale, 1.25)
-        args.hires_steps = min(args.hires_steps, 8)
-        args.vae_tile_size = min(args.vae_tile_size, 320)
+        args.hires_scale = min(args.hires_scale, 1.2)
+        args.hires_steps = min(args.hires_steps, 6)
+        args.hires_denoise = min(args.hires_denoise, 0.28)
+        args.vae_tile_size = min(args.vae_tile_size, 256)
     elif args.preset == "quality":
         if not args.width and not args.height:
-            args.width, args.height = 576, 832
+            quality_sizes = {
+                "16:9": (896, 512),
+                "9:16": (576, 1024),
+                "3:4": (640, 896),
+                "2:3": (640, 960),
+                "1:1": (768, 768),
+            }
+            args.width, args.height = quality_sizes.get(args.aspect_ratio, size_for_ratio(args.aspect_ratio))
         args.steps = max(args.steps, 26)
         args.hires_scale = max(args.hires_scale, 1.5)
         args.hires_steps = max(args.hires_steps, 12)
@@ -632,7 +770,130 @@ def save_comfy_image(base_url: str, image_info: dict[str, str], output: Path) ->
     output.write_bytes(download_bytes(base_url, f"/view?{query}"))
 
 
-def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, storyboard_dir: Path, assets_dir: Path) -> Path:
+def skin_component_metrics(path: Path) -> dict[str, float]:
+    image = Image.open(path).convert("RGB")
+    image.thumbnail((160, 160))
+    rgb = image.load()
+    ycbcr = image.convert("YCbCr")
+    ycbcr_px = ycbcr.load()
+    width, height = image.size
+    if width == 0 or height == 0:
+        return {"overall": 0.0, "upper_center": 0.0, "lower_center": 0.0, "largest_component": 0.0}
+
+    mask = [[False for _ in range(width)] for _ in range(height)]
+    total_skin = 0
+    upper_center_skin = 0
+    lower_center_skin = 0
+    upper_center_total = 0
+    lower_center_total = 0
+    center_x0 = int(width * 0.2)
+    center_x1 = int(width * 0.8)
+    upper_y1 = int(height * 0.45)
+    lower_y0 = int(height * 0.45)
+
+    for y in range(height):
+        for x in range(width):
+            r, g, b = rgb[x, y]
+            yy, cb, cr = ycbcr_px[x, y]
+            rgb_skin = r > 95 and g > 40 and b > 20 and (max(r, g, b) - min(r, g, b)) > 15 and abs(r - g) > 15 and r > g and r > b
+            ycbcr_skin = yy > 60 and 80 <= cb <= 135 and 125 <= cr <= 180
+            is_skin = rgb_skin and ycbcr_skin
+            mask[y][x] = is_skin
+            if is_skin:
+                total_skin += 1
+            if center_x0 <= x < center_x1 and y < upper_y1:
+                upper_center_total += 1
+                if is_skin:
+                    upper_center_skin += 1
+            if center_x0 <= x < center_x1 and y >= lower_y0:
+                lower_center_total += 1
+                if is_skin:
+                    lower_center_skin += 1
+
+    visited = [[False for _ in range(width)] for _ in range(height)]
+    largest_component = 0
+    for y in range(height):
+        for x in range(width):
+            if visited[y][x] or not mask[y][x]:
+                continue
+            stack = [(x, y)]
+            visited[y][x] = True
+            size = 0
+            while stack:
+                cx, cy = stack.pop()
+                size += 1
+                for nx, ny in ((cx - 1, cy), (cx + 1, cy), (cx, cy - 1), (cx, cy + 1)):
+                    if 0 <= nx < width and 0 <= ny < height and not visited[ny][nx] and mask[ny][nx]:
+                        visited[ny][nx] = True
+                        stack.append((nx, ny))
+            if size > largest_component:
+                largest_component = size
+
+    total_pixels = width * height
+    return {
+        "overall": round(total_skin / total_pixels, 4),
+        "upper_center": round(upper_center_skin / max(1, upper_center_total), 4),
+        "lower_center": round(lower_center_skin / max(1, lower_center_total), 4),
+        "largest_component": round(largest_component / total_pixels, 4),
+    }
+
+
+def scene_needs_strict_safety(scene: dict[str, Any]) -> bool:
+    combined = " ".join(
+        [
+            str(scene.get("image_prompt") or ""),
+            str(scene.get("narration") or ""),
+            " ".join(str(item) for item in (scene.get("visual_must_show") or [])),
+            " ".join(str(item) for item in (scene.get("visual_action") or [])),
+        ]
+    ).lower()
+    return any(token in combined for token in ["lam tich", "woman", "female", "nu", "co gai"])
+
+
+def safety_rejection_reason(
+    path: Path,
+    scene: dict[str, Any],
+    args: argparse.Namespace,
+    classifier: SafetyClassifierClient | None,
+) -> tuple[list[str], dict[str, Any]]:
+    metrics = skin_component_metrics(path)
+    reasons: list[str] = []
+    strict_scene = scene_needs_strict_safety(scene)
+    if metrics["overall"] >= 0.34:
+        reasons.append(f"overall skin ratio {metrics['overall']:.2f}")
+    if strict_scene and metrics["upper_center"] >= 0.42:
+        reasons.append(f"upper-center skin ratio {metrics['upper_center']:.2f}")
+    if strict_scene and metrics["lower_center"] >= 0.42:
+        reasons.append(f"lower-center skin ratio {metrics['lower_center']:.2f}")
+    if strict_scene and metrics["largest_component"] >= 0.16 and metrics["overall"] >= 0.20:
+        reasons.append(f"large contiguous skin region {metrics['largest_component']:.2f}")
+    classifier_result: dict[str, Any] | None = None
+    if classifier:
+        threshold = args.nsfw_threshold_strict if strict_scene else args.nsfw_threshold
+        classifier_result = classifier.classify(path, threshold)
+        nsfw_score = float((classifier_result.get("scores") or {}).get("nsfw", 0.0))
+        if classifier_result.get("reject"):
+            reasons.append(f"classifier nsfw score {nsfw_score:.2f} >= {threshold:.2f}")
+    return reasons, {
+        "skin_heuristic": metrics,
+        "classifier": classifier_result or {},
+    }
+
+
+def stricter_prompt(prompt: str) -> str:
+    if SAFETY_RETRY_POSITIVE.lower() not in prompt.lower():
+        return f"{SAFETY_RETRY_POSITIVE}, {prompt}"
+    return prompt
+
+
+def generate_scene(
+    args: argparse.Namespace,
+    scene: dict[str, Any],
+    index: int,
+    storyboard_dir: Path,
+    assets_dir: Path,
+    classifier: SafetyClassifierClient | None,
+) -> Path:
     output = resolve(storyboard_dir, scene["image"]) if scene.get("image") else assets_dir / f"scene-{index + 1:02d}.{args.output_format}"
     output.parent.mkdir(parents=True, exist_ok=True)
     if output.exists() and not args.overwrite:
@@ -646,22 +907,48 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
     scene_reference_image, scene_reference_denoise = scene_reference_policy(scene, args.reference_image, args.reference_denoise)
     original_reference_image = args.reference_image
     original_reference_denoise = args.reference_denoise
-    args.reference_image = scene_reference_image
-    args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
-    try:
-        workflow = build_sd15_workflow(args, prompt, seed, width, height)
-    finally:
-        args.reference_image = original_reference_image
-        args.reference_denoise = original_reference_denoise
-    started_at = time.time()
-    history = submit_and_wait(args.comfy_url, workflow, args.timeout, args.poll_seconds)
-    try:
-        save_comfy_image(args.comfy_url, extract_first_image(history), output)
-    except SystemExit as exc:
-        if "no output image was found" not in str(exc):
-            raise
-        if not copy_latest_output_image(args.comfy_output_dir, args.prefix, started_at, output):
-            raise
+    original_negative_prompt = args.negative_prompt
+    accepted = False
+    safety_metrics: dict[str, float] | None = None
+    for safety_attempt in range(args.max_safety_retries + 1):
+        attempt_prompt = prompt if safety_attempt == 0 else stricter_prompt(prompt)
+        attempt_seed = seed + (safety_attempt * 7919)
+        if safety_attempt > 0 and SAFETY_RETRY_NEGATIVE.lower() not in args.negative_prompt.lower():
+            args.negative_prompt = f"{original_negative_prompt}, {SAFETY_RETRY_NEGATIVE}"
+        args.reference_image = scene_reference_image
+        args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
+        try:
+            workflow = build_sd15_workflow(args, attempt_prompt, attempt_seed, width, height)
+        finally:
+            args.reference_image = original_reference_image
+            args.reference_denoise = original_reference_denoise
+        started_at = time.time()
+        history = submit_and_wait(args.comfy_url, workflow, args.timeout, args.poll_seconds)
+        try:
+            save_comfy_image(args.comfy_url, extract_first_image(history), output)
+        except SystemExit as exc:
+            if "no output image was found" not in str(exc):
+                raise
+            if not copy_latest_output_image(args.comfy_output_dir, args.prefix, started_at, output):
+                raise
+        reasons, safety_metrics = safety_rejection_reason(output, scene, args, classifier)
+        if not reasons:
+            accepted = True
+            seed = attempt_seed
+            break
+        print(
+            f"Safety reject scene {index + 1} attempt {safety_attempt + 1}/{args.max_safety_retries + 1}: "
+            f"{'; '.join(reasons)}"
+        )
+        try:
+            output.unlink()
+        except FileNotFoundError:
+            pass
+    args.negative_prompt = original_negative_prompt
+    if not accepted:
+        raise SystemExit(
+            f"Scene {index + 1} rejected by local safety gate after {args.max_safety_retries + 1} attempts: {safety_metrics}"
+        )
     scene["image"] = relpath(output, storyboard_dir)
     scene["local_image"] = {
         "provider": "comfy-local",
@@ -675,6 +962,11 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
         "upscale_model": args.upscale_model,
         "reference_image": str(Path(scene_reference_image).resolve()) if scene_reference_image else "",
         "reference_denoise": scene_reference_denoise if scene_reference_image else None,
+        "safety_gate": {
+            "mode": "hybrid-heuristic-and-nsfw-classifier" if classifier else "local-skin-exposure-heuristic",
+            "metrics": safety_metrics or {},
+            "max_retries": args.max_safety_retries,
+        },
     }
     return output
 
@@ -714,6 +1006,11 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=23052026)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--poll-seconds", type=float, default=2.0)
+    parser.add_argument("--max-safety-retries", type=int, default=2)
+    parser.add_argument("--enable-nsfw-classifier", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--nsfw-classifier-model", default=os.environ.get("NSFW_CLASSIFIER_MODEL", "Falconsai/nsfw_image_detection"))
+    parser.add_argument("--nsfw-threshold", type=float, default=0.28, help="Reject image if classifier NSFW score meets this threshold.")
+    parser.add_argument("--nsfw-threshold-strict", type=float, default=0.18, help="Stricter threshold for scenes focused on female lead/body exposure risk.")
     parser.add_argument("--inspect-only", action="store_true", help="Print ComfyUI model inventory and selected local settings, then exit.")
     parser.add_argument("--start-scene", type=int, default=1, help="1-based first scene to generate.")
     parser.add_argument("--end-scene", type=int, default=0, help="1-based last scene to generate. 0 means the final scene.")
@@ -762,10 +1059,15 @@ def main() -> None:
     if start_index >= end_index:
         raise SystemExit(f"No scenes selected: start={args.start_scene}, end={args.end_scene or len(scenes)}")
     generated = []
-    for index, scene in enumerate(scenes[start_index:end_index], start=start_index):
-        path = generate_scene(args, scene, index, storyboard_dir, assets_dir)
-        generated.append(str(path))
-        print(f"Generated local SD image: {path}")
+    classifier = start_safety_classifier(args)
+    try:
+        for index, scene in enumerate(scenes[start_index:end_index], start=start_index):
+            path = generate_scene(args, scene, index, storyboard_dir, assets_dir, classifier)
+            generated.append(str(path))
+            print(f"Generated local SD image: {path}")
+    finally:
+        if classifier:
+            classifier.close()
     storyboard.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({**selected, "storyboard": str(storyboard), "images": generated}, ensure_ascii=False, indent=2))
 
