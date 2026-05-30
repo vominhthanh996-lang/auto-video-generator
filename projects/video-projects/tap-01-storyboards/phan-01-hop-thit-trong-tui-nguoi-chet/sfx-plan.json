@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\video-projects\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -467,6 +467,7 @@
     {
       "scene": 90,
       "cues": [
+        "suspense",
         "footsteps",
         "rain",
         "wind"

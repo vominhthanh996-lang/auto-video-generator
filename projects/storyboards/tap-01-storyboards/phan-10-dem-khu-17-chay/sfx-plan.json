@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -103,6 +103,7 @@
     {
       "scene": 20,
       "cues": [
+        "suspense",
         "footsteps"
       ],
       "mixed": false

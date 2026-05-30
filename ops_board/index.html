@@ -91,6 +91,7 @@
     .pill.warning { background: rgba(255,181,71,.14); color: var(--warn); border-color: rgba(255,181,71,.35); }
     .pill.failed { background: rgba(255,104,104,.14); color: var(--bad); border-color: rgba(255,104,104,.35); }
     .pill.queued, .pill.pending { background: rgba(105,117,134,.14); color: #c0c7d0; border-color: rgba(105,117,134,.35); }
+    .pill.paused { background: rgba(87,166,255,.14); color: #bdddff; border-color: rgba(87,166,255,.35); }
     .counts {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -144,6 +145,7 @@
     .node.warning .state { color: var(--warn); }
     .node.failed .state { color: var(--bad); }
     .node.pending .state, .node.queued .state, .node.blocked .state, .node.skipped .state { color: #c0c7d0; }
+    .node.paused .state { color: #bdddff; }
     .detail-block {
       margin-top: 16px;
       padding-top: 16px;
@@ -171,6 +173,16 @@
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
+    }
+    .btn.pause {
+      border-color: rgba(255,181,71,.45);
+      background: rgba(255,181,71,.12);
+      color: #ffe4b8;
+    }
+    .btn.resume {
+      border-color: rgba(87,166,255,.45);
+      background: rgba(87,166,255,.12);
+      color: #d6ebff;
     }
     .btn:disabled {
       opacity: .6;
@@ -206,12 +218,26 @@
       if (["running"].includes(v)) return "running";
       if (["warning"].includes(v)) return "warning";
       if (["failed", "error"].includes(v)) return "failed";
-      if (["queued", "pending", "blocked", "skipped"].includes(v)) return v;
+      if (["queued", "pending", "blocked", "skipped", "paused"].includes(v)) return v;
       return "pending";
     }
 
     function safe(value) {
       return value ? String(value) : "";
+    }
+
+    function renderActions(task) {
+      const overall = String(task.overall || "").toLowerCase();
+      if (overall === "paused") {
+        return `
+          <button class="btn resume" onclick="resumeTask('${safe(task.task).replace(/'/g, "\\'")}')">Resume</button>
+          <button class="btn" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
+        `;
+      }
+      return `
+        <button class="btn pause" onclick="pauseTask('${safe(task.task).replace(/'/g, "\\'")}')">Pause</button>
+        <button class="btn" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
+      `;
     }
 
     function renderTask(task) {
@@ -255,10 +281,42 @@
             <div class="links"><strong>Project:</strong> ${safe(task.project)}</div>
           </div>
           <div class="actions">
-            <button class="btn" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
+            ${renderActions(task)}
           </div>
         </section>
       `;
+    }
+
+    async function pauseTask(taskName) {
+      const ok = confirm(`Pause task "${taskName}" now? Resume will rerun the in-progress step from the beginning.`);
+      if (!ok) return;
+      try {
+        const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/pause`, { method: "POST" });
+        const payload = await response.json();
+        if (payload.errors && payload.errors.length) {
+          alert(`Task paused with warnings:\n${payload.errors.join("\n")}`);
+        }
+        await loadBoard();
+      } catch (error) {
+        alert(`Failed to pause task: ${error.message}`);
+      }
+    }
+
+    async function resumeTask(taskName) {
+      const ok = confirm(`Resume task "${taskName}" now? The step that was running when paused will be reset and rerun.`);
+      if (!ok) return;
+      try {
+        const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/resume`, { method: "POST" });
+        const payload = await response.json();
+        if (payload.errors && payload.errors.length) {
+          alert(`Failed to resume cleanly:\n${payload.errors.join("\n")}`);
+        } else if (payload.reset && payload.reset.length) {
+          alert(`Resume reset:\n${payload.reset.join("\n")}`);
+        }
+        await loadBoard();
+      } catch (error) {
+        alert(`Failed to resume task: ${error.message}`);
+      }
     }
 
     async function endTask(taskName) {

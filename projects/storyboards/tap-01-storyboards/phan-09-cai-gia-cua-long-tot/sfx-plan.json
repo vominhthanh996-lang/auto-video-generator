@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-09-cai-gia-cua-long-tot\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-09-cai-gia-cua-long-tot\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -499,6 +499,7 @@
     {
       "scene": 90,
       "cues": [
+        "suspense",
         "footsteps",
         "scrape"
       ],

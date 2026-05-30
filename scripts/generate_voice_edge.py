@@ -21,6 +21,51 @@ if EXTRA_PACKAGES.exists():
 import edge_tts
 
 
+def run_ffmpeg(args):
+    result = subprocess.run(
+        args,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout or "").strip()
+        detail_lines = detail.splitlines()
+        tail = "\n".join(detail_lines[-12:]) if detail_lines else f"ffmpeg exited with code {result.returncode}"
+        raise RuntimeError(tail)
+    return result
+
+
+def probe_audio_duration(path):
+    result = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-show_entries",
+            "format=duration",
+            "-of",
+            "default=nk=1:nw=1",
+            str(path),
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    if result.returncode != 0:
+        return 0.0
+    try:
+        return float(result.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
 VOICE_PRESETS = {
     "vi-female": "vi-VN-HoaiMyNeural",
     "vi-male": "vi-VN-NamMinhNeural",
@@ -58,7 +103,7 @@ VOICE_STYLES = {
         "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 700,
+        "max_unit_chars": 240,
     },
     "wasteland-dark": {
         "rate": "+3%",
@@ -66,8 +111,8 @@ VOICE_STYLES = {
         "max_inserted_pause": 0.0,
         "tight_punctuation": True,
         "short_sentence_as_comma": True,
-        "comma_pause": 0.025,
-        "sentence_pause": 0.07,
+        "comma_pause": 0.035,
+        "sentence_pause": 0.08,
         "paragraph_pause": 0.12,
         "dialogue_pause": 0.04,
         "scene_pause": 0.2,
@@ -85,7 +130,7 @@ VOICE_STYLES = {
         "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 700,
+        "max_unit_chars": 220,
     },
 }
 
@@ -432,7 +477,7 @@ def line_gap(text, profile):
 def split_performance_units(text, max_chars=180):
     normalized = re.sub(r"[ \t]+", " ", text.strip())
     normalized = re.sub(r"\n{3,}", "\n\n", normalized)
-    max_chars = max(700, int(max_chars))
+    max_chars = max(120, min(700, int(max_chars)))
     quote_pattern = re.compile(r'(".*?"|â€œ.*?â€|ã€Œ.*?ã€|ã€Ž.*?ã€)')
     merged_pieces = []
     for paragraph in re.split(r"\n\n+", normalized):
@@ -640,7 +685,7 @@ def smooth_performance_plan(raw_plan, profile):
 def make_silence(path, seconds):
     if seconds <= 0:
         return
-    subprocess.run(
+    run_ffmpeg(
         [
             "ffmpeg",
             "-y",
@@ -655,10 +700,7 @@ def make_silence(path, seconds):
             "-acodec",
             "libmp3lame",
             str(path),
-        ],
-        check=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        ]
     )
 
 
@@ -666,7 +708,7 @@ def trim_chunk_silence(path, aggressive=False):
     temp_path = path.with_name(f"{path.stem}-trim{path.suffix}")
     threshold = "-42dB" if aggressive else "-38dB"
     stop_duration = "0.10" if aggressive else "0.14"
-    subprocess.run(
+    run_ffmpeg(
         [
             "ffmpeg",
             "-y",
@@ -679,10 +721,7 @@ def trim_chunk_silence(path, aggressive=False):
             "-q:a",
             "3",
             str(temp_path),
-        ],
-        check=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        ]
     )
     temp_path.replace(path)
 
@@ -696,7 +735,20 @@ async def synthesize_performed(text, output, voice, profile):
         selected_voice = voice_for_text(text, voice, profile)
         await synthesize_resilient(prepare_tts_text(text, profile), output, selected_voice, profile["rate"], profile["pitch"])
         trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
-        return [{"type": classify_unit(text, profile), "voice": selected_voice, "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
+        duration = round(probe_audio_duration(output), 3)
+        return [
+            {
+                "text": text.strip(),
+                "type": classify_unit(text, profile),
+                "voice": selected_voice,
+                "rate": profile["rate"],
+                "pitch": profile["pitch"],
+                "audio_duration": duration,
+                "start": 0.0,
+                "end": duration,
+                "pause_after": 0,
+            }
+        ]
 
     with tempfile.TemporaryDirectory(prefix="edge-tts-perform-") as temp_name:
         temp_dir = Path(temp_name)
@@ -735,21 +787,40 @@ async def synthesize_performed(text, output, voice, profile):
             if active_dialogue_speaker and unit_closes_dialogue(unit):
                 active_dialogue_speaker = None
         plan = smooth_performance_plan(raw_plan, profile)
+        timeline = []
+        cursor = 0.0
         for index, item in enumerate(plan, 1):
             voice_path = temp_dir / f"voice-{index:03d}.mp3"
             await synthesize_resilient(prepare_tts_text(item["unit"], profile), voice_path, item["voice"], item["rate"], item["pitch"])
             trim_chunk_silence(voice_path, aggressive=bool(profile.get("tight_punctuation")))
+            voice_duration = round(probe_audio_duration(voice_path), 3)
+            start_at = round(cursor, 3)
+            end_at = round(cursor + voice_duration, 3)
+            item["audio_duration"] = voice_duration
+            item["start"] = start_at
+            item["end"] = end_at
             concat_items.append(voice_path)
             gap = item["pause_after"]
+            timeline.append(item)
+            cursor = end_at
             if gap > 0 and index < len(units):
                 silence_path = temp_dir / f"silence-{index:03d}.mp3"
                 make_silence(silence_path, gap)
                 concat_items.append(silence_path)
+                cursor = round(cursor + gap, 3)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in concat_items), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_ffmpeg(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
         trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
-    return [{key: value for key, value in item.items() if key != "unit"} for item in plan]
+    return [
+        {
+            key: value
+            for key, value in item.items()
+            if key != "unit"
+        }
+        | {"text": item["unit"].strip()}
+        for item in timeline
+    ]
 
 
 def split_text(text, max_chars=650):
@@ -816,7 +887,7 @@ async def synthesize_resilient(text, output, voice, rate, pitch):
             chunk_paths.append(chunk_path)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in chunk_paths), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_ffmpeg(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
 
 
 async def main_async(args):
@@ -894,6 +965,11 @@ async def main_async(args):
 
         if not failed:
             scene["audio"] = relpath(audio_path, storyboard_dir)
+            scene["audio_units"] = plan or []
+            total_audio = sum(float(item.get("audio_duration", 0)) + float(item.get("pause_after", 0)) for item in (plan or []))
+            if total_audio > 0:
+                scene["audio_duration"] = round(total_audio, 3)
+                scene["duration"] = round(max(float(scene.get("duration", 0) or 0), total_audio), 3)
         scene.setdefault("subtitle", text)
         voice_plan["scenes"].append(
             {
@@ -901,6 +977,9 @@ async def main_async(args):
                 "audio": scene.get("audio", relpath(audio_path, storyboard_dir)),
                 "generated": generated,
                 "failed": failed,
+                "audio_anchor_lines": scene.get("audio_anchor_lines", []),
+                "beat_type": scene.get("beat_type", ""),
+                "beat_goal": scene.get("beat_goal", ""),
                 "unit_count": len(plan or split_performance_units(text, int(style.get("max_unit_chars", 180)))),
                 "plan": plan or [],
             }
@@ -934,4 +1013,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

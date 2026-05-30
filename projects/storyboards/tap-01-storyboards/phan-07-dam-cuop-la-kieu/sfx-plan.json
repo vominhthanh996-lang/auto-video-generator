@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-07-dam-cuop-la-kieu\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-07-dam-cuop-la-kieu\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -363,6 +363,7 @@
     {
       "scene": 70,
       "cues": [
+        "suspense",
         "footsteps"
       ],
       "mixed": false

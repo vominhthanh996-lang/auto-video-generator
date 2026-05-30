@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -78,8 +78,20 @@
     },
     {
       "scene": 16,
-      "cues": [],
-      "mixed": false
+      "cues": [
+        "scrape"
+      ],
+      "mixed": false,
+      "duration": 5.8,
+      "final_audio": "assets/scene-016.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "scrape",
+          "context": "claw",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 17,
@@ -108,9 +120,7 @@
     },
     {
       "scene": 22,
-      "cues": [
-        "scrape"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
@@ -250,8 +260,20 @@
     },
     {
       "scene": 50,
-      "cues": [],
-      "mixed": false
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false,
+      "duration": 7.4,
+      "final_audio": "assets/scene-050.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "drone",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 51,
@@ -270,9 +292,7 @@
     },
     {
       "scene": 54,
-      "cues": [
-        "suspense"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
@@ -292,16 +312,12 @@
     },
     {
       "scene": 58,
-      "cues": [
-        "suspense"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
       "scene": 59,
-      "cues": [
-        "suspense"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
@@ -322,9 +338,19 @@
     {
       "scene": 63,
       "cues": [
-        "suspense"
+        "scrape"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 6.47,
+      "final_audio": "assets/scene-063.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "scrape",
+          "context": "claw",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 64,
@@ -333,8 +359,20 @@
     },
     {
       "scene": 65,
-      "cues": [],
-      "mixed": false
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false,
+      "duration": 8.58,
+      "final_audio": "assets/scene-065.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "drone",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 66,
@@ -353,8 +391,20 @@
     },
     {
       "scene": 69,
-      "cues": [],
-      "mixed": false
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false,
+      "duration": 6.27,
+      "final_audio": "assets/scene-069.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "drone",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 70,
@@ -386,7 +436,17 @@
       "cues": [
         "scrape"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 8.02,
+      "final_audio": "assets/scene-075.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "scrape",
+          "context": "claw",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 76,
@@ -395,9 +455,7 @@
     },
     {
       "scene": 77,
-      "cues": [
-        "suspense"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
@@ -412,14 +470,24 @@
     },
     {
       "scene": 80,
-      "cues": [],
-      "mixed": false
-    },
-    {
-      "scene": 81,
       "cues": [
         "suspense"
       ],
+      "mixed": false,
+      "duration": 5.91,
+      "final_audio": "assets/scene-080.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "drone",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
+    },
+    {
+      "scene": 81,
+      "cues": [],
       "mixed": false
     },
     {
@@ -434,8 +502,20 @@
     },
     {
       "scene": 84,
-      "cues": [],
-      "mixed": false
+      "cues": [
+        "footsteps"
+      ],
+      "mixed": false,
+      "duration": 5.38,
+      "final_audio": "assets/scene-084.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "footsteps",
+          "context": "dirt",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 85,
@@ -459,18 +539,12 @@
     },
     {
       "scene": 89,
-      "cues": [
-        "scrape"
-      ],
+      "cues": [],
       "mixed": false
     },
     {
       "scene": 90,
-      "cues": [
-        "footsteps",
-        "rain",
-        "wind"
-      ],
+      "cues": [],
       "mixed": false
     }
   ]

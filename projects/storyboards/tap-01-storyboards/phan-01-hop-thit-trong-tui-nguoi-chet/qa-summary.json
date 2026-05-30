@@ -1,0 +1,11 @@
+﻿{
+    "task":  "AutoVideo-tap-01-part-01-YouTube-WorkLocal",
+    "stage":  "ready-for-render",
+    "timestamp":  "2026-05-30T15:58:19",
+    "project":  "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet",
+    "storyboard":  "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-01-hop-thit-trong-tui-nguoi-chet\\storyboard.json",
+    "scenes":  90,
+    "images":  90,
+    "audio":  90,
+    "ready_for_render":  true
+}

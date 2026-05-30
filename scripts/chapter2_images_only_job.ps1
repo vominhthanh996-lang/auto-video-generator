@@ -1,13 +1,23 @@
-param()
+param(
+    [string]$ProjectRoot = "",
+    [string]$ReferenceImage = ""
+)
 
 $ErrorActionPreference = "Stop"
 
-$pythonExe = "C:\Users\thanh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
-$repoRoot = "E:\ThanhMV\auto-video-generator"
-$projectRoot = "E:\ThanhMV\video-projects\phe-tho-tap-01-phan-02-nguoi-dan-ong-khong-dung-day-duoc"
-$storyboard = Join-Path $projectRoot "storyboard.json"
-$referenceImage = "C:\Users\thanh\Downloads\fb8d05e9-8752-4bc9-912c-85580d64d714.png"
-$logPath = "E:\ThanhMV\temp\chapter2_images_only_job.log"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
+$workRoot = Split-Path -Parent $repoRoot
+$venvPython = Join-Path $repoRoot ".venv\Scripts\python.exe"
+$pythonExe = if (Test-Path $venvPython) { $venvPython } else { "python" }
+
+if (-not $ProjectRoot) {
+    $ProjectRoot = Join-Path $repoRoot "projects\storyboards\tap-01-storyboards\phan-02-nguoi-dan-ong-khong-dung-day-duoc"
+}
+
+$projectRootResolved = (Resolve-Path $ProjectRoot).Path
+$storyboard = Join-Path $projectRootResolved "storyboard.json"
+$logPath = Join-Path $workRoot "temp\chapter2_images_only_job.log"
 
 function Write-Log {
     param([string]$Message)
@@ -21,7 +31,7 @@ function Get-SceneState {
     $images = 0
     foreach ($scene in $scenes) {
         if ($scene.image) {
-            $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRoot ([string]$scene.image) }
+            $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRootResolved ([string]$scene.image) }
             if (Test-Path $imagePath) { $images++ }
         }
     }
@@ -35,17 +45,20 @@ function Get-SceneState {
 function Invoke-SceneImage {
     param([int]$SceneNumber)
     Write-Log ("START image scene {0}" -f $SceneNumber)
-    & $pythonExe `
-        (Join-Path $repoRoot "scripts\generate_images_comfy_local.py") `
-        --storyboard $storyboard `
-        --aspect-ratio 16:9 `
-        --final-width 1920 `
-        --final-height 1080 `
-        --preset balanced `
-        --start-scene $SceneNumber `
-        --end-scene $SceneNumber `
-        --reference-image $referenceImage `
-        --reference-denoise 0.28
+    $args = @(
+        (Join-Path $repoRoot "scripts\generate_images_comfy_local.py"),
+        "--storyboard", $storyboard,
+        "--aspect-ratio", "16:9",
+        "--final-width", "1920",
+        "--final-height", "1080",
+        "--preset", "balanced",
+        "--start-scene", [string]$SceneNumber,
+        "--end-scene", [string]$SceneNumber
+    )
+    if ($ReferenceImage) {
+        $args += @("--reference-image", $ReferenceImage, "--reference-denoise", "0.28")
+    }
+    & $pythonExe @args
     $exitCode = $LASTEXITCODE
     if ($exitCode -ne 0) {
         Write-Log ("FAIL image scene {0} exit {1}" -f $SceneNumber, $exitCode)
@@ -71,7 +84,7 @@ try {
             $scene = $state.Scenes[$i]
             $imagePath = $null
             if ($scene.image) {
-                $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRoot ([string]$scene.image) }
+                $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRootResolved ([string]$scene.image) }
             }
             if (-not $imagePath -or -not (Test-Path $imagePath)) {
                 $targetScene = $i + 1

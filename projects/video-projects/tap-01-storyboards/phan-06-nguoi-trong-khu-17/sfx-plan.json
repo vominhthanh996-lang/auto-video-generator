@@ -1,5 +1,5 @@
 {
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-06-nguoi-trong-khu-17\\storyboard.json",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\video-projects\\tap-01-storyboards\\phan-06-nguoi-trong-khu-17\\storyboard.json",
   "scenes": [
     {
       "scene": 1,
@@ -292,6 +292,7 @@
     {
       "scene": 57,
       "cues": [
+        "suspense",
         "scrape"
       ],
       "mixed": false

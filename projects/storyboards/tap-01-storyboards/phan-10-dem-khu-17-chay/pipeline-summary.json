@@ -1,12 +1,12 @@
 {
-  "project": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-10-dem-khu-17-chay",
-  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\storyboard.json",
+  "project": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-10-dem-khu-17-chay",
+  "storyboard": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\storyboard.json",
   "format": "youtube",
   "resolution": "1920x1080",
-  "scenes": 90,
+  "scenes": 120,
   "images": 0,
   "audio": 0,
-  "contact_sheet": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\contact-sheet.html",
+  "contact_sheet": "D:\\ThanhMV\\Cong viec\\auto-video-generator-media\\projects\\storyboards\\tap-01-storyboards\\phan-10-dem-khu-17-chay\\contact-sheet.html",
   "output": null,
   "duration": null
 }

@@ -1,15 +1,32 @@
-param()
+param(
+    [string]$ProjectRoot = "",
+    [string]$StorySource = "",
+    [string]$ReferenceImage = ""
+)
 
 $ErrorActionPreference = "Stop"
 
-$pythonExe = "C:\Users\thanh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
-$repoRoot = "E:\ThanhMV\auto-video-generator"
-$projectRoot = "E:\ThanhMV\video-projects\phe-tho-tap-01-phan-02-nguoi-dan-ong-khong-dung-day-duoc"
-$storySource = "E:\ThanhMV\Content truyen\phe-tho-ta-nhat-duoc-ca-the-gioi\tap-01-khu-17-ngoai-thanh\ban-v3-dai-than\phan-02-nguoi-dan-ong-khong-dung-day-duoc.md"
-$storyboard = Join-Path $projectRoot "storyboard.json"
-$characterBible = Join-Path $projectRoot "character_voice_bible.json"
-$referenceImage = "C:\Users\thanh\Downloads\fb8d05e9-8752-4bc9-912c-85580d64d714.png"
-$logPath = "E:\ThanhMV\temp\chapter2_work_local_job.log"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
+$workRoot = Split-Path -Parent $repoRoot
+$venvPython = Join-Path $repoRoot ".venv\Scripts\python.exe"
+$pythonExe = if (Test-Path $venvPython) { $venvPython } else { "python" }
+
+if (-not $ProjectRoot) {
+    $ProjectRoot = Join-Path $repoRoot "projects\storyboards\tap-01-storyboards\phan-02-nguoi-dan-ong-khong-dung-day-duoc"
+}
+$projectRootResolved = (Resolve-Path $ProjectRoot).Path
+
+if (-not $StorySource) {
+    $candidate = Join-Path $projectRootResolved "source.txt"
+    if (Test-Path $candidate) {
+        $StorySource = $candidate
+    }
+}
+
+$storyboard = Join-Path $projectRootResolved "storyboard.json"
+$characterBible = Join-Path $projectRootResolved "character_voice_bible.json"
+$logPath = Join-Path $workRoot "temp\chapter2_work_local_job.log"
 
 function Write-Log {
     param([string]$Message)
@@ -40,11 +57,11 @@ function Get-SceneState {
     $audio = 0
     foreach ($scene in $scenes) {
         if ($scene.image) {
-            $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRoot ([string]$scene.image) }
+            $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRootResolved ([string]$scene.image) }
             if (Test-Path $imagePath) { $images++ }
         }
         if ($scene.audio) {
-            $audioPath = if ([System.IO.Path]::IsPathRooted([string]$scene.audio)) { [string]$scene.audio } else { Join-Path $projectRoot ([string]$scene.audio) }
+            $audioPath = if ([System.IO.Path]::IsPathRooted([string]$scene.audio)) { [string]$scene.audio } else { Join-Path $projectRootResolved ([string]$scene.audio) }
             if (Test-Path $audioPath) { $audio++ }
         }
     }
@@ -66,15 +83,15 @@ function Invoke-VoiceUntilComplete {
         }
         Write-Log ("VOICE attempt {0}: current {1}/{2}" -f $attempt, $state.AudioCount, $state.SceneCount)
         try {
-            Invoke-Step `
-                -Label ("voice attempt {0}" -f $attempt) `
-                -FilePath (Join-Path $repoRoot "scripts\generate_voice_edge.py") `
-                -Arguments @(
-                    "--storyboard", $storyboard,
-                    "--voice", "vi-female",
-                    "--voice-style", "wasteland-dark",
-                    "--character-bible", $characterBible
-                )
+            $voiceArgs = @(
+                "--storyboard", $storyboard,
+                "--voice", "vi-female",
+                "--voice-style", "wasteland-dark"
+            )
+            if (Test-Path $characterBible) {
+                $voiceArgs += @("--character-bible", $characterBible)
+            }
+            Invoke-Step -Label ("voice attempt {0}" -f $attempt) -FilePath (Join-Path $repoRoot "scripts\generate_voice_edge.py") -Arguments $voiceArgs
         }
         catch {
             Write-Log ("VOICE retry after error: {0}" -f $_.Exception.Message)
@@ -99,7 +116,7 @@ function Invoke-ImagesUntilComplete {
             $scene = $state.Scenes[$i]
             $imagePath = $null
             if ($scene.image) {
-                $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRoot ([string]$scene.image) }
+                $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $projectRootResolved ([string]$scene.image) }
             }
             if (-not $imagePath -or -not (Test-Path $imagePath)) {
                 $targetScene = $i + 1
@@ -114,39 +131,39 @@ function Invoke-ImagesUntilComplete {
         }
 
         Write-Log ("IMAGE next scene {0}" -f $targetScene)
-        Invoke-Step `
-            -Label ("image scene {0}" -f $targetScene) `
-            -FilePath (Join-Path $repoRoot "scripts\generate_images_comfy_local.py") `
-            -Arguments @(
-                "--storyboard", $storyboard,
-                "--aspect-ratio", "16:9",
-                "--final-width", "1920",
-                "--final-height", "1080",
-                "--preset", "balanced",
-                "--start-scene", [string]$targetScene,
-                "--end-scene", [string]$targetScene,
-                "--reference-image", $referenceImage,
-                "--reference-denoise", "0.28"
-            )
+        $imageArgs = @(
+            "--storyboard", $storyboard,
+            "--aspect-ratio", "16:9",
+            "--final-width", "1920",
+            "--final-height", "1080",
+            "--preset", "balanced",
+            "--start-scene", [string]$targetScene,
+            "--end-scene", [string]$targetScene
+        )
+        if ($ReferenceImage) {
+            $imageArgs += @("--reference-image", $ReferenceImage, "--reference-denoise", "0.28")
+        }
+        Invoke-Step -Label ("image scene {0}" -f $targetScene) -FilePath (Join-Path $repoRoot "scripts\generate_images_comfy_local.py") -Arguments $imageArgs
         Start-Sleep -Seconds 8
     }
 }
 
 function Invoke-FinalRender {
-    Invoke-Step `
-        -Label "final pipeline render" `
-        -FilePath (Join-Path $repoRoot "scripts\run_story_pipeline.py") `
-        -Arguments @(
-            "--source", $storySource,
-            "--project", $projectRoot,
-            "--format", "youtube",
-            "--image-mode", "comfy",
-            "--run-mode", "work",
-            "--image-reference", $referenceImage,
-            "--image-reference-denoise", "0.28",
-            "--skip-images",
-            "--skip-voice"
-        )
+    $args = @(
+        "--project", $projectRootResolved,
+        "--format", "youtube",
+        "--image-mode", "comfy",
+        "--run-mode", "work",
+        "--skip-images",
+        "--skip-voice"
+    )
+    if ($StorySource) {
+        $args = @("--source", $StorySource) + $args
+    }
+    if ($ReferenceImage) {
+        $args += @("--image-reference", $ReferenceImage, "--image-reference-denoise", "0.28")
+    }
+    Invoke-Step -Label "final pipeline render" -FilePath (Join-Path $repoRoot "scripts\run_story_pipeline.py") -Arguments $args
 }
 
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $logPath) | Out-Null

@@ -26,12 +26,19 @@ def _env_path(*names: str) -> Path | None:
 
 
 def _repo_based_work_root(repo_root: Path) -> Path:
-    parts = list(repo_root.resolve().parts)
-    lowered = [part.lower() for part in parts]
-    if "thanhmv" in lowered:
-        index = lowered.index("thanhmv")
-        return Path(*parts[: index + 1])
-    return repo_root.parent
+    resolved = repo_root.resolve()
+    return resolved.parent
+
+
+def _score_work_root(path: Path) -> int:
+    score = 0
+    if (path / "video-projects").exists():
+        score += 4
+    if (path / "temp").exists():
+        score += 3
+    if (path / "tools").exists():
+        score += 2
+    return score
 
 
 def candidate_work_roots(repo_root: Path) -> list[Path]:
@@ -39,16 +46,19 @@ def candidate_work_roots(repo_root: Path) -> list[Path]:
     env_root = _env_path("AUTO_VIDEO_WORK_ROOT")
     if env_root:
         candidates.append(env_root)
-    candidates.append(_repo_based_work_root(repo_root))
+    resolved_repo = repo_root.resolve()
+    candidates.append(_repo_based_work_root(resolved_repo))
+    if resolved_repo.parent.parent != resolved_repo.parent:
+        candidates.append(resolved_repo.parent.parent)
     candidates.append(Path(r"D:\ThanhMV"))
     candidates.append(Path(r"E:\ThanhMV"))
     return _dedupe(candidates)
 
 
 def default_work_root(repo_root: Path) -> Path:
-    for candidate in candidate_work_roots(repo_root):
-        if candidate.exists():
-            return candidate
+    existing = [candidate for candidate in candidate_work_roots(repo_root) if candidate.exists()]
+    if existing:
+        return max(existing, key=_score_work_root)
     return candidate_work_roots(repo_root)[0]
 
 

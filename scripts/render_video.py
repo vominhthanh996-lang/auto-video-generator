@@ -13,7 +13,19 @@ from video_presets import VIDEO_PRESETS, apply_video_format
 
 
 def run(cmd):
-    subprocess.run(cmd, check=True)
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if result.returncode != 0:
+        details = (result.stderr or result.stdout or "").strip()
+        if details:
+            raise SystemExit(details)
+        raise SystemExit(f"Command failed with exit code {result.returncode}: {' '.join(str(part) for part in cmd)}")
+    return result
 
 
 def require_tool(name):

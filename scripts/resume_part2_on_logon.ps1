@@ -1,15 +1,21 @@
-param()
+param(
+    [string]$ConfigPath = ""
+)
 
 $ErrorActionPreference = "Stop"
 
-$repoRoot = "E:\ThanhMV\auto-video-generator"
-$workerScript = Join-Path $repoRoot "scripts\story_task_worker.ps1"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
+$workRoot = Split-Path -Parent $repoRoot
 $boardScript = Join-Path $repoRoot "scripts\start_ops_board.ps1"
-$configPath = "E:\ThanhMV\temp\autovideo-phan02-youtube-worklocal.json"
-$pythonExe = "C:\Users\thanh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+$resumeScript = Join-Path $repoRoot "scripts\resume_story_task_on_logon.ps1"
 
-if (-not (Test-Path $configPath)) {
-    Write-Output "Missing config: $configPath"
+if (-not $ConfigPath) {
+    $ConfigPath = Join-Path $workRoot "temp\autovideo-tap-01-part-02-youtube-worklocal.json"
+}
+
+if (-not (Test-Path $ConfigPath)) {
+    Write-Output "Missing config: $ConfigPath"
     exit 0
 }
 
@@ -26,8 +32,7 @@ catch {
 Start-Sleep -Seconds 2
 
 try {
-    $statusUrl = "http://127.0.0.1:8765/api/tasks"
-    Invoke-WebRequest -Uri $statusUrl -UseBasicParsing -TimeoutSec 3 | Out-Null
+    Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/tasks" -UseBasicParsing -TimeoutSec 3 | Out-Null
 }
 catch {
 }
@@ -35,6 +40,6 @@ catch {
 Start-Process -FilePath "powershell.exe" -ArgumentList @(
     "-NoProfile",
     "-ExecutionPolicy", "Bypass",
-    "-File", $workerScript,
-    "-ConfigPath", $configPath
+    "-File", $resumeScript,
+    "-ConfigPath", $ConfigPath
 ) -WorkingDirectory $repoRoot -WindowStyle Hidden | Out-Null
