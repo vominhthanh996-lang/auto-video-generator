@@ -107,6 +107,22 @@ TAN_DA_FACE_RULE = (
     "His posture and silhouette must still communicate strength, broad shoulders, and masculine presence even when injured."
 )
 
+ACTION_BEAT_VERBS = [
+    "mo mat", "nhin", "thay", "cam", "nam lay", "giat", "keo", "lan", "bo", "chay", "dam", "chem",
+    "can", "liem", "uong", "mo cua", "dong cua", "buoc vao", "qua cong", "vao sanh", "cho thang may",
+    "vao phong", "keo thung", "dap", "ngoi xuong", "quay dau", "nho lai", "nhan ra", "quyet dinh",
+]
+
+SUPPORTING_CHARACTER_RULES = [
+    ("La Kieu", ["la kieu"]),
+    ("Ninh", ["ninh"]),
+    ("Chim Xam", ["chim xam"]),
+    ("guard outside the shelter", ["nguoi gac", "ke gac", "ten gac"]),
+    ("scarred raider", ["hau seo"]),
+    ("the crowd in District 17", ["dam dong", "nguoi dan", "nhung nguoi xung quanh"]),
+    ("the robber group", ["dam cuop"]),
+]
+
 
 def run(cmd, env=None):
     print("+ " + " ".join(str(part) for part in cmd), flush=True)
@@ -161,27 +177,46 @@ def split_story_units(text):
         if compact.startswith(('"', "'", "-", "“", "‘")) and len(compact.split()) <= 28:
             units.append(compact)
             continue
-        parts = [part.strip() for part in re.split(r"(?<=[.!?。！？…])\s+", compact) if part.strip()]
+        parts = [part.strip() for part in re.split(r"(?<=[.!?。！？…;:])\s+", compact) if part.strip()]
         if not parts:
             continue
         for part in parts:
-            if len(part.split()) <= 6 and units and not units[-1].startswith("#"):
+            plain = normalize_vi(part)
+            is_short_action = len(part.split()) <= 8 and has_any(plain, ACTION_BEAT_VERBS)
+            is_short_reaction = len(part.split()) <= 5 and has_any(plain, ["roi", "khung lai", "chet lang", "nho lai", "giat minh"])
+            if len(part.split()) <= 6 and not is_short_action and not is_short_reaction and units and not units[-1].startswith("#"):
                 units[-1] = f"{units[-1]} {part}".strip()
             else:
                 units.append(part)
     return units
 
 
+def extract_character_mentions(text):
+    plain = normalize_vi(text)
+    mentions = []
+    if has_any(plain, ["lam tich", "co gai", "nu chinh", "nang"]):
+        mentions.append(("lam-tich", "Lam Tich", LAM_TICH_VISUAL))
+    if has_any(plain, ["tan da", "nguoi dan ong", "linh danh thue", "han"]):
+        mentions.append(("tan-da", "Tan Da", TAN_DA_VISUAL))
+    if has_any(plain, ["con cho", "cho hai ham", "thu bien di", "lon giap bun", "quai vat"]):
+        mentions.append(("monster", "the monster or mutant beast in the narration", "the exact monster described by the narration"))
+    for label, tokens in SUPPORTING_CHARACTER_RULES:
+        if has_any(plain, tokens):
+            mentions.append((slugify(label), label, label))
+    deduped = []
+    seen = set()
+    for item in mentions:
+        if item[0] in seen:
+            continue
+        seen.add(item[0])
+        deduped.append(item)
+    return deduped
+
+
 def piece_profile(piece):
     plain = normalize_vi(piece)
-    subject_tokens = []
-    if has_any(plain, ["lam tich", "co gai", "nu chinh", "nang"]):
-        subject_tokens.append("lam-tich")
-    if has_any(plain, ["tan da", "nguoi dan ong", "linh danh thue", "han"]):
-        subject_tokens.append("tan-da")
-    if has_any(plain, ["con cho", "cho hai ham", "thu bien di", "lon giap bun", "quai vat"]):
-        subject_tokens.append("monster")
-    if has_any(plain, ["ninh", "chim xam", "la kieu", "doi nguoi", "dam cuop", "nguoi gac"]):
+    subject_tokens = [item[0] for item in extract_character_mentions(piece)]
+    if has_any(plain, ["doi nguoi", "dam cuop", "nguoi gac"]) and "supporting-cast" not in subject_tokens:
         subject_tokens.append("supporting-cast")
     location_shift = has_any(
         plain,
@@ -220,6 +255,7 @@ def piece_profile(piece):
         "location_shift": location_shift,
         "object_focus": object_focus,
         "emotional_beat": emotional_beat,
+        "action_beat": has_any(plain, ACTION_BEAT_VERBS),
         "subjects": subject_tokens,
         "visual": has_any(
             plain,
@@ -265,6 +301,7 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
                 next_profile["location_shift"]
                 or subject_shift
                 or next_profile["dialogue"]
+                or (next_profile["action_beat"] and current_complete)
                 or (next_profile["object_focus"] and current_profile["visual"] and current_complete)
                 or (next_profile["emotional_beat"] and current_complete)
                 or (next_profile["transition"] and current_complete)
@@ -279,6 +316,19 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
         current_words += words
     if current:
         groups.append(" ".join(current))
+
+    natural_beat_count = sum(
+        1
+        for piece in pieces
+        if not piece.lstrip().startswith("#")
+        and (
+            piece_profile(piece)["dialogue"]
+            or piece_profile(piece)["action_beat"]
+            or piece_profile(piece)["location_shift"]
+            or piece_profile(piece)["object_focus"]
+            or piece_profile(piece)["emotional_beat"]
+        )
+    )
 
     if max_scenes > 0:
         while len(groups) > max_scenes:
@@ -295,8 +345,12 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
                 break
             groups[merge_index : merge_index + 2] = [groups[merge_index] + " " + groups[merge_index + 1]]
 
-    if min_scenes > 0:
-        while len(groups) < min_scenes:
+    soft_min_scenes = min_scenes
+    if natural_beat_count >= max(1, int(min_scenes * 0.75)):
+        soft_min_scenes = max(0, min_scenes - 12)
+
+    if soft_min_scenes > 0:
+        while len(groups) < soft_min_scenes:
             split_index = None
             split_parts = None
             max_parts = 0
@@ -705,6 +759,12 @@ def infer_beat_goal(narration, scene_state, actions, props):
 def infer_primary_subject(narration, scene_state):
     plain = normalize_vi(narration)
     focus = scene_state.get("focus", "")
+    mentions = extract_character_mentions(narration)
+    mention_labels = [item[1] for item in mentions if item[1] not in {"the monster or mutant beast in the narration"}]
+    if len(mention_labels) >= 2:
+        return " and ".join(mention_labels[:2])
+    if len(mention_labels) == 1:
+        return mention_labels[0]
     if focus in {"tan-da-condition", "aftermath"} or "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain:
         if "lam tich" in plain or "nang" in plain:
             return "Lam Tich and Tan Da"
@@ -736,6 +796,44 @@ def scene_beat_metadata(narration, scene_state, actions, setting, props, continu
         "audio_anchor_lines": audio_anchor_lines(narration, limit=3),
         "transition_from_previous": continuity.get("last_action", "none"),
     }
+
+
+def infer_scene_role(narration, scene_state, actions, props, shot_type):
+    plain = normalize_vi(narration)
+    focus = scene_state.get("focus", "")
+    if "insert" in shot_type or ("close" in shot_type and props and not actions):
+        return "insert"
+    if has_any(plain, ["dam dong", "nguoi dan", "nhung nguoi xung quanh", "dam cuop", "nhieu nguoi"]):
+        return "crowd-reaction"
+    if focus in {"mass-chaos", "dog-attack", "dog-pack"} or "action" in shot_type or "threat" in shot_type:
+        return "action"
+    if focus in {"memory-flashback", "rebirth-junkyard", "bitter-realization"}:
+        return "reveal"
+    if has_any(plain, ["nhan ra", "hieu ra", "quyet dinh", "do du", "nho lai"]):
+        return "decision-reaction"
+    if has_any(plain, ["qua cong", "vao sanh", "cho thang may", "vao phong", "mo cua", "buoc vao"]):
+        return "movement-step"
+    if props:
+        return "proof-object"
+    if has_any(plain, ["noi", "hoi", "dap", "\"", "“", "‘"]):
+        return "dialogue"
+    if "wide" in shot_type or "establishing" in shot_type:
+        return "establishing"
+    return "story-beat"
+
+
+def thumbnail_hook_score(narration, scene_role, props):
+    plain = normalize_vi(narration)
+    score = 0
+    if scene_role in {"reveal", "decision-reaction", "proof-object", "crowd-reaction"}:
+        score += 2
+    if has_any(plain, ["khong phai", "hoa ra", "that ra", "cuoi cung", "quyet khong", "biet khong", "bong"]):
+        score += 2
+    if has_any(plain, ["dam dong", "nguoi dan", "truong thon", "hau seo", "la kieu"]):
+        score += 1
+    if props:
+        score += 1
+    return min(score, 5)
 
 
 def shot_type_for(narration, scene_index):
@@ -791,12 +889,10 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     shot_type = shot_type_for(narration, scene_index)
     scene_state = detect_scene_state(narration, continuity)
 
-    mentions_lam_tich = "lam tich" in plain or has_any(plain, ["nang", "co gai", "nu chinh"])
-    mentions_tan_da = "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain
-    if mentions_lam_tich:
-        add_unique(characters, LAM_TICH_VISUAL)
-    if mentions_tan_da:
-        add_unique(characters, TAN_DA_VISUAL)
+    mentions = extract_character_mentions(narration)
+    mention_keys = {item[0] for item in mentions}
+    for _, _, visual_ref in mentions:
+        add_unique(characters, visual_ref)
     if not characters:
         continuity_text = " ".join(continuity.get("anchors", []))
         if "Lam Tich" in continuity_text:
@@ -866,7 +962,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         characters = [LAM_TICH_VISUAL]
         mood = ["thirst, hesitation, and fragile survival calculation"]
     elif focus == "tan-da-condition":
-        add_unique(characters, TAN_DA_VISUAL)
+        characters = [TAN_DA_VISUAL]
         mood = ["fever, weakness, and dread of gene collapse"]
     elif focus == "doorway-threat":
         add_unique(characters, LAM_TICH_VISUAL)
@@ -893,7 +989,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
             add_unique(must_show, item)
     must_show = must_show[:8]
 
-    reference_recipe = "Use the approved sample only as character identity, face quality, and clothing material reference, never as a fixed composition, repeated pose, or repeated location"
+    reference_recipe = "Use the approved sample only as face identity and clothing-material reference, never as a fixed composition, repeated pose, repeated location, or repeated body blocking"
     scene_state_parts = [f"location={scene_state['location']}", f"threat={scene_state['threat']}"]
     if any("Lam Tich" in item for item in characters):
         scene_state_parts.append(f"Lam Tich position={scene_state['lam_tich_position']}")
@@ -902,33 +998,32 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     if scene_state.get("door_state") and "door" in scene_state["location"]:
         scene_state_parts.append(f"door state={scene_state['door_state']}")
     beat_meta = scene_beat_metadata(narration, scene_state, actions, setting, props, continuity)
+    scene_role = infer_scene_role(narration, scene_state, actions, props, shot_type)
+    hook_score = thumbnail_hook_score(narration, scene_role, props)
+    setting_text = ", ".join(setting[:3]) if setting else scene_state["location"]
+    action_text = ", ".join(actions[:3]) if actions else beat_meta["beat_goal"]
+    prop_text = ", ".join(props[:3]) if props else "only the props named by the narration"
+    anchors_text = ", ".join(continuity.get("anchors", [])[:3]) if continuity.get("anchors") else "keep identity and world continuity only"
+    scene_excerpt = " / ".join(audio_anchor_lines(narration, limit=2)) or compact[:180]
     prompt = (
-        "Premium cinematic realistic wasteland story frame with strong story accuracy and scene-to-scene continuity. "
+        "Cinematic realistic wasteland story frame, current narration is the source of truth. "
+        f"Show this exact beat: {beat_meta['beat_goal']}. "
+        f"Current action beat: {action_text}. "
+        f"Primary subject: {beat_meta['beat_subject']}. "
+        f"Setting: {setting_text}. "
+        f"Shot: {shot_type}. "
+        f"Props that must read clearly: {prop_text}. "
+        f"Carry over only this continuity from the previous scene: {handoff}; anchors: {anchors_text}. "
+        "Do not reset to a generic pose or repeated shelter composition. "
+        "Environment must follow the exact story description, and movement scenes must show the correct current step in the sequence. "
         f"{GENDER_CLARITY_RULE} "
-        f"{reference_recipe}. "
-        "Do not turn every scene into the same two-character shelter shot. "
-        "The current narration is the highest-priority source of truth. "
-        "The frame must illustrate the exact beat being narrated right now. "
-        f"Beat goal: {beat_meta['beat_goal']}. "
-        f"CONTINUITY FROM PREVIOUS SCENE: {continuity.get('summary', 'start of sequence')}. "
-        f"Current scene state: {'; '.join(scene_state_parts)}. "
-        f"MUST SHOW: {', '.join(must_show)}. "
-        f"Characters: {', '.join(characters)}. "
-        f"Setting: {', '.join(setting)}. "
-        f"Shot type: {shot_type}. "
-        f"Action: {', '.join(actions)}. "
-        f"Previous action handoff: {handoff}. "
-        f"Persistent visual anchors: {', '.join(continuity.get('anchors', [])[:4]) if continuity.get('anchors') else 'keep character design and world style consistent'}. "
-        f"Important props: {', '.join(props) if props else 'only props described by the narration'}. "
-        f"Mood: {', '.join(mood)}. "
-        "The environment must follow the exact story description: if the narration says a ruined house, show a ruined house; if it says a tall beautiful building, show a tall beautiful building in wasteland context; if it says a colossal city wall, show that colossal city wall clearly. "
-        "If the narration describes a sequence of movement, show the correct current step of that sequence rather than resetting to a generic pose. "
-        "Use grounded Asian webnovel casting, realistic dirty survival clothing, readable faces only when the story beat needs the face visible, and keep spatial logic consistent from one scene to the next. "
         f"{LAM_TICH_FACE_RULE} "
         f"{TAN_DA_FACE_RULE} "
-        "Lam Tich may wear a heat-appropriate summer wasteland outfit with secure chest coverage, modest neckline, visible arms, and visible legs, but do not expose breasts, nipples, navel, or full abdomen, and do not frame her like a glamour portrait. "
-        "Prefer insert shots for objects, doorway shots for outside threats, single shots for illness, and two-shots only when the relationship beat is the real focus. "
-        f"{style}. Scene context: {compact}"
+        f"{YOUTUBE_SAFE_VISUAL_RULE} "
+        f"{reference_recipe}. "
+        f"Mood: {', '.join(mood[:2])}. "
+        f"Story excerpt: {scene_excerpt}. "
+        f"{style}"
     )
     return {
         "prompt": prompt,
@@ -940,6 +1035,8 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         "shot_type": shot_type,
         "scene_state": scene_state,
         "beat_meta": beat_meta,
+        "scene_role": scene_role,
+        "thumbnail_hook_score": hook_score,
     }
 
 
@@ -1014,6 +1111,8 @@ def build_storyboard(args):
                 "visual_props": visual["props"],
                 "visual_shot_type": visual["shot_type"],
                 "visual_continuity": current_continuity,
+                "scene_role": visual.get("scene_role", "story-beat"),
+                "thumbnail_hook_score": visual.get("thumbnail_hook_score", 0),
                 "beat_type": beat_meta.get("beat_type", "interaction"),
                 "beat_goal": beat_meta.get("beat_goal", ""),
                 "beat_subject": beat_meta.get("beat_subject", ""),

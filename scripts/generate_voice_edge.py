@@ -214,6 +214,17 @@ LIST_MARKERS = (
     "thứ nhất", "thứ hai", "tiếp theo", "sau đó", "cuối cùng", "ngoài ra",
 )
 
+BEAT_SPLIT_MARKERS = (
+    "rồi", "sau đó", "ngay lúc đó", "đúng lúc đó", "bỗng", "đột nhiên", "liền", "lập tức",
+    "quay đầu", "mở cửa", "bước vào", "qua cổng", "vào sảnh", "chờ thang máy", "vào phòng",
+    "mở nắp", "đưa lên", "uống", "nuốt", "cầm lấy", "nhặt lên", "kéo ra", "đâm", "chém", "lao tới",
+)
+
+ACTION_BEAT_WORDS = (
+    "mở", "đóng", "nhìn", "thấy", "cầm", "nắm", "nhặt", "kéo", "đẩy", "đâm", "chém", "lao", "chạy",
+    "lăn", "né", "uống", "nuốt", "quay", "bước", "vào", "ra", "ngồi", "đứng", "nằm",
+)
+
 
 def resolve(base, value):
     path = Path(value)
@@ -323,6 +334,16 @@ def is_cliffhanger(text):
 def has_word(text, words):
     lower = text.lower()
     return any(word in lower for word in words)
+
+
+def looks_like_action_beat(text):
+    stripped = text.strip().lower()
+    if not stripped:
+        return False
+    if has_word(stripped, BEAT_SPLIT_MARKERS):
+        return True
+    words = stripped.split()
+    return len(words) <= 14 and any(word in stripped for word in ACTION_BEAT_WORDS)
 
 
 def detect_archetype(text):
@@ -477,7 +498,7 @@ def line_gap(text, profile):
 def split_performance_units(text, max_chars=180):
     normalized = re.sub(r"[ \t]+", " ", text.strip())
     normalized = re.sub(r"\n{3,}", "\n\n", normalized)
-    max_chars = max(120, min(700, int(max_chars)))
+    max_chars = max(70, min(420, int(max_chars)))
     quote_pattern = re.compile(r'(".*?"|â€œ.*?â€|ã€Œ.*?ã€|ã€Ž.*?ã€)')
     merged_pieces = []
     for paragraph in re.split(r"\n\n+", normalized):
@@ -498,9 +519,13 @@ def split_performance_units(text, max_chars=180):
                 merged_pieces.append(block)
                 continue
             current = ""
-            for sentence in re.split(r"(?<=[.!?â€¦ã€‚ï¼ï¼Ÿ])\s+", block):
+            for sentence in re.split(r"(?<=[.!?â€¦ã€‚ï¼ï¼Ÿ;:])\s+", block):
                 sentence = sentence.strip()
                 if not sentence:
+                    continue
+                if looks_like_action_beat(sentence) and current:
+                    merged_pieces.append(current.strip())
+                    current = sentence
                     continue
                 if current and len(current) + len(sentence) + 1 > max_chars:
                     merged_pieces.append(current.strip())
@@ -509,7 +534,35 @@ def split_performance_units(text, max_chars=180):
                     current = f"{current} {sentence}".strip()
             if current:
                 merged_pieces.append(current.strip())
-    return merged_pieces or [text]
+    refined = []
+    for piece in merged_pieces:
+        if len(piece) <= max_chars:
+            refined.append(piece)
+            continue
+        clauses = [clause.strip() for clause in re.split(r"(?<=[,;，；])\s+", piece) if clause.strip()]
+        if len(clauses) <= 1:
+            refined.append(piece)
+            continue
+        current = ""
+        for clause in clauses:
+            if looks_like_action_beat(clause) and current:
+                refined.append(current.strip())
+                current = clause
+                continue
+            if current and len(current) + len(clause) + 1 > max_chars:
+                refined.append(current.strip())
+                current = clause
+            else:
+                current = f"{current} {clause}".strip()
+        if current:
+            refined.append(current.strip())
+    final_units = []
+    for piece in refined:
+        if final_units and len(piece.split()) <= 4 and not looks_like_action_beat(piece) and not is_dialogue(piece):
+            final_units[-1] = f"{final_units[-1]} {piece}".strip()
+        else:
+            final_units.append(piece)
+    return final_units or [text]
     pieces = []
     for paragraph in re.split(r"(\n\n+)", normalized):
         if not paragraph.strip():

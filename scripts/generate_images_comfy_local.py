@@ -216,54 +216,6 @@ def relpath(path: Path, base: Path) -> str:
         return str(path.resolve())
 
 
-def scene_prompt(scene: dict[str, Any]) -> str:
-    prompt = (
-        scene.get("comfy_prompt")
-        or scene.get("image_prompt")
-        or scene.get("stability_prompt")
-        or scene.get("visual")
-        or scene.get("text")
-        or scene.get("narration")
-        or ""
-    )
-    prompt = str(prompt).strip()
-    if not prompt:
-        return ""
-    # SD 1.5 CLIP truncates long prompts, so put the essential face/composition
-    # control at the very front instead of burying it after story context.
-    lower_prompt = prompt.lower()
-    must_show_text = " ".join(str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()).lower()
-    combined_text = f"{lower_prompt} {must_show_text} {action_text}"
-    two_character_scene = (
-        ("lam tich" in combined_text and "tan da" in combined_text)
-        or ("two share" in combined_text)
-        or ("two measure the next danger together" in combined_text)
-    )
-    if two_character_scene:
-        face_control = (
-            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
-            "beautiful adult Asian scavenger woman in rugged layered wasteland clothing kneeling on the left, "
-            "summer wasteland outfit, lightweight fitted short-sleeve or sleeveless outer layer over a secure dark inner top that fully covers chest and torso, tasteful collarbone, arms, and some legs visible, "
-            "soft tired natural face under grime, "
-            "injured black-clad man lying half-reclined on the right, "
-            "warm oil lantern between them, torn tarp shelter, no solo portrait, no close-up crop, "
-            "YouTube-safe survival drama, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
-        )
-    else:
-        face_control = (
-            "medium cinematic story shot, full head visible, clear natural Asian human face, "
-            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
-            "dirty post-apocalyptic survival drama, lightweight summer wasteland outfit with secure chest coverage, fitted outer layer, and practical short bottoms, "
-            "tasteful collarbone, arms, and some legs visible, no close-up crop, "
-            "YouTube-safe, no nudity, no bare chest, no exposed torso, no cleavage focus, no navel, no sexualized pose, no chest-or-waist focal framing"
-        )
-    if face_control.lower() not in prompt.lower():
-        prompt = f"{face_control}, {prompt}"
-    if DEFAULT_POSITIVE_SUFFIX.lower() not in prompt.lower():
-        prompt = f"{prompt}, {DEFAULT_POSITIVE_SUFFIX}"
-    return prompt
-
-
 def size_for_ratio(ratio: str) -> tuple[int, int]:
     return RATIO_TO_SIZE.get(ratio, RATIO_TO_SIZE["9:16"])
 
@@ -353,16 +305,25 @@ def scene_reference_policy(scene: dict[str, Any], default_reference: str, defaul
         return "", None
     shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
     action_text = ", ".join(str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()).lower()
+    beat_type = str(scene.get("beat_type") or "").strip().lower()
+    transition = str(scene.get("transition_from_previous") or "").strip().lower()
+    beat_goal = str(scene.get("beat_goal") or "").strip().lower()
     scene_id = str(scene.get("id") or "")
     if scene_id.endswith("001"):
-        return default_reference, min(max(default_denoise, 0.30), 0.34)
+        return default_reference, min(max(default_denoise, 0.26), 0.30)
     if "close" in shot_type or "detail" in shot_type:
         return "", None
+    if beat_type in {"location-transition", "mass-chaos", "dog-attack", "dog-pack", "dog-awakening"}:
+        return "", None
+    if any(token in transition for token in ["buoc", "qua cong", "vao sanh", "cho thang may", "vao phong", "mo cua"]):
+        return "", None
+    if any(token in beat_goal for token in ["movement through the current location sequence", "predator threat", "survival response"]):
+        return "", None
     if "wide" in shot_type or "establishing" in shot_type:
-        return default_reference, 0.42
+        return "", None
     if "action" in shot_type or "predator" in shot_type or "threat" in shot_type or "hiding" in action_text:
-        return default_reference, 0.52
-    return default_reference, default_denoise
+        return "", None
+    return default_reference, min(default_denoise, 0.24)
 
 
 def node_choices(object_info: dict[str, Any], class_type: str, input_name: str) -> list[str]:

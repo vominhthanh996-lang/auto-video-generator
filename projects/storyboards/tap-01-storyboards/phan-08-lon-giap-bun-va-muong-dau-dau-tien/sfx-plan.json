@@ -21,7 +21,17 @@
       "cues": [
         "footsteps"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 6.49,
+      "final_audio": "assets/scene-004.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "footsteps",
+          "context": "dirt",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 5,
@@ -148,7 +158,17 @@
       "cues": [
         "footsteps"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 7.98,
+      "final_audio": "assets/scene-029.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "footsteps",
+          "context": "dirt",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 30,
@@ -320,7 +340,17 @@
       "cues": [
         "suspense"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 4.69,
+      "final_audio": "assets/scene-063.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "sting",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     },
     {
       "scene": 64,
@@ -349,7 +379,27 @@
         "rain",
         "wind"
       ],
-      "mixed": false
+      "mixed": false,
+      "duration": 63.63,
+      "final_audio": "assets/scene-068.mp3",
+      "missing_real_sfx": [
+        {
+          "cue": "suspense",
+          "context": "drone",
+          "reason": "missing asset"
+        },
+        {
+          "cue": "rain",
+          "context": "general",
+          "reason": "missing asset"
+        },
+        {
+          "cue": "wind",
+          "context": "general",
+          "reason": "missing asset"
+        }
+      ],
+      "message": "Add real SFX files to D:\\ThanhMV\\Cong viec\\sfx-library or rerun with --allow-generated-sfx."
     }
   ]
 }
