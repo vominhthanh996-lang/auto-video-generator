@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -37,6 +38,7 @@ def read_task_statuses() -> list[dict]:
                 pass
             continue
         refresh_counts_from_assets(data)
+        reconcile_live_state(data)
         data["_status_file"] = str(path)
         enrich_with_scheduler(data)
         tasks.append(data)
@@ -91,6 +93,30 @@ def refresh_counts_from_assets(task: dict) -> None:
             images_node["detail"] = f"Images {image_count}/{len(scenes)}"
 
 
+def reconcile_live_state(task: dict) -> None:
+    task_name = str(task.get("task") or "").strip()
+    if not task_name:
+        return
+    worker_entries = get_worker_entries(task_name)
+    supervisor_entries = get_supervisor_entries(task_name)
+    if not worker_entries and not supervisor_entries:
+        return
+    overall = str(task.get("overall", "")).lower()
+    current_node = str(task.get("current_node", "")).lower()
+    if overall == "failed":
+        task["overall"] = "running"
+        if current_node in {"", "supervisor", "startup"}:
+            voice_status = str(task.get("nodes", {}).get("voice", {}).get("status", "")).lower()
+            image_status = str(task.get("nodes", {}).get("images", {}).get("status", "")).lower()
+            if voice_status == "running":
+                task["current_node"] = "voice"
+            elif image_status == "running":
+                task["current_node"] = "images"
+            else:
+                task["current_node"] = "supervisor"
+        task["message"] = "Worker restarted and task is continuing."
+
+
 def enrich_with_scheduler(task: dict) -> None:
     name = task.get("task")
     if not name:
@@ -123,6 +149,7 @@ def enrich_with_scheduler(task: dict) -> None:
 
 
 def get_worker_entries(task_name: str) -> list[dict]:
+    slug = slugify(task_name)
     try:
         result = subprocess.run(
             [
@@ -176,16 +203,220 @@ def get_worker_entries(task_name: str) -> list[dict]:
     return entries
 
 
-def end_task(task_name: str) -> dict:
+def get_supervisor_entries(task_name: str) -> list[dict]:
     slug = slugify(task_name)
-    status_path = STATUS_DIR / f"{slugify(task_name)}.json"
-    config_path = WORK_ROOT / "temp" / f"{slug}.json"
-    startup_launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slugify(task_name)}.cmd"
-    workers = get_worker_entries(task_name)
+    try:
+        result = subprocess.run(
+            [
+                "powershell",
+                "-NoProfile",
+                "-Command",
+                (
+                    "Get-CimInstance Win32_Process | "
+                    "Where-Object { $_.Name -eq 'powershell.exe' -and $_.CommandLine -like '*resume_story_task_on_logon.ps1*' } | "
+                    "Select-Object ProcessId,CommandLine | ConvertTo-Json -Depth 4"
+                ),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+    except Exception:
+        return []
+    if result.returncode != 0 or not result.stdout.strip():
+        return []
+    try:
+        payload = json.loads(result.stdout)
+    except Exception:
+        return []
+    rows = payload if isinstance(payload, list) else [payload]
+    entries: list[dict] = []
+    for row in rows:
+        command_line = str(row.get("CommandLine") or "")
+        if not command_line:
+            continue
+        config_path = ""
+        if '-ConfigPath "' in command_line:
+            config_path = command_line.split('-ConfigPath "', 1)[1].split('"', 1)[0]
+        elif "-ConfigPath " in command_line:
+            config_path = command_line.split("-ConfigPath ", 1)[1].split(" ", 1)[0].strip()
+        config_task = ""
+        if config_path:
+            try:
+                config_task = json.loads(Path(config_path).read_text(encoding="utf-8-sig")).get("TaskName", "")
+            except Exception:
+                config_task = ""
+        command_line_lc = command_line.lower()
+        config_path_lc = config_path.lower()
+        if config_task == task_name or slug in command_line_lc or slug in config_path_lc:
+            entries.append(
+                {
+                    "pid": int(row.get("ProcessId")),
+                    "config_path": config_path,
+                    "command_line": command_line,
+                }
+            )
+    return entries
+
+
+def read_json(path: Path) -> dict | None:
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return None
+
+
+def write_json(path: Path, payload: dict) -> None:
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def parse_current_scene_number(state: dict) -> int | None:
+    text = " ".join(
+        str(state.get(key, "") or "")
+        for key in ("current_node", "message")
+    )
+    match = re.search(r"scene\s+(\d+)", text, flags=re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def contiguous_ready_index(storyboard: dict, project_root: Path, field: str) -> int:
+    scenes = list(storyboard.get("scenes") or [])
+    ready = 0
+    for scene in scenes:
+        value = scene.get(field)
+        if not value:
+            break
+        path = Path(value)
+        if not path.is_absolute():
+            path = project_root / value
+        if not path.exists():
+            break
+        ready += 1
+    return ready
+
+
+def reset_in_progress_outputs(status_path: Path, config_path: Path) -> list[str]:
+    notes: list[str] = []
+    status = read_json(status_path) or {}
+    config = read_json(config_path) or {}
+    storyboard_path_value = str(status.get("storyboard") or config.get("StoryboardPath") or "")
+    project_root_value = str(status.get("project") or config.get("ProjectRoot") or "")
+    if not storyboard_path_value:
+        return notes
+    storyboard_path = Path(storyboard_path_value)
+    project_root = Path(project_root_value) if project_root_value else storyboard_path.parent
+    storyboard = read_json(storyboard_path)
+    if not storyboard:
+        return notes
+
+    current_node = str(status.get("current_node") or "").lower()
+    scene_number = parse_current_scene_number(status)
+    scenes = list(storyboard.get("scenes") or [])
+
+    if "image" in current_node and scene_number and 1 <= scene_number <= len(scenes):
+        scene = scenes[scene_number - 1]
+        image_value = scene.get("image")
+        if image_value:
+            image_path = Path(image_value)
+            if not image_path.is_absolute():
+                image_path = project_root / image_value
+            if image_path.exists():
+                image_path.unlink()
+                notes.append(f"reset image output for scene {scene_number}")
+        return notes
+
+    if "voice" in current_node:
+        try:
+            target = int((status.get("counts") or {}).get("audio") or 0) + 1
+        except Exception:
+            target = 0
+        if target <= 0:
+            target = contiguous_ready_index(storyboard, project_root, "audio") + 1
+        if 1 <= target <= len(scenes):
+            audio_value = scenes[target - 1].get("audio")
+            if audio_value:
+                audio_path = Path(audio_value)
+                if not audio_path.is_absolute():
+                    audio_path = project_root / audio_value
+                if audio_path.exists():
+                    audio_path.unlink()
+                    notes.append(f"reset audio output for scene {target}")
+        return notes
+
+    if "render" in current_node:
+        output_dir = project_root / "output"
+        if output_dir.exists():
+            for path in sorted(output_dir.glob("*.mp4"), key=lambda item: item.stat().st_mtime, reverse=True):
+                try:
+                    path.unlink()
+                    notes.append(f"reset render output {path.name}")
+                except Exception:
+                    continue
+                break
+        return notes
+
+    return notes
+
+
+def update_status_for_pause(status_path: Path, message: str) -> None:
+    state = read_json(status_path) or {}
+    if not state:
+        return
+    state["overall"] = "paused"
+    state["message"] = message
+    state["updated_at"] = __import__("datetime").datetime.now().isoformat(timespec="seconds")
+    write_json(status_path, state)
+
+
+def update_status_for_resume(status_path: Path, message: str) -> None:
+    state = read_json(status_path) or {}
+    if not state:
+        return
+    state["overall"] = "queued"
+    state["current_node"] = "startup"
+    state["message"] = message
+    state["updated_at"] = __import__("datetime").datetime.now().isoformat(timespec="seconds")
+    write_json(status_path, state)
+
+
+def create_startup_launcher(task_name: str, config_path: Path) -> Path:
+    launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slugify(task_name)}.cmd"
+    launcher.write_text(
+        '@echo off\n'
+        f'powershell.exe -NoProfile -ExecutionPolicy Bypass -File "{REPO_ROOT / "scripts" / "resume_story_task_on_logon.ps1"}" -ConfigPath "{config_path}"\n',
+        encoding="ascii",
+    )
+    return launcher
+
+
+def start_supervisor(config_path: Path) -> bool:
+    resume_script = REPO_ROOT / "scripts" / "resume_story_task_on_logon.ps1"
+    proc = subprocess.Popen(
+        [
+            "powershell.exe",
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            str(resume_script),
+            "-ConfigPath",
+            str(config_path),
+        ],
+        cwd=str(REPO_ROOT),
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    return proc.pid > 0
+
+
+def stop_entries(entries: list[dict]) -> tuple[list[int], list[str]]:
     killed: list[int] = []
     errors: list[str] = []
-    for worker in workers:
-        pid = int(worker["pid"])
+    for entry in entries:
+        pid = int(entry["pid"])
         result = subprocess.run(
             ["taskkill", "/PID", str(pid), "/T", "/F"],
             capture_output=True,
@@ -198,6 +429,17 @@ def end_task(task_name: str) -> dict:
         else:
             detail = (result.stderr or result.stdout or "").strip()
             errors.append(f"PID {pid}: {detail}")
+    return killed, errors
+
+
+def end_task(task_name: str) -> dict:
+    slug = slugify(task_name)
+    status_path = STATUS_DIR / f"{slugify(task_name)}.json"
+    config_path = WORK_ROOT / "temp" / f"{slug}.json"
+    startup_launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slugify(task_name)}.cmd"
+    workers = get_worker_entries(task_name)
+    supervisors = get_supervisor_entries(task_name)
+    killed, errors = stop_entries(workers + supervisors)
     if startup_launcher.exists():
         try:
             startup_launcher.unlink()
@@ -225,6 +467,55 @@ def end_task(task_name: str) -> dict:
     }
 
 
+def pause_task(task_name: str) -> dict:
+    slug = slugify(task_name)
+    status_path = STATUS_DIR / f"{slug}.json"
+    config_path = WORK_ROOT / "temp" / f"{slug}.json"
+    startup_launcher = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" / f"{slug}.cmd"
+    workers = get_worker_entries(task_name)
+    supervisors = get_supervisor_entries(task_name)
+    killed, errors = stop_entries(workers + supervisors)
+    if startup_launcher.exists():
+        try:
+            startup_launcher.unlink()
+        except Exception as exc:
+            errors.append(f"startup launcher: {exc}")
+    if status_path.exists():
+        update_status_for_pause(status_path, "Task paused. Resume will restart the in-progress step from the beginning.")
+    return {
+        "task": task_name,
+        "killed": killed,
+        "errors": errors,
+        "paused": True,
+        "status_file": str(status_path),
+        "config_file": str(config_path),
+    }
+
+
+def resume_task(task_name: str) -> dict:
+    slug = slugify(task_name)
+    status_path = STATUS_DIR / f"{slug}.json"
+    config_path = WORK_ROOT / "temp" / f"{slug}.json"
+    if not config_path.exists():
+        return {
+            "task": task_name,
+            "started": False,
+            "errors": [f"Missing config file: {config_path}"],
+        }
+    reset_notes = reset_in_progress_outputs(status_path, config_path)
+    update_status_for_resume(status_path, "Resuming task. The in-progress step has been reset and will run again.")
+    create_startup_launcher(task_name, config_path)
+    started = start_supervisor(config_path)
+    return {
+        "task": task_name,
+        "started": started,
+        "errors": [] if started else ["Failed to start supervisor."],
+        "reset": reset_notes,
+        "status_file": str(status_path),
+        "config_file": str(config_path),
+    }
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, directory=None, **kwargs):
         super().__init__(*args, directory=str(BOARD_ROOT), **kwargs)
@@ -248,6 +539,28 @@ class Handler(SimpleHTTPRequestHandler):
             middle = parsed.path[len("/api/tasks/") : -len("/end")].strip("/")
             task_name = unquote(middle)
             payload = end_task(task_name)
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if parsed.path.startswith("/api/tasks/") and parsed.path.endswith("/pause"):
+            middle = parsed.path[len("/api/tasks/") : -len("/pause")].strip("/")
+            task_name = unquote(middle)
+            payload = pause_task(task_name)
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if parsed.path.startswith("/api/tasks/") and parsed.path.endswith("/resume"):
+            middle = parsed.path[len("/api/tasks/") : -len("/resume")].strip("/")
+            task_name = unquote(middle)
+            payload = resume_task(task_name)
             body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")

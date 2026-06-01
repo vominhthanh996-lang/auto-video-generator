@@ -35,6 +35,73 @@ function Get-Slug {
     return $slug
 }
 
+function Test-PidAlive {
+    param([int]$ProcessId)
+    try {
+        Get-Process -Id $ProcessId -ErrorAction Stop | Out-Null
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
+function Acquire-WorkerLock {
+    New-Item -ItemType Directory -Force -Path $script:WorkerLockDir | Out-Null
+    if (Test-Path $script:WorkerLockPath) {
+        $staleLock = $false
+        try {
+            $existing = Get-Content $script:WorkerLockPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            $existingPid = [int]($existing.pid)
+            if ($existingPid -and $existingPid -ne $PID -and (Test-PidAlive -ProcessId $existingPid)) {
+                return $false
+            }
+            $staleLock = $true
+        }
+        catch {
+            $staleLock = $true
+        }
+        if ($staleLock) {
+            try {
+                Remove-Item -LiteralPath $script:WorkerLockPath -Force -ErrorAction Stop
+            }
+            catch {}
+        }
+    }
+    try {
+        $stream = [System.IO.File]::Open($script:WorkerLockPath, [System.IO.FileMode]::CreateNew, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
+        $writer = New-Object System.IO.StreamWriter($stream, [System.Text.Encoding]::UTF8)
+        $writer.Write(([pscustomobject]@{
+            pid = $PID
+            task = $TaskName
+            config = $ConfigPath
+            acquired_at = (Get-Date).ToString("s")
+        } | ConvertTo-Json -Depth 4))
+        $writer.Flush()
+        $writer.Dispose()
+        $stream.Dispose()
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
+function Release-WorkerLock {
+    if (-not (Test-Path $script:WorkerLockPath)) {
+        return
+    }
+    try {
+        $existing = Get-Content $script:WorkerLockPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ([int]($existing.pid) -eq $PID) {
+            Remove-Item -LiteralPath $script:WorkerLockPath -Force -ErrorAction SilentlyContinue
+        }
+    }
+    catch {
+        Remove-Item -LiteralPath $script:WorkerLockPath -Force -ErrorAction SilentlyContinue
+    }
+}
+
 function Write-Log {
     param([string]$Message)
     $line = "[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $Message
@@ -162,22 +229,11 @@ function Invoke-Step {
     )
     Write-Log ("START {0}" -f $Label)
     Update-TaskStatus -Overall "running" -CurrentNode $Label -Message ("Running: {0}" -f $Label)
-    $stdoutPath = [System.IO.Path]::GetTempFileName()
-    $stderrPath = [System.IO.Path]::GetTempFileName()
-    try {
-        $processArgs = @($FilePath) + $Arguments
-        $process = Start-Process -FilePath $script:PythonExe -ArgumentList $processArgs -NoNewWindow -Wait -PassThru -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath
-        if ((Test-Path $stdoutPath) -and (Get-Item $stdoutPath).Length -gt 0) {
-            Get-Content -Path $stdoutPath -Raw | Out-File -FilePath $script:LogPath -Append -Encoding utf8
-        }
-        if ((Test-Path $stderrPath) -and (Get-Item $stderrPath).Length -gt 0) {
-            Get-Content -Path $stderrPath -Raw | Out-File -FilePath $script:LogPath -Append -Encoding utf8
-        }
-        $exitCode = $process.ExitCode
+    $combinedOutput = & $script:PythonExe $FilePath @Arguments 2>&1
+    if ($combinedOutput) {
+        ($combinedOutput | Out-String) | Out-File -FilePath $script:LogPath -Append -Encoding utf8
     }
-    finally {
-        Remove-Item $stdoutPath, $stderrPath -ErrorAction SilentlyContinue
-    }
+    $exitCode = $LASTEXITCODE
     if ($exitCode -ne 0) {
         Write-Log ("FAIL {0} (exit {1})" -f $Label, $exitCode)
         Update-TaskStatus -Overall "failed" -CurrentNode $Label -Message ("Failed: {0}" -f $Label)
@@ -225,6 +281,39 @@ function Write-QASummary {
         ready_for_render = ($state.SceneCount -gt 0 -and $state.ImageCount -ge $state.SceneCount -and ($script:SkipVoice -or $state.AudioCount -ge $state.SceneCount))
     }
     $summary | ConvertTo-Json -Depth 4 | Set-Content -Path $script:QASummaryPath -Encoding UTF8
+}
+
+function Test-ComfyApiAlive {
+    param([string]$Url = "http://127.0.0.1:8188/system_stats")
+    try {
+        $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -TimeoutSec 3
+        return ($response.StatusCode -eq 200)
+    }
+    catch {
+        return $false
+    }
+}
+
+function Ensure-ComfyService {
+    if (Test-ComfyApiAlive) {
+        Write-Log "COMFYUI already alive"
+        return
+    }
+    $comfyServiceScript = Join-Path $script:RepoRoot "scripts\start_comfyui_service.ps1"
+    if (-not (Test-Path $comfyServiceScript)) {
+        throw "ComfyUI service script not found: $comfyServiceScript"
+    }
+    Write-Log "ENSURE ComfyUI service"
+    $comfyJson = powershell.exe -NoProfile -ExecutionPolicy Bypass -File $comfyServiceScript
+    if ($LASTEXITCODE -ne 0) {
+        throw "ComfyUI service failed to start"
+    }
+    if ($comfyJson) {
+        Write-Log ("COMFYUI {0}" -f ($comfyJson | Out-String).Trim())
+    }
+    if (-not (Test-ComfyApiAlive)) {
+        throw "ComfyUI did not report healthy after startup"
+    }
 }
 
 function Validate-StoryboardText {
@@ -379,18 +468,7 @@ function Invoke-ImageStep {
     }
 
     if ($script:ImageMode -eq "comfy") {
-        $comfyServiceScript = Join-Path $script:RepoRoot "scripts\start_comfyui_service.ps1"
-        if (-not (Test-Path $comfyServiceScript)) {
-            throw "ComfyUI service script not found: $comfyServiceScript"
-        }
-        Write-Log "ENSURE ComfyUI service"
-        $comfyJson = powershell.exe -NoProfile -ExecutionPolicy Bypass -File $comfyServiceScript
-        if ($LASTEXITCODE -ne 0) {
-            throw "ComfyUI service failed to start"
-        }
-        if ($comfyJson) {
-            Write-Log ("COMFYUI {0}" -f ($comfyJson | Out-String).Trim())
-        }
+        Ensure-ComfyService
     }
 
     $imageArgs = @(
@@ -398,7 +476,7 @@ function Invoke-ImageStep {
         "--aspect-ratio", $script:AspectRatio,
         "--final-width", [string]$script:FinalWidth,
         "--final-height", [string]$script:FinalHeight,
-        "--preset", "balanced",
+        "--preset", "safe",
         "--start-scene", [string]$targetScene,
         "--end-scene", [string]$targetScene
     )
@@ -488,6 +566,10 @@ if (-not $StorySource -and -not $StoryboardPath) {
 }
 
 $script:RepoRoot = (Resolve-Path $RepoRoot).Path
+$repoVenvPython = Join-Path $script:RepoRoot ".venv\Scripts\python.exe"
+if ((-not $PythonExe -or $PythonExe -eq "python") -and (Test-Path -LiteralPath $repoVenvPython)) {
+    $PythonExe = $repoVenvPython
+}
 $script:PythonExe = $PythonExe
 $script:Format = $Format
 $script:RunMode = $RunMode
@@ -521,6 +603,8 @@ $tempRoot = Join-Path (Split-Path -Parent $script:RepoRoot) "temp"
 $script:LogPath = Join-Path $tempRoot ("{0}.log" -f (Get-Slug $TaskName))
 $script:QASummaryPath = Join-Path $script:ProjectRoot "qa-summary.json"
 $script:StatusPath = Join-Path (Join-Path $tempRoot "story-task-status") ((Get-Slug $TaskName) + ".json")
+$script:WorkerLockDir = Join-Path $tempRoot "story-task-locks"
+$script:WorkerLockPath = Join-Path $script:WorkerLockDir ((Get-Slug $TaskName) + ".lock")
 
 if ($script:UseExistingStoryboard -and -not (Test-Path $script:Storyboard)) {
     throw "Storyboard not found: $($script:Storyboard)"
@@ -544,6 +628,13 @@ switch ($script:Format) {
 
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $script:LogPath) | Out-Null
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $script:StatusPath) | Out-Null
+if (-not (Acquire-WorkerLock)) {
+    try {
+        Add-Content -Path $script:LogPath -Value ("[{0}] DUPLICATE worker suppressed for {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $TaskName) -Encoding UTF8
+    }
+    catch {}
+    exit 0
+}
 Write-Log "JOB START"
 Write-Log ("TASK {0}" -f $TaskName)
 if ($script:StorySource) {
@@ -615,5 +706,6 @@ catch {
     throw
 }
 finally {
+    Release-WorkerLock
     Pop-Location
 }

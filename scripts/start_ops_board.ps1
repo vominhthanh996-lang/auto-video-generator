@@ -5,10 +5,16 @@ $ErrorActionPreference = "Stop"
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repoRoot = Split-Path -Parent $scriptRoot
 $workRoot = Split-Path -Parent $repoRoot
-$pythonExe = "python"
+$venvPython = Join-Path $repoRoot ".venv\Scripts\python.exe"
+$pythonExe = if (Test-Path -LiteralPath $venvPython) { $venvPython } else { "python" }
 $scriptPath = Join-Path $scriptRoot "task_ops_board.py"
 $logPath = Join-Path (Join-Path $workRoot "temp") "ops-board-server.log"
 $errLogPath = Join-Path (Join-Path $workRoot "temp") "ops-board-server.err.log"
+
+function Quote-Arg {
+    param([string]$Value)
+    '"' + ($Value -replace '"', '\"') + '"'
+}
 
 function Test-OpsBoardAlive {
     try {
@@ -26,9 +32,40 @@ function Get-OpsBoardProcesses {
     }
 }
 
+function Get-OpsBoardListenerProcessId {
+    try {
+        $listener = Get-NetTCPConnection -LocalAddress "127.0.0.1" -LocalPort 8765 -State Listen -ErrorAction Stop | Select-Object -First 1
+        if ($listener) {
+            return [int]$listener.OwningProcess
+        }
+    }
+    catch {}
+    return $null
+}
+
+function Test-OpsBoardHealthy {
+    $processes = @(Get-OpsBoardProcesses)
+    if ($processes.Count -ne 1) {
+        return $false
+    }
+    $listenerPid = Get-OpsBoardListenerProcessId
+    if (-not $listenerPid -or $listenerPid -ne [int]$processes[0].ProcessId) {
+        return $false
+    }
+    if (Test-Path -LiteralPath $venvPython) {
+        $expected = (Resolve-Path $venvPython).Path.ToLowerInvariant()
+        $procPath = ""
+        try { $procPath = (Get-Process -Id $listenerPid -ErrorAction Stop).Path } catch {}
+        if (-not $procPath -or $procPath.ToLowerInvariant() -ne $expected) {
+            return $false
+        }
+    }
+    return Test-OpsBoardAlive
+}
+
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $logPath) | Out-Null
 
-if (Test-OpsBoardAlive) {
+if (Test-OpsBoardHealthy) {
     exit 0
 }
 
@@ -43,11 +80,14 @@ if ($alreadyRunning.Count -gt 0) {
     Start-Sleep -Seconds 2
 }
 
-$process = Start-Process -FilePath $pythonExe -ArgumentList @(
+$pythonArgs = @(
+    "-u",
     $scriptPath,
     "--host", "127.0.0.1",
     "--port", "8765"
-) -RedirectStandardOutput $logPath -RedirectStandardError $errLogPath -WindowStyle Hidden -PassThru
+) | ForEach-Object { Quote-Arg $_ }
+
+$process = Start-Process -FilePath $pythonExe -ArgumentList ($pythonArgs -join " ") -WorkingDirectory $repoRoot -RedirectStandardOutput $logPath -RedirectStandardError $errLogPath -WindowStyle Hidden -PassThru
 
 for ($i = 0; $i -lt 20; $i++) {
     Start-Sleep -Seconds 1
