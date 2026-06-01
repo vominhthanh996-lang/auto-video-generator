@@ -27,6 +27,7 @@ WORK_ROOT = REPO_ROOT.parent
 
 DEFAULT_POSITIVE_SUFFIX = (
     "clear natural human faces, anatomically correct eyes nose mouth and jaw, readable facial expression, "
+    "consistent character identity across scenes, complete hands and feet when visible, separate bodies, believable pose and weight, "
     "cinematic composition, strong readable silhouette, clear foreground midground background, "
     "realistic lighting, warm practical light against cold toxic atmosphere, volumetric fog and dust, "
     "wet rusted metal, cracked concrete, torn fabric, soft bloom, atmospheric perspective, "
@@ -42,8 +43,11 @@ DEFAULT_NEGATIVE = (
     "beauty portrait, fashion photo, clean clothes, modern city, cute pose, "
     "melted face, warped face, malformed face, asymmetrical eyes, crossed eyes, bad eyes, dead eyes, "
     "missing nose, broken nose, bad mouth, fused lips, extra teeth, duplicate face, two faces on one head, "
+    "fused bodies, merged bodies, overlapping bodies, conjoined bodies, detached head, floating head, extra person fragment, "
+    "extra arm, extra hand, extra leg, missing arm, missing hand, missing leg, missing foot, tangled limbs, broken wrists, broken elbows, broken knees, impossible pose, "
     "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
-    "solo portrait, single person, close-up portrait, extreme close-up, cropped body, missing second character"
+    "solo glamour portrait, extreme close-up glamour crop, cropped body, random extra character, missing second character when scene needs two people, "
+    "nude, naked, topless, exposed breasts, exposed nipples, areola, sideboob, underboob, cleavage focus, lingerie, bikini, underwear, see-through clothing, erotic pose, voyeuristic framing"
 )
 
 RATIO_TO_SIZE = {
@@ -121,105 +125,250 @@ def relpath(path: Path, base: Path) -> str:
         return str(path.resolve())
 
 
-def scene_prompt(scene: dict[str, Any]) -> str:
-    prompt = (
-        scene.get("comfy_prompt")
-        or scene.get("image_prompt")
-        or scene.get("stability_prompt")
-        or scene.get("visual")
-        or scene.get("text")
-        or scene.get("narration")
-        or ""
-    )
-    prompt = str(prompt).strip()
-    if not prompt:
-        return ""
-    # SD 1.5 CLIP truncates long prompts, so put the essential face/composition
-    # control at the very front instead of burying it after story context.
-    lower_prompt = prompt.lower()
-    two_character_scene = (
-        ("woman" in lower_prompt and "man" in lower_prompt)
-        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
-        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
-    )
-    if two_character_scene:
-        face_control = (
-            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
-            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
-            "injured black-clad man lying half-reclined on the right, "
-            "warm oil lantern between them, torn tarp shelter, no solo portrait, no close-up crop"
-        )
-    else:
-        face_control = (
-            "medium cinematic story shot, full head visible, clear natural Asian human face, "
-            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
-            "dirty post-apocalyptic survival drama, no close-up crop"
-        )
-    if face_control.lower() not in prompt.lower():
-        prompt = f"{face_control}, {prompt}"
-    if DEFAULT_POSITIVE_SUFFIX.lower() not in prompt.lower():
-        prompt = f"{prompt}, {DEFAULT_POSITIVE_SUFFIX}"
-    return prompt
-
 
 def size_for_ratio(ratio: str) -> tuple[int, int]:
     return RATIO_TO_SIZE.get(ratio, RATIO_TO_SIZE["9:16"])
 
 
 def scene_prompt(scene: dict[str, Any]) -> str:
-    prompt = (
+    shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
+    must_show = [str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()]
+    actions = [str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()]
+    setting = [str(item).strip() for item in (scene.get("visual_setting") or []) if str(item).strip()]
+    props = [str(item).strip() for item in (scene.get("visual_props") or []) if str(item).strip()]
+    narration = str(scene.get("narration") or "").strip()
+    primary_subject = str(scene.get("beat_subject") or "").strip()
+    scene_role = str(scene.get("scene_role") or "").strip().lower()
+    scene_center_kind = str(scene.get("scene_center_kind") or "").strip().lower()
+    scene_center_subject = str(scene.get("scene_center_subject") or "").strip()
+    scene_center_object = str(scene.get("scene_center_object") or "").strip()
+    scene_center_action = str(scene.get("scene_center_action") or "").strip()
+    scene_center_location = str(scene.get("scene_center_location") or "").strip()
+    fallback_prompt = (
         scene.get("comfy_prompt")
         or scene.get("image_prompt")
         or scene.get("stability_prompt")
         or scene.get("visual")
         or scene.get("text")
-        or scene.get("narration")
+        or narration
         or ""
     )
-    prompt = str(prompt).strip()
-    if not prompt:
+    fallback_prompt = str(fallback_prompt).strip()
+    if not any([fallback_prompt, must_show, actions, setting, props, primary_subject]):
         return ""
-    shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
-    action_text = ", ".join(str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()).lower()
-    lower_prompt = prompt.lower()
-    two_character_scene = (
-        ("woman" in lower_prompt and "man" in lower_prompt)
-        or ("lam tich" in lower_prompt and "tan da" in lower_prompt)
-        or ("lâm tịch" in lower_prompt and "tần dã" in lower_prompt)
+
+    combined_text = " ".join([
+        fallback_prompt,
+        primary_subject,
+        scene_center_subject,
+        scene_center_object,
+        scene_center_action,
+        scene_center_location,
+        *must_show,
+        *actions,
+        *setting,
+        *props,
+    ]).lower()
+    named_people = 0
+    people_tokens = [
+        "lam tich", "tan da", "ninh", "tieu mai", "tieu ngo", "tieu bao", "a that", "a muc",
+        "di man", "bach nhi", "thiet oa", "moc sanh", "la kieu", "hau seo"
+    ]
+    for token in people_tokens:
+        if token in combined_text:
+            named_people += 1
+    if "seller and buyer" in combined_text or "seller and buyers" in combined_text or "group reaction" in combined_text:
+        named_people = max(named_people, 2)
+    if named_people == 0:
+        if "the exact survivor or person described in the narration" in combined_text:
+            named_people = 1
+        elif "supporting character" in combined_text or "crowd" in combined_text or "survivor group" in combined_text:
+            named_people = 2
+
+    cast_notes: list[str] = []
+    if "ninh" in combined_text:
+        cast_notes.append("Ninh must read as a slight preteen mute boy survivor, clearly child-sized, carrying or using a small writing board, never as an adult man")
+    if "tieu mai" in combined_text:
+        cast_notes.append("Tieu Mai must read as a preteen girl survivor, clearly younger than the adults, not an adult woman")
+    if "tieu bao" in combined_text:
+        cast_notes.append("Tieu Bao must read as a very young child held or protected by adults, not an older teen or adult")
+    if "a that" in combined_text:
+        cast_notes.append("A That must read as a lean young adult male scavenger with restless nervous energy, not a child and not a middle-aged man")
+    if "di man" in combined_text:
+        cast_notes.append("Di Man must read as an older practical wasteland woman protecting the children")
+    if "bach nhi" in combined_text:
+        cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
+    if "lam tich" in combined_text:
+        cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
+    if "tan da" in combined_text:
+        cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
+    if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
+        cast_notes.append("show every named child or companion from this scene together if they are named, do not replace them with generic adults or collapse them into one person")
+    if "ninh" in combined_text or "tieu mai" in combined_text:
+        cast_notes.append("if Ninh or Tieu Mai is present, their child height and child face must be obvious at first glance, never adult-proportioned")
+    if "bach nhi" in combined_text and ("market bargaining" in shot_type or "trade" in combined_text):
+        cast_notes.append("Bach Nhi must appear as the trader or host at the stall, with the visiting survivors clearly separate from him")
+    if any(token in combined_text for token in ["gieng", "well", "hanging tin can", "co nuoc", "mui dong"]):
+        cast_notes.append("the old well mouth or water source must stay visible in frame; do not replace the scene with a generic doorway or empty platform")
+    if any(token in combined_text for token in ["writing board", "bang viet", "viet xau", "doc cham"]):
+        cast_notes.append("the writing board must be visible and readable as the social focus of the scene, not hidden offscreen")
+    if any(token in combined_text for token in ["crystals", "cracked stones", "mutant teeth", "dat len ban", "placed on the table"]):
+        cast_notes.append("the trade goods on the table must be the visual center, with one owner presenting them, not duplicated people")
+
+    action_text = " ".join(actions).lower()
+    detail_focus = "close" in shot_type or "detail" in shot_type or "insert" in shot_type or scene_center_kind == "object-center"
+    wide_focus = "wide" in shot_type or "establishing" in shot_type or "environment" in shot_type
+    action_focus = any(token in shot_type for token in ["action", "threat", "movement", "predator", "doorway"]) or any(
+        token in action_text for token in ["runs", "drags", "kicks", "passes through", "enters", "attacks", "hides", "crawls", "opens", "pulls", "stops", "pushes"]
     )
-    if "close" in shot_type or "detail" in shot_type:
+    reaction_focus = any(token in shot_type for token in ["reaction", "single", "emotion"]) or any(
+        token in action_text for token in ["looks", "stares", "realizes", "hesitates", "decides", "watches", "turns away", "listens"]
+    )
+    market_focus = "market bargaining" in shot_type or "market exchange" in shot_type
+    threshold_focus = "threshold negotiation" in shot_type or "guarded threshold" in shot_type or "doorway tension" in shot_type
+    journey_focus = "journey shot" in shot_type or "radio-listening" in shot_type or "ration-stop" in shot_type
+    discovery_focus = "resource discovery" in shot_type or "well" in shot_type
+    transport_focus = "injured transport" in shot_type
+    trade_goods_focus = any(token in combined_text for token in ["crystals", "cracked stones", "mutant teeth", "trade goods", "placed on the table"])
+    child_exchange_focus = scene_center_kind == "exchange-center" and any(token in combined_text for token in ["ninh", "tieu mai"])
+    child_present = any(token in combined_text for token in ["ninh", "tieu mai", "tieu bao", "tieu ngo"])
+    single_presenter_focus = scene_center_kind == "object-center" and named_people <= 1
+
+    story_subjects = []
+    for item in [scene_center_subject, primary_subject, *must_show]:
+        item = str(item).strip()
+        if not item:
+            continue
+        low = item.lower()
+        if any(token in low for token in [
+            "lam tich", "tan da", "ninh", "tieu mai", "tieu ngo", "tieu bao", "a that", "a muc",
+            "di man", "bach nhi", "thiet oa", "moc sanh", "la kieu", "hau seo", "the exact survivor"
+        ]):
+            if item not in story_subjects:
+                story_subjects.append(item)
+    if child_exchange_focus:
+        story_subjects = [item for item in story_subjects if any(token in item.lower() for token in ["ninh", "tieu mai"])][:2]
+    elif single_presenter_focus:
+        story_subjects = story_subjects[:1]
+    story_setting = [item for item in ([scene_center_location] + setting) if item and "District 17 wasteland survival setting" not in item][:2]
+    def clean_fragment(text: str) -> str:
+        text = str(text).strip()
+        text = text.replace("literal story beat from the current narration:", "").strip()
+        return text[:180]
+
+    story_actions = [clean_fragment(item) for item in ([scene_center_action] + actions[:2]) if clean_fragment(item)]
+    dedup_actions = []
+    for item in story_actions:
+        if item not in dedup_actions:
+            dedup_actions.append(item)
+    story_actions = dedup_actions[:2]
+    story_props = [item for item in ([scene_center_object] + props[:2]) if item]
+    dedup_props = []
+    for item in story_props:
+        if item not in dedup_props:
+            dedup_props.append(item)
+    story_props = dedup_props[:2]
+
+    if detail_focus:
         face_control = (
-            "close survival detail shot, story-specific props and hands readable, "
-            "do not repeat the same full shelter composition, keep only the character parts needed for this action visible, "
-            "no solo glamour portrait"
+            "story-specific insert or close detail shot, keep the narrated object or small action as the clear center of frame, show only the hands, object, wound, writing board, water source, doorway gap, face, or body parts actually needed by the narration, "
+            "no extra characters, no repeated shelter overview, no glamour framing, no random second person"
         )
-    elif "wide" in shot_type or "establishing" in shot_type:
+    elif market_focus:
         face_control = (
-            "wide establishing cinematic shot, environment scale clearly visible, "
-            "characters smaller in frame but still identifiable, no repeated medium two-shot framing"
+            "medium-wide market bargaining shot, rail-junction trading post readable, seller and buyer both visible when present, "
+            "price board, goods, train-car stall, or locked water container visible if named, no solo glamour portrait, environment must read immediately"
         )
-    elif "action" in shot_type or "predator" in shot_type or "threat" in shot_type or "hiding" in action_text:
+    elif threshold_focus:
         face_control = (
-            "dynamic cinematic action shot, readable movement and threat direction, "
-            "change camera angle from the calm shelter two-shot, maintain identity but not the same pose"
+            "threshold confrontation shot, doorway or checkpoint readable, both sides of the exchange visible when present, "
+            "distance, guard posture, and entry terms readable, no portrait-only crop, no flattened background"
         )
-    elif two_character_scene:
+    elif journey_focus:
         face_control = (
-            "medium-wide two-character cinematic shot, both full heads visible, both faces readable, "
-            "beautiful youthful Asian maiden scavenger woman kneeling on the left, soft delicate natural face under grime, "
-            "injured black-clad man lying half-reclined on the right, warm oil lantern between them, torn tarp shelter, "
-            "no solo portrait, no close-up crop"
+            "journey or group-survival shot, environment and travel condition readable first, group spacing clear, wheelchair radio or ration object shown only if named, "
+            "do not collapse into one-person portrait"
+        )
+    elif discovery_focus:
+        face_control = (
+            "discovery shot with environment plus object both readable, show what was found and who reacts to it, the discovered object must be unmistakable at a glance, "
+            "not a headshot, not a glamour portrait, keep the discovery context in frame"
+        )
+    elif trade_goods_focus:
+        face_control = (
+            "object-centered trade-table shot, one presenter and the trade goods clearly visible on the table, crystals or mutant teeth readable at first glance, "
+            "only one presenter unless the narration names another person, presenter's hands and upper body near the table, no duplicated presenter, no cloned second body, no portrait-only crop"
+        )
+    elif child_exchange_focus:
+        face_control = (
+            "child dialogue shot, exactly two children in frame: Ninh and Tieu Mai, clearly child-sized with the writing board visible between them, emotional exchange readable, "
+            "no adult replacement, no adult body proportions, no glamorized posing"
+        )
+    elif single_presenter_focus:
+        face_control = (
+            "single-subject object-centered shot, exactly one character presenting or reacting to the object, the object must stay central and readable, "
+            "no duplicated copy of the same person, no invented second presenter, no portrait-only crop"
+        )
+    elif transport_focus:
+        face_control = (
+            "injured transport shot, wheelchair or stretcher clearly visible with the injured person and nearby handler, "
+            "body relationship readable, no portrait-only framing"
+        )
+    elif wide_focus:
+        face_control = (
+            "wide cinematic establishing shot, environment and threat geography readable first, characters only as large as needed for the current beat, "
+            "do not collapse every scene back into a medium shelter two-shot"
+        )
+    elif action_focus:
+        face_control = (
+            "dynamic cinematic action shot with the current movement clearly readable, complete anatomy, readable hands and feet when visible, "
+            "separate bodies, clear spacing between characters, no fused limbs, no overlapping torsos, no tangled poses"
+        )
+    elif named_people >= 2:
+        face_control = (
+            "multi-character story shot only because this scene truly needs multiple people, each named person clearly separated in space with readable role and age, "
+            "no fixed left-right blocking unless the narration implies it, no repeated shelter tableau, no body overlap, no one merged into the other"
+        )
+    elif reaction_focus:
+        face_control = (
+            "medium or close reaction shot focused on the current emotional beat, one character only if the narration focuses on one character, "
+            "face readable, posture readable, body anatomy natural, no glamour portrait"
         )
     else:
         face_control = (
-            "medium cinematic story shot, full head visible, clear natural Asian human face, "
-            "readable eyes nose mouth and jaw, no facial deformity, story-accurate character blocking, "
-            "dirty post-apocalyptic survival drama, no close-up crop"
+            "story-accurate cinematic shot matching the current narration, clear natural adult Asian face when visible, "
+            "half-body or medium framing preferred when anatomy is complex, complete limbs, no fused bodies, no repeated default composition"
         )
-    if face_control.lower() not in prompt.lower():
-        prompt = f"{face_control}, {prompt}"
-    if DEFAULT_POSITIVE_SUFFIX.lower() not in prompt.lower():
-        prompt = f"{prompt}, {DEFAULT_POSITIVE_SUFFIX}"
+
+    prompt_parts = [
+        face_control,
+        "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
+    ]
+    if scene_center_kind:
+        prompt_parts.append(f"visual center for this scene: {scene_center_kind}")
+    if story_subjects:
+        if child_exchange_focus:
+            prompt_parts.append("show exactly these two child subjects and nobody else in the foreground: " + "; ".join(story_subjects[:2]))
+        elif single_presenter_focus:
+            prompt_parts.append("show exactly one foreground presenter: " + story_subjects[0])
+        else:
+            prompt_parts.append("show these exact scene subjects: " + "; ".join(story_subjects[:3]))
+    if story_setting:
+        prompt_parts.append("exact setting for this scene: " + ", ".join(story_setting))
+    if story_actions:
+        prompt_parts.append("visible action in this frame: " + " / ".join(story_actions))
+    if story_props:
+        prompt_parts.append("this object or prop must stay readable in frame: " + ", ".join(story_props))
+    if not story_subjects and fallback_prompt:
+        prompt_parts.append(clean_fragment(fallback_prompt))
+    prompt = ", ".join(part for part in prompt_parts if part)
+    if cast_notes:
+        prompt = f"{'; '.join(cast_notes)}, {prompt}"
+    positive_suffix = DEFAULT_POSITIVE_SUFFIX
+    if child_present:
+        positive_suffix = positive_suffix.replace("clear natural human faces", "clear natural child and adult faces with correct age proportions")
+    if positive_suffix.lower() not in prompt.lower():
+        prompt = f"{prompt}, {positive_suffix}"
     return prompt
 
 
@@ -309,14 +458,14 @@ def filter_loras(requested: list[str], available: list[str]) -> list[str]:
 def apply_preset(args: argparse.Namespace) -> None:
     if args.preset == "safe":
         if not args.width and not args.height:
-            args.width, args.height = 512, 704
+            args.width, args.height = size_for_ratio(args.aspect_ratio)
         args.steps = min(args.steps, 20)
         args.hires_scale = min(args.hires_scale, 1.25)
         args.hires_steps = min(args.hires_steps, 8)
         args.vae_tile_size = min(args.vae_tile_size, 320)
     elif args.preset == "quality":
         if not args.width and not args.height:
-            args.width, args.height = 576, 832
+            args.width, args.height = size_for_ratio(args.aspect_ratio)
         args.steps = max(args.steps, 26)
         args.hires_scale = max(args.hires_scale, 1.5)
         args.hires_steps = max(args.hires_steps, 12)
@@ -681,7 +830,7 @@ def main() -> None:
     parser.add_argument("--vae", default=os.environ.get("SD15_VAE", "auto"))
     parser.add_argument("--lora", action="append", default=[], help="Optional LoRA name or name:model_strength:clip_strength.")
     parser.add_argument("--preset", choices=["safe", "balanced", "quality"], default="balanced")
-    parser.add_argument("--aspect-ratio", default="9:16")
+    parser.add_argument("--aspect-ratio", default="16:9")
     parser.add_argument("--width", type=int, default=0)
     parser.add_argument("--height", type=int, default=0)
     parser.add_argument("--steps", type=int, default=24)
@@ -696,8 +845,8 @@ def main() -> None:
     parser.add_argument("--vae-tile-size", type=int, default=384)
     parser.add_argument("--vae-overlap", type=int, default=48)
     parser.add_argument("--upscale-model", default=os.environ.get("SD_UPSCALE_MODEL", "auto"))
-    parser.add_argument("--final-width", type=int, default=1080)
-    parser.add_argument("--final-height", type=int, default=1920)
+    parser.add_argument("--final-width", type=int, default=1920)
+    parser.add_argument("--final-height", type=int, default=1080)
     parser.add_argument("--negative-prompt", default=DEFAULT_NEGATIVE)
     parser.add_argument("--reference-image", default=os.environ.get("LOCAL_IMAGE_REFERENCE", ""), help="Optional local image used as img2img composition reference.")
     parser.add_argument("--reference-denoise", type=float, default=0.28, help="Img2img denoise for --reference-image. Lower keeps composition, higher changes more.")
