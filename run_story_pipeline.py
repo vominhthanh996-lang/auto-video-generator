@@ -99,6 +99,9 @@ ACTION_BEAT_VERBS = [
     "vao phong", "keo thung", "dap", "ngoi xuong", "quay dau", "nho lai", "nhan ra", "quyet dinh",
 ]
 
+VIETNAMESE_MARKS = "ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ"
+MOJIBAKE_MARKERS = ["Ã", "Ä", "á»", "áº", "Æ", "Â"]
+
 SUPPORTING_CHARACTER_RULES = [
     ("La Kieu", ["la kieu"], "La Kieu, a dangerous adult wasteland raider leader with a hard face and controlled menace"),
     ("Ninh", ["ninh"], "Ninh, a slight preteen mute boy survivor carrying a writing board, clearly child-sized with a wary hungry face"),
@@ -135,21 +138,41 @@ def resolve(base, value):
     return path if path.is_absolute() else (base / path).resolve()
 
 
-def read_source(path):
-    text = path.read_text(encoding="utf-8-sig")
-    markers = sum(text.count(token) for token in ["Ã", "Ä", "á»", "áº", "Æ", "Â"])
-    if markers >= 3:
+def count_vietnamese_marks(text):
+    return sum(1 for char in text.lower() if char in VIETNAMESE_MARKS)
+
+
+def maybe_repair_mojibake(text):
+    best = text
+    best_score = count_vietnamese_marks(text)
+    current = text
+    for _ in range(3):
+        changed = False
         for source_encoding in ("cp1252", "latin1"):
             try:
-                repaired = text.encode(source_encoding, errors="strict").decode("utf-8", errors="strict")
+                repaired = current.encode(source_encoding, errors="strict").decode("utf-8", errors="strict")
             except Exception:
                 continue
-            repaired_marks = sum(1 for char in repaired.lower() if char in "ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ")
-            original_marks = sum(1 for char in text.lower() if char in "ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ")
-            if repaired_marks > original_marks:
-                text = repaired
+            repaired_score = count_vietnamese_marks(repaired)
+            if repaired_score > best_score:
+                best = repaired
+                best_score = repaired_score
+                current = repaired
+                changed = True
                 break
-    vietnamese_marks = sum(1 for char in text.lower() if char in "ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ")
+        if not changed:
+            break
+    return best
+
+
+def read_source(path):
+    raw = path.read_bytes()
+    text = raw.decode("utf-8-sig", errors="strict")
+    if sum(text.count(token) for token in MOJIBAKE_MARKERS) >= 3:
+        text = maybe_repair_mojibake(text)
+    text = unicodedata.normalize("NFC", text).replace("\ufeff", "")
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
+    vietnamese_marks = count_vietnamese_marks(text)
     if text.count("?") >= 8 and vietnamese_marks == 0:
         raise SystemExit("Source text looks encoding-damaged. Save it as UTF-8 and try again.")
     return re.sub(r"\n{3,}", "\n\n", text).strip()

@@ -170,6 +170,7 @@ function Update-TaskStatus {
                 scenes = 0
                 images = 0
                 audio = 0
+                image_skipped = 0
             }
             nodes = @{
                 storyboard = @{ status = "pending"; detail = "" }
@@ -215,6 +216,7 @@ function Update-TaskStatus {
             scenes = $sceneState.SceneCount
             images = $sceneState.ImageCount
             audio = $sceneState.AudioCount
+            image_skipped = $sceneState.ImageSkippedCount
         }
     }
     $state.updated_at = (Get-Date).ToString("s")
@@ -248,6 +250,7 @@ function Get-SceneState {
     $scenes = @($data.scenes)
     $images = 0
     $audio = 0
+    $imageSkipped = 0
     foreach ($scene in $scenes) {
         if ($scene.image) {
             $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $script:ProjectRoot ([string]$scene.image) }
@@ -257,11 +260,18 @@ function Get-SceneState {
             $audioPath = if ([System.IO.Path]::IsPathRooted([string]$scene.audio)) { [string]$scene.audio } else { Join-Path $script:ProjectRoot ([string]$scene.audio) }
             if (Test-Path $audioPath) { $audio++ }
         }
+        try {
+            if ([string]$scene.local_image.validator.status -eq "skipped_after_failed_attempts") {
+                $imageSkipped++
+            }
+        }
+        catch {}
     }
     [pscustomobject]@{
         SceneCount = $scenes.Count
         ImageCount = $images
         AudioCount = $audio
+        ImageSkippedCount = $imageSkipped
         Scenes = $scenes
     }
 }
@@ -304,7 +314,7 @@ function Ensure-ComfyService {
         throw "ComfyUI service script not found: $comfyServiceScript"
     }
     Write-Log "ENSURE ComfyUI service"
-    $comfyJson = powershell.exe -NoProfile -ExecutionPolicy Bypass -File $comfyServiceScript
+    $comfyJson = powershell.exe -NoProfile -ExecutionPolicy Bypass -File $comfyServiceScript -TimeoutSeconds 45
     if ($LASTEXITCODE -ne 0) {
         throw "ComfyUI service failed to start"
     }
@@ -434,10 +444,11 @@ function Invoke-VoiceAttempt {
 
 function Invoke-ImageStep {
     $state = Get-SceneState
-    if ($state.ImageCount -ge $state.SceneCount) {
-        Write-Log ("IMAGES complete {0}/{1}" -f $state.ImageCount, $state.SceneCount)
+    $handledCount = $state.ImageCount + $state.ImageSkippedCount
+    if ($handledCount -ge $state.SceneCount) {
+        Write-Log ("IMAGES complete {0}/{1} (skipped {2})" -f $state.ImageCount, $state.SceneCount, $state.ImageSkippedCount)
         Update-TaskStatus -Overall "running" -CurrentNode "images" -Message "Images complete" -NodeUpdates @{
-            images = @{ status = "done"; detail = ("Images ready {0}/{1}" -f $state.ImageCount, $state.SceneCount) }
+            images = @{ status = "done"; detail = ("Images ready {0}/{1}, skipped {2}" -f $state.ImageCount, $state.SceneCount, $state.ImageSkippedCount) }
         }
         return $true
     }
@@ -445,6 +456,11 @@ function Invoke-ImageStep {
     $targetScene = $null
     for ($i = 0; $i -lt $state.Scenes.Count; $i++) {
         $scene = $state.Scenes[$i]
+        $validatorStatus = ""
+        try { $validatorStatus = [string]$scene.local_image.validator.status } catch {}
+        if ($validatorStatus -eq "skipped_after_failed_attempts") {
+            continue
+        }
         $imagePath = $null
         if ($scene.image) {
             $imagePath = if ([System.IO.Path]::IsPathRooted([string]$scene.image)) { [string]$scene.image } else { Join-Path $script:ProjectRoot ([string]$scene.image) }
@@ -464,11 +480,20 @@ function Invoke-ImageStep {
         $targetImagePath = if ([System.IO.Path]::IsPathRooted([string]$targetSceneData.image)) { [string]$targetSceneData.image } else { Join-Path $script:ProjectRoot ([string]$targetSceneData.image) }
     }
     Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Generating image scene {0}" -f $targetScene) -NodeUpdates @{
-        images = @{ status = "running"; detail = ("Current scene {0}, images {1}/{2}" -f $targetScene, $state.ImageCount, $state.SceneCount) }
+        images = @{ status = "running"; detail = ("Current scene {0}, images {1}/{2}, skipped {3}" -f $targetScene, $state.ImageCount, $state.SceneCount, $state.ImageSkippedCount) }
     }
 
     if ($script:ImageMode -eq "comfy") {
-        Ensure-ComfyService
+        try {
+            Ensure-ComfyService
+        }
+        catch {
+            Write-Log ("IMAGE retry after ComfyUI ensure failed on scene {0}: {1}" -f $targetScene, $_.Exception.Message)
+            Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Retrying image scene {0}" -f $targetScene) -NodeUpdates @{
+                images = @{ status = "warning"; detail = ("ComfyUI unavailable for scene {0}, will retry" -f $targetScene) }
+            }
+            return $false
+        }
     }
 
     $imageArgs = @(
@@ -497,6 +522,17 @@ function Invoke-ImageStep {
         return $false
     }
     if ($targetImagePath -and -not (Test-Path $targetImagePath)) {
+        $postState = Get-SceneState
+        $postScene = $postState.Scenes[$targetScene - 1]
+        $postValidatorStatus = ""
+        try { $postValidatorStatus = [string]$postScene.local_image.validator.status } catch {}
+        if ($postValidatorStatus -eq "skipped_after_failed_attempts") {
+            Write-Log ("IMAGE scene {0} skipped after validator failures" -f $targetScene)
+            Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Skipping image scene {0} after failed validation" -f $targetScene) -NodeUpdates @{
+                images = @{ status = "warning"; detail = ("Scene {0} skipped after repeated validator failures" -f $targetScene) }
+            }
+            return $false
+        }
         Write-Log ("IMAGE output missing after scene {0}: {1}" -f $targetScene, $targetImagePath)
         Update-TaskStatus -Overall "running" -CurrentNode "images" -Message ("Missing output for image scene {0}" -f $targetScene) -NodeUpdates @{
             images = @{ status = "warning"; detail = ("Scene {0} did not produce an output file, retrying" -f $targetScene) }
@@ -661,24 +697,49 @@ try {
     $voiceReady = [bool]$script:SkipVoice
     $imageReady = $false
     $voiceAttempt = 0
+    $voiceBlocked = $false
+    $lastAudioCount = -1
+    $voiceStallCount = 0
     while (-not ($voiceReady -and $imageReady)) {
-        if (-not $voiceReady -and -not $script:SkipVoice) {
+        if (-not $voiceReady -and -not $script:SkipVoice -and -not $voiceBlocked) {
+            $voiceBefore = Get-SceneState
             $voiceAttempt++
             $voiceReady = Invoke-VoiceAttempt -Attempt $voiceAttempt
+            $voiceAfter = Get-SceneState
+            if ($voiceReady) {
+                $voiceStallCount = 0
+            }
+            else {
+                if ($voiceAfter.AudioCount -gt $lastAudioCount) {
+                    $lastAudioCount = $voiceAfter.AudioCount
+                    $voiceStallCount = 0
+                }
+                else {
+                    $voiceStallCount++
+                }
+                if ($voiceAttempt -ge 12 -or $voiceStallCount -ge 4) {
+                    $voiceBlocked = $true
+                    Write-Log ("VOICE stalled after {0} attempts with audio {1}/{2}" -f $voiceAttempt, $voiceAfter.AudioCount, $voiceAfter.SceneCount)
+                    Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice stalled; allowing image pass to continue" -NodeUpdates @{
+                        voice = @{ status = "warning"; detail = ("Voice stalled at {0}/{1} after {2} attempts" -f $voiceAfter.AudioCount, $voiceAfter.SceneCount, $voiceAttempt) }
+                    }
+                }
+            }
             Write-QASummary -Stage ("voice-pass-{0}" -f $voiceAttempt)
         }
-        if (-not $imageReady) {
+        if (-not $imageReady -and ($voiceReady -or $script:SkipVoice -or $voiceBlocked)) {
             $imageReady = Invoke-ImageStep
             Write-QASummary -Stage "image-step"
         }
         if ($voiceReady -and $imageReady) {
             break
         }
-        if ($voiceAttempt -ge 12 -and -not $voiceReady -and $imageReady) {
+        if (($voiceBlocked -or $voiceAttempt -ge 12) -and -not $voiceReady -and $imageReady) {
             break
         }
     }
-    if ($voiceReady -or $script:SkipVoice) {
+    $finalSceneState = Get-SceneState
+    if (($voiceReady -or $script:SkipVoice) -and ($finalSceneState.ImageCount -ge $finalSceneState.SceneCount)) {
         Validate-StoryboardAll
         Update-TaskStatus -Overall "running" -CurrentNode "qa" -Message "QA passed, ready to render" -NodeUpdates @{
             qa = @{ status = "done"; detail = "Storyboard/assets validation passed" }
@@ -692,12 +753,30 @@ try {
         Write-Log "JOB SUCCESS"
     }
     else {
-        Update-TaskStatus -Overall "warning" -CurrentNode "voice" -Message "Images finished but voice incomplete" -NodeUpdates @{
-            render = @{ status = "blocked"; detail = "Render waiting for full audio" }
+        $warningMessage = if ($finalSceneState.ImageSkippedCount -gt 0) {
+            "Image validation skipped one or more scenes; render blocked"
+        }
+        elseif (-not $voiceReady -and -not $script:SkipVoice) {
+            "Images finished but voice incomplete"
+        }
+        else {
+            "Task finished with partial assets"
+        }
+        $renderDetail = if ($finalSceneState.ImageSkippedCount -gt 0) {
+            ("Render blocked because {0} image scene(s) were skipped by validator" -f $finalSceneState.ImageSkippedCount)
+        }
+        elseif (-not $voiceReady -and -not $script:SkipVoice) {
+            "Render waiting for full audio"
+        }
+        else {
+            "Render blocked because required assets are incomplete"
+        }
+        Update-TaskStatus -Overall "warning" -CurrentNode "qa" -Message $warningMessage -NodeUpdates @{
+            render = @{ status = "blocked"; detail = $renderDetail }
             qa = @{ status = "warning"; detail = "Partial output only" }
         }
         Write-QASummary -Stage "partial-output"
-        Write-Log "JOB PARTIAL: images finished, voice incomplete, render skipped"
+        Write-Log ("JOB PARTIAL: {0}" -f $warningMessage)
     }
 }
 catch {

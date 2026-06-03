@@ -12,18 +12,35 @@ function Get-ResolvedConfigPath {
     try { return (Resolve-Path $Value).Path } catch { return $Value }
 }
 
+function Get-ArgumentValueFromCommandLine {
+    param(
+        [string]$CommandLine,
+        [string]$ArgumentName
+    )
+    if (-not $CommandLine -or -not $ArgumentName) {
+        return ""
+    }
+    $escaped = [Regex]::Escape($ArgumentName)
+    $patterns = @(
+        ('"{0}"\s+"([^"]+)"' -f $escaped),
+        ('{0}\s+"([^"]+)"' -f $escaped),
+        ('"{0}"\s+([^\s]+)' -f $escaped),
+        ('{0}\s+([^\s]+)' -f $escaped)
+    )
+    foreach ($pattern in $patterns) {
+        if ($CommandLine -match $pattern) {
+            return $matches[1]
+        }
+    }
+    return ""
+}
+
 function Get-WorkerEntries {
     $workers = Get-CimInstance Win32_Process | Where-Object {
         $_.Name -eq "powershell.exe" -and $_.CommandLine -like "*story_task_worker.ps1*"
     }
     foreach ($worker in $workers) {
-        $configPath = ""
-        if ($worker.CommandLine -match '-ConfigPath\s+"([^"]+)"') {
-            $configPath = $matches[1]
-        }
-        elseif ($worker.CommandLine -match '-ConfigPath\s+([^\s]+)') {
-            $configPath = $matches[1]
-        }
+        $configPath = Get-ArgumentValueFromCommandLine -CommandLine $worker.CommandLine -ArgumentName "-ConfigPath"
         $taskName = ""
         if ($configPath -and (Test-Path $configPath)) {
             try {

@@ -21,6 +21,29 @@ function Join-PSArguments {
     ($Values | ForEach-Object { Quote-Arg $_ }) -join " "
 }
 
+function Get-ArgumentValueFromCommandLine {
+    param(
+        [string]$CommandLine,
+        [string]$ArgumentName
+    )
+    if (-not $CommandLine -or -not $ArgumentName) {
+        return ""
+    }
+    $escaped = [Regex]::Escape($ArgumentName)
+    $patterns = @(
+        ('"{0}"\s+"([^"]+)"' -f $escaped),
+        ('{0}\s+"([^"]+)"' -f $escaped),
+        ('"{0}"\s+([^\s]+)' -f $escaped),
+        ('{0}\s+([^\s]+)' -f $escaped)
+    )
+    foreach ($pattern in $patterns) {
+        if ($CommandLine -match $pattern) {
+            return $matches[1]
+        }
+    }
+    return ""
+}
+
 function Test-OpsBoardAlive {
     try {
         Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/tasks" -UseBasicParsing -TimeoutSec 3 | Out-Null
@@ -54,13 +77,7 @@ function Get-WorkerEntries {
         $_.Name -eq "powershell.exe" -and $_.CommandLine -like "*story_task_worker.ps1*"
     }
     foreach ($worker in $workers) {
-        $configPath = ""
-        if ($worker.CommandLine -match '-ConfigPath\s+"([^"]+)"') {
-            $configPath = $matches[1]
-        }
-        elseif ($worker.CommandLine -match '-ConfigPath\s+([^\s]+)') {
-            $configPath = $matches[1]
-        }
+        $configPath = Get-ArgumentValueFromCommandLine -CommandLine $worker.CommandLine -ArgumentName "-ConfigPath"
         if ($configPath -ne $configPathResolved) {
             continue
         }
@@ -86,14 +103,43 @@ function Get-StatusContext {
         }
         $tempRoot = Join-Path (Split-Path -Parent $repoRoot) "temp"
         $statusPath = Join-Path (Join-Path $tempRoot "story-task-status") ($slug + ".json")
+        $lockPath = Join-Path (Join-Path $tempRoot "story-task-locks") ($slug + ".lock")
         return [pscustomobject]@{
             TaskName = $taskName
             StatusPath = $statusPath
+            LockPath = $lockPath
         }
     }
     catch {
         return $null
     }
+}
+
+function Test-PidAlive {
+    param([int]$ProcessId)
+    try {
+        Get-Process -Id $ProcessId -ErrorAction Stop | Out-Null
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
+function Test-WorkerLockActive {
+    param($Context)
+    if ($null -eq $Context -or -not $Context.LockPath -or -not (Test-Path $Context.LockPath)) {
+        return $false
+    }
+    try {
+        $lock = Get-Content $Context.LockPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        $pid = [int]$lock.pid
+        if ($pid -and (Test-PidAlive -ProcessId $pid)) {
+            return $true
+        }
+    }
+    catch {}
+    return $false
 }
 
 function Get-TaskState {
@@ -168,6 +214,10 @@ while ($true) {
 
     $workers = @(Get-WorkerEntries)
     if ($workers.Count -eq 0) {
+        if (Test-WorkerLockActive -Context $statusContext) {
+            Start-Sleep -Seconds 10
+            continue
+        }
         Start-Worker
         Start-Sleep -Seconds 5
         $workers = @(Get-WorkerEntries)

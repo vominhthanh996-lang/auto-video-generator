@@ -78,6 +78,29 @@ function Get-Slug {
     return $slug
 }
 
+function Get-ArgumentValueFromCommandLine {
+    param(
+        [string]$CommandLine,
+        [string]$ArgumentName
+    )
+    if (-not $CommandLine -or -not $ArgumentName) {
+        return ""
+    }
+    $escaped = [Regex]::Escape($ArgumentName)
+    $patterns = @(
+        ('"{0}"\s+"([^"]+)"' -f $escaped),
+        ('{0}\s+"([^"]+)"' -f $escaped),
+        ('"{0}"\s+([^\s]+)' -f $escaped),
+        ('{0}\s+([^\s]+)' -f $escaped)
+    )
+    foreach ($pattern in $patterns) {
+        if ($CommandLine -match $pattern) {
+            return $matches[1]
+        }
+    }
+    return ""
+}
+
 function Get-WorkerEntries {
     param(
         [string]$TaskFilter = "",
@@ -91,13 +114,7 @@ function Get-WorkerEntries {
         $_.Name -eq "powershell.exe" -and $_.CommandLine -like "*story_task_worker.ps1*"
     }
     $entries = foreach ($worker in $workers) {
-        $configPath = ""
-        if ($worker.CommandLine -match '-ConfigPath\s+"([^"]+)"') {
-            $configPath = $matches[1]
-        }
-        elseif ($worker.CommandLine -match '-ConfigPath\s+([^\s]+)') {
-            $configPath = $matches[1]
-        }
+        $configPath = Get-ArgumentValueFromCommandLine -CommandLine $worker.CommandLine -ArgumentName "-ConfigPath"
         $taskName = ""
         if ($configPath -and (Test-Path $configPath)) {
             try {
@@ -135,13 +152,7 @@ function Get-SupervisorEntries {
         $_.Name -eq "powershell.exe" -and $_.CommandLine -like "*resume_story_task_on_logon.ps1*"
     }
     $entries = foreach ($supervisor in $supervisors) {
-        $configPath = ""
-        if ($supervisor.CommandLine -match '-ConfigPath\s+"([^"]+)"') {
-            $configPath = $matches[1]
-        }
-        elseif ($supervisor.CommandLine -match '-ConfigPath\s+([^\s]+)') {
-            $configPath = $matches[1]
-        }
+        $configPath = Get-ArgumentValueFromCommandLine -CommandLine $supervisor.CommandLine -ArgumentName "-ConfigPath"
         $started = $null
         try { $started = (Get-Process -Id $supervisor.ProcessId -ErrorAction Stop).StartTime } catch {}
         [pscustomobject]@{
@@ -165,13 +176,7 @@ function Get-LauncherEntries {
         $_.CommandLine -like "*start_story_task.ps1*"
     }
     $entries = foreach ($launcher in $launchers) {
-        $taskName = ""
-        if ($launcher.CommandLine -match '-TaskName\s+"([^"]+)"') {
-            $taskName = $matches[1]
-        }
-        elseif ($launcher.CommandLine -match '-TaskName\s+([^\s]+)') {
-            $taskName = $matches[1]
-        }
+        $taskName = Get-ArgumentValueFromCommandLine -CommandLine $launcher.CommandLine -ArgumentName "-TaskName"
         [pscustomobject]@{
             ProcessId = [int]$launcher.ProcessId
             TaskName = $taskName
@@ -392,9 +397,9 @@ if ($existingWorkers.Count -gt 0 -or $existingSupervisors.Count -gt 0) {
         config = $configPath
         status = $statusPath
         log = $logPath
-        startup_launcher = $startupLauncher
+        startup_launcher = ""
         resume_script = $resumeScript
-        resume_mode = "startup-folder"
+        resume_mode = "manual-only"
         ops_board_url = $opsBoardUrl
         existing_worker_count = $existingWorkers.Count
         existing_supervisor_count = $existingSupervisors.Count
@@ -438,11 +443,9 @@ else {
     catch {}
 }
 
-$startupContent = @"
-@echo off
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$resumeScript" -ConfigPath "$configPath"
-"@
-Set-Content -Path $startupLauncher -Value $startupContent -Encoding ASCII
+if (Test-Path $startupLauncher) {
+    Remove-Item -LiteralPath $startupLauncher -Force -ErrorAction SilentlyContinue
+}
 
 Ensure-OpsBoard -RepoRootPath $repoRootResolved
 if (Test-Path $cleanupScript) {
@@ -493,9 +496,9 @@ Write-Output ("Ops board: {0}" -f $opsBoardUrl)
     config = $configPath
     status = $statusPath
     log = $logPath
-    startup_launcher = $startupLauncher
+    startup_launcher = ""
     resume_script = $resumeScript
-    resume_mode = "startup-folder"
+    resume_mode = "manual-only"
     ops_board_url = $opsBoardUrl
     existing_worker_count = @(Get-WorkerEntries -TaskFilter $taskNameClean).Count
     existing_supervisor_count = @(Get-SupervisorEntries -ConfigFilter $configPath).Count
