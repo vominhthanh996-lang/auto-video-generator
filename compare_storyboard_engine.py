@@ -28,6 +28,14 @@ DEFAULT_CASES = {
         "source": Path(r"E:\ThanhMV\auto-video-generator\projects\storyboards\tap-02-storyboards\phan-04-duong-ham-so-4\source.txt"),
         "highlights": [52, 64, 139, 145],
     },
+    "tap02p5": {
+        "source": Path(r"E:\ThanhMV\auto-video-generator\projects\storyboards\tap-02-storyboards\phan-05-nguoi-cua-ngan-thu\source.txt"),
+        "highlights": [5, 8, 16, 25, 29, 30],
+    },
+    "tap02p6": {
+        "source": Path(r"E:\ThanhMV\auto-video-generator\projects\storyboards\tap-02-storyboards\phan-06-can-cu-tam\source.txt"),
+        "highlights": [12, 31, 33, 42, 45, 51],
+    },
 }
 
 GENERIC_DIALOGUE_SHOT = "dialogue beat shot with the current speaker, listener, and the emotional exchange clearly readable"
@@ -98,7 +106,7 @@ def load_storyboard(path: Path):
 def metrics(data: dict):
     scenes = data["scenes"]
     shot_counts = Counter(s.get("visual_shot_type", "") for s in scenes)
-    focus_counts = Counter(s.get("focus_beat", "") for s in scenes)
+    focus_counts = Counter(s.get("beat_type") or s.get("focus_beat", "") for s in scenes)
     return {
         "scene_count": len(scenes),
         "generic_dialogue": shot_counts.get(GENERIC_DIALOGUE_SHOT, 0),
@@ -110,7 +118,7 @@ def metrics(data: dict):
 def scene_summary(scene: dict):
     return {
         "narration": scene.get("narration", ""),
-        "focus": scene.get("focus_beat", ""),
+        "focus": scene.get("beat_type") or scene.get("focus_beat", ""),
         "setting": scene.get("visual_setting", []),
         "action": scene.get("visual_action", []),
         "shot": scene.get("visual_shot_type", ""),

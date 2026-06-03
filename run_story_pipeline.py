@@ -164,38 +164,313 @@ def split_sentences(text):
         if len(paragraph.split()) <= 14:
             pieces.append(paragraph)
             continue
-        parts = re.split(r"(?<=[.!?。！？])\s+", paragraph)
+        parts = re.split(r'(?<=[.!?。！？])(?:["”’\'])?\s+', paragraph)
         pieces.extend(part.strip() for part in parts if part.strip())
     return pieces
 
 
 def split_story_units(text):
-    units = []
+    raw_paragraphs = []
     for raw_paragraph in re.split(r"\n+", text):
         paragraph = raw_paragraph.strip()
         if not paragraph:
             continue
+        raw_paragraphs.append(paragraph)
+
+    clustered_paragraphs = []
+    cluster = []
+    cluster_words = 0
+    for paragraph in raw_paragraphs:
+        if paragraph.startswith("#"):
+            if cluster:
+                clustered_paragraphs.append(" ".join(cluster).strip())
+                cluster = []
+                cluster_words = 0
+            clustered_paragraphs.append(paragraph)
+            continue
+        plain = normalize_vi(paragraph)
+        words = len(re.findall(r"\S+", paragraph))
+        profile = piece_profile(paragraph)
+        standalone_break = (
+            profile["location_shift"]
+            or profile["named_object"]
+            or profile["focus_tag"] in {
+                "route-planning",
+                "market-bargain",
+                "threshold-negotiation",
+                "board-exchange",
+                "human-valuation",
+                "insect-combat",
+                "hazard-crossing",
+                "authority-introduction",
+                "camp-rules-recital",
+                "law-recital",
+            }
+        )
+        short_bridge_paragraph = (
+            words <= 14
+            and (
+                profile["dialogue"]
+                or profile["emotional_beat"]
+                or profile["question"]
+                or profile["command_like"]
+                or has_any(plain, ["nhin", "liec", "nghe", "ngui", "gat dau", "lac dau", "quay mat", "quay dau"])
+            )
+            and not standalone_break
+        )
+        if not cluster:
+            cluster = [paragraph]
+            cluster_words = words
+            continue
+        cluster_text = " ".join(cluster).strip()
+        cluster_profile = piece_profile(cluster_text)
+        cluster_complete = scene_completeness(cluster_profile, cluster_words)
+        cluster_focus = cluster_profile["focus_tag"]
+        profile_focus = profile["focus_tag"]
+        focus_conflict = (
+            cluster_focus
+            and profile_focus
+            and cluster_focus != profile_focus
+            and cluster_complete >= 2
+            and profile_focus not in {"interaction", "decision-reaction", "object-detail"}
+        )
+        keep_chain = (
+            short_bridge_paragraph
+            or (words <= 12 and cluster_complete <= 1 and not standalone_break)
+            or (cluster_words <= 20 and words <= 18 and not standalone_break and not focus_conflict)
+            or (
+                words <= 16
+                and profile["dialogue"]
+                and cluster_words <= 24
+                and cluster_complete <= 2
+                and not standalone_break
+            )
+            or (
+                words <= 16
+                and has_any(plain, ["nhin", "liec", "nghe", "ngui", "gat dau", "lac dau", "quay mat", "quay dau"])
+                and cluster_words <= 28
+                and not standalone_break
+            )
+        )
+        if keep_chain and cluster_words + words <= 58:
+            cluster.append(paragraph)
+            cluster_words += words
+        else:
+            clustered_paragraphs.append(cluster_text)
+            cluster = [paragraph]
+            cluster_words = words
+    if cluster:
+        clustered_paragraphs.append(" ".join(cluster).strip())
+
+    units = []
+    for paragraph in clustered_paragraphs:
         if paragraph.startswith("#"):
             continue
         compact = re.sub(r"\s+", " ", paragraph).strip()
         if not compact:
             continue
-        # Dialogue and short reaction lines should survive as standalone visual beats.
-        if compact.startswith(('"', "'", "-", "“", "‘")) and len(compact.split()) <= 28:
+        # Only keep ultra-short probe dialogue standalone; longer dialogue should
+        # flow through the normal beat-chain logic instead of exploding into fragments.
+        if (
+            compact.startswith(('"', "'", "-", "“", "‘"))
+            and len(compact.split()) <= 12
+            and (
+                "?" in compact
+                or compact.endswith(":")
+                or has_any(normalize_vi(compact), ["ten?", "duong nao", "co phai", "la ai", "vi sao", "the nao"])
+            )
+        ):
             units.append(compact)
             continue
-        parts = [part.strip() for part in re.split(r"(?<=[.!?。！？…;:])\s+", compact) if part.strip()]
+        parts = [part.strip() for part in re.split(r'(?<=[.!?。！？…;])(?:["”’\'])?\s+', compact) if part.strip()]
         if not parts:
             continue
+        paragraph_units = []
+        chain = []
+        chain_words = 0
         for part in parts:
+            words = len(re.findall(r"\S+", part))
+            profile = piece_profile(part)
+            plain = normalize_vi(part)
+            if not chain:
+                chain = [part]
+                chain_words = words
+                continue
+            chain_text = " ".join(chain).strip()
+            chain_profile = piece_profile(chain_text)
+            chain_complete = scene_completeness(chain_profile, chain_words)
+            part_complete = scene_completeness(profile, words)
+            strong_focus_break = (
+                chain_profile["focus_tag"]
+                and profile["focus_tag"]
+                and chain_profile["focus_tag"] != profile["focus_tag"]
+                and chain_complete >= 2
+                and part_complete >= 2
+                and profile["focus_tag"] not in {"interaction", "decision-reaction", "object-detail", "group-dialogue"}
+            )
+            subject_break = (
+                bool(chain_profile["subjects"])
+                and bool(profile["subjects"])
+                and chain_profile["subjects"] != profile["subjects"]
+                and chain_complete >= 2
+                and part_complete >= 2
+            )
+            micro_followup = (
+                words <= 14
+                and (
+                    profile["dialogue"]
+                    or profile["question"]
+                    or profile["command_like"]
+                    or profile["emotional_beat"]
+                    or has_any(plain, ["nhin", "liec", "nghe", "ngui", "gat dau", "lac dau", "quay mat", "quay dau", "im lang", "tho ra", "nuot", "run tay"])
+                )
+                and not profile["location_shift"]
+            )
+            same_subject_chain = bool(chain_profile["subjects"]) and chain_profile["subjects"] == profile["subjects"]
+            allow_chain = (
+                (chain_complete <= 2 or chain_words <= 20 or micro_followup or same_subject_chain)
+                and not strong_focus_break
+                and not subject_break
+                and not profile["location_shift"]
+                and chain_words + words <= 52
+            )
+            if allow_chain:
+                chain.append(part)
+                chain_words += words
+            else:
+                paragraph_units.append(chain_text)
+                chain = [part]
+                chain_words = words
+        if chain:
+            paragraph_units.append(" ".join(chain).strip())
+        for part in paragraph_units:
             plain = normalize_vi(part)
             is_short_action = len(part.split()) <= 8 and has_any(plain, ACTION_BEAT_VERBS)
             is_short_reaction = len(part.split()) <= 5 and has_any(plain, ["roi", "khung lai", "chet lang", "nho lai", "giat minh"])
-            if len(part.split()) <= 6 and not is_short_action and not is_short_reaction and units and not units[-1].startswith("#"):
+            is_micro_bridge_action = (
+                len(part.split()) <= 7
+                and has_any(plain, ["nhin", "liec", "nghe", "gat dau", "lac dau", "quay mat", "quay dau", "tho ra", "ngap ngung"])
+                and not has_any(plain, ["bang viet", "gieng", "radio", "xe lan", "vien tinh thach", "rang cho", "mot gao nuoc", "mot lieu thuoc"])
+            )
+            if (len(part.split()) <= 6 and not is_short_action and not is_short_reaction and units and not units[-1].startswith("#")) or (
+                is_micro_bridge_action and units and not units[-1].startswith("#")
+            ):
                 units[-1] = f"{units[-1]} {part}".strip()
             else:
                 units.append(part)
-    return units
+    merged_units = []
+    index = 0
+    while index < len(units):
+        current = units[index].strip()
+        plain_current = normalize_vi(current)
+        should_merge_forward = False
+        if index + 1 < len(units):
+            if current.endswith(":"):
+                should_merge_forward = True
+            elif len(current.split()) <= 4 and re.fullmatch(r'["“”]?ten\??["“”]?', plain_current):
+                should_merge_forward = True
+            elif len(current.split()) <= 6 and has_any(plain_current, ["hoi:", "dap:", "noi:", "noi nho:", "quat:", "thot:", "gioi thieu:"]):
+                should_merge_forward = True
+        if should_merge_forward:
+            merged_units.append(f"{current} {units[index + 1].strip()}".strip())
+            index += 2
+            continue
+        merged_units.append(current)
+        index += 1
+    final_units = []
+    index = 0
+    while index < len(merged_units):
+        current = merged_units[index].strip()
+        plain_current = normalize_vi(current)
+        short_quoted = (
+            len(current.split()) <= 4
+            and any(mark in current for mark in ['"', "“", "”"])
+        )
+        quote_focus = infer_fragment_focus(plain_current)
+        quote_is_probe = (
+            "?" in current
+            or has_any(plain_current, ["ten?", "co phai", "la ai", "duong nao", "vi sao", "the nao"])
+        )
+        naming_punch = has_any(plain_current, ["ten?", "kho den vang", "hac nha 07"])
+        merge_short_quote = short_quoted and (
+            quote_is_probe
+            or (len(current.split()) <= 2 and not quote_focus)
+        )
+        if index + 1 < len(merged_units) and (merge_short_quote or naming_punch):
+            nxt = merged_units[index + 1].strip()
+            final_units.append(f"{current} {nxt}".strip())
+            index += 2
+            continue
+        final_units.append(current)
+        index += 1
+    compressed_units = []
+    for current in final_units:
+        current = current.strip()
+        if not current:
+            continue
+        if not compressed_units:
+            compressed_units.append(current)
+            continue
+        profile = piece_profile(current)
+        words = len(re.findall(r"\S+", current))
+        current_plain = normalize_vi(current)
+        short_glance_named_object = (
+            words <= 16
+            and has_any(current_plain, ["nhin", "liec", "nghe", "ngui", "do", "thu", "xem"])
+            and has_any(current_plain, ["xe lan", "tui bot", "hat giong", "bang viet", "radio", "vien tinh thach", "bat nuoc", "binh nuoc", "dao", "vet thuong"])
+        )
+        terse_dialogue_reply = (
+            words <= 6
+            and profile["dialogue"]
+            and not profile["location_shift"]
+            and not profile["named_object"]
+        )
+        bridge_like = (
+            words <= 8
+            and not profile["heading"]
+            and not profile["location_shift"]
+            and (
+                profile["dialogue"]
+                or profile["emotional_beat"]
+                or profile["command_like"]
+                or profile["question"]
+                or profile["focus_tag"] in {"interaction", "object-detail", "decision-reaction"}
+                or has_any(normalize_vi(current), ["nhin", "liec", "gat dau", "lac dau", "quay mat", "quay dau", "liem moi", "im duoc", "mo to mat"])
+            )
+            and (not profile["named_object"] or short_glance_named_object)
+        )
+        if not (bridge_like or terse_dialogue_reply or short_glance_named_object):
+            compressed_units.append(current)
+            continue
+        previous = compressed_units[-1]
+        previous_profile = piece_profile(previous)
+        previous_words = len(re.findall(r"\S+", previous))
+        previous_complete = scene_completeness(previous_profile, previous_words)
+        previous_plain = normalize_vi(previous)
+        repeated_glance_chain = (
+            has_any(previous_plain, ["nhin", "liec", "nghe", "ngui"])
+            and has_any(current_plain, ["nhin", "liec", "nghe", "ngui"])
+            and words <= 16
+        )
+        combined_words = previous_words + words
+        incompatible_focus = (
+            previous_profile["focus_tag"]
+            and profile["focus_tag"]
+            and previous_profile["focus_tag"] != profile["focus_tag"]
+            and previous_complete >= 2
+            and profile["focus_tag"] not in {"interaction", "object-detail", "decision-reaction"}
+        )
+        allowed_combined_words = 46 if terse_dialogue_reply else 38
+        if (
+            not previous_profile["heading"]
+            and combined_words <= allowed_combined_words
+            and (not incompatible_focus or repeated_glance_chain)
+            and not profile["location_shift"]
+        ):
+            compressed_units[-1] = f"{previous} {current}".strip()
+        else:
+            compressed_units.append(current)
+    return compressed_units
 
 
 def extract_character_mentions(text):
@@ -234,8 +509,83 @@ def character_visual_descriptor(label):
     return label
 
 
+def infer_fragment_focus(plain):
+    if has_any(plain, ["muon o lai phai theo luat", "khong ban nguoi", "do chung phai bao", "nuoc chia theo viec va benh", "ai giau dao hai doi", "khong ban nguoi qua dem"]):
+        return "camp-rules-recital"
+    if has_any(plain, ["se co nguoi phan", "van nhan", "co tay con vet xich", "vua thoat khoi vong so", "giu nguoi"]):
+        return "acceptance-risk"
+    if has_any(plain, ["moi lan gap nga re", "keo mot nguoi ra", "ra lenh di vao", "nen sap", "khong ai keo kip", "keo day sang nhanh c 1", "nhanh c 1"]):
+        return "forced-route-test"
+    if has_any(plain, ["dua vao goc kin", "ong thuoc gen qua han", "hai ong thuoc gen", "dat truoc mat han", "thuoc gen qua han"]):
+        return "treatment-setup"
+    if has_any(plain, ["hat giong", "nuoc dung cho hat", "it nuoc cho nguoi", "bat chao", "ho ngung suong", "nuoc dau vao", "mang nuoc dau vao"]):
+        return "base-resource-balance"
+    if has_any(plain, ["them nguoi, them nuoc", "them ban do", "them no", "them ke thu", "giu mot noi vua moi co ten", "khong con chay khoi nha chay"]):
+        return "gain-cost-summary"
+    if has_any(plain, ["rang no nghien sat", "tieng ken ket", "a that tai mat", "nghien sat"]):
+        return "creature-threat"
+    if has_any(plain, ["bang viet", "viet xau", "doc cham", "khong noi duoc", "khong noi", "tam bang"]):
+        return "board-exchange"
+    if has_any(plain, ["bang dieu khien", "bang khoa", "cat dien", "hai cua co the ket", "he thong khoa cu", "den xanh do tren tran", "phong dem", "khoa cu", "nem vien tinh thach", "mang dien ho", "tia sang xanh no tung", "chap mach", "no xanh", "cat vao mach dien"]):
+        return "control-sabotage"
+    if has_any(plain, ["sup gen", "loi trong co the", "de qua lau se hong", "hong co the cuu", "gen do sap", "khong phau thuat kip", "giam hieu suat sinh hoc"]):
+        return "diagnostic-pressure"
+    if has_any(plain, ["ho so ghi ma so", "ho so khong biet dau", "kho ban", "chua gap dung gia", "dung nguoi re hon", "khong con gia tri", "giam hieu suat", "de dieu khien", "thu hoi it dau", "nguoi bi ban", "gia tri truy tim"]):
+        return "human-valuation"
+    if has_any(plain, ["khai ten", "viec biet lam", "co no voi ai", "xep hang", "ghi ten viec", "hang tiep nhan"]):
+        return "intake-registration"
+    if has_any(plain, ["sup gen", "loi trong co the", "de qua lau se hong", "hong co the cuu", "gen do sap", "khong phau thuat kip", "giam hieu suat sinh hoc"]):
+        return "diagnostic-pressure"
+    if has_any(plain, ["dung can cu", "can ten", "ten noi nay", "kho den vang", "kho nay khong thanh trai cuu te", "nghe ngheo qua", "ngheo thi dung roi", "vua dung can cu", "co mot noi khong ban nguoi qua dem", "mot cai ten nho", "giu mot noi vua moi co ten"]):
+        return "base-founding"
+    if has_any(plain, ["may loc", "loc nuoc", "nghen", "thay loi", "cat lot vao van", "nghe tieng may", "than loc", "noi chao loang", "nuoc chua vo", "ho ra nuoc", "ren len nhu nguoi sot"]):
+        return "machine-maintenance"
+    if has_any(plain, ["vong bi", "mieng ton", "ton tu thao", "xe nho", "keo tren tam vai dau", "buoc day ngang nguc"]):
+        return "repair-logistics"
+    if has_any(plain, ["dung nhip", "vang xanh tat", "tung nguoi", "tam be tong noi", "ho nuoc den", "duong trai", "duong phai", "o bo cu"]):
+        return "hazard-crossing"
+    if has_any(plain, ["buoc xuong duong ham", "di vao duong ham", "vao ham trong im lang", "cui lung di qua", "len duong ham", "qua doan tran sap"]):
+        return "hazard-crossing"
+    if has_any(plain, ["nho so buoc", "nho cho tran thap", "nho vet gio", "am thanh moi duong ong", "nho duong ong", "nho cua thoat nuoc", "nho mui reu"]):
+        return "memory-navigation"
+    if has_any(plain, ["ban do", "duong ham so 4", "loi chinh", "loi bao tri", "loi thoat nuoc", "vao ham truoc binh minh", "cat duong", "diem hoi", "duong nao"]):
+        return "route-planning"
+    if has_any(plain, ["ga xam", "tram doi do", "bang gia", "mot gao nuoc", "mot lieu thuoc", "bach nhi", "cac vi can gi", "noi chuyen gia", "tin ve", "tra gia"]):
+        return "market-bargain"
+    if has_any(plain, ["gieng cu", "mieng gieng", "lon sat treo bang day", "co nguoi dang o duoi", "mui dong"]):
+        return "threshold-negotiation"
+    if has_any(plain, ["bat nuoc dang soi", "nuoc sach co mui mau", "mui mau trong nuoc", "nhin bat nuoc", "nuoc dang soi"]):
+        return "water-inspection"
+    if has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "phan cua minh", "uong thuoc", "phan thuoc", "bat minh", "it hon ta", "chao loang", "bot mi con it", "chia phan"]):
+        return "ration-pressure"
+    if has_any(plain, ["moi nguoi mot phan thuoc", "chia thuoc", "thuoc cua tan da", "thuoc cua tieu ngo"]):
+        return "medicine-allocation"
+    if has_any(plain, ["luat cua", "mot:", "hai:", "ba:", "tam thep treo", "chu sau", "khac len tam thep", "vet mau cu", "khong ai lau", "tieng go la dung"]):
+        return "law-recital"
+    if has_any(plain, ["chi con mot tay", "nhac bua len", "ca kho deu yen", "mot tay van cam bua"]):
+        return "authority-introduction"
+    if has_any(plain, ["con bo", "bo giap than", "vung nuoc dien", "xac bo", "tui loc tinh"]):
+        return "insect-combat"
+    if has_any(plain, ["duong ray", "doi chim xam", "doan nguoi", "di ve phia nam", "xe lan"]) and not has_any(plain, ["ga xam", "bang gia"]):
+        return "journey-column"
+    if has_any(plain, ["dau giay", "hoa van tam giac", "vet quan vai", "vet chan", "vet in trong bui do"]):
+        return "track-discovery"
+    if has_any(plain, ["mui am", "mui bun", "reu chet", "gio am", "hoi nuoc"]):
+        return "water-scent"
+    if has_any(plain, ["tinh thach sach", "thuoc gen", "hat giong nay mam", "hat giong mo mam", "nguon nuoc ngot", "loi loc moi", "phat hien vat tu"]):
+        return "resource-discovery"
+    if has_any(plain, ["nem vien tinh thach", "mang dien ho", "tia sang xanh no tung", "chap mach", "no xanh", "cat vao mach dien"]):
+        return "control-sabotage"
+    if has_any(plain, ["mau xuong roi xuong", "loc coc", "luong gio tanh", "keo su chu y"]):
+        return "danger-distraction"
+    if has_any(plain, ["mua dan thu duong", "gia tang gap doi", "tu di dang ky", "bang mua dan thu duong", "bang mua dan", "thu duong"]):
+        return "human-valuation"
+    return ""
+
+
 def piece_profile(piece):
     plain = normalize_vi(piece)
+    word_count = len(re.findall(r"\S+", piece))
     subject_tokens = [item[0] for item in extract_character_mentions(piece)]
     if has_any(plain, ["doi nguoi", "dam cuop", "nguoi gac"]) and "supporting-cast" not in subject_tokens:
         subject_tokens.append("supporting-cast")
@@ -264,6 +614,8 @@ def piece_profile(piece):
     return {
         "heading": piece.lstrip().startswith("#"),
         "dialogue": piece.startswith(('"', "'", "-", "“", "‘")),
+        "word_count": word_count,
+        "focus_tag": infer_fragment_focus(plain),
         "transition": has_any(
             plain,
             [
@@ -277,6 +629,15 @@ def piece_profile(piece):
         "emotional_beat": emotional_beat,
         "action_beat": has_any(plain, ACTION_BEAT_VERBS),
         "subjects": subject_tokens,
+        "question": "?" in piece or has_any(plain, ["co phai", "vi sao", "lam gi", "the nao", "duong nao", "ten?"]),
+        "command_like": has_any(plain, ["dung", "di", "im", "nghe", "nhin", "lay", "mang", "cho", "tra", "cat dien"]),
+        "named_object": has_any(
+            plain,
+            [
+                "bang viet", "bang dieu khien", "may loc", "gieng", "lon sat", "hat giong", "so no",
+                "bang gia", "vien tinh thach", "rang cho hai ham", "bua", "xe lan", "bat nuoc", "tam thep"
+            ],
+        ),
         "visual": has_any(
             plain,
             [
@@ -305,7 +666,26 @@ def beat_weight(profile):
         weight += 1
     if profile["subjects"]:
         weight += 1
+    if profile["named_object"]:
+        weight += 1
     return weight
+
+
+def scene_completeness(profile, words):
+    score = 0
+    if profile["subjects"]:
+        score += 1
+    if profile["action_beat"]:
+        score += 1
+    if profile["object_focus"] or profile["named_object"]:
+        score += 1
+    if profile["location_shift"]:
+        score += 1
+    if profile["dialogue"] and words >= 8:
+        score += 1
+    if profile["emotional_beat"] and words >= 10:
+        score += 1
+    return score
 
 
 
@@ -323,7 +703,7 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
     current = []
     current_words = 0
     pending_heading = None
-    hard_limit_words = max(56, int(words_per_image * 3.0))
+    hard_limit_words = max(56, int(words_per_image * 2.8))
 
     for piece in pieces:
         words = len(re.findall(r"\S+", piece))
@@ -344,33 +724,97 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
             current_profile = piece_profile(current_text)
             current_weight = beat_weight(current_profile)
             next_weight = beat_weight(profile)
-
-            current_has_real_beat = current_weight >= 2 or current_words >= 12 or len(current) >= 2
+            current_complete = scene_completeness(current_profile, current_words)
+            next_complete = scene_completeness(profile, words)
+            current_has_real_beat = current_complete >= 2 or current_weight >= 4 or current_words >= 14 or len(current) >= 2
+            focus_shift = bool(profile["focus_tag"]) and bool(current_profile["focus_tag"]) and profile["focus_tag"] != current_profile["focus_tag"]
             subject_shift = bool(profile["subjects"]) and bool(current_profile["subjects"]) and profile["subjects"] != current_profile["subjects"]
-            dialogue_switch = profile["dialogue"] and current_has_real_beat and not current_profile["dialogue"] and current_words >= 10
-            location_switch = profile["location_shift"] and current_has_real_beat
-            object_switch = profile["object_focus"] and current_has_real_beat and (
-                current_profile["action_beat"] or current_profile["dialogue"] or current_profile["emotional_beat"]
+            dialogue_switch = (
+                profile["dialogue"]
+                and current_has_real_beat
+                and not current_profile["dialogue"]
+                and current_words >= 14
+                and words >= 8
             )
-            reaction_switch = profile["emotional_beat"] and current_has_real_beat and not current_profile["emotional_beat"] and current_words >= 12
+            location_switch = profile["location_shift"] and current_has_real_beat and current_words >= 14
+            object_switch = (profile["object_focus"] or profile["named_object"]) and current_has_real_beat and (
+                current_profile["action_beat"] or current_profile["dialogue"] or current_profile["emotional_beat"]
+            ) and words >= 10 and next_complete >= 2
+            reaction_switch = profile["emotional_beat"] and current_has_real_beat and not current_profile["emotional_beat"] and current_words >= 14
             action_switch = profile["action_beat"] and current_has_real_beat and (
                 current_profile["action_beat"] or current_profile["dialogue"] or current_profile["object_focus"]
+            ) and current_words >= 14 and words >= 10 and next_complete >= 2
+            transition_switch = profile["transition"] and current_has_real_beat and current_words >= 16
+            beat_density_split = current_has_real_beat and next_weight >= 5 and current_weight >= 5 and current_words >= 18 and next_complete >= 2
+            independent_dialogue_turn = (
+                profile["dialogue"]
+                and current_profile["dialogue"]
+                and current_has_real_beat
+                and current_words >= 12
+                and words >= 5
+                and (
+                    profile["question"]
+                    or current_profile["question"]
+                    or profile["command_like"] != current_profile["command_like"]
+                    or (
+                        bool(profile["subjects"])
+                        and bool(current_profile["subjects"])
+                        and profile["subjects"] != current_profile["subjects"]
+                    )
+                    or (
+                        bool(profile["focus_tag"])
+                        and bool(current_profile["focus_tag"])
+                        and profile["focus_tag"] != current_profile["focus_tag"]
+                    )
+                )
             )
-            transition_switch = profile["transition"] and current_has_real_beat and current_words >= 14
-            beat_density_split = current_has_real_beat and next_weight >= 4 and current_weight >= 4 and current_words >= 16
+            support_to_action_break = (
+                current_profile["dialogue"]
+                and profile["action_beat"]
+                and current_has_real_beat
+                and current_words >= 12
+                and words >= 6
+            )
+            focused_object_break = (
+                profile["named_object"]
+                and current_has_real_beat
+                and current_words >= 12
+                and (
+                    not current_profile["named_object"]
+                    or profile["focus_tag"] != current_profile["focus_tag"]
+                )
+            )
             same_subject_continuation = bool(profile["subjects"]) and profile["subjects"] == current_profile["subjects"]
             same_focus_continuation = (
                 profile["object_focus"] == current_profile["object_focus"]
                 and profile["dialogue"] == current_profile["dialogue"]
                 and profile["location_shift"] == current_profile["location_shift"]
             )
+            fragmentary_next = (
+                words <= 10
+                and (
+                    profile["dialogue"]
+                    or profile["question"]
+                    or profile["command_like"]
+                    or profile["emotional_beat"]
+                    or (profile["action_beat"] and next_complete <= 1)
+                    or (
+                        profile["focus_tag"] in {"interaction", "object-detail", "decision-reaction"}
+                        and next_complete <= 1
+                    )
+                )
+                and not profile["named_object"]
+                and not profile["location_shift"]
+                and not profile["subjects"]
+            )
             too_long = (
                 (current_words + words > hard_limit_words and not (same_subject_continuation and same_focus_continuation))
-                or len(current) >= 4
+                or len(current) >= 5
             )
 
             if (
-                too_long
+                (too_long and not fragmentary_next)
+                or (focus_shift and current_has_real_beat and next_complete >= 2)
                 or subject_shift
                 or dialogue_switch
                 or location_switch
@@ -379,6 +823,9 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
                 or action_switch
                 or transition_switch
                 or beat_density_split
+                or independent_dialogue_turn
+                or support_to_action_break
+                or focused_object_break
             ):
                 groups.append(current_text)
                 current = [piece]
@@ -391,6 +838,46 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
     if current:
         groups.append(" ".join(current))
 
+    smoothed = []
+    index = 0
+    while index < len(groups):
+        current = groups[index]
+        profile = piece_profile(current)
+        words = len(re.findall(r"\S+", current))
+        weak_scene = (
+            (scene_completeness(profile, words) == 0 and words <= 6)
+            or (words <= 4 and not profile["named_object"] and not profile["subjects"])
+            or (
+                words <= 10
+                and scene_completeness(profile, words) <= 1
+                and profile["focus_tag"] in {"interaction", "object-detail", "decision-reaction"}
+                and not profile["named_object"]
+                and not profile["subjects"]
+            )
+        )
+        if index + 1 < len(groups) and weak_scene and not profile["heading"]:
+            nxt = groups[index + 1]
+            next_profile = piece_profile(nxt)
+            same_focus = (
+                not profile["focus_tag"]
+                or not next_profile["focus_tag"]
+                or profile["focus_tag"] == next_profile["focus_tag"]
+            )
+            combined_words = words + len(re.findall(r"\S+", nxt))
+            if (
+                not next_profile["heading"]
+                and same_focus
+                and not next_profile["location_shift"]
+                and not next_profile["question"]
+                and combined_words <= 26
+            ):
+                smoothed.append(f"{current} {nxt}".strip())
+                index += 2
+                continue
+        smoothed.append(current)
+        index += 1
+    groups = smoothed
+
     effective_max = max_scenes
 
     if effective_max > 0:
@@ -402,9 +889,19 @@ def group_for_scenes(text, min_scenes, max_scenes, words_per_image):
                 right_profile = piece_profile(groups[index + 1])
                 if left_profile["heading"] or right_profile["heading"]:
                     continue
+                left_words = len(re.findall(r"\S+", groups[index]))
+                right_words = len(re.findall(r"\S+", groups[index + 1]))
+                left_complete = scene_completeness(left_profile, left_words)
+                right_complete = scene_completeness(right_profile, right_words)
+                left_tiny_fragment = left_words <= 10 and left_complete <= 1
+                right_tiny_fragment = right_words <= 10 and right_complete <= 1
                 if beat_weight(left_profile) >= 5 and beat_weight(right_profile) >= 5 and (left_profile["location_shift"] or right_profile["location_shift"] or left_profile["subjects"] != right_profile["subjects"]):
                     continue
-                size = len(re.findall(r"\S+", groups[index])) + len(re.findall(r"\S+", groups[index + 1]))
+                if left_profile["focus_tag"] and right_profile["focus_tag"] and left_profile["focus_tag"] != right_profile["focus_tag"] and left_complete >= 2 and right_complete >= 2 and not (left_tiny_fragment or right_tiny_fragment):
+                    continue
+                size = left_words + right_words
+                if size > max(42, int(words_per_image * 2.1)):
+                    continue
                 if merge_size is None or size < merge_size:
                     merge_index = index
                     merge_size = size
@@ -430,12 +927,32 @@ def normalize_vi(text):
     return ascii_text.replace("đ", "d")
 
 def has_dialogue_signals(text):
-    return any(mark in text for mark in ['"', "“", "”", "‘", "’"]) or has_any(normalize_vi(text), ["noi", "hoi", "dap", "quat", "thot", "gioi thieu"])
+    plain = normalize_vi(text)
+    return any(mark in text for mark in ['"', "“", "”", "‘", "’"]) or has_any(
+        plain,
+        ["hoi", "dap", "quat", "thot", "gioi thieu", "len tieng", "noi nho", "noi khe", "noi voi", "tra loi"],
+    )
 
 
 def infer_dialogue_subbeat(plain):
+    if has_any(plain, ["anh mat han luot qua", "luot qua xe lan", "dung lai o radio", "dung tren ban tay bang mau", "nhin doi minh", "nguoi bi thuong. tre con. no moi. nuoc moi. ke thu moi"]):
+        return "appraisal-glance"
+    if has_any(plain, ["dem nguoi chet lam gi", "dem nuoc con lai quan trong hon", "hieu biet, hop tac", "quyet dinh khong tham qua sau con", "lang phi tai nguyen", "tra ten lai cho ho", "mua mot dem binh yen"]):
+        return "survival-values"
+    if has_any(plain, ["chay!", "chui khoi toa", "om loi loc chay sat mep ray", "ua ra ngoai", "lao ra", "thoat ra ngoai"]):
+        return "escape-burst"
+    if has_any(plain, ["muon o lai phai theo luat", "khong ban nguoi", "do chung phai bao", "nuoc chia theo viec va benh", "ai giau dao hai doi", "khong ban nguoi qua dem"]):
+        return "camp-rules-recital"
+    if has_any(plain, ["se co nguoi phan", "van nhan", "giu nguoi", "co tay con vet xich", "vua thoat khoi vong so"]):
+        return "acceptance-risk"
+    if re.fullmatch(r'\s*["“”]?ten\??["“”]?\s*', plain):
+        return "identity-probe"
     if has_any(plain, ["bang viet", "viet xau", "doc cham", "khong noi duoc", "khong noi", "tam bang"]):
         return "board-exchange"
+    if has_any(plain, ["bang dieu khien", "bang khoa", "cat dien", "hai cua co the ket", "he thong khoa cu", "den xanh do tren tran", "phong dem", "khoa cu", "nem vien tinh thach", "mang dien ho", "tia sang xanh no tung", "chap mach", "no xanh", "cat vao mach dien"]):
+        return "control-sabotage"
+    if has_any(plain, ["sup gen", "loi trong co the", "de qua lau se hong", "hong co the cuu", "gen do sap", "khong phau thuat kip", "giam hieu suat sinh hoc"]):
+        return "diagnostic-pressure"
     if has_any(plain, ["tra tien", "tra gia", "noi chuyen gia", "mot gao nuoc", "mot lieu thuoc", "nuoc mac hon", "cac vi can gi", "tin ve"]):
         return "trade-probe"
     if has_any(plain, ["giong nguoi lam an", "dang ghet cho nao", "doi giam gia", "ngua nhien nua", "thich", "vong vo"]):
@@ -444,13 +961,43 @@ def infer_dialogue_subbeat(plain):
         return "identity-probe"
     if has_any(plain, ["luat cua", "mot:", "hai:", "ba:", "tam thep treo", "chu sau", "khac len tam thep", "vet mau cu", "khong ai lau"]):
         return "law-recital"
-    if has_any(plain, ["ban do", "chi ban do", "duong ham so 4", "loi chinh", "loi bao tri", "loi thoat nuoc", "vao ham truoc binh minh", "co may loi"]):
-        return "route-planning"
-    if has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "phan cua minh", "uong thuoc", "phan thuoc"]):
+    if has_any(plain, ["no bao nhieu", "tinh lai", "hop dong viec", "ghi ten", "chuyen sang chim xam", "muoi hai gao nuoc", "ta tra bon", "lai tinh theo ngay", "no tra bang duong", "ganh no", "lai tinh bang tin", "no cua a muc", "viet hai chu chim xam len so", "ghi vao so no"]):
+        return "debt-ledger"
+    if has_any(plain, ["ho so ghi ma so", "ho so khong biet dau", "kho ban", "chua gap dung gia", "dung nguoi re hon", "khong con gia tri", "giam hieu suat", "de dieu khien", "thu hoi it dau", "nguoi bi ban", "gia tri truy tim", "giong nguoi khong", "giong nguoi", "nguoi hay ho so", "khong biet dau"]):
+        return "human-valuation"
+    if has_any(plain, ["khai ten", "viec biet lam", "co no voi ai", "xep hang", "ghi ten viec", "hang tiep nhan"]):
+        return "intake-registration"
+    if has_any(plain, ["sup gen", "loi trong co the", "de qua lau se hong", "hong co the cuu", "gen do sap", "khong phau thuat kip"]):
+        return "diagnostic-pressure"
+    if has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "phan cua minh", "uong thuoc", "phan thuoc", "bat minh", "it hon ta", "chao loang", "bot mi con it", "chia?", "chia phan"]):
         if has_any(plain, ["im", "khong can", "khong uong", "cho uong", "them nua ngum"]):
             return "command-pressure"
         return "ration-negotiation"
-    if has_any(plain, ["bao truoc", "can than", "dung", "khong duoc", "anh hung", "de sau", "khong quay lai", "coi", "nguoi im", "ta khong uong", "khong can"]):
+    if has_any(plain, ["hom nay can mat cua nguoi", "hom nay can mat cua ngươi", "can mat cua nguoi", "nguoi doc gio", "noi voi moc sanh", "giao cho", "ngươi lam", "nguoi lam"]) and not has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "uong thuoc", "phan thuoc", "phan cua minh", "khat"]):
+        return "role-assignment"
+    if has_any(plain, ["dung can cu", "can ten", "ten noi nay", "kho den vang", "kho nay khong thanh trai cuu te", "nghe ngheo qua", "ngheo thi dung roi", "vua dung can cu"]):
+        return "base-founding"
+    if has_any(plain, ["hat giong", "nuoc dung cho hat", "it nuoc cho nguoi", "bat chao", "ho ngung suong", "nuoc dau vao", "mang nuoc dau vao"]):
+        return "base-resource-balance"
+    if has_any(plain, ["may loc", "loc nuoc", "nghen", "thay loi", "cat lot vao van", "nghe tieng may", "than loc", "noi chao loang", "nuoc chua vo"]):
+        return "machine-maintenance"
+    if has_any(plain, ["vong bi", "mieng ton", "truc thang", "ton tu thao", "xe nho", "sua", "keo tren tam vai dau", "buoc day ngang nguc"]):
+        return "repair-logistics"
+    if has_any(plain, ["dung nhip", "vang xanh tat", "tung nguoi", "buoc day", "co the qua", "qua duoc bo ben kia", "tam be tong noi", "ho nuoc den", "co hai duong", "duong trai", "duong phai", "o bo cu", "duong nao"]):
+        return "hazard-crossing"
+    if has_any(plain, ["buoc xuong duong ham", "di vao duong ham", "vao ham trong im lang", "cui lung di qua", "len duong ham", "qua doan tran sap"]):
+        return "hazard-crossing"
+    if has_any(plain, ["nho so buoc", "nho cho tran thap", "nho vet gio", "am thanh moi duong ong", "nho duong ong", "nho cua thoat nuoc", "nho mui reu"]):
+        return "memory-navigation"
+    if has_any(plain, ["mua dan thu duong", "gia tang gap doi", "tu di dang ky", "bang mua dan thu duong", "bang mua dan", "thu duong"]):
+        return "human-valuation"
+    if has_any(plain, ["nho so buoc", "nho cho tran thap", "nho vet gio", "am thanh moi duong ong", "nho duong ong", "nho cua thoat nuoc", "nho mui reu"]):
+        return "memory-navigation"
+    if has_any(plain, ["nho so buoc", "nho cho tran thap", "nho vet gio", "am thanh moi duong ong", "nho duong ong", "nho cua thoat nuoc", "nho mui reu"]):
+        return "memory-navigation"
+    if has_any(plain, ["ban do", "chi ban do", "duong ham so 4", "loi chinh", "loi bao tri", "loi thoat nuoc", "vao ham truoc binh minh", "co may loi", "cat duong", "diem hoi", "duong trai", "duong phai", "o bo cu"]):
+        return "route-planning"
+    if has_any(plain, ["bao truoc", "can than", "khong duoc", "anh hung", "de sau", "khong quay lai", "coi", "nguoi im", "ta khong uong", "khong can", "da bao", "chay la chet", "dung day cho chet", "dung chay", "dung lai", "dung ngay"]):
         return "warning-rebuke"
     if has_any(plain, ["nghe thay", "co nguoi dang o duoi", "o mot minh", "la gi cua nguoi", "co mui nguoi", "ba dau chan", "khong la gi"]):
         return "trust-test"
@@ -464,17 +1011,91 @@ def infer_dialogue_subbeat(plain):
 def classify_primary_scene_beat(narration):
     plain = normalize_vi(narration)
     dialogue_subbeat = infer_dialogue_subbeat(plain) if has_dialogue_signals(narration) else ""
-    trade_context = has_any(plain, ["bang gia", "mot gao nuoc", "mot lieu thuoc", "noi chuyen gia", "tra tien", "tra gia", "tin ve", "cac vi can gi"])
+    trade_context = has_any(plain, ["bang gia", "mot gao nuoc", "mot lieu thuoc", "noi chuyen gia", "tra tien", "tra gia", "tin ve", "cac vi can gi", "doi nuoc", "doi thuoc", "doi cho tre con", "tra doi"])
+    if has_any(plain, ["anh mat han luot qua", "luot qua xe lan", "dung lai o radio", "dung tren ban tay bang mau", "nhin doi minh", "nguoi bi thuong. tre con. no moi. nuoc moi. ke thu moi"]):
+        return "appraisal-glance"
+    if has_any(plain, ["dem nguoi chet lam gi", "dem nuoc con lai quan trong hon", "hieu biet, hop tac", "quyet dinh khong tham qua sau con", "lang phi tai nguyen", "tra ten lai cho ho", "mua mot dem binh yen"]):
+        return "survival-values"
+    if has_any(plain, ["chay!", "chui khoi toa", "om loi loc chay sat mep ray", "ua ra ngoai", "lao ra", "thoat ra ngoai"]):
+        return "escape-burst"
+    if has_any(plain, ["muon o lai phai theo luat", "khong ban nguoi", "do chung phai bao", "nuoc chia theo viec va benh", "ai giau dao hai doi", "khong ban nguoi qua dem"]):
+        return "camp-rules-recital"
+    if has_any(plain, ["se co nguoi phan", "van nhan", "giu nguoi", "co tay con vet xich", "vua thoat khoi vong so"]):
+        return "acceptance-risk"
+    if has_any(plain, ["moi lan gap nga re", "keo mot nguoi ra", "ra lenh di vao", "nen sap", "khong ai keo kip", "keo day sang nhanh c 1", "nhanh c 1"]) and not has_any(plain, ["ban do", "loi chinh", "loi bao tri", "loi thoat nuoc"]):
+        return "forced-route-test"
+    if has_any(plain, ["dua vao goc kin", "ong thuoc gen qua han", "hai ong thuoc gen", "dat truoc mat han", "thuoc gen qua han"]):
+        return "treatment-setup"
+    if has_any(plain, ["hat giong", "nuoc dung cho hat", "it nuoc cho nguoi", "bat chao", "ho ngung suong", "nuoc dau vao", "mang nuoc dau vao"]):
+        return "base-resource-balance"
+    if has_any(plain, ["them nguoi, them nuoc", "them ban do", "them no", "them ke thu", "giu mot noi vua moi co ten", "khong con chay khoi nha chay"]):
+        return "gain-cost-summary"
+    if has_any(plain, ["rang no nghien sat", "tieng ken ket", "a that tai mat", "nghien sat"]) and has_any(plain, ["duong ham", "ham", "bo", "giap than", "tunnel 4"]):
+        return "creature-threat"
     if has_any(plain, ["anh den xe trang loa", "nga tu mua", "tieng phanh", "dien thoai tren mat duong"]):
         return "memory-flashback"
     if has_any(plain, ["mom cho thoi rua cach mat", "ham duoi cua no tach lam hai", "dam thang vao mat no", "lan vao duoi gam xe"]):
         return "predator-threat"
     if has_any(plain, ["chi con mot tay", "nhac bua len", "ca kho deu yen", "danh tieng", "khong cui dau", "mot tay van cam bua"]):
         return "authority-introduction"
+    if has_any(plain, ["bang dieu khien", "bang khoa", "cat dien", "hai cua co the ket", "he thong khoa cu", "den xanh do tren tran", "phong dem", "khoa cu", "nem vien tinh thach", "mang dien ho", "tia sang xanh no tung", "chap mach", "no xanh", "cat vao mach dien"]):
+        return "control-sabotage"
+    if has_any(plain, ["sup gen", "loi trong co the", "de qua lau se hong", "hong co the cuu", "gen do sap", "khong phau thuat kip", "giam hieu suat sinh hoc"]):
+        return "diagnostic-pressure"
+    if has_any(plain, ["ho so ghi ma so", "ho so khong biet dau", "kho ban", "chua gap dung gia", "dung nguoi re hon", "khong con gia tri", "giam hieu suat", "de dieu khien", "thu hoi it dau", "nguoi bi ban", "gia tri truy tim", "giong nguoi khong", "giong nguoi", "nguoi hay ho so", "khong biet dau"]):
+        return "human-valuation"
+    if has_any(plain, ["khai ten", "viec biet lam", "co no voi ai", "xep hang", "ghi ten viec", "hang tiep nhan"]):
+        return "intake-registration"
+    if has_any(plain, ["dung can cu", "can ten", "ten noi nay", "kho den vang", "kho nay khong thanh trai cuu te", "nghe ngheo qua", "ngheo thi dung roi", "vua dung can cu", "cai ten duoc viet len cua"]):
+        return "base-founding"
+    if has_any(plain, ["may loc", "loc nuoc", "nghen", "thay loi", "cat lot vao van", "nghe tieng may", "than loc", "noi chao loang", "nuoc chua vo", "ho ra nuoc", "ren len nhu nguoi sot"]):
+        return "machine-maintenance"
+    if has_any(plain, ["vong bi", "mieng ton", "truc thang", "ton tu thao", "xe nho", "sua", "keo tren tam vai dau", "buoc day ngang nguc"]):
+        return "repair-logistics"
+    if has_any(plain, ["dung nhip", "vang xanh tat", "tung nguoi", "buoc day", "co the qua", "qua duoc bo ben kia", "tam be tong noi", "ho nuoc den", "co hai duong", "duong trai", "duong phai", "o bo cu", "duong nao"]):
+        return "hazard-crossing"
+    if has_any(plain, ["nho so buoc", "nho cho tran thap", "nho vet gio", "am thanh moi duong ong", "nho duong ong", "nho cua thoat nuoc", "nho mui reu"]):
+        return "memory-navigation"
+    if has_any(plain, ["buoc xuong duong ham", "di vao duong ham", "vao ham trong im lang", "cui lung di qua", "len duong ham", "qua doan tran sap"]):
+        return "hazard-crossing"
     if dialogue_subbeat == "board-exchange":
         return "board-exchange"
+    if dialogue_subbeat == "appraisal-glance":
+        return "appraisal-glance"
+    if dialogue_subbeat == "survival-values":
+        return "survival-values"
+    if dialogue_subbeat == "escape-burst":
+        return "escape-burst"
+    if dialogue_subbeat == "camp-rules-recital":
+        return "camp-rules-recital"
+    if dialogue_subbeat == "acceptance-risk":
+        return "acceptance-risk"
+    if dialogue_subbeat == "control-sabotage":
+        return "control-sabotage"
     if dialogue_subbeat == "law-recital":
         return "law-recital"
+    if dialogue_subbeat == "debt-ledger":
+        return "debt-ledger"
+    if dialogue_subbeat == "human-valuation":
+        return "human-valuation"
+    if dialogue_subbeat == "intake-registration":
+        return "intake-registration"
+    if dialogue_subbeat == "diagnostic-pressure":
+        return "diagnostic-pressure"
+    if dialogue_subbeat == "role-assignment":
+        return "role-assignment"
+    if dialogue_subbeat == "base-founding":
+        return "base-founding"
+    if dialogue_subbeat == "machine-maintenance":
+        return "machine-maintenance"
+    if dialogue_subbeat == "repair-logistics":
+        return "repair-logistics"
+    if dialogue_subbeat == "base-resource-balance":
+        return "base-resource-balance"
+    if dialogue_subbeat == "hazard-crossing":
+        return "hazard-crossing"
+    if dialogue_subbeat == "memory-navigation":
+        return "memory-navigation"
     if has_any(plain, ["luat cua", "mot:", "hai:", "ba:", "tam thep treo", "chu sau", "khac len tam thep", "khong ai lau"]) and not has_any(plain, ["bang vet thuong", "bang gac"]):
         return "law-recital"
     if has_any(plain, ["con bo", "nhung con bo", "bo nho", "bo giap than", "vung nuoc dien", "khop chan", "vo no", "xac bo", "bung sang", "mau bo", "tui loc tinh", "sap bi can", "giu bo", "bo rut", "day ben trai", "cui dau"]) and not has_any(plain, ["rang cho hai ham", "con cho", "cho hai ham", "xac bi bay cho gam"]):
@@ -483,25 +1104,27 @@ def classify_primary_scene_beat(narration):
         return "water-inspection"
     if (
         not trade_context
-        and has_any(plain, ["duong ham so 4", "co may loi", "loi chinh", "loi bao tri", "loi thoat nuoc", "di loi dong", "ban do duong ray", "chi ban do", "vao ham truoc binh minh", "co bo giap than", "may loi"])
-        and has_any(plain, ["loi chinh", "loi bao tri", "loi thoat nuoc", "di loi", "ban do", "vao ham", "may loi", "duong ham"])
+        and has_any(plain, ["duong ham so 4", "co may loi", "loi chinh", "loi bao tri", "loi thoat nuoc", "di loi dong", "ban do duong ray", "chi ban do", "vao ham truoc binh minh", "co bo giap than", "may loi", "cat duong", "diem hoi", "duong trai", "duong phai", "o bo cu"])
+        and has_any(plain, ["loi chinh", "loi bao tri", "loi thoat nuoc", "ban do", "vao ham", "may loi", "cat duong", "diem hoi", "duong trai", "duong phai", "o bo cu", "co hai duong", "duong nao", "loi nao"])
     ):
         return "route-planning"
     if has_any(plain, ["moi nguoi mot phan thuoc", "nua phan", "chia thuoc", "uong thuoc", "phan thuoc", "thuoc cua tan da", "thuoc cua tieu ngo"]):
         return "medicine-allocation"
-    if has_any(plain, ["con khat", "ngam moi", "nhin phan cua minh", "nuot nuoc bot", "giau con khat", "phan cua minh", "khat den dau"]):
+    if has_any(plain, ["con khat", "ngam moi", "nhin phan cua minh", "nuot nuoc bot", "giau con khat", "phan cua minh", "khat den dau", "bat minh", "it hon ta", "chao loang", "bot mi con it", "chia phan", "chia?"]):
         return "ration-pressure"
     if has_any(plain, ["mau xuong roi xuong", "lan tren mai ton", "loc coc", "qua mu lao sang", "luong gio tanh", "danh lac huong", "keo su chu y"]):
         return "danger-distraction"
-    if has_any(plain, ["ga xam", "tram doi do", "bang gia", "mot gao nuoc", "mot lieu thuoc", "tin mot cau", "bach nhi", "cac vi can gi", "noi chuyen gia", "tin ve"]):
+    if has_any(plain, ["mua dan thu duong", "gia tang gap doi", "tu di dang ky", "bang mua dan thu duong", "bang mua dan", "thu duong", "vong so", "tra cho nguoi nha", "mot ngay thu duong"]):
+        return "human-valuation"
+    if has_any(plain, ["ga xam", "tram doi do", "bang gia", "mot gao nuoc", "mot lieu thuoc", "tin mot cau", "cac vi can gi", "noi chuyen gia", "tin ve", "doi nuoc", "doi thuoc", "doi cho tre con", "tra doi"]) or (has_any(plain, ["bach nhi"]) and (trade_context or has_any(plain, ["doi nuoc", "doi thuoc", "doi cho tre con", "tra doi"]))):
         return "market-bargain"
-    if has_any(plain, ["radio", "tin hieu gen", "mo radio", "radio song", "gio radio", "tu radio", "tin hieu radio"]):
+    if has_any(plain, ["tin hieu gen", "mo radio", "radio song", "gio radio", "tu radio", "tin hieu radio", "radio re", "radio bao", "radio noi"]):
         return "radio-warning"
     if has_any(plain, ["nuoc chi con mot vach", "khong chia nuoc", "moi nguoi mot ngum", "binh nuoc", "tan da uong thuoc"]):
         return "ration-stop"
     if has_any(plain, ["gieng cu", "mieng gieng", "lon sat treo bang day", "cua kho", "ngoai vach", "vach trang", "bo dao xuong", "tre con vao truoc", "tra gia", "thang nhai duoi gieng"]):
         return "threshold-negotiation"
-    if has_any(plain, ["tinh thach", "hat giong", "mau banh", "thit hop", "thuoc", "radio song lai", "moc sat"]):
+    if has_any(plain, ["tinh thach", "mau banh", "thit hop", "thuoc", "radio song lai", "moc sat"]):
         return "resource-discovery"
     if has_any(plain, ["mui am", "mui bun", "reu chet", "gio am", "hoi nuoc", "hoi am"]):
         return "water-scent"
@@ -516,7 +1139,7 @@ def classify_primary_scene_beat(narration):
     if dialogue_subbeat == "verbal-sparring":
         return "group-dialogue"
     if dialogue_subbeat == "identity-probe":
-        return "group-dialogue"
+        return "identity-probe"
     if dialogue_subbeat == "route-planning":
         return "route-planning"
     if dialogue_subbeat == "child-observation":
@@ -526,11 +1149,13 @@ def classify_primary_scene_beat(narration):
     if dialogue_subbeat == "movement-decision":
         return "group-dialogue"
     if dialogue_subbeat == "command-pressure":
-        return "group-dialogue"
+        return "ration-pressure" if has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "uong thuoc", "phan thuoc", "phan cua minh", "khat", "it hon ta", "chao loang"]) else "group-dialogue"
     if dialogue_subbeat == "ration-negotiation":
-        return "group-dialogue"
+        return "ration-pressure"
     if dialogue_subbeat == "warning-rebuke":
         return "group-dialogue"
+    if has_any(plain, ["tranh duong nuoc", "tang gia nuoc phia bac", "gia re hon", "doi nuoc cho tre con", "doi thuoc cho hai nguoi bi thuong"]):
+        return "market-bargain"
     if has_dialogue_signals(narration):
         if has_any(plain, ["khong", "ta", "nguoi", "vi sao", "neu", "bo dao", "vao truoc", "tra gia"]):
             return "group-dialogue"
@@ -544,20 +1169,27 @@ def classify_primary_scene_beat(narration):
 def infer_narration_location(narration, continuity=None):
     continuity = continuity or {}
     plain = normalize_vi(narration)
-    trade_context = has_any(plain, ["bang gia", "mot gao nuoc", "mot lieu thuoc", "noi chuyen gia", "tra tien", "tra gia", "tin ve", "cac vi can gi"])
-    if has_any(plain, ["duong ham so 4", "duong ham", "duoi ray", "ho dien", "bo giap than", "dien bun", "nuoc duoi ray", "ham thap"]):
+    trade_context = has_any(plain, ["bang gia", "mot gao nuoc", "mot lieu thuoc", "noi chuyen gia", "tra tien", "tra gia", "tin ve", "cac vi can gi", "doi nuoc", "doi thuoc", "doi cho tre con", "tra doi", "vong so", "mot ngay thu duong", "tra cho nguoi nha"])
+    gray_station_cues = ["ga xam", "tram doi do", "bang gia", "toa tau bo hoang", "nhanh ray cu", "cac vi can gi", "noi chuyen gia", "mot gao nuoc", "mot lieu thuoc", "tin mot cau", "tra tien", "vong vo", "doi nuoc", "doi thuoc", "tra doi", "vong so", "mot ngay thu duong", "tra cho nguoi nha", "tang gia nuoc", "tranh duong nuoc", "quay hang", "gian hang", "sap hang", "toa thu nhat", "toa thu hai", "toa thu ba", "toa thu tu"]
+    base_cues = ["kho den vang", "dung can cu", "can ten", "ten noi nay", "kho nay khong thanh trai cuu te", "may loc", "khu bep", "khu ngu", "canh thuoc", "trai cuu te", "can cu tam", "ho ngung suong", "hat giong", "hop hat giong", "bat chao", "noi chao", "nuoc dau vao", "mang nuoc dau vao"]
+    warehouse_yard_cues = ["kho bao tri", "san sau kho", "giua hai toa tau hong", "ve ban do bang than", "ca kho deu yen", "nhac bua len"]
+    railway_cues = ["duong ray", "duong ray cu", "ray gi", "doi chim xam", "ca doan", "doan nguoi", "di ve phia nam", "xe lan", "truc xe", "vong banh", "cot ket"]
+    tunnel_cues = ["duong ham so 4", "duong ham", "duoi ray", "ho dien", "bo giap than", "dien bun", "nuoc duoi ray", "ham thap"]
+    if has_any(plain, gray_station_cues) or (has_any(plain, ["bach nhi"]) and trade_context):
+        return "Gray Station, a harsh rail-junction trading post built from abandoned train cars, scrap walls, and guarded stalls"
+    if has_any(plain, base_cues):
+        return "the maintenance warehouse turned survival base, with the water filter, cooking corner, sleeping zones, and rough systems being built into a real camp"
+    if has_any(plain, tunnel_cues):
         return "Tunnel 4, a low underground rail tunnel with damp concrete, electric water, service pipes, and armored insect danger"
     if has_any(plain, ["khe nhan dang", "the nhan dang", "phong dem", "tu kim loai", "hop den", "hac nha", "quan phuc hac nha", "phong dieu khien"]):
         return "a hidden underground service chamber inside Tunnel 4, with metal lockers, a control desk, identity lock hardware, and remnants of the Hac Nha unit"
-    if has_any(plain, ["kho bao tri", "san sau kho", "giua hai toa tau hong", "ve ban do bang than", "ca kho deu yen", "nhac bua len"]):
+    if has_any(plain, warehouse_yard_cues):
         return "the maintenance warehouse yard or warehouse interior described by the narration, with broken train cars and repair-space details"
     if (not trade_context) and has_any(plain, ["duong ham so 4", "ban do duong ray", "loi chinh", "loi bao tri", "loi thoat nuoc", "vao ham truoc binh minh", "may loi"]):
         return "the maintenance-yard briefing area behind the warehouse, with a charcoal route map laid out between broken train cars"
     if has_any(plain, ["bai rac", "dong xe phe lieu", "nhat rac", "gam xe", "xe tai lat", "tu lanh gay cua"]):
         return "a filthy radioactive junkyard with scrap heaps, overturned vehicles, and black contaminated dirt"
-    if has_any(plain, ["ga xam", "tram doi do", "bang gia", "toa tau bo hoang", "nhanh ray cu", "bach nhi", "cac vi can gi", "noi chuyen gia", "mot gao nuoc", "mot lieu thuoc", "tin mot cau", "tra tien", "vong vo"]):
-        return "Gray Station, a harsh rail-junction trading post built from abandoned train cars, scrap walls, and guarded stalls"
-    if has_any(plain, ["radio", "tin hieu gen", "mo radio", "radio song", "gio radio", "tu radio", "tin hieu radio"]) and continuity.get("location"):
+    if has_any(plain, ["tin hieu gen", "mo radio", "radio song", "gio radio", "tu radio", "tin hieu radio", "radio re", "radio bao", "radio noi"]) and continuity.get("location"):
         return continuity.get("location")
     if has_any(plain, ["khu 17 chay", "lua boc", "khoi den", "mai leu chay", "can leu rach"]):
         return "burning lanes of District 17 with smoke, torn shelters, and fleeing survivors"
@@ -571,16 +1203,33 @@ def infer_narration_location(narration, continuity=None):
         return "the old well area with broken concrete, hanging tin can, and signs someone is already below"
     if has_any(plain, ["cua kho", "nha kho", "kho chua", "vach trang", "ngoai vach", "bo dao xuong"]):
         return "a guarded warehouse threshold or checkpoint where entry terms are being enforced"
+    if has_any(plain, ["cua ben trong", "xich keo", "cay khoa", "dung cu cay khoa", "khoa ben trong", "cua sat ben trong"]):
+        if continuity.get("location"):
+            return continuity.get("location")
+        return "an inner industrial access door or sealed service passage inside the current facility"
     if has_any(plain, ["thuoc", "chia thuoc", "uong thuoc", "moi nguoi mot phan thuoc", "nua phan"]):
         if continuity.get("location"):
             return continuity.get("location")
         return "the current shelter, rail camp, or warehouse corner where the group is dividing medicine under pressure"
-    if has_any(plain, ["duong ray", "duong ray cu", "ray gi", "doi chim xam", "ca doan", "doan nguoi", "di ve phia nam"]) or (has_any(plain, ["xe lan", "truc xe", "vong banh", "cot ket"]) and has_any(plain, ["doc duong", "di ve phia nam", "ca doan", "doan nguoi", "duong ray"])):
+    if has_any(plain, railway_cues) or (has_any(plain, ["xe lan", "truc xe", "vong banh", "cot ket"]) and has_any(plain, ["doc duong", "di ve phia nam", "ca doan", "doan nguoi", "duong ray"])):
         return "an old railway line cutting south through ash, red dust, and rusted wasteland debris"
     if has_any(plain, ["toa nha", "nha cao tang", "cao oc", "chung cu", "biet thu", "hanh lang", "dai sanh", "tien sanh", "vao sanh", "thang may"]):
         return "the building interior or exterior exactly described by the current narration"
     if has_any(plain, ["duong pho", "ngo hem", "hem", "con pho"]):
         return "the ruined street or alley exactly described by the current narration"
+    if continuity.get("location"):
+        continuity_location = continuity.get("location", "")
+        continuity_plain = normalize_vi(continuity_location)
+        if "gray station" in continuity_location and (trade_context or has_any(plain, ["bach nhi", "vong so", "tra gia", "doi nuoc", "doi thuoc"])):
+            return continuity_location
+        if "maintenance warehouse turned survival base" in continuity_location and has_any(plain, base_cues + ["chia phan", "nuoc chia", "phan thuoc", "may loc", "bat chao", "hat giong"]):
+            return continuity_location
+        if "maintenance warehouse yard" in continuity_location and has_any(plain, warehouse_yard_cues + ["ban do bang than", "nhac bua", "ve than", "chi duong"]):
+            return continuity_location
+        if "old railway line" in continuity_plain and has_any(plain, railway_cues + ["ninh", "tieu mai", "a that", "gio am", "mui dong", "gieng cu"]):
+            return continuity_location
+        if "tunnel 4" in continuity_plain and has_any(plain, tunnel_cues + ["dien", "bo giap", "ham", "duoi ray", "vung nuoc", "vuot qua", "qua tung nguoi"]):
+            return continuity_location
     return continuity.get("location", "story-defined location matching the narration")
 
 
@@ -690,9 +1339,10 @@ def story_setting_details(narration, continuity=None):
         (["hanh lang", "di qua hanh lang"], "a corridor leading deeper into the building"),
         (["vao phong", "mo cua phong", "cua phong"], "a specific interior room that matches the story beat"),
         (["nha kho", "kho chua"], "a warehouse-like interior with storage clutter and industrial decay"),
+        (["ho ngung suong", "hat giong", "hop hat giong", "bat chao", "noi chao"], "a rough survival-base interior where water, seeds, and thin food are being rationed into a future"),
         (["san thuong", "mai nha"], "a rooftop or upper-level open area connected to the current building"),
         (["duong pho", "ngo hem", "hem", "con pho"], "a ruined street or alley matching the current movement path"),
-        (["ga xam", "tram doi do", "bang gia", "nhanh ray cu", "toa tau bo hoang", "bach nhi"], "Gray Station, a brutal trading post assembled from abandoned train cars and scrap walls at a rail junction"),
+        (["ga xam", "tram doi do", "bang gia", "nhanh ray cu", "toa tau bo hoang"], "Gray Station, a brutal trading post assembled from abandoned train cars and scrap walls at a rail junction"),
         (["toa thu nhat", "toa thu hai", "toa thu ba", "toa thu tu", "rem den"], "a cramped station interior where each train car functions as a separate stall, clinic, or hidden room"),
         (["duong ray", "duong ray cu", "doc duong ray"], "an old railway line cutting south through ash, red dust, and rusted wasteland debris"),
         (["xe lan", "truc xe", "vong banh", "cot ket"], "a damaged wheelchair or improvised stretcher carrying an injured survivor"),
@@ -797,6 +1447,21 @@ def story_action_sequence(narration, scene_state, continuity=None):
     for words, phrase in sequence_rules:
         if has_any(plain, words):
             add_unique(actions, phrase)
+
+    if focus == "appraisal-glance":
+        actions = ["a calculating trader or survivor scans the wheelchair, radio, bandaged hand, and visible weakness of the whole group before naming a price"]
+    elif focus == "treatment-setup":
+        actions = ["the injured survivor is pulled into a hidden corner and the expired gene medicine is laid out as an ugly survival gamble"]
+    elif focus == "human-valuation" and has_any(plain, ["vong so", "mot ngay thu duong", "tra cho nguoi nha"]):
+        actions = ["a tagged trial-runner is displayed with a chest board and a water price owed to the family, turning a person into a listed asset"]
+    elif focus == "market-bargain" and has_any(plain, ["doi nuoc cho tre con", "doi thuoc cho hai nguoi bi thuong", "tranh duong nuoc", "tang gia nuoc", "gia re hon"]):
+        actions = ["the trade is stated in practical terms while water pressure and route control are used to squeeze the price higher"]
+    elif focus == "ration-pressure" and has_any(plain, ["doc gio", "can mat cua nguoi", "them nua ngum", "nua ngum"]):
+        actions = ["an extra sip is offered, refused, then forced back into the logic of survival because the group still needs that person's eyes and judgment"]
+    elif focus == "survival-values":
+        actions = ["someone says out loud that water, cooperation, and hard choices matter more than counting the dead, and the others have to live with that truth"]
+    elif focus == "escape-burst":
+        actions = ["the group breaks from cover with the one salvage piece they cannot leave behind and runs along the rail edge before the threat turns back"]
 
     if not actions:
         if focus == "journey-column":
@@ -909,6 +1574,10 @@ def detect_scene_state(narration, continuity=None):
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "insect-combat"
         state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "appraisal-glance":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "appraisal-glance"
+        state["threat"] = "medium"
     elif state["focus"] == "interaction" and primary_beat == "market-bargain":
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "market-bargain"
@@ -933,6 +1602,50 @@ def detect_scene_state(narration, continuity=None):
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "board-exchange"
         state["threat"] = continuity.get("threat", "medium")
+    elif state["focus"] == "interaction" and primary_beat == "camp-rules-recital":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "camp-rules-recital"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "acceptance-risk":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "acceptance-risk"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "control-sabotage":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "control-sabotage"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "debt-ledger":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "debt-ledger"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "forced-route-test":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "forced-route-test"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "treatment-setup":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "treatment-setup"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "base-resource-balance":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "base-resource-balance"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "gain-cost-summary":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "gain-cost-summary"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "survival-values":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "survival-values"
+        state["threat"] = continuity.get("threat", "medium")
+    elif state["focus"] == "interaction" and primary_beat == "creature-threat":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "creature-threat"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "escape-burst":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "escape-burst"
+        state["threat"] = "high"
     elif state["focus"] == "interaction" and primary_beat == "water-inspection":
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "water-inspection"
@@ -965,6 +1678,34 @@ def detect_scene_state(narration, continuity=None):
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "resource-discovery"
         state["threat"] = continuity.get("threat", "medium")
+    elif state["focus"] == "interaction" and primary_beat == "human-valuation":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "human-valuation"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "identity-probe":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "identity-probe"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "base-founding":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "base-founding"
+        state["threat"] = continuity.get("threat", "medium")
+    elif state["focus"] == "interaction" and primary_beat == "machine-maintenance":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "machine-maintenance"
+        state["threat"] = continuity.get("threat", "medium")
+    elif state["focus"] == "interaction" and primary_beat == "intake-registration":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "intake-registration"
+        state["threat"] = "medium"
+    elif state["focus"] == "interaction" and primary_beat == "diagnostic-pressure":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "diagnostic-pressure"
+        state["threat"] = "high"
+    elif state["focus"] == "interaction" and primary_beat == "memory-navigation":
+        state["location"] = infer_narration_location(narration, continuity)
+        state["focus"] = "memory-navigation"
+        state["threat"] = "medium"
     elif state["focus"] == "interaction" and primary_beat == "medical-strain":
         state["location"] = infer_narration_location(narration, continuity)
         state["focus"] = "medical-strain"
@@ -1060,14 +1801,52 @@ def infer_beat_goal(narration, scene_state, actions, props):
         return "establish the wasteland rules and the protagonist's disadvantage"
     if focus == "authority-introduction":
         return "show why this person or object commands silence and authority in the current place"
+    if focus == "appraisal-glance":
+        return "show the calculating scan that sizes up the group, their injuries, and their leverage before any price is spoken out loud"
     if focus == "route-planning":
         return "show the route map, options, and the tactical choice the group is making before moving"
     if focus == "board-exchange":
         return "show the writing board, the child exchange around it, and the exact response the message causes"
+    if focus == "camp-rules-recital":
+        return "show the base rules being spoken in a way everyone must absorb, including what staying with the group now costs and protects"
+    if focus == "acceptance-risk":
+        return "show the argument over accepting unstable or dangerous survivors and the moral risk everyone feels in that decision"
+    if focus == "control-sabotage":
+        return "show the control panel, old lock system, or power-cut idea that could change the escape or trap"
+    if focus == "forced-route-test":
+        return "show the brutal moment someone is forced ahead into danger so others can learn which path kills first"
+    if focus == "treatment-setup":
+        return "show the hidden treatment corner, the expired medicine, and the fact that survival now depends on an ugly medical gamble"
     if focus == "law-recital":
         return "show the harsh survival rules being spoken or displayed, and how the listeners react to what those rules really mean"
+    if focus == "debt-ledger":
+        return "show the debt terms, ledger pressure, and exactly who is being bound, traded, or released by the deal"
+    if focus == "role-assignment":
+        return "show who is being assigned which survival role, and how the group reacts to that responsibility landing on them"
+    if focus == "human-valuation":
+        return "show the dehumanizing price logic, retrieval language, or cold efficiency that treats people as assets instead of lives"
+    if focus == "base-founding":
+        return "show the moment this shelter stops being temporary and begins to feel like a named base with rules and purpose"
+    if focus == "base-resource-balance":
+        return "show the painful tradeoff between water, food, seeds, or future survival so one object carries the cost of the next decision"
+    if focus == "gain-cost-summary":
+        return "show how the group's gains and new burdens arrive together in the same beat: more people, more water, more debt, more enemies"
+    if focus == "survival-values":
+        return "show the brutal value system being spoken aloud so the audience can see exactly what this world counts and what it refuses to count"
+    if focus == "machine-maintenance":
+        return "show the failing filter machine, the improvised maintenance, and the people learning to keep it alive"
+    if focus == "repair-logistics":
+        return "show the parts, tools, and practical repair problem the group is solving before they can move on"
+    if focus == "hazard-crossing":
+        return "show the timed crossing plan, the hazard underfoot, and how each person must move to survive it"
     if focus == "insect-combat":
         return "show the cramped tunnel fight against armored insects, the improvised survival tactics, and what the group is risking in the same beat"
+    if focus == "creature-threat":
+        return "show the armored creature threat before impact, so the audience understands exactly what sound, jaws, or movement freezes the group in place"
+    if focus == "escape-burst":
+        return "show the exact escape burst as the group breaks cover, grabs what matters, and runs in the narrow window before the threat closes again"
+    if focus == "identity-probe":
+        return "show the challenge over who someone really is, with the suspected identity and the group's reaction visible in the same beat"
     if focus == "water-inspection":
         return "show the suspicious clean water and the reaction to what seems wrong about it"
     if focus == "group-dialogue" and has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "cho uong"]):
@@ -1142,12 +1921,42 @@ def infer_primary_subject(narration, scene_state):
         return "Lam Tich in the death memory"
     if focus == "authority-introduction":
         return "the person, weapon, or symbol of authority dominating the current beat"
+    if focus == "appraisal-glance":
+        return "the person scanning the group and the vulnerable survivors or gear being silently evaluated"
     if focus in {"well-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail"}:
         return "the key object or trace described in the narration"
     if focus == "route-planning":
         return "the people studying the route options and deciding the next way forward"
     if focus == "board-exchange":
         return "the people focused on the writing board and the child exchange around it"
+    if focus == "camp-rules-recital":
+        return "the person laying down the rules for staying and the people who now have to live under them"
+    if focus == "acceptance-risk":
+        return "the person defending acceptance, the doubters, and the newly arrived survivors whose risk is being debated"
+    if focus == "control-sabotage":
+        return "the person reading the control system and whoever is close enough to act on the sabotage plan"
+    if focus == "forced-route-test":
+        return "the person being forced into danger first, the enforcers behind them, and the witnesses who know what the test means"
+    if focus == "treatment-setup":
+        return "the injured person, the hidden treatment corner, and whoever must decide whether the medicine gamble is worth it"
+    if focus == "human-valuation":
+        return "the speaker pricing or retrieving human lives and the people forced to absorb that logic"
+    if focus == "base-founding":
+        return "the people defining this place as a real base and the person driving that decision"
+    if focus == "base-resource-balance":
+        return "the person handling the precious resource and the people forced to weigh present survival against tomorrow"
+    if focus == "gain-cost-summary":
+        return "the whole group as new gains and new burdens settle onto them at the same time"
+    if focus == "survival-values":
+        return "the speaker naming the wasteland's real values and the listeners forced to accept what matters more than the dead"
+    if focus == "machine-maintenance":
+        return "the people keeping the filter machine alive and the failing system everyone depends on"
+    if focus == "creature-threat":
+        return "the person nearest the threat and the creature whose sound or movement freezes the group"
+    if focus == "escape-burst":
+        return "the people breaking cover with the one object or person they cannot leave behind"
+    if focus == "identity-probe":
+        return "the challenger, the questioned person, and the group waiting for the identity answer to land"
     if focus == "water-inspection":
         return "the person inspecting the water and whoever is reacting to the danger in it"
     if focus == "group-dialogue" and has_any(plain, ["nua ngum", "them nua ngum", "chia nuoc", "cho uong"]):
@@ -1276,6 +2085,28 @@ def summarize_visible_action(literal, focus=""):
             text = fallback
     if focus == "authority-introduction":
         text = "the feared veteran raises the worn hammer and the whole space falls silent around that authority"
+    elif focus == "camp-rules-recital":
+        text = "the speaker lays out the rules for staying, and everyone present measures what those rules will demand of them"
+    elif focus == "appraisal-glance":
+        text = "a calculating survivor scans the wheelchair, radio, wounds, and posture of the whole group to judge weakness, value, and leverage"
+    elif focus == "acceptance-risk":
+        text = "the group weighs whether to keep dangerous new survivors despite the risk of betrayal or instability they may bring"
+    elif focus == "forced-route-test":
+        text = "someone is shoved or ordered into the dangerous branch first so the others can read the trap through that person's risk"
+    elif focus == "treatment-setup":
+        text = "the injured person is hidden away and confronted with expired gene medicine that may be the only ugly chance left"
+    elif focus == "base-resource-balance":
+        text = "the scene weighs one precious resource against another, making water, food, or seeds carry the cost of the next decision"
+    elif focus == "gain-cost-summary":
+        text = "the group gains people, water, maps, and hope at the same time that debt, enemies, and responsibility close in around them"
+    elif focus == "survival-values":
+        text = "someone states the brutal survival logic of this world, and everyone nearby feels what now matters more than comfort, fairness, or the dead"
+    elif focus == "creature-threat":
+        text = "the armored creature grinds metal or shifts in the dark, and the nearest survivor visibly understands how close death is"
+    elif focus == "escape-burst":
+        text = "the group bursts from cover with the salvaged core or needed gear and runs in the instant the threat turns the wrong way"
+    elif focus == "identity-probe":
+        text = "someone openly questions who a vulnerable person really is, and everyone nearby waits for the answer with immediate alarm"
     if focus == "route-planning" and has_any(plain, ["loi chinh", "loi bao tri", "loi thoat nuoc", "duong ham", "ban do"]):
         text = "the group lays out the tunnel-entry options and chooses which route to take"
     elif focus == "medicine-allocation" and has_any(plain, ["moi nguoi mot phan thuoc", "nua phan", "chia thuoc", "phan thuoc"]):
@@ -1286,6 +2117,20 @@ def summarize_visible_action(literal, focus=""):
         text = "a thrown object or sudden noise pulls the nearby danger sideways for one urgent moment"
     elif focus == "law-recital":
         text = "the harsh survival rules are spoken or shown in full view, and everyone measures what those rules will cost"
+    elif focus == "debt-ledger":
+        text = "the debt, interest, or name in the ledger is being argued over while everyone measures who will be bound by the deal"
+    elif focus == "role-assignment":
+        text = "someone is assigned a necessary survival role, and the group feels the weight of that responsibility settling into place"
+    elif focus == "human-valuation":
+        text = "someone coldly prices, retrieves, or describes people like assets, and the others react to that dehumanizing logic"
+    elif focus == "base-founding":
+        text = "the group names, defines, or reorganizes this place so it becomes a real base instead of a temporary stop"
+    elif focus == "machine-maintenance":
+        text = "the group listens to, repairs, feeds, or keeps the filter machine running because water depends on it"
+    elif focus == "repair-logistics":
+        text = "the group lays out the needed parts, tools, and repair steps for moving the injured or reaching the next route"
+    elif focus == "hazard-crossing":
+        text = "the group studies the deadly crossing rhythm and prepares how each person will get over alive"
     elif focus == "ration-stop" and has_any(plain, ["vach binh", "mot phan", "nua phan", "moi nguoi mot ngum", "chia nuoc"]):
         text = "the group measures out the last water and medicine portions while everyone watches what each person will get"
     elif focus == "group-dialogue" and has_any(plain, ["bo", "duong ham", "loi", "bo giap than", "vao ham"]):
@@ -1312,6 +2157,8 @@ def summarize_visible_action(literal, focus=""):
         text = "the group settles who can still move, who must be carried, and what burden each person takes next"
     elif focus == "board-exchange":
         text = "the child writes or reacts through the board while the others read, answer, or tease in the same beat"
+    elif focus == "control-sabotage":
+        text = "someone studies the old controls, lights, or lock system and realizes how cutting power could jam the doors or change the trap"
     elif focus == "water-inspection":
         text = "someone studies the boiling water and realizes the clean surface still carries the smell or threat hidden inside it"
     elif focus == "group-dialogue" and len(text.split()) > 18:
@@ -1326,12 +2173,24 @@ def summarize_visible_action(literal, focus=""):
         text = "show how the medicine or ration is being divided between the named people"
     elif focus == "market-bargain" and has_any(plain, ["tin la thu duy nhat", "nuoc mac hon", "tra tien", "vong vo", "cac vi can gi", "tin ve"]):
         text = "the trader and the visitors probe each other over price, value, and how much the goods or information are worth"
+    elif focus == "market-bargain" and has_any(plain, ["doi nuoc cho tre con", "doi thuoc cho hai nguoi bi thuong", "doi nuoc", "doi thuoc"]):
+        text = "the trade goods are placed on the table and the exact exchange is stated: water for the children and medicine for the wounded"
     elif focus == "market-bargain" and len(text.split()) > 18:
         text = "show the trade presentation or bargaining move exactly happening in this beat"
     elif focus in {"well-discovery", "resource-discovery"} and len(text.split()) > 18:
         text = "show the discovery action and the object's importance exactly as described"
     elif focus == "journey-column" and len(text.split()) > 18:
         text = "show the group's current movement beat and the survival strain shaping it"
+    elif focus == "human-valuation" and len(text.split()) <= 8:
+        text = "the speaker reduces a person to a file, price, or disposable asset while the others absorb the cruelty of it"
+    elif focus == "human-valuation" and has_any(plain, ["vong so", "mot ngay thu duong", "tra cho nguoi nha"]):
+        text = "a tagged trial-runner is displayed with a water price owed to their family, and the group recoils at a human life being listed like cargo"
+    elif focus == "base-founding" and len(text.split()) <= 8:
+        text = "the group lands on a name or shared rule that turns this rough shelter into a real base"
+    elif focus == "machine-maintenance" and len(text.split()) <= 8:
+        text = "someone diagnoses or nurses the filter machine because the whole camp depends on it staying alive"
+    elif focus == "control-sabotage" and len(text.split()) <= 8:
+        text = "someone spots the old control weakness and realizes the locks or doors can be jammed by cutting power"
     if len(text.split()) <= 3:
         if focus == "group-dialogue":
             text = "show the current speaker, listener, and the emotional pressure inside the exchange"
@@ -1365,15 +2224,15 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
     obj = infer_primary_object(props, narration)
     kind = "subject-center"
 
-    if focus in {"well-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail", "water-inspection", "danger-distraction"}:
+    if focus in {"well-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail", "water-inspection", "danger-distraction", "base-resource-balance"}:
         kind = "object-center"
-    elif focus in {"market-bargain", "threshold-negotiation", "group-dialogue", "route-planning", "medicine-allocation", "board-exchange"}:
+    elif focus in {"market-bargain", "threshold-negotiation", "group-dialogue", "route-planning", "medicine-allocation", "board-exchange", "control-sabotage", "debt-ledger", "repair-logistics", "role-assignment", "human-valuation", "base-founding", "machine-maintenance", "camp-rules-recital", "acceptance-risk", "forced-route-test", "treatment-setup", "gain-cost-summary", "appraisal-glance", "survival-values", "identity-probe"}:
         kind = "exchange-center"
     elif focus == "law-recital":
         kind = "object-center"
     elif focus in {"authority-introduction", "ration-pressure"}:
         kind = "reaction-center"
-    elif focus in {"journey-column", "radio-warning", "ration-stop", "doorway-threat", "ash-bluff", "dog-attack", "dog-pack", "medical-strain", "insect-combat"}:
+    elif focus in {"journey-column", "radio-warning", "ration-stop", "doorway-threat", "ash-bluff", "dog-attack", "dog-pack", "medical-strain", "insect-combat", "hazard-crossing", "escape-burst"}:
         kind = "action-center"
     elif focus in {"decision-reaction", "tan-da-condition", "aftermath", "memory-flashback", "bitter-realization"}:
         kind = "reaction-center"
@@ -1393,8 +2252,34 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
         obj = "Ninh's writing board as the object the others are reacting to"
     elif kind == "exchange-center" and has_any(plain, ["bang gia", "tra gia", "mot gao nuoc", "mot lieu thuoc"]):
         obj = "the trade board, ration terms, or goods being negotiated in the scene"
+    elif kind == "exchange-center" and has_any(plain, ["no bao nhieu", "tinh lai", "hop dong viec", "ghi ten", "so no", "lai tinh theo ngay"]):
+        obj = "the debt ledger, interest terms, or written obligation deciding who owes what"
+    elif kind == "exchange-center" and has_any(plain, ["hom nay can mat cua nguoi", "can mat cua nguoi", "giao cho", "nguoi doc gio", "ta biet"]):
+        obj = "the assigned role, task, or responsibility being placed on a specific person"
+    elif kind == "exchange-center" and has_any(plain, ["ho so ghi ma so", "kho ban", "chua gap dung gia", "dung nguoi re hon", "khong con gia tri", "de dieu khien"]):
+        obj = "the record, value logic, or retrieval claim reducing people to assets in the current exchange"
+    elif kind == "exchange-center" and has_any(plain, ["vong so", "mot ngay thu duong", "tra cho nguoi nha"]):
+        obj = "the numbered wrist ring, chest board, and water-price terms proving that a human life is being valued like cargo"
+    elif kind == "exchange-center" and has_any(plain, ["muon o lai phai theo luat", "khong ban nguoi", "do chung phai bao", "nuoc chia theo viec va benh", "ai giau dao hai doi"]):
+        obj = "the camp rules and shared terms of belonging that now define what staying with the group really means"
+    elif kind == "exchange-center" and has_any(plain, ["se co nguoi phan", "van nhan", "co tay con vet xich", "vua thoat khoi vong so"]):
+        obj = "the risk of betrayal or instability hanging over the choice to accept the newly freed survivors"
+    elif kind == "exchange-center" and has_any(plain, ["kho den vang", "can ten", "ten noi nay", "trai cuu te", "dung can cu"]):
+        obj = "the name, posted idea, or shared agreement turning this warehouse into a real base"
+    elif kind == "exchange-center" and has_any(plain, ["dua vao goc kin", "ong thuoc gen qua han", "hai ong thuoc gen", "thuoc gen qua han"]):
+        obj = "the expired gene-medicine tubes and the hidden treatment setup that survival now depends on"
+    elif kind == "exchange-center" and has_any(plain, ["may loc", "loc nuoc", "than loc", "cat lot vao van", "nghe tieng may"]):
+        obj = "the filter machine, valve, charcoal, or failing part everyone must understand to keep water flowing"
+    elif kind == "exchange-center" and has_any(plain, ["vong bi", "mieng ton", "truc thang", "ton tu thao", "xe nho", "sua"]):
+        obj = "the needed repair parts, tools, or improvised transport problem being worked through"
+    elif kind == "exchange-center" and has_any(plain, ["moi lan gap nga re", "keo mot nguoi ra", "ra lenh di vao", "nen sap", "khong ai keo kip", "keo day sang nhanh c 1"]):
+        obj = "the deadly branch, the trip line or false path, and the human body being used to test which route collapses first"
     elif kind == "exchange-center" and has_any(plain, ["cac vi can gi", "tin ve", "tra tien", "vong vo", "nuoc mac hon"]):
         obj = "the requested goods, information, or price terms being tested between trader and visitors"
+    elif kind == "exchange-center" and has_any(plain, ["tranh duong nuoc", "tang gia nuoc", "gia re hon"]):
+        obj = "the local water route leverage and the raised price pressure being used to trap the other side in a worse bargain"
+    elif kind == "exchange-center" and has_any(plain, ["anh mat han luot qua", "luot qua xe lan", "dung lai o radio", "dung tren ban tay bang mau"]):
+        obj = "the wheelchair, radio, wounds, and visible weakness being silently assessed for leverage"
     elif kind == "exchange-center" and has_any(plain, ["dua nuoc", "gao nuoc", "nuoc trong", "thay day"]):
         obj = "the clean water or ladle being offered, withheld, or inspected in the current exchange"
     elif kind == "exchange-center" and has_any(plain, ["bang viet", "viet xau", "doc cham", "khong noi duoc", "tam bang"]):
@@ -1409,6 +2294,8 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
         obj = "the ration share or withheld water/medicine creating the visible emotional pressure"
     elif kind == "reaction-center" and has_any(plain, ["chi con mot tay", "nhac bua len", "ca kho deu yen", "danh tieng"]):
         obj = "the one-handed hammer and the authority it carries in the current scene"
+    elif kind == "object-center" and has_any(plain, ["hat giong", "nuoc dung cho hat", "it nuoc cho nguoi", "bat chao", "ho ngung suong", "nuoc dau vao"]):
+        obj = "the water, seed box, or thin bowl of food carrying the visible tradeoff between surviving tonight and surviving later"
     elif has_any(plain, ["vien tinh thach", "rang cho hai ham", "dat len ban", "tui nho rang cho"]):
         obj = "the crystals, cracked stones, or bag of mutant teeth being placed on the table for trade"
         kind = "object-center"
@@ -1467,6 +2354,40 @@ def prioritize_visual_elements(characters, setting, actions, props, center):
         for item in source:
             add_unique(must_show, item)
     return must_show[:8]
+
+
+def prune_setting_for_focus(setting, scene_state, narration):
+    plain = normalize_vi(narration)
+    focus = scene_state.get("focus", "")
+    if not setting:
+        return setting
+    pruned = list(setting)
+    if focus in {"market-bargain", "human-valuation", "intake-registration", "debt-ledger", "appraisal-glance"}:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "tunnel 4", "inside the shelter around the last dirty water", "maintenance warehouse turned survival base"
+            ])
+        ] or pruned
+    if focus in {"base-resource-balance", "machine-maintenance", "camp-rules-recital", "acceptance-risk", "gain-cost-summary", "survival-values"}:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "gray station", "rail-junction trading post"
+            ])
+        ] or pruned
+    if focus in {"insect-combat", "hazard-crossing", "route-planning", "memory-navigation", "treatment-setup", "control-sabotage", "creature-threat"}:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "gray station", "rail-junction trading post"
+            ])
+        ] or pruned
+    if focus == "escape-burst" and has_any(plain, ["toa", "mep ray", "ga xam"]):
+        gray_station = [item for item in pruned if "gray station" in normalize_vi(item)]
+        if gray_station:
+            pruned = gray_station + [item for item in pruned if item not in gray_station]
+    return pruned
 
 
 def scene_beat_metadata(narration, scene_state, actions, setting, props, continuity=None):
@@ -1554,14 +2475,52 @@ def shot_type_for(narration, scene_index):
         return "cramped tunnel-combat shot with armored insects, improvised tools, electric water danger, and the group's body positions clearly readable"
     if primary_beat == "market-bargain":
         return "market exchange shot with seller, visitors, trade goods, and power balance clearly readable"
+    if primary_beat == "appraisal-glance":
+        return "appraisal-glance shot with the calculating observer, the scanned survivors or gear, and the silent power read clearly visible at a glance"
     if primary_beat == "authority-introduction":
         return "authority-introduction shot with the person, weapon, and everyone else's reaction to their presence clearly readable"
+    if primary_beat == "camp-rules-recital":
+        return "camp-rules-recital shot with the speaker laying out survival rules, the listeners absorbing them, and the social cost of belonging clearly readable"
+    if primary_beat == "acceptance-risk":
+        return "acceptance-risk shot with the defender, the doubters, and the newly arrived survivors whose danger is being debated clearly readable"
     if primary_beat == "danger-distraction":
         return "danger-distraction shot with the decoy object or noise, the nearby threat shifting toward it, and the survivors reacting in the same frame"
     if primary_beat == "board-exchange":
         return "board-exchange shot with the writing board, the child using it, and the exact response from the others clearly readable"
+    if primary_beat == "control-sabotage":
+        return "control-sabotage shot with the panel, lock lights or old controls, and the person realizing how to jam, cut, or exploit the system clearly readable"
+    if primary_beat == "forced-route-test":
+        return "forced-route-test shot with the dangerous branch, the person pushed ahead first, and the people behind them reading the trap through that risk clearly readable"
+    if primary_beat == "treatment-setup":
+        return "treatment-setup shot with the hidden corner, the injured survivor, and the expired medicine that may still have to be used clearly readable"
     if primary_beat == "law-recital":
         return "law-recital shot with the posted rules or spoken code, the listeners, and the brutal meaning clearly readable"
+    if primary_beat == "debt-ledger":
+        return "debt-ledger shot with the ledger, the named debtor, and the social pressure of the terms clearly readable"
+    if primary_beat == "human-valuation":
+        return "human-valuation shot with the speaker treating people like priced assets, the target of that logic, and the surrounding reaction clearly readable"
+    if primary_beat == "intake-registration":
+        return "intake-registration shot with the queue, the person collecting names and skills, and the survival screening details clearly readable"
+    if primary_beat == "base-founding":
+        return "base-founding shot with the warehouse space, the speaker naming or defining it, and the group's response to making it a real base clearly readable"
+    if primary_beat == "base-resource-balance":
+        return "base-resource-balance shot with the precious water, seeds, or thin food, and the people forced to decide what tomorrow is worth clearly readable"
+    if primary_beat == "gain-cost-summary":
+        return "gain-cost-summary shot with the expanded group, the newly won supplies, and the heavier burden settling in at the same moment"
+    if primary_beat == "survival-values":
+        return "survival-values shot with the speaker stating the wasteland's brutal logic and the listeners absorbing exactly what now matters more than comfort or the dead"
+    if primary_beat == "machine-maintenance":
+        return "machine-maintenance shot with the failing filter machine, the person working on it, and the survival stakes of keeping it running clearly readable"
+    if primary_beat == "diagnostic-pressure":
+        return "diagnostic-pressure shot with the speaker naming the body's collapse, the threatened person, and the danger of delay clearly readable"
+    if primary_beat == "role-assignment":
+        return "role-assignment shot with the assigned person, the speaker, and the responsibility being handed over clearly readable"
+    if primary_beat == "repair-logistics":
+        return "repair-logistics shot with the needed parts, the person solving it, and the movement problem being fixed clearly readable"
+    if primary_beat == "hazard-crossing":
+        return "hazard-crossing shot with the dangerous path, the timing cue, and the next person preparing to move clearly readable"
+    if primary_beat == "memory-navigation":
+        return "memory-navigation shot with the remembered tunnel markers, the person guiding from memory, and the route clues clearly readable"
     if primary_beat == "route-planning":
         return "route-planning shot with the map, the speakers, and the tunnel-entry options clearly readable"
     if primary_beat == "water-inspection":
@@ -1570,6 +2529,12 @@ def shot_type_for(narration, scene_index):
         return "medicine-allocation shot with the portions, recipients, and survival stakes clearly readable"
     if primary_beat == "ration-pressure":
         return "ration-pressure reaction shot with the scarce portion, the thirsty reaction, and the social pressure clearly readable"
+    if primary_beat == "creature-threat":
+        return "creature-threat shot with the grinding jaws or armored body, the nearest survivor's fear, and the immediate danger clearly readable"
+    if primary_beat == "escape-burst":
+        return "escape-burst action shot with the group breaking cover, the carried salvage or core, and the pursuing threat window clearly readable"
+    if primary_beat == "identity-probe":
+        return "identity-probe shot with the questioned person, the challenger, and the group's immediate alarm clearly readable"
     if has_any(plain, ["dat len ban", "vien tinh thach", "tui nho rang cho", "rang cho hai ham"]):
         return "trade presentation shot with the presenter, table surface, and exact goods clearly readable at first glance"
     if primary_beat == "radio-warning":
@@ -1593,7 +2558,7 @@ def shot_type_for(narration, scene_index):
             return "identity-probe shot with the questioned person, the challenger, and the group's immediate alarm clearly readable"
         if has_any(plain, ["giong nguoi lam an", "dang ghet cho nao", "doi giam gia", "vong vo", "thich"]):
             return "verbal-sparring shot with both speakers, their posture, and the contest for social control clearly readable"
-        if has_any(plain, ["bao truoc", "can than", "anh hung", "khong quay lai"]):
+        if has_any(plain, ["bao truoc", "can than", "anh hung", "khong quay lai", "da bao", "chay la chet", "dung day cho chet", "dung chay"]):
             return "warning-rebuke shot with the speaker, the target, and the tense pause after the warning clearly readable"
         if has_any(plain, ["nguoi im", "ta khong uong", "khong can", "khong uong"]):
             return "command-pressure shot with the resisting person, the enforcer, and the forced compliance clearly readable"
@@ -1676,6 +2641,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         add_unique(setting, "District 17 wasteland survival setting")
     for detail in story_setting_details(narration, continuity):
         add_unique(setting, detail)
+    setting = prune_setting_for_focus(setting, scene_state, narration)
 
     keyword_rules = [
         (["nap hop", "hai ngum", "nuoc sach"], props, "small metal can lid holding the last two sips of yellowish filtered water"),
@@ -1736,8 +2702,24 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         mood = ["tense tactical planning, limited options, and everyone measuring risk before the next move"]
     elif focus == "board-exchange":
         mood = ["small human warmth, vulnerability, and social tension carried through the writing board exchange"]
+    elif focus == "control-sabotage":
+        mood = ["tight containment, fragile opportunity, and the dangerous intelligence of reading an old control system under pressure"]
     elif focus == "law-recital":
         mood = ["hard survival law, social judgment, and the cold cost of belonging to this group"]
+    elif focus == "debt-ledger":
+        mood = ["cold debt pressure, written obligation, and the social violence hidden inside bookkeeping"]
+    elif focus == "human-valuation":
+        mood = ["dehumanizing market logic, cold efficiency, and the moral sickness of pricing a human life like inventory"]
+    elif focus == "base-founding":
+        mood = ["hard-won shelter, rough collective purpose, and the fragile hope of turning survival into a real base"]
+    elif focus == "machine-maintenance":
+        mood = ["practical strain, improvised engineering, and constant anxiety because water or survival depends on the machine holding together"]
+    elif focus == "role-assignment":
+        mood = ["quiet authority, practical necessity, and the emotional weight of being trusted or burdened with a task"]
+    elif focus == "repair-logistics":
+        mood = ["practical urgency, scrap ingenuity, and tense cooperation around making something barely work"]
+    elif focus == "hazard-crossing":
+        mood = ["timed danger, controlled fear, and full-body concentration as each step could kill someone"]
     elif focus == "water-inspection":
         mood = ["suspicion, unease, and the sickening realization that something is wrong with seemingly clean water"]
     elif focus == "danger-distraction":
