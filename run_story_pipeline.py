@@ -49,11 +49,11 @@ DEFAULT_NEGATIVE = (
     "missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, "
     "over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
     ", nude, naked, topless, shirtless woman, bare chest, bare torso, exposed breasts, exposed nipples, areola, "
-    "underboob, sideboob, cleavage focus, exposed navel, full bare abdomen, lingerie, bikini, underwear, bra, bralette, crop top, deep neckline, off-shoulder, bare shoulders, collarbone, clavicle, "
-    "see-through clothing, wet revealing clothing, erotic pose, seductive pose, pin-up pose, reclining pin-up pose, spread legs, "
+    "explicit underboob, explicit sideboob, cleavage focus, lingerie, bikini, underwear, bra, bralette, "
+    "see-through clothing, wet revealing clothing, erotic pose, seductive pose, reclining pin-up pose, spread legs, "
     "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
     "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
-    "open jacket, unbuttoned jacket, open shirt, wardrobe malfunction, boudoir, sultry expression, bedroom eyes, glamour pose, visible chest skin, visible torso skin, visible stomach skin, "
+    "open jacket with breasts exposed, open shirt with breasts exposed, wardrobe malfunction, boudoir, fetish glamour pose, "
     "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure"
 )
 
@@ -66,12 +66,12 @@ GENDER_CLARITY_RULE = (
 LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with a striking feminine face, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
-    "practical summer wasteland clothing with bare arms and readable legs, open neckline or upper chest allowed but nipples and intimate areas fully covered by fabric, "
+    "practical summer wasteland clothing with bare arms and readable legs, fitted survival-first layers, open collar or some upper chest allowed when the scene and weather support it, subtle wasteland pin-up energy without turning into explicit fetish framing, "
     "stubborn survival dignity, attractive in a believable human way"
 )
 
 YOUTUBE_SAFE_VISUAL_RULE = (
-    "YouTube-safe visual rule: practical survival clothing may expose arms, legs, shoulders, and some upper chest when the character design calls for it, "
+    "YouTube-safe visual rule: practical survival clothing may expose arms, legs, shoulders, stomach, and some upper chest when the character design calls for it, "
     "but nipples, areola, buttocks, and crotch must always stay covered by fabric. "
     "No nudity, no exposed breasts, and no shot that treats the chest, buttocks, or crotch as the visual focus."
 )
@@ -83,8 +83,8 @@ LAM_TICH_FACE_RULE = (
 )
 
 TAN_DA_VISUAL = (
-    "Tan Da, a tall muscular Asian male mercenary with a handsome upright face, strong brows, steady alert eyes, weathered jawline, "
-    "broad shoulders, powerful build, black tactical survival clothing, dirty bandages at the abdomen when the narration calls for it, "
+    "Tan Da, a tall muscular Asian male survivor with a handsome upright face, strong brows, steady alert eyes, weathered jawline, "
+    "broad shoulders, powerful build, worn dark scavenger workwear or practical survival layers, dirty bandages at the abdomen when the narration calls for it, "
     "protective righteous presence, exhausted but still physically imposing, never villain-coded unless the story beat says so"
 )
 
@@ -499,9 +499,9 @@ def split_story_units(text):
 def extract_character_mentions(text):
     plain = normalize_vi(text)
     mentions = []
-    if has_any(plain, ["lam tich", "co gai", "nu chinh", "nang"]):
+    if has_any(plain, ["lam tich"]):
         mentions.append(("lam-tich", "Lam Tich", LAM_TICH_VISUAL))
-    if has_any(plain, ["tan da", "tan ca", "nguoi dan ong", "linh danh thue", "han"]):
+    if has_any(plain, ["tan da", "tan ca"]):
         mentions.append(("tan-da", "Tan Da", TAN_DA_VISUAL))
     if has_any(plain, ["con cho", "cho hai ham", "thu bien di", "lon giap bun", "quai vat"]) and not has_any(plain, ["rang cho hai ham", "tui nho rang cho", "tui rang cho", "tui rang", "rang trong tui", "bag of mutant teeth"]):
         mentions.append(("monster", "the monster or mutant beast in the narration", "the exact monster described by the narration"))
@@ -1035,6 +1035,12 @@ def classify_primary_scene_beat(narration):
     plain = normalize_vi(narration)
     dialogue_subbeat = infer_dialogue_subbeat(plain) if has_dialogue_signals(narration) else ""
     trade_context = has_any(plain, ["bang gia", "mot gao nuoc", "mot lieu thuoc", "noi chuyen gia", "tra tien", "tra gia", "tin ve", "cac vi can gi", "doi nuoc", "doi thuoc", "doi cho tre con", "tra doi"])
+    non_medical_context = has_any(plain, [
+        "gieng cu", "mieng gieng", "lon sat treo bang day", "gio am", "mui am", "hoi nuoc",
+        "duong ray", "doan nguoi", "xe lan", "cot dien gay nghieng", "dat len ban", "vien tinh thach",
+        "rang cho hai ham", "ga xam", "bang gia", "tra gia", "doi nuoc", "doi thuoc", "nuoc dang soi",
+        "vong so", "mot ngay thu duong", "kho bao tri", "duong ham so 4", "ban do duong ray"
+    ])
     if has_any(plain, ["anh mat han luot qua", "luot qua xe lan", "dung lai o radio", "dung tren ban tay bang mau", "nhin doi minh", "nguoi bi thuong. tre con. no moi. nuoc moi. ke thu moi"]):
         return "appraisal-glance"
     if has_any(plain, ["dem nguoi chet lam gi", "dem nuoc con lai quan trong hon", "hieu biet, hop tac", "quyet dinh khong tham qua sau con", "lang phi tai nguyen", "tra ten lai cho ho", "mua mot dem binh yen"]):
@@ -1153,7 +1159,9 @@ def classify_primary_scene_beat(narration):
         return "water-scent"
     if has_any(plain, ["dau giay", "hoa van tam giac", "manh quan vai", "vet quan vai", "vet chan", "vet in trong bui do"]):
         return "track-discovery"
-    if has_any(plain, ["vet thuong", "sot", "mo hoi lanh", "bang gac", "bang vet thuong", "vet mau", "chay mau", "bi can", "dau den mat toi"]):
+    if has_any(plain, ["sot", "mo hoi lanh", "bang gac", "bang vet thuong", "vet mau", "chay mau", "bi can", "dau den mat toi"]) and not non_medical_context:
+        return "medical-strain"
+    if has_any(plain, ["vet thuong", "uong thuoc", "thuoc gen", "gen sup do", "vet mau tham"]) and has_any(plain, ["sot", "mo hoi lanh", "dau", "nhuc", "yeu", "run", "mat toi", "bang", "thuoc"]) and not non_medical_context:
         return "medical-strain"
     if has_any(plain, ["duong ray", "duong ray cu", "doi chim xam", "ca doan", "doan nguoi", "di ve phia nam"]) or (has_any(plain, ["xe lan", "truc xe", "vong banh", "cot ket"]) and has_any(plain, ["doc duong", "di ve phia nam", "ca doan", "doan nguoi", "duong ray"])):
         return "journey-column"
@@ -1932,8 +1940,8 @@ def infer_primary_subject(narration, scene_state):
         return " and ".join(mention_labels[:2])
     if len(mention_labels) == 1:
         return mention_labels[0]
-    if focus in {"tan-da-condition", "aftermath"} or "tan da" in plain or "nguoi dan ong" in plain or "linh danh thue" in plain:
-        if "lam tich" in plain or "nang" in plain:
+    if focus in {"tan-da-condition", "aftermath"} or "tan da" in plain:
+        if "lam tich" in plain:
             return "Lam Tich and Tan Da"
         return "Tan Da"
     if focus in {"dog-awakening", "dog-pack", "dog-attack"}:
@@ -2048,10 +2056,19 @@ def prune_characters_for_scene(characters, scene_center, scene_state, narration)
     plain = normalize_vi(narration)
     center_subject = normalize_vi(scene_center.get("subject", ""))
     kind = scene_center.get("kind", "subject-center")
+    focus = scene_state.get("focus", "")
     filtered = []
 
-    if kind == "exchange-center" and has_any(plain, ["viet xau", "doc cham", "khong noi duoc", "khong noi", "bang viet"]):
+    if focus == "board-exchange" or (kind in {"exchange-center", "object-center"} and has_any(plain, ["viet xau", "doc cham", "khong noi duoc", "khong noi", "bang viet", "tam bang"])):
         preferred = ["ninh", "tieu mai"]
+        for item in characters:
+            item_plain = normalize_vi(item)
+            if any(token in item_plain for token in preferred):
+                add_unique(filtered, item)
+        return filtered or characters
+
+    if kind == "object-center" and has_any(plain, ["gieng cu", "mieng gieng", "lon sat treo bang day", "mui dong", "co nguoi o duoi"]):
+        preferred = ["lam tich", "ninh", "tan da", "di man", "tieu mai"]
         for item in characters:
             item_plain = normalize_vi(item)
             if any(token in item_plain for token in preferred):
@@ -2067,6 +2084,14 @@ def prune_characters_for_scene(characters, scene_center, scene_state, narration)
         return filtered or characters
 
     if kind in {"object-center", "reaction-center"} and center_subject:
+        subject_tokens = [part.strip() for part in center_subject.split(" and ") if part.strip()]
+        for item in characters:
+            item_plain = normalize_vi(item)
+            if any(token in item_plain for token in subject_tokens):
+                add_unique(filtered, item)
+        return filtered or characters
+
+    if kind == "action-center" and center_subject and focus not in {"journey-column", "hazard-crossing", "insect-combat"}:
         subject_tokens = [part.strip() for part in center_subject.split(" and ") if part.strip()]
         for item in characters:
             item_plain = normalize_vi(item)
@@ -2249,12 +2274,14 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
 
     if focus in {"well-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail", "water-inspection", "danger-distraction", "base-resource-balance"}:
         kind = "object-center"
-    elif focus in {"market-bargain", "threshold-negotiation", "group-dialogue", "route-planning", "medicine-allocation", "board-exchange", "control-sabotage", "debt-ledger", "repair-logistics", "role-assignment", "human-valuation", "base-founding", "machine-maintenance", "camp-rules-recital", "acceptance-risk", "forced-route-test", "treatment-setup", "gain-cost-summary", "appraisal-glance", "survival-values", "identity-probe"}:
+    elif focus in {"market-bargain", "threshold-negotiation", "group-dialogue", "route-planning", "medicine-allocation", "control-sabotage", "debt-ledger", "repair-logistics", "role-assignment", "human-valuation", "base-founding", "machine-maintenance", "camp-rules-recital", "acceptance-risk", "forced-route-test", "treatment-setup", "gain-cost-summary", "survival-values", "identity-probe"}:
         kind = "exchange-center"
     elif focus == "law-recital":
         kind = "object-center"
-    elif focus in {"authority-introduction", "ration-pressure"}:
+    elif focus in {"authority-introduction", "ration-pressure", "appraisal-glance", "child-observation"}:
         kind = "reaction-center"
+    elif focus == "board-exchange":
+        kind = "object-center"
     elif focus in {"journey-column", "radio-warning", "ration-stop", "doorway-threat", "ash-bluff", "dog-attack", "dog-pack", "medical-strain", "insect-combat", "hazard-crossing", "escape-burst"}:
         kind = "action-center"
     elif focus in {"decision-reaction", "tan-da-condition", "aftermath", "memory-flashback", "bitter-realization"}:
@@ -2268,6 +2295,8 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
     elif has_any(plain, ["bang viet", "tam bang", "viet len bang"]):
         obj = "Ninh's small writing board with the exact message or gesture described in the narration"
         kind = "object-center"
+        if has_any(plain, ["ninh", "tieu mai"]):
+            subject = "Ninh and Tieu Mai"
     elif has_any(plain, ["luat cua", "mot:", "hai:", "ba:", "tam thep treo", "chu sau", "khac len tam thep", "vet mau cu"]):
         obj = "the posted rules, metal plaque, or spoken survival code that everyone is measuring themselves against"
         kind = "object-center"
@@ -2326,6 +2355,8 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
         obj = "the battered survival radio carrying the exact warning or message from the narration"
     elif has_any(plain, ["xe lan", "truc xe", "vong banh", "cot ket"]):
         obj = "the damaged wheelchair or improvised transport carrying the injured person"
+        if has_any(plain, ["tan da", "tieu mai", "tieu bao", "tieu ngo"]):
+            kind = "action-center"
     elif has_any(plain, ["dau giay", "vet chan", "hoa van tam giac", "manh quan vai", "vet quan vai"]):
         obj = "the exact footprints, cloth mark, or track clue the narration describes"
         kind = "object-center"
@@ -2382,9 +2413,47 @@ def prioritize_visual_elements(characters, setting, actions, props, center):
 def prune_setting_for_focus(setting, scene_state, narration):
     plain = normalize_vi(narration)
     focus = scene_state.get("focus", "")
+    location_plain = normalize_vi(scene_state.get("location", ""))
     if not setting:
         return setting
     pruned = list(setting)
+    if "old railway line" in location_plain:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "shelter interior", "gray station", "warehouse-like interior", "train car functions as a separate stall"
+            ])
+        ] or pruned
+    if "old well area" in location_plain:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "shelter interior", "gray station", "warehouse-like interior"
+            ])
+        ] or pruned
+        if not any("old well area" in normalize_vi(item) or "hanging tin can" in normalize_vi(item) for item in pruned):
+            pruned.insert(0, "the old well area with broken concrete, hanging tin can, and signs someone is already below")
+    if "gray station" in location_plain:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "shelter interior", "old well area", "water-filter station", "burning lanes of district 17"
+            ])
+        ] or pruned
+    if "burning lanes of district 17" in location_plain:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "shelter interior", "gray station", "old well area", "warehouse-like interior"
+            ])
+        ] or pruned
+    if "tunnel 4" in location_plain:
+        pruned = [
+            item for item in pruned
+            if not any(token in normalize_vi(item) for token in [
+                "shelter interior", "gray station", "old railway line", "old well area"
+            ])
+        ] or pruned
     if focus in {"market-bargain", "human-valuation", "intake-registration", "debt-ledger", "appraisal-glance"}:
         pruned = [
             item for item in pruned
@@ -2658,6 +2727,15 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
             add_unique(characters, TAN_DA_VISUAL)
     if not characters and scene_state["focus"] not in {"object-detail", "water-detail", "water-inspection", "well-discovery", "resource-discovery", "track-discovery"}:
         add_unique(characters, "the exact survivor or person described in the narration, shown from side or back view")
+    if scene_state["focus"] in {"board-exchange", "ration-pressure", "appraisal-glance", "market-bargain", "human-valuation"}:
+        filtered_characters = []
+        for item in characters:
+            item_plain = normalize_vi(item)
+            if "the exact survivor or person described in the narration" in item_plain:
+                continue
+            add_unique(filtered_characters, item)
+        if filtered_characters:
+            characters = filtered_characters
 
     add_unique(setting, scene_state["location"])
     if not setting:
@@ -2980,7 +3058,7 @@ def ensure_character_voice_bible(project, text, narrator_voice):
         characters["Lâm Tịch"] = {
             "gender": "female",
             "voice": "vi-female",
-            "aliases": ["Lam Tich", "lâm tịch", "nàng", "cô gái", "cô"],
+            "aliases": ["Lam Tich", "lâm tịch"],
             "traits": ["honest", "afraid", "cold"],
             "voice_note": "fragile but stubborn, soft inner voice, sharper under survival pressure",
         }
@@ -2988,7 +3066,7 @@ def ensure_character_voice_bible(project, text, narrator_voice):
         characters["Tần Dã"] = {
             "gender": "male",
             "voice": "vi-male",
-            "aliases": ["Tan Da", "tần dã", "hắn", "người đàn ông", "lính đánh thuê"],
+            "aliases": ["Tan Da", "tần dã"],
             "traits": ["cold", "righteous"],
             "voice_note": "low, restrained, calm under threat, speaks little",
         }

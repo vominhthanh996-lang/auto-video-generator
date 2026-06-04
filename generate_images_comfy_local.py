@@ -53,7 +53,8 @@ DEFAULT_NEGATIVE = (
     "partial third person fragment, phantom arm, phantom hand, phantom leg, cropped hand when hands should be visible, cropped foot when stance should be visible, "
     "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
     "solo glamour portrait, extreme close-up glamour crop, cropped body, random extra character, missing second character when scene needs two people, "
-    "nude, naked, topless, exposed breasts, exposed nipples, areola, sideboob, underboob, cleavage focus, lingerie, bikini, underwear, see-through clothing, erotic pose, voyeuristic framing"
+    "nude, naked, topless, exposed breasts, exposed nipples, areola, direct nipple outline, explicit underboob, explicit sideboob, cleavage focus, lingerie, bikini, underwear, see-through clothing, erotic pose, voyeuristic framing, "
+    "military squad pose, SWAT team, modern soldier, assault rifle, tactical squad march, random firearm, commando pose, uniform patch focus"
 )
 
 ANATOMY_GUARDRAIL = (
@@ -221,20 +222,30 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
     if "lam tich" in combined_text:
         cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
+        cast_notes.append("Lam Tich should read as attractive, feminine, and slightly glam in a wasteland pin-up way when the beat allows it, and moderate skin exposure is fine as long as it stays non-explicit and does not overpower the story beat")
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("keep only the people who actually drive this beat in the foreground; do not add extra companions unless the narration needs them, and never replace children with generic adults")
     if "ninh" in combined_text or "tieu mai" in combined_text:
         cast_notes.append("if Ninh or Tieu Mai is present, their child height and child face must be obvious at first glance, never adult-proportioned")
+        cast_notes.append("no guns, rifles, military squad styling, or adult combat gear on the children unless the narration explicitly names such an item")
     if "bach nhi" in combined_text and ("market bargaining" in shot_type or "trade" in combined_text):
         cast_notes.append("Bach Nhi must appear as the trader or host at the stall, with the visiting survivors clearly separate from him")
     if any(token in combined_text for token in ["gieng", "well", "hanging tin can", "co nuoc", "mui dong"]):
         cast_notes.append("the old well mouth or water source must stay visible in frame; do not replace the scene with a generic doorway or empty platform")
+        cast_notes.append("show the broken concrete rim, hanging tin can, rope, or the water opening itself when the narration points to the well")
     if any(token in combined_text for token in ["writing board", "bang viet", "viet xau", "doc cham"]):
         cast_notes.append("the writing board must be visible and readable as the social focus of the scene, not hidden offscreen")
+        cast_notes.append("do not add a third foreground child to a writing-board exchange unless the narration explicitly names that child in the same beat")
     if any(token in combined_text for token in ["crystals", "cracked stones", "mutant teeth", "dat len ban", "placed on the table"]):
         cast_notes.append("the trade goods on the table must be the visual center, with one owner presenting them, not duplicated people")
+    if not any(token in combined_text for token in ["gun", "rifle", "pistol", "dao", "knife", "hammer", "moc sat", "weapon", "vu khi"]):
+        cast_notes.append("do not invent guns, rifles, or military weapons that the narration does not mention")
+    if any(token in combined_text for token in ["xe lan", "wheelchair", "stretcher", "tieu mai", "tieu bao", "tieu ngo"]):
+        cast_notes.append("if an adult and a child share the beat, keep both readable in the same frame and do not replace either one with extra adults or extra children")
+    if "lam tich" in combined_text and any(token in combined_text for token in ["journey", "survivor column", "xe lan", "stretcher", "ration", "well", "danger", "blood", "wound", "track", "smoke", "fire"]):
+        cast_notes.append("Lam Tich may stay feminine and attractive here, with acceptable fitted or revealing survival wear, but do not expose nipples, buttocks, or crotch and do not let the outfit overpower the dangerous beat")
 
     action_text = " ".join(actions).lower()
     detail_focus = "close" in shot_type or "detail" in shot_type or "insert" in shot_type or scene_center_kind == "object-center"
@@ -251,7 +262,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     discovery_focus = "resource discovery" in shot_type or "well" in shot_type
     transport_focus = "injured transport" in shot_type
     trade_goods_focus = any(token in combined_text for token in ["crystals", "cracked stones", "mutant teeth", "trade goods", "placed on the table"])
-    child_exchange_focus = scene_center_kind == "exchange-center" and any(token in combined_text for token in ["ninh", "tieu mai"])
+    child_exchange_focus = scene_center_kind in {"exchange-center", "object-center"} and any(token in combined_text for token in ["ninh", "tieu mai", "writing board", "bang viet"])
     child_present = any(token in combined_text for token in ["ninh", "tieu mai", "tieu bao", "tieu ngo"])
     single_presenter_focus = scene_center_kind == "object-center" and named_people <= 1
 
@@ -271,6 +282,8 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         story_subjects = [item for item in story_subjects if any(token in item.lower() for token in ["ninh", "tieu mai"])][:2]
     elif single_presenter_focus:
         story_subjects = story_subjects[:1]
+    elif scene_center_kind == "reaction-center" and story_subjects:
+        story_subjects = story_subjects[:2]
     story_setting = [item for item in ([scene_center_location] + setting) if item and "District 17 wasteland survival setting" not in item][:2]
     def clean_fragment(text: str) -> str:
         text = str(text).strip()
@@ -323,7 +336,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     elif child_exchange_focus:
         face_control = (
             "child dialogue shot, exactly two children in frame: Ninh and Tieu Mai, clearly child-sized with the writing board visible between them, emotional exchange readable, "
-            "no adult replacement, no adult body proportions, no glamorized posing"
+            "no adult replacement, no adult body proportions, no glamorized posing, no third child in the foreground, no hidden writing board"
         )
     elif single_presenter_focus:
         face_control = (
@@ -376,6 +389,15 @@ def scene_prompt(scene: dict[str, Any]) -> str:
             prompt_parts.append("show exactly one foreground presenter: " + story_subjects[0])
         else:
             prompt_parts.append("show these exact scene subjects: " + "; ".join(story_subjects[:3]))
+    if child_present:
+        prompt_parts.append("children must look unmistakably like children beside the adults, with shorter height, smaller shoulders, softer faces, and no adult combat styling")
+        prompt_parts.append("when children are central, keep their count exact; do not add unnamed extra children to make the frame feel busier")
+    if any(token in combined_text for token in ["journey", "survivor column", "xe lan", "stretcher", "ration", "water", "well", "trade", "stall", "writing board"]):
+        prompt_parts.append("avoid military squad posing or generic commando blocking; keep the scene grounded in scavenger survival, barter, thirst, injury, and travel strain")
+    if any(token in combined_text for token in ["gieng", "well", "hanging tin can", "co nuoc", "mui dong"]):
+        prompt_parts.append("keep the well mouth or water source visible enough that the audience immediately reads this as a water-discovery beat, not an empty yard or doorway")
+    if any(token in combined_text for token in ["writing board", "bang viet", "viet xau", "doc cham"]):
+        prompt_parts.append("the writing board must sit between the children or in one child's hands as the obvious social focus of the shot")
     if story_setting:
         prompt_parts.append("exact setting for this scene: " + ", ".join(story_setting))
     if story_actions:
