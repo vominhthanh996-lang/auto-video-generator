@@ -351,6 +351,36 @@ function Write-QASummary {
     $summary | ConvertTo-Json -Depth 4 | Set-Content -Path $script:QASummaryPath -Encoding UTF8
 }
 
+function Get-ManualQARequestPath {
+    $requestDir = Join-Path (Split-Path -Parent $script:RepoRoot) "temp\story-qa-requests"
+    return (Join-Path $requestDir ((Get-Slug $TaskName) + ".json"))
+}
+
+function Test-ManualQAPassed {
+    $requestPath = Get-ManualQARequestPath
+    if (-not (Test-Path $requestPath)) {
+        return $false
+    }
+    try {
+        $request = Get-Content $requestPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        $status = ([string]$request.status).ToLowerInvariant()
+        return ($status -in @("passed", "pass", "approved", "done"))
+    }
+    catch {
+        return $false
+    }
+}
+
+function Block-RenderUntilManualQA {
+    $requestPath = Get-ManualQARequestPath
+    Write-Log ("RENDER BLOCKED waiting for manual Codex QA pass: {0}" -f $requestPath)
+    Update-TaskStatus -Overall "warning" -CurrentNode "qa" -Message "Waiting for manual Codex QA check before render" -NodeUpdates @{
+        qa = @{ status = "waiting"; detail = ("Click QA check, then wait for Codex visual QA to pass. Request file: {0}" -f $requestPath) }
+        render = @{ status = "blocked"; detail = "Final render blocked until manual QA status is passed" }
+    }
+    Write-QASummary -Stage "waiting-for-manual-qa"
+}
+
 function Test-ComfyApiAlive {
     param([string]$Url = "http://127.0.0.1:8188/system_stats")
     try {
@@ -826,6 +856,11 @@ try {
     }
     $finalSceneState = Get-SceneState
     if (($voiceReady -or $script:SkipVoice) -and ($finalSceneState.ImageCount -ge $finalSceneState.SceneCount)) {
+        if (-not (Test-ManualQAPassed)) {
+            Block-RenderUntilManualQA
+            Write-Log "JOB WAITING FOR MANUAL QA"
+            return
+        }
         Validate-StoryboardAll
         Update-TaskStatus -Overall "running" -CurrentNode "qa" -Message "QA passed, ready to render" -NodeUpdates @{
             qa = @{ status = "done"; detail = "Storyboard/assets validation passed" }
