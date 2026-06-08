@@ -59,6 +59,12 @@ LAM_TICH_CLOTHING_RULE = (
     "If the beat is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
 
+STORY_FIRST_VISUAL_RULE = (
+    "Story-first visual rule: draw the exact current narration beat first, including the named action, prop, location, danger, injury, bargain, travel step, rationing, or reaction. "
+    "Do not replace survival beats with glamour posing, pin-up posing, hero posing, fashion posing, or a generic standing portrait. "
+    "Any attractive styling must support the story action and never override it."
+)
+
 FEMALE_FACE_RULE = (
     "Female face rule: adult women must have unmistakably feminine faces with soft female facial structure, delicate jawline, balanced feminine eyes nose and mouth, "
     "no square male jaw, no heavy masculine brow, no male facial structure, while still carrying dirt, ash, fatigue, and wasteland realism."
@@ -66,8 +72,8 @@ FEMALE_FACE_RULE = (
 
 MALE_WASTELAND_CLOTHING_RULE = (
     "Male character rule: adult men must read clearly masculine with strong male facial structure, broad shoulders, grounded wasteland toughness, and practical masculine clothing; "
-    "use worn dark tactical coats, heavy scavenger jackets, long rugged pants, boots, belts, straps, armor scraps, dirty cloth wraps, and survival gear. "
-    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, short shorts, feminine glamour outfit, bikini, or swimwear styling."
+    "use worn dark tactical coats, heavy scavenger jackets, layered practical shirts, long rugged pants, boots, belts, straps, armor scraps, dirty cloth wraps, and survival gear. "
+    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, bare-midriff clothing, short shorts, feminine glamour outfit, bikini, or swimwear styling; no exposed male belly unless the narration explicitly shows a wound being treated."
 )
 
 RATIO_TO_SIZE = {
@@ -226,7 +232,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append(LAM_TICH_CLOTHING_RULE)
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
-        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, long rugged pants, boots, belts, straps, armor scraps, dirty bandages when wounded; never sport top, crop top, short shorts, or feminine styling")
+        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, sports-bikini-style top, crop top, bare midriff, short shorts, or feminine styling")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("show every named child or companion from this scene together if they are named, do not replace them with generic adults or collapse them into one person")
     if "ninh" in combined_text or "tieu mai" in combined_text:
@@ -366,6 +372,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         )
 
     prompt_parts = [
+        STORY_FIRST_VISUAL_RULE,
         face_control,
         "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
     ]

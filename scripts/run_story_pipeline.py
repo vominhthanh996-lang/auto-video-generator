@@ -62,7 +62,13 @@ GENDER_CLARITY_RULE = (
     "the word man means a clearly adult male character with masculine face, broad masculine body language, and wasteland toughness; "
     "maintain consistent character identity and body language from scene to scene; "
     "avoid random identity drift or face-swapping between scenes. "
-    "Female sexy styling applies only to adult women such as Lam Tich; male characters must never inherit Lam Tich's sports-bikini-style top, crop top, short shorts, or feminine glamour outfit."
+    "Female sexy styling applies only to adult women such as Lam Tich; male characters must never inherit Lam Tich's sports-bikini-style top, crop top, bare-midriff clothing, short shorts, or feminine glamour outfit."
+)
+
+STORY_FIRST_VISUAL_RULE = (
+    "Story-first visual rule: the narration beat is more important than posing or attractiveness; show the exact current action, prop, location, danger, injury, bargain, travel step, rationing, or reaction described by the story. "
+    "Do not turn survival, injury, danger, travel, or group scenes into glamour posing, pin-up posing, hero posing, fashion posing, or a generic standing portrait. "
+    "Attractive styling is allowed only when it supports the current story beat and must never replace the narrated action."
 )
 
 LAM_TICH_VISUAL = (
@@ -87,8 +93,8 @@ LAM_TICH_FACE_RULE = (
 
 TAN_DA_VISUAL = (
     "Tan Da, a tall muscular Asian male mercenary with a handsome upright face, strong brows, steady alert eyes, weathered jawline, "
-    "broad shoulders, powerful build, rugged masculine wasteland clothing: worn dark tactical coat or heavy scavenger jacket, long practical pants, boots, belts, straps, armor scraps, dirty bandages at the abdomen when the narration calls for it, "
-    "never a sports top, never crop top, never short shorts, never feminine styling, "
+    "broad shoulders, powerful build, rugged masculine wasteland clothing: worn dark tactical coat or heavy scavenger jacket, layered practical shirt, long practical pants, boots, belts, straps, armor scraps, dirty bandages at the abdomen only when the narration calls for the wound, "
+    "never a sports top, never sports-bikini-style top, never crop top, never bare midriff, never exposed belly fashion, never short shorts, never feminine styling, "
     "protective righteous presence, exhausted but still physically imposing, never villain-coded unless the story beat says so"
 )
 
@@ -1416,6 +1422,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"Props that must read clearly: {prop_text}. "
         f"Carry over only this continuity from the previous scene: {handoff}; anchors: {anchors_text}. "
         "Do not reset to a generic pose or repeated shelter composition. "
+        f"{STORY_FIRST_VISUAL_RULE} "
         "Environment must follow the exact story description, and movement scenes must show the correct current step in the sequence. "
         f"{GENDER_CLARITY_RULE} "
         f"{LAM_TICH_FACE_RULE} "
