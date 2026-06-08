@@ -54,7 +54,8 @@ DEFAULT_NEGATIVE = (
     "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
     "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
     "open jacket, unbuttoned jacket, open shirt, wardrobe malfunction, boudoir, sultry expression, bedroom eyes, glamour pose, visible chest skin, visible torso skin, visible stomach skin, "
-    "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure, square male jaw on woman, heavy masculine brow on woman"
+    "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure, square male jaw on woman, heavy masculine brow on woman, "
+    "man wearing crop top, male crop top, man wearing strappy top, spaghetti straps on man, male bare midriff fashion, exposed male waist, feminine outfit on man"
 )
 
 GENDER_CLARITY_RULE = (
@@ -68,7 +69,13 @@ GENDER_CLARITY_RULE = (
 STORY_FIRST_VISUAL_RULE = (
     "Story-first visual rule: the narration beat is more important than posing or attractiveness; show the exact current action, prop, location, danger, injury, bargain, travel step, rationing, or reaction described by the story. "
     "Do not turn survival, injury, danger, travel, or group scenes into glamour posing, pin-up posing, hero posing, fashion posing, or a generic standing portrait. "
+    "The visible action must be the primary visual center, and posing is allowed only when the narration itself describes a character posing, tempting, performing, or standing for a reveal. "
     "Attractive styling is allowed only when it supports the current story beat and must never replace the narrated action."
+)
+
+MALE_OUTFIT_GUARDRAIL = (
+    "Male outfit guardrail: every adult man must wear masculine wasteland clothing with covered waist and practical layers: rugged jacket or coat, layered shirt, long pants, boots, belts, armor scraps, dirty cloth wraps. "
+    "No male crop top, no strappy top, no spaghetti straps, no sports-bikini-style top, no exposed male belly or waist, no short shorts, no feminine glamour clothing."
 )
 
 LAM_TICH_VISUAL = (
@@ -1425,6 +1432,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"{STORY_FIRST_VISUAL_RULE} "
         "Environment must follow the exact story description, and movement scenes must show the correct current step in the sequence. "
         f"{GENDER_CLARITY_RULE} "
+        f"{MALE_OUTFIT_GUARDRAIL} "
         f"{LAM_TICH_FACE_RULE} "
         f"{TAN_DA_FACE_RULE} "
         f"{YOUTUBE_SAFE_VISUAL_RULE} "

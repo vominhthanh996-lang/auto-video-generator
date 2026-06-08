@@ -56,7 +56,8 @@ DEFAULT_NEGATIVE = (
     "nude, naked, topless, exposed breasts, exposed nipples, areola, direct nipple outline, explicit underboob, explicit sideboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, bra and panties set, matching underwear set, panties, underwear, thong, see-through clothing, erotic pose, voyeuristic framing, "
     "school uniform, schoolgirl uniform, classroom costume, neat student outfit, "
     "military squad pose, SWAT team, modern soldier, assault rifle, tactical squad march, random firearm, commando pose, uniform patch focus, "
-    "masculine woman, woman with male facial structure, square male jaw on woman, heavy masculine brow on woman, gender ambiguous face"
+    "masculine woman, woman with male facial structure, square male jaw on woman, heavy masculine brow on woman, gender ambiguous face, "
+    "man wearing crop top, male crop top, man wearing strappy top, spaghetti straps on man, male bare midriff fashion, exposed male waist, feminine outfit on man"
 )
 
 ANATOMY_GUARDRAIL = (
@@ -81,6 +82,7 @@ LAM_TICH_CLOTHING_RULE = (
 STORY_FIRST_VISUAL_RULE = (
     "Story-first visual rule: draw the exact current narration beat first, including the named action, prop, location, danger, injury, bargain, travel step, rationing, or reaction. "
     "Do not replace survival beats with glamour posing, pin-up posing, hero posing, fashion posing, or a generic standing portrait. "
+    "The visible action must be the primary visual center, and posing is allowed only when the narration itself describes posing, tempting, performing, or standing for a reveal. "
     "Any attractive styling must support the story action and never override it."
 )
 
@@ -92,7 +94,7 @@ FEMALE_FACE_RULE = (
 MALE_WASTELAND_CLOTHING_RULE = (
     "Male character rule: adult men must read clearly masculine with strong male facial structure, broad shoulders, grounded wasteland toughness, and practical masculine clothing; "
     "use worn dark tactical coats, heavy scavenger jackets, layered practical shirts, long rugged pants, boots, belts, straps, armor scraps, dirty cloth wraps, and survival gear. "
-    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, bare-midriff clothing, short shorts, feminine glamour outfit, bikini, or swimwear styling; no exposed male belly unless the narration explicitly shows a wound being treated."
+    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, droptop, strappy top, spaghetti straps, bare-midriff clothing, exposed belly or waist, short shorts, feminine glamour outfit, bikini, or swimwear styling; no exposed male belly unless the narration explicitly shows a wound being treated."
 )
 
 RATIO_TO_SIZE = {
@@ -263,6 +265,9 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     if "bach nhi" in combined_text:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
         cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
+    adult_male_tokens = ["tan da", "a that", "bach nhi", "thiet oa", "hau seo", "male", "man", "raider", "guard", "trader"]
+    if any(token in combined_text for token in adult_male_tokens):
+        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
     if "lam tich" in combined_text:
         cast_notes.append("Lam Tich must stay a clearly adult woman with a readable unmistakably feminine face and grounded scavenger presence")
         cast_notes.append(FEMALE_FACE_RULE)
@@ -270,7 +275,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     smoke_or_ash_focus = any(token in combined_text for token in ["smoke", "ash", "fire", "khoi", "tro", "chay"])
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
-        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, sports-bikini-style top, crop top, bare midriff, short shorts, or feminine styling")
+        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, sports-bikini-style top, crop top, droptop, strappy top, bare midriff, exposed waist, short shorts, or feminine styling")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("keep only the people who actually drive this beat in the foreground; do not add extra companions unless the narration needs them, and never replace children with generic adults")
     if "ninh" in combined_text or "tieu mai" in combined_text:
