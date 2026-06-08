@@ -59,8 +59,10 @@ DEFAULT_NEGATIVE = (
 
 GENDER_CLARITY_RULE = (
     "Gender clarity rule: the word woman means a clearly adult female character with feminine face and body language; "
+    "the word man means a clearly adult male character with masculine face, broad masculine body language, and wasteland toughness; "
     "maintain consistent character identity and body language from scene to scene; "
-    "avoid random identity drift or face-swapping between scenes."
+    "avoid random identity drift or face-swapping between scenes. "
+    "Female sexy styling applies only to adult women such as Lam Tich; male characters must never inherit Lam Tich's sports-bikini-style top, crop top, short shorts, or feminine glamour outfit."
 )
 
 LAM_TICH_VISUAL = (
@@ -85,7 +87,8 @@ LAM_TICH_FACE_RULE = (
 
 TAN_DA_VISUAL = (
     "Tan Da, a tall muscular Asian male survivor with a handsome upright face, strong brows, steady alert eyes, weathered jawline, "
-    "broad shoulders, powerful build, worn dark scavenger workwear or practical survival layers, dirty bandages at the abdomen when the narration calls for it, "
+    "broad shoulders, powerful build, rugged masculine wasteland clothing: worn dark tactical coat or heavy scavenger jacket, long practical pants, boots, belts, straps, armor scraps, dirty bandages at the abdomen when the narration calls for it, "
+    "never a sports top, never crop top, never short shorts, never feminine styling, "
     "protective righteous presence, exhausted but still physically imposing, never villain-coded unless the story beat says so"
 )
 

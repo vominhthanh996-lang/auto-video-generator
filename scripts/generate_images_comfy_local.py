@@ -58,6 +58,12 @@ LAM_TICH_CLOTHING_RULE = (
     "If the beat is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
 
+MALE_WASTELAND_CLOTHING_RULE = (
+    "Male character rule: adult men must read clearly masculine with strong male facial structure, broad shoulders, grounded wasteland toughness, and practical masculine clothing; "
+    "use worn dark tactical coats, heavy scavenger jackets, long rugged pants, boots, belts, straps, armor scraps, dirty cloth wraps, and survival gear. "
+    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, short shorts, feminine glamour outfit, bikini, or swimwear styling."
+)
+
 RATIO_TO_SIZE = {
     "9:16": (512, 768),
     "3:4": (576, 768),
@@ -202,15 +208,18 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Tieu Bao must read as a very young child held or protected by adults, not an older teen or adult")
     if "a that" in combined_text:
         cast_notes.append("A That must read as a lean young adult male scavenger with restless nervous energy, not a child and not a middle-aged man")
+        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
     if "di man" in combined_text:
         cast_notes.append("Di Man must read as an older practical wasteland woman protecting the children")
     if "bach nhi" in combined_text:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
+        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
     if "lam tich" in combined_text:
         cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
         cast_notes.append(LAM_TICH_CLOTHING_RULE)
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
+        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, long rugged pants, boots, belts, straps, armor scraps, dirty bandages when wounded; never sport top, crop top, short shorts, or feminine styling")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("show every named child or companion from this scene together if they are named, do not replace them with generic adults or collapse them into one person")
     if "ninh" in combined_text or "tieu mai" in combined_text:
