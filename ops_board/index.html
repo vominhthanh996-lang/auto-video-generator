@@ -159,18 +159,24 @@
     }
     .actions {
       display: flex;
+      gap: 8px;
       justify-content: flex-end;
       margin-top: 14px;
     }
     .btn {
-      border: 1px solid rgba(255,104,104,.45);
-      background: rgba(255,104,104,.12);
-      color: #ffd6d6;
+      border: 1px solid rgba(87,166,255,.45);
+      background: rgba(87,166,255,.12);
+      color: #d6eaff;
       border-radius: 8px;
       padding: 9px 12px;
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
+    }
+    .btn.danger {
+      border-color: rgba(255,104,104,.45);
+      background: rgba(255,104,104,.12);
+      color: #ffd6d6;
     }
     .btn:disabled {
       opacity: .6;
@@ -255,10 +261,28 @@
             <div class="links"><strong>Project:</strong> ${safe(task.project)}</div>
           </div>
           <div class="actions">
-            <button class="btn" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
+            <button class="btn" onclick="requestQa('${safe(task.task).replace(/'/g, "\\'")}')">QA check</button>
+            <button class="btn danger" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
           </div>
         </section>
       `;
+    }
+
+    async function requestQa(taskName) {
+      const ok = confirm(`Request Codex visual QA for "${taskName}"? This only marks the task for Codex to review images. It will not move or delete images by itself.`);
+      if (!ok) return;
+      try {
+        const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/qa`, { method: "POST" });
+        const payload = await response.json();
+        if (!response.ok || payload.errors?.length) {
+          alert(`QA request failed:\n${(payload.errors || [response.statusText]).join("\n")}`);
+          return;
+        }
+        alert(`QA requested. Pass threshold: ${payload.pass_threshold}%.`);
+        await loadBoard();
+      } catch (error) {
+        alert(`Failed to request QA: ${error.message}`);
+      }
     }
 
     async function endTask(taskName) {

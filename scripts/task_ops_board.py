@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 import subprocess
@@ -14,6 +15,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 WORK_ROOT = REPO_ROOT.parent
 STATUS_DIR = WORK_ROOT / "temp" / "story-task-status"
 BOARD_ROOT = REPO_ROOT / "ops_board"
+QA_REQUEST_DIR = WORK_ROOT / "temp" / "story-qa-requests"
+QA_PASS_THRESHOLD = 40
 
 
 def slugify(value: str) -> str:
@@ -269,6 +272,128 @@ def read_json(path: Path) -> dict | None:
 
 def write_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def status_path_for_task(task_name: str) -> Path:
+    return STATUS_DIR / f"{slugify(task_name)}.json"
+
+
+def config_path_for_task(task_name: str) -> Path:
+    return WORK_ROOT / "temp" / f"{slugify(task_name)}.json"
+
+
+def qa_request_path_for_task(task_name: str) -> Path:
+    return QA_REQUEST_DIR / f"{slugify(task_name)}.json"
+
+
+def collect_asset_counts(storyboard_path: Path, project_root: Path) -> dict:
+    storyboard = read_json(storyboard_path) or {}
+    scenes = list(storyboard.get("scenes") or [])
+    image_count = 0
+    audio_count = 0
+    missing_images: list[int] = []
+    missing_audio: list[int] = []
+    for index, scene in enumerate(scenes, 1):
+        image_value = scene.get("image")
+        if image_value:
+            image_path = Path(image_value)
+            if not image_path.is_absolute():
+                image_path = project_root / image_value
+            if image_path.exists():
+                image_count += 1
+            else:
+                missing_images.append(index)
+        else:
+            missing_images.append(index)
+
+        audio_value = scene.get("audio")
+        if audio_value:
+            audio_path = Path(audio_value)
+            if not audio_path.is_absolute():
+                audio_path = project_root / audio_value
+            if audio_path.exists():
+                audio_count += 1
+            else:
+                missing_audio.append(index)
+        else:
+            missing_audio.append(index)
+    return {
+        "scenes": len(scenes),
+        "images": image_count,
+        "audio": audio_count,
+        "missing_images": missing_images,
+        "missing_audio": missing_audio,
+    }
+
+
+def request_qa(task_name: str) -> dict:
+    QA_REQUEST_DIR.mkdir(parents=True, exist_ok=True)
+    status_path = status_path_for_task(task_name)
+    config_path = config_path_for_task(task_name)
+    status = read_json(status_path) or {}
+    config = read_json(config_path) or {}
+    storyboard_value = str(status.get("storyboard") or config.get("StoryboardPath") or "")
+    project_value = str(status.get("project") or config.get("ProjectRoot") or "")
+    if not storyboard_value:
+        return {
+            "task": task_name,
+            "requested": False,
+            "errors": [f"Missing storyboard path for task: {task_name}"],
+        }
+
+    storyboard_path = Path(storyboard_value)
+    project_root = Path(project_value) if project_value else storyboard_path.parent
+    counts = collect_asset_counts(storyboard_path, project_root)
+    now = dt.datetime.now().isoformat(timespec="seconds")
+    request = {
+        "task": task_name,
+        "status": "requested",
+        "requested_at": now,
+        "pass_threshold": QA_PASS_THRESHOLD,
+        "storyboard": str(storyboard_path),
+        "project": str(project_root),
+        "counts": counts,
+        "criteria": [
+            "pass if image reaches at least 40% of the story/visual criteria",
+            "highest priority: closely follows the exact story beat and scene purpose",
+            "characters must match role, age, gender, and relationship in the narration",
+            "human bodies must not be deformed; faces need intact eyes, nose, mouth, and readable expression",
+            "characters must not be fused, nested, or incoherently overlapping",
+            "required props/locations/actions from the storyboard must be readable enough to draw the beat",
+            "Lam Tich stays attractive/glam but practical for the wasteland context, not bikini-like unless the scene truly supports exposure",
+            "Tan Da stays tall, muscular, masculine, righteous, and fully grounded in the survival scene",
+        ],
+        "workflow": [
+            "Generate all image and audio assets first; QA does not run during generation.",
+            "After QA is requested, Codex reviews the images visually against the criteria.",
+            "Only confirmed fail scenes are moved to reject folders.",
+            "Only confirmed fail scenes receive local prompt overrides or rescue notes for regeneration.",
+            "Pass images remain untouched in assets.",
+        ],
+    }
+    request_path = qa_request_path_for_task(task_name)
+    write_json(request_path, request)
+
+    if status:
+        nodes = status.setdefault("nodes", {})
+        nodes["qa"] = {
+            "status": "requested",
+            "detail": f"Codex QA requested, pass >= {QA_PASS_THRESHOLD}%, waiting for visual review.",
+        }
+        status["qa_summary"] = f"Requested at {now}; pass >= {QA_PASS_THRESHOLD}%; request: {request_path}"
+        status["qa_request"] = str(request_path)
+        status["message"] = "Codex QA requested from OpsBoard. Images/audio stay untouched until Codex visual review confirms fail scenes."
+        status["updated_at"] = now
+        write_json(status_path, status)
+
+    return {
+        "task": task_name,
+        "requested": True,
+        "request_file": str(request_path),
+        "pass_threshold": QA_PASS_THRESHOLD,
+        "counts": counts,
+        "errors": [],
+    }
 
 
 def parse_current_scene_number(state: dict) -> int | None:
@@ -563,6 +688,17 @@ class Handler(SimpleHTTPRequestHandler):
             payload = resume_task(task_name)
             body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
             self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if parsed.path.startswith("/api/tasks/") and parsed.path.endswith("/qa"):
+            middle = parsed.path[len("/api/tasks/") : -len("/qa")].strip("/")
+            task_name = unquote(middle)
+            payload = request_qa(task_name)
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(200 if payload.get("requested") else 400)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
