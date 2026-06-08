@@ -67,7 +67,7 @@ LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with a striking feminine face, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
     "practical summer wasteland clothing with bare arms and readable legs: a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
-    "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; open neckline or a small midriff hint is allowed only when the story beat supports it, while nipples and intimate areas stay fully covered by fabric, "
+    "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; when the story beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way, while nipples and intimate areas stay fully covered by fabric, "
     "stubborn survival dignity, attractive in a believable human way"
 )
 

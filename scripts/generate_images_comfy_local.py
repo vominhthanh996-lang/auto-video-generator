@@ -53,6 +53,7 @@ DEFAULT_NEGATIVE = (
 LAM_TICH_CLOTHING_RULE = (
     "Lam Tich clothing rule: keep her clearly adult, attractive, feminine, and sexy in a wasteland way, but story-first; "
     "use a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
+    "when the scene beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way; "
     "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
     "If the beat is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
