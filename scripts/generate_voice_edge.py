@@ -28,6 +28,8 @@ VOICE_PRESETS = {
     "en-male": "en-US-GuyNeural",
 }
 
+TTS_TIMEOUT_SECONDS = int(os.environ.get("AUTO_VIDEO_TTS_TIMEOUT_SECONDS", "90"))
+
 VOICE_STYLES = {
     "plain": {
         "rate": "+0%",
@@ -184,9 +186,13 @@ def relpath(path, base):
         return str(path.resolve())
 
 
+def run_quiet(cmd):
+    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
 async def synthesize(text, output, voice, rate, pitch):
     communicate = edge_tts.Communicate(text=text, voice=voice, rate=rate, pitch=pitch)
-    await communicate.save(str(output))
+    await asyncio.wait_for(communicate.save(str(output)), timeout=TTS_TIMEOUT_SECONDS)
 
 
 def parse_rate(rate):
@@ -747,7 +753,7 @@ async def synthesize_performed(text, output, voice, profile):
                 concat_items.append(silence_path)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in concat_items), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_quiet(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
         trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
     return [{key: value for key, value in item.items() if key != "unit"} for item in plan]
 
@@ -816,7 +822,7 @@ async def synthesize_resilient(text, output, voice, rate, pitch):
             chunk_paths.append(chunk_path)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in chunk_paths), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_quiet(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
 
 
 async def main_async(args):
@@ -857,6 +863,8 @@ async def main_async(args):
         "scenes": [],
         "warnings": warnings,
     }
+    generated_count = 0
+    failed_count = 0
     for index, scene in enumerate(scenes[start_index:end_index], start=start_index):
         text = scene.get("narration") or scene.get("subtitle") or scene.get("text")
         if not text:
@@ -877,8 +885,10 @@ async def main_async(args):
             try:
                 plan = await synthesize_performed(text, audio_path, voice, style)
                 generated = True
+                generated_count += 1
             except Exception as exc:
                 failed = True
+                failed_count += 1
                 warning = {
                     "scene": index + 1,
                     "id": scene.get("id") or f"scene-{index + 1:03d}",
@@ -907,13 +917,26 @@ async def main_async(args):
         )
 
     storyboard_path.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
-    (storyboard_dir / "voice-plan.json").write_text(json.dumps(voice_plan, ensure_ascii=False, indent=2), encoding="utf-8")
+    voice_plan["summary"] = {
+        "range": {"start_scene": start_index + 1, "end_scene": end_index},
+        "generated": generated_count,
+        "failed": failed_count,
+        "warnings": len(warnings),
+    }
     if start_index == 0 and end_index == len(scenes):
-        subprocess.run(
+        result = subprocess.run(
             [sys.executable, str(Path(__file__).resolve().parent / "validate_storyboard.py"), "--storyboard", str(storyboard_path), "--stage", "voice"],
-            check=True,
+            check=False,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
         )
-    print(json.dumps({"storyboard": str(storyboard_path), "scenes": len(scenes), "voice": voice, "voice_style": args.voice_style}, ensure_ascii=False, indent=2))
+        if result.returncode != 0:
+            validation_warning = (result.stderr or result.stdout or "").strip()
+            voice_plan["validation_warning"] = validation_warning
+            print(f"WARNING voice validation incomplete; generated={generated_count}, failed={failed_count}", file=sys.stderr, flush=True)
+    (storyboard_dir / "voice-plan.json").write_text(json.dumps(voice_plan, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps({"storyboard": str(storyboard_path), "scenes": len(scenes), "voice": voice, "voice_style": args.voice_style, "generated": generated_count, "failed": failed_count, "warnings": len(warnings)}, ensure_ascii=False, indent=2))
 
 
 def main():

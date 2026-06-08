@@ -108,6 +108,38 @@ function Write-Log {
     Add-Content -Path $script:LogPath -Value $line -Encoding UTF8
 }
 
+function Enter-RenderMode {
+    $syncProcessNames = @(
+        "OneDrive",
+        "OneDrive.Sync.Service",
+        "Dropbox"
+    )
+    $stopped = @()
+    foreach ($name in $syncProcessNames) {
+        $processes = @(Get-Process -Name $name -ErrorAction SilentlyContinue)
+        foreach ($process in $processes) {
+            try {
+                $stopped += [pscustomobject]@{
+                    name = $process.ProcessName
+                    id = $process.Id
+                    path = $process.Path
+                }
+                Stop-Process -Id $process.Id -Force -ErrorAction Stop
+            }
+            catch {
+                Write-Log ("RENDER MODE unable to stop {0}#{1}: {2}" -f $process.ProcessName, $process.Id, $_.Exception.Message)
+            }
+        }
+    }
+    if ($stopped.Count -gt 0) {
+        $summary = ($stopped | ForEach-Object { "{0}#{1}" -f $_.name, $_.id }) -join ", "
+        Write-Log ("RENDER MODE stopped sync apps: {0}" -f $summary)
+    }
+    else {
+        Write-Log "RENDER MODE no OneDrive/Dropbox processes found"
+    }
+}
+
 function ConvertTo-PlainHashtable {
     param([object]$Value)
     if ($null -eq $Value) {
@@ -223,6 +255,14 @@ function Update-TaskStatus {
     $state | ConvertTo-Json -Depth 8 | Set-Content -Path $script:StatusPath -Encoding UTF8
 }
 
+function ConvertTo-ProcessArgument {
+    param([string]$Value)
+    if ($null -eq $Value) {
+        return '""'
+    }
+    return '"' + ($Value -replace '"', '\"') + '"'
+}
+
 function Invoke-Step {
     param(
         [string]$Label,
@@ -231,11 +271,26 @@ function Invoke-Step {
     )
     Write-Log ("START {0}" -f $Label)
     Update-TaskStatus -Overall "running" -CurrentNode $Label -Message ("Running: {0}" -f $Label)
-    $combinedOutput = & $script:PythonExe $FilePath @Arguments 2>&1
-    if ($combinedOutput) {
-        ($combinedOutput | Out-String) | Out-File -FilePath $script:LogPath -Append -Encoding utf8
+    $tempBase = Join-Path ([System.IO.Path]::GetTempPath()) ("story-step-{0}-{1}" -f ([System.IO.Path]::GetFileNameWithoutExtension($FilePath)), ([System.Guid]::NewGuid().ToString("N")))
+    $stdoutPath = "$tempBase.out"
+    $stderrPath = "$tempBase.err"
+    $argumentLine = (@($FilePath) + $Arguments | ForEach-Object { ConvertTo-ProcessArgument ([string]$_) }) -join " "
+    $proc = Start-Process -FilePath $script:PythonExe -ArgumentList $argumentLine -NoNewWindow -PassThru -Wait -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath
+    if (Test-Path $stdoutPath) {
+        $stdoutText = Get-Content -Path $stdoutPath -Raw -Encoding UTF8
+        if ($stdoutText) {
+            $stdoutText | Out-File -FilePath $script:LogPath -Append -Encoding utf8
+        }
+        Remove-Item -LiteralPath $stdoutPath -Force -ErrorAction SilentlyContinue
     }
-    $exitCode = $LASTEXITCODE
+    if (Test-Path $stderrPath) {
+        $stderrText = Get-Content -Path $stderrPath -Raw -Encoding UTF8
+        if ($stderrText) {
+            $stderrText | Out-File -FilePath $script:LogPath -Append -Encoding utf8
+        }
+        Remove-Item -LiteralPath $stderrPath -Force -ErrorAction SilentlyContinue
+    }
+    $exitCode = $proc.ExitCode
     if ($exitCode -ne 0) {
         Write-Log ("FAIL {0} (exit {1})" -f $Label, $exitCode)
         Update-TaskStatus -Overall "failed" -CurrentNode $Label -Message ("Failed: {0}" -f $Label)
@@ -258,7 +313,10 @@ function Get-SceneState {
         }
         if ($scene.audio) {
             $audioPath = if ([System.IO.Path]::IsPathRooted([string]$scene.audio)) { [string]$scene.audio } else { Join-Path $script:ProjectRoot ([string]$scene.audio) }
-            if (Test-Path $audioPath) { $audio++ }
+            if (Test-Path $audioPath) {
+                $audioFile = Get-Item -LiteralPath $audioPath -ErrorAction SilentlyContinue
+                if ($audioFile -and $audioFile.Length -ge 1024) { $audio++ }
+            }
         }
         try {
             if ([string]$scene.local_image.validator.status -eq "skipped_after_failed_attempts") {
@@ -314,9 +372,30 @@ function Ensure-ComfyService {
         throw "ComfyUI service script not found: $comfyServiceScript"
     }
     Write-Log "ENSURE ComfyUI service"
-    $comfyJson = powershell.exe -NoProfile -ExecutionPolicy Bypass -File $comfyServiceScript -TimeoutSeconds 45
-    if ($LASTEXITCODE -ne 0) {
-        throw "ComfyUI service failed to start"
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = "powershell.exe"
+    $psi.Arguments = ('-NoProfile -ExecutionPolicy Bypass -File "{0}" -TimeoutSeconds 45' -f $comfyServiceScript)
+    $psi.RedirectStandardOutput = $true
+    $psi.RedirectStandardError = $true
+    $psi.UseShellExecute = $false
+    $psi.CreateNoWindow = $true
+    $proc = [System.Diagnostics.Process]::Start($psi)
+    if (-not $proc.WaitForExit(90000)) {
+        try { $proc.Kill() } catch {}
+        if (Test-ComfyApiAlive) {
+            Write-Log "COMFYUI start helper timed out, but API is alive"
+            return
+        }
+        throw "ComfyUI service helper timed out"
+    }
+    $comfyJson = $proc.StandardOutput.ReadToEnd()
+    $comfyErr = $proc.StandardError.ReadToEnd()
+    if ($proc.ExitCode -ne 0) {
+        if (Test-ComfyApiAlive) {
+            Write-Log ("COMFYUI helper exited {0}, but API is alive: {1}" -f $proc.ExitCode, $comfyErr.Trim())
+            return
+        }
+        throw ("ComfyUI service failed to start: {0}" -f $comfyErr.Trim())
     }
     if ($comfyJson) {
         Write-Log ("COMFYUI {0}" -f ($comfyJson | Out-String).Trim())
@@ -438,6 +517,11 @@ function Invoke-VoiceAttempt {
             voice = @{ status = "done"; detail = ("Audio ready {0}/{1}" -f $after.AudioCount, $after.SceneCount) }
         }
         return $true
+    }
+    if ($after.AudioCount -gt $state.AudioCount) {
+        Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice progressing" -NodeUpdates @{
+            voice = @{ status = "running"; detail = ("Audio progressed {0}/{1}" -f $after.AudioCount, $after.SceneCount) }
+        }
     }
     return $false
 }
@@ -673,6 +757,7 @@ if (-not (Acquire-WorkerLock)) {
 }
 Write-Log "JOB START"
 Write-Log ("TASK {0}" -f $TaskName)
+Enter-RenderMode
 if ($script:StorySource) {
     Write-Log ("SOURCE {0}" -f $script:StorySource)
 }
@@ -700,6 +785,7 @@ try {
     $voiceBlocked = $false
     $lastAudioCount = -1
     $voiceStallCount = 0
+    $maxVoiceAttempts = 80
     while (-not ($voiceReady -and $imageReady)) {
         if (-not $voiceReady -and -not $script:SkipVoice -and -not $voiceBlocked) {
             $voiceBefore = Get-SceneState
@@ -717,7 +803,7 @@ try {
                 else {
                     $voiceStallCount++
                 }
-                if ($voiceAttempt -ge 12 -or $voiceStallCount -ge 4) {
+                if ($voiceStallCount -ge 4 -or $voiceAttempt -ge $maxVoiceAttempts) {
                     $voiceBlocked = $true
                     Write-Log ("VOICE stalled after {0} attempts with audio {1}/{2}" -f $voiceAttempt, $voiceAfter.AudioCount, $voiceAfter.SceneCount)
                     Update-TaskStatus -Overall "running" -CurrentNode "voice" -Message "Voice stalled; allowing image pass to continue" -NodeUpdates @{
@@ -727,14 +813,14 @@ try {
             }
             Write-QASummary -Stage ("voice-pass-{0}" -f $voiceAttempt)
         }
-        if (-not $imageReady -and ($voiceReady -or $script:SkipVoice -or $voiceBlocked)) {
+        if (-not $imageReady) {
             $imageReady = Invoke-ImageStep
             Write-QASummary -Stage "image-step"
         }
         if ($voiceReady -and $imageReady) {
             break
         }
-        if (($voiceBlocked -or $voiceAttempt -ge 12) -and -not $voiceReady -and $imageReady) {
+        if ($voiceBlocked -and -not $voiceReady -and $imageReady) {
             break
         }
     }
