@@ -29,6 +29,7 @@ VOICE_PRESETS = {
 }
 
 TTS_TIMEOUT_SECONDS = int(os.environ.get("AUTO_VIDEO_TTS_TIMEOUT_SECONDS", "90"))
+VOICE_SCENE_ATTEMPTS = max(1, int(os.environ.get("AUTO_VIDEO_VOICE_SCENE_ATTEMPTS", "5")))
 
 VOICE_STYLES = {
     "plain": {
@@ -881,26 +882,39 @@ async def main_async(args):
         generated = False
         failed = False
         if needs_audio:
-            print(f"Generating voice scene {index + 1}/{len(scenes)}: {audio_path}", flush=True)
-            try:
-                plan = await synthesize_performed(text, audio_path, voice, style)
-                generated = True
-                generated_count += 1
-            except Exception as exc:
+            last_error = None
+            for attempt in range(1, VOICE_SCENE_ATTEMPTS + 1):
+                print(f"Generating voice scene {index + 1}/{len(scenes)} attempt {attempt}/{VOICE_SCENE_ATTEMPTS}: {audio_path}", flush=True)
+                try:
+                    if audio_path.exists() and audio_path.stat().st_size < 1024:
+                        audio_path.unlink()
+                    plan = await synthesize_performed(text, audio_path, voice, style)
+                    if not audio_path.exists() or audio_path.stat().st_size < 1024:
+                        raise RuntimeError("voice output missing or too small after synthesis")
+                    generated = True
+                    generated_count += 1
+                    failed = False
+                    break
+                except Exception as exc:
+                    last_error = exc
+                    if audio_path.exists() and audio_path.stat().st_size < 1024:
+                        try:
+                            audio_path.unlink()
+                        except OSError:
+                            pass
+                    if attempt < VOICE_SCENE_ATTEMPTS:
+                        print(f"WARNING scene {index + 1} voice retry {attempt}/{VOICE_SCENE_ATTEMPTS}: {exc}", file=sys.stderr, flush=True)
+                        await asyncio.sleep(min(12, attempt * 2))
+            if needs_audio and not generated:
                 failed = True
                 failed_count += 1
                 warning = {
                     "scene": index + 1,
                     "id": scene.get("id") or f"scene-{index + 1:03d}",
-                    "error": str(exc),
+                    "error": str(last_error),
                 }
                 warnings.append(warning)
-                print(f"WARNING scene {index + 1} voice failed: {exc}", file=sys.stderr, flush=True)
-                if audio_path.exists() and audio_path.stat().st_size < 1024:
-                    try:
-                        audio_path.unlink()
-                    except OSError:
-                        pass
+                print(f"WARNING scene {index + 1} voice failed after {VOICE_SCENE_ATTEMPTS} attempts: {last_error}", file=sys.stderr, flush=True)
 
         if not failed:
             scene["audio"] = relpath(audio_path, storyboard_dir)

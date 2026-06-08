@@ -49,7 +49,7 @@ DEFAULT_NEGATIVE = (
     "missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, "
     "over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
     ", nude, naked, topless, shirtless woman, bare chest, bare torso, exposed breasts, exposed nipples, areola, "
-    "explicit underboob, explicit sideboob, cleavage focus, lingerie, bikini, underwear, bra, bralette, "
+    "explicit underboob, explicit sideboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, underwear, panties, thong, bra and panties set, matching underwear set, "
     "see-through clothing, wet revealing clothing, erotic pose, seductive pose, reclining pin-up pose, spread legs, "
     "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
     "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
@@ -66,12 +66,13 @@ GENDER_CLARITY_RULE = (
 LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with a striking feminine face, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
-    "practical summer wasteland clothing with bare arms and readable legs, fitted survival-first layers, open collar or some upper chest allowed when the scene and weather support it, subtle wasteland pin-up energy without turning into explicit fetish framing, "
+    "practical summer wasteland clothing with bare arms and readable legs: a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
+    "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; a modest open collar or small midriff hint is allowed only when the scene and weather support it, subtle wasteland pin-up energy without explicit fetish framing, "
     "stubborn survival dignity, attractive in a believable human way"
 )
 
 YOUTUBE_SAFE_VISUAL_RULE = (
-    "YouTube-safe visual rule: practical survival clothing may expose arms, legs, shoulders, stomach, and some upper chest when the character design calls for it, "
+    "YouTube-safe visual rule: practical survival clothing may expose arms, legs, shoulders, and some upper chest when the character design calls for it, "
     "but nipples, areola, buttocks, and crotch must always stay covered by fabric. "
     "No nudity, no exposed breasts, and no shot that treats the chest, buttocks, or crotch as the visual focus."
 )
@@ -104,10 +105,10 @@ MOJIBAKE_MARKERS = ["Ã", "Ä", "á»", "áº", "Æ", "Â"]
 
 SUPPORTING_CHARACTER_RULES = [
     ("La Kieu", ["la kieu"], "La Kieu, a dangerous adult wasteland raider leader with a hard face and controlled menace"),
-    ("Ninh", ["ninh"], "Ninh, a slight preteen mute boy survivor carrying a writing board, clearly child-sized with a wary hungry face"),
-    ("Tieu Mai", ["tieu mai"], "Tieu Mai, a preteen girl survivor, clearly a child with alert eyes and quick reactions"),
-    ("Tieu Ngo", ["tieu ngo"], "Tieu Ngo, a wounded boy survivor protecting the younger child while trying not to show pain"),
-    ("Tieu Bao", ["tieu bao"], "Tieu Bao, a very young child held close by the adults during danger"),
+    ("Ninh", ["ninh"], "Ninh, a slight preteen mute boy survivor carrying a writing board, clearly child-sized with a wary hungry face and rough scavenger clothing, never school-uniform styled"),
+    ("Tieu Mai", ["tieu mai"], "Tieu Mai, a preteen girl survivor, clearly a child with alert eyes, quick reactions, and rough scavenger clothing, never school-uniform styled"),
+    ("Tieu Ngo", ["tieu ngo"], "Tieu Ngo, a wounded boy survivor protecting the younger child while trying not to show pain, clearly child-sized and never school-uniform styled"),
+    ("Tieu Bao", ["tieu bao"], "Tieu Bao, a very young child held close by the adults during danger, clearly a little child and never school-uniform styled"),
     ("A That", ["a that"], "A That, a lean young male scavenger with cracked lips, nervous humor, and quick restless movements"),
     ("A Muc", ["a muc"], "A Muc, a guarded teenage scavenger boy with a hook tool and sharp suspicious eyes"),
     ("Di Man", ["di man"], "Di Man, an older wasteland woman with a severe practical face and protective posture toward the children"),
@@ -533,6 +534,14 @@ def character_visual_descriptor(label):
 
 
 def infer_fragment_focus(plain):
+    if has_any(plain, ["buoc vai vao day", "buoc mieng vai", "tha xuong gieng", "nghe tieng kim loai cham vao", "day rung nhe", "keo len tu tu"]):
+        return "well-probe"
+    if has_any(plain, ["tam thep nho", "dong chu mo", "nuoc co nguoi giu", "tre con vao truoc", "nguoi lon tra gia sau", "chu mo hoen gi"]):
+        return "written-water-warning"
+    if has_any(plain, ["co mui nguoi", "co nguoi dang o duoi", "o mot minh", "thang nhai duoi gieng", "mot minh duoi do"]):
+        return "hidden-survivor-probe"
+    if has_any(plain, ["xac nguoi troi duoi day", "loc bang xac", "mui mau trong nuoc sach", "nuoc sach co mui mau", "mui xac thoi hoi len"]):
+        return "poisoned-water-discovery"
     if has_any(plain, ["muon o lai phai theo luat", "khong ban nguoi", "do chung phai bao", "nuoc chia theo viec va benh", "ai giau dao hai doi", "khong ban nguoi qua dem"]):
         return "camp-rules-recital"
     if has_any(plain, ["se co nguoi phan", "van nhan", "co tay con vet xich", "vua thoat khoi vong so", "giu nguoi"]):
@@ -1440,16 +1449,6 @@ def story_action_sequence(narration, scene_state, continuity=None):
         (["nguoi que nhin xe lan", "nhin xe lan phia sau nang"], "the crippled newcomer notices the wheelchair or stretcher behind Lam Tich and reacts with immediate calculation"),
     ]
     shared_specific_rules = [
-        (["khong chia nuoc", "tieu bao khong di noi"], "Di Man halts the column, lowers Tieu Bao, and insists the last water be rationed so the child can keep moving"),
-        (["ta cung khong di noi", "nguoi con noi duoc"], "A That jokes weakly through cracked lips while the adults argue over who still has enough strength to keep walking"),
-        (["lay binh nuoc ra", "ba vach", "hom qua con hon hai vach"], "Lam Tich takes out the scarred metal bottle and everyone sees how fast the carved water marks have fallen"),
-        (["day binh chi con", "lop nuoc mong", "nuoc trong binh khong trong"], "the frame studies the cloudy thin layer of water left at the bottom of the battered metal bottle"),
-        (["moi nguoi mot ngum nho", "tan da uong thuoc", "nguoi im"], "Lam Tich takes control of the rationing, assigning each sip while forcing Tan Da to drink for the medicine"),
-        (["ta khong uong", "no cua nguoi chua tra xong", "muon chet cung phai xep hang"], "Lam Tich stares Tan Da down and forces him to accept the sip while the others fall silent around them"),
-        (["anh uong di", "dua lai bang hai tay", "tra mot mon no moi"], "Tan Da finally takes a tiny sip and returns the bottle with both hands like he is repaying a debt"),
-        (["phia truoc co gio am", "huong nao", "ben phai duong ray", "cot dien gay nghieng"], "Ninh signs about damp wind ahead, the group turns, and Lam Tich tests the air toward the leaning power poles"),
-        (["nham mat", "tho ngoi", "mui sat gi va tro"], "Lam Tich closes her eyes, breathes in, and separates the first false smell of rust and ash from any trace of hidden moisture"),
-        (["nguoi que nhin xe lan", "nhin xe lan phia sau nang"], "the crippled newcomer notices the wheelchair or stretcher behind Lam Tich and reacts with immediate calculation"),
         (["con bo", "nhung con bo", "bo nho", "bo giap than", "vung nuoc dien", "khop chan", "vo no"], "the group fights armored tunnel insects in cramped electric water, using improvised tools and timing to protect the weakest people"),
         (["xac bo", "bung sang", "mau bo", "tui loc tinh", "vien tinh thach"], "the survivors cut open armored insect bodies and search for the first clean crystal while weighing greed against exhaustion"),
     ]
@@ -2272,7 +2271,7 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
     obj = infer_primary_object(props, narration)
     kind = "subject-center"
 
-    if focus in {"well-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail", "water-inspection", "danger-distraction", "base-resource-balance"}:
+    if focus in {"well-discovery", "well-probe", "written-water-warning", "hidden-survivor-probe", "poisoned-water-discovery", "resource-discovery", "track-discovery", "object-detail", "water-detail", "water-inspection", "danger-distraction", "base-resource-balance"}:
         kind = "object-center"
     elif focus in {"market-bargain", "threshold-negotiation", "group-dialogue", "route-planning", "medicine-allocation", "control-sabotage", "debt-ledger", "repair-logistics", "role-assignment", "human-valuation", "base-founding", "machine-maintenance", "camp-rules-recital", "acceptance-risk", "forced-route-test", "treatment-setup", "gain-cost-summary", "survival-values", "identity-probe"}:
         kind = "exchange-center"
@@ -2292,6 +2291,14 @@ def infer_scene_center(narration, scene_state, actions, props, shot_type):
     if has_any(plain, ["gieng cu", "mieng gieng", "lon sat treo bang day", "mui dong"]):
         obj = "the old well mouth, hanging tin can, or hidden water source described in the narration"
         kind = "object-center"
+        if has_any(plain, ["buoc vai vao day", "buoc mieng vai", "tha xuong gieng", "nghe tieng kim loai cham vao", "day rung nhe"]):
+            obj = "the old well mouth, cloth tied to the rope, and the metal contact deep below"
+        elif has_any(plain, ["tam thep nho", "dong chu mo", "nuoc co nguoi giu", "tre con vao truoc", "nguoi lon tra gia sau"]):
+            obj = "the old well mouth, hanging can, and the warning plate saying children enter first and adults pay later"
+        elif has_any(plain, ["co mui nguoi", "co nguoi dang o duoi", "o mot minh", "thang nhai duoi gieng"]):
+            obj = "the old well mouth, hanging can, and the hidden survivor or watcher below the water source"
+        elif has_any(plain, ["xac nguoi troi duoi day", "loc bang xac", "mui mau trong nuoc sach", "nuoc sach co mui mau", "mui xac thoi hoi len"]):
+            obj = "the old well mouth, tainted clean-looking water, and the corpse-filter truth hidden below"
     elif has_any(plain, ["bang viet", "tam bang", "viet len bang"]):
         obj = "Ninh's small writing board with the exact message or gesture described in the narration"
         kind = "object-center"
@@ -2617,6 +2624,14 @@ def shot_type_for(narration, scene_index):
         return "route-planning shot with the map, the speakers, and the tunnel-entry options clearly readable"
     if primary_beat == "water-inspection":
         return "water-inspection shot with the bowl or vessel, the suspicious clean water, and the reaction to the hidden contamination clearly readable"
+    if primary_beat == "well-probe":
+        return "well-probe shot with the rope, tied cloth or can, the old well mouth, and the listener reacting to the metal contact below clearly readable"
+    if primary_beat == "written-water-warning":
+        return "written-water-warning shot with the warning plate, the old well mouth, and the reader realizing children enter first while adults pay later"
+    if primary_beat == "hidden-survivor-probe":
+        return "hidden-survivor-probe shot with the old well mouth, the watcher or voice below, and the survivors testing whether they can trust what is hidden there"
+    if primary_beat == "poisoned-water-discovery":
+        return "poisoned-water-discovery shot with the old well mouth, the tainted clean-looking water, and the corpse-based truth hidden below clearly readable"
     if primary_beat == "medicine-allocation":
         return "medicine-allocation shot with the portions, recipients, and survival stakes clearly readable"
     if primary_beat == "ration-pressure":
@@ -3456,4 +3471,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

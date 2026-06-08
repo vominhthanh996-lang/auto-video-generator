@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Generate premium local storyboard images through an existing ComfyUI install.
 
@@ -53,7 +53,8 @@ DEFAULT_NEGATIVE = (
     "partial third person fragment, phantom arm, phantom hand, phantom leg, cropped hand when hands should be visible, cropped foot when stance should be visible, "
     "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
     "solo glamour portrait, extreme close-up glamour crop, cropped body, random extra character, missing second character when scene needs two people, "
-    "nude, naked, topless, exposed breasts, exposed nipples, areola, direct nipple outline, explicit underboob, explicit sideboob, cleavage focus, lingerie, bikini, underwear, see-through clothing, erotic pose, voyeuristic framing, "
+    "nude, naked, topless, exposed breasts, exposed nipples, areola, direct nipple outline, explicit underboob, explicit sideboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, bra and panties set, matching underwear set, panties, underwear, thong, see-through clothing, erotic pose, voyeuristic framing, "
+    "school uniform, schoolgirl uniform, classroom costume, neat student outfit, "
     "military squad pose, SWAT team, modern soldier, assault rifle, tactical squad march, random firearm, commando pose, uniform patch focus"
 )
 
@@ -66,6 +67,13 @@ ANATOMY_GUARDRAIL = (
 FACE_GUARDRAIL = (
     "face guardrail: every visible face must be complete and human, with two natural eyes, one natural nose, one clear mouth, stable jawline, "
     "and balanced facial structure; no melted face, no broken features, no duplicated features, no missing facial parts, and no distorted expression anatomy"
+)
+
+LAM_TICH_CLOTHING_RULE = (
+    "Lam Tich clothing rule: keep her attractive, feminine, and sexy in a wasteland way, but story-first; "
+    "use a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
+    "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
+    "If the scene is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
 
 RATIO_TO_SIZE = {
@@ -153,6 +161,10 @@ def size_for_ratio(ratio: str) -> tuple[int, int]:
 
 
 def scene_prompt(scene: dict[str, Any]) -> str:
+    local_prompt_override = str(scene.get("local_prompt_override") or "").strip()
+    if local_prompt_override:
+        return local_prompt_override
+
     shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
     must_show = [str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()]
     actions = [str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()]
@@ -176,6 +188,16 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         or ""
     )
     fallback_prompt = str(fallback_prompt).strip()
+    local_rescue_notes = [
+        str(item).strip()
+        for item in (scene.get("local_rescue_notes") or [])
+        if str(item).strip()
+    ]
+    local_prompt_frontload = [
+        str(item).strip()
+        for item in (scene.get("local_prompt_frontload") or [])
+        if str(item).strip()
+    ]
     if not any([fallback_prompt, must_show, actions, setting, props, primary_subject]):
         return ""
 
@@ -222,7 +244,8 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
     if "lam tich" in combined_text:
         cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
-        cast_notes.append("Lam Tich should read as attractive, feminine, and slightly glam in a wasteland pin-up way when the beat allows it, and moderate skin exposure is fine as long as it stays non-explicit and does not overpower the story beat")
+        cast_notes.append(LAM_TICH_CLOTHING_RULE)
+    smoke_or_ash_focus = any(token in combined_text for token in ["smoke", "ash", "fire", "khoi", "tro", "chay"])
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
@@ -238,6 +261,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     if any(token in combined_text for token in ["writing board", "bang viet", "viet xau", "doc cham"]):
         cast_notes.append("the writing board must be visible and readable as the social focus of the scene, not hidden offscreen")
         cast_notes.append("do not add a third foreground child to a writing-board exchange unless the narration explicitly names that child in the same beat")
+        cast_notes.append("show the named child pair clearly as children, with the board held at chest height or between them")
     if any(token in combined_text for token in ["crystals", "cracked stones", "mutant teeth", "dat len ban", "placed on the table"]):
         cast_notes.append("the trade goods on the table must be the visual center, with one owner presenting them, not duplicated people")
     if not any(token in combined_text for token in ["gun", "rifle", "pistol", "dao", "knife", "hammer", "moc sat", "weapon", "vu khi"]):
@@ -245,7 +269,11 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     if any(token in combined_text for token in ["xe lan", "wheelchair", "stretcher", "tieu mai", "tieu bao", "tieu ngo"]):
         cast_notes.append("if an adult and a child share the beat, keep both readable in the same frame and do not replace either one with extra adults or extra children")
     if "lam tich" in combined_text and any(token in combined_text for token in ["journey", "survivor column", "xe lan", "stretcher", "ration", "well", "danger", "blood", "wound", "track", "smoke", "fire"]):
-        cast_notes.append("Lam Tich may stay feminine and attractive here, with acceptable fitted or revealing survival wear, but do not expose nipples, buttocks, or crotch and do not let the outfit overpower the dangerous beat")
+        cast_notes.append("Lam Tich may stay feminine and attractive here, but use practical torn survival clothing with a sporty top and rugged shorts; avoid two-piece bikini silhouettes and do not let the outfit overpower the dangerous beat")
+    if "lam tich" in combined_text and smoke_or_ash_focus:
+        cast_notes.append("for smoke or ash beats, Lam Tich must wear torn practical scavenger separates with rugged shorts, never a two-piece bikini, never matching underwear, and never a swimsuit-like silhouette")
+    if "lam tich" in combined_text and any(token in combined_text for token in ["smoke", "fire", "ash", "khoi", "tro"]):
+        cast_notes.append("for smoke or ash beats, Lam Tich should wear a torn practical scavenger top and rugged shorts, not a two-piece bikini and not a matching underwear set")
 
     action_text = " ".join(actions).lower()
     detail_focus = "close" in shot_type or "detail" in shot_type or "insert" in shot_type or scene_center_kind == "object-center"
@@ -265,6 +293,20 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     child_exchange_focus = scene_center_kind in {"exchange-center", "object-center"} and any(token in combined_text for token in ["ninh", "tieu mai", "writing board", "bang viet"])
     child_present = any(token in combined_text for token in ["ninh", "tieu mai", "tieu bao", "tieu ngo"])
     single_presenter_focus = scene_center_kind == "object-center" and named_people <= 1
+    single_subject_focus = (
+        scene_center_kind in {"subject-center", "reaction-center", "object-center"}
+        and named_people <= 1
+        and not child_exchange_focus
+        and not transport_focus
+        and not market_focus
+        and not threshold_focus
+        and not journey_focus
+        and not wide_focus
+    )
+    if "lam tich" in combined_text and (scene_center_kind == "location-center" or journey_focus or wide_focus):
+        cast_notes.append("if Lam Tich is present in a group or location beat, keep her as part of the survivor column, practical and story-first, not a glamour duo and not a pin-up focal pose")
+    if "di man" in combined_text and (single_presenter_focus or single_subject_focus):
+        cast_notes.append("if Di Man is the foreground subject here, show exactly one older woman in the foreground and do not replace her with a man")
 
     story_subjects = []
     for item in [scene_center_subject, primary_subject, *must_show]:
@@ -285,6 +327,30 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     elif scene_center_kind == "reaction-center" and story_subjects:
         story_subjects = story_subjects[:2]
     story_setting = [item for item in ([scene_center_location] + setting) if item and "District 17 wasteland survival setting" not in item][:2]
+    def decorate_subject(text: str) -> str:
+        low = text.lower()
+        if "lam tich" in low:
+            return "Lam Tich, a clearly adult beautiful wasteland woman, feminine and glam but still practical and story-first, wearing a weathered sporty survival top with rugged shorts, not bikini bottoms"
+        if "tan da" in low:
+            return "Tan Da, a clearly adult tall muscular man with upright masculine strength"
+        if "di man" in low:
+            return "Di Man, an older wasteland woman with a severe practical face"
+        if "a that" in low:
+            return "A That, a lean young adult man with restless nervous energy"
+        if "ninh" in low and "tieu mai" in low:
+            return "Ninh and Tieu Mai, exactly two child survivors with obvious child height and child faces"
+        if "ninh" in low:
+            return "Ninh, a slight preteen mute boy survivor with obvious child height"
+        if "tieu mai" in low:
+            return "Tieu Mai, a preteen girl survivor with obvious child height"
+        if "tieu bao" in low:
+            return "Tieu Bao, a very young child who must read unmistakably as a little child"
+        if "tieu ngo" in low:
+            return "Tieu Ngo, a wounded boy survivor who still reads clearly as a child beside adults"
+        if "lao phung" in low:
+            return "Lao Phung, an older adult man hardened by survival"
+        return text
+
     def clean_fragment(text: str) -> str:
         text = str(text).strip()
         text = text.replace("literal story beat from the current narration:", "").strip()
@@ -343,6 +409,11 @@ def scene_prompt(scene: dict[str, Any]) -> str:
             "single-subject object-centered shot, exactly one character presenting or reacting to the object, the object must stay central and readable, "
             "no duplicated copy of the same person, no invented second presenter, no portrait-only crop"
         )
+    elif single_subject_focus:
+        face_control = (
+            "single-subject story shot, exactly one foreground character only, no invented companion, no mirrored second body, no backup listener added just to fill the frame, "
+            "keep the narrated object, gesture, smoke, doorway gap, warning sign, or body action visible enough that the story beat reads immediately"
+        )
     elif transport_focus:
         face_control = (
             "injured transport shot, wheelchair or stretcher clearly visible with the injured person and nearby handler, "
@@ -374,41 +445,68 @@ def scene_prompt(scene: dict[str, Any]) -> str:
             "half-body or medium framing preferred when anatomy is complex, complete limbs, no fused bodies, no repeated default composition"
         )
 
-    prompt_parts = [
+    prompt_parts = []
+    if local_prompt_frontload:
+        prompt_parts.append(
+            "PRIORITY STORY LOCK FOR THIS EXACT SCENE ONLY: "
+            + " / ".join(local_prompt_frontload[:4])
+        )
+    prompt_parts.extend([
         face_control,
         ANATOMY_GUARDRAIL,
         FACE_GUARDRAIL,
         "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
-    ]
+    ])
     if scene_center_kind:
         prompt_parts.append(f"visual center for this scene: {scene_center_kind}")
     if story_subjects:
         if child_exchange_focus:
-            prompt_parts.append("show exactly these two child subjects and nobody else in the foreground: " + "; ".join(story_subjects[:2]))
+            prompt_parts.append("show exactly these two child subjects and nobody else in the foreground: " + "; ".join(decorate_subject(item) for item in story_subjects[:2]))
         elif single_presenter_focus:
-            prompt_parts.append("show exactly one foreground presenter: " + story_subjects[0])
+            prompt_parts.append("show exactly one foreground presenter: " + decorate_subject(story_subjects[0]))
+        elif single_subject_focus:
+            prompt_parts.append("show exactly one foreground subject: " + decorate_subject(story_subjects[0]))
         else:
-            prompt_parts.append("show these exact scene subjects: " + "; ".join(story_subjects[:3]))
+            prompt_parts.append("show these exact scene subjects: " + "; ".join(decorate_subject(item) for item in story_subjects[:3]))
     if child_present:
         prompt_parts.append("children must look unmistakably like children beside the adults, with shorter height, smaller shoulders, softer faces, and no adult combat styling")
         prompt_parts.append("when children are central, keep their count exact; do not add unnamed extra children to make the frame feel busier")
+        prompt_parts.append("children must wear rough scavenger survival clothing, never neat school uniforms, never classroom styling, and never clean student costumes")
+    if child_exchange_focus:
+        prompt_parts.append("show exactly one preteen boy and one preteen girl only, with the writing board at chest height or between them as the obvious center of the frame")
+        prompt_parts.append("do not add extra foreground children and do not hide the board from the viewer")
+    if scene_center_kind == "location-center":
+        prompt_parts.append("for location-centered beats, show a mixed survivor column, small scattered survivors, or pure environment as needed by the narration; do not collapse it into a posed male duo or a glam pair")
+        prompt_parts.append("if people are present in a location-centered beat, keep them secondary to the place and make the group feel mixed rather than symmetric hero posing")
     if any(token in combined_text for token in ["journey", "survivor column", "xe lan", "stretcher", "ration", "water", "well", "trade", "stall", "writing board"]):
         prompt_parts.append("avoid military squad posing or generic commando blocking; keep the scene grounded in scavenger survival, barter, thirst, injury, and travel strain")
     if any(token in combined_text for token in ["gieng", "well", "hanging tin can", "co nuoc", "mui dong"]):
         prompt_parts.append("keep the well mouth or water source visible enough that the audience immediately reads this as a water-discovery beat, not an empty yard or doorway")
+        prompt_parts.append("if the narration describes probing the well, lowering cloth or a can, reading a warning plate, or discovering a corpse-filter below, that exact object action must be visible in frame")
+        prompt_parts.append("do not replace the well scene with a village courtyard, house front, hut lane, or generic settlement yard")
     if any(token in combined_text for token in ["writing board", "bang viet", "viet xau", "doc cham"]):
         prompt_parts.append("the writing board must sit between the children or in one child's hands as the obvious social focus of the shot")
+        prompt_parts.append("no third child anywhere in the frame, and no child should face away from the board as if it were not the point of the scene")
+    if "lam tich" in combined_text and any(token in combined_text for token in ["rope", "well", "gieng", "danger", "signal pole", "claws", "ration", "bargain", "test", "smoke"]):
+        prompt_parts.append("Lam Tich can stay attractive and somewhat revealing, but the outfit must be a sports-bikini-style top, top only, plus rugged shorts, never bikini bottoms or a two-piece swimsuit, and her pose must stay practical and survival-driven over the story beat")
     if story_setting:
         prompt_parts.append("exact setting for this scene: " + ", ".join(story_setting))
     if story_actions:
         prompt_parts.append("visible action in this frame: " + " / ".join(story_actions))
     if story_props:
         prompt_parts.append("this object or prop must stay readable in frame: " + ", ".join(story_props))
+    if local_rescue_notes:
+        prompt_parts.append("local rescue notes for this exact scene only: " + " / ".join(local_rescue_notes[:4]))
+    if not story_subjects and scene_center_kind == "location-center":
+        prompt_parts.append("do not invent a foreground hero figure when this beat is mainly about the place itself; keep human figures absent or small unless the narration explicitly foregrounds someone")
     if not story_subjects and fallback_prompt:
         prompt_parts.append(clean_fragment(fallback_prompt))
     prompt = ", ".join(part for part in prompt_parts if part)
     if cast_notes:
-        prompt = f"{'; '.join(cast_notes)}, {prompt}"
+        if local_prompt_frontload:
+            prompt = f"{prompt}, exact cast safeguards: {'; '.join(cast_notes)}"
+        else:
+            prompt = f"{'; '.join(cast_notes)}, {prompt}"
     positive_suffix = DEFAULT_POSITIVE_SUFFIX
     if child_present:
         positive_suffix = positive_suffix.replace("clear natural human faces", "clear natural child and adult faces with correct age proportions")
@@ -866,6 +964,10 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
     expected_width = args.final_width or width
     expected_height = args.final_height or height
     scene_reference_image, scene_reference_denoise = scene_reference_policy(scene, args.reference_image, args.reference_denoise)
+    scene_negative_suffix = str(scene.get("local_negative_prompt") or "").strip()
+    scene_negative_prompt = args.negative_prompt
+    if scene_negative_suffix:
+        scene_negative_prompt = f"{scene_negative_prompt}, {scene_negative_suffix}"
     attempt_errors: list[str] = []
     last_seed = args.seed + index if args.seed >= 0 else int(time.time() * 1000) % 2_147_483_647
     skipped_after_failures = False
@@ -879,13 +981,16 @@ def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, 
                 pass
         original_reference_image = args.reference_image
         original_reference_denoise = args.reference_denoise
+        original_negative_prompt = args.negative_prompt
         args.reference_image = scene_reference_image
         args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
+        args.negative_prompt = scene_negative_prompt
         try:
             workflow = build_sd15_workflow(args, prompt, seed, width, height)
         finally:
             args.reference_image = original_reference_image
             args.reference_denoise = original_reference_denoise
+            args.negative_prompt = original_negative_prompt
         started_at = time.time()
         print(f"[scene {index + 1}] image attempt {attempt}/{args.max_attempts} seed={seed}", flush=True)
         try:
@@ -1075,3 +1180,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

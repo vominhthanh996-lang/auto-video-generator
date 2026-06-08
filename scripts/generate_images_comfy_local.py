@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Generate premium local storyboard images through an existing ComfyUI install.
 
@@ -47,7 +47,14 @@ DEFAULT_NEGATIVE = (
     "extra arm, extra hand, extra leg, missing arm, missing hand, missing leg, missing foot, tangled limbs, broken wrists, broken elbows, broken knees, impossible pose, "
     "cropped face, face out of frame, hidden face, faceless, over-smoothed face, childlike doll face, "
     "solo glamour portrait, extreme close-up glamour crop, cropped body, random extra character, missing second character when scene needs two people, "
-    "nude, naked, topless, exposed breasts, exposed nipples, areola, sideboob, underboob, cleavage focus, lingerie, bikini, underwear, see-through clothing, erotic pose, voyeuristic framing"
+    "nude, naked, topless, exposed breasts, exposed nipples, areola, sideboob, underboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, underwear, panties, thong, matching underwear set, see-through clothing, erotic pose, voyeuristic framing"
+)
+
+LAM_TICH_CLOTHING_RULE = (
+    "Lam Tich clothing rule: keep her clearly adult, attractive, feminine, and sexy in a wasteland way, but story-first; "
+    "use a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
+    "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
+    "If the beat is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
 
 RATIO_TO_SIZE = {
@@ -200,6 +207,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
     if "lam tich" in combined_text:
         cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
+        cast_notes.append(LAM_TICH_CLOTHING_RULE)
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
@@ -344,6 +352,8 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         face_control,
         "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
     ]
+    if "lam tich" in combined_text:
+        prompt_parts.append("Lam Tich outfit must be a sports-bikini-style top, top only, plus rugged shorts, never bikini bottoms or a two-piece swimsuit, and never let clothing override the current story action")
     if scene_center_kind:
         prompt_parts.append(f"visual center for this scene: {scene_center_kind}")
     if story_subjects:
@@ -915,3 +925,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

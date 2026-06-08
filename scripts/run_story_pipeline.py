@@ -49,7 +49,7 @@ DEFAULT_NEGATIVE = (
     "missing nose, broken nose, bad mouth, fused lips, duplicate face, two faces on one head, "
     "over-smoothed face, childlike doll face, face too far away, tiny unreadable face"
     ", nude, naked, topless, shirtless woman, bare chest, bare torso, exposed breasts, exposed nipples, areola, "
-    "underboob, sideboob, cleavage focus, exposed navel, full bare abdomen, lingerie, bikini, underwear, bra, bralette, crop top, deep neckline, off-shoulder, bare shoulders, collarbone, clavicle, "
+    "underboob, sideboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, underwear, panties, thong, bra and panties set, matching underwear set, "
     "see-through clothing, wet revealing clothing, erotic pose, seductive pose, pin-up pose, reclining pin-up pose, spread legs, "
     "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
     "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
@@ -66,7 +66,8 @@ GENDER_CLARITY_RULE = (
 LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with a striking feminine face, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
-    "practical summer wasteland clothing with bare arms and readable legs, open neckline or upper chest allowed but nipples and intimate areas fully covered by fabric, "
+    "practical summer wasteland clothing with bare arms and readable legs: a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
+    "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; open neckline or a small midriff hint is allowed only when the story beat supports it, while nipples and intimate areas stay fully covered by fabric, "
     "stubborn survival dignity, attractive in a believable human way"
 )
 
@@ -1968,4 +1969,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
