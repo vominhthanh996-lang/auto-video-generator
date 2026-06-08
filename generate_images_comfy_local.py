@@ -55,7 +55,8 @@ DEFAULT_NEGATIVE = (
     "solo glamour portrait, extreme close-up glamour crop, cropped body, random extra character, missing second character when scene needs two people, "
     "nude, naked, topless, exposed breasts, exposed nipples, areola, direct nipple outline, explicit underboob, explicit sideboob, cleavage focus, lingerie, two-piece bikini, string bikini, triangle bikini, bikini bottom, swimsuit bottom, swimwear, bra and panties set, matching underwear set, panties, underwear, thong, see-through clothing, erotic pose, voyeuristic framing, "
     "school uniform, schoolgirl uniform, classroom costume, neat student outfit, "
-    "military squad pose, SWAT team, modern soldier, assault rifle, tactical squad march, random firearm, commando pose, uniform patch focus"
+    "military squad pose, SWAT team, modern soldier, assault rifle, tactical squad march, random firearm, commando pose, uniform patch focus, "
+    "masculine woman, woman with male facial structure, square male jaw on woman, heavy masculine brow on woman, gender ambiguous face"
 )
 
 ANATOMY_GUARDRAIL = (
@@ -75,6 +76,11 @@ LAM_TICH_CLOTHING_RULE = (
     "when the scene beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way; "
     "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
     "If the scene is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
+)
+
+FEMALE_FACE_RULE = (
+    "Female face rule: adult women must have unmistakably feminine faces with soft female facial structure, delicate jawline, balanced feminine eyes nose and mouth, "
+    "no square male jaw, no heavy masculine brow, no male facial structure, while still carrying dirt, ash, fatigue, and wasteland realism."
 )
 
 MALE_WASTELAND_CLOTHING_RULE = (
@@ -252,7 +258,8 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
         cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
     if "lam tich" in combined_text:
-        cast_notes.append("Lam Tich must stay a clearly adult woman with a readable feminine face and grounded scavenger presence")
+        cast_notes.append("Lam Tich must stay a clearly adult woman with a readable unmistakably feminine face and grounded scavenger presence")
+        cast_notes.append(FEMALE_FACE_RULE)
         cast_notes.append(LAM_TICH_CLOTHING_RULE)
     smoke_or_ash_focus = any(token in combined_text for token in ["smoke", "ash", "fire", "khoi", "tro", "chay"])
     if "tan da" in combined_text:

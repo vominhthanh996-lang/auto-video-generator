@@ -54,11 +54,11 @@ DEFAULT_NEGATIVE = (
     "sexualized body, sexualized minor, childlike body, teen girl, underage, fetish, voyeuristic framing, "
     "focal point on breasts, focal point on buttocks, focal point on crotch, torso glamour shot, waist fetish framing, "
     "open jacket with breasts exposed, open shirt with breasts exposed, wardrobe malfunction, boudoir, fetish glamour pose, "
-    "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure"
+    "androgynous face, gender ambiguous face, masculine woman, feminine man, gender swap, woman with male facial structure, man with feminine facial structure, square male jaw on woman, heavy masculine brow on woman"
 )
 
 GENDER_CLARITY_RULE = (
-    "Gender clarity rule: the word woman means a clearly adult female character with feminine face and body language; "
+    "Gender clarity rule: the word woman means a clearly adult female character with unmistakably feminine face, soft female facial structure, delicate jawline, balanced feminine eyes nose and mouth, and feminine body language; "
     "the word man means a clearly adult male character with masculine face, broad masculine body language, and wasteland toughness; "
     "maintain consistent character identity and body language from scene to scene; "
     "avoid random identity drift or face-swapping between scenes. "
@@ -66,7 +66,7 @@ GENDER_CLARITY_RULE = (
 )
 
 LAM_TICH_VISUAL = (
-    "Lam Tich, a beautiful young Asian wasteland scavenger woman with a striking feminine face, tired expressive eyes, cracked lips, "
+    "Lam Tich, a beautiful young Asian wasteland scavenger woman with an unmistakably feminine face, soft delicate female facial structure, no masculine jaw, no heavy male brow, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
     "practical summer wasteland clothing with bare arms and readable legs: a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
     "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; when the story beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way, subtle wasteland pin-up energy without explicit fetish framing, "
@@ -80,7 +80,7 @@ YOUTUBE_SAFE_VISUAL_RULE = (
 )
 
 LAM_TICH_FACE_RULE = (
-    "When Lam Tich is the scene focus, make her face readable and emotionally clear: expressive eyes, readable nose and mouth, "
+    "When Lam Tich is the scene focus, make her face readable, emotionally clear, and obviously feminine: soft feminine jawline, no square male jaw, no masculine brow ridge, expressive eyes, readable nose and mouth, "
     "short black hair not hiding the whole face, tired but memorable survival presence, no tiny unreadable face, "
     "beautiful and feminine in a grounded wasteland way, never a studio beauty-portrait."
 )
