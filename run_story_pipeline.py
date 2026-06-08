@@ -63,7 +63,7 @@ GENDER_CLARITY_RULE = (
     "the word man means a clearly adult male character with masculine face, broad masculine body language, and wasteland toughness; "
     "maintain consistent character identity and body language from scene to scene; "
     "avoid random identity drift or face-swapping between scenes. "
-    "Female sexy styling applies only to adult women such as Lam Tich; male characters must never inherit Lam Tich's sports-bikini-style top, crop top, bare-midriff clothing, short shorts, or feminine glamour outfit."
+    "Female sexy styling applies only to adult women such as Lam Tich; male characters must never inherit Lam Tich's fitted feminine tops, crop top, bare-midriff clothing, short shorts, or feminine glamour outfit."
 )
 
 STORY_FIRST_VISUAL_RULE = (
@@ -75,13 +75,13 @@ STORY_FIRST_VISUAL_RULE = (
 
 MALE_OUTFIT_GUARDRAIL = (
     "Male outfit guardrail: every adult man must wear masculine wasteland clothing with covered waist and practical layers: rugged jacket or coat, layered shirt, long pants, boots, belts, armor scraps, dirty cloth wraps. "
-    "No male crop top, no strappy top, no spaghetti straps, no sports-bikini-style top, no exposed male belly or waist, no short shorts, no feminine glamour clothing."
+    "No male crop top, no strappy top, no spaghetti straps, no fitted feminine top, no exposed male belly or waist, no short shorts, no feminine glamour clothing."
 )
 
 LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with an unmistakably feminine face, soft delicate female facial structure, no masculine jaw, no heavy male brow, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
-    "practical summer wasteland clothing with bare arms and readable legs: a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
+    "practical summer wasteland clothing with bare arms and readable legs: a fitted thick-strap weathered survival top under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
     "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; when the story beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way, subtle wasteland pin-up energy without explicit fetish framing, "
     "stubborn survival dignity, attractive in a believable human way"
 )
@@ -101,7 +101,7 @@ LAM_TICH_FACE_RULE = (
 TAN_DA_VISUAL = (
     "Tan Da, a tall muscular Asian male survivor with a handsome upright face, strong brows, steady alert eyes, weathered jawline, "
     "broad shoulders, powerful build, rugged masculine wasteland clothing: worn dark tactical coat or heavy scavenger jacket, layered practical shirt, long practical pants, boots, belts, straps, armor scraps, dirty bandages at the abdomen only when the narration calls for the wound, "
-    "never a sports top, never sports-bikini-style top, never crop top, never bare midriff, never exposed belly fashion, never short shorts, never feminine styling, "
+    "never a sports top, never fitted feminine top, never crop top, never bare midriff, never exposed belly fashion, never short shorts, never feminine styling, "
     "protective righteous presence, exhausted but still physically imposing, never villain-coded unless the story beat says so"
 )
 

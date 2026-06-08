@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import struct
 import time
@@ -73,7 +74,7 @@ FACE_GUARDRAIL = (
 
 LAM_TICH_CLOTHING_RULE = (
     "Lam Tich clothing rule: keep her attractive, feminine, and sexy in a wasteland way, but story-first; "
-    "use a weathered athletic survival crop top or thick-strap sports-bikini-style top, top only, under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
+    "use a fitted thick-strap weathered survival top under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
     "when the scene beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way; "
     "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
     "If the scene is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
@@ -94,7 +95,7 @@ FEMALE_FACE_RULE = (
 MALE_WASTELAND_CLOTHING_RULE = (
     "Male character rule: adult men must read clearly masculine with strong male facial structure, broad shoulders, grounded wasteland toughness, and practical masculine clothing; "
     "use worn dark tactical coats, heavy scavenger jackets, layered practical shirts, long rugged pants, boots, belts, straps, armor scraps, dirty cloth wraps, and survival gear. "
-    "Male characters must never inherit Lam Tich's sports-bikini-style top, crop top, droptop, strappy top, spaghetti straps, bare-midriff clothing, exposed belly or waist, short shorts, feminine glamour outfit, bikini, or swimwear styling; no exposed male belly unless the narration explicitly shows a wound being treated."
+    "Male characters must never inherit Lam Tich's fitted feminine tops, crop top, droptop, strappy top, spaghetti straps, bare-midriff clothing, exposed belly or waist, short shorts, feminine glamour outfit, bikini, or swimwear styling; no exposed male belly unless the narration explicitly shows a wound being treated."
 )
 
 RATIO_TO_SIZE = {
@@ -188,7 +189,10 @@ def scene_prompt(scene: dict[str, Any]) -> str:
 
     shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
     must_show = [str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()]
-    actions = [str(item).strip() for item in (scene.get("visual_action") or []) if str(item).strip()]
+    raw_actions = scene.get("visual_action")
+    if raw_actions is None:
+        raw_actions = scene.get("visual_actions")
+    actions = [str(item).strip() for item in (raw_actions or []) if str(item).strip()]
     setting = [str(item).strip() for item in (scene.get("visual_setting") or []) if str(item).strip()]
     props = [str(item).strip() for item in (scene.get("visual_props") or []) if str(item).strip()]
     narration = str(scene.get("narration") or "").strip()
@@ -275,7 +279,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     smoke_or_ash_focus = any(token in combined_text for token in ["smoke", "ash", "fire", "khoi", "tro", "chay"])
     if "tan da" in combined_text:
         cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
-        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, sports-bikini-style top, crop top, droptop, strappy top, bare midriff, exposed waist, short shorts, or feminine styling")
+        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, fitted feminine top, crop top, droptop, strappy top, bare midriff, exposed waist, short shorts, or feminine styling")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("keep only the people who actually drive this beat in the foreground; do not add extra companions unless the narration needs them, and never replace children with generic adults")
     if "ninh" in combined_text or "tieu mai" in combined_text:
@@ -382,6 +386,11 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     def clean_fragment(text: str) -> str:
         text = str(text).strip()
         text = text.replace("literal story beat from the current narration:", "").strip()
+        text = text.replace("sports-bikini-style top, top only", "fitted thick-strap weathered survival top")
+        text = text.replace("sports-bikini-style top", "fitted thick-strap weathered survival top")
+        text = text.replace("sport bikini top", "fitted thick-strap weathered survival top")
+        text = re.sub(r"\bmale\b[^,.]{0,80}\b(crop top|droptop|strappy top|spaghetti straps|bare midriff|exposed waist|exposed belly)\b", "adult male in rugged layered wasteland clothing", text, flags=re.IGNORECASE)
+        text = re.sub(r"\bman\b[^,.]{0,80}\b(crop top|droptop|strappy top|spaghetti straps|bare midriff|exposed waist|exposed belly)\b", "adult man in rugged layered wasteland clothing", text, flags=re.IGNORECASE)
         return text[:180]
 
     story_actions = [clean_fragment(item) for item in ([scene_center_action] + actions[:2]) if clean_fragment(item)]
@@ -517,11 +526,13 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         prompt_parts.append("the writing board must sit between the children or in one child's hands as the obvious social focus of the shot")
         prompt_parts.append("no third child anywhere in the frame, and no child should face away from the board as if it were not the point of the scene")
     if "lam tich" in combined_text and any(token in combined_text for token in ["rope", "well", "gieng", "danger", "signal pole", "claws", "ration", "bargain", "test", "smoke"]):
-        prompt_parts.append("Lam Tich can stay attractive and somewhat revealing, but the outfit must be a sports-bikini-style top, top only, plus rugged shorts, never bikini bottoms or a two-piece swimsuit, and her pose must stay practical and survival-driven over the story beat")
+        prompt_parts.append("Lam Tich can stay attractive and somewhat revealing, but the outfit must be a fitted thick-strap weathered survival top plus rugged shorts, never bikini bottoms or a two-piece swimsuit, and her pose must stay practical and survival-driven over the story beat")
     if story_setting:
         prompt_parts.append("exact setting for this scene: " + ", ".join(story_setting))
     if story_actions:
         prompt_parts.append("visible action in this frame: " + " / ".join(story_actions))
+    elif narration:
+        prompt_parts.append("narration source of truth for action: " + clean_fragment(narration))
     if story_props:
         prompt_parts.append("this object or prop must stay readable in frame: " + ", ".join(story_props))
     if local_rescue_notes:
