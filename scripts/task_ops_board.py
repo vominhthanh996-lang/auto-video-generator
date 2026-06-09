@@ -5,6 +5,7 @@ import argparse
 import datetime as dt
 import json
 import re
+import shutil
 import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -42,10 +43,55 @@ def read_task_statuses() -> list[dict]:
             continue
         refresh_counts_from_assets(data)
         reconcile_live_state(data)
+        attach_qa_state(data)
         data["_status_file"] = str(path)
         enrich_with_scheduler(data)
         tasks.append(data)
     return tasks
+
+
+def attach_qa_state(task: dict) -> None:
+    task_name = str(task.get("task") or "").strip()
+    if not task_name:
+        return
+    request_path = qa_request_path_for_task(task_name)
+    if not request_path.exists():
+        return
+    request = read_json(request_path) or {}
+    if not request:
+        return
+    task["qa_request"] = str(request_path)
+    task["qa_request_state"] = {
+        "status": request.get("status", ""),
+        "requested_at": request.get("requested_at", ""),
+        "reviewed_at": request.get("reviewed_at", ""),
+        "summary": request.get("summary", ""),
+        "fail_scene_ranges": request.get("fail_scene_ranges") or [],
+        "fail_scenes": request.get("fail_scenes") or [],
+        "regen": request.get("regen") or {},
+    }
+    status = str(request.get("status") or "").lower()
+    nodes = task.setdefault("nodes", {})
+    qa_node = nodes.setdefault("qa", {"status": "pending", "detail": ""})
+    if status in {"checking", "requested"}:
+        qa_node["status"] = "running"
+        qa_node["detail"] = "Codex is expected to review images visually. Waiting for manual pass/fail."
+        task["qa_summary"] = f"Codex visual QA {status}; request: {request_path}"
+    elif status in {"failed", "fail"}:
+        qa_node["status"] = "failed"
+        qa_node["detail"] = str(request.get("summary") or "Codex visual QA failed.")
+        task["qa_summary"] = qa_node["detail"]
+        render_node = nodes.setdefault("render", {"status": "pending", "detail": ""})
+        render_node["status"] = "blocked"
+        render_node["detail"] = "Blocked until failed scenes are regenerated and QA passes."
+    elif status in {"passed", "pass", "approved", "done"}:
+        qa_node["status"] = "done"
+        qa_node["detail"] = str(request.get("summary") or "Codex visual QA passed.")
+        task["qa_summary"] = qa_node["detail"]
+    elif status in {"regenerating", "regen"}:
+        qa_node["status"] = "warning"
+        qa_node["detail"] = "Failed scenes were moved to reject and queued for regeneration."
+        task["qa_summary"] = qa_node["detail"]
 
 
 def refresh_counts_from_assets(task: dict) -> None:
@@ -347,7 +393,7 @@ def request_qa(task_name: str) -> dict:
     now = dt.datetime.now().isoformat(timespec="seconds")
     request = {
         "task": task_name,
-        "status": "requested",
+        "status": "checking",
         "requested_at": now,
         "pass_threshold": QA_PASS_THRESHOLD,
         "storyboard": str(storyboard_path),
@@ -377,12 +423,12 @@ def request_qa(task_name: str) -> dict:
     if status:
         nodes = status.setdefault("nodes", {})
         nodes["qa"] = {
-            "status": "requested",
-            "detail": f"Codex QA requested, pass >= {QA_PASS_THRESHOLD}%, waiting for visual review.",
+            "status": "running",
+            "detail": f"Codex visual QA in progress, pass >= {QA_PASS_THRESHOLD}%. Waiting for Codex to mark pass/fail.",
         }
-        status["qa_summary"] = f"Requested at {now}; pass >= {QA_PASS_THRESHOLD}%; request: {request_path}"
+        status["qa_summary"] = f"Codex visual QA checking since {now}; pass >= {QA_PASS_THRESHOLD}%; request: {request_path}"
         status["qa_request"] = str(request_path)
-        status["message"] = "Codex QA requested from OpsBoard. Images/audio stay untouched until Codex visual review confirms fail scenes."
+        status["message"] = "Codex visual QA requested from OpsBoard. Waiting for Codex to review images and mark pass/fail."
         status["updated_at"] = now
         write_json(status_path, status)
 
@@ -393,6 +439,143 @@ def request_qa(task_name: str) -> dict:
         "pass_threshold": QA_PASS_THRESHOLD,
         "counts": counts,
         "errors": [],
+    }
+
+
+def expand_scene_ranges(values: list) -> list[int]:
+    scenes: set[int] = set()
+    for value in values:
+        text = str(value).strip()
+        if not text:
+            continue
+        for part in re.split(r"[,;]\s*", text):
+            part = part.strip()
+            if not part:
+                continue
+            match = re.fullmatch(r"0*(\d+)\s*-\s*0*(\d+)", part)
+            if match:
+                start = int(match.group(1))
+                end = int(match.group(2))
+                if start > end:
+                    start, end = end, start
+                scenes.update(range(start, end + 1))
+                continue
+            match = re.search(r"0*(\d+)", part)
+            if match:
+                scenes.add(int(match.group(1)))
+    return sorted(scene for scene in scenes if scene > 0)
+
+
+def scene_image_path(scene: dict, storyboard_dir: Path, project_root: Path, index: int) -> Path:
+    value = scene.get("image")
+    if value:
+        path = Path(str(value))
+        if not path.is_absolute():
+            path = project_root / path
+        return path
+    return storyboard_dir / "assets" / f"scene-{index:03d}.png"
+
+
+def append_unique_note(scene: dict, key: str, note: str) -> None:
+    values = scene.get(key)
+    if not isinstance(values, list):
+        values = []
+    if note not in values:
+        values.append(note)
+    scene[key] = values
+
+
+def regen_failed_qa(task_name: str) -> dict:
+    request_path = qa_request_path_for_task(task_name)
+    request = read_json(request_path) or {}
+    if not request:
+        return {"task": task_name, "started": False, "errors": [f"Missing QA request: {request_path}"]}
+    status = str(request.get("status") or "").lower()
+    if status not in {"failed", "fail"}:
+        return {"task": task_name, "started": False, "errors": [f"QA status is not failed: {status or 'empty'}"]}
+
+    storyboard_path = Path(str(request.get("storyboard") or ""))
+    project_root = Path(str(request.get("project") or storyboard_path.parent))
+    if not storyboard_path.exists():
+        return {"task": task_name, "started": False, "errors": [f"Missing storyboard: {storyboard_path}"]}
+    storyboard = read_json(storyboard_path) or {}
+    scenes = list(storyboard.get("scenes") or [])
+    failed = expand_scene_ranges(list(request.get("fail_scene_ranges") or []) + list(request.get("fail_scenes") or []))
+    failed = [index for index in failed if 1 <= index <= len(scenes)]
+    if not failed:
+        return {"task": task_name, "started": False, "errors": ["QA failed but no fail scenes were listed."]}
+
+    now = dt.datetime.now()
+    reject_dir = project_root / "reject" / f"qa-{now.strftime('%Y%m%d-%H%M%S')}"
+    reject_dir.mkdir(parents=True, exist_ok=True)
+    moved: list[str] = []
+    missing: list[int] = []
+    for index in failed:
+        scene = scenes[index - 1]
+        image_path = scene_image_path(scene, storyboard_path.parent, project_root, index)
+        if image_path.exists():
+            target = reject_dir / image_path.name
+            if target.exists():
+                target = reject_dir / f"scene-{index:03d}-{int(now.timestamp())}{image_path.suffix}"
+            shutil.move(str(image_path), str(target))
+            moved.append(str(target))
+        else:
+            missing.append(index)
+        scene.pop("image", None)
+        scene.pop("local_image", None)
+        append_unique_note(scene, "local_prompt_frontload", "QA rescue: draw the exact narrated action first; no generic standing pose, no glamour pose, no bikini-like framing.")
+        append_unique_note(scene, "local_rescue_notes", "QA rescue: make required props, location, and character action readable in this frame.")
+        append_unique_note(scene, "local_rescue_notes", "QA rescue: male characters must wear masculine layered wasteland clothing with covered waist; female styling must stay story-first and practical.")
+
+    storyboard["scenes"] = scenes
+    storyboard_path.write_text(json.dumps(storyboard, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    request["status"] = "regenerating"
+    request["regen"] = {
+        "requested_at": now.isoformat(timespec="seconds"),
+        "reject_dir": str(reject_dir),
+        "scene_count": len(failed),
+        "scenes": failed,
+        "moved": moved,
+        "missing_existing_images": missing,
+    }
+    request["summary"] = f"Moved {len(moved)} failed image(s) to reject and queued {len(failed)} scene(s) for regeneration."
+    write_json(request_path, request)
+
+    status_path = status_path_for_task(task_name)
+    state = read_json(status_path) or {}
+    if state:
+        nodes = state.setdefault("nodes", {})
+        nodes["qa"] = {"status": "warning", "detail": request["summary"]}
+        nodes["images"] = {"status": "running", "detail": f"Regenerating QA failed scenes: {len(failed)} scene(s)"}
+        nodes["render"] = {"status": "blocked", "detail": "Render blocked until regenerated scenes pass Codex visual QA"}
+        state["overall"] = "queued"
+        state["current_node"] = "images"
+        state["message"] = request["summary"]
+        state["qa_summary"] = request["summary"]
+        state["qa_request"] = str(request_path)
+        state["updated_at"] = now.isoformat(timespec="seconds")
+        write_json(status_path, state)
+
+    config_path = config_path_for_task(task_name)
+    started = False
+    errors: list[str] = []
+    if config_path.exists():
+        try:
+            started = start_supervisor(config_path)
+        except Exception as exc:
+            errors.append(str(exc))
+    else:
+        errors.append(f"Missing config file: {config_path}")
+
+    return {
+        "task": task_name,
+        "started": started,
+        "errors": errors,
+        "reject_dir": str(reject_dir),
+        "scenes": failed,
+        "moved": moved,
+        "missing_existing_images": missing,
     }
 
 
@@ -699,6 +882,17 @@ class Handler(SimpleHTTPRequestHandler):
             payload = request_qa(task_name)
             body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
             self.send_response(200 if payload.get("requested") else 400)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if parsed.path.startswith("/api/tasks/") and parsed.path.endswith("/qa-regen"):
+            middle = parsed.path[len("/api/tasks/") : -len("/qa-regen")].strip("/")
+            task_name = unquote(middle)
+            payload = regen_failed_qa(task_name)
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(200 if payload.get("started") or not payload.get("errors") else 400)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()

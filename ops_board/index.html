@@ -178,6 +178,11 @@
       background: rgba(255,104,104,.12);
       color: #ffd6d6;
     }
+    .btn.warn {
+      border-color: rgba(255,181,71,.45);
+      background: rgba(255,181,71,.12);
+      color: #ffe2aa;
+    }
     .btn:disabled {
       opacity: .6;
       cursor: wait;
@@ -222,6 +227,9 @@
 
     function renderTask(task) {
       const nodes = task.nodes || {};
+      const qaState = task.qa_request_state || {};
+      const qaStatus = String(qaState.status || "").toLowerCase();
+      const canRegen = ["failed", "fail"].includes(qaStatus);
       const entries = [
         ["storyboard", "Read Story"],
         ["voice", "Gen Audio"],
@@ -258,10 +266,15 @@
             <div><strong>Updated:</strong> ${safe(task.updated_at)}</div>
             <div class="links"><strong>Log:</strong> ${safe(task.log)}</div>
             <div class="links"><strong>QA:</strong> ${safe(task.qa_summary)}</div>
+            <div><strong>QA status:</strong> ${safe(qaState.status || "none")}</div>
+            <div><strong>QA reviewed:</strong> ${safe(qaState.reviewed_at)}</div>
+            <div><strong>QA failed scenes:</strong> ${safe((qaState.fail_scene_ranges || qaState.fail_scenes || []).join(", "))}</div>
+            <div><strong>QA regen:</strong> ${safe(qaState.regen?.reject_dir || "")}</div>
             <div class="links"><strong>Project:</strong> ${safe(task.project)}</div>
           </div>
           <div class="actions">
             <button class="btn" onclick="requestQa('${safe(task.task).replace(/'/g, "\\'")}')">QA check</button>
+            ${canRegen ? `<button class="btn warn" onclick="regenQa('${safe(task.task).replace(/'/g, "\\'")}')">Regen failed</button>` : ""}
             <button class="btn danger" onclick="endTask('${safe(task.task).replace(/'/g, "\\'")}')">End Task</button>
           </div>
         </section>
@@ -269,7 +282,7 @@
     }
 
     async function requestQa(taskName) {
-      const ok = confirm(`Request Codex visual QA for "${taskName}"? This only marks the task for Codex to review images. It will not move or delete images by itself.`);
+      const ok = confirm(`Request Codex visual QA for "${taskName}"? The board will show checking, then Codex must visually review and mark pass/fail.`);
       if (!ok) return;
       try {
         const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/qa`, { method: "POST" });
@@ -278,10 +291,27 @@
           alert(`QA request failed:\n${(payload.errors || [response.statusText]).join("\n")}`);
           return;
         }
-        alert(`QA requested. Pass threshold: ${payload.pass_threshold}%.`);
+        alert(`QA checking requested. Pass threshold: ${payload.pass_threshold}%. Wait for Codex to review images and mark pass/fail.`);
         await loadBoard();
       } catch (error) {
         alert(`Failed to request QA: ${error.message}`);
+      }
+    }
+
+    async function regenQa(taskName) {
+      const ok = confirm(`Regenerate QA failed scenes for "${taskName}"? Failed images will be moved to a reject folder, storyboard scene images will be cleared, and the worker will resume image generation.`);
+      if (!ok) return;
+      try {
+        const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/qa-regen`, { method: "POST" });
+        const payload = await response.json();
+        if (!response.ok || payload.errors?.length) {
+          alert(`Regen failed:\n${(payload.errors || [response.statusText]).join("\n")}`);
+          return;
+        }
+        alert(`Regen queued for ${payload.scenes?.length || 0} scene(s).\nReject folder: ${payload.reject_dir || ""}`);
+        await loadBoard();
+      } catch (error) {
+        alert(`Failed to start QA regen: ${error.message}`);
       }
     }
 
