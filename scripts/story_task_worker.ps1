@@ -402,37 +402,55 @@ function Ensure-ComfyService {
         throw "ComfyUI service script not found: $comfyServiceScript"
     }
     Write-Log "ENSURE ComfyUI service"
-    $psi = New-Object System.Diagnostics.ProcessStartInfo
-    $psi.FileName = "powershell.exe"
-    $psi.Arguments = ('-NoProfile -ExecutionPolicy Bypass -File "{0}" -TimeoutSeconds 45' -f $comfyServiceScript)
-    $psi.RedirectStandardOutput = $true
-    $psi.RedirectStandardError = $true
-    $psi.UseShellExecute = $false
-    $psi.CreateNoWindow = $true
-    $proc = [System.Diagnostics.Process]::Start($psi)
-    if (-not $proc.WaitForExit(90000)) {
-        try { $proc.Kill() } catch {}
+    $taskSlug = Get-Slug $script:TaskName
+    $outLog = Join-Path (Split-Path -Parent $script:StatusPath) ("{0}-comfy-start.out.log" -f $taskSlug)
+    $errLog = Join-Path (Split-Path -Parent $script:StatusPath) ("{0}-comfy-start.err.log" -f $taskSlug)
+    $proc = Start-Process -FilePath "powershell.exe" -ArgumentList @(
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", $comfyServiceScript,
+        "-TimeoutSeconds", "45"
+    ) -WindowStyle Hidden -RedirectStandardOutput $outLog -RedirectStandardError $errLog -PassThru
+
+    $deadline = (Get-Date).AddSeconds(90)
+    while ((Get-Date) -lt $deadline) {
+        Start-Sleep -Seconds 2
         if (Test-ComfyApiAlive) {
-            Write-Log "COMFYUI start helper timed out, but API is alive"
+            Write-Log "COMFYUI API became alive"
             return
         }
-        throw "ComfyUI service helper timed out"
-    }
-    $comfyJson = $proc.StandardOutput.ReadToEnd()
-    $comfyErr = $proc.StandardError.ReadToEnd()
-    if ($proc.ExitCode -ne 0) {
-        if (Test-ComfyApiAlive) {
-            Write-Log ("COMFYUI helper exited {0}, but API is alive: {1}" -f $proc.ExitCode, $comfyErr.Trim())
-            return
+        try {
+            if ($proc.HasExited) {
+                break
+            }
         }
-        throw ("ComfyUI service failed to start: {0}" -f $comfyErr.Trim())
+        catch {
+            break
+        }
     }
-    if ($comfyJson) {
-        Write-Log ("COMFYUI {0}" -f ($comfyJson | Out-String).Trim())
+
+    if (Test-ComfyApiAlive) {
+        Write-Log "COMFYUI API alive after helper wait"
+        return
     }
-    if (-not (Test-ComfyApiAlive)) {
-        throw "ComfyUI did not report healthy after startup"
+
+    try {
+        if (-not $proc.HasExited) {
+            $proc.Kill()
+        }
     }
+    catch {}
+    $comfyErr = ""
+    try {
+        if (Test-Path -LiteralPath $errLog) {
+            $comfyErr = (Get-Content -LiteralPath $errLog -Raw -ErrorAction SilentlyContinue).Trim()
+        }
+    }
+    catch {}
+    if ($comfyErr) {
+        throw ("ComfyUI service failed to start: {0}" -f $comfyErr)
+    }
+    throw "ComfyUI service helper timed out"
 }
 
 function Validate-StoryboardText {
