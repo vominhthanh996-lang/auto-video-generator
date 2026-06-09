@@ -68,6 +68,10 @@ def attach_qa_state(task: dict) -> None:
         "summary": request.get("summary", ""),
         "fail_scene_ranges": request.get("fail_scene_ranges") or [],
         "fail_scenes": request.get("fail_scenes") or [],
+        "fail_details": request.get("fail_details") or [],
+        "pass_scenes": request.get("pass_scenes") or [],
+        "pass_count": request.get("pass_count", ""),
+        "fail_count": request.get("fail_count", ""),
         "regen": request.get("regen") or {},
     }
     status = str(request.get("status") or "").lower()
@@ -75,7 +79,7 @@ def attach_qa_state(task: dict) -> None:
     qa_node = nodes.setdefault("qa", {"status": "pending", "detail": ""})
     if status in {"checking", "requested"}:
         qa_node["status"] = "running"
-        qa_node["detail"] = "Codex is expected to review images visually. Waiting for manual pass/fail."
+        qa_node["detail"] = "Codex automation is expected to review images visually and write pass/fail details."
         task["qa_summary"] = f"Codex visual QA {status}; request: {request_path}"
     elif status in {"failed", "fail"}:
         qa_node["status"] = "failed"
@@ -411,11 +415,15 @@ def request_qa(task_name: str) -> dict:
         ],
         "workflow": [
             "Generate all image and audio assets first; QA does not run during generation.",
-            "After QA is requested, Codex reviews the images visually against the criteria.",
+            "After QA is requested, Codex heartbeat automation reviews the images visually against the criteria.",
             "Only confirmed fail scenes are moved to reject folders.",
             "Only confirmed fail scenes receive local prompt overrides or rescue notes for regeneration.",
             "Pass images remain untouched in assets.",
         ],
+        "automation": {
+            "expected_handler": "Codex heartbeat automation in the active QA thread",
+            "result_fields": ["status", "reviewed_at", "summary", "pass_scenes", "fail_scenes", "fail_scene_ranges", "fail_details"],
+        },
     }
     request_path = qa_request_path_for_task(task_name)
     write_json(request_path, request)
@@ -424,11 +432,11 @@ def request_qa(task_name: str) -> dict:
         nodes = status.setdefault("nodes", {})
         nodes["qa"] = {
             "status": "running",
-            "detail": f"Codex visual QA in progress, pass >= {QA_PASS_THRESHOLD}%. Waiting for Codex to mark pass/fail.",
+            "detail": f"Codex automation visual QA queued, pass >= {QA_PASS_THRESHOLD}%. Waiting for reviewed pass/fail details.",
         }
         status["qa_summary"] = f"Codex visual QA checking since {now}; pass >= {QA_PASS_THRESHOLD}%; request: {request_path}"
         status["qa_request"] = str(request_path)
-        status["message"] = "Codex visual QA requested from OpsBoard. Waiting for Codex to review images and mark pass/fail."
+        status["message"] = "Codex visual QA requested from OpsBoard. Waiting for Codex automation to review images and mark pass/fail."
         status["updated_at"] = now
         write_json(status_path, status)
 

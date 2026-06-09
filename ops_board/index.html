@@ -225,6 +225,18 @@
       return value ? String(value) : "";
     }
 
+    function renderFailDetails(details) {
+      if (!Array.isArray(details) || !details.length) return "";
+      const rows = details.slice(0, 25).map((item) => {
+        const scene = safe(item.scene || item.index || "");
+        const score = safe(item.score || item.percent || "");
+        const reason = safe(item.reason || item.reasons || "");
+        return `<div class="qa-fail-row"><strong>#${scene}${score ? ` (${score}%)` : ""}</strong>: ${reason}</div>`;
+      }).join("");
+      const more = details.length > 25 ? `<div class="qa-fail-row">...and ${details.length - 25} more fail detail(s) in the QA request file.</div>` : "";
+      return `<div><strong>QA fail reasons:</strong>${rows}${more}</div>`;
+    }
+
     function renderTask(task) {
       const nodes = task.nodes || {};
       const qaState = task.qa_request_state || {};
@@ -268,7 +280,9 @@
             <div class="links"><strong>QA:</strong> ${safe(task.qa_summary)}</div>
             <div><strong>QA status:</strong> ${safe(qaState.status || "none")}</div>
             <div><strong>QA reviewed:</strong> ${safe(qaState.reviewed_at)}</div>
+            <div><strong>QA pass/fail:</strong> ${safe(qaState.pass_count)} pass / ${safe(qaState.fail_count)} fail</div>
             <div><strong>QA failed scenes:</strong> ${safe((qaState.fail_scene_ranges || qaState.fail_scenes || []).join(", "))}</div>
+            ${renderFailDetails(qaState.fail_details)}
             <div><strong>QA regen:</strong> ${safe(qaState.regen?.reject_dir || "")}</div>
             <div class="links"><strong>Project:</strong> ${safe(task.project)}</div>
           </div>
@@ -282,7 +296,7 @@
     }
 
     async function requestQa(taskName) {
-      const ok = confirm(`Request Codex visual QA for "${taskName}"? The board will show checking, then Codex must visually review and mark pass/fail.`);
+      const ok = confirm(`Request Codex visual QA for "${taskName}"? The board will show checking. Codex heartbeat automation will pick up the request, visually review images, then write pass/fail reasons.`);
       if (!ok) return;
       try {
         const response = await fetch(`/api/tasks/${encodeURIComponent(taskName)}/qa`, { method: "POST" });
@@ -291,7 +305,7 @@
           alert(`QA request failed:\n${(payload.errors || [response.statusText]).join("\n")}`);
           return;
         }
-        alert(`QA checking requested. Pass threshold: ${payload.pass_threshold}%. Wait for Codex to review images and mark pass/fail.`);
+        alert(`QA checking requested. Pass threshold: ${payload.pass_threshold}%. Codex automation will pick it up and write pass/fail details.`);
         await loadBoard();
       } catch (error) {
         alert(`Failed to request QA: ${error.message}`);
