@@ -56,7 +56,7 @@ DEFAULT_NEGATIVE = (
 LAM_TICH_CLOTHING_RULE = (
     "Lam Tich clothing rule: keep her clearly adult, attractive, feminine, and sexy in a wasteland way, but story-first; "
     "use a fitted thick-strap weathered survival top under torn scavenger layers, paired with rugged short shorts or torn utility shorts; "
-    "when the scene beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way; "
+    "when the scene beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read sexy in a grounded wasteland way without fashion posing; "
     "never use a two-piece bikini, string bikini, bikini bottom, panties, matching underwear set, or swimsuit bottom. "
     "If the beat is danger, travel, group survival, barter, smoke, ash, injury, or action, reduce exposure slightly and prioritize practical torn scavenger clothing."
 )
@@ -66,6 +66,23 @@ STORY_FIRST_VISUAL_RULE = (
     "Do not replace survival beats with glamour posing, pin-up posing, hero posing, fashion posing, or a generic standing portrait. "
     "The visible action must be the primary visual center, and posing is allowed only when the narration itself describes posing, tempting, performing, or standing for a reveal. "
     "Any attractive styling must support the story action and never override it."
+)
+
+FEMALE_SEXY_BEAT_RULE = (
+    "Female sexy beat rule: if the narration explicitly makes an adult woman sexy, seductive, charming, tempting, intimate, or using attraction, preserve that story beat. "
+    "Show femininity and allure through face, gaze, posture, character tension, and practical torn wasteland clothing with readable arms or legs when appropriate, while the narrated action remains clear. "
+    "Never convert it into bikini, underwear, nudity, explicit exposure, beachwear, clean fashion posing, or a pose that replaces the story event."
+)
+
+ACTION_COMPLETENESS_RULE = (
+    "Scene contract: the image must answer who is doing what, with which visible object, creature, wound, tool, door, water source, trade good, vehicle, animal, or monster, where it happens, and what story pressure changes right now. "
+    "Hands, posture, spacing, props, body direction, wounds, tools, threats, and environment must make the narrated action readable. "
+    "If the action cannot be read, do not substitute a standing portrait, hero pose, fashion pose, pin-up pose, or camera-facing model shot."
+)
+
+WASTELAND_ACTION_STYLE_RULE = (
+    "Wasteland continuity rule: every scene must look like a dirty post-apocalyptic survival moment with grime, torn practical cloth, rust, dust, cracked concrete, salvage, scarcity, fatigue, and dangerous lived-in space. "
+    "Even when a character is attractive, the frame must stay wasteland first and must not look like a clean studio, beachwear shoot, gym fashion shoot, cosplay portrait, or modern city fashion image."
 )
 
 FEMALE_FACE_RULE = (
@@ -218,6 +235,8 @@ def scene_prompt(scene: dict[str, Any]) -> str:
             named_people = 2
 
     cast_notes: list[str] = []
+    male_only_notes: list[str] = []
+    female_only_notes: list[str] = []
     if "ninh" in combined_text:
         cast_notes.append("Ninh must read as a slight preteen mute boy survivor, clearly child-sized, carrying or using a small writing board, never as an adult man")
     if "tieu mai" in combined_text:
@@ -226,22 +245,27 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         cast_notes.append("Tieu Bao must read as a very young child held or protected by adults, not an older teen or adult")
     if "a that" in combined_text:
         cast_notes.append("A That must read as a lean young adult male scavenger with restless nervous energy, not a child and not a middle-aged man")
-        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
+        male_only_notes.append("A That only: lean young adult male scavenger, masculine rough survival clothing, nervous energy, never feminine clothing")
     if "di man" in combined_text:
         cast_notes.append("Di Man must read as an older practical wasteland woman protecting the children")
     if "bach nhi" in combined_text:
         cast_notes.append("Bach Nhi must read as a round-faced adult male trader with calculating politeness, not a soldier hero pose")
-        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
-    adult_male_tokens = ["tan da", "a that", "bach nhi", "thiet oa", "hau seo", "male", "man", "raider", "guard", "trader"]
+        male_only_notes.append("Bach Nhi only: adult male trader in layered wasteland trader clothing, never feminine clothing")
+    adult_male_tokens = [
+        "tan da", "a that", "bach nhi", "thiet oa", "hau seo", "a muc", "tieu ngo", "lao phung",
+        "male", "man", "adult man", "men", "raider", "guard", "trader", "mercenary", "soldier",
+        "nam", "dan ong", "nguoi dan ong", "nguoi nam", "nam gioi", "ten gac", "nguoi gac",
+        "linh", "linh danh thue", "thuong nhan", "ong ta", "han ta", "thang", "lao "
+    ]
     if any(token in combined_text for token in adult_male_tokens):
-        cast_notes.append(MALE_WASTELAND_CLOTHING_RULE)
+        male_only_notes.append(MALE_WASTELAND_CLOTHING_RULE)
     if "lam tich" in combined_text:
-        cast_notes.append("Lam Tich must stay a clearly adult woman with a readable unmistakably feminine face and grounded scavenger presence")
-        cast_notes.append(FEMALE_FACE_RULE)
-        cast_notes.append(LAM_TICH_CLOTHING_RULE)
+        female_only_notes.append("Lam Tich only: clearly adult woman with a readable unmistakably feminine face and grounded scavenger presence")
+        female_only_notes.append(FEMALE_FACE_RULE)
+        female_only_notes.append(LAM_TICH_CLOTHING_RULE)
     if "tan da" in combined_text:
-        cast_notes.append("Tan Da must stay a clearly adult injured man with grounded masculine facial structure")
-        cast_notes.append("Tan Da must be tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, fitted feminine top, crop top, droptop, strappy top, bare midriff, exposed waist, short shorts, or feminine styling")
+        male_only_notes.append("Tan Da only: clearly adult injured man with grounded masculine facial structure")
+        male_only_notes.append("Tan Da only: tall, muscular, masculine, righteous, and powerful in wasteland survival clothing: dark tactical coat or heavy scavenger jacket, layered practical shirt, long rugged pants, boots, belts, straps, armor scraps, dirty bandages only when wounded; never sport top, fitted feminine top, crop top, droptop, strappy top, bare midriff, exposed waist, short shorts, or feminine styling")
     if any(token in combined_text for token in ["ninh", "tieu mai", "a that"]):
         cast_notes.append("show every named child or companion from this scene together if they are named, do not replace them with generic adults or collapse them into one person")
     if "ninh" in combined_text or "tieu mai" in combined_text:
@@ -387,11 +411,16 @@ def scene_prompt(scene: dict[str, Any]) -> str:
 
     prompt_parts = [
         STORY_FIRST_VISUAL_RULE,
+        FEMALE_SEXY_BEAT_RULE,
+        ACTION_COMPLETENESS_RULE,
+        WASTELAND_ACTION_STYLE_RULE,
         face_control,
         "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
     ]
     if "lam tich" in combined_text:
-        prompt_parts.append("Lam Tich outfit must be a fitted thick-strap weathered survival top plus rugged shorts, never bikini bottoms or a two-piece swimsuit, and never let clothing override the current story action")
+        prompt_parts.append("Lam Tich only wears a fitted thick-strap weathered survival top plus rugged shorts; never bikini bottoms or a two-piece swimsuit, and never let her clothing override the current story action")
+    if male_only_notes:
+        prompt_parts.append("Male characters only: masculine wasteland clothing with covered waist; do not copy Lam Tich clothing or feminine styling onto any male character")
     if scene_center_kind:
         prompt_parts.append(f"visual center for this scene: {scene_center_kind}")
     if story_subjects:
@@ -412,6 +441,10 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     if not story_subjects and fallback_prompt:
         prompt_parts.append(clean_fragment(fallback_prompt))
     prompt = ", ".join(part for part in prompt_parts if part)
+    if male_only_notes:
+        prompt = f"{'; '.join(male_only_notes)}, {prompt}"
+    if female_only_notes:
+        prompt = f"{'; '.join(female_only_notes)}, {prompt}"
     if cast_notes:
         prompt = f"{'; '.join(cast_notes)}, {prompt}"
     positive_suffix = DEFAULT_POSITIVE_SUFFIX

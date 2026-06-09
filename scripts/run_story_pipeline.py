@@ -73,6 +73,18 @@ STORY_FIRST_VISUAL_RULE = (
     "Attractive styling is allowed only when it supports the current story beat and must never replace the narrated action."
 )
 
+FEMALE_SEXY_BEAT_RULE = (
+    "Female sexy beat rule: when the narration explicitly describes an adult female lead or supporting woman as sexy, seductive, charming, tempting, intimate, or deliberately using attraction, the image must show that beat instead of flattening it into neutral clothing. "
+    "Express it through feminine face, confident eye contact, body language, tension with the other character, torn practical wasteland clothing, bare arms or legs when appropriate, and the exact action in the story. "
+    "Do not turn it into bikini, underwear, nudity, explicit exposure, beachwear, a clean fashion shoot, or a pose that replaces the story action."
+)
+
+ACTION_COMPLETENESS_RULE = (
+    "Scene contract: the frame must answer who is doing what, with which visible object or creature, where it happens, and what story pressure is changing right now. "
+    "Hands, posture, spacing, props, wounds, tools, animals, monsters, doors, water sources, trade goods, or travel objects must visibly explain the action. "
+    "If those story elements are absent, do not substitute a character standing, staring, posing, modeling clothing, or facing the camera."
+)
+
 MALE_OUTFIT_GUARDRAIL = (
     "Male outfit guardrail: every adult man must wear masculine wasteland clothing with covered waist and practical layers: rugged jacket or coat, layered shirt, long pants, boots, belts, armor scraps, dirty cloth wraps. "
     "No male crop top, no strappy top, no spaghetti straps, no fitted feminine top, no exposed male belly or waist, no short shorts, no feminine glamour clothing."
@@ -82,7 +94,7 @@ LAM_TICH_VISUAL = (
     "Lam Tich, a beautiful young Asian wasteland scavenger woman with an unmistakably feminine face, soft delicate female facial structure, no masculine jaw, no heavy male brow, tired expressive eyes, cracked lips, "
     "short black hair worn rough from survival, slim toned build, grounded sensuality without glamour posing, "
     "practical summer wasteland clothing with bare arms and readable legs: a fitted thick-strap weathered survival top under torn scavenger layers, paired with rugged short shorts or torn utility shorts, "
-    "sporty and sexy but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; when the story beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read visibly seductive and glamorous in a grounded wasteland way, while nipples and intimate areas stay fully covered by fabric, "
+    "feminine and attractive but never a two-piece bikini, never bikini bottoms, never panties, never swimwear bottoms; when the story beat calls for charm, confidence, temptation, intimacy, or a character spotlight, let her read sexy in a grounded wasteland way without fashion posing, while nipples and intimate areas stay fully covered by fabric, "
     "stubborn survival dignity, attractive in a believable human way"
 )
 
@@ -1430,6 +1442,8 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
         f"Carry over only this continuity from the previous scene: {handoff}; anchors: {anchors_text}. "
         "Do not reset to a generic pose or repeated shelter composition. "
         f"{STORY_FIRST_VISUAL_RULE} "
+        f"{FEMALE_SEXY_BEAT_RULE} "
+        f"{ACTION_COMPLETENESS_RULE} "
         "Environment must follow the exact story description, and movement scenes must show the correct current step in the sequence. "
         f"{GENDER_CLARITY_RULE} "
         f"{MALE_OUTFIT_GUARDRAIL} "
