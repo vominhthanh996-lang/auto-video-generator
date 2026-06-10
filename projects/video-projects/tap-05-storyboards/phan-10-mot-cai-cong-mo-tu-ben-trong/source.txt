@@ -1,0 +1,701 @@
+# Phần 10: Một Cái Cổng Mở Từ Bên Trong
+
+## Chương 187: Đêm Đầu Tiên Của Trạm Số Chín
+
+Không ai ngủ trong đêm đầu tiên của Trạm Lọc số Chín.
+
+Người quá mệt thường dễ ngủ.
+
+Nhưng người vừa có nước thì không.
+
+Họ cứ nhìn máng lọc, nhìn từng giọt rơi xuống bát, nhìn Di Mạn đong bằng cái cốc có vạch khắc tạm, nhìn Lý Cù ghi lượt uống lên mặt sau một tấm biển gãy. Những người khu xám từng chen nhau ở cổng Nam bây giờ xếp thành hàng lệch nhưng có hàng. Có người vẫn muốn chen. Có người vẫn giấu cốc. Có người vẫn nhìn trẻ con nhà khác bằng ánh mắt tính toán.
+
+Luật không làm phế thổ biến mất.
+
+Nó chỉ dựng một cái cọc nhỏ giữa bùn, để người ta có thứ mà bám trước khi trượt tiếp.
+
+Tiếng hú ngoài xa vang lên ba lần rồi im.
+
+Kỷ Nam nói đó có thể là đàn thú bị tín hiệu Đèn Vàng kích thích. Tần Dã nói cũng có thể là người. Thẩm Bạch nói khả năng thứ ba: một thiết bị thu sinh học ngoài phế thổ đã phản hồi qua đàn thú gắn thẻ.
+
+A Thất nghe xong, mặt chết lặng.
+
+"Các ngươi có thể chọn một đáp án ít tệ hơn không?"
+
+Không ai chọn được.
+
+Mộc Sanh sửa tủ lạnh y tế bằng nguồn phụ tháo từ xe an ninh hỏng. A Thất phụ nàng, một tay bị thương nhưng miệng còn nguyên, liên tục lải nhải về việc radio của nó chết anh dũng và cần được chôn theo nghi thức máy móc.
+
+Mộc Sanh cuối cùng nhét vào tay nó một nút đồng tháo từ bảng điều khiển cũ.
+
+"Cầm."
+
+A Thất nhìn nút đồng.
+
+"Cho radio?"
+
+"Cho ngươi im."
+
+Nó cầm nút đồng, mắt hơi đỏ.
+
+"Nó sẽ thích."
+
+"Ừ."
+
+Không ai chọc nó.
+
+Vì trong đêm đầu tiên ấy, mỗi người đều cần một thứ để tin rằng những mất mát nhỏ cũng được nhớ.
+
+Tần Dã được đặt nằm gần cột bê tông trung tâm, nơi vừa nhìn được cổng gãy vừa tránh gió. Di Mạn ép hắn uống thuốc Thẩm Bạch để lại. Hắn nhìn viên thuốc rất lâu, như nhìn một viên đạn.
+
+Lâm Tịch ngồi xuống bên cạnh.
+
+"Sợ?"
+
+"Không thích."
+
+"Không thích và cần dùng không mâu thuẫn."
+
+"Ngươi học câu đó từ ai?"
+
+"Từ cái bụng đói."
+
+Hắn nhìn nàng, rồi nuốt thuốc.
+
+Lâm Tịch đưa nước.
+
+Hắn uống hết phần Di Mạn cho, lần này không làm màu. Sau đó hắn nhìn cổ tay nàng.
+
+"Đổi băng."
+
+"Lát nữa."
+
+"Bây giờ."
+
+"Anh vừa uống thuốc xong, ngủ đi."
+
+"Đưa tay."
+
+Giọng hắn không lớn.
+
+Nhưng là kiểu không để người ta đi vòng.
+
+Lâm Tịch đưa tay.
+
+Tần Dã tháo lớp băng cũ rất chậm. Ngón tay hắn vẫn yếu, có lúc run nhẹ, nhưng động tác cẩn thận. Vết bỏng muối ở cổ tay nàng đỏ lên, lòng bàn tay có vết dây cứa sâu. Hắn nhìn những vết đó, mặt lạnh hơn.
+
+"Đau?"
+
+"Có."
+
+"Lần sau buông dây."
+
+"Không."
+
+Hắn ngẩng mắt.
+
+Nàng nói:
+
+"Nồi có tên."
+
+"Người cũng có tên."
+
+"Nên ta còn sống."
+
+Hắn im.
+
+Rồi cúi đầu quấn băng mới.
+
+Không nói thêm.
+
+Nhưng lúc buộc nút, hắn buộc ở mặt ngoài cổ tay, để nàng không cấn khi cầm dao. Chi tiết nhỏ đến mức không ai bên cạnh chú ý. Nhưng Lâm Tịch chú ý.
+
+Trong phế thổ, tình cảm không nhất thiết nằm ở lời ngọt.
+
+Đôi khi nó là một cái nút băng không làm đau khi cầm vũ khí.
+
+Thẩm Bạch ngồi cách họ một khoảng, ghi chép vào máy. Hắn đã bị tước thiết bị liên lạc xa, chỉ giữ máy ghi không kết nối. Kỷ Nam kiểm tra ba lần. Di Mạn kiểm tra thêm một lần dù không hiểu máy, chỉ vì nhìn hắn không vừa mắt.
+
+Nửa đêm, Thẩm Bạch nói:
+
+"Nếu các người sống qua ba ngày đầu, nơi này sẽ thu hút rất nhiều người."
+
+Lâm Tịch không nhìn hắn.
+
+"Ta biết."
+
+"Người đói không tự nhiên trở nên tốt vì có luật."
+
+"Ta cũng biết."
+
+"Sẽ có người cướp, người bán lượt nước, người giả bệnh, người đem trẻ con ra đổi ưu tiên, người đâm sau lưng cô rồi nói vì con mình."
+
+Di Mạn từ máng lọc nói:
+
+"Ngươi nói chuyện giống nồi cháy đáy."
+
+Thẩm Bạch mỉm cười.
+
+"Ta nói sự thật."
+
+Lâm Tịch đáp:
+
+"Sự thật không phải chỉ có phần thối."
+
+Nàng nhìn ra ngoài.
+
+Ở cổng gãy, Trần Hòe đang cùng hai thanh niên khu xám kéo xe rác làm rào. Lý Cù ngồi ghi lượt uống. A Mục dẫn mấy đứa trẻ nhặt đá chặn lỗ chuột. Tiểu Mãn dùng nồi Mãn hứng nước rửa vết thương cho cha, mỗi lần chỉ nghiêng một chút, tiết kiệm đến đau lòng.
+
+"Cũng sẽ có người giữ hàng. Có người chia than. Có người trả nước. Có người cãi ta khi ta sai. Có người nhường một ngụm rồi giả vờ không khát."
+
+Thẩm Bạch nhìn nàng.
+
+"Cô dựa vào thứ đó để xây thành?"
+
+"Không. Ta dựa vào nước, tường, bơm, thuốc, người canh gác, và luật."
+
+"Còn lòng tốt?"
+
+"Lòng tốt không đủ làm móng. Nhưng không có nó, móng xây lên cũng chỉ là nhà tù."
+
+Thẩm Bạch im lặng.
+
+Đây không phải lần đầu hắn nghe người ta nói về nhân tính. Nhưng có lẽ là lần đầu hắn nghe giữa một trạm lọc bẩn, nơi người nói vừa mặc cả máu mình để lấy lõi sứ, vừa dùng người giữ nồi làm tòa án.
+
+Gần sáng, đội an ninh thành Nam rút về cự ly xa hơn.
+
+Không phải vì bỏ cuộc.
+
+Vì họ cũng sợ thứ dưới cống và tiếng hú ngoài phế thổ.
+
+Thang Nhuệ để lại một câu trước khi rút:
+
+"Trạm này sẽ bị đánh dấu."
+
+Lâm Tịch đáp:
+
+"Đánh dấu đi. Dù sao nó cũng ở đây."
+
+Thang Nhuệ nhìn nàng, không nói gì nữa.
+
+Khi ánh xám đầu ngày phủ lên phế thổ, mưa bụi đỏ ngừng.
+
+Trạm Lọc số Chín hiện ra rõ hơn: tường nứt, ống vỡ, bể bẩn, cổng gãy, người nằm la liệt, bát nước xếp hàng, tấm biển luật dựng lệch bên máng lọc.
+
+Không giống thành.
+
+Không giống nhà.
+
+Giống một đống rác vừa từ chối chết.
+
+Tiểu Mãn thức dậy đầu tiên trong đám trẻ.
+
+Cô bé ôm nồi Mãn ra máng lọc. Di Mạn đang ngồi gục, tay vẫn giữ cốc đong. Thấy Tiểu Mãn, bà mở mắt.
+
+"Chưa tới lượt."
+
+Tiểu Mãn lắc đầu.
+
+"Con không uống."
+
+"Vậy làm gì?"
+
+Cô bé đặt cái nồi dưới chỗ nước thô nhỏ giọt rửa sàn, hứng từng giọt một.
+
+"Rửa cổng."
+
+Di Mạn nhíu mày.
+
+"Cổng nào?"
+
+Tiểu Mãn chỉ hai trụ bê tông nghiêng ngoài kia.
+
+"Cổng của mình."
+
+Di Mạn nhìn cô bé rất lâu.
+
+Rồi bà cầm cốc đong, đổ vào nồi thêm một chút nước thô.
+
+"Rửa ít thôi. Cổng bẩn quen rồi."
+
+Tiểu Mãn gật đầu, ôm nồi chạy ra.
+
+Lâm Tịch đứng trên bậc thềm, nhìn cô bé dùng mảnh vải lọc cũ lau bùn đỏ trên trụ bê tông gãy. Lau một lúc, trụ vẫn bẩn. Nhưng ở chỗ cô bé lau, dưới bụi hiện ra một vệt chữ cũ:
+
+`Số 9`.
+
+Tiểu Mãn quay đầu, cười rất nhỏ.
+
+"Nó có tên."
+
+Lâm Tịch bỗng thấy cổ họng nghẹn lại.
+
+Từ phía sau, Tần Dã chống tay ngồi dậy.
+
+"Tên thì khó mất hơn."
+
+Đó là lời mẹ Tiểu Mãn từng nói.
+
+Bây giờ hắn nói lại.
+
+Không lớn.
+
+Nhưng đủ để Lâm Tịch nghe.
+
+Nàng nhìn hai trụ cổng gãy, nhìn số 9 dưới lớp bụi, nhìn những người đang ngủ quanh dòng nước đầu tiên.
+
+Chưa phải thành mới.
+
+Nhưng nếu một nơi có tên, có nước, có luật, có người giữ cổng từ bên trong...
+
+Có lẽ nó đã bắt đầu.
+
+## Chương 188: Ổ Dịch Xã Hội
+
+Bản tin nội bộ của Ngân Thụ tới lúc mặt trời chưa lên hẳn.
+
+Không ai trong trạm chủ động nhận.
+
+Nó tự bật trên thiết bị của Thẩm Bạch, trên máy quét còn hoạt động của xe an ninh, và cả trong cái radio đã chết của A Thất.
+
+Đúng.
+
+Radio đã chết bỗng rè lên.
+
+A Thất đang ngủ gục cạnh hộp linh kiện bật dậy như bị ai đá.
+
+"Con ta!"
+
+Mộc Sanh cũng giật mình, tay lập tức chộp lấy tua vít.
+
+Radio nằm trong túi vải, vỏ cháy xém, dây đứt một nửa. Vậy mà loa nhỏ vẫn phát ra tiếng máy móc lạnh lẽo:
+
+`Cập nhật bản đồ rủi ro khu Nam ngoài tường.`
+
+`Trạm Lọc số Chín: đổi trạng thái.`
+
+`Từ: nguồn chết bỏ hoang.`
+
+`Sang: ổ dịch xã hội cần xử lý.`
+
+Trong trạm, từng người thức dậy.
+
+Không ai hiểu hết bốn chữ "ổ dịch xã hội".
+
+Nhưng ai cũng hiểu "cần xử lý".
+
+Lý Cù chống gậy đứng lên.
+
+"Ổ dịch?"
+
+Trần Hòe nhìn bát nước trong tay.
+
+"Vì chúng ta uống nước không xin phép?"
+
+A Thất ôm radio, mặt vừa mừng vừa tức.
+
+"Nó sống lại để nghe người ta chửi mình là dịch."
+
+Mộc Sanh cúi xuống kiểm loa.
+
+"Không phải sống. Nó bắt được sóng khẩn cấp qua mạch cháy."
+
+"Tỷ không thể để ta vui một câu à?"
+
+"Vui đi. Nó còn kêu."
+
+A Thất cúi đầu ôm radio.
+
+"Giỏi lắm."
+
+Lâm Tịch bước tới thiết bị của Thẩm Bạch. Trên màn hình là bản đồ vùng Nam. Trạm Lọc số Chín được đánh dấu đỏ. Xung quanh nó, các điểm nhỏ đang chớp: đàn thú gắn thẻ, đội an ninh, nhóm dân thải cư, tín hiệu Đèn Vàng.
+
+Tất cả đường sáng đều hội về đây.
+
+Thẩm Bạch đứng bên cạnh, vẻ mặt nghiêm hơn đêm qua.
+
+"Nhanh hơn ta nghĩ."
+
+Lâm Tịch hỏi:
+
+"Xử lý nghĩa là gì?"
+
+"Tùy cấp. Cắt đường tiếp tế, phong tỏa, dùng thú đẩy, dùng đội an ninh giải tán, hoặc..."
+
+"Hoặc?"
+
+Hắn nhìn nàng.
+
+"Nếu bị xếp là nguồn lây nổi loạn, đốt sạch."
+
+Không khí như đông lại.
+
+Tiểu Mãn ôm nồi Mãn đứng cạnh trụ cổng, nghe tới "đốt sạch" thì mặt trắng đi.
+
+Di Mạn cầm dao bếp.
+
+"Ngươi còn đứng đây nói bình tĩnh?"
+
+Thẩm Bạch đáp:
+
+"Hoảng không làm bản tin biến mất."
+
+Di Mạn bước lên một bước.
+
+Lâm Tịch đưa tay ngăn.
+
+"Ông có biết cách hạ cấp rủi ro không?"
+
+Thẩm Bạch nhìn nàng.
+
+"Có."
+
+"Nói."
+
+"Cô giao bản thân cho Ngân Thụ. Trạm trở lại nguồn nước thử nghiệm có giám sát."
+
+Kỷ Nam cười lạnh.
+
+"Lại quay về cái cũ."
+
+Thẩm Bạch không nhìn hắn.
+
+"Ta nói cách chắc nhất."
+
+Lâm Tịch hỏi:
+
+"Cách không giao người?"
+
+Thẩm Bạch im.
+
+Tần Dã nói:
+
+"Làm nó không còn là ổ của một nhóm."
+
+Mọi người nhìn hắn.
+
+Hắn ngồi tựa tường, sắc mặt rất xấu, nhưng mắt tỉnh.
+
+"Ổ dịch xã hội nghĩa là tụ tập ngoài kiểm soát. Nếu nó thành điểm cứu trợ có danh sách mở, có người chứng kiến, có trao đổi với nhiều nhóm, đốt sẽ tốn danh nghĩa hơn."
+
+Thẩm Bạch nhìn hắn.
+
+"Anh đang đề nghị công khai hóa?"
+
+"Ta đang nói Ngân Thụ thích bóng tối. Kéo thêm mắt tới."
+
+A Thất há miệng.
+
+"Kéo thêm người tới? Chúng ta đã thiếu nước."
+
+Tần Dã nhìn nó.
+
+"Không phải kéo người uống. Kéo người nhìn."
+
+Lâm Tịch hiểu.
+
+"Gửi tin ra ngoài. Trạm Lọc số Chín có nước, có luật chia, có người bệnh, có dân thải cư, có đội an ninh thành Nam từng nhận nước theo luật, có Thẩm Bạch của Ngân Thụ đang ở đây. Nếu Ngân Thụ xử lý, tất cả biết."
+
+Thẩm Bạch khẽ thở dài.
+
+"Cô muốn dùng dư luận phế thổ chống Ngân Thụ?"
+
+Di Mạn nói:
+
+"Dư luận là gì?"
+
+A Thất đáp:
+
+"Là nhiều miệng cùng chửi."
+
+Di Mạn gật đầu.
+
+"Vậy dễ hiểu."
+
+Thẩm Bạch nói:
+
+"Nhiều miệng đó cũng sẽ kéo cướp tới."
+
+Lâm Tịch đáp:
+
+"Ta biết."
+
+"Kéo bệnh tới."
+
+"Biết."
+
+"Kéo người muốn cô chết tới."
+
+"Cũng biết."
+
+"Vậy cô vẫn làm?"
+
+Lâm Tịch nhìn tấm biển luật.
+
+Đêm qua, nàng từng nghĩ luật là để chia nước cho những người đã ở đây. Bây giờ nàng hiểu, luật nếu chỉ dán trong một góc trạm, nó vẫn có thể bị đốt cùng trạm. Muốn sống, nó phải được nhiều người đọc đến mức người đốt nó phải sợ bị gọi tên.
+
+"Làm."
+
+A Thất lập tức ôm radio.
+
+"Nó vừa sống lại, đừng bắt nó gào nữa."
+
+Mộc Sanh nói:
+
+"Không cần nó gào xa. Dùng xe an ninh."
+
+Thang Nhuệ, vẫn ở lại vì xe bị hỏng và lính bị thương, lạnh mặt:
+
+"Không được."
+
+Lâm Tịch nhìn bà.
+
+"Bà uống nước ở đây."
+
+"Ta không thuộc trạm."
+
+"Lính của bà uống."
+
+Thang Nhuệ im.
+
+Lâm Tịch nói:
+
+"Luật nói ai uống cũng phải làm phần của mình. Phần của bà là cho mượn máy phát."
+
+Một lính thành Nam bị thương ngồi gần đó, bàn tay băng dày. Hắn cúi đầu, không dám nhìn đội trưởng của mình. Nhưng hắn nói rất nhỏ:
+
+"Đội trưởng... nếu không có nước, ta mất máu nhiều hơn."
+
+Thang Nhuệ quay sang nhìn hắn.
+
+Người lính cúi thấp hơn.
+
+"Ta chỉ nói thật."
+
+Một câu rất nhỏ.
+
+Nhưng đôi khi hệ thống rạn không phải vì tiếng hô lớn, mà vì một người trong hàng ngũ nói mình đã được cứu bởi thứ bị gọi là ổ dịch.
+
+Thang Nhuệ nhắm mắt một nhịp.
+
+"Mười phút. Tần số dân dụng thấp. Không dùng mã an ninh."
+
+A Thất lập tức bật dậy.
+
+"Ta làm!"
+
+Mộc Sanh nắm cổ áo nó kéo lại.
+
+"Tay ngươi."
+
+"Ta dùng miệng chỉ đạo."
+
+"Cái đó ngươi giỏi."
+
+Trong nửa giờ tiếp theo, Trạm Lọc số Chín biến thành thứ kỳ lạ nhất phế thổ từng thấy: một trạm nước bẩn phát bản tin tự khai.
+
+A Thất nói, Mộc Sanh nối dây, Thang Nhuệ cho mượn máy phát với mặt lạnh như đá, Lý Cù và Trần Hòe đọc danh sách người có mặt, Di Mạn đọc luật chia nước bằng giọng như mắng cả thế giới, Thẩm Bạch bị buộc tự giới thiệu họ tên và xác nhận đang quan sát tại chỗ.
+
+Đến lượt Lâm Tịch, mọi người im.
+
+Nàng cầm micro cũ.
+
+Trong tiếng nhiễu, nàng nghe chính hơi thở của mình.
+
+"Đây là Trạm Lọc số Chín, ngoài tường Nam. Chúng ta có nước chưa đạt chuẩn, đang lọc bằng than, sứ và bơm cũ. Người sốt, mất máu, trẻ nhỏ uống trước. Ai làm có phần làm. Ai cầm vòi phải đứng trước mặt mọi người."
+
+Nàng dừng lại.
+
+Không biết có ai nghe không.
+
+Không biết ngoài kia là người, thú, cướp hay chỉ một đống máy chết.
+
+Nhưng nàng vẫn nói tiếp.
+
+"Thành Nam gọi nơi này là ổ dịch xã hội. Nếu ổ dịch nghĩa là người bị đẩy ra ngoài tường tụ lại để không chết khát, vậy chúng ta ở đây. Nếu ai tới cướp, chúng ta chống. Nếu ai tới đổi công lấy nước, chúng ta ghi tên. Nếu ai tới xem, hãy nhìn kỹ."
+
+Tay nàng siết micro.
+
+"Nước ở đây không ai được uống một mình."
+
+A Thất tắt máy phát.
+
+Không ai nói gì.
+
+Vài giây sau, radio cháy xém của nó bỗng rè lên.
+
+Một giọng lạ, rất xa:
+
+`Trạm Chợ Gãy nghe thấy. Hỏi: trẻ dưới mười hai có cần giấy không?`
+
+A Thất trợn mắt.
+
+Di Mạn cầm lấy micro trước khi ai kịp phản ứng.
+
+"Không cần giấy. Cần người lớn đi cùng và phải xếp hàng."
+
+Một giọng khác chen vào:
+
+`Đội nhặt sắt cầu Đông nghe thấy. Có thể đổi than lấy nước không?`
+
+Lâm Tịch nhìn Di Mạn.
+
+Di Mạn đáp:
+
+"Than sạch, không nhiễm dầu. Đổi theo cân. Tới cổng gãy, không mang súng vào hàng."
+
+Lại một giọng khác:
+
+`Có thuốc sốt không?`
+
+Thẩm Bạch nhìn hộp thuốc của mình.
+
+Di Mạn cũng nhìn hắn.
+
+Hắn thở dài.
+
+"Ít."
+
+Di Mạn nói vào micro:
+
+"Ít. Ưu tiên trẻ và người ho máu. Mang vật đổi, nhưng không bán người."
+
+Tần Dã nhắm mắt.
+
+Khóe miệng động rất nhẹ.
+
+Không phải vì mọi chuyện tốt lên.
+
+Mà vì mọi chuyện đã không thể giấu trong bóng tối nữa.
+
+Đến khi mặt trời lên khỏi màn bụi, bên ngoài trạm xuất hiện nhóm người đầu tiên không thuộc khu xám.
+
+Họ không vào.
+
+Chỉ đứng xa, giơ cao một bao than và một tấm vải trắng bẩn, ý là không bắn.
+
+Sau đó là nhóm thứ hai.
+
+Một xe đẩy chở ba đứa trẻ và một thùng xương thú.
+
+Rồi nhóm thứ ba.
+
+Không đông.
+
+Nhưng đủ để cổng gãy không còn trống.
+
+Tiểu Mãn đứng bên trụ bê tông đã lau ra chữ số 9, ôm nồi Mãn, nhìn những người kia.
+
+Nó hỏi Lâm Tịch:
+
+"Họ tới nhà mình hả?"
+
+Lâm Tịch ngồi xổm xuống cạnh nó.
+
+"Chưa phải nhà."
+
+"Vậy là gì?"
+
+Nàng nhìn tấm biển luật, nhìn máng nước, nhìn những người đang xếp hàng, nhìn Tần Dã còn sốt nhưng mắt không rời cổng, nhìn Di Mạn cầm cốc đong như cầm quyền sinh sát, nhìn Đèn Vàng trong hộp có mầm thứ hai run nhẹ dưới ánh sáng xám.
+
+Nàng chưa kịp trả lời.
+
+Tiểu Mãn đã tự nói:
+
+"Là cổng."
+
+"Cổng?"
+
+"Ừ. Cổng mở từ bên trong."
+
+Lâm Tịch nhìn hai trụ bê tông gãy.
+
+Không có cánh cửa.
+
+Không có tường đủ cao.
+
+Không có tên chính thức.
+
+Nhưng bên trong cổng, có người đang quyết định ai được vào hàng, ai phải bỏ súng, ai cần uống trước, ai phải làm việc, ai không được bán người để đổi nước.
+
+Có lẽ một cái cổng không bắt đầu từ cánh thép.
+
+Nó bắt đầu từ luật người bên trong chịu giữ.
+
+Tần Dã chống tay bước tới sau nàng.
+
+Chỉ một bước.
+
+Rồi dừng.
+
+Mồ hôi lạnh chảy trên trán hắn.
+
+Lâm Tịch lập tức đứng dậy đỡ.
+
+"Anh lại..."
+
+"Một bước."
+
+"Một bước cũng tính."
+
+"Ừ."
+
+Hắn nhìn cổng gãy.
+
+"Tính."
+
+Lâm Tịch đỡ hắn đứng dưới ánh sáng xám đầu ngày.
+
+Phía xa, bản đồ Ngân Thụ đã đánh dấu nơi này là ổ dịch xã hội cần xử lý.
+
+Phía gần, người phế thổ bắt đầu kéo tới bằng thùng rỗng, than lọc, trẻ con sốt, vết thương, nghi ngờ, hy vọng và cả lòng tham.
+
+Trạm Lọc số Chín chưa an toàn.
+
+Chưa sạch.
+
+Chưa đủ nước.
+
+Chưa xứng được gọi là thành.
+
+Nhưng Tiểu Mãn đã dùng mảnh vải lọc lau sạch một phần trụ cổng, để lộ cái tên cũ.
+
+Và trên tấm biển cảnh báo úp ngược, dưới những dòng luật viết bằng than, A Thất lén thêm một dòng nhỏ:
+
+`Phòng radio: chờ sửa.`
+
+Mộc Sanh nhìn thấy.
+
+Nàng không xóa.
+
+Di Mạn cũng nhìn thấy.
+
+Bà chỉ hừ một tiếng.
+
+Lâm Tịch nhìn dòng chữ đó, bỗng cười.
+
+Cười xong, nàng quay về phía hàng người trước cổng.
+
+"Người bệnh trước. Người mang than qua bên trái. Ai có súng bỏ ngoài vạch. Ai muốn uống nước thì đọc luật."
+
+Giọng nàng khàn.
+
+Không vang xa.
+
+Nhưng người đầu hàng đã nghe thấy, rồi truyền xuống sau.
+
+Từng người một, dưới mưa bụi đỏ đã tạnh, bắt đầu đọc những dòng chữ than trên tấm biển cũ.
+
+Không đều.
+
+Không đẹp.
+
+Nhưng thành mới đầu tiên trên phế thổ, nếu một ngày thật sự mọc lên, có lẽ sẽ bắt đầu bằng âm thanh vụng về đó:
+
+Người sốt, mất máu, trẻ nhỏ uống trước.
+
+Ai làm thì có phần làm.
+
+Ai cầm vòi phải đứng trước mặt mọi người.
+
+Nước ở đây không ai được uống một mình.

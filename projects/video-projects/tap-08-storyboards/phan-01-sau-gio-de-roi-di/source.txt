@@ -1,0 +1,397 @@
+# Phần 1: Sáu Giờ Để Rời Đi
+
+## Chương 229: Tờ Giấy Đặt Lên Vạch Trắng
+
+Tờ giấy của Chu Kính rất sạch.
+
+Sạch đến mức đứng giữa bụi đỏ của Cổng Nước Xám, nó giống một thứ không nên tồn tại ở đây. Mép giấy phẳng, góc giấy không quăn, dấu đỏ không nhòe. Khi gió thổi qua, nó chỉ rung rất nhẹ trong tay Tạ Khuông, như một người trong thành cố giữ vẻ lịch sự dù đang đứng trước nhà người nghèo.
+
+Trên giấy viết sáu giờ.
+
+Sáu giờ để rời khỏi nơi họ đã dùng bột, nước, máu, than, tên người chết và cả một lá cờ không sạch để dựng lên.
+
+Sáu giờ.
+
+Ở phế thổ, sáu giờ đủ để một người sốt chết.
+
+Đủ để một đàn chó hai hàm đánh hơi ra mùi máu.
+
+Đủ để một đứa trẻ đói từ khóc thành im.
+
+Nhưng không đủ để một cái cổng học cách nói lời tạm biệt với chính mình.
+
+Chu Kính đứng ngoài vạch trắng, hai tay đeo găng mỏng. Hắn không bước qua vạch. Không phải vì sợ luật của Cổng Nước Xám, mà vì hắn muốn mọi người nhìn thấy mình sạch. Người sạch không cần giẫm vào sân bẩn. Người sạch chỉ cần đưa giấy, còn người bẩn tự xếp mình theo dòng chữ.
+
+"Sáu giờ bắt đầu tính từ lúc văn bản được công bố." Hắn nói. "Sau thời hạn, mọi hoạt động tự quản trong Trạm Nước Số Chín bị xem là chống lệnh thu hồi."
+
+Không ai trả lời ngay.
+
+A Thất nhìn Lâm Tịch.
+
+Di Mạn nhìn kho bột.
+
+Mộc Sanh nhìn khu bệnh.
+
+Tạ Khuông nhìn cái thìa gỗ và miếng gỗ ghi tên A Nhĩ trên cổng.
+
+Tần Dã nhìn chữ ký.
+
+Không nhìn ai khác.
+
+Lâm Tịch nghe tiếng gió kéo qua lá cờ lọc cũ trên đầu. Cái bát nước xám méo mó run lên. Mấy món đồ nhỏ dưới chân cột cờ va vào nhau: nút áo méo, ốc vít, mẩu than, đế giày hỏng. Một đống rác không đáng giá đang bị một tờ giấy sạch nói rằng chỗ đứng của chúng không hợp pháp.
+
+Nàng bước tới vạch trắng.
+
+"Cổng Nước Xám yêu cầu kiểm văn bản."
+
+Chu Kính nhìn nàng, hơi nhướng mày.
+
+"Các ngươi không có tư cách kiểm."
+
+"Vậy ai có?"
+
+"Bên quản lý hợp pháp."
+
+"Ngươi?"
+
+"Đúng."
+
+Lâm Tịch gật đầu.
+
+"Vậy là người đem giấy đến tự xác nhận giấy của mình đúng."
+
+Trong đám đông có tiếng cười rất nhỏ.
+
+Chu Kính không đổi sắc mặt.
+
+"Cô nương, đây không phải chợ than. Văn bản hành chính không mặc cả bằng miệng."
+
+Thẩm Bạch đứng sau Lâm Tịch, giọng ôn hòa:
+
+"Nhưng văn bản hành chính có quy trình tiếp nhận. Bên nhận có quyền ghi nhận, sao chép, đối chiếu dấu và yêu cầu thời gian phản hồi."
+
+Chu Kính nhìn hắn.
+
+"Bác sĩ Thẩm, ngươi hiện đang bị nghi hỗ trợ ổ dịch tự quản."
+
+"Nghi chưa phải kết luận."
+
+"Ngươi muốn biến mình thành đồng phạm?"
+
+Thẩm Bạch cười nhẹ.
+
+"Ta chỉ đang dùng đúng từ."
+
+Di Mạn ở phía sau nói nhỏ:
+
+"Hắn lại phản thành bằng chính tả."
+
+A Thất suýt cười, nhưng nhìn mặt Tần Dã lại nuốt xuống.
+
+Chu Kính giơ tay. Một lính hộ tống đặt lên mui xe một hộp sắt nhỏ, mở ra. Bên trong có mực, giấy phụ, một con dấu tạm và mấy chiếc thẻ gỗ khắc số.
+
+"Các ngươi có thể nhận văn bản bằng cách đóng dấu tiếp nhận. Sau khi đóng, thời hạn sáu giờ chính thức ghi vào hồ sơ."
+
+Lâm Tịch hỏi:
+
+"Nếu không đóng?"
+
+"Từ chối tiếp nhận văn bản. Lập tức chuyển cấp cưỡng chế."
+
+Một cái bẫy sạch sẽ.
+
+Nhận giấy thì thời hạn chạy.
+
+Không nhận giấy thì bị cưỡng chế ngay.
+
+Chu Kính không cần dao. Hắn đặt trước mặt họ hai cánh cửa, cánh nào cũng mở vào tường.
+
+Tần Dã bỗng nói:
+
+"Đừng đóng dấu của hắn."
+
+Giọng hắn không lớn, nhưng cả sân nghe thấy.
+
+Chu Kính quay sang.
+
+"Ngươi là ai?"
+
+Tần Dã đặt tờ giấy lên bàn gỗ cạnh vạch. Động tác của hắn rất chậm. Chậm vì đau, hay vì đang kìm thứ gì khác, Lâm Tịch không phân biệt được.
+
+"Bên tranh chấp."
+
+Chu Kính bật cười.
+
+"Ngươi đại diện ai?"
+
+Tần Dã không đáp.
+
+Lâm Tịch nhìn hắn, rồi nhìn tờ giấy có chữ ký Tần Sách.
+
+Nàng hiểu.
+
+Nếu họ tự nhận là kẻ chiếm dụng, họ thua từ chữ đầu.
+
+Nếu họ tự nhận là dân xin ở lại, họ sẽ bị phát thẻ lao động tạm trú.
+
+Nhưng nếu họ là bên tranh chấp quyền quản lý, giấy không thể chỉ đi một chiều.
+
+Lâm Tịch nói:
+
+"Cổng Nước Xám tiếp nhận văn bản với tư cách bên tranh chấp quyền sử dụng Trạm Nước Số Chín."
+
+Chu Kính nhìn nàng.
+
+"Ai công nhận?"
+
+Lâm Tịch chỉ lên cổng.
+
+"Người dùng nước tuyến số 9."
+
+A Thất lập tức chạy vào lấy bảng danh sách. Bảng vẫn còn mới, chữ than đen, tên sống lẫn tên chết, tên thật lẫn tên không muốn ghi thật, có cả dòng `Một người không ký tên: để lại một kim xương, không lấy khăn`.
+
+Chu Kính nhìn bảng, lần đầu tiên nụ cười nhạt đi một chút.
+
+"Danh sách tự viết không có hiệu lực."
+
+Lâm Tịch đáp:
+
+"Văn bản tự đem đến cũng chưa được kiểm."
+
+Tạ Khuông đứng bên cạnh, cây giáo gãy dựa trên vai.
+
+"Vậy hai bên đều chưa sạch. Đứng ngoài vạch nói tiếp."
+
+Một vài người trong chợ cúi đầu cười.
+
+Chu Kính nhìn Tạ Khuông, rồi nhìn lá cờ, rồi nhìn Tần Dã.
+
+"Được. Ta cho các ngươi sáu giờ để chứng minh tư cách tranh chấp."
+
+Thẩm Bạch lập tức nói:
+
+"Ghi bằng văn bản."
+
+Chu Kính liếc hắn.
+
+Thẩm Bạch mỉm cười:
+
+"Không ghi thì lời ngươi cũng chỉ là tin chợ. Theo luật chợ ở đây, tin không ghi nguồn phải treo chữ bịa."
+
+Lần này, tiếng cười trong đám đông lớn hơn.
+
+Chu Kính không cười.
+
+Hắn lấy bút, viết vài dòng lên giấy phụ, đóng dấu tạm.
+
+"Sáu giờ. Sau sáu giờ, nếu không có chứng cứ pháp lý hoặc người có quyền liên quan xác nhận, lệnh thu hồi tiếp tục."
+
+Lâm Tịch nhận giấy.
+
+Không thấy nhẹ hơn.
+
+Chỉ là họ vừa đổi từ bị đánh ngay sang bị đánh sau sáu giờ.
+
+Trong phế thổ, đôi khi đó đã là thắng.
+
+## Chương 230: Niêm Dấu
+
+Việc đầu tiên Cổng Nước Xám làm sau khi nhận giấy không phải họp.
+
+Là niêm.
+
+Tần Dã bảo đặt giấy lên bàn đá, cách xa nước, cách xa lửa, cách xa tay người đang run. Mộc Sanh lấy hộp thuốc trống làm chặn giấy. A Thất dùng than vẽ một vòng trên bàn, bên ngoài ghi:
+
+`Không chạm nếu không ghi tên.`
+
+Di Mạn nhìn dòng chữ.
+
+"Tờ giấy còn được giữ kỹ hơn bột."
+
+Tần Dã đáp:
+
+"Bột mất, đói. Giấy mất, người khác nói chúng ta chưa từng nhận."
+
+Di Mạn im.
+
+Nàng ghét câu đó, nhưng không cãi được.
+
+Thẩm Bạch rửa tay bằng một ít nước sát khuẩn còn lại. Hắn rửa rất ít, tiết kiệm đến mức nếu đồng nghiệp trong thành nhìn thấy chắc sẽ nhíu mày. Rửa xong, hắn không lau vào khăn sạch mà hong tay trên gió.
+
+Lâm Tịch nhìn động tác ấy.
+
+"Ngươi đang tiếc thuốc sát khuẩn?"
+
+"Ta đang tiếc mình từng dùng nhiều hơn thế để lau bàn."
+
+Hắn nói rất bình thản, nhưng Di Mạn ở bên cạnh nghe thấy, hừ một tiếng.
+
+"Biết tiếc muộn còn hơn không."
+
+Thẩm Bạch không phản bác.
+
+Hắn cúi xuống kiểm giấy. Dấu đỏ, mã hiệu, mực ký, mép giấy, lớp sợi dưới ánh đèn. A Thất cầm gương vỡ chiếu nghiêng. Ninh đứng cạnh nghe động tĩnh ngoài cổng. Tạ Khuông giữ giáo ở vạch.
+
+Cả cái trạm vừa treo cờ chưa được nửa ngày đã học cách vây quanh một tờ giấy như vây quanh một vết thương.
+
+Lâm Tịch nhìn Tần Dã.
+
+Hắn ngồi rất yên.
+
+Quá yên.
+
+Từ khi chữ Tần Sách xuất hiện, Tần Dã không ho, không cau mày, không nhắm mắt. Nhưng chính sự không phản ứng đó làm Lâm Tịch bất an. Người đang đau thường còn biết đưa tay che. Người không che gì nữa có thể là vì vết đau nằm ở chỗ tay không với tới.
+
+Nàng đi tới, đặt một cốc nước cạnh hắn.
+
+"Uống."
+
+"Không khát."
+
+"Không hỏi."
+
+Tần Dã nhìn cốc nước, rồi nhìn nàng.
+
+"Ngươi học câu này của ai?"
+
+"Một người rất hay dùng."
+
+Hắn im một lát, cuối cùng cầm cốc.
+
+Chỉ nhấp một ngụm.
+
+Nhưng uống rồi.
+
+Lâm Tịch không hỏi Tần Sách là ai.
+
+Không phải nàng không muốn biết.
+
+Mà vì Chu Kính vẫn đứng ngoài kia, Thành Nam vẫn nhìn vào, Ngân Thụ có lẽ cũng đang nghe. Nếu nàng hỏi lúc này, vết thương của Tần Dã sẽ biến thành chuyện công khai trước khi hắn kịp quyết định mình có muốn mở ra không.
+
+Thẩm Bạch bỗng nói:
+
+"Có chỗ lạ."
+
+Mọi người lập tức nhìn hắn.
+
+Hắn chỉ vào mép dấu.
+
+"Dấu Thành Nam là thật. Giấy cũng thật. Nhưng bản sao này được bảo quản bằng dung dịch chống mốc loại dùng cho hồ sơ y tế, không phải hồ sơ tài sản."
+
+A Thất hỏi:
+
+"Khác nhau chỗ nào?"
+
+"Hồ sơ tài sản thường dùng bột khô chống ẩm. Hồ sơ y tế dùng dung dịch vì phải giữ mẫu chữ, mẫu máu, mẫu gene kèm theo."
+
+Không khí quanh bàn lạnh xuống.
+
+Mộc Sanh nói:
+
+"Ý ngươi là giấy này từng nằm trong kho y tế?"
+
+"Hoặc được sao lại từ một bộ hồ sơ y tế."
+
+Tạ Khuông cau mày.
+
+"Chữ ký chuyển nhượng trạm nước sao lại nằm trong hồ sơ y tế?"
+
+Không ai trả lời.
+
+Tần Dã nhìn mép giấy.
+
+Rất lâu sau, hắn nói:
+
+"Vì Tần Sách không ký giấy tài sản."
+
+Lâm Tịch quay sang.
+
+Hắn ngẩng đầu, mắt tối nhưng tỉnh.
+
+"Nếu đây là chữ ký thật, nó có thể được lấy từ một giấy khác."
+
+Thẩm Bạch gật đầu chậm rãi.
+
+"Cắt chữ ký, ghép văn bản, hoặc dùng bản quét cũ."
+
+A Thất hít vào.
+
+"Vậy phải chứng minh?"
+
+"Phải có bản gốc. Hoặc bản ghi nơi lưu chữ ký ban đầu."
+
+Mộc Sanh mở bản đồ cũ.
+
+"Hồ sơ y tế ngoại vi sau Đại Nhiễm Xạ từng chuyển qua Trạm Ghi Số 12. Nơi đó lưu bản quét bệnh án, giấy tử, giấy chuyển trại."
+
+Tần Dã nghe đến hai chữ "giấy tử", tay đặt trên bánh xe siết lại.
+
+Lâm Tịch thấy.
+
+Nàng bước lên một bước, chắn nửa người hắn khỏi ánh mắt người khác.
+
+"Trạm Ghi Số 12 ở đâu?"
+
+Mộc Sanh chỉ bản đồ.
+
+"Cách đây bốn dặm. Nhưng đường qua mương thú và vùng bụi kính. Đi về trong sáu giờ rất khó."
+
+Chu Kính ngoài vạch như đoán được họ đang nói gì, cất giọng:
+
+"Thời gian vẫn đang chạy."
+
+A Thất mắng nhỏ:
+
+"Hắn có tai chó à?"
+
+Ninh bỗng gõ lên cột hai cái.
+
+Không phải báo thú.
+
+Báo người nghe lén.
+
+Sa Đinh lập tức kéo cung về phía một tấm bạt ngoài chợ. Một người bán xương thú đứng bật dậy, mặt trắng bệch, trong tay áo rơi ra một ống nghe nhỏ bằng đồng.
+
+Đám đông xôn lên.
+
+Tạ Khuông bước ra, giáo đặt ngang cổ người kia.
+
+"Ai thuê?"
+
+Người bán xương run lẩy bẩy.
+
+"Không... không thuê. Ta chỉ đổi tin."
+
+Lâm Tịch nhìn Chu Kính.
+
+Chu Kính vẫn bình tĩnh.
+
+"Chợ của các ngươi, người của các ngươi."
+
+Lâm Tịch quay sang A Thất.
+
+"Ghi."
+
+"Ghi gì?"
+
+"Tin bán ra ngoài trong thời hạn tranh chấp, phải ghi người mua. Không ghi, treo tên cạnh ống nghe."
+
+A Thất cầm bút.
+
+Người bán xương quỳ xuống.
+
+"Ta nói! Người mua là một đội áo xám, không phải Thành Nam. Họ đưa ta hai viên tinh thạch vụn, bảo nghe xem khi nào Tần Dã nói tên Tần Sách."
+
+Lâm Tịch nhìn Tần Dã.
+
+Lần này hắn không tránh.
+
+Ngân Thụ.
+
+Hoặc người muốn họ nghĩ là Ngân Thụ.
+
+Tờ giấy sạch trên bàn bỗng có mùi máu cũ.
+
+Sáu giờ không chỉ để chống lệnh thu hồi.
+
+Sáu giờ để biết ai đang dùng người chết gõ cửa.

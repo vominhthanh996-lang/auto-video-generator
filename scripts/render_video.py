@@ -30,6 +30,28 @@ def resolve(base, value):
     return (base / path).resolve()
 
 
+def probe_audio_duration(path):
+    result = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-show_entries",
+            "format=duration",
+            "-of",
+            "default=nk=1:nw=1",
+            str(path),
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    try:
+        return float(result.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
 def ffmpeg_escape(text):
     return (
         str(text)
@@ -68,7 +90,9 @@ def make_scene(storyboard_dir, scene, index, config, temp_dir):
     if not audio or not audio.exists():
         raise SystemExit(f"Scene {index + 1} audio not found: {audio}")
 
-    duration = float(scene.get("duration", 4))
+    storyboard_duration = float(scene.get("duration", 4))
+    audio_duration = probe_audio_duration(audio)
+    duration = max(storyboard_duration, audio_duration)
     width = int(config.get("width", 1080))
     height = int(config.get("height", 1920))
     fps = int(config.get("fps", 30))
@@ -101,7 +125,7 @@ def make_scene(storyboard_dir, scene, index, config, temp_dir):
             "-loop",
             "1",
             "-t",
-            str(duration),
+            f"{duration:.3f}",
             "-i",
             str(image),
             "-i",

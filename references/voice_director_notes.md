@@ -19,6 +19,7 @@ These notes guide narration generation for Vietnamese long-form story videos.
 - Use a darker release cadence near the end of a reflective scene.
 - Use silence as punctuation, especially at scene breaks and cliffhangers.
 - Do not over-pause after every comma; that sounds artificial.
+- Keep normal sentence gaps tight. Heavy emotion should come from pitch, rate, and delivery, not long silence after every sentence.
 - Action/danger can be a little tighter and faster.
 - Inner monologue should slow down and soften.
 - Dialogue needs a separate rhythm from narration.

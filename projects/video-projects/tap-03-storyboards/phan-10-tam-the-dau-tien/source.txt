@@ -1,0 +1,799 @@
+# Phần 10: Tấm Thẻ Đầu Tiên
+
+## Chương 146: Thẻ Cư Trú Chính Thức
+
+Tấm thẻ cư trú chính thức đầu tiên được đặt trong hộp kính.
+
+Nó màu trắng xám, viền xanh, mỏng hơn dao nhưng nặng hơn tinh thạch. Trên mặt thẻ để trống một dòng tên. Chỉ cần nhập tên, đóng dấu, người đó sẽ không còn là tạm giữ, không còn là không nguồn, không còn là trường hợp chờ xử lý.
+
+Người đó sẽ có nước ổn định, quyền y tế cơ bản, quyền bảo lãnh phụ thuộc, quyền không bị trục xuất tùy ý.
+
+Một tấm thẻ.
+
+Một người.
+
+Chim Xám có quá nhiều người.
+
+Đêm trước khi quyết định, không ai ngủ.
+
+A Thất nói trước:
+
+"Cho chị. Chị có thẻ thì bảo lãnh tụi ta."
+
+A Mục nói:
+
+"Đúng. Đội trưởng có giấy thì đội dễ sống."
+
+Ninh viết:
+
+`Cho Tần Dã. Hắn cần thuốc.`
+
+Tần Dã lập tức:
+
+"Không."
+
+Mộc Sanh nhìn A Hành đang ngủ trong khu y tế.
+
+Nàng không nói, nhưng ai cũng biết lòng nàng chọn ai.
+
+Hứa Linh ngồi một góc, lạnh lùng:
+
+"Nếu chọn theo bệnh, A Hành cần nhất. Nếu chọn theo giá trị hệ thống, Tần Dã cao nhất. Nếu chọn theo chức năng đội, Lâm Tịch đúng nhất. Nếu chọn theo nguy cơ bị bắt, Ninh và A Mục đều cần. Nói chung, một tấm thẻ là trò độc ác."
+
+"Bà có lời khuyên không?" A Thất hỏi.
+
+"Có. Kiếm thêm thẻ."
+
+"Cảm ơn, rất hữu ích."
+
+Lâm Tịch nhìn thẻ trắng trong hộp kính.
+
+Nàng không muốn chọn.
+
+Nhưng không chọn cũng là chọn để hệ thống giữ quyền.
+
+Tần Dã nói:
+
+"Cho Lâm Tịch."
+
+Nàng nhìn hắn.
+
+"Ngươi khỏi nói."
+
+"Ta phải nói. Đội cần một người có tư cách ký."
+
+"Ngươi cần thuốc."
+
+"Ta có Hứa Linh, thuốc mười ngày, và một đống người thích ngăn ta chết."
+
+Hứa Linh hừ:
+
+"Đừng tính ta vào kiểu tự hào."
+
+Tần Dã tiếp:
+
+"A Hành cần y tế, nhưng nếu ngươi có thẻ chính thức, ngươi có thể bảo lãnh nó vào diện phụ thuộc điều trị nhanh hơn. Ninh, A Mục, A Thất cũng vậy."
+
+Lâm Tịch im.
+
+Lý trí nói hắn đúng.
+
+Tim nàng ghét điều đó.
+
+Vì mỗi lần hệ thống bắt nàng chọn "đúng", nó đều khiến nàng cảm thấy mình đang phụ ai đó.
+
+Ninh viết:
+
+`Ta đồng ý.`
+
+A Mục:
+
+"Ta cũng."
+
+A Thất giơ tay:
+
+"Ta đồng ý nhưng nếu chị có thẻ mà uống nước một mình, ta sẽ khóc."
+
+Lâm Tịch nhìn nó.
+
+"Ngươi khóc được à?"
+
+"Có thể thử."
+
+Không khí nhẹ đi một chút.
+
+Mộc Sanh cuối cùng nói:
+
+"Cho ngươi. Nhưng A Hành phải là người đầu tiên ngươi bảo lãnh."
+
+Lâm Tịch gật đầu.
+
+"Được."
+
+Sáng hôm sau, trước bàn Sở Cư Trú, Quan Dực hỏi:
+
+"Tên đăng ký?"
+
+Lâm Tịch nhìn dòng trống.
+
+Ở thế giới cũ, tên chỉ là tên.
+
+Ở đây, tên là nước, thuốc, cửa, quyền đứng trong hàng mà không bị đuổi.
+
+Nàng nói:
+
+"Lâm Tịch."
+
+Quan Dực nhập từng chữ.
+
+`Lâm Tịch.`
+
+Không phải NT-017-LT.
+
+Không phải trường hợp.
+
+Không phải đội trưởng phế thổ.
+
+Lâm Tịch.
+
+Con dấu rơi xuống.
+
+Tách.
+
+Tấm thẻ đầu tiên của Chim Xám ra đời.
+
+Lâm Tịch cầm nó, không thấy vui như tưởng.
+
+Nàng chỉ thấy sau lưng mình có rất nhiều người chưa có tên.
+
+## Chương 147: Cái Giá Của Một Cái Tên
+
+Thẻ chính thức cho Lâm Tịch mở được ba thứ ngay trong ngày.
+
+Thứ nhất: hồ sơ bảo lãnh phụ thuộc y tế cho A Hành.
+
+Thứ hai: hồ sơ bảo lãnh trẻ không nguồn cho A Mục và A Thất trong diện đội bảo trì.
+
+Thứ ba: quyền đăng ký mầm Đèn Vàng là "mẫu thực vật phục hồi phế thổ thuộc đội Chim Xám".
+
+Mỗi thứ mở ra đều kèm phí.
+
+Phí xử lý.
+
+Phí kiểm tra.
+
+Phí lưu mẫu.
+
+Phí nước.
+
+A Thất nhìn bảng phí, mặt tê liệt.
+
+"Trong tường có phí thở không?"
+
+Quan Dực đáp:
+
+"Có phí lọc khí trong một số khu."
+
+A Thất im hẳn.
+
+Lâm Tịch đặt điểm nước đội lên bàn.
+
+Không đủ.
+
+Nàng đặt thêm tinh thạch sạch còn lại.
+
+Vẫn thiếu.
+
+Tần Dã đặt mảnh thẻ Hắc Nha phụ lên bàn.
+
+"Thế chấp quyền truy cập cổng kỹ thuật một lần."
+
+Lâm Tịch lập tức:
+
+"Không."
+
+"Là thế chấp. Không bán."
+
+"Cổng đó còn dùng."
+
+"Tên cũng dùng."
+
+Hai người nhìn nhau.
+
+Quan Dực không xen vào.
+
+Hắn đã học được: lúc Chim Xám cãi nhau, đừng tưởng họ tan. Họ đang chia cái đau cho vừa người.
+
+Cuối cùng Lâm Tịch nói:
+
+"Chỉ thế chấp ba ngày."
+
+Quan Dực ghi.
+
+"Ba ngày. Quá hạn không chuộc, quyền truy cập chuyển Sở tạm giữ."
+
+"Không phải Ngân Thụ."
+
+"Không phải."
+
+Tần Dã ký.
+
+Ba ngày.
+
+Lại ba ngày.
+
+Ở phế thổ, thời gian luôn được bán theo ba ngày, như thể số phận rất thích cho người ta vừa đủ hy vọng để tự chạy tiếp.
+
+Hồ sơ A Hành được mở.
+
+Mộc Sanh cầm giấy, tay run hơn lúc đối mặt thú.
+
+"Nó có tên?"
+
+Quan Dực nói:
+
+"Tạm xác nhận: A Hành, phụ thuộc y tế đội Chim Xám, chờ đối chiếu thân nhân."
+
+Mộc Sanh nhìn dòng chữ.
+
+Không hoàn hảo.
+
+Nhưng tên nó nằm đó.
+
+A Hành.
+
+Không phải LD-13-084.
+
+Nàng cúi đầu, đặt giấy lên trán một giây.
+
+A Thất nhìn thấy, không dám trêu.
+
+Hồ sơ A Mục được mở.
+
+Nó nhìn dòng tên:
+
+`A Mục - bảo lãnh bởi đội Chim Xám.`
+
+"Không ghi không nguồn?"
+
+Quan Dực đáp:
+
+"Hồ sơ cũ vẫn có, nhưng trạng thái hiện tại là được bảo lãnh."
+
+"Tức là bớt xấu?"
+
+"Tức là có người chịu trách nhiệm."
+
+A Mục quay mặt đi.
+
+"Phiền."
+
+Ninh viết:
+
+`Có tên rồi.`
+
+Nó không đáp.
+
+Nhưng cầm tờ giấy rất chặt.
+
+Đến lượt mầm Đèn Vàng, hệ thống yêu cầu tên mẫu.
+
+Ninh viết:
+
+`Đèn Vàng.`
+
+Nhân viên hỏi:
+
+"Tên khoa học?"
+
+Lâm Tịch đáp:
+
+"Chưa có."
+
+"Cần tên phân loại."
+
+Hứa Linh nói:
+
+"Ghi: giống phục hồi bụi đỏ số một."
+
+Ninh lập tức lắc đầu.
+
+Nó viết:
+
+`Đèn Vàng trước.`
+
+Lâm Tịch nhìn nhân viên.
+
+"Ghi tên thường: Đèn Vàng. Phân loại để sau."
+
+Nhân viên khó chịu, nhưng Quan Dực ký cho qua.
+
+Từ ngày đó, trong hệ thống Trạm Lọc Ba có một dòng rất lạ:
+
+`Mẫu thực vật: Đèn Vàng. Chủ quản: Đội Chim Xám.`
+
+Một cái tên nhỏ.
+
+Nhưng không bị cướp.
+
+## Chương 148: A Hành Có Thở
+
+A Hành được chuyển khỏi khu y tế tạm sang phòng điều trị cấp xám.
+
+Phòng nhỏ, bốn giường, một máy lọc khí cũ, một cửa sổ nhìn ra tường xám. Không tốt. Nhưng không phải xưởng. Không có bụi tinh thạch bay trong bát nước. Không có người giám sát gõ gậy khi nó ho.
+
+Mộc Sanh ngồi cạnh giường, nhìn máy lọc khí chạy.
+
+"Nó kêu lệch."
+
+A Hành nằm trên giường, giọng yếu:
+
+"Chị vừa gặp lại em đã chê máy."
+
+"Máy lệch thì sửa."
+
+"Em cũng lệch."
+
+Mộc Sanh nhìn nó.
+
+Thằng bé cười rất nhẹ.
+
+"Sửa được không?"
+
+Nàng cúi đầu, tháo vỏ máy lọc khí.
+
+"Được. Chậm."
+
+A Hành nhắm mắt.
+
+"Em chờ được."
+
+Hứa Linh đứng bên cạnh, ghi thuốc.
+
+"Chờ là được, nhưng phải thở đúng. Ho không được nuốt máu. Có máu gọi người."
+
+A Hành nhỏ giọng:
+
+"Trong xưởng gọi bị trừ nước."
+
+Hứa Linh dừng bút.
+
+Mộc Sanh cũng dừng tay.
+
+Một câu rất bình thường với A Hành, nhưng làm người nghe đau.
+
+Hứa Linh nói:
+
+"Ở đây gọi không trừ nước."
+
+"Thật?"
+
+"Thật. Nhưng gọi nhiều ta mắng."
+
+A Hành suy nghĩ.
+
+"Mắng có trừ nước không?"
+
+"Không."
+
+"Vậy được."
+
+Mộc Sanh quay mặt đi.
+
+Lâm Tịch đứng ngoài cửa, không vào. Nàng thấy hai chị em cần một khoảng không có đội trưởng, không giấy, không giao dịch.
+
+Tần Dã lăn xe tới cạnh nàng.
+
+"A Hành ổn?"
+
+"Có thở."
+
+"Tạm đủ."
+
+"Ừ. Tạm đủ."
+
+Hai chữ này đã đi cùng họ quá lâu.
+
+Tạm đủ nước.
+
+Tạm đủ thuốc.
+
+Tạm đủ cửa.
+
+Tạm đủ tên.
+
+Nhưng có lẽ đời người trong phế thổ chính là nối từng cái tạm đủ, cho đến khi một ngày nào đó đủ thật.
+
+Trong phòng, A Hành bỗng hỏi:
+
+"Chị, Chim Xám là gì?"
+
+Mộc Sanh lắp lại máy lọc khí.
+
+"Một đội rất phiền."
+
+"Có bán người không?"
+
+"Không."
+
+"Có trừ nước khi ho không?"
+
+"Không."
+
+"Có bắt sửa máy không?"
+
+"Có."
+
+A Hành cười, rồi ho.
+
+Lần này, nó không nuốt.
+
+Nó giơ tay.
+
+"Chị."
+
+Mộc Sanh lập tức đỡ nó, đặt khăn dưới môi. Trong khăn có máu lẫn chấm đen.
+
+Nhưng A Hành không giấu.
+
+Nó thở dốc, rồi nói:
+
+"Em gọi rồi."
+
+Mộc Sanh nắm tay nó.
+
+"Ừ. Làm tốt."
+
+Ở ngoài cửa, Lâm Tịch thấy mắt mình cay.
+
+Không phải vì bão bụi.
+
+Vì một đứa trẻ học lại rằng đau có thể gọi người.
+
+## Chương 149: Tần Sách Gửi Lệnh
+
+Lệnh của Tần Sách tới cùng con dấu.
+
+Sở Cư Trú vừa cập nhật hồ sơ Chim Xám xong, màn hình trung tâm khu cách ly bỗng chuyển đen. Một dòng chữ xanh hiện lên, dùng kênh quân sự cũ mà chỉ Tần Dã và hệ thống Hắc Nha nhận ra:
+
+`Lệnh tạm thời: HN-07 chuyển giao khu trong để kiểm lõi.`
+
+Bên dưới là chữ ký:
+
+`Tần Sách.`
+
+Không phải bóng.
+
+Không phải giọng radio.
+
+Là lệnh.
+
+Quan Dực biến sắc.
+
+Đường Tố, vừa bị đình chỉ tạm nhưng vẫn ở khu chờ điều tra, lập tức đứng dậy.
+
+"Lệnh này vượt quyền Sở Cư Trú."
+
+Lục Nghiêm nhìn màn hình.
+
+"Nhưng là quyền Hắc Nha cấp một."
+
+Hứa Linh chửi:
+
+"Hắc Nha chết lâu rồi!"
+
+Tần Dã nhìn dòng chữ.
+
+Mặt hắn rất yên.
+
+Yên đến mức Lâm Tịch thấy sợ.
+
+"Ngươi biết người gửi?"
+
+"Không."
+
+"Nhưng?"
+
+"Nhưng lệnh này dùng khóa của ta trước khi bị cắt ký ức."
+
+Lâm Tịch quay sang Quan Dực.
+
+"Có thể từ chối?"
+
+Quan Dực gõ nhanh trên bảng.
+
+"Nếu không có hồ sơ cư trú chính thức của hắn, rất khó. Hắn hiện là tạm giữ y tế."
+
+"Vậy bảo lãnh."
+
+"Điểm không đủ."
+
+"Dùng thẻ của ta?"
+
+"Thẻ chính thức của ngươi có thể bảo lãnh phụ thuộc, nhưng HN-07 là đối tượng quân sự, không phải phụ thuộc dân sự."
+
+A Thất gấp:
+
+"Vậy đổi tên hắn thành bệnh nhân của đội bảo trì được không?"
+
+Hứa Linh ngẩng đầu.
+
+"Được."
+
+Mọi người nhìn bà.
+
+"Nếu chứng minh lõi của hắn cần theo dõi để bảo đảm an toàn nhiệm vụ bảo trì Trạm Lọc Ba. Nói cách khác, hắn là thiết bị sống nguy hiểm cần bác sĩ đi cùng."
+
+Tần Dã:
+
+"Nghe tệ."
+
+Hứa Linh:
+
+"Tệ nhưng giữ ngươi."
+
+Quan Dực hiểu ngay.
+
+"Cần đội trưởng chính thức ký nhận trách nhiệm y tế."
+
+Lâm Tịch đặt thẻ chính thức lên bàn.
+
+"Ký."
+
+Tần Dã nhìn nàng.
+
+"Ngươi biết ký nghĩa là gì không?"
+
+"Biết. Nếu ngươi gây sự cố, đội chịu."
+
+"Nếu lõi phản ứng?"
+
+"Đội chịu."
+
+"Nếu Hắc Nha tới?"
+
+"Đội cũng chịu."
+
+"Lâm Tịch."
+
+Nàng nhìn hắn.
+
+"Ngươi là người của đội."
+
+Câu này không mới.
+
+Nhưng trong phòng đầy lệnh, mã, hồ sơ, con dấu, nó trở nên nặng hơn rất nhiều.
+
+Nàng ký:
+
+`Lâm Tịch - đội trưởng Chim Xám.`
+
+Quan Dực đóng dấu tạm:
+
+`HN-07 chuyển trạng thái: giám sát y tế đội bảo trì Chim Xám. Chưa chuyển giao.`
+
+Lệnh Tần Sách trên màn hình nhấp nháy.
+
+Rồi chuyển thành:
+
+`Từ chối tạm thời. Lý do: ràng buộc cư trú mới.`
+
+Tần Dã nhìn dòng chữ.
+
+Lần đầu tiên, một tấm thẻ của người khác chặn được lệnh Hắc Nha kéo hắn đi.
+
+Radio bỗng rè lên.
+
+Giọng người đàn ông kia vang rất khẽ:
+
+"Tốt. Nó có đội rồi."
+
+Tín hiệu tắt.
+
+Lâm Tịch lạnh mặt.
+
+"Hắn thử chúng ta?"
+
+Tần Dã nhìn màn hình đen.
+
+"Có thể."
+
+"Ta ghét kiểu người thử bằng cách suýt kéo ngươi đi."
+
+"Ta cũng vậy."
+
+A Thất giơ tay:
+
+"Lần sau nếu bóng lưng bí ẩn gửi lệnh nữa, mình gửi lại hóa đơn phí xử lý được không?"
+
+Không ai cười lớn.
+
+Nhưng căng thẳng vỡ ra một chút.
+
+Tần Dã nhìn Lâm Tịch.
+
+"Ngươi vừa ký chịu trách nhiệm cho ta."
+
+"Ừ."
+
+"Sẽ phiền."
+
+"Ngươi vốn phiền."
+
+Hắn khẽ cười.
+
+"Vậy sau này phiền hợp pháp."
+
+Lâm Tịch cầm thẻ của mình, bỗng thấy nó thật sự nặng.
+
+Không phải vì nó cho nàng nước.
+
+Mà vì nó vừa giữ lại một người.
+
+## Chương 150: Thành Không Phải Nhà
+
+Đêm cuối của Tập 3, thành rất yên.
+
+Bão bụi đỏ đã yếu. Đèn tuần tra trên tường quét qua bầu trời xám. Khu xám sau một ngày hỗn loạn cuối cùng có nước trở lại. Xưởng hạ tầng bị niêm phong thêm bảy ngày. Đường Tố bị đình chỉ nhưng chưa bị tước chức. Quan Dực viết báo cáo dài đến mức A Thất nói có thể dùng làm chăn. Hứa Linh chính thức được gia hạn giấy phép tạm, với điều kiện "không gây rối quy trình y tế".
+
+Bà đọc xong, cười lạnh:
+
+"Điều kiện viết cho vui."
+
+Chim Xám có kho dụng cụ, một vòi nước nhiệm vụ, một thẻ cư trú chính thức, vài hồ sơ bảo lãnh, một mầm cây có tên trong hệ thống, và một đống nợ mới.
+
+Nghe như thắng.
+
+Nhưng Lâm Tịch ngồi trên mái thấp của khu cách ly, nhìn bức tường bên trong thành, không thấy giống thắng.
+
+Nàng thấy thành sạch.
+
+Sạch hơn Khu 17.
+
+Sạch hơn Ga Xám.
+
+Sạch hơn Kho Đèn Vàng sau bão.
+
+Nhưng dưới nền sạch là xưởng hạ tầng. Sau vòi sạch là phân cấp nước. Trong hồ sơ sạch là những đứa trẻ bị gọi không nguồn. Trên lệnh sạch là cái tên Tần Sách có thể kéo Tần Dã đi bất cứ lúc nào.
+
+Thành không phải nhà.
+
+Nó chỉ là một cái lồng ít bụi hơn.
+
+Tần Dã lên mái bằng lối dốc bảo trì. Hắn không đứng lâu, ngồi xuống cạnh nàng.
+
+"Ngươi lại không ngủ."
+
+"Ngươi cũng vậy."
+
+"Ta có lý do."
+
+"Ta cũng có."
+
+Hắn nhìn nàng.
+
+"Lý do gì?"
+
+Lâm Tịch đưa thẻ cư trú cho hắn xem.
+
+"Ta từng nghĩ có cái này sẽ vui."
+
+"Không vui?"
+
+"Vui một chút. Rồi nặng."
+
+"Vì còn nhiều người chưa có."
+
+"Ừ."
+
+Hắn nhìn tấm thẻ.
+
+"Tấm đầu tiên luôn nặng."
+
+"Ngươi từng có?"
+
+"Có lẽ. Không nhớ."
+
+Nàng tựa tay lên đầu gối.
+
+"Tần Sách là ai?"
+
+Hắn nhìn bức tường xa.
+
+"Không biết. Có thể là anh trai. Có thể là ta trước khi bị cắt. Có thể là một người dùng tên ta để làm những việc ta không nhớ."
+
+"Ngươi sợ kết quả nào nhất?"
+
+Hắn im rất lâu.
+
+"Sợ tất cả đều đúng."
+
+Lâm Tịch không nói "không đâu".
+
+Nàng đã ghét những lời an ủi không có móng.
+
+Nàng chỉ nói:
+
+"Vậy tìm từng cái. Cái nào là ngươi, giữ. Cái nào không phải, trả lại cho người đáng nhận."
+
+Hắn nhìn nàng.
+
+"Ngươi nói nghe dễ."
+
+"Ta đang ngồi nói, đương nhiên dễ."
+
+Hắn bật cười rất khẽ.
+
+Dưới sân, Ninh đặt mầm Đèn Vàng trong hộp kính nhỏ mà Mộc Sanh làm. A Mục và A Thất đang cãi nhau về việc tên "kho dụng cụ Chim Xám" có xấu không. Mộc Sanh ngồi bên cửa khu y tế, vừa sửa máy lọc khí vừa nghe A Hành ngủ. Hứa Linh mắng Lục Nghiêm qua máy liên lạc. Quan Dực đứng trước bảng báo cáo, chắc đang nghĩ cách biến chuyện hôm nay thành câu chữ đủ sống. Đường Tố, dù bị đình chỉ, vẫn đứng ở hành lang khu xám, nhìn dân phòng trả khiên.
+
+Không ai hoàn toàn an toàn.
+
+Nhưng họ ở đó.
+
+Lâm Tịch nói:
+
+"Ta muốn quyền kiểm soát nước."
+
+Tần Dã không ngạc nhiên.
+
+"Không chỉ quyền uống?"
+
+"Không. Uống nước của người khác phát chán rồi."
+
+"Quyền kiểm soát nước trong thành không nhỏ."
+
+"Ta biết."
+
+"Sẽ đụng Trạm Lọc, Sở Cư Trú, Ngân Thụ, khu trên, cả những người đang hưởng phần nhiều hơn."
+
+"Ta biết."
+
+"Vậy bắt đầu từ đâu?"
+
+Lâm Tịch nhìn vòi nước nhiệm vụ của đội bảo trì phía dưới.
+
+"Từ những đường ống phụ."
+
+Tần Dã gật đầu.
+
+"Đường nhỏ trước."
+
+"Ừ. Đường nhỏ dẫn tới bể lớn."
+
+Radio của A Thất dưới sân bỗng rè.
+
+Giọng Bạch Nhĩ vang lên, xa và méo:
+
+"Đội trưởng Lâm, chúc mừng có thẻ. Nhắc nhẹ: Kho Đèn Vàng vừa nhận một vị khách mặc áo trắng. Hắn nói muốn gặp người trồng được Đèn Vàng."
+
+Lâm Tịch đứng bật dậy.
+
+Tần Dã cũng nhìn xuống.
+
+Giọng Bạch Nhĩ tiếp tục:
+
+"Hắn tự xưng là người của khu nghiên cứu nội thành. Tên Thẩm Bạch."
+
+Hứa Linh ở dưới sân nghe thấy, sắc mặt đổi hẳn.
+
+"Không được để hắn chạm vào cây."
+
+Lâm Tịch nhìn mầm Đèn Vàng.
+
+Thành không phải nhà.
+
+Nhưng có kẻ đã ngửi thấy thứ họ mang vào.
+
+Tập 3 khép lại bằng một tấm thẻ đầu tiên trong tay Lâm Tịch, một mầm cây nhỏ dưới ánh đèn lọc, một người đàn ông từng là Hắc Nha ngồi cạnh nàng, và một cái tên mới vừa bước về phía Kho Đèn Vàng.
+
+Thẩm Bạch.
+
+Nếu Ngân Thụ là cái cây bạc nuốt người bằng rễ, thì kẻ đang tới có lẽ là người biết rễ ấy cắm sâu tới đâu.
+
+Lâm Tịch siết tấm thẻ.
+
+Nàng đã vào thành.
+
+Nhưng từ đêm nay, nàng không còn muốn được thành thu nhận.
+
+Nàng muốn học cách khiến thành phải nhường nước.

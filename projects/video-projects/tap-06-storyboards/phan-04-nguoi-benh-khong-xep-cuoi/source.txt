@@ -1,0 +1,541 @@
+# Phần 4: Người Bệnh Không Xếp Cuối
+
+## Chương 195: Khu Y Tế Không Có Tường
+
+Khu y tế đầu tiên của Trạm Số Chín được dựng dưới cầu thang gãy.
+
+Không phải vì nơi đó sạch.
+
+Vì đó là chỗ ít gió nhất, xa máng lọc vừa đủ, gần tủ lạnh y tế vừa sửa vừa đủ, và nếu cá sấu cống lại đập ống, người bệnh còn có thể khiêng lên tầng giữa trước khi nước tràn tới.
+
+Di Mạn trải vải lọc cũ lên nền. Mộc Sanh dùng hai ống sắt làm giá treo túi truyền. Lão Phùng buộc dây phơi khăn. A Thất và Tiểu Mãn vẽ ký hiệu người bệnh trên mảnh ván: một dấu thập méo đặt trong cái bát.
+
+Di Mạn nhìn ký hiệu.
+
+"Sao người bệnh nằm trong bát?"
+
+A Thất đáp:
+
+"Vì người bệnh cần nước."
+
+Tiểu Mãn gật đầu rất nghiêm túc.
+
+Di Mạn nhìn hai đứa, cuối cùng không sửa.
+
+Hạ Tố, Du Khâu, Hồ Tử, Tô Mạch, ba đứa trẻ sốt từ Chợ Gãy, một người lính thành Nam mất nửa bàn tay, và một ông già ho ra máu được đưa vào khu y tế tạm.
+
+Chỗ nằm không đủ.
+
+Người đến sau phải ngồi dựa tường.
+
+Vấn đề bắt đầu từ người lính.
+
+Một người khu xám nhìn thấy hắn được đặt gần túi thuốc, lập tức mắng:
+
+"Hắn là lính thành! Sao nằm trước cha ta?"
+
+Người bị mắng là con trai ông già ho máu. Mặt hắn đỏ vì giận, tay cầm cái gậy chống của cha.
+
+Người lính thành Nam cúi đầu, không nói.
+
+Thang Nhuệ đứng ngoài khu y tế, mặt lạnh.
+
+Di Mạn đang rửa tay bằng nước thô, ngẩng lên:
+
+"Vì hắn mất máu."
+
+"Cha ta ho máu!"
+
+"Cha ngươi chưa ngất. Hắn sắp."
+
+"Hắn chĩa súng vào chúng ta!"
+
+"Máu không hỏi chuyện đó trước khi chảy."
+
+Người kia nghẹn.
+
+Lâm Tịch bước tới.
+
+"Tên cha ngươi?"
+
+"Tề Ông."
+
+"Tề Ông được khám sau người mất máu, trước người sốt nhẹ. Nếu tình trạng nặng hơn, đổi lên. Ngươi có thể đứng đây nhìn."
+
+"Ta không tin áo trắng."
+
+Thẩm Bạch đang mở hộp thuốc, không ngẩng đầu.
+
+"Ta cũng không mong được tin."
+
+Di Mạn chỉ vào hắn:
+
+"Hắn nói, ta làm. Không ai bị hắn chạm nếu chưa đồng ý."
+
+Người kia nhìn Di Mạn.
+
+"Bà biết chữa?"
+
+"Không đủ. Nhưng biết khi nào người sắp chết."
+
+Câu đó không an ủi.
+
+Nhưng thật.
+
+Tề Ông được đặt ngồi gần tường, con trai đứng bên cạnh nhìn từng động tác. Người lính thành Nam được băng lại, uống nửa phần nước người mất máu, rồi nhắm mắt, mồ hôi lạnh chảy dưới mặt nạ tháo nửa.
+
+Thang Nhuệ nhìn cảnh đó rất lâu.
+
+Lâm Tịch hỏi:
+
+"Bà muốn đưa hắn về thành?"
+
+Thang Nhuệ đáp:
+
+"Muốn."
+
+"Vậy sao chưa đi?"
+
+"Đường bị chặn. Xe hỏng. Và..."
+
+Bà dừng lại.
+
+Lâm Tịch chờ.
+
+Thang Nhuệ nhìn người lính của mình.
+
+"Ở đây hắn có nước."
+
+Một câu nhỏ.
+
+Đủ cho một vết nứt.
+
+Khu y tế tạm mở chưa đầy hai giờ thì quá tải.
+
+Người đến trạm nghe có thuốc sốt, liền kéo người bệnh tới. Có người thật sự bệnh. Có người chỉ mệt. Có người giả bệnh để chen nước. Có người đem trẻ con ngủ mê tới, nói nó sốt, nhưng Di Mạn sờ trán thấy lạnh vì đói.
+
+Di Mạn đứng giữa khu y tế, sắc mặt càng lúc càng xấu.
+
+"Bệnh thật, đói thật, khát thật, sợ thật. Cái nào cũng thật thì ta lấy tay nào phân?"
+
+Thẩm Bạch nói:
+
+"Cần phân khu."
+
+"Nói tiếng người."
+
+"Sốt cao một bên. Mất máu một bên. Ho máu cách xa nước. Đói kiệt không dùng thuốc trước, dùng cháo loãng nếu có."
+
+Di Mạn nhìn hắn.
+
+"Có cháo không?"
+
+Không có.
+
+Gạo không có.
+
+Bột vàng còn ít.
+
+Nước vừa đủ.
+
+Lâm Tịch nhìn kho tạm. Thức ăn đang tụt nhanh hơn nước. Người có thể nhịn ăn lâu hơn nhịn nước, nhưng nếu chỉ uống nước mà không có muối, không có bột, người bệnh vẫn rơi.
+
+"Bột cho trẻ và người bệnh nặng." Nàng nói.
+
+Một người đàn ông lập tức phản đối:
+
+"Người làm việc không ăn thì lấy sức đâu làm?"
+
+Đúng.
+
+Lâm Tịch nhắm mắt một nhịp.
+
+Đúng cũng làm người ta mệt.
+
+Di Mạn nói:
+
+"Bột chia hai nồi. Một nồi loãng cho bệnh nặng. Một nồi đặc hơn cho đội làm đêm. Người khỏe không ăn bột, uống nước muối nhạt."
+
+"Muối đâu?"
+
+Di Mạn lấy túi muối nhỏ từ nồi của mình.
+
+"Đây."
+
+A Thất nhìn túi muối.
+
+"Đó là túi cuối."
+
+"Ta biết."
+
+Không ai nói nữa.
+
+Một muỗng muối trong trạm lúc này đáng giá hơn nhiều lời động viên.
+
+Di Mạn đổ một phần rất nhỏ vào nồi nước, khuấy đều.
+
+"Ghi: muối dùng công khai. Không ai tự lấy."
+
+Tiểu Mãn lập tức vẽ một hạt nhỏ cạnh cái bát.
+
+"Muối trông như đá."
+
+Di Mạn nói:
+
+"Vì nó quý như đá tốt."
+
+Tô Mạch ngồi trong góc, tay đặt lên bụng, nhìn nồi cháo loãng. Nàng không xin. Nhưng mắt nàng không rời khỏi hơi nước.
+
+Lâm Tịch thấy.
+
+"Tô Mạch, một phần bệnh nhẹ."
+
+Tô Mạch lắc đầu.
+
+"Ta chưa làm."
+
+"Ngươi mang thai."
+
+"Ta chưa làm."
+
+Di Mạn bưng bát tới, đặt vào tay nàng.
+
+"Ăn. Đứa trong bụng không cần đợi ngươi làm xong mới lớn."
+
+Tô Mạch cầm bát, nước mắt rơi xuống.
+
+"Ta không muốn bị ghi nợ."
+
+Lâm Tịch đáp:
+
+"Vậy ghi nợ bằng việc sau này làm được thì làm."
+
+A Thất cúi đầu viết:
+
+`Tô Mạch - nợ việc sau sinh hoặc khi khỏe.`
+
+Tô Mạch ngẩn ra:
+
+"Sau sinh?"
+
+Di Mạn hừ.
+
+"Chẳng lẽ vừa đẻ xong bắt ngươi đào rãnh?"
+
+Tô Mạch bật cười qua nước mắt.
+
+Tiếng cười nhỏ ấy làm khu y tế bớt giống nơi chờ chết một chút.
+
+Đến tối, khu y tế có quy định mới:
+
+`Người bệnh không xếp cuối. Nhưng người bệnh cũng phải được ghi tên.`
+
+`Người chăm bệnh được nửa phần nước.`
+
+`Thuốc phải đọc tên trước khi dùng.`
+
+`Không ai bị áo trắng chạm nếu chưa đồng ý, trừ khi bất tỉnh và người giữ nồi cho phép.`
+
+Thẩm Bạch đọc dòng cuối, nhìn Di Mạn.
+
+"Người giữ nồi cho phép?"
+
+Di Mạn cầm muỗng khuấy cháo.
+
+"Ngươi có ý kiến?"
+
+"Không."
+
+"Tốt."
+
+Lâm Tịch đứng bên ngoài khu y tế, nghe tiếng ho, tiếng trẻ con khóc, tiếng nước nhỏ giọt, tiếng bút than của A Thất cào trên ván.
+
+Nàng từng nghĩ thành mới cần tường, nước, cổng.
+
+Bây giờ nàng biết nó còn cần một nơi để người bệnh không bị đẩy xuống cuối hàng chỉ vì họ không còn sức tranh.
+
+## Chương 196: Giá Của Một Hộp Thuốc
+
+Hộp thuốc của Thẩm Bạch vơi đi nhanh hơn mọi người muốn thừa nhận.
+
+Thuốc hạ sốt còn chín viên.
+
+Thuốc chống nhiễm trùng còn sáu liều.
+
+Dung dịch sát khuẩn còn nửa chai.
+
+Thuốc ổn định gen của Tần Dã còn một liều rưỡi.
+
+Khi A Thất đọc con số cuối, mọi người trong phòng đều im.
+
+Một liều rưỡi.
+
+Tần Dã nằm trên tấm đệm mỏng, mắt mở. Tay phải hắn vẫn chưa nâng được súng. Cảm giác có trở lại một chút ở đầu ngón tay, nhưng yếu đến mức cầm cốc cũng run.
+
+Thẩm Bạch đặt hộp thuốc xuống.
+
+"Nếu muốn duy trì ổn định, hắn cần một liều trong đêm nay, nửa liều sáng mai chỉ là kéo."
+
+Di Mạn hỏi:
+
+"Không dùng?"
+
+"Sốt gen tăng. Tay phải có thể mất cảm giác lâu hơn. Nội tạng chịu áp lực."
+
+Lâm Tịch nhìn Tần Dã.
+
+Hắn nhìn lại nàng.
+
+Không nói.
+
+Chính sự không nói ấy mới là yêu cầu khó nhất.
+
+Bên ngoài khu y tế, đứa trẻ tên Hồ Tử lại sốt. Hạ Tố ho giảm nhưng Du Khâu bắt đầu sưng vết cắn. Người lính thành Nam cần chống nhiễm trùng. Một đứa trẻ từ Chợ Gãy nôn vì nước bẩn trước khi tới trạm.
+
+Thuốc không đủ.
+
+Thuốc chưa bao giờ đủ.
+
+Thẩm Bạch nói:
+
+"Ta có thể gọi thêm thuốc."
+
+Di Mạn lạnh mắt:
+
+"Đổi gì?"
+
+"Quyền lấy mẫu rộng hơn."
+
+Kỷ Nam cười lạnh.
+
+"Biết ngay."
+
+Thẩm Bạch nhìn Lâm Tịch.
+
+"Không phẫu thuật. Không đưa người rời trạm. Chỉ lấy mẫu máu, nước tiểu, phản ứng da với Đèn Vàng, và mẫu mô chết từ vết thương."
+
+A Thất nghe tới "mẫu mô" thì rùng mình.
+
+"Nói giống lột người."
+
+"Mô chết." Thẩm Bạch đáp. "Không đau."
+
+Di Mạn hỏi:
+
+"Lấy của ai?"
+
+"Lâm Tịch, Tần Dã nếu đồng ý, người bệnh tự nguyện."
+
+"Không."
+
+Lâm Tịch nói trước cả Di Mạn.
+
+Thẩm Bạch nhìn nàng.
+
+"Cô chưa nghe giá."
+
+"Ta nghe mùi rồi."
+
+"Mười hộp thuốc hạ sốt. Năm bộ chống nhiễm trùng. Ba lõi sứ. Hai túi dịch truyền. Một liều ổn định gen hoàn chỉnh."
+
+Không khí đông lại.
+
+Một liều ổn định gen hoàn chỉnh.
+
+Lâm Tịch cảm giác ngón tay mình lạnh đi.
+
+Thẩm Bạch biết cách đặt dao.
+
+Không đặt vào cổ nàng.
+
+Đặt vào tay phải không nâng nổi súng của Tần Dã.
+
+Tần Dã nói:
+
+"Không đổi."
+
+Thẩm Bạch không nhìn hắn.
+
+"Anh không phải người quyết định duy nhất."
+
+Di Mạn cầm dao bếp.
+
+"Ở đây hắn quyết định thân thể hắn."
+
+"Còn thuốc cho những người khác?"
+
+Di Mạn nghẹn.
+
+Một câu đúng lại rơi xuống.
+
+Lâm Tịch bước ra khỏi khu y tế. Bên ngoài, hàng nước đã ngắn hơn, nhưng khu nghỉ đầy hơn. Người mới tới đang dựng chỗ ngủ. Cổng tạm kêu trong gió. Trẻ con nằm cạnh nồi, cạnh túi than, cạnh xẻng. Mỗi người ở đây đều có thể cần một viên thuốc trong đêm.
+
+Nàng quay lại.
+
+"Nếu lấy mẫu, dữ liệu ở lại trạm."
+
+Thẩm Bạch đáp:
+
+"Không đủ để đổi số thuốc đó."
+
+"Vậy ông đi."
+
+Hắn thở dài.
+
+"Lâm Tịch, cô đang cố thắng một tổ chức bằng vài dòng luật viết than."
+
+"Không. Ta đang cố không thua ngay trong ngày thứ hai."
+
+Thẩm Bạch nhìn nàng.
+
+Nàng nói tiếp:
+
+"Ông muốn dữ liệu vì Trạm Số Chín là thứ Ngân Thụ không dự đoán được: mẫu sống, Đèn Vàng, nước xấu, luật xã hội, người bệnh, thú gắn thẻ, tất cả ở cùng một chỗ mà chưa vỡ. Ông không cần mô của chúng ta nhiều bằng cần biết vì sao nó chưa vỡ."
+
+Thẩm Bạch im.
+
+Lâm Tịch biết mình lại đoán đúng một phần.
+
+"Ông được quan sát công khai. Ghi chép công khai. Mỗi ngày một bản sao để lại trạm. Đổi thuốc cơ bản. Không lấy mô. Không mở rộng mẫu máu. Không chạm Đèn Vàng."
+
+"Thuốc ổn định gen?"
+
+Lâm Tịch nhìn Tần Dã.
+
+Hắn lắc đầu rất nhẹ.
+
+Không phải vì không cần.
+
+Vì hắn không muốn mình trở thành cái lỗ trên luật.
+
+Nàng quay lại Thẩm Bạch.
+
+"Không đổi bằng Tần Dã. Nếu ông muốn cung cấp thuốc ổn định, ghi là điều trị nhân đạo cho đối tượng đang có giá trị quan sát sống. Ông thích chữ đẹp, tự chọn."
+
+A Thất tròn mắt.
+
+"Đội trưởng, chị đang dạy áo trắng viết lý do lách Ngân Thụ?"
+
+Thẩm Bạch bật cười.
+
+"Cô thật sự rất nguy hiểm."
+
+"Vì ta biết đói."
+
+Hắn nhìn nàng một lúc lâu.
+
+"Ta có thể lấy thuốc hạ sốt và chống nhiễm trùng trước. Thuốc ổn định gen cần phê duyệt."
+
+Tần Dã cười khẽ.
+
+"Vậy là không."
+
+Thẩm Bạch nói:
+
+"Là chưa."
+
+Di Mạn hỏi:
+
+"Bao lâu?"
+
+"Nếu tín hiệu còn, trước bình minh."
+
+Lâm Tịch nói:
+
+"Được. Nhưng trước khi thuốc tới, ông không lấy thêm gì."
+
+"Ta muốn kiểm nhiệt độ Tần Dã."
+
+Di Mạn đáp:
+
+"Ta kiểm. Ngươi nhìn."
+
+Thẩm Bạch xoa trán, có vẻ thật sự mệt.
+
+"Các người làm y học chậm đi rất nhiều."
+
+Di Mạn lạnh nhạt:
+
+"Nhưng người còn nguyên."
+
+Hộp thuốc được đóng lại.
+
+Liều ổn định gen còn đó.
+
+Đêm xuống, Tần Dã gọi Lâm Tịch tới.
+
+"Nếu ta co giật..."
+
+"Không."
+
+"Nghe."
+
+Nàng ngồi xuống cạnh hắn, mặt rất khó coi.
+
+Hắn nói:
+
+"Nếu ta co giật, dùng nửa liều. Không dùng liều hoàn chỉnh."
+
+"Vì sao?"
+
+"Giữ nửa còn lại. Có thể cần khi chạy."
+
+"Anh còn nghĩ chạy?"
+
+"Giữ trạm không có nghĩa là không chuẩn bị rời."
+
+Lâm Tịch nhìn hắn.
+
+Hắn tiếp:
+
+"Đừng để nơi này thành thành Nam thứ hai trong đầu ngươi. Cổng mở từ bên trong, cũng phải mở được để người mình rút."
+
+Câu đó lạnh.
+
+Nhưng đúng.
+
+Lâm Tịch cúi đầu.
+
+"Ta nhớ."
+
+Tần Dã nhắm mắt.
+
+"Còn nữa."
+
+"Gì?"
+
+"Nếu ta thành lý do khiến ngươi ký cái gì đó..."
+
+"Không."
+
+"Lâm Tịch."
+
+"Ta nói không."
+
+Hắn mở mắt nhìn nàng.
+
+Nàng nhìn lại, từng chữ rất rõ:
+
+"Anh không phải van nước. Không phải hộp thuốc. Không phải cái giá để cả trạm uống tiếp. Anh là người của trạm. Người của trạm không bị đem đổi."
+
+Tần Dã im rất lâu.
+
+Rồi hắn nói:
+
+"Câu này nên viết lên bảng."
+
+Nàng cười rất khẽ.
+
+"Bảng hết chỗ rồi."
+
+"Vậy kiếm bảng khác."
+
+Giọng hắn rất nhẹ.
+
+Giống Di Mạn.
+
+Lâm Tịch cúi đầu, đặt tay trái của hắn vào trong chăn.
+
+Ngoài kia, A Thất đang cùng Tiểu Mãn vẽ thêm ký hiệu thuốc lên một mảnh ván mới.
+
+Tập luật của Trạm Số Chín lại dài ra.

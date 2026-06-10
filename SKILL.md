@@ -52,6 +52,37 @@ The runner:
 - validates text, images, and audio before rendering
 - creates `contact-sheet.html`, `pipeline-summary.json`, and the final MP4
 
+## Manual ChatGPT Hybrid Image Mode
+
+Use this only when the user explicitly asks for `hybrid` or manual ChatGPT help. This mode does not automate ChatGPT app/browser usage and does not use the OpenAI API.
+
+The pipeline splits scenes into:
+
+- ComfyUI local scenes: generated automatically.
+- Manual ChatGPT scenes: prompts are written for the user to paste into ChatGPT app.
+
+Recommended command:
+
+```powershell
+python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --wait-for-manual-images --start-comfy
+```
+
+Outputs for manual ChatGPT images:
+
+- `chatgpt_image_prompts.md`: copy/paste prompts for ChatGPT app.
+- `assets/manual-chatgpt/`: save ChatGPT images here.
+- Expected filename pattern: `manual-scene-001.png`, `manual-scene-024.png`, etc.
+- `manual-chatgpt-manifest.json`: machine-readable prompt/scene map.
+- `manual-chatgpt-missing.json`: missing image list if render is waiting.
+
+After the user saves the images, rerun:
+
+```powershell
+python scripts/run_story_pipeline.py --source E:\ThanhMV\stories\chapter-01.txt --title "Chapter 01" --format youtube --image-mode hybrid-manual --manual-image-ratio 0.5 --import-manual-images --skip-voice --skip-images
+```
+
+Use `--skip-images` only when the ComfyUI half is already generated. Otherwise omit it so ComfyUI fills its assigned scenes.
+
 ## Workflow
 
 1. Capture the brief:

@@ -1,0 +1,771 @@
+# Phần 5: Những Người Đứng Ngoài Cổng
+
+## Chương 177: Bãi Biển Số Ba
+
+Bãi biển số ba không có biển.
+
+Nước đã rút từ nhiều năm trước, để lại một vùng cát xám lẫn muối độc và xương cá khổng lồ hóa đen. Gió thổi qua những mỏm bê tông vỡ, phát ra tiếng hú thấp như ai đó thở trong cổ chai.
+
+Lâm Tịch từng nghe người già Khu 17 kể về biển.
+
+Họ nói biển ngày xưa mặn, rộng, xanh, có thể nuốt cả bầu trời. Người ta tới đó không phải để nhặt rác, mà để chơi. Trẻ con xây lâu đài cát rồi cười khi sóng đập đổ.
+
+Lúc ấy nàng không tưởng tượng nổi.
+
+Bây giờ đứng giữa bãi biển không còn biển, nàng càng không tưởng tượng nổi.
+
+Kỷ Nam đi trước, mỗi bước đều đặt lên vùng cát cứng màu xám đậm.
+
+"Đừng giẫm chỗ sáng."
+
+"Vì sao?"
+
+"Muối xạ. Dính vào giày, lát nữa da chân sẽ nứt."
+
+Lâm Tịch nhìn xuống.
+
+Giữa những vệt cát tối có vài mảng sáng bạc, đẹp đến mức giống đường phủ trên bánh. Trong phế thổ, thứ gì quá đẹp thường không định cho người nghèo sống.
+
+Nàng bước theo dấu chân Kỷ Nam.
+
+Gió ở bãi biển số ba rất lạnh. Nó không thổi mạnh, nhưng thổi liên tục, luồn qua cổ áo, qua khe khẩu trang, qua những chỗ da chưa kịp băng. Càng đi sâu, cổ họng Lâm Tịch càng có vị mặn và gỉ.
+
+"Người hẹn ở đây thường đứng chỗ nào?"
+
+Kỷ Nam chỉ một ụ bê tông sập.
+
+"Khu tránh gió. Trước kia là trạm chờ xe ra cảng."
+
+"Có thú không?"
+
+"Có."
+
+"Loại gì?"
+
+"Chó muối."
+
+Lâm Tịch dừng nửa bước.
+
+"Chó?"
+
+"Chó hoang ăn xác cá nhiễm xạ nhiều đời. Da nứt, lông rụng, răng mọc lệch. Không thông minh lắm, nhưng đánh hơi máu rất xa."
+
+Lâm Tịch siết dao.
+
+"Cấp?"
+
+"Gỉ. Nếu đi theo đàn thì tính như Đồng."
+
+"Ngươi nói chuyện lúc nào cũng làm người ta muốn quay về."
+
+Kỷ Nam không quay đầu.
+
+"Ngươi vẫn đi."
+
+"Vì có người chờ."
+
+"Ngươi biết có thể không ai chờ."
+
+"Biết."
+
+"Vậy còn đi?"
+
+Lâm Tịch nhìn ụ bê tông phía xa.
+
+"Nếu một người bệnh chịu rời chỗ có nước để quay lại đây, câu hẹn đó phải đáng một lần kiểm."
+
+Kỷ Nam im một lúc.
+
+"Đội trưởng Hắc Nha cũ sẽ không làm vậy."
+
+"Tần Dã?"
+
+"Ừ."
+
+"Vậy hắn sẽ làm gì?"
+
+"Đánh dấu Hạ Tố là gánh nặng. Bỏ."
+
+Lâm Tịch không nói.
+
+Kỷ Nam tiếp:
+
+"Nếu là ta ngày trước, ta cũng bỏ."
+
+"Bây giờ?"
+
+Hắn cười lạnh.
+
+"Bây giờ ta đang đi theo ngươi làm chuyện ngu."
+
+"Vì sao?"
+
+Kỷ Nam không trả lời ngay.
+
+Hắn bước qua một khúc xương cá dài như mái chèo, rồi mới nói:
+
+"Vì có một ngày, bốn mươi ba người ở cửa Đông cũng từng nghĩ sẽ có người quay lại kiểm."
+
+Lâm Tịch nhìn lưng hắn.
+
+Kỷ Nam không xin tha thứ cho Tần Dã.
+
+Hắn cũng không tha thứ.
+
+Nhưng có lẽ trên phế thổ, có những người sống sót bằng cách làm ngược lại một lần với nỗi đau cũ.
+
+Hai người tới ụ bê tông khi trời tối hẳn.
+
+Bên dưới ụ có dấu người ở.
+
+Một tấm bạt chì đã rách. Hai hộp dinh dưỡng rỗng. Một bình nước khô đáy. Vài vết kéo lê trên cát. Một miếng vải trẻ con buộc vào thanh sắt, như dấu hẹn.
+
+Lâm Tịch cúi xuống nhặt miếng vải.
+
+Vải màu vàng nhạt, đã bẩn, nhưng được thắt rất cẩn thận.
+
+"Của Tiểu Mãn?"
+
+Kỷ Nam nhìn.
+
+"Có thể."
+
+Lâm Tịch gọi:
+
+"Có ai không?"
+
+Gió trả lời nàng bằng tiếng hú.
+
+Kỷ Nam giơ tay ra hiệu im.
+
+Hắn cúi xuống, chạm vào một vệt trên cát.
+
+"Máu mới."
+
+Lâm Tịch lập tức nhìn quanh.
+
+"Người hay thú?"
+
+"Cả hai."
+
+Từ phía sau ụ bê tông vang lên tiếng động rất khẽ.
+
+Không phải tiếng người đứng dậy.
+
+Là tiếng móng cào qua cát muối.
+
+Kỷ Nam rút súng.
+
+Ba con chó muối bước ra khỏi bóng tối.
+
+Chúng gầy đến mức xương sườn đội da lên như nan quạt. Lông rụng thành mảng, da nứt trắng vì muối, mắt đỏ đục. Mõm con đầu đàn dính máu, giữa kẽ răng mắc một mảnh vải xám.
+
+Lâm Tịch không lùi.
+
+Nàng nhìn mảnh vải.
+
+Không phải áo của Hạ Tố.
+
+Cũng không phải đồ trẻ con.
+
+Là vải áo lao dịch nam.
+
+Kỷ Nam nói nhỏ:
+
+"Đừng để chúng vòng sau."
+
+Lâm Tịch hạ thấp người.
+
+Nàng không giỏi đánh nhau.
+
+Điều này vẫn đúng.
+
+Dù đã đi qua Khu 17, đường ray phía Nam, thành Nam và Phế Đô Cấm Khu, nàng vẫn không biến thành cao thủ. Tay nàng cầm dao còn đau, chân nàng chạy lâu vẫn mỏi, tim nàng vẫn đập nhanh khi thú biến dị nhìn tới.
+
+Nhưng nàng biết một việc hơn trước.
+
+Sợ không làm dao rơi.
+
+Con đầu đàn lao tới.
+
+Kỷ Nam bắn một phát.
+
+Viên đạn trúng vai nó, không giết được. Con chó lăn một vòng, đứng dậy rất nhanh. Hai con còn lại tách sang hai bên.
+
+Lâm Tịch ném miếng bánh khô Di Mạn đưa sang trái.
+
+Một con chó muối lập tức đổi hướng nửa nhịp.
+
+Không phải vì nó ngu.
+
+Vì nó đói.
+
+Đói là cái bẫy công bằng nhất phế thổ trao cho mọi sinh vật.
+
+Kỷ Nam nhân nửa nhịp ấy bắn phát thứ hai, trúng cổ nó.
+
+Con thứ ba đã vòng tới sau Lâm Tịch.
+
+Nàng nghe tiếng cát xước.
+
+Không kịp quay cả người.
+
+Nàng rút con dao gãy thứ hai, cắt ngang về phía sau. Lưỡi dao chạm da dày, trượt đi, chỉ rạch một đường nông. Con chó cắn vào tay áo nàng, kéo mạnh.
+
+Lâm Tịch ngã xuống cát.
+
+Muối xạ lập tức cắn qua chỗ vải rách ở cổ tay, đau như bị kim châm.
+
+Con chó há mõm cắn vào vai nàng.
+
+Kỷ Nam không bắn được vì quá gần.
+
+Trong khoảnh khắc đó, Lâm Tịch nhìn thấy dưới bụng con chó có sẹo dài.
+
+Sẹo mổ.
+
+Không tự nhiên.
+
+Nàng hét:
+
+"Nó có thẻ!"
+
+Kỷ Nam khựng nửa nhịp.
+
+Ngay dưới lớp da nứt ở cổ con chó, có một mảnh kim loại nhỏ gắn chìm, phát ánh xanh rất yếu.
+
+Không phải thú hoang thuần.
+
+Thú đánh dấu.
+
+Lâm Tịch dùng hết sức đạp vào chân trước bị thương của nó. Con chó lệch đi. Kỷ Nam lao tới, dùng báng súng đập thẳng vào gáy nó.
+
+Một lần.
+
+Hai lần.
+
+Con chó co giật rồi nằm im.
+
+Lâm Tịch lăn sang bên, thở dốc. Cổ tay nàng rát bỏng. Vết muối xạ chưa sâu, nhưng nếu không rửa sớm sẽ lở.
+
+Kỷ Nam kéo nàng dậy.
+
+"Ngươi bị cắn?"
+
+"Không. Muối."
+
+"Đưa tay."
+
+"Tìm người trước."
+
+Kỷ Nam mắng một câu, nhưng vẫn quay sang ụ bê tông.
+
+Tiếng động ban nãy không chỉ có chó.
+
+Phía sau tấm bạt chì rách, có một người đàn ông nằm nghiêng, nửa người bị cát phủ. Áo lao dịch của hắn bị xé nát một bên vai. Chân trái quấn vải, máu đã khô thành màu đen. Trong tay hắn siết một cái vòng gỗ nhỏ.
+
+Hắn còn thở.
+
+Rất yếu.
+
+Lâm Tịch quỳ xuống.
+
+"Nghe thấy không?"
+
+Người đàn ông mở mắt.
+
+Mắt hắn vàng vì sốt.
+
+"Hạ... Tố?"
+
+Lâm Tịch thở ra.
+
+"Còn sống. Tiểu Mãn cũng còn."
+
+Người đàn ông run lên.
+
+Không biết vì lạnh hay vì câu đó.
+
+"Ta... chờ..."
+
+"Ta biết."
+
+Hắn cố nâng tay, đưa cái vòng gỗ cho nàng.
+
+"Nói... ta không bỏ..."
+
+Lâm Tịch nhận vòng.
+
+"Tự ngươi nói."
+
+Hắn nhìn nàng.
+
+Trong mắt có một chút ánh sáng rất nhỏ, nhỏ đến mức gió cũng có thể thổi tắt.
+
+"Ta đi được?"
+
+Kỷ Nam kiểm chân hắn.
+
+"Không đi được. Nhưng có thể kéo."
+
+Lâm Tịch nhìn Kỷ Nam.
+
+Kỷ Nam mặt lạnh tanh.
+
+"Đừng nhìn ta. Ta biết. Lại thêm nợ."
+
+Lâm Tịch xé vải băng cổ tay qua loa, rồi cùng Kỷ Nam buộc người đàn ông lên tấm bạt chì.
+
+"Tên?"
+
+Người đàn ông mấp máy:
+
+"Du Khâu."
+
+Lâm Tịch gật đầu.
+
+"Du Khâu, ngươi phải tỉnh. Con gái ngươi đang giữ cái nồi của mẹ nó. Nếu ngươi chết, cái nồi đó sẽ nặng hơn."
+
+Du Khâu nhắm mắt, nước mắt chảy qua thái dương đầy bụi.
+
+"Nó... còn giữ?"
+
+"Giữ rất kỹ."
+
+Hắn cười.
+
+Miệng đầy máu.
+
+Kỷ Nam kéo tấm bạt lên vai.
+
+"Đi."
+
+Hai người kéo Du Khâu rời bãi biển số ba. Sau lưng họ, ba xác chó muối nằm giữa cát. Mảnh thẻ kim loại dưới cổ con đầu đàn vẫn nhấp nháy.
+
+Lâm Tịch dừng lại, quay về lấy nó.
+
+Kỷ Nam cau mày.
+
+"Ngươi còn nhặt cái gì?"
+
+"Bằng chứng."
+
+"Của gì?"
+
+Lâm Tịch nhìn mảnh thẻ nhỏ.
+
+Trên đó khắc một ký hiệu hình lá bạc.
+
+Ngân Thụ.
+
+"Của việc thú ở bãi hẹn không phải ngẫu nhiên."
+
+Gió thổi qua bãi biển không biển.
+
+Lâm Tịch bỗng thấy rõ một điều: Ngân Thụ không chỉ khóa nước trong thành.
+
+Nó còn thả răng ngoài tường.
+
+## Chương 178: Một Người Nữa Trên Xe
+
+Khi Lâm Tịch và Kỷ Nam kéo Du Khâu về mương khô, Di Mạn nhìn họ như muốn lấy nồi đập chết cả hai.
+
+"Ta dặn gì?"
+
+Lâm Tịch thở không ra hơi.
+
+"Không kéo cả bãi biển về."
+
+Di Mạn chỉ Du Khâu.
+
+"Vậy cái này là gì?"
+
+"Một người."
+
+"Ta thấy. Ta chưa mù."
+
+A Thất chạy tới phụ kéo tấm bạt, nhìn mặt Du Khâu rồi la nhỏ:
+
+"Còn sống."
+
+Tiểu Mãn nghe thấy, nhào khỏi xe.
+
+"Cha!"
+
+Hạ Tố đang mê man cũng mở mắt.
+
+Du Khâu được đặt cạnh xe. Hắn không còn sức nói, chỉ cố mở tay. Chiếc vòng gỗ nhỏ nằm trong lòng bàn tay hắn, run run.
+
+Tiểu Mãn quỳ xuống, òa khóc.
+
+Không phải tiếng khóc sợ hãi lúc ở cổng Nam.
+
+Là tiếng khóc của một đứa trẻ cuối cùng được phép tin rằng người mình chờ chưa biến thành gió.
+
+Hạ Tố nhìn chồng, môi run lên.
+
+"Ngươi thật sự chờ..."
+
+Du Khâu không nói được.
+
+Nhưng mắt hắn nhìn bà.
+
+Có nhiều lời trong phế thổ không cần nói, vì chỉ riêng việc còn thở ở chỗ hẹn đã là một câu dài nhất.
+
+Di Mạn quay mặt đi.
+
+Bà chửi rất nhỏ:
+
+"Phiền phức."
+
+Rồi mở túi thuốc.
+
+Lâm Tịch biết bà đã nhận.
+
+Mộc Sanh kiểm xe, mặt lạnh hơn thường.
+
+"Quá tải."
+
+A Thất lập tức nói:
+
+"Ta có thể đi bộ."
+
+"Ngươi vốn đi bộ."
+
+"Ta có thể bớt thở."
+
+"Cái đó có ích."
+
+Lão Phùng ngồi xổm xuống nhìn khung xe.
+
+"Chở thêm người lớn bị thương, qua đường đá sẽ gãy trục."
+
+Kỷ Nam nói:
+
+"Bỏ bớt đồ."
+
+Di Mạn ôm nồi.
+
+"Ngươi dám nhìn cái nồi của ta lần nữa thử xem."
+
+Kỷ Nam nhìn sang chỗ khác.
+
+A Thất mở bao đồ.
+
+"Có ba tấm vải bạt, hai bộ áo cũ, một hộp linh kiện, một túi xương thú..."
+
+Lão Phùng lập tức:
+
+"Xương thú giữ. Làm cán, làm kim, làm nẹp đều được."
+
+Mộc Sanh:
+
+"Linh kiện giữ."
+
+Di Mạn:
+
+"Áo giữ. Người bệnh cần phủ."
+
+A Thất dang tay.
+
+"Vậy bỏ ta à?"
+
+Tần Dã trên xe nói:
+
+"Bỏ hộp nước của Thẩm Bạch."
+
+Mọi người im.
+
+Hộp sáu chai nước sạch vẫn nằm trong góc xe, phủ vải bẩn. Lúc rời kho, Di Mạn đem theo. Bà nói nước không có tội. Khi đó không ai phản đối.
+
+Bây giờ, sáu chai nước sạch trở thành trọng lượng.
+
+Trong một đội đang kéo thêm người bệnh, trọng lượng cũng là đạo đức.
+
+Di Mạn nhìn hộp nước.
+
+"Bỏ hết?"
+
+Tần Dã đáp:
+
+"Không. Đổ chai, giữ vỏ."
+
+A Thất trợn mắt.
+
+"Đổ nước sạch?"
+
+Giọng nó vỡ ra ở chữ sạch.
+
+Không ai cười.
+
+Vì ai cũng thấy đau.
+
+Sáu chai nước tinh khiết. Thứ trong vắt, không mùi kim loại, không cần lọc. Thứ có thể giúp Hạ Tố uống thuốc, giúp Tần Dã hạ sốt, giúp Tiểu Mãn thôi liếm môi nứt. Thứ mà sáng nay cả đội phải mạo hiểm để lấy một túi nước vàng còn chưa chắc sạch bằng nửa chai.
+
+Bỏ nó là ngu.
+
+Giữ nó là dây.
+
+Lâm Tịch bước tới, cầm một chai lên.
+
+Nước trong chai phản chiếu mặt nàng méo đi.
+
+Thẩm Bạch nói: người ra quyết định không nên khát.
+
+Nàng mở nắp.
+
+A Thất nhắm mắt như nghe xương mình bị bẻ.
+
+Lâm Tịch không đổ xuống đất.
+
+Nàng đưa chai cho Di Mạn.
+
+"Chia cho người bệnh uống một ngụm. Phần còn lại dùng rửa vết muối trên tay ta và chân Du Khâu. Không để qua đêm."
+
+Tần Dã nhìn nàng.
+
+Lâm Tịch nhìn lại.
+
+"Nước không có tội. Nhưng dấu của Thẩm Bạch thì có. Chúng ta dùng hết trước khi nó thành dây."
+
+Di Mạn gật đầu.
+
+"Được."
+
+A Thất thở ra như sống lại.
+
+"Ta vừa thấy linh hồn mình rơi xuống cát."
+
+Mộc Sanh nói:
+
+"Nhặt lên. Lát nữa còn đẩy xe."
+
+Sáu chai nước được mở ngay tại chỗ.
+
+Không ai được uống nhiều.
+
+Mỗi người bệnh một ngụm. Tần Dã một ngụm. Hạ Tố một ngụm. Du Khâu một ngụm thấm môi. Tiểu Mãn được nửa ngụm vì nó khóc quá lâu. Phần còn lại dùng rửa vết muối xạ trên cổ tay Lâm Tịch và vết cắn ở chân Du Khâu.
+
+Nước sạch chạm vào vết thương, đau đến mức Lâm Tịch cắn chặt răng.
+
+Di Mạn vừa rửa vừa nói:
+
+"Đau thì nhớ. Lần sau đừng nhặt cả bãi biển."
+
+"Không cả bãi."
+
+"Ngươi còn trả lời?"
+
+Lâm Tịch im.
+
+Tiểu Mãn ngồi cạnh cha mẹ, ôm cái nồi. Nó nhìn chai nước rỗng, rồi nhìn Lâm Tịch.
+
+"Nước của người áo trắng đó hả?"
+
+"Ừ."
+
+"Uống rồi có bị bắt không?"
+
+Lâm Tịch lau tay bằng vải sạch.
+
+"Có thể."
+
+Tiểu Mãn sợ hãi.
+
+Lâm Tịch nói tiếp:
+
+"Nên chúng ta uống xong bỏ chai, không để nó bắt mình bằng cái khát."
+
+Cô bé nghĩ rất lâu.
+
+"Vậy sau này nước của mình thì sao?"
+
+Không ai trả lời ngay.
+
+Câu hỏi trẻ con đôi khi xuyên qua tất cả kế hoạch.
+
+Lâm Tịch nhìn chiếc nồi méo trong tay nó.
+
+"Sau này nếu có nước của mình, ai uống cũng phải biết nó từ đâu tới, ai sửa máy, ai canh đêm, ai bị thương, ai chết trên đường. Nước không được tự nhiên biến thành quyền của một người."
+
+Tiểu Mãn không hiểu hết.
+
+Nhưng A Mục đứng gần đó hiểu.
+
+Nó nhìn Lâm Tịch, rồi nhìn bình nước rỗng.
+
+"Đó là luật à?"
+
+"Một nửa."
+
+"Nửa còn lại?"
+
+Lâm Tịch nói:
+
+"Ai cầm vòi nước cũng phải bị người khác nhìn."
+
+Di Mạn đang cột lại túi thuốc, động tác khựng một chút.
+
+Tần Dã nhắm mắt, khóe miệng rất khẽ động.
+
+Không phải cười rõ.
+
+Nhưng gần như vậy.
+
+Kỷ Nam gom vỏ chai rỗng, ném vào một hố cát rồi phủ đá lên.
+
+"Dấu đuổi tới không xa."
+
+Lâm Tịch lập tức tỉnh lại khỏi khoảng lặng ngắn.
+
+"Bao lâu?"
+
+"Nếu từ cổng phụ, nhanh nhất một giờ. Nếu có chó đánh dấu như ở bãi biển, ít hơn."
+
+A Thất quay phắt đầu.
+
+"Chó gì?"
+
+Lâm Tịch đưa mảnh thẻ kim loại lấy từ cổ chó muối cho mọi người xem.
+
+Ký hiệu lá bạc dưới ánh đèn nhỏ lạnh như mắt côn trùng.
+
+Mộc Sanh cau mày.
+
+"Ngân Thụ gắn thẻ thú?"
+
+Kỷ Nam đáp:
+
+"Có thể không phải để điều khiển. Đánh dấu vùng, theo dõi đàn, hoặc thả làm rào sống."
+
+A Thất rùng mình.
+
+"Nó dùng thú hoang làm hàng rào ngoài thành?"
+
+Tần Dã mở mắt.
+
+"Không lạ. Hàng rào biết đói rẻ hơn lính."
+
+Tiểu Mãn ôm nồi sát ngực.
+
+Hạ Tố nhắm mắt, nước mắt lặng lẽ chảy.
+
+Du Khâu thở khò khè.
+
+Lão Phùng nhìn xe, rồi nhìn đường phía trước.
+
+"Nếu thêm hai người bệnh, phải bỏ tuyến đá. Đi mương tới cầu cạn sập sẽ chậm, nhưng xe còn sống."
+
+Kỷ Nam lắc đầu.
+
+"Mương có ổ chuột răng thép."
+
+A Thất gần như tuyệt vọng:
+
+"Đường nào không có thứ muốn ăn chúng ta không?"
+
+Di Mạn đáp:
+
+"Có. Đường trong thành. Nhưng họ muốn ăn kiểu khác."
+
+A Thất im.
+
+Không ai phản bác được.
+
+Lâm Tịch nhìn bản đồ dưới ánh đèn nhỏ. Trạm Lọc số Chín vẫn nằm ở đó, cách họ mười mấy cây số, sau cầu cạn sập, đầm nước bạc và thứ dưới cống. Nhưng phía sau đã không còn là một đội nhỏ chạy trốn nữa.
+
+Họ có hai người bệnh mới.
+
+Một đứa trẻ mới.
+
+Một mảnh chứng cứ Ngân Thụ dùng thú đánh dấu.
+
+Sáu chai nước sạch đã biến thành vỏ rỗng.
+
+Và một luật chưa viết xong.
+
+Nàng nói:
+
+"Đi mương."
+
+Kỷ Nam nhìn nàng.
+
+"Chậm."
+
+"Nhưng xe qua được."
+
+"Chuột răng thép sẽ nghe bánh xe."
+
+"Vậy cho chúng nghe thứ khác."
+
+A Thất cảnh giác:
+
+"Thứ khác là gì?"
+
+Lâm Tịch nhìn radio của nó.
+
+A Thất lập tức ôm chặt.
+
+"Không."
+
+Mộc Sanh đặt tay lên vai nó.
+
+"Con ngươi tới lúc lập công rồi."
+
+"Nó còn nhỏ!"
+
+"Nó hỏng."
+
+"Hỏng cũng là con ta."
+
+Lâm Tịch nói:
+
+"Không ném. Dùng tiếng nhiễu kéo chuột lệch hướng."
+
+A Thất nhìn radio, mặt đau đớn như phải gả con đi xa.
+
+"Nếu nó cháy?"
+
+Mộc Sanh đáp:
+
+"Ta sửa."
+
+"Tỷ hứa?"
+
+"Nếu còn linh kiện."
+
+"Lời hứa của tỷ sao luôn có dao vậy?"
+
+Di Mạn kéo khăn che mặt.
+
+"Đi."
+
+Xe lại lăn bánh.
+
+Lần này nặng hơn.
+
+Không chỉ vì thêm Du Khâu.
+
+Mà vì mỗi người đều biết, từ khoảnh khắc kéo gia đình Tiểu Mãn lên xe, họ đã bước qua một đường khác. Đường ấy không còn chỉ dẫn tới nước cho Chim Xám.
+
+Nó dẫn tới câu hỏi: nếu có nước, họ sẽ cho ai uống?
+
+Phía xa, sau lưng họ, trên tường thành Nam bật lên ba chùm đèn quét.
+
+Còi truy tìm vang qua mưa bụi đỏ.
+
+Không gọi tên.
+
+Nhưng Lâm Tịch biết tiếng còi ấy đang tìm mình.
+
+Nàng bước cạnh xe, cổ tay đau rát, cổ họng khát khô, tay đặt lên dao gãy.
+
+Trên xe, Tiểu Mãn tựa vào cái nồi, ngủ gật giữa cha và mẹ.
+
+Cái nồi méo phản chiếu ánh đèn quét rất mờ.
+
+Giống một mặt trăng nhỏ bị đập lõm.
+
+Không đẹp.
+
+Nhưng còn giữ được nước.

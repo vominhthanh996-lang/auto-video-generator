@@ -1,0 +1,112 @@
+setup plugin alembic.autogenerate.schemas
+setup plugin alembic.autogenerate.tables
+setup plugin alembic.autogenerate.types
+setup plugin alembic.autogenerate.constraints
+setup plugin alembic.autogenerate.defaults
+setup plugin alembic.autogenerate.comments
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4']}
+Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
+Checkpoint files will always be loaded safely.
+Total VRAM 2048 MB, total RAM 16077 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: LOW_VRAM
+Device: cuda:0 NVIDIA GeForce MX570 A : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 6430.0
+Using pytorch attention
+aimdo: src-win/cuda-detour.c:38:INFO:aimdo_setup_hooks: installing 6 hooks
+aimdo: src-win/cuda-detour.c:28:DEBUG:install_hook_entries: hooks successfully installed
+aimdo: src-win/shmem-detect.c:80:INFO:comfy-aimdo WDDM adapter match: NVIDIA GeForce MX570 A runtime_luid=00000000:00010652 dxgi_luid=00000000:00010652
+aimdo: src/control.c:152:INFO:comfy-aimdo inited for GPU: NVIDIA GeForce MX570 A (VRAM: 2047 MB)
+DynamicVRAM support detected and enabled
+Python version: 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+ComfyUI version: 0.21.1
+comfy-aimdo version: 0.3.0
+comfy-kitchen version: 0.2.8
+ComfyUI frontend version: 1.43.18
+[Prompt Server] web root: E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+Asset seeder disabled
+
+Import times for custom nodes:
+   0.0 seconds: E:\ThanhMV\ComfyUI_windows_portable_nvidia\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+got prompt
+model weight dtype torch.float16, manual cast: None
+model_type EPS
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+Requested to load SD1ClipModel
+Model SD1ClipModel prepared for dynamic VRAM loading. 235MB Staged. 0 patches attached.
+0 models unloaded.
+Model SD1ClipModel prepared for dynamic VRAM loading. 235MB Staged. 0 patches attached.
+Requested to load BaseModel
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/24 [00:00<?, ?it/s]  0%|          | 0/24 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/24 [00:11<?, ?it/s,  Model Initialization complete!  ]  4%|4         | 1/24 [00:11<04:34, 11.94s/it,  Model Initialization complete!  ]  4%|4         | 1/24 [00:03<04:34, 11.94s/it]                                     8%|8         | 2/24 [00:03<00:37,  1.71s/it] 12%|#2        | 3/24 [00:05<00:36,  1.75s/it] 17%|#6        | 4/24 [00:06<00:34,  1.70s/it] 21%|##        | 5/24 [00:08<00:22,  1.20s/it] 25%|##5       | 6/24 [00:09<00:26,  1.47s/it] 29%|##9       | 7/24 [00:10<00:23,  1.39s/it] 33%|###3      | 8/24 [00:12<00:25,  1.60s/it] 38%|###7      | 9/24 [00:13<00:21,  1.40s/it] 42%|####1     | 10/24 [00:15<00:19,  1.40s/it] 46%|####5     | 11/24 [00:17<00:23,  1.83s/it] 50%|#####     | 12/24 [00:18<00:19,  1.64s/it] 54%|#####4    | 13/24 [00:20<00:19,  1.79s/it] 58%|#####8    | 14/24 [00:22<00:15,  1.56s/it] 62%|######2   | 15/24 [00:23<00:15,  1.69s/it] 67%|######6   | 16/24 [00:25<00:14,  1.86s/it] 71%|#######   | 17/24 [00:27<00:15,  2.24s/it] 75%|#######5  | 18/24 [00:31<00:20,  3.43s/it] 79%|#######9  | 19/24 [00:35<00:21,  4.34s/it] 83%|########3 | 20/24 [00:37<00:08,  2.12s/it] 88%|########7 | 21/24 [00:41<00:10,  3.47s/it] 92%|#########1| 22/24 [00:48<00:14,  7.11s/it] 96%|#########5| 23/24 [00:53<00:05,  5.27s/it]100%|##########| 24/24 [01:47<00:00, 53.37s/it]100%|##########| 24/24 [01:47<00:00,  4.46s/it]
+Requested to load AutoencoderKL
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/10 [00:10<?, ?it/s,  Model Initialization complete!  ] 10%|#         | 1/10 [00:10<01:31, 10.15s/it,  Model Initialization complete!  ] 10%|#         | 1/10 [01:47<01:31, 10.15s/it]                                    20%|##        | 2/10 [01:47<07:08, 53.57s/it] 30%|###       | 3/10 [01:54<00:52,  7.52s/it] 40%|####      | 4/10 [01:59<00:27,  4.63s/it] 50%|#####     | 5/10 [02:10<00:56, 11.30s/it] 60%|######    | 6/10 [02:18<00:30,  7.53s/it] 70%|#######   | 7/10 [02:25<00:21,  7.12s/it] 80%|########  | 8/10 [02:33<00:15,  7.90s/it] 90%|######### | 9/10 [02:42<00:09,  9.12s/it]100%|##########| 10/10 [02:48<00:00,  6.58s/it]100%|##########| 10/10 [02:48<00:00, 16.88s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+Prompt executed in 293.79 seconds
+got prompt
+0 models unloaded.
+Model SD1ClipModel prepared for dynamic VRAM loading. 235MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/24 [00:00<?, ?it/s]  0%|          | 0/24 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/24 [00:03<?, ?it/s,  Model Initialization complete!  ]  4%|4         | 1/24 [00:03<01:23,  3.61s/it,  Model Initialization complete!  ]  4%|4         | 1/24 [00:06<01:23,  3.61s/it]                                     8%|8         | 2/24 [00:06<01:10,  3.21s/it] 12%|#2        | 3/24 [00:10<01:33,  4.47s/it] 17%|#6        | 4/24 [00:14<01:12,  3.62s/it] 21%|##        | 5/24 [00:30<05:13, 16.49s/it] 25%|##5       | 6/24 [00:53<06:49, 22.73s/it] 29%|##9       | 7/24 [01:01<02:16,  8.02s/it] 33%|###3      | 8/24 [01:15<03:36, 13.52s/it] 38%|###7      | 9/24 [01:19<01:03,  4.27s/it] 42%|####1     | 10/24 [01:24<01:05,  4.65s/it] 46%|####5     | 11/24 [01:45<04:32, 20.94s/it] 50%|#####     | 12/24 [01:47<00:33,  2.80s/it] 54%|#####4    | 13/24 [01:51<00:43,  4.00s/it] 58%|#####8    | 14/24 [01:54<00:28,  2.83s/it] 62%|######2   | 15/24 [01:59<00:44,  4.92s/it] 67%|######6   | 16/24 [02:32<04:19, 32.48s/it] 71%|#######   | 17/24 [02:38<00:44,  6.32s/it] 75%|#######5  | 18/24 [02:44<00:37,  6.22s/it] 79%|#######9  | 19/24 [02:50<00:31,  6.24s/it] 83%|########3 | 20/24 [03:00<00:36,  9.20s/it] 88%|########7 | 21/24 [03:05<00:15,  5.02s/it] 92%|#########1| 22/24 [03:08<00:06,  3.03s/it] 96%|#########5| 23/24 [03:20<00:12, 12.25s/it]100%|##########| 24/24 [03:24<00:00,  4.12s/it]100%|##########| 24/24 [03:24<00:00,  8.52s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/10 [00:19<?, ?it/s,  Model Initialization complete!  ] 10%|#         | 1/10 [00:19<02:57, 19.67s/it,  Model Initialization complete!  ] 10%|#         | 1/10 [00:07<02:57, 19.67s/it]                                    20%|##        | 2/10 [00:07<00:28,  3.53s/it] 30%|###       | 3/10 [00:11<00:31,  4.47s/it] 40%|####      | 4/10 [00:18<00:41,  6.84s/it] 50%|#####     | 5/10 [00:23<00:27,  5.47s/it] 60%|######    | 6/10 [00:27<00:13,  3.29s/it] 70%|#######   | 7/10 [00:32<00:15,  5.20s/it] 80%|########  | 8/10 [00:56<00:49, 24.62s/it] 90%|######### | 9/10 [01:11<00:14, 14.93s/it]100%|##########| 10/10 [01:17<00:00,  5.39s/it]100%|##########| 10/10 [01:17<00:00,  7.73s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+Prompt executed in 358.31 seconds
+got prompt
+0 models unloaded.
+Model SD1ClipModel prepared for dynamic VRAM loading. 235MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/24 [00:00<?, ?it/s]  0%|          | 0/24 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/24 [00:02<?, ?it/s,  Model Initialization complete!  ]  4%|4         | 1/24 [00:02<00:46,  2.02s/it,  Model Initialization complete!  ]  4%|4         | 1/24 [00:02<00:46,  2.02s/it]                                     8%|8         | 2/24 [00:02<00:23,  1.08s/it] 12%|#2        | 3/24 [00:03<00:25,  1.23s/it] 17%|#6        | 4/24 [00:04<00:15,  1.29it/s] 21%|##        | 5/24 [00:04<00:14,  1.27it/s] 25%|##5       | 6/24 [00:05<00:14,  1.25it/s] 29%|##9       | 7/24 [00:06<00:13,  1.25it/s] 33%|###3      | 8/24 [00:07<00:13,  1.16it/s] 38%|###7      | 9/24 [00:08<00:15,  1.03s/it] 42%|####1     | 10/24 [00:09<00:14,  1.01s/it] 46%|####5     | 11/24 [00:10<00:13,  1.02s/it] 50%|#####     | 12/24 [00:11<00:10,  1.11it/s] 54%|#####4    | 13/24 [00:13<00:17,  1.63s/it] 58%|#####8    | 14/24 [00:14<00:11,  1.11s/it] 62%|######2   | 15/24 [00:15<00:11,  1.28s/it] 67%|######6   | 16/24 [00:16<00:07,  1.07it/s] 71%|#######   | 17/24 [00:17<00:05,  1.26it/s] 75%|#######5  | 18/24 [00:18<00:07,  1.21s/it] 79%|#######9  | 19/24 [00:21<00:13,  2.79s/it] 83%|########3 | 20/24 [00:22<00:04,  1.03s/it] 88%|########7 | 21/24 [00:23<00:03,  1.21s/it] 92%|#########1| 22/24 [00:24<00:01,  1.05it/s] 96%|#########5| 23/24 [00:25<00:01,  1.02s/it]100%|##########| 24/24 [00:26<00:00,  1.39s/it]100%|##########| 24/24 [00:26<00:00,  1.11s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/10 [00:02<?, ?it/s,  Model Initialization complete!  ] 10%|#         | 1/10 [00:02<00:21,  2.37s/it,  Model Initialization complete!  ] 10%|#         | 1/10 [00:04<00:21,  2.37s/it]                                    20%|##        | 2/10 [00:04<00:19,  2.40s/it] 30%|###       | 3/10 [00:09<00:35,  5.09s/it] 40%|####      | 4/10 [00:12<00:14,  2.39s/it] 50%|#####     | 5/10 [00:15<00:16,  3.34s/it] 60%|######    | 6/10 [00:17<00:08,  2.14s/it] 70%|#######   | 7/10 [00:19<00:06,  2.13s/it] 80%|########  | 8/10 [00:22<00:04,  2.19s/it] 90%|######### | 9/10 [00:24<00:02,  2.89s/it]100%|##########| 10/10 [00:27<00:00,  2.17s/it]100%|##########| 10/10 [00:27<00:00,  2.72s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+Prompt executed in 94.60 seconds
+got prompt
+0 models unloaded.
+Model SD1ClipModel prepared for dynamic VRAM loading. 235MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/24 [00:00<?, ?it/s]  0%|          | 0/24 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/24 [00:02<?, ?it/s,  Model Initialization complete!  ]  4%|4         | 1/24 [00:02<01:05,  2.86s/it,  Model Initialization complete!  ]  4%|4         | 1/24 [00:03<01:05,  2.86s/it]                                     8%|8         | 2/24 [00:03<00:39,  1.80s/it] 12%|#2        | 3/24 [00:06<01:03,  3.01s/it] 17%|#6        | 4/24 [00:10<01:12,  3.63s/it] 21%|##        | 5/24 [00:12<00:45,  2.38s/it] 25%|##5       | 6/24 [00:14<00:31,  1.74s/it] 29%|##9       | 7/24 [00:16<00:33,  1.98s/it] 33%|###3      | 8/24 [00:18<00:37,  2.36s/it] 38%|###7      | 9/24 [00:39<05:15, 21.01s/it] 42%|####1     | 10/24 [00:46<01:30,  6.50s/it] 46%|####5     | 11/24 [00:49<00:45,  3.52s/it] 50%|#####     | 12/24 [00:52<00:29,  2.49s/it] 54%|#####4    | 13/24 [01:04<02:16, 12.37s/it] 58%|#####8    | 14/24 [01:10<00:56,  5.61s/it] 62%|######2   | 15/24 [01:12<00:23,  2.58s/it] 67%|######6   | 16/24 [01:14<00:17,  2.21s/it] 71%|#######   | 17/24 [01:17<00:18,  2.71s/it] 75%|#######5  | 18/24 [01:23<00:37,  6.22s/it] 79%|#######9  | 19/24 [01:27<00:17,  3.48s/it] 83%|########3 | 20/24 [01:30<00:10,  2.62s/it] 88%|########7 | 21/24 [01:32<00:06,  2.29s/it] 92%|#########1| 22/24 [01:34<00:03,  1.69s/it] 96%|#########5| 23/24 [01:38<00:04,  4.74s/it]100%|##########| 24/24 [01:59<00:00, 20.55s/it]100%|##########| 24/24 [01:59<00:00,  4.97s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+0 models unloaded.
+Model BaseModel prepared for dynamic VRAM loading. 1639MB Staged. 0 patches attached.
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/10 [00:48<?, ?it/s,  Model Initialization complete!  ] 10%|#         | 1/10 [00:48<07:20, 48.99s/it,  Model Initialization complete!  ] 10%|#         | 1/10 [00:30<07:20, 48.99s/it]                                    20%|##        | 2/10 [00:30<02:00, 15.12s/it] 30%|###       | 3/10 [01:45<08:48, 75.45s/it] 40%|####      | 4/10 [02:04<01:53, 18.95s/it] 50%|#####     | 5/10 [02:54<04:09, 49.99s/it] 60%|######    | 6/10 [03:21<01:48, 27.19s/it] 70%|#######   | 7/10 [04:02<02:01, 40.39s/it] 80%|########  | 8/10 [04:11<00:18,  9.30s/it] 90%|######### | 9/10 [04:16<00:04,  4.65s/it]100%|##########| 10/10 [04:22<00:00,  6.64s/it]100%|##########| 10/10 [04:22<00:00, 26.28s/it]
+0 models unloaded.
+Model AutoencoderKL prepared for dynamic VRAM loading. 159MB Staged. 0 patches attached.
+Prompt executed in 560.39 seconds

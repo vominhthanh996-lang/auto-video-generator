@@ -1,0 +1,16 @@
+{
+    "title":  "OpenAI billing test",
+    "width":  1080,
+    "height":  1920,
+    "fps":  30,
+    "scenes":  [
+                   {
+                       "id":  "scene-01",
+                       "duration":  3,
+                       "image_prompt":  "Simple vertical cinematic photo of a warm desk lamp on a wooden table, cozy realistic lighting, no text, no watermark",
+                       "narration":  "OpenAI billing test.",
+                       "text":  "",
+                       "subtitle":  ""
+                   }
+               ]
+}

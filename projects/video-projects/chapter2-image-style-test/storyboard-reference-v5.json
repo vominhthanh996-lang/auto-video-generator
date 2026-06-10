@@ -1,0 +1,29 @@
+{
+  "title": "chapter2 reference image test v5",
+  "language": "vi",
+  "scenes": [
+    {
+      "id": "scene-001",
+      "duration": 12,
+      "image": "assets/scene-reference-v5.png",
+      "audio": "",
+      "narration": "Lâm Tịch quỳ trong lều bạt rách, nhìn hai ngụm nước cuối cùng trong nắp hộp. Tần Dã bị thương nằm ở bên phải, không thể đứng dậy.",
+      "image_prompt": "cinematic 16:9 post-apocalyptic wasteland shelter interior, composition exactly like approved reference image: dirty but beautiful young Asian scavenger woman kneeling in the left third, three-quarter profile face readable, soot and dust on face, messy black hair tied back, torn gray-brown ragged coat with holes, hungry exhausted expression, wounded Asian male mercenary half-reclining in the right third on dirty bedding, black tactical clothing, wet messy black hair, wounded abdomen wrapped with dirty cloth, weak but righteous protective expression, warm oil lantern glowing between them as central visual anchor, torn tarp walls and hanging patched canvas framing top and right side, foreground rusty bucket, glass bottle, scraps, dirty survival props, background opens to hazy ruined industrial wasteland with distant structures and pale cold daylight, warm amber lantern light against cold outside light, deep shadows, realistic grime, emotional survival drama, high budget film still, 35mm cinema lens, shallow depth of field, muted natural colors, ultra realistic, no text, no watermark",
+      "comfy_prompt": "cinematic 16:9 post-apocalyptic wasteland shelter interior, composition exactly like approved reference image: dirty but beautiful young Asian scavenger woman kneeling in the left third, three-quarter profile face readable, soot and dust on face, messy black hair tied back, torn gray-brown ragged coat with holes, hungry exhausted expression, wounded Asian male mercenary half-reclining in the right third on dirty bedding, black tactical clothing, wet messy black hair, wounded abdomen wrapped with dirty cloth, weak but righteous protective expression, warm oil lantern glowing between them as central visual anchor, torn tarp walls and hanging patched canvas framing top and right side, foreground rusty bucket, glass bottle, scraps, dirty survival props, background opens to hazy ruined industrial wasteland with distant structures and pale cold daylight, warm amber lantern light against cold outside light, deep shadows, realistic grime, emotional survival drama, high budget film still, 35mm cinema lens, shallow depth of field, muted natural colors, ultra realistic, no text, no watermark",
+      "negative_prompt": "low quality, blurry face, smeared eyes, distorted nose, distorted mouth, faceless, cropped head, head out of frame, missing woman, missing man, standing man, gun pose, clean clothes, idol makeup, porcelain skin, anime, cartoon, plastic skin, extra limbs, bad hands, text, watermark, logo, oversaturated",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052204,
+        "size": "512x704",
+        "hires_scale": 1.25,
+        "upscale_model": "",
+        "reference_image": "C:\\Users\\thanh\\Downloads\\fb8d05e9-8752-4bc9-912c-85580d64d714.png",
+        "reference_denoise": 0.28
+      }
+    }
+  ]
+}

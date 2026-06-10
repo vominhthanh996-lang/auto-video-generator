@@ -18,6 +18,7 @@ Create a JSON file with this shape:
       "duration": 5,
       "image": "assets/scene-01.png",
       "audio": "assets/scene-01.wav",
+      "voice_audio": "assets/scene-01-clean-voice.wav",
       "narration": "Voiceover text for this scene.",
       "text": "Short on-screen text",
       "subtitle": "Voiceover text for subtitles."
@@ -36,6 +37,8 @@ Fields:
 - `scenes[].duration`: seconds. Keep this close to the narration length.
 - `scenes[].image`: local path to the generated scene image.
 - `scenes[].audio`: local path to the generated narration audio for the scene.
+- `scenes[].voice_audio`: optional original clean narration when `audio` has been mixed with subtle SFX.
+- `assets/sfx/*-with-sfx.mp3`: optional story-aware SFX mix generated from narration cues. Keep SFX subtle under voice.
 - `scenes[].text`: short visual headline burned into the video.
 - `scenes[].subtitle`: subtitle text shown near the bottom.
 - `music`: optional local music path. Keep narration louder than music.

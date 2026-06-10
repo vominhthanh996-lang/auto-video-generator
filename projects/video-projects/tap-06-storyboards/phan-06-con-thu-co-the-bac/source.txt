@@ -1,0 +1,553 @@
+# Phần 6: Con Thú Có Thẻ Bạc
+
+## Chương 199: Hàng Rào Biết Đói
+
+Đàn thú tới vào lúc trời xám nhất.
+
+Không phải sáng.
+
+Không phải tối.
+
+Là khoảng giữa, khi bụi đỏ treo lơ lửng trong không khí, khi người đứng gác dễ nheo mắt vì tưởng mọi thứ đều là bóng.
+
+Con đầu tiên xuất hiện trên đường ống cũ phía Đông.
+
+Nó giống chó, nhưng lưng cao hơn chó thường, da không có lông, từng mảng thịt xám nứt ra như đất khô. Cổ nó gắn một mảnh thẻ bạc nhỏ. Mỗi lần nó thở, thẻ bạc khẽ chớp sáng.
+
+A Mục là người thấy trước.
+
+Nó không la.
+
+Nó gõ hai tiếng vào thùng sắt.
+
+Keng.
+
+Keng.
+
+Tín hiệu thú.
+
+Cổng tạm lập tức đổi nhịp. Người đang xếp hàng được đẩy vào sau xe rác. Trẻ con lên tầng giữa. Người bệnh giữ nguyên. Người gác cầm xẻng, gậy, cung nhưng không bước qua vạch.
+
+Hai ngày trước, chắc chắn đã loạn.
+
+Hôm nay vẫn loạn, nhưng loạn có đường.
+
+Lâm Tịch chạy tới cổng.
+
+Kỷ Nam đã đứng trên xe rác, súng trong tay. Sa Đinh cầm cung. Hứa Đao cầm xẻng, mặt hưng phấn kiểu người cuối cùng cũng gặp thứ có thể đánh mà không cần tranh luật.
+
+Tần Dã được Di Mạn đỡ ra bậc thềm, mặt tái.
+
+Lâm Tịch quay đầu:
+
+"Anh ra làm gì?"
+
+"Nhìn."
+
+"Nằm trong kia cũng nhìn được à?"
+
+"Không."
+
+Di Mạn nói:
+
+"Ta đỡ. Hắn mà ngã ta ném vào trong."
+
+Lâm Tịch không còn thời gian cãi.
+
+Con thú thứ hai xuất hiện.
+
+Rồi con thứ ba.
+
+Năm.
+
+Chín.
+
+Chúng không lao tới. Chỉ tản ra quanh trạm, đứng ở khoảng cách cung khó bắn trúng, súng bắn được nhưng phí đạn. Mỗi con đều có thẻ bạc ở cổ hoặc vai.
+
+A Thất leo lên tầng giữa, ôm radio cháy xém đã sửa được nửa mạch.
+
+"Chúng đang bao vây?"
+
+Tần Dã đáp:
+
+"Dồn."
+
+"Dồn gì?"
+
+"Dồn người vào trong, chặn người mới tới, chặn đổi hàng."
+
+Thẩm Bạch đứng cách đó không xa, mắt nhìn thẻ bạc.
+
+"Không phải tấn công. Là khóa mềm."
+
+Di Mạn lạnh giọng:
+
+"Ngươi nói nghe quen nhỉ."
+
+Thẩm Bạch không đáp.
+
+Lâm Tịch nhìn đàn thú.
+
+Ngân Thụ không cần gửi quân.
+
+Nó chỉ cần thả hàng rào biết đói quanh một nơi có nước. Người bên trong sẽ thiếu than, thiếu thức ăn, thiếu thuốc. Người bên ngoài không dám tới đổi. Trạm tự khô lại như một cái bát úp.
+
+Đó là cách rất sạch để giết bẩn.
+
+Ninh bỗng kéo tay áo Lâm Tịch.
+
+Cậu bé ôm hộp Đèn Vàng, mặt trắng. Hai mầm cây trong hộp nghiêng về phía Đông, lá run nhẹ.
+
+"Nó... sợ?"
+
+Lâm Tịch nhìn lá.
+
+Không giống sợ.
+
+Giống đang nghe.
+
+Một con thú gắn thẻ bạc ở xa bỗng ngẩng đầu, nhìn thẳng về phía hộp Đèn Vàng.
+
+Tần Dã nói:
+
+"Che cây."
+
+Ninh lập tức phủ vải lên hộp.
+
+Con thú hạ đầu.
+
+Kỷ Nam cau mày.
+
+"Chúng bị tín hiệu cây kéo?"
+
+Thẩm Bạch nói:
+
+"Đèn Vàng sinh trưởng có thể phát hợp chất bay hơi. Thú gắn thẻ phản ứng với một số mùi khoáng sinh học."
+
+Di Mạn nói:
+
+"Nói tiếng người."
+
+Mộc Sanh đáp thay:
+
+"Cây có mùi. Thú nghe được."
+
+Ninh ôm hộp chặt hơn.
+
+"Vậy... lỗi của cây?"
+
+Lâm Tịch lập tức:
+
+"Không."
+
+Câu nói quá nhanh, làm Ninh ngẩng lên.
+
+Lâm Tịch chậm lại.
+
+"Không phải lỗi của thứ bị người khác đánh dấu rồi dùng làm mồi."
+
+Ninh cúi đầu.
+
+Nó hiểu câu đó hơn người khác.
+
+Vì có lẽ Đèn Vàng không khác Lâm Tịch bao nhiêu. Đều bị gọi là mẫu, đều bị đánh dấu, đều bị thứ khác nghe thấy trước khi tự hiểu mình là gì.
+
+Hứa Đao sốt ruột:
+
+"Đánh không?"
+
+Kỷ Nam đáp:
+
+"Đánh một con, cả đàn vào."
+
+"Vậy đứng nhìn?"
+
+Tần Dã nói:
+
+"Không. Cho chúng thứ khác để nghe."
+
+Mọi người nhìn hắn.
+
+Hắn nhìn Ninh.
+
+"Đèn Vàng có thể khiến chúng chú ý. Vậy dùng mùi cây kéo lệch hướng."
+
+Ninh ôm hộp lùi nửa bước.
+
+Không phải vì ích kỷ.
+
+Vì sợ.
+
+Mầm cây nhỏ mới mọc đêm qua. Nó yếu đến mức một đầu ngón tay cũng có thể làm gãy.
+
+Lâm Tịch nhìn Tần Dã.
+
+"Không dùng cây làm mồi sống."
+
+"Không dùng cây." Hắn nói. "Dùng lá rụng, đất trong hộp, nước rửa rễ nếu có."
+
+Ninh lập tức mở hộp nhìn.
+
+Không có lá rụng.
+
+Đèn Vàng còn quá nhỏ.
+
+Thẩm Bạch nói:
+
+"Có thể lấy rất ít đất bề mặt. Không hại rễ nếu làm đúng."
+
+Ninh nhìn hắn, ánh mắt đầy không tin.
+
+Di Mạn bước tới.
+
+"Ta lấy."
+
+Thẩm Bạch đứng xa, chỉ cách làm.
+
+Di Mạn dùng đầu thìa nhỏ lấy một nhúm đất rất mỏng ở mép hộp, không chạm rễ. Ninh nhìn từng động tác, môi mím chặt.
+
+Lâm Tịch cầm nhúm đất.
+
+Mùi rất nhẹ.
+
+Gần như không có gì với người.
+
+Nhưng con thú phía Đông lập tức ngẩng đầu.
+
+Tần Dã nói:
+
+"Không ném gần. Gió Tây. Đưa mùi xuống rãnh cũ phía Nam."
+
+Kỷ Nam nhận đất.
+
+"Ta đi."
+
+Lâm Tịch lắc đầu.
+
+"Ta đi."
+
+"Ngươi là mục tiêu."
+
+"Chính vì vậy đàn thú nhìn ta quen hơn nhìn ngươi?"
+
+"Không buồn cười."
+
+"Ta không đùa."
+
+Tần Dã nói:
+
+"Kỷ Nam đi. Lâm Tịch giữ cổng."
+
+Lâm Tịch nhìn hắn.
+
+Hắn không lùi.
+
+"Nếu ngươi đi, trạm nhìn theo ngươi. Nếu trạm nhìn theo ngươi, cổng chậm."
+
+Câu này đúng.
+
+Khó chịu vì đúng.
+
+Lâm Tịch giao nhúm đất cho Kỷ Nam.
+
+"Không để chúng tới gần rãnh trẻ con."
+
+"Biết."
+
+Kỷ Nam mang theo Hứa Đao và Sa Đinh. Ba người vòng qua tuyến ống phía Nam, dùng túi vải thấm nước Đèn Vàng pha loãng buộc vào đầu xương thú, kéo dọc rãnh cũ.
+
+Đàn thú chuyển động.
+
+Không đồng loạt.
+
+Nhưng từng con một bắt đầu nghiêng đầu, đánh hơi, rồi dịch khỏi cổng.
+
+Đám người trong trạm nín thở nhìn.
+
+Một con thú tiến quá gần Kỷ Nam. Hứa Đao giơ xẻng định đập, Kỷ Nam hạ tay ngăn. Sa Đinh bắn một mũi tên không trúng thú, chỉ ghim xuống đất cách nó một bước, ép nó đổi hướng.
+
+Dần dần, vòng vây mở ra một khe.
+
+Không lớn.
+
+Nhưng đủ cho nhóm đổi than đang mắc bên ngoài chạy vào cổng.
+
+Lâm Tịch lập tức hét:
+
+"Từng nhóm ba người! Bỏ hàng ngoài vạch! Không chạy vào máng!"
+
+Người bên ngoài nghe thấy, ùa tới.
+
+Vẫn có người chen.
+
+Vẫn có người ngã.
+
+Nhưng cổng không vỡ.
+
+Đến khi đàn thú bị kéo lệch về phía rãnh Nam, thẻ bạc trên cổ chúng cùng nhấp nháy một lần.
+
+Thẩm Bạch biến sắc.
+
+"Có người nhận ra."
+
+"Ai?"
+
+"Người điều phối thẻ."
+
+Xa xa, trên một cột tín hiệu cũ ngoài phế thổ, một đốm sáng xanh bật lên rồi tắt.
+
+Không phải mắt thú.
+
+Là máy.
+
+Ngân Thụ đang nhìn.
+
+## Chương 200: Mùi Cây Trên Đất Bùn
+
+Kỷ Nam trở về với vết cào trên vai.
+
+Không sâu, nhưng rách áo. Hứa Đao đi sau, xẻng mẻ một góc, miệng chửi liên tục về việc thú gắn thẻ không biết tôn trọng người đào rãnh. Sa Đinh là người về cuối, trên tay còn giữ một mũi tên dính da thú.
+
+Không ai chết.
+
+Câu đó lại được ghi vào ngày thứ hai.
+
+Ninh ôm hộp Đèn Vàng chờ ở cổng. Vừa thấy Kỷ Nam, nó không hỏi người, chỉ nhìn túi vải từng đựng đất cây.
+
+Kỷ Nam đưa lại.
+
+"Còn một ít."
+
+Ninh mở ra nhìn, thấy chút đất ẩm còn dính trong góc túi. Nó thở phào như vừa nhận lại người thân.
+
+Hứa Đao nhìn nó.
+
+"Chỉ là đất."
+
+Ninh ôm túi vào ngực, không nói.
+
+A Mục nói:
+
+"Với ngươi nước cũng chỉ là nước trước khi khát."
+
+Hứa Đao nhìn nó.
+
+"Miệng ngươi càng ngày càng giống Di Mạn."
+
+Di Mạn từ máng lọc:
+
+"Đừng đổ oan."
+
+Ninh đem đất trả lại hộp. Thẩm Bạch đứng xa quan sát, mắt sáng đến mức làm người ta muốn lấy vải che luôn hắn.
+
+Lâm Tịch hỏi:
+
+"Ông thấy gì?"
+
+"Đèn Vàng có khả năng can thiệp hướng hành vi của thú gắn thẻ qua tín hiệu mùi. Không điều khiển, nhưng dẫn lệch."
+
+"Ngân Thụ biết không?"
+
+"Có thể biết một phần. Nhưng phản ứng với trạm này mạnh hơn dữ liệu cũ."
+
+"Vì sao?"
+
+Thẩm Bạch nhìn nàng.
+
+"Có thể vì cô."
+
+Lâm Tịch không thích câu đó.
+
+Mỗi lần Thẩm Bạch nói "vì cô", nàng lại thấy mình bị đặt trở lại trong một ống thủy tinh vô hình.
+
+Tần Dã ngồi gần đó, giọng khàn:
+
+"Hoặc vì nước."
+
+Thẩm Bạch quay sang.
+
+"Nước?"
+
+"Đèn Vàng ở trong thành bị nhốt trong hộp. Ở đây có nước khoáng sống, rêu xám, thú, người bệnh, máu, bụi xạ. Môi trường khác."
+
+Thẩm Bạch im.
+
+Một lát sau, hắn nói:
+
+"Có lý."
+
+A Thất nhỏ giọng với Mộc Sanh:
+
+"Áo trắng vừa công nhận Tần Dã có lý. Ghi không?"
+
+Mộc Sanh đáp:
+
+"Ghi vào mặt ngươi?"
+
+Lâm Tịch nhìn Đèn Vàng.
+
+Nếu trạm làm cây mạnh hơn, cây cũng làm trạm nguy hiểm hơn. Hy vọng và tín hiệu báo nguy mọc từ cùng một mầm.
+
+Ninh viết lên bảng nhỏ của mình:
+
+`Không lấy đất nếu Ninh không ở đó.`
+
+Nó giơ cho Lâm Tịch xem.
+
+Lâm Tịch gật đầu.
+
+"Ghi vào luật cây."
+
+A Thất lập tức than:
+
+"Giờ còn có luật cây."
+
+Di Mạn:
+
+"Có cây thì có luật cây."
+
+Thế là bảng thứ tư ra đời:
+
+`Đèn Vàng không phải vật đổi nước.`
+
+`Không chạm cây nếu Ninh hoặc Lâm Tịch không đồng ý.`
+
+`Lấy đất, lá, nước rửa rễ phải ghi và có người nhìn.`
+
+`Cây giúp trạm, trạm giữ cây.`
+
+Tiểu Mãn vẽ một mầm nhỏ cạnh dòng cuối.
+
+Ninh nhìn hình vẽ rất lâu, rồi nhẹ nhàng gật đầu.
+
+Buổi chiều, đàn thú không rút hẳn.
+
+Chúng đứng xa hơn, rải thành vòng lỏng. Thỉnh thoảng một con tiến lại gần cổng, bị mùi đất cây pha loãng treo ở rãnh Nam kéo lệch đi. Kỷ Nam gọi đó là "dây mùi".
+
+Mộc Sanh gọi là "hàng rào tạm".
+
+Di Mạn gọi là "lại thêm một thứ phải canh".
+
+Tất cả đều đúng.
+
+Vấn đề là mùi đất cây dùng được rất ít. Mỗi lần lấy là một lần làm Ninh căng thẳng. Không ai muốn biến Đèn Vàng thành cái kho mồi.
+
+Lâm Tịch quyết định lập đội canh thú.
+
+Sa Đinh nhận một ca vì đội nàng biết bắn lệch mà không kích sát. Hứa Đao nhận một ca vì hắn muốn thêm nước. Kỷ Nam nhận ca đêm vì hắn không tin ai. A Mục xin một ca quan sát, bị Di Mạn mắng quá nhỏ, nhưng Tần Dã nói:
+
+"Cho nó đứng cùng người lớn."
+
+Di Mạn nhíu mày.
+
+"Nó còn nhỏ."
+
+Tần Dã đáp:
+
+"Nó thấy sớm."
+
+A Mục đứng thẳng hơn một chút.
+
+Di Mạn nhìn nó.
+
+"Thấy thì báo, không làm anh hùng."
+
+"Ừ."
+
+"Chạy trước nếu thú vào?"
+
+A Mục khựng lại.
+
+Di Mạn nhìn nó.
+
+"Chạy để báo. Không phải bỏ. Hiểu không?"
+
+Nó gật đầu.
+
+"Hiểu."
+
+Khi mặt trời lặn, cổng tạm treo thêm ba túi mùi Đèn Vàng pha loãng. Đàn thú đi vòng ngoài. Người xếp hàng nhìn chúng bằng mắt sợ hãi nhưng không bỏ chạy.
+
+Một thương đội nhỏ từ Trạm Chợ Gãy tới, đem theo than thật, muối thô và hai túi bột vàng. Họ đứng ngoài vạch, đọc luật rất chậm. Khi đọc tới dòng "Cây giúp trạm, trạm giữ cây", một người trong đội hỏi:
+
+"Cây gì?"
+
+Ninh lập tức ôm hộp lùi lại.
+
+Lâm Tịch đáp:
+
+"Cây không đổi."
+
+Người đó cười:
+
+"Cái gì cũng đổi được."
+
+Kỷ Nam nâng súng.
+
+"Không ở đây."
+
+Người đó nhìn hắn, nhìn cổng, nhìn đàn thú quanh xa, cuối cùng nhún vai.
+
+"Vậy đổi muối."
+
+Cuộc đổi diễn ra căng nhưng xong.
+
+Trạm có thêm muối thô.
+
+Một thứ nhỏ, nhưng làm Di Mạn nhìn bao muối lâu hơn nhìn cả hộp thuốc.
+
+"Có muối, cháo loãng giống đồ ăn hơn một chút."
+
+Tiểu Mãn hỏi:
+
+"Cháo không muối không phải đồ ăn ạ?"
+
+Di Mạn đáp:
+
+"Là nước buồn."
+
+Đứa trẻ cười.
+
+Tiếng cười lan rất nhỏ qua khu bếp tạm.
+
+Tối đó, Lâm Tịch mang một bát cháo loãng có chút muối tới cho Tần Dã.
+
+Hắn nhận bằng tay trái.
+
+Tay phải vẫn yếu, nhưng ngón tay đã hơi động.
+
+Nàng nhìn thấy.
+
+"Cử động rồi."
+
+"Ừ."
+
+"Tốt hơn?"
+
+"Chưa biết."
+
+"Anh không thể nói một câu dễ nghe à?"
+
+"Cháo có muối."
+
+"Đó là dễ nghe?"
+
+"Ừ."
+
+Lâm Tịch nhìn hắn, rồi bật cười.
+
+Tần Dã uống một ngụm cháo.
+
+Rất loãng.
+
+Nhưng có muối.
+
+Ở ngoài cổng, đàn thú gắn thẻ bạc vẫn đi vòng trong bụi đỏ. Trên cột tín hiệu xa, đốm sáng xanh thỉnh thoảng chớp lên.
+
+Ngân Thụ đang nhìn.
+
+Nhưng trong trạm, người ta đang chia cháo có muối.
+
+Hai chuyện ấy cùng tồn tại.
+
+Và chính vì vậy, Trạm Số Chín còn sống.

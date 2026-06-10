@@ -27,6 +27,18 @@ __pycache__/
 .venv/
 venv/
 
+# Local codex scratch and generated audit artifacts
+scratch/
+single_scene_samples/
+storyboard_samples/
+STORYBOARD_ENGINE_STATUS_*.md
+_tmp_*.py
+tmp_*.py
+patch_*.py
+fix_*.py
+cleanup_*.py
+rebuild_*.py
+
 # Secrets
 .env
 .env.*
@@ -38,3 +50,24 @@ secrets/
 Thumbs.db
 .DS_Store
 .vscode/
+
+# Allow committed project snapshots under repo projects/video-projects
+!projects/video-projects/
+!projects/video-projects/**
+!projects/video-projects/**/assets/
+!projects/video-projects/**/assets/**
+!projects/video-projects/**/output/
+!projects/video-projects/**/output/**
+!projects/video-projects/**/logs/
+!projects/video-projects/**/logs/**
+!projects/video-projects/**/*.mp4
+!projects/video-projects/**/*.mov
+!projects/video-projects/**/*.avi
+!projects/video-projects/**/*.mkv
+!projects/video-projects/**/*.wav
+!projects/video-projects/**/*.mp3
+!projects/video-projects/**/*.m4a
+!projects/video-projects/**/*.png
+!projects/video-projects/**/*.jpg
+!projects/video-projects/**/*.jpeg
+!projects/video-projects/**/*.webp

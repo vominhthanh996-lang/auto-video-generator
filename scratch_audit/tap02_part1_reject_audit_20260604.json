@@ -1,0 +1,202 @@
+{
+  "project": "E:\\ThanhMV\\auto-video-generator\\projects\\storyboards\\tap-02-storyboards\\phan-01-duong-ray-khong-dan-ve-nha",
+  "criteria_note": "Glam or pin-up styling for Lam Tich is allowed when it still matches the story beat, age, cast, and non-explicit safety line.",
+  "rejected_scenes": {
+    "1": [
+      "duplicate_subject",
+      "wrong_subject_count",
+      "not_story_specific"
+    ],
+    "2": [
+      "wrong_cast",
+      "military_drift",
+      "location_leak"
+    ],
+    "3": [
+      "duplicate_lam_tich",
+      "not_story_specific"
+    ],
+    "4": [
+      "duplicate_lam_tich",
+      "too_explicit_for_story",
+      "not_story_specific"
+    ],
+    "6": [
+      "child_miscast",
+      "military_drift",
+      "weapon_invented"
+    ],
+    "8": [
+      "wrong_cast",
+      "missing_lam_tich",
+      "generic_two_man_frame"
+    ],
+    "9": [
+      "wrong_subject_count",
+      "missing_tieu_ngo_context"
+    ],
+    "10": [
+      "wrong_subject_count",
+      "generic_single_subject"
+    ],
+    "12": [
+      "generic_single_subject",
+      "missing_group_context"
+    ],
+    "13": [
+      "wrong_age_mix",
+      "generic_child_blocking"
+    ],
+    "14": [
+      "child_scene_wrong_cast",
+      "board_not_visible",
+      "extra_wrong_child"
+    ],
+    "19": [
+      "wrong_age_or_cast",
+      "generic_standoff"
+    ],
+    "20": [
+      "wrong_cast",
+      "repeated_generic_child_pair"
+    ],
+    "22": [
+      "wrong_cast",
+      "missing_ration_power_dynamic"
+    ],
+    "24": [
+      "wrong_cast",
+      "military_drift",
+      "missed_water_scent_beat"
+    ],
+    "27": [
+      "weapon_invented",
+      "child_miscast",
+      "military_drift"
+    ],
+    "30": [
+      "wrong_cast",
+      "generic_two_girl_frame"
+    ],
+    "31": [
+      "generic_single_subject",
+      "missing_story_object"
+    ],
+    "32": [
+      "wrong_cast",
+      "adult_woman_plus_child_mismatch",
+      "not_story_specific"
+    ],
+    "34": [
+      "wrong_location",
+      "well_missing",
+      "wrong_cast"
+    ],
+    "38": [
+      "child_miscast",
+      "wrong_group_composition"
+    ],
+    "39": [
+      "generic_single_subject",
+      "missing_story_action"
+    ],
+    "40": [
+      "wrong_cast",
+      "missing_a_that_specificity"
+    ],
+    "45": [
+      "generic_single_subject",
+      "missing_story_action"
+    ],
+    "47": [
+      "wrong_location",
+      "trade_table_drift",
+      "missing_scene_object"
+    ],
+    "48": [
+      "generic_duo_glam",
+      "wrong_cast"
+    ],
+    "50": [
+      "not_story_specific",
+      "too_explicit_for_story"
+    ],
+    "54": [
+      "weapon_invented",
+      "child_miscast"
+    ],
+    "55": [
+      "wrong_cast",
+      "missing_group_balance"
+    ],
+    "57": [
+      "not_story_specific",
+      "single_glam_portrait_instead_of_story_beat"
+    ],
+    "60": [
+      "too_explicit_for_story",
+      "missing_journey_context"
+    ],
+    "62": [
+      "wrong_cast",
+      "military_drift",
+      "missing_wheelchair_or_group_context"
+    ],
+    "63": [
+      "wrong_cast",
+      "missing_child",
+      "generic_two_men"
+    ],
+    "64": [
+      "wrong_cast",
+      "missing_wheelchair_or_group_column"
+    ],
+    "65": [
+      "wrong_cast",
+      "children_replaced_adults",
+      "missing_tan_da_tieu_mai"
+    ]
+  },
+  "kept_scenes": [
+    "scene-005.png",
+    "scene-007.png",
+    "scene-011.png",
+    "scene-015.png",
+    "scene-016.png",
+    "scene-017.png",
+    "scene-018.png",
+    "scene-021.png",
+    "scene-023.png",
+    "scene-025.png",
+    "scene-026.png",
+    "scene-028.png",
+    "scene-029.png",
+    "scene-033.png",
+    "scene-035.png",
+    "scene-036.png",
+    "scene-037.png",
+    "scene-041.png",
+    "scene-042.png",
+    "scene-043.png",
+    "scene-044.png",
+    "scene-046.png",
+    "scene-049.png",
+    "scene-051.png",
+    "scene-052.png",
+    "scene-053.png",
+    "scene-056.png",
+    "scene-058.png",
+    "scene-059.png",
+    "scene-061.png"
+  ],
+  "root_fixes_applied": [
+    "Broad pronoun-based subject detection was removed so adult male/female leads are no longer inferred from generic words alone.",
+    "Medical-scene classification was tightened so well, railway, valuation, trade, and water-scent scenes are less likely to be misread as generic injury beats.",
+    "Board-exchange scenes now center on the writing board and the child exchange, instead of generic group-dialogue framing.",
+    "Location pruning was hardened so railway, old well, Gray Station, District 17 fire lanes, and Tunnel 4 stop bleeding into each other.",
+    "Foreground cast pruning was tightened so child scenes, appraisal scenes, trade scenes, and ration scenes carry fewer random extra people.",
+    "Lam Tich styling was re-aligned to allow feminine glam / wasteland pin-up energy when the beat allows it, while still forbidding explicit exposure and off-story fetish framing.",
+    "Tan Da styling was kept strongly adult-male, tall, muscular, and righteous, while reducing the accidental tactical-soldier drift.",
+    "Image prompt negatives now push harder against invented rifles, SWAT/commando posing, military squad blocking, and adult combat styling on child characters."
+  ]
+}

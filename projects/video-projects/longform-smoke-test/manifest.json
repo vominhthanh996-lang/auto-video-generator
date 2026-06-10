@@ -1,0 +1,21 @@
+{
+  "title": "Longform Smoke Test",
+  "target_minutes": 1,
+  "chapter_minutes": 1,
+  "scene_duration": 12,
+  "aspect": "9:16",
+  "fps": 30,
+  "language": "Vietnamese",
+  "style": "cinematic realistic story illustration, consistent characters, dramatic lighting",
+  "chapters": [
+    {
+      "chapter": 1,
+      "dir": "E:/ThanhMV/video-projects/longform-smoke-test/chapter-01",
+      "storyboard": "E:/ThanhMV/video-projects/longform-smoke-test/chapter-01/storyboard.json",
+      "output": "E:/ThanhMV/video-projects/longform-smoke-test/chapter-01/output/chapter-01.mp4",
+      "target_seconds": 60,
+      "scene_count": 5
+    }
+  ],
+  "final_output": "E:/ThanhMV/video-projects/longform-smoke-test/final/final.mp4"
+}

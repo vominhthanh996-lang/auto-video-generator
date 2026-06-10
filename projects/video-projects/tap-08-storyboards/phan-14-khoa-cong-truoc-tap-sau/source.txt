@@ -1,0 +1,375 @@
+# Phần 14: Khóa Cổng Trước Tập Sau
+
+## Chương 255: Ba Thứ Phải Giữ
+
+Đêm thứ hai sau khi Tần Sách lên tiếng, Cổng Nước Xám họp không phải để quyết định đánh ai.
+
+Họ họp để quyết định giữ gì.
+
+Trên bàn có ba thứ.
+
+Mảnh thẻ TS-01.
+
+Module đọc bản ghi.
+
+Và danh sách câu hỏi về Hắc Nha.
+
+Di Mạn nhìn ba thứ ấy, nói:
+
+"Không có thứ nào ăn được."
+
+A Thất đáp:
+
+"Nhưng thứ nào mất cũng chết người."
+
+"Ta ghét khi ngươi nói đúng."
+
+Tần Dã ngồi ở mép bàn, sắc mặt vẫn xấu. Thuốc ổn định gen còn ít, và hắn đã dùng quá nhiều sức trong hai ngày qua. Lâm Tịch thấy ngón tay hắn thỉnh thoảng tê cứng, phải duỗi ra dưới gầm bàn.
+
+Nàng không nhìn lâu.
+
+Chỉ đẩy cốc nước gần tay hắn hơn.
+
+Hắn cũng không nói cảm ơn.
+
+Chỉ uống.
+
+Sự ăn ý của họ vẫn là những việc nhỏ không cần đặt tên.
+
+Thẩm Bạch nói:
+
+"Ba thứ này không nên để cùng một chỗ."
+
+Tạ Khuông gật.
+
+"Thẻ một nơi, máy một nơi, bản chép một nơi."
+
+"Ai giữ?"
+
+Mọi người nhìn nhau.
+
+Không ai muốn giữ.
+
+Giữ thứ này giống ôm một đốm lửa trong áo. Có thể sưởi, có thể cháy xuyên ngực.
+
+Bà Hôi nói:
+
+"Đừng nhìn ta. Ta từng bán thuốc giả."
+
+Di Mạn nói:
+
+"Chính vì bà từng bán thuốc giả nên biết giấu đồ thật."
+
+Bà Hôi nghẹn.
+
+Cuối cùng họ chia:
+
+Mảnh thẻ TS-01 để trong kho giữ hộ, niêm ba lớp, người giữ chìa là Lâm Tịch, Tạ Khuông và Bà Hôi mỗi người giữ một phần dây niêm.
+
+Module đọc do A Thất tháo thành hai phần. Một phần để ở radio, một phần giấu trong bếp của Di Mạn, dưới đáy hũ muối của Đàm Lão.
+
+Bản chép chữ do Thẩm Bạch viết ba bản: một bản treo công khai phần không gây nguy hiểm, một bản giấu trong hộp thuốc, một bản đưa Tần Dã.
+
+Tần Dã nhận bản đó, nhưng không cất vào áo.
+
+Hắn đặt lên bàn.
+
+"Bản của ta để Lâm Tịch giữ."
+
+Lâm Tịch ngẩng lên.
+
+"Vì sao?"
+
+"Vì nếu ta giữ, có thể ta sẽ đi một mình."
+
+Cả bàn im.
+
+Câu ấy không dài.
+
+Nhưng nó thật đến mức không ai giả vờ không nghe.
+
+Lâm Tịch nhìn hắn.
+
+"Anh đang báo trước?"
+
+"Đang chặn trước."
+
+"Bằng cách đưa ta?"
+
+"Ừ."
+
+Nàng cầm bản chép.
+
+Giấy rất nhẹ.
+
+Nhưng nếu một ngày Tần Dã muốn rời đi theo giọng Tần Sách, tờ giấy này có thể là thứ nàng phải đặt trước mặt hắn để hỏi: anh đang đi vì ai, vì người sống hay vì mã cũ?
+
+Nàng gấp giấy lại.
+
+"Ta giữ."
+
+Tần Dã gật đầu.
+
+Không ai nói đó là tin tưởng.
+
+Nhưng ai cũng nghe ra.
+
+## Chương 256: Đừng Đi Một Mình
+
+Gần sáng, Lâm Tịch tìm thấy Tần Dã ở phòng điều khiển cũ.
+
+Hắn không đi xa. Chỉ xuống tầng dưới, nơi hồ sơ Trạm Nước Công Cộng Số Chín từng được hong khô, nơi đường ống cũ vẫn thỉnh thoảng vang lên tiếng nước rất nhỏ. Nhưng với thân thể hắn hiện tại, tự xuống được đó đã là cứng đầu quá mức.
+
+Lâm Tịch đứng ở cửa, không mắng ngay.
+
+Tần Dã nói trước:
+
+"Ta không đi."
+
+"Ta còn chưa hỏi."
+
+"Mặt ngươi hỏi rồi."
+
+Nàng bước xuống, đóng cửa sau lưng.
+
+Phòng điều khiển cũ lạnh hơn trên mặt đất. Trên tường, dòng chữ `Nước sinh hoạt khu dân cư - tuyến số 9` vẫn mờ trong ánh đèn. Lâm Tịch nhớ lần đầu nhìn thấy nó, nàng đã cay mắt. Bây giờ nhìn lại, nàng thấy nó giống một lời nhắc: nước từng có đường đi trước khi bị người ta cắt thành quyền sở hữu.
+
+Tần Dã ngồi trước bảng ống.
+
+"Nếu Tần Sách còn sống, hắn không ở gần. Tín hiệu yếu, qua nhiều tầng chuyển. Có người cố tình để chúng ta nghe một mẩu, không đủ để tìm, đủ để động."
+
+"Anh biết mà vẫn xuống đây?"
+
+"Ở trên kia ai cũng nhìn ta."
+
+Lâm Tịch im.
+
+Đúng.
+
+Từ lúc radio gọi HN-07, cả cổng nhìn hắn bằng những cách khác nhau. Lo, sợ, tò mò, nghi ngờ, thương. Dù không ác, ánh mắt quá nhiều cũng có thể làm người ta ngạt.
+
+Nàng đi tới, ngồi xuống nền đối diện hắn.
+
+"Ở đây ta cũng nhìn."
+
+"Ngươi khác."
+
+"Khác sao?"
+
+Tần Dã không đáp ngay.
+
+Nước trong ống gõ một tiếng rất khẽ.
+
+"Ngươi nhìn như muốn giữ ta lại, nhưng vẫn để cửa sau lưng ta mở."
+
+Lâm Tịch thấy cổ họng mình nghẹn.
+
+"Vì ta sợ nếu khóa cửa, anh sẽ lại thành HN-07."
+
+Tần Dã nhắm mắt.
+
+Rất lâu sau, hắn nói:
+
+"HN-07 dễ sống hơn."
+
+Lâm Tịch không ngắt lời.
+
+"HN-07 nghe lệnh, đi đường, giết, rút, không hỏi người chết có tên không. Tần Dã thì phiền hơn. Uống nước phải ghi. Muốn đi phải nói. Được người khác cứu thì nợ. Thấy thú chết cũng phải nhớ."
+
+Hắn mở mắt.
+
+"Phiền."
+
+Lâm Tịch nói:
+
+"Nhưng sống hơn."
+
+Hắn nhìn nàng.
+
+"Ừ."
+
+Chỉ một chữ.
+
+Nhưng làm căn phòng lạnh bớt.
+
+Lâm Tịch lấy bản chép trong áo ra, đặt giữa hai người.
+
+"Tập sau nếu phải tìm Tần Sách, chúng ta tìm bằng tên Tần Dã, không tìm bằng mã HN-07."
+
+"Tập sau?"
+
+"Ừ. Chuyện này chưa xong."
+
+"Ngươi nói như đã quyết."
+
+"Ta quyết một nửa."
+
+"Nửa còn lại?"
+
+"Anh quyết có đi một mình hay không."
+
+Tần Dã nhìn tờ giấy.
+
+Hắn có thể nói không hứa.
+
+Có thể nói phế thổ không cho hứa.
+
+Có thể nói nếu tình huống cần, hắn sẽ đi.
+
+Nhưng cuối cùng, hắn nói:
+
+"Không đi một mình."
+
+Lâm Tịch thở ra.
+
+Nàng không biết mình đã nín thở.
+
+Trên mặt đất, chuông gác cổng vang một tiếng.
+
+Không phải báo thú.
+
+Một tiếng gọi người.
+
+Hai người cùng ngẩng đầu.
+
+Khi họ lên tới sân, A Thất đang cầm radio, mặt vừa sợ vừa tỉnh.
+
+"Có tín hiệu mới."
+
+Lâm Tịch nhìn Tần Dã.
+
+Hắn không đưa tay lấy ngay.
+
+Hắn nhìn nàng trước.
+
+Nàng gật đầu.
+
+"Cùng nghe."
+
+Radio rè.
+
+Giọng Tần Sách không xuất hiện.
+
+Thay vào đó là một chuỗi tọa độ, lặp lại ba lần, rồi một câu rất nhỏ:
+
+`Mang nước xám tới. Đừng mang cờ.`
+
+Cổng Nước Xám im lặng.
+
+Di Mạn là người mắng đầu tiên:
+
+"Không mang cờ là sao? Chê cờ ta may xấu à?"
+
+Không ai cười lớn.
+
+Nhưng vài người bật ra tiếng thở nhẹ.
+
+A Thất ôm radio, nhìn lá cờ trên cổng.
+
+"Nếu không mang cờ, người ta không biết mình là ai."
+
+Tạ Khuông đáp:
+
+"Biết quá rõ thì dễ bắn."
+
+Bà Hôi nói:
+
+"Không mang cờ cũng được, mang cái thìa?"
+
+Mẹ Miên Miên đang ngồi vá băng ở góc sân ngẩng đầu.
+
+Không ai muốn lấy cái thìa gỗ khỏi cổng.
+
+Cái thìa đã treo ở đó như một con mắt nhỏ. Nó nhìn mọi người chia nước, nhìn người quay lại, nhìn người đi, nhìn thẻ tạm trú, nhìn giấy chết, nhìn cờ. Nếu tháo xuống, cổng sẽ nhẹ hơn, nhưng cũng trống hơn.
+
+Lâm Tịch nói:
+
+"Không tháo thìa."
+
+Mẹ Miên Miên cúi đầu xuống tiếp tục vá, nhưng vai bà thả lỏng một chút.
+
+Tần Dã nhìn radio.
+
+"Nước xám là dấu hiệu đủ riêng."
+
+Di Mạn cau mày.
+
+"Mang nước làm gì? Để người chết uống?"
+
+Thẩm Bạch nói:
+
+"Có thể là mẫu. Có thể cần chứng minh nguồn nước Cổng Xám khác nước Thành Nam."
+
+Lương Tiêu từ khu giám sát nói vọng:
+
+"Hoặc để kiểm người tới có thật sự là Tần Sách không. Hắn không biết nước của các ngươi có mùi gì."
+
+Lâm Tịch nhìn thùng nước đục bên cạnh lò.
+
+Nước xám.
+
+Thứ từng làm người ta chê, nghi, sợ, cười. Thứ họ lọc bằng than thiếu, uống bằng bát vá, ghi bằng lô, bảo vệ bằng luật. Nếu cờ là mặt của Cổng Nước Xám, thì nước xám là máu của nó.
+
+"Lấy một bình nhỏ." Nàng nói. "Niêm ba lớp. Ghi lô, người lọc, người kiểm, người mang."
+
+A Thất lập tức hỏi:
+
+"Người mang là ai?"
+
+Không ai trả lời ngay.
+
+Vì câu hỏi ấy không thuộc Tập 8 nữa.
+
+Nó đã đặt chân sang Tập 9.
+
+Tần Dã nhìn lá cờ trên cổng.
+
+Lâm Tịch cũng nhìn.
+
+Tập 8 khép lại ở đó: không phải bằng quyết định lên đường ngay, mà bằng một câu hỏi mới đặt trước cả cổng.
+
+Nếu một người chết trên giấy bảo họ mang nước xám nhưng đừng mang cờ, hắn đang muốn cứu họ khỏi bị nhận ra...
+
+Hay muốn họ bỏ lại thứ chứng minh họ là ai?
+
+A Thất ôm bình nước xám vừa niêm, nhỏ giọng:
+
+"Nếu không mang cờ, vậy trên bình ghi gì?"
+
+Lâm Tịch nhìn bình nước.
+
+Bình thủy tinh cũ, thân trầy, nắp buộc ba lớp dây. Bên trong là thứ nước không trong, không đẹp, nhưng đã đi qua tay người lọc, người kiểm, người nghi, người uống, người mắng, người bảo vệ.
+
+Nàng lấy than viết lên mảnh gỗ nhỏ buộc ở cổ bình:
+
+`Nước Cổng Xám. Lô sống.`
+
+Di Mạn đọc xong nhíu mày.
+
+"Lô sống là cái gì?"
+
+Lâm Tịch đáp:
+
+"Là chưa chết."
+
+Tạ Khuông nhìn bình nước, rồi nhìn cổng.
+
+"Nghe không oai."
+
+Tần Dã nói:
+
+"Nhưng thật."
+
+Thế là không ai sửa nữa.
+
+Đêm ấy, bình nước xám được đặt dưới lá cờ, ngay bên cạnh cái thìa gỗ. Nó không thay cờ. Cũng không rời cổng.
+
+Nó chỉ chờ sáng.
+
+Như mọi người.
+
+Không ai biết sáng mai ai sẽ mang nó đi.
+
+Nhưng lần đầu tiên, thứ được chuẩn bị để rời cổng không phải người chạy nạn, không phải thẻ đầu hàng, cũng không phải giấy chết.
+
+Là một bình nước đục có tên.

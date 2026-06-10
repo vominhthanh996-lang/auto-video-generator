@@ -1,0 +1,443 @@
+# Phần 4: Tin Nước Gây Bệnh
+
+## Chương 215: Cái Bụng Đau
+
+Người đầu tiên đau bụng là một thợ vá giày.
+
+Hắn tên Mã Lục, đổi hai can nước bằng việc khâu mười ba đôi dép rách cho khu gác cổng. Buổi trưa hắn còn ngồi bên tấm bạt chợ, miệng ngậm kim, chửi dây gai của Hứa Đao vừa mục vừa đắt. Đến chiều, hắn nằm co dưới chân tường, hai tay ôm bụng, mồ hôi lạnh chảy đầy cổ.
+
+Người thứ hai là một bà già nhặt xương.
+
+Người thứ ba là đứa bé đã uống phần nước bù từ cốc của Tần Dã.
+
+Đến khi người thứ tư nôn ra thứ nước vàng đục, chợ trước cổng tự lùi về sau ba bước.
+
+Không ai bảo ai.
+
+Sợ hãi luôn biết tự xếp hàng.
+
+Nhưng sợ hãi không xếp theo luật.
+
+Nó xếp theo mắt người.
+
+Người đứng gần thùng nước lùi trước. Người từng nhận nước lô ba che bụng. Người chưa uống nhìn người đã uống như nhìn một thứ có thể lây qua hơi thở. Một người đàn bà kéo con mình tránh khỏi Mã Lục, nhưng chân lại đá trúng cái dép hắn đang sửa dở. Mã Lục đau đến không đứng nổi, vẫn theo bản năng vươn tay giữ đôi dép.
+
+"Đừng giẫm. Còn chưa khâu xong."
+
+Không ai nghe.
+
+Lâm Tịch nghe.
+
+Câu ấy làm nàng khó chịu hơn cả tiếng chửi.
+
+Một người đau đến co người vẫn sợ mất việc đổi công. Nghĩa là trong đầu hắn, đau bụng chưa đáng sợ bằng mất phần nước ngày mai.
+
+Mộc Sanh chạy đến gần như ngã, tay cầm túi thuốc mỏng đến đáng thương. Thẩm Bạch theo sau, áo trắng của hắn đã sớm không còn trắng, nhưng cách hắn vén tay áo vẫn sạch sẽ đến khó chịu.
+
+"Không giống nhiễm xạ cấp."
+
+Mộc Sanh ấn bụng Mã Lục, ngửi dịch nôn, cau mày.
+
+"Cũng không giống nước lọc hỏng."
+
+Một người trong đám đông hét:
+
+"Không hỏng thì sao uống xong đau?"
+
+Lời ấy như mồi lửa.
+
+"Ta đã nói nước này không sạch!"
+
+"Ngân Thụ cảnh báo rồi!"
+
+"Cổng Xám lấy người ngoài làm thử nước!"
+
+Tiếng người chồng lên người. Cái chợ vừa được dựng bằng luật, trong chớp mắt lại muốn trở về thành bầy.
+
+Tạ Khuông đứng ở vạch kiểm, tay siết cán giáo đến nổi gân.
+
+Lâm Tịch đi đến bên thùng nước phát cho khu ngoài vạch. Mùi nước vẫn trong. Không có mùi bùn xạ, không có mùi rong chết.
+
+Nhưng phế thổ dạy người ta một điều: thứ giết người thường không có mùi.
+
+"Niêm thùng."
+
+A Thất lập tức chạy đi lấy dây chì.
+
+Lâm Tịch nói lớn:
+
+"Tất cả người đã uống lô nước số ba ở lại. Người chưa uống lùi về sau. Không ai được đổ nước, không ai được giấu cốc."
+
+Một người đàn ông ôm can nước chạy.
+
+Sa Đinh kéo cung.
+
+Mũi tên cắm trước mũi chân hắn.
+
+Người đàn ông quỳ xuống, khóc:
+
+"Con ta còn chưa uống! Ta sợ các ngươi thu lại!"
+
+Lâm Tịch bước tới, cầm lấy can nước trong tay hắn.
+
+"Ghi tên. Can này niêm. Con ngươi nếu khát, đến bàn bệnh nhận nước lô một."
+
+Hắn ngẩng đầu, mắt đỏ ngầu.
+
+"Lô một chắc sạch?"
+
+Lâm Tịch đáp:
+
+"Không có gì chắc nếu không kiểm. Cho nên kiểm trước mặt mọi người."
+
+Người đàn ông ôm con nhìn nàng, mắt đầy tơ máu.
+
+"Nếu kiểm xong vẫn đau thì ai chịu?"
+
+Lâm Tịch không trả lời ngay.
+
+Câu hỏi ấy lẽ ra phải có trong mọi luật của họ từ đầu.
+
+Ai chịu?
+
+Người lọc nước chịu?
+
+Người phát nước chịu?
+
+Người uống chịu?
+
+Hay cuối cùng vẫn là người yếu nhất chịu vì họ không còn sức cãi?
+
+Nàng nhìn Mộc Sanh.
+
+"Từ hôm nay mỗi lô nước có người chịu tên."
+
+Mộc Sanh hiểu ngay.
+
+"Người lọc, người kiểm, người phát đều ký?"
+
+"Ừ. Nếu lô đó có vấn đề, truy từ người ký. Không để cả trạm bị mắng chung, cũng không để người uống tự chịu."
+
+Tạ Khuông ở vạch kiểm nói:
+
+"Thêm người chứng ngoài đội."
+
+Lâm Tịch gật đầu.
+
+"Thêm."
+
+Người đàn ông vẫn ôm con, giọng nhỏ hơn:
+
+"Nếu ta ký nhận nước, sau này nước hỏng, có phải ta cũng bị nói đáng đời vì đã nhận không?"
+
+Lâm Tịch nhìn hắn.
+
+"Không. Người nhận nước không có tội vì khát."
+
+Câu ấy được A Thất viết lên mép bảng bằng nét rất đậm.
+
+Nàng đặt can nước lên bàn.
+
+Mộc Sanh tách mẫu. Thẩm Bạch dùng que thử cũ còn sót trong hộp y tế, từng giọt nhỏ lên mảnh giấy. Giấy không đổi màu.
+
+Nhưng Mộc Sanh vẫn lắc đầu.
+
+"Que thử không đủ. Nếu là độc hữu cơ liều thấp, giấy này không bắt được."
+
+Đám đông lại xôn lên.
+
+Thẩm Bạch nhìn từng người đau bụng.
+
+"Ai đã ăn gì ngoài phần phát?"
+
+Mã Lục rên rỉ:
+
+"Một miếng bánh bột vàng. Đổi ở chợ."
+
+Bà nhặt xương cũng run rẩy giơ tay.
+
+"Ta cũng ăn. Rẻ. Người bán nói trộn bột đậu sạch."
+
+Đứa bé thì thào:
+
+"Có vị ngọt..."
+
+Di Mạn lập tức quay đầu.
+
+"Bột vàng ở đâu?"
+
+Không ai trả lời.
+
+Trong chợ, một tấm bạt trống lay nhẹ. Trên đất còn rơi vài vụn bột màu vàng xám.
+
+Lâm Tịch cúi xuống nhặt một vụn, đặt lên đầu lưỡi rồi nhổ ra ngay.
+
+Đắng.
+
+Ngọt giả.
+
+Và có một mùi rất nhạt, như vỏ hạt mốc phơi dưới nắng.
+
+Tần Dã ở sau lưng nàng nói:
+
+"Đừng nếm lần thứ hai."
+
+Giọng hắn thấp hơn bình thường.
+
+Lâm Tịch lau miệng.
+
+"Không phải nước."
+
+Nhưng nàng biết nói vậy chưa đủ.
+
+Tin đồn không chết vì sự thật.
+
+Nó chỉ chết khi người ta nhìn thấy kẻ đã cho mình đau.
+
+## Chương 216: Người Bỏ Độc Không Có Mặt
+
+Đến tối, radio của Ngân Thụ phát lại cùng một câu ba lần.
+
+`Cảnh báo: nguồn nước tại cụm Cổng Nước Xám có dấu hiệu gây rối loạn tiêu hóa tập thể. Người dân tránh tiếp xúc, tránh trao đổi, tránh đăng ký tên.`
+
+Mỗi chữ "tránh" rơi xuống như một viên đá.
+
+Trong trạm, bốn người đau bụng nằm cạnh nhau. Mộc Sanh sắc nước than hoạt tính với chút muối cuối cùng. Di Mạn cắt phần bột sạch ít ỏi thành lát mỏng, nướng khô để giữ bụng cho họ.
+
+Lâm Tịch ngồi bên ngoài khu bệnh, nghe tiếng Mã Lục rên qua vách bạt.
+
+Một bát nước của nàng đặt trước mặt.
+
+Nàng chưa uống.
+
+Tần Dã đẩy xe đến bên cạnh. Hắn không hỏi vì sao. Hắn chỉ đặt một viên tinh thạch nhỏ lên mép bát.
+
+Lâm Tịch nhìn hắn.
+
+"Làm gì?"
+
+"Giữ cho tay ngươi bận."
+
+Nàng cười một tiếng rất khẽ, nhưng cổ họng nghẹn.
+
+"Ta tưởng ta quen bị mắng rồi."
+
+"Không ai quen cả." Tần Dã nói. "Chỉ là có người học cách đứng yên."
+
+Bên ngoài, Tạ Khuông đang tra từng người bán bột. Hắn hỏi rất thô, không vòng vo, khiến vài người tức đến muốn đánh. Nhưng không ai nói được gã bán bột vàng đi đâu.
+
+Ninh ngồi trên thùng gỗ, ngón tay gõ nhịp lên đầu gối.
+
+A Thất hỏi:
+
+"Ngươi nghe thấy gì?"
+
+Ninh chỉ về phía đông, rồi chỉ xuống đất.
+
+A Thất ngẩn ra.
+
+"Ống cống?"
+
+Ninh gật.
+
+Đường thoát nước cũ dưới chợ thông với mương bùn phía đông. Ban ngày chợ đông, không ai để ý nắp cống đã bị kê lệch bằng một mảnh gạch. Người bán bột có thể chui xuống đó sau khi bán xong.
+
+Sa Đinh và Hứa Đao kéo nắp cống lên. Mùi thối bốc ra làm mấy người lùi lại. Dưới thành cống có vết bột vàng dính thành một vệt mỏng.
+
+Tần Dã bảo:
+
+"Đừng xuống đông. Hắn muốn các ngươi đi đông."
+
+Sa Đinh khựng lại.
+
+"Vì sao?"
+
+"Vết bột cố ý quệt cao ngang vai. Người trốn không rảnh làm vậy."
+
+Lâm Tịch nhìn miệng cống, rồi nhìn những dấu chân hỗn loạn quanh tấm bạt trống.
+
+Trong một khoảnh khắc, nàng ngửi thấy mùi da thuộc ướt.
+
+Rất nhạt.
+
+Không phải từ cống.
+
+Từ đống bao than sạch vừa đổi.
+
+Nàng đứng bật dậy.
+
+"Kiểm bao than vụn."
+
+Di Mạn ngạc nhiên:
+
+"Than?"
+
+"Bao vụn là phí vào chợ. Không ai kiểm kỹ bằng than chính."
+
+Bao than vụn được kéo ra. A Thất cắt dây. Than đổ xuống nền, lẫn trong đó là một túi vải nhỏ đã rỗng, bên trong còn dính bột vàng.
+
+Không khí lạnh hẳn.
+
+Thương đội than đã đi.
+
+Người bỏ độc không có mặt, nhưng cái bóng của hắn vẫn đứng giữa chợ.
+
+Mộc Sanh nhìn túi bột, mặt tái đi.
+
+"Bột mầm chuột. Ăn ít đau bụng, ăn nhiều co giật. Trộn ngọt để lừa trẻ con."
+
+Một bà mẹ bên ngoài vạch bật khóc.
+
+Lâm Tịch cầm túi vải lên, tay run rất nhẹ.
+
+Nàng không sợ độc.
+
+Nàng sợ một câu ngày mai người ta sẽ nói: dù không phải nước, nước vẫn là thứ bị nghi đầu tiên.
+
+Tần Dã nói:
+
+"Treo túi lên bảng."
+
+Lâm Tịch hiểu.
+
+Không được giấu.
+
+Không được chỉ tuyên bố mình vô tội.
+
+Phải để mọi người nhìn thấy cái bẩn đã đi qua tay mình.
+
+Mộc Sanh ngồi bệt xuống cạnh túi bột, hai tay ôm đầu.
+
+"Ta đã thấy thằng bé ăn."
+
+Lâm Tịch quay sang.
+
+Mộc Sanh nói rất nhỏ:
+
+"Nó cắn một miếng ở chợ. Ta đi ngang qua. Ta nghĩ trẻ con ăn được là tốt. Ta không hỏi mua ở đâu."
+
+Thẩm Bạch ngồi xuống trước mặt nàng.
+
+"Ngươi không thể kiểm mọi miếng ăn trong vùng cô lập."
+
+"Nhưng ta là người làm y tế."
+
+"Người làm y tế cũng có mắt người, không có mắt thần."
+
+Mộc Sanh ngẩng lên, mắt đỏ.
+
+"Ta không cần mắt thần. Ta cần hỏi thêm một câu."
+
+Không ai nói nữa.
+
+Ở Cổng Nước Xám, lỗi không phải lúc nào cũng là tội.
+
+Nhưng nếu một lỗi làm trẻ con đau bụng, nó vẫn cần có chỗ nằm lại trong trí nhớ, để ngày sau bàn tay người ta chậm hơn một chút trước khi bỏ qua.
+
+Lâm Tịch đặt túi độc lên bàn.
+
+"Ghi thêm: đồ ăn lạ qua chợ phải hỏi nguồn. Không hỏi được nguồn thì không bán gần khu trẻ con."
+
+Di Mạn cười lạnh.
+
+"Vậy chợ sẽ mắng chúng ta phiền."
+
+Lâm Tịch đáp:
+
+"Để họ mắng lúc còn đứng được."
+
+Đêm ấy, bên cạnh bảng nước, Cổng Nước Xám treo thêm một túi vải vàng.
+
+Dưới túi vải là dòng chữ:
+
+`Độc vào chợ qua bao than vụn. Nước lô ba tạm dừng đến khi kiểm xong. Người đau bụng được chữa trước, người bán độc bị truy sau.`
+
+Nhưng treo túi độc lên không làm người ta lập tức tin.
+
+Một bà mẹ bế con đứng rất xa bảng, hỏi:
+
+"Nếu ngày mai lại đau thì sao?"
+
+Không ai mắng bà.
+
+Vì câu hỏi ấy hợp lý.
+
+Niềm tin trong phế thổ không phải cái cửa, mở một lần là xong. Nó giống lò lọc: mỗi ngày đều phải đốt, phải thay lõi, phải cạo cặn. Chỉ cần bỏ một đêm, nước trong lại có mùi.
+
+Lâm Tịch nhìn bà.
+
+"Ngày mai vẫn kiểm."
+
+"Ngày kia?"
+
+"Cũng kiểm."
+
+"Kiểm đến bao giờ?"
+
+Lâm Tịch muốn nói đến khi mọi người tin. Nhưng câu ấy quá đẹp, cũng quá giả.
+
+Nàng đáp:
+
+"Đến khi người uống nước được quyền nghi mà không bị mắng."
+
+Bà mẹ ôm con chặt hơn.
+
+"Nghi nhiều thì các ngươi có ghét không?"
+
+Di Mạn đang đứng cạnh lò, mặt đen vì khói, nói chen vào:
+
+"Có. Nhưng ghét không được trừ khẩu phần."
+
+Vài người bật cười.
+
+Bà mẹ cũng cười một chút, khóe miệng run run.
+
+A Thất lập tức viết thêm một dòng nhỏ dưới bảng nước:
+
+`Người nhận nước được hỏi lô, hỏi người lọc, hỏi người kiểm. Hỏi không tính gây rối.`
+
+Tạ Khuông nhìn dòng đó, nói:
+
+"Vậy mai sẽ có người hỏi tới phiền chết."
+
+Lâm Tịch đáp:
+
+"Phiền vẫn rẻ hơn loạn."
+
+Tần Dã ngồi trong bóng cổng, nghe vậy khẽ gật đầu.
+
+Ở nơi cũ của hắn, câu hỏi thường đến sau tiếng súng. Nếu Cổng Nước Xám có thể để câu hỏi đến trước, có lẽ nó thật sự khác một chút.
+
+Radio của Cổng phát muộn.
+
+A Thất đọc bằng giọng khàn:
+
+"Ai ăn bột vàng, tới khu bệnh. Không hỏi ngươi mua của ai trước khi cứu. Ai còn giữ bột, đem nộp sẽ không phạt. Ai giấu để bán tiếp, tên sẽ treo cạnh túi độc."
+
+Ngoài chợ, rất lâu không ai nói.
+
+Rồi một bàn tay nhỏ thò qua vạch, đặt xuống nửa chiếc bánh bột vàng đã cắn dở.
+
+Sau đó là cái thứ hai.
+
+Cái thứ ba.
+
+Một người đàn ông vừa đặt bánh xuống vừa khóc:
+
+"Ta tưởng... ta tưởng có thể để dành cho con gái."
+
+Lâm Tịch đứng trong bóng cổng, không bước ra an ủi.
+
+Có những lúc an ủi quá sớm sẽ làm sự thật nhẹ đi.
+
+Nàng chỉ bảo Di Mạn:
+
+"Đổi cho hắn một miếng bột sạch. Ghi nợ công."
+
+Di Mạn gật đầu.
+
+Đêm càng sâu, túi độc treo cạnh cái thìa gỗ.
+
+Một thứ nhắc họ nhớ người đã chết.
+
+Một thứ nhắc họ nhớ người sống cũng có thể bị bán bằng giá rất rẻ.

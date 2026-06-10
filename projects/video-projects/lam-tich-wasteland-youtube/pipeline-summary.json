@@ -1,0 +1,12 @@
+{
+  "project": "E:\\ThanhMV\\video-projects\\lam-tich-wasteland-youtube",
+  "storyboard": "E:\\ThanhMV\\video-projects\\lam-tich-wasteland-youtube\\storyboard.json",
+  "format": "youtube",
+  "resolution": "1920x1080",
+  "scenes": 85,
+  "images": 85,
+  "audio": 85,
+  "contact_sheet": "E:\\ThanhMV\\video-projects\\lam-tich-wasteland-youtube\\contact-sheet.html",
+  "output": null,
+  "duration": null
+}

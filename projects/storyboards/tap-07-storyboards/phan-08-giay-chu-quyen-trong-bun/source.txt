@@ -1,0 +1,425 @@
+# Phần 8: Giấy Chủ Quyền Trong Bùn
+
+## Chương 223: Phòng Điều Khiển Cũ
+
+Ngày thứ năm, lò lọc số hai phát ra tiếng nghẹn.
+
+Không phải tiếng máy hỏng hẳn. Là tiếng một người già thở qua cổ họng đầy đờm, mỗi vòng quay đều kéo theo rung động lạ trong nền.
+
+A Thất áp tai xuống ống dẫn, mặt dính bùn.
+
+"Dưới này có khoang rỗng."
+
+Nó nói câu ấy với giọng của một đứa trẻ vừa nghe thấy trong bụng đất có thứ đang thở.
+
+Mấy ngày nay A Thất ngủ rất ít. Một bên mắt nó có quầng đen, cổ tay dán băng vì bị dây đồng cắt, nhưng cứ nghe máy móc kêu lạ là nó lại tỉnh hơn cả lúc được chia bột. Lâm Tịch từng hỏi nó vì sao thích mấy thứ rỉ sét đến vậy.
+
+A Thất nghĩ rất lâu rồi đáp:
+
+"Vì người hỏng thì ta không sửa được. Máy hỏng đôi khi còn chịu nghe lời."
+
+Lúc ấy Lâm Tịch không biết trả lời sao.
+
+Bây giờ nhìn nó nằm sấp trên nền lạnh, một bên tai dán vào ống nước cũ, nàng bỗng hiểu máy móc đối với A Thất không phải đồ chết.
+
+Nó là những thứ nếu còn sửa được, nghĩa là thế giới chưa hỏng hết.
+
+Mộc Sanh cầm bản đồ cũ, chỉ vào khu sau trạm.
+
+"Phòng điều khiển phụ. Trước tận thế dùng để mở đường ống công cộng. Sau Đại Nhiễm Xạ bị bịt lại."
+
+Di Mạn hỏi:
+
+"Có gì dùng được?"
+
+Mộc Sanh nhìn Lâm Tịch.
+
+"Có thể có van dự phòng. Có thể có lõi lọc cũ. Cũng có thể chỉ có bùn phóng xạ và xương."
+
+A Thất mắt sáng lên.
+
+"Nếu còn van, ta sửa được đường phụ!"
+
+Tần Dã hỏi:
+
+"Đường phụ dẫn đi đâu?"
+
+Mộc Sanh do dự.
+
+"Theo bản đồ, nối với mạng nước công cộng cũ trước khi Thành Nam xây tường."
+
+Hai chữ "công cộng" làm mọi người im đi.
+
+Ở phế thổ, thứ gì từng thuộc về mọi người thường đã bị ai đó đóng dấu thành của riêng.
+
+Lâm Tịch quyết định xuống.
+
+Không phải vì tò mò.
+
+Vì Thành Nam đã đòi mẫu nước. Ngân Thụ đã gọi họ là ổ dịch. Một cái cổng nếu chỉ có nước mà không có danh nghĩa, sớm muộn cũng bị nói thành cái vòi ăn cắp.
+
+Người xuống gồm Lâm Tịch, A Thất, Mộc Sanh, Tạ Khuông và Sa Đinh. Tần Dã ở lại chỉ huy trên miệng hầm. Hắn không nói muốn xuống. Hắn biết thân thể mình hiện tại sẽ biến thành gánh.
+
+Nhưng khi Lâm Tịch buộc dây vào eo, hắn kéo nút buộc kiểm lại hai lần.
+
+"Nếu nghe tiếng nước chảy ngược, lập tức lên."
+
+"Ừ."
+
+"Nếu thấy dây rung ba lần liên tiếp, không hỏi vì sao, kéo."
+
+"Ừ."
+
+"Nếu gặp thú ống cống..."
+
+Lâm Tịch nhìn hắn.
+
+"Ta biết. Không làm anh hùng."
+
+Tần Dã buông tay.
+
+Hắn buông rất chậm.
+
+Chậm đến mức Lâm Tịch nhận ra hắn không phải không muốn giữ lại.
+
+Trước kia, Tần Dã là người đi trước. Người mở đường. Người đứng ở chỗ tối nhất để người khác theo sau. Bây giờ hắn ngồi trên miệng hầm, cầm dây, nghe người khác bước xuống nơi mình đáng lẽ phải đi.
+
+Lâm Tịch không an ủi hắn.
+
+An ủi sai lúc sẽ giống như nói vết thương của người ta không đáng đau.
+
+Nàng chỉ kéo nhẹ sợi dây một cái.
+
+"Ta xuống. Anh giữ đường về."
+
+Tần Dã nhìn nàng.
+
+Rồi hắn quấn dây quanh cổ tay trái, buộc một nút chết.
+
+"Ừ."
+
+Một chữ đó nặng như một lời giao mạng.
+
+"Ngươi nhớ được câu này lâu hơn một chút."
+
+Cửa hầm mở ra, mùi bùn thối và kim loại lạnh phả lên. Đèn dầu soi xuống cầu thang sắt gãy từng đoạn. Dưới đáy có nước đen ngập đến đầu gối, bề mặt nổi váng bạc mỏng.
+
+Mộc Sanh nhỏ thuốc thử.
+
+"Độc, nhưng không đến mức chết ngay nếu không có vết thương hở."
+
+Tạ Khuông nhìn nàng.
+
+"Câu này nghe rất an ủi."
+
+A Thất đã bò xuống trước, ôm hộp dụng cụ như ôm mạng.
+
+Phòng điều khiển cũ nằm sau một hành lang thấp. Trên tường còn sót chữ mờ: `Nước sinh hoạt khu dân cư - tuyến số 9`. Một nửa chữ bị rêu đen ăn mất.
+
+Lâm Tịch đưa tay lau bụi trên tấm biển.
+
+Không hiểu sao, mắt nàng cay.
+
+Không phải vì bụi.
+
+Vì đã quá lâu nàng không thấy bốn chữ "khu dân cư" ở một nơi không xem con người như rác.
+
+Mộc Sanh đứng sau nàng cũng im rất lâu.
+
+"Hồi nhỏ ta từng ở khu dân cư tuyến bảy." Nàng nói khẽ. "Mỗi chiều mẹ ta xếp can dưới vòi. Người lớn cãi nhau vì ai chen hàng, trẻ con thì lấy nước rửa chân bị mắng. Lúc đó ta ghét xếp hàng."
+
+Nàng cười một tiếng không vui.
+
+"Sau này mới biết, có hàng để xếp đã là may."
+
+Tạ Khuông nhìn dòng chữ trên tường.
+
+"Nếu nước từng là của dân, sao lại mất?"
+
+Mộc Sanh đáp:
+
+"Vì lúc mọi người bận sống sót, luôn có người rảnh tay đóng dấu."
+
+Câu ấy rơi vào phòng điều khiển cũ, làm tiếng nước nhỏ giọt nghe rõ hơn.
+
+A Thất cạy cửa tủ điều khiển. Bên trong dây điện đã mục, nhưng ngăn dưới có một hộp kim loại bọc dầu. Mộc Sanh mở ra.
+
+Không phải lõi lọc.
+
+Là hồ sơ.
+
+Giấy được ép trong túi chống ẩm, mép vàng nhưng chữ còn đọc được. Trên trang đầu có dấu đỏ cũ:
+
+`Trạm Nước Công Cộng Số Chín. Quyền khai thác khẩn cấp thuộc mạng dân sinh khu ngoại vi, không chuyển nhượng cho đơn vị thương mại trong thời kỳ thiên tai.`
+
+Mộc Sanh đọc xong, tay run.
+
+"Cái này..."
+
+Tạ Khuông hỏi:
+
+"Có ăn được không?"
+
+A Thất đáp ngay:
+
+"Có thể giữ cho người khác khỏi cướp thứ ăn được."
+
+Sa Đinh đang canh cửa bỗng giơ tay.
+
+Trong bóng tối hành lang, mặt nước gợn lên.
+
+Một cái lưng dài, trơn, có gai xương trắng trồi khỏi bùn.
+
+Mộc Sanh thì thào:
+
+"Cá sấu cống."
+
+## Chương 224: Dấu Đỏ Không Chống Được Răng
+
+Cá sấu cống lao ra không có tiếng gầm.
+
+Nó chỉ làm nước tách đôi.
+
+Sa Đinh bắn mũi tên đầu tiên vào mắt trái nó. Mũi tên bật ra khỏi lớp da chai, chỉ cắm được nửa tấc. Con thú quật đuôi, nước đen văng lên tắt một ngọn đèn.
+
+Hành lang lập tức tối một nửa.
+
+Tạ Khuông kéo A Thất lùi lại. Lâm Tịch ôm hộp hồ sơ ép vào ngực, lưng đập vào tường.
+
+Trong khoảnh khắc ấy, nàng nghe thấy tiếng dây trên eo mình căng mạnh.
+
+Tần Dã ở trên đã cảm giác được.
+
+Hắn kéo dây một lần.
+
+Hỏi: sống không?
+
+Lâm Tịch kéo lại một lần.
+
+Sống.
+
+Con cá sấu cống bò hẳn lên nền, thân dài gần ba mét, bụng phồng dị dạng, quanh cổ có vòng thịt sưng như bị ai từng gắn thiết bị rồi cắt ra. Nó không giống thú hoang bình thường. Nó chặn giữa họ và lối ra, miệng hé, hai hàng răng mọc lệch thành ba lớp.
+
+Mộc Sanh nhìn bụng nó.
+
+"Nó ăn rác độc lâu ngày. Đừng để bị cắn. Nước bọt có độc hoại tử."
+
+Tạ Khuông nói:
+
+"Cảm ơn, ta vốn định để nó cắn thử."
+
+Lâm Tịch nhìn quanh.
+
+Phòng điều khiển có van, dây, tủ sắt, ống áp lực cũ.
+
+"A Thất, van đỏ còn xoay được không?"
+
+A Thất bò sau tủ, sờ thử.
+
+"Kẹt!"
+
+"Dầu."
+
+Mộc Sanh ném lọ dầu máy cũ. A Thất đổ lên van, dùng cả người kéo. Van rít lên.
+
+Cá sấu lao tới.
+
+Sa Đinh và Tạ Khuông cùng đẩy một tấm cửa tủ vào miệng nó. Răng cắn xuyên thép mỏng, tiếng ken két làm da đầu tê dại. Tạ Khuông bị lực kéo ngã xuống, chân suýt trượt vào miệng thú.
+
+Lâm Tịch nhào tới kéo dây lưng hắn.
+
+Tạ Khuông gào:
+
+"Hồ sơ!"
+
+"Người trước!"
+
+Nàng kéo hắn ra, hộp hồ sơ trong ngực va xuống nước bùn.
+
+Trong khoảnh khắc hộp rơi, Lâm Tịch nghe rõ tiếng mình thở gãy.
+
+Không phải vì sợ mất giấy.
+
+Mà vì nàng vừa hiểu thứ mình chọn.
+
+Một tờ giấy có thể cứu cả trạm khỏi cái danh ăn cắp nước. Một người gác cổng hận nàng có thể ngày mai lại đứng trước mặt nàng mắng nàng sai. Nếu chọn giấy, rất nhiều người có thể có lý do sống lâu hơn. Nếu chọn người, có thể họ sẽ mất lý do ấy.
+
+Không có lựa chọn sạch.
+
+Chỉ có lựa chọn sau này nàng còn dám nhìn vào mắt ai.
+
+Nàng kéo Tạ Khuông mạnh đến mức vai mình đau nhói.
+
+"Người trước!"
+
+Lần này nàng gào, không phải trả lời hắn, mà là trả lời chính mình.
+
+Một mép túi chống ẩm rách.
+
+A Thất cuối cùng cũng xoay được van.
+
+Từ ống trên trần, nước áp lực cũ phun ra. Không sạch. Không uống được. Nhưng mạnh. Dòng nước đập ngang thân cá sấu, ép nó trượt sang bên. Sa Đinh chớp thời cơ bắn mũi tên thứ hai vào khe mang dưới hàm.
+
+Con thú quẫy dữ dội.
+
+Tần Dã ở trên kéo dây ba lần.
+
+Rút.
+
+Lâm Tịch ôm hộp hồ sơ, Mộc Sanh ôm bản đồ, A Thất ôm dụng cụ, Tạ Khuông kéo Sa Đinh. Cả nhóm chạy qua hành lang trong tiếng nước và tiếng thú cào tường.
+
+Khi họ leo lên miệng hầm, Lâm Tịch gần như ngã vào tay Tần Dã.
+
+Hắn đỡ nàng bằng một tay. Tay kia lập tức chụp lấy hộp hồ sơ.
+
+"Ướt?"
+
+"Rách mép."
+
+A Thất thở không ra hơi.
+
+"Nhưng... nhưng lấy được van phụ. Đường cũ còn áp!"
+
+Mộc Sanh ngồi bệt xuống đất, cười như khóc.
+
+"Trạm này từng cấp nước công cộng thật."
+
+Tin lan rất nhanh.
+
+Người trong trạm tụ lại quanh bàn phơi giấy. Di Mạn dùng hơi than nhẹ hong từng trang, cẩn thận như nướng bánh cho người đã chết. Thẩm Bạch đọc các dấu đỏ, càng đọc mắt càng sâu.
+
+"Nếu giấy này còn hiệu lực trong hệ thống cũ, Thành Nam không thể gọi các ngươi là chiếm dụng trái phép."
+
+Lâm Tịch hỏi:
+
+"Nếu họ bảo hết hiệu lực?"
+
+Thẩm Bạch đáp:
+
+"Vậy họ phải thừa nhận có một hệ thống cũ từng coi nước là quyền dân sinh. Người trong thành không thích nghe chuyện đó."
+
+Di Mạn đứng bên lò, tay vẫn cầm tờ giấy hong dở.
+
+"Nói như vậy nghĩa là giấy này không chắc cứu được chúng ta?"
+
+Thẩm Bạch nhìn nàng.
+
+"Không chắc."
+
+"Vậy chúng ta suýt bị cá sấu cống cắn chết vì một thứ không chắc?"
+
+"Phần lớn thứ cứu người trên đời đều không chắc."
+
+Di Mạn cười lạnh.
+
+"Bác sĩ trong thành nói chuyện nghe muốn đập."
+
+Nhưng tay nàng không buông tờ giấy.
+
+Nàng cẩn thận đổi mặt giấy, hơ xa khỏi lửa một chút, sợ hơi nóng làm dấu đỏ loang thêm. Mùi giấy ẩm, bùn cống và than cháy quyện vào nhau. Không thơm, không sạch, không giống thứ đáng được gọi là hy vọng.
+
+Một người đàn ông ngoài vạch chen lên hỏi:
+
+"Nếu giấy này nói nước từng của dân, vậy dân là ai?"
+
+Không ai trả lời ngay.
+
+Câu hỏi quá lớn đối với một cái sân đầy người đói.
+
+Người đàn ông chỉ vào mình.
+
+"Ta từ khu bãi nam. Ta có tính là dân không?"
+
+Một bà già nhặt xương hỏi:
+
+"Ta không có giấy cư trú. Ta có tính không?"
+
+Bà Hôi, không biết từ đâu chui ra, nói:
+
+"Ta từng bán thuốc giả. Ta chắc không tính?"
+
+Di Mạn liếc bà.
+
+"Ngươi tính vào danh sách cần bị nhìn kỹ."
+
+Vài người cười khan.
+
+Lâm Tịch nhìn tờ giấy đang khô.
+
+Trên giấy viết "khu dân cư ngoại vi". Không viết tên những người đang đứng trước mặt nàng. Không viết Bà Hôi, Mã Lục, A Chi, Lư Tử, Bình, Sầm Lạc, A Nhĩ, Miên Miên. Giấy của thời cũ vẫn có thói quen nói bằng chữ lớn, còn người sống phải chen mình vào những chữ đó.
+
+Nàng nói:
+
+"Giấy này không tự biết ai là dân."
+
+Mọi người nhìn nàng.
+
+"Chúng ta phải ghi."
+
+A Thất lập tức hiểu, chạy đi lấy bảng phụ.
+
+Đêm đó, bên cạnh bản sao hồ sơ, Cổng Nước Xám mở thêm một danh sách:
+
+`Người dùng nước tuyến số 9.`
+
+Không phải người trạm.
+
+Không phải người có giấy.
+
+Chỉ là những người đã uống, đã lọc, đã gánh, đã bệnh, đã trả công, đã bị từ chối, đã chết vì một cái cổng.
+
+Mộc Sanh hỏi:
+
+"Ghi cả người ngoài vạch chưa ký?"
+
+Lâm Tịch đáp:
+
+"Ghi cả người từng nhận một bát nước."
+
+Tạ Khuông ngồi băng chân, cầm bản sao hồ sơ trong tay.
+
+"Ghi cả người chết?"
+
+Lâm Tịch nhìn cái thìa gỗ trên cổng.
+
+"Ghi trước."
+
+Vì người chết không tự chen vào chữ lớn được nữa.
+
+Tạ Khuông ngồi bên cạnh băng chân. Bắp chân hắn bị gai cá sấu rạch một đường. Mộc Sanh vừa rửa vừa mắng hắn ngu.
+
+Hắn nhìn tờ giấy đang khô.
+
+"Một tờ giấy đáng để xuống bùn à?"
+
+Lâm Tịch nhìn dấu đỏ loang một góc.
+
+"Không biết."
+
+Tần Dã nói:
+
+"Đáng."
+
+Mọi người nhìn hắn.
+
+Hắn chạm ngón tay lên hàng chữ `không chuyển nhượng cho đơn vị thương mại`.
+
+"Vì kẻ cướp nước sợ nhất không phải dao. Là có người nhớ nước từng không thuộc về chúng."
+
+Đêm ấy, Cổng Nước Xám không treo hồ sơ lên bảng.
+
+Họ hong khô, chép lại ba bản, giấu một bản dưới lò, một bản trong hộp thuốc, một bản trong tay Tạ Khuông.
+
+Lâm Tịch hỏi vì sao đưa cho Tạ Khuông.
+
+Tần Dã nói:
+
+"Người hận ngươi giữ bằng chứng tốt hơn người thương ngươi. Hắn sẽ không vì bảo vệ ngươi mà giấu lỗi của ngươi."
+
+Tạ Khuông nhận giấy, mặt khó coi.
+
+"Ta nghe thấy đấy."
+
+Tần Dã bình thản:
+
+"Ta nói cho ngươi nghe."

@@ -44,6 +44,8 @@ def process_chapter(chapter, args, env):
                 str(storyboard),
                 "--voice",
                 args.voice,
+                "--voice-style",
+                args.voice_style,
                 "--overwrite",
             ],
             env=env,
@@ -82,6 +84,7 @@ def main():
     parser = argparse.ArgumentParser(description="Render a long-form project chapter by chapter.")
     parser.add_argument("--manifest", required=True, type=Path)
     parser.add_argument("--voice", default="vi-female")
+    parser.add_argument("--voice-style", choices=["plain", "story-emotional", "wasteland-dark"], default="wasteland-dark")
     parser.add_argument("--image-providers", default="stability,runway,openai,replicate,fal")
     parser.add_argument("--chapter", type=int, default=0, help="Render only one chapter number.")
     parser.add_argument("--skip-voice", action="store_true")

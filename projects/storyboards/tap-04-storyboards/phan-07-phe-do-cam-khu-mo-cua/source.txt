@@ -1,0 +1,493 @@
+# Phần 7: Phế Đô Cấm Khu Mở Cửa
+
+## Chương 160: Lối Kỹ Thuật Không Có Người Tiễn
+
+Phế Đô Cấm Khu không nằm ngoài bản đồ.
+
+Nó nằm ở phần bản đồ bị cố ý làm mờ.
+
+Trên màn hình của Sở Cư Trú, vùng ấy chỉ là một mảng xám lớn phía bắc thành, viền đỏ, ghi bốn chữ: `Không phận sự miễn vào`. Nhưng trong đầu Tần Dã, nó có đường ray cũ, hố lọc nước mưa, tháp radio nghiêng, ba cửa kỹ thuật, hai đường chết và một lối đi mà chỉ người từng chạy khỏi đó mới nhớ vì sao không nên quay lại.
+
+Hắn vẽ bằng tay trái.
+
+Nét không đẹp. Có đoạn run. Có chỗ mực đậm vì đầu bút bị đè quá lâu. Nhưng bản đồ hiện ra từng chút trên giấy dầu: cổng kỹ thuật số bảy, cầu ống vỡ, nhà kính nghiên cứu, kho y sinh bắc, khu dân cư chết, và một vòng tròn nhỏ không ghi tên.
+
+Lâm Tịch chỉ vòng tròn.
+
+"Đây là gì?"
+
+Tần Dã nhìn nó.
+
+"Không biết."
+
+"Ngươi vẽ mà."
+
+"Tay nhớ trước đầu."
+
+A Thất ngồi bên cạnh, ôm radio, rùng mình.
+
+"Ta ghét câu này hơn cả 'có lẽ'."
+
+Hứa Linh đang chia thuốc, không ngẩng đầu:
+
+"Quen đi. Người sụp gen hay có vài phần cơ thể không xin phép chủ."
+
+Tần Dã cầm bút rất lâu, cuối cùng gạch một dấu nhỏ cạnh vòng tròn.
+
+"Tránh nếu có thể."
+
+"Nếu không thể?"
+
+"Chạy nhanh hơn ký ức."
+
+Không ai thấy câu đó buồn cười.
+
+Đội đi cấm khu không thể mang hết người.
+
+Di Mạn ở lại giữ kho, giữ A Hành, giữ nồi, giữ những thứ khiến người ta còn cảm giác có nhà. Ninh ở lại giữ Đèn Vàng. Lục Cao và Tiểu Bảo được Bạch Nhĩ nhờ người trông qua khu ngoài, phòng khi Sở Cư Trú lại "kiểm tra". Hứa Linh đi, vì thuốc gen không thể giao cho người chỉ biết nhìn màu. Mộc Sanh đi, vì cấm khu không mở cửa cho người không biết sửa khóa. A Thất đi, vì radio của nó nghe được những kênh người lớn bỏ qua. A Mục đi, vì nó không chịu ở lại.
+
+Lâm Tịch nhìn A Mục.
+
+"Ngươi không cần chứng minh gì."
+
+"Ta biết."
+
+"Vậy ở lại cũng không mất mặt."
+
+"Ta không đi vì mặt."
+
+"Vì gì?"
+
+A Mục nhìn Tần Dã, rồi nhìn nàng.
+
+"Vì nếu ta ở lại, ta sẽ nghĩ mãi mình đã nói ký hợp đồng. Ta đi để nhớ ta còn có thể chọn đường khó."
+
+Lâm Tịch im một lúc.
+
+"Được. Nhưng nghe lệnh."
+
+"Ta nghe khi lệnh đúng."
+
+A Thất lập tức chen vào:
+
+"Nó trưởng thành rồi, biết cãi có điều kiện."
+
+A Mục giơ chân.
+
+A Thất trốn sau Di Mạn.
+
+Trước lúc đi, Di Mạn phát cho mỗi người một gói bột muối nhỏ.
+
+"Pha vào nước khi chóng mặt. Không ăn khô."
+
+A Thất vừa định hỏi có thể ăn thử không, Di Mạn đã nhìn nó.
+
+"Không."
+
+"Ta chưa nói."
+
+"Mặt ngươi nói."
+
+Ninh ôm hộp Đèn Vàng tới trước Lâm Tịch.
+
+Lá cây nhỏ hơn hôm qua một chút. Không biết vì ánh đèn, hay vì phòng kho bị niêm phong một phần khiến không khí kém đi. Ninh nhìn cây, rồi nhìn Lâm Tịch, viết:
+
+`Đem thuốc về.`
+
+Nó dừng bút.
+
+Viết thêm:
+
+`Cũng đem người về.`
+
+Lâm Tịch chạm tay lên hộp kính.
+
+"Ừ."
+
+Tần Dã ở bên cạnh nói:
+
+"Nếu không về đủ, ưu tiên thuốc."
+
+Ninh ngẩng đầu nhìn hắn.
+
+Lâm Tịch cũng nhìn.
+
+Hứa Linh thở dài:
+
+"Ngươi đúng là rất giỏi khiến người khác muốn tát trước lúc xuất phát."
+
+Tần Dã bình thản:
+
+"Ta chỉ nói phương án."
+
+Lâm Tịch cúi xuống, buộc lại dây trên xe lăn của hắn.
+
+"Phương án của ta là về đủ."
+
+"Không phải lúc nào cũng..."
+
+"Ta biết." Nàng ngắt lời. "Nhưng xuất phát mà đã tính bỏ ai, đường sẽ tự học cách nuốt người."
+
+Tần Dã im.
+
+Một lát sau, hắn nói:
+
+"Về đủ."
+
+Ninh gật đầu rất mạnh.
+
+Lối kỹ thuật số bảy nằm dưới một trạm bơm cũ ở rìa khu xám. Quan Dực không tiễn họ. Hắn chỉ gửi mã mở tạm trong một tin nhắn ngắn:
+
+`Ba giờ. Quá hạn cửa tự khóa. Ta chưa từng gửi gì.`
+
+A Thất đọc xong:
+
+"Quan Dực thật biết cách quan tâm bằng cách phủi trách nhiệm."
+
+Mộc Sanh gõ mã.
+
+Cửa mở với một tiếng rên dài.
+
+Gió từ ngoài thành thổi vào, đỏ và khô.
+
+Lâm Tịch đã quen bão bụi ngoài thành, nhưng gió từ cấm khu khác. Nó không chỉ mang bụi. Nó mang mùi thành phố chết lâu ngày bị ai đó đào lên. Mùi bê tông cháy, nhựa mục, nước cống phơi khô, và một lớp ngọt rất mỏng của hóa chất y sinh.
+
+A Thất kéo khăn lên tới mắt.
+
+"Ta nhớ thành rồi."
+
+"Mới ra cửa." A Mục nói.
+
+"Nên nhớ sớm, phòng khi lát nữa không kịp."
+
+Tần Dã nhìn đường trước mặt.
+
+Trước họ là một con đường hẹp giữa hai bức tường chống xạ cũ. Xa hơn nữa, Phế Đô hiện ra dưới bầu trời vàng xám. Những tòa nhà gãy lưng chồng lên nhau. Một tháp tín hiệu nghiêng như cây kim cắm vào xác đất. Dây điện rũ xuống, có nơi bị gió kéo phát ra tiếng rít.
+
+Không có tiếng người.
+
+Chính sự không có đó làm người ta lạnh.
+
+Ở Khu 17, dù nghèo, dù bẩn, dù chết, vẫn có người mắng nhau, trẻ khóc, chó biến dị sủa, xe kéo kêu. Phế Đô im như một cái miệng bị khâu lại.
+
+Lâm Tịch đẩy xe Tần Dã qua ngưỡng cửa.
+
+Bánh xe cán lên lớp bụi đỏ.
+
+Tần Dã bỗng nhắm mắt.
+
+"Sao?"
+
+"Mùi."
+
+"Ngươi nhớ?"
+
+"Cơ thể nhớ."
+
+Hắn mở mắt.
+
+"Đi bên trái. Đường giữa có bẫy áp lực."
+
+Mộc Sanh lập tức kiểm tra mặt đường. Quả nhiên dưới bụi có một tấm kim loại mỏng gần như chìm vào nền.
+
+A Thất nuốt nước bọt.
+
+"Bẫy còn sống sau nhiều năm?"
+
+Tần Dã đáp:
+
+"Thứ giết người thường bền."
+
+Họ đi bên trái.
+
+Mười phút đầu không có chuyện gì.
+
+Đó là điều tệ.
+
+Trong phế thổ, nguy hiểm yên quá lâu nghĩa là nó đang chọn góc nhìn.
+
+Lâm Tịch để ý bụi dưới chân. Có dấu bánh rất mờ. Không phải của họ. Không phải quá cũ. Bánh nhỏ, nặng, giống dấu dưới tuyến ống.
+
+"Xe chở lồng từng qua đây."
+
+Tần Dã nhìn.
+
+"Ừ."
+
+"Đi hướng nhà kính?"
+
+"Hoặc vòng tròn ta không nhớ."
+
+A Mục hỏi:
+
+"Có nên tránh?"
+
+Tần Dã chưa đáp thì radio của A Thất rè lên.
+
+Không phải giọng người quen.
+
+Một đoạn tín hiệu ngắn, đứt quãng:
+
+`...HN... tổ bảy... trả lời...`
+
+Tần Dã cứng lại.
+
+Lâm Tịch đặt tay lên vai hắn.
+
+Radio lại rè.
+
+`Đội trưởng... nếu nghe được... đừng vào nhà kính...`
+
+Gió đỏ thổi qua con đường chết.
+
+Mộc Sanh chậm rãi nâng đèn.
+
+Trên bức tường bên trái, dưới lớp bụi, có một dòng chữ được khắc bằng dao:
+
+`HN-07 đã bỏ chúng ta.`
+
+Không ai nói gì.
+
+Tần Dã nhìn dòng chữ.
+
+Mặt hắn không đổi.
+
+Nhưng Lâm Tịch cảm thấy vai dưới tay mình lạnh đi.
+
+Phế Đô Cấm Khu đã mở cửa.
+
+Và thứ đầu tiên nó trả lại cho Tần Dã không phải thuốc.
+
+Là tội danh.
+
+## Chương 161: Những Căn Nhà Không Còn Khói Bếp
+
+Họ không đi thẳng tới nhà kính.
+
+Tần Dã bảo vòng qua khu dân cư thấp.
+
+"Vì sao?" A Thất hỏi. "Đường thẳng kia nhìn ít chết hơn."
+
+"Vì nó muốn ngươi nghĩ vậy."
+
+A Thất nhìn con đường thẳng đầy bụi đỏ, rồi nhìn lối rẽ giữa hai dãy nhà sập.
+
+"Ta ghét nơi có chiến thuật."
+
+Khu dân cư thấp của Phế Đô từng có người sống tử tế.
+
+Điều này làm nó đáng sợ hơn những đống đổ nát vô danh. Trên một bệ cửa còn có chậu men vỡ, đất khô cứng bên trong, một cành cây chết bị buộc vào que tre bằng sợi vải xanh. Dưới mái hiên sập có dấu một cái bàn ăn. Trên tường nhà nào đó, trẻ con từng vẽ mặt trời bằng màu đỏ. Màu đã phai, nhưng nét tròn vẫn còn đó, ngây thơ tới mức khiến người ta không nỡ nhìn lâu.
+
+Di Mạn không đi cùng.
+
+Nhưng Lâm Tịch bỗng nghĩ nếu bà ở đây, bà sẽ nhìn những gian bếp chết này lâu hơn mọi người.
+
+Một căn nhà không còn khói bếp không chỉ là nhà bỏ hoang.
+
+Nó là bằng chứng rằng có ngày cả việc nấu một bát canh cũng từng là chuyện bình thường.
+
+A Mục đi chậm lại trước một cửa sổ.
+
+Bên trong, trên sàn có một cái bát trẻ con, nhỏ bằng lòng bàn tay. Bát úp xuống, cạnh bát có mấy viên gì đó đen khô.
+
+"Đừng vào." Hứa Linh nói.
+
+A Mục dừng.
+
+"Ta biết."
+
+"Biết mà chân còn hướng vào."
+
+Nó mím môi, quay đi.
+
+Lâm Tịch nhìn nó.
+
+"Thấy gì?"
+
+"Bát."
+
+"Muốn nhặt?"
+
+"Không." A Mục nói. "Chỉ là... nó nhỏ."
+
+Không ai cười.
+
+Ở phế thổ, vật nhỏ dễ làm người ta đau. Một cái giày trẻ con, nửa viên kẹo, bát cơm cũ, mảnh vải buộc tóc. Những thứ lớn bị phá hủy khiến người ta sợ. Những thứ nhỏ còn lại khiến người ta nhớ từng có người sống ở đây bằng những việc rất bình thường.
+
+Tần Dã chỉ một mái hiên.
+
+"Nghỉ ba phút."
+
+Không ai phản đối.
+
+Họ uống nước theo nắp. Mỗi người một nắp, không hơn. Hứa Linh kiểm mạch Tần Dã, mặt càng lúc càng xấu. Hắn không hỏi. Bà cũng không nói. Có những con số nếu đọc ra sẽ biến thành đá đặt trong túi mọi người.
+
+Lâm Tịch ngồi bên bức tường có mặt trời trẻ con vẽ.
+
+Từ đây có thể thấy tháp radio nghiêng xa xa. Càng tới gần nhà kính, tín hiệu của A Thất càng nhiễu. Radio thỉnh thoảng phát ra tiếng rít như ai cào móng tay lên kính.
+
+A Thất vừa chỉnh dây vừa lẩm bẩm:
+
+"Nếu nó nói chuyện bằng giọng ma, ta ném nó."
+
+Mộc Sanh hỏi:
+
+"Ném radio?"
+
+"Không, ném bản thân ta khỏi tình huống này."
+
+A Mục bỗng hỏi Tần Dã:
+
+"Hắc Nha tổ bảy có trẻ con không?"
+
+Tần Dã mở mắt.
+
+"Không."
+
+"Vậy họ có nhà không?"
+
+Một câu hỏi rất trẻ con.
+
+Nhưng không dễ trả lời.
+
+Tần Dã nhìn khu dân cư chết.
+
+"Có nơi ngủ. Có kho vũ khí. Có mã gọi. Có người ăn cùng."
+
+"Vậy là nhà?"
+
+"Không biết."
+
+A Mục nhìn hắn, như không hài lòng.
+
+Tần Dã im một lúc, rồi nói:
+
+"Có lẽ có người từng nghĩ vậy."
+
+Lần này A Thất không bắt bẻ chữ "có lẽ".
+
+Lâm Tịch hiểu vì sao câu hỏi của A Mục quan trọng. Nếu Hắc Nha tổ bảy chỉ là một nhóm lính, tội của Tần Dã là bỏ đồng đội. Nếu họ từng là nhà, tội ấy nặng hơn nhiều. Một người có thể sống qua việc vũ khí hỏng. Khó sống qua việc mình từng đóng cửa nhà từ bên ngoài.
+
+Gió đỏ thổi qua mái hiên.
+
+Bụi rơi xuống bát trẻ con trong nhà, phát ra tiếng rất nhỏ.
+
+Tần Dã bỗng đặt tay lên thái dương.
+
+Lâm Tịch lập tức ngồi thẳng.
+
+"Sao?"
+
+"Có tiếng."
+
+"Radio?"
+
+"Không. Trong đầu."
+
+Hứa Linh bước tới.
+
+"Đau mức mấy?"
+
+"Năm."
+
+Bà chửi rất khẽ.
+
+Với Tần Dã, nói năm nghĩa là gần bảy.
+
+Hắn nhắm mắt, giọng thấp:
+
+"Có người từng hát trong khu này."
+
+A Thất rùng mình.
+
+"Người sống hay chết?"
+
+"Lúc đó sống."
+
+Không ai nói nữa.
+
+Tần Dã nói tiếp, từng chữ như kéo từ bùn:
+
+"Trì Dao. Cô ấy hát khi tháo mìn. Nói nếu không hát sẽ nghe tiếng tim mình, dễ run tay."
+
+Kỷ ức tới rất nhỏ.
+
+Không đủ thành hình.
+
+Nhưng đủ để đặt một cái tên vào đội đã chết.
+
+Trì Dao.
+
+Không còn chỉ là giọng nữ trong radio. Không còn chỉ là một người bị rễ chạm vào. Cô ấy từng hát khi tháo mìn, từng sợ nghe tim mình, từng sống đủ gần Tần Dã để ký ức cơ thể hắn còn giữ lại một mẩu âm thanh.
+
+A Mục hỏi:
+
+"Cô ấy tốt không?"
+
+Tần Dã mở mắt.
+
+"Không biết."
+
+Rồi hắn sửa:
+
+"Có lẽ rất ồn."
+
+A Thất nói:
+
+"Người ồn thường tốt."
+
+Mộc Sanh nhìn nó.
+
+"Không luôn."
+
+"Nhưng thường."
+
+Tần Dã nhìn radio trong tay A Thất, ánh mắt có một thứ rất xa.
+
+"Ừ. Thường."
+
+Ba phút nghỉ kết thúc.
+
+Trước khi đi, Lâm Tịch quay lại nhìn căn nhà có bát trẻ con.
+
+Nàng không vào nhặt.
+
+Không phải vì không thương.
+
+Mà vì ở nơi như thế này, lòng thương không được phép biến thành cái cớ đưa cả đội vào bẫy.
+
+Nàng lấy nửa mảnh vải sạch, đặt lên bệ cửa sổ.
+
+A Mục nhìn thấy.
+
+"Để làm gì?"
+
+"Không làm gì."
+
+"Vậy sao để?"
+
+Lâm Tịch nghĩ một chút.
+
+"Để nếu có thứ gì còn nhớ nơi này từng là nhà, nó biết có người đi ngang không giẫm lên bát."
+
+A Mục im.
+
+Một lúc sau, nó nói:
+
+"Nghe hơi vô dụng."
+
+"Ừ."
+
+"Nhưng không xấu."
+
+"Vậy đủ."
+
+Họ rời khu dân cư chết.
+
+Sau lưng, gió đỏ cuốn mảnh vải sạch rung nhẹ trên bệ cửa.
+
+Phía trước, nhà kính hiện ra rõ hơn.
+
+Và radio của A Thất bắt đầu phát tiếng một người phụ nữ hát đứt quãng, méo mó, xa xăm:
+
+`Đừng nghe tim mình... đừng nghe tim mình...`

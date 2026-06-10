@@ -1,0 +1,609 @@
+# Phần 6: Thẩm Bạch Đưa Ra Giá
+
+## Chương 158: Hợp Đồng Có Mùi Thuốc
+
+Hợp đồng của Thẩm Bạch không có mùi giấy.
+
+Nó có mùi thuốc.
+
+Ba ống ổn định gen đời cũ được đặt trong hộp lạnh nhỏ, nằm cạnh bản hợp đồng trắng như ba khúc xương trong khay bạc. Thuốc có màu xanh nhạt, trong hơn nước sạch, trên thân ống còn nguyên tem nội thành. Thứ này nếu đem ra chợ nước, có thể đổi được một căn phòng khô trong khu xám, ba tháng khẩu phần, hoặc một lời hứa bảo vệ đủ khiến người nghèo quỳ xuống ký tên.
+
+Thẩm Bạch không đem súng.
+
+Hắn đem thứ Tần Dã cần.
+
+Đó mới là dao.
+
+Hắn ngồi đối diện Lâm Tịch trong phòng họp tạm của Sở Cư Trú. Cửa kính phía sau hắn sạch tới mức gần như không tồn tại. Bên ngoài, người của Chim Xám đứng thành một cụm nhỏ: Di Mạn ôm tay, A Thất giả vờ xem dây giày, Mộc Sanh nhìn hộp lạnh như nhìn một con bẫy, A Mục đứng xa nhất, mặt cứng đờ. Ninh ở lại giữ Đèn Vàng, nhưng bảng viết của nó được A Thất ôm trước ngực như bùa.
+
+Tần Dã ngồi bên trái Lâm Tịch.
+
+Hắn không nhìn thuốc.
+
+Chính vì không nhìn, Lâm Tịch biết hắn đang dùng hết sức để không nhìn.
+
+Thẩm Bạch nói:
+
+"Ta đã sửa điều khoản."
+
+Lâm Tịch lật hợp đồng.
+
+Điều khoản lấy mẫu từ ba lần giảm xuống một lần.
+
+Điều khoản chuyển Đèn Vàng vào phòng sạch đổi thành: phòng sạch di động đặt tại Kho Đèn Vàng, người của Chim Xám được giám sát.
+
+A Hành được nâng cấp điều trị.
+
+Tần Dã được cấp thuốc trước một ống, hai ống còn lại sau khi mẫu đầu tiên hoàn thành.
+
+Mọi thứ đều tốt hơn.
+
+Tốt tới mức khó chịu.
+
+"Ngươi nhượng bộ nhanh quá." Lâm Tịch nói.
+
+Thẩm Bạch mỉm cười.
+
+"Vì ngươi vừa chứng minh mình có khả năng gây phiền phức."
+
+"Đây là khen?"
+
+"Là đánh giá rủi ro."
+
+"Ta không thích bị đánh giá như hàng hóa."
+
+"Vậy hãy xem đây là sự tôn trọng dành cho đối tác có năng lực phá hỏng kế hoạch của ta."
+
+A Thất ngoài cửa nhỏ giọng:
+
+"Nghe còn ghét hơn."
+
+Không ai phản bác.
+
+Quan Dực đứng bên cạnh bàn, mặt mệt mỏi vì đã đọc ba bản phụ lục trong một buổi. Hắn chỉ vào dòng điều khoản.
+
+"Nếu ký, về mặt pháp lý Chim Xám vẫn giữ quyền chủ quản. Khu nghiên cứu chỉ có quyền lấy mẫu mô đất và khí quanh cây, không được cắt thân, lá, rễ."
+
+Hứa Linh cười lạnh.
+
+"Và nếu mẫu khí đủ, họ vẫn viết được báo cáo thu hồi."
+
+Thẩm Bạch gật đầu.
+
+"Có thể."
+
+Hắn luôn đáng ghét ở chỗ không phủ nhận điều thật.
+
+Lâm Tịch nhìn hộp thuốc.
+
+Một ống.
+
+Chỉ cần ký, Tần Dã có thể bớt đau tối nay.
+
+Nàng không quay sang nhìn hắn. Nếu nhìn, nàng sợ mình sẽ thấy thứ hắn cố giấu, rồi tay nàng sẽ mềm.
+
+"Nếu ta không ký?"
+
+"Ta vẫn sẽ nộp báo cáo nguy cơ cho Ngân Thụ trong vòng hai mươi bốn giờ."
+
+"Vậy ra đây là uy hiếp."
+
+"Không. Đây là lịch làm việc."
+
+Di Mạn cười khẩy ngoài cửa.
+
+"Người có học uy hiếp nghe sạch thật."
+
+Thẩm Bạch không nhìn bà.
+
+"Đội trưởng Lâm, ngươi có vảy của thú ăn kim loại. Ta có thể giúp ngươi biến nó thành chứng cứ có giá trị."
+
+"Đổi lấy mẫu cây."
+
+"Đổi lấy hợp tác."
+
+"Hợp tác mà ngươi giữ thuốc trong hộp lạnh."
+
+"Vì ngươi giữ cây trong hộp kính."
+
+Hai người nhìn nhau.
+
+Lâm Tịch nhận ra người này khó đối phó vì hắn không nóng. Cướp sẽ vội, quan sẽ ép, thương nhân sẽ mặc cả. Thẩm Bạch đặt một cái cân lên bàn, bỏ từng thứ họ cần vào đúng đĩa, rồi kiên nhẫn chờ họ tự thấy phía mình nhẹ quá.
+
+Tần Dã bỗng nói:
+
+"Thuốc này từ đâu?"
+
+Thẩm Bạch nhìn hắn.
+
+"Kho cũ."
+
+"Kho nào?"
+
+"Ngươi thật sự muốn nghe?"
+
+"Nói."
+
+Thẩm Bạch mở một file trên bảng kính.
+
+`Kho dự trữ y sinh Cấm Khu Bắc - Phế Đô cũ.`
+
+Lâm Tịch nhìn hàng chữ.
+
+Phế Đô Cấm Khu.
+
+Tên ấy nằm trong outline tương lai của họ như một cánh cửa chưa mở, giờ đột nhiên xuất hiện trên bàn, dưới dạng nguồn thuốc của Thẩm Bạch.
+
+"Nơi đó còn thuốc?" nàng hỏi.
+
+"Có lẽ."
+
+A Thất ở ngoài lập tức rùng mình.
+
+"Lại 'có lẽ'."
+
+Thẩm Bạch tiếp tục:
+
+"Kho bị bỏ hoang nhiều năm. Một phần được nội thành thu hồi. Một phần mất dấu sau bão đỏ. Thuốc ta mang tới là lô thu hồi cuối cùng."
+
+Tần Dã nhìn bản đồ trong file.
+
+Ngón tay hắn đặt lên xe lăn, gõ một nhịp.
+
+Lâm Tịch nghe thấy.
+
+Không phải cảnh báo.
+
+Là nhớ.
+
+"Ngươi biết đường?" nàng hỏi.
+
+Tần Dã im.
+
+Thẩm Bạch thay hắn trả lời:
+
+"HN-07 từng dẫn đội vào đó."
+
+Không khí đổi lạnh.
+
+Tần Dã nhìn hắn.
+
+"Hồ sơ của ngươi quá nhiều."
+
+"Không đủ. Nếu đủ, ta đã biết vì sao đội đó biến mất."
+
+Lâm Tịch nắm cạnh bàn.
+
+"Đội nào?"
+
+Thẩm Bạch nhìn Tần Dã.
+
+"Hắc Nha tổ bảy. Hồ sơ ghi: nhiệm vụ thu hồi mẫu gen, mất liên lạc, một người trở về. HN-07. Sau đó bị xóa ký ức cục bộ, chuyển sang nhiệm vụ khác."
+
+Hứa Linh chửi một câu rất khẽ.
+
+Tần Dã không nói.
+
+Lâm Tịch cảm thấy trong phòng có một con thú khác vừa mở mắt. Không phải thú ăn kim loại dưới ống. Là quá khứ của Tần Dã, thứ lâu nay nằm liệt cùng hắn, bây giờ bắt đầu cử động.
+
+Thẩm Bạch đẩy hộp thuốc về phía trước một chút.
+
+"Ký hợp đồng, ngươi có thuốc mà không cần đưa hắn về nơi đó."
+
+Lời này đánh rất chính xác.
+
+Không phải đánh Lâm Tịch.
+
+Đánh vào tất cả những người đã thấy Tần Dã ho máu.
+
+A Mục đứng ngoài cửa, mặt trắng đi.
+
+Lâm Tịch nhìn nó qua kính.
+
+Nó cũng nhìn nàng.
+
+Trong mắt nó không còn bướng bỉnh ban đầu, chỉ còn một câu hỏi: nếu có đường không cần để Tần Dã quay lại nơi từng phá hỏng hắn, vì sao không chọn?
+
+Lâm Tịch cúi đầu nhìn hợp đồng.
+
+Một chữ ký.
+
+Một ống thuốc.
+
+Một cái cây bị lấy mẫu.
+
+Một cánh cửa cấm khu tạm thời đóng lại.
+
+Nàng chợt nhớ thế giới cũ của mình. Những lần bệnh viện đưa giấy đồng ý phẫu thuật, người nhà nhìn điều khoản mà không hiểu hết, chỉ biết nếu không ký thì người trên giường có thể chết. Người ta không ký vì tin. Người ta ký vì không còn đường.
+
+Nàng từng nghĩ phế thổ tàn nhẫn hơn.
+
+Giờ mới biết, chỉ là nó bớt che đậy hơn.
+
+Lâm Tịch cầm bút.
+
+A Thất hít vào.
+
+Tần Dã quay sang nhìn nàng.
+
+Nàng đặt bút xuống cạnh hợp đồng, không ký.
+
+"Ta hỏi một câu cuối."
+
+Thẩm Bạch gật đầu.
+
+"Nếu ta tự đi Phế Đô Cấm Khu lấy thuốc, ngươi có ngăn không?"
+
+Thẩm Bạch nhìn nàng rất lâu.
+
+"Ta sẽ khuyên ngươi không đi."
+
+"Không hỏi khuyên."
+
+"Ta không có quyền ngăn."
+
+"Ngân Thụ?"
+
+"Nếu họ biết trước, có."
+
+Lâm Tịch gấp hợp đồng lại.
+
+"Vậy cảm ơn bản đồ."
+
+Quan Dực nhắm mắt.
+
+A Thất ngoài cửa thì thầm:
+
+"Ta biết ngay chị ấy sẽ chọn cách phiền nhất."
+
+Thẩm Bạch nhìn hợp đồng bị đẩy về.
+
+"Ngươi đang dùng mạng Tần Dã đánh cược."
+
+Lâm Tịch đáp:
+
+"Không. Ta đang hỏi hắn có muốn đi lấy lại thứ từng bị người khác giấu khỏi hắn không."
+
+Nàng quay sang Tần Dã.
+
+Lần này nàng nhìn thẳng.
+
+"Ngươi muốn đi không?"
+
+Tần Dã rất lâu không trả lời.
+
+Trong mắt hắn có bóng của hộp thuốc, bản đồ cấm khu, cái tên HN-07, và rất nhiều thứ hắn không nhớ nhưng cơ thể chắc chắn còn đau vì chúng.
+
+Cuối cùng hắn nói:
+
+"Muốn."
+
+Chỉ một chữ.
+
+Nặng hơn ba ống thuốc.
+
+Lâm Tịch đứng dậy.
+
+"Vậy chúng ta không ký."
+
+Thẩm Bạch thu hộp thuốc lại.
+
+"Đội trưởng Lâm, người có nguyên tắc thường chết vì nguyên tắc."
+
+"Không." Lâm Tịch nói. "Người nghèo chết vì không có lựa chọn. Ta chỉ đang cố kiếm thêm một cái."
+
+Trước khi ra khỏi phòng, nàng dừng lại.
+
+"Bác sĩ Thẩm."
+
+Hắn ngẩng mắt.
+
+"Nếu ta sống trở về, hợp đồng lần sau để chữ to hơn."
+
+Thẩm Bạch mỉm cười.
+
+"Nếu ngươi sống trở về, ta sẽ tự tay viết."
+
+Ngoài cửa, A Mục đứng chắn lối.
+
+Nó nhìn Lâm Tịch.
+
+"Ta vẫn sợ."
+
+"Ta cũng vậy."
+
+"Nếu hắn chết..."
+
+Tần Dã từ phía sau nói:
+
+"Ta chưa chết."
+
+A Mục quay đầu, mắt đỏ lên vì tức.
+
+"Huynh câm đi."
+
+Tần Dã im thật.
+
+Lâm Tịch đặt tay lên vai A Mục.
+
+"Ngươi đi hay ở?"
+
+Nó nhìn nàng, nhìn Tần Dã, nhìn cánh cửa phòng họp nơi hộp thuốc vừa bị thu lại.
+
+"Đi."
+
+"Vì sao?"
+
+"Để nếu huynh ấy chết, ta còn biết mình đã kéo dây chứ không chỉ đứng nhìn."
+
+Không phải câu trả lời đẹp.
+
+Nhưng là câu trả lời thật.
+
+Đội Chim Xám rời Sở Cư Trú với hai tay trống, một bản đồ cấm khu trong đầu Tần Dã, và hai mươi bốn giờ trước khi báo cáo của Thẩm Bạch chạm tới Ngân Thụ.
+
+Đêm đó, Lâm Tịch không mơ thấy nước.
+
+Nàng mơ thấy một cánh cửa cũ trong thành phố chết, phía sau cửa có người gọi Tần Dã là đội trưởng.
+
+## Chương 159: Một Ống Thuốc Để Trên Bàn
+
+Đêm trước khi rời thành, hộp thuốc của Thẩm Bạch vẫn nằm trong đầu mọi người.
+
+Không ai nói về nó, nhưng không nói không có nghĩa là quên. Nó ở trong tiếng thìa chạm đáy bát của Di Mạn, trong động tác A Thất lau radio quá kỹ, trong cách A Mục đứng ngoài cửa kho nhìn vào mà không bước hẳn qua ngưỡng. Nó ở trong mỗi lần Tần Dã ho khẽ rồi lập tức quay mặt đi.
+
+Một ống thuốc đặt trên bàn có thể khiến người ta thấy mình nghèo hơn cả lúc túi rỗng.
+
+Lâm Tịch ngồi trước hộp Đèn Vàng, tháo băng tay cũ.
+
+Da lòng bàn tay vẫn đỏ, vài chỗ phồng nước bị Hứa Linh chọc xẹp. Mỗi lần gập ngón, nàng có cảm giác như nắm một nắm cát nóng. Ninh ngồi đối diện, cẩn thận dùng vải sạch lau thành hộp kính. Đứa nhỏ không nhìn tay nàng nhiều, nhưng mỗi lần nàng hít hơi mạnh, nó lại dừng một chút.
+
+Ninh viết:
+
+`Đau không?`
+
+Lâm Tịch đáp:
+
+"Đau."
+
+Ninh nhìn nàng, có vẻ hơi ngạc nhiên.
+
+"Sao? Ta không được đau à?"
+
+Nó lắc đầu, rồi viết:
+
+`Ta tưởng đội trưởng sẽ nói không đau.`
+
+"Nói không đau thì tay lành nhanh hơn không?"
+
+Ninh suy nghĩ rất nghiêm túc, rồi lắc đầu.
+
+"Vậy đau."
+
+Đứa nhỏ cúi đầu, khóe miệng hơi nhúc nhích. Một nụ cười mỏng đến mức nếu không nhìn kỹ sẽ tưởng là ánh đèn rung.
+
+Lâm Tịch nhìn mầm Đèn Vàng.
+
+Lá của nó nhỏ hơn hôm qua. Không phải héo, nhưng thiếu sức. Hộp kính tự chế giữ được bụi, không giữ được mọi thứ thành muốn lấy đi. Không khí trong kho sau niêm phong nặng hơn, máy lọc khò khè lâu hơn, nước tưới bị cắt nửa phần vì "đang trong quá trình kiểm tra".
+
+Thẩm Bạch nói phòng sạch.
+
+Nói A Hành có thể thở tốt hơn.
+
+Nói Tần Dã có thuốc.
+
+Nói mỗi chữ như đặt một miếng thịt nóng trước mặt người đói, rồi hỏi người ta có còn giữ nguyên tắc không.
+
+Di Mạn bưng một bát nước ấm tới.
+
+"Uống."
+
+Lâm Tịch nhận.
+
+Nước có vị kim loại nhạt. Trong thành, ngay cả nước nhiệm vụ cũng có thứ bậc. Nước trong thật sự không tới khu của họ. Nó đi lên trên, qua các phòng sạch, khu ở cao, vườn kính và những người có quyền không cần hỏi nước từ đâu.
+
+"Tần Dã đâu?"
+
+"Trên mái thấp."
+
+"Một mình?"
+
+"A Thất đi theo. Nói là sửa radio, thực tế là sợ hắn nhảy xuống."
+
+Lâm Tịch suýt sặc.
+
+Di Mạn mặt không đổi:
+
+"Nó nói vậy."
+
+Trên mái thấp, gió lọc lạnh hơn trong kho.
+
+Tần Dã ngồi cạnh mép tường, xe lăn khóa hai bánh. A Thất ngồi cách hắn ba bước, radio tháo tung trước mặt, tai dựng lên như chỉ cần hắn thở sai nhịp là la cả kho.
+
+Thấy Lâm Tịch, A Thất lập tức thu dụng cụ.
+
+"Ta đi kiểm tra... cái khác."
+
+"Ngươi không cần đi."
+
+"Cần. Ta còn trẻ, chưa muốn nghe chuyện người lớn nhìn nhau không nói."
+
+Nó ôm radio chạy mất.
+
+Lâm Tịch ngồi xuống cạnh Tần Dã.
+
+Một lúc lâu, hai người chỉ nhìn thành.
+
+Đèn trong thành sáng thành từng lớp. Khu trên có ánh trắng xanh ổn định. Khu xám có ánh vàng đục. Xa hơn, phía tường ngoài, Phế Đô chỉ là một mảng tối. Nơi đó ngày mai họ phải đi, để lấy thứ đang nằm trong hộp lạnh của người khác hôm nay.
+
+Tần Dã nói:
+
+"Ngươi có thể ký."
+
+Lâm Tịch nhìn hắn.
+
+"Ta biết."
+
+"Ta sẽ không trách."
+
+"Ta cũng biết."
+
+"A Mục sẽ dễ thở hơn."
+
+"Ngươi thì sao?"
+
+Hắn im.
+
+Gió đi qua khoảng trống giữa họ.
+
+Một lúc sau, hắn nói:
+
+"Ta không biết."
+
+Câu trả lời này thật hơn tất cả những câu "không sao" của hắn.
+
+Lâm Tịch đặt bát nước xuống giữa hai người.
+
+"Ngươi sợ quay lại đó?"
+
+"Có."
+
+Nàng nhìn hắn.
+
+Tần Dã không nhìn nàng, mắt đặt vào vùng tối phía bắc.
+
+"Ta sợ chỗ đó không trả lại ký ức. Ta sợ nó trả."
+
+Lâm Tịch hiểu.
+
+Không nhớ là một vết thương.
+
+Nhớ lại có thể là dao mổ.
+
+"Nếu nhớ ra ngươi từng làm chuyện xấu thì sao?" nàng hỏi.
+
+"Vậy ngươi sẽ làm gì?"
+
+"Hỏi ngươi bây giờ muốn làm gì."
+
+Hắn quay sang.
+
+Lâm Tịch nói:
+
+"Ta không nói quá khứ không quan trọng. Nó quan trọng, vì nó có người chết trong đó. Nhưng ta không quen phán người bằng mảnh ký ức họ bị người khác cắt xén. Nếu ngươi từng sai, mình tìm cách trả. Nếu ngươi bị ép sai, mình tìm kẻ ép. Nếu cả hai đều có, thì làm từng cái."
+
+Tần Dã nhìn nàng rất lâu.
+
+"Ngươi nói nghe như sửa máy."
+
+"Người cũng là máy à?"
+
+"Không. Máy dễ hơn."
+
+Lâm Tịch cười nhẹ.
+
+Rồi nàng cúi xuống, dùng tay không bị thương đẩy bát nước về phía hắn.
+
+"Uống đi. Ngày mai chưa chắc có nước dễ uống như thế này."
+
+Hắn nhận bát.
+
+Không cảm ơn.
+
+Uống một ngụm, rồi đưa lại.
+
+Đó là cách họ làm với rất nhiều thứ: nước, dao, quyết định, nỗi sợ. Không ai nói chia đôi. Nhưng bát luôn đi qua tay hai người trước khi cạn.
+
+Khi Lâm Tịch đứng dậy, Tần Dã bỗng nói:
+
+"Nếu trong cấm khu ta ra lệnh sai, đừng nghe."
+
+"Ta vốn không hay nghe lời ngươi."
+
+"Ta nói nghiêm túc."
+
+Nàng quay lại.
+
+Hắn nhìn nàng. Trong mắt có một thứ sắc lạnh quen thuộc của người từng ra lệnh, nhưng phía dưới là nỗi sợ người đó từng dùng lệnh sai để giết người.
+
+Lâm Tịch gật đầu.
+
+"Nếu ngươi ra lệnh sai, ta đánh ngất ngươi."
+
+"Ngươi đánh không..."
+
+"Câu này nói nữa ta đánh bây giờ."
+
+Hắn ngậm miệng.
+
+Rất ngoan.
+
+Lâm Tịch xuống mái, đi ngang qua A Mục đang đứng ở cầu thang.
+
+Nó rõ ràng đã nghe một phần.
+
+Lâm Tịch không vạch trần.
+
+A Mục nhìn nàng, giọng khàn:
+
+"Ta vẫn nghĩ ký hợp đồng dễ hơn."
+
+"Ừ."
+
+"Nhưng ta sẽ đi."
+
+"Ta biết."
+
+"Nếu có lúc phải chọn thuốc hay người, chị sẽ chọn gì?"
+
+Lâm Tịch dừng lại.
+
+Nàng nhìn nó.
+
+"Ta sẽ cố không để câu hỏi đó chỉ còn hai đáp án."
+
+"Nếu vẫn chỉ còn hai?"
+
+"Vậy lúc đó ta sẽ đau cùng các ngươi. Chứ không trốn sau chữ đúng."
+
+A Mục cúi đầu.
+
+Một lúc sau, nó nói rất nhỏ:
+
+"Ta ghét đau."
+
+"Ta cũng vậy."
+
+"Nhưng ta ghét đứng ngoài hơn."
+
+Lâm Tịch đưa tay xoa đầu nó. Nó né nửa cái, rồi đứng yên.
+
+Đêm ấy, trước khi ngủ, Di Mạn chia mỗi người nửa miếng bánh khô. Không đủ no. Chỉ đủ để bụng nhớ mình còn có việc ngày mai.
+
+A Thất nằm cạnh radio, lẩm bẩm:
+
+"Nếu sống về, ta sẽ bắt bác sĩ áo trắng trả phí tổn tinh thần."
+
+Mộc Sanh hỏi:
+
+"Bằng gì?"
+
+"Một cái radio mới."
+
+"Mơ lớn lên."
+
+"Hai cái radio mới."
+
+Trong tiếng họ cãi nhau nhỏ dần, Lâm Tịch nhắm mắt.
+
+Lần này nàng mơ thấy cánh cửa trong thành phố chết mở hé.
+
+Phía sau không chỉ có người gọi Tần Dã là đội trưởng.
+
+Còn có một đứa bé gái đứng cạnh chậu cây vàng, quay đầu nhìn nàng qua lớp kính.
+
+Đứa bé không nói cứu ta.
+
+Nó chỉ đặt tay lên kính, như thể đã chờ rất lâu để hỏi:
+
+`Sao bây giờ ngươi mới về?`

@@ -1,0 +1,823 @@
+# Phần 9: Thẩm Bạch Đem Tới Một Thành Phố
+
+## Chương 185: Hợp Đồng Dưới Mưa Đỏ
+
+Trạm lọc sống qua trận hỗn loạn thứ hai bằng một cái giá rất cụ thể: một đường ống phụ vỡ, hai người khu xám bị thương, một lính thành Nam mất nửa bàn tay vì đứng quá gần miệng ống, và bể lọc tạm bị nước đen làm bẩn một lần nữa.
+
+Không ai chết.
+
+Điều đó trong phế thổ đã gần như một chiến thắng.
+
+Nhưng không ai có mặt mũi ăn mừng.
+
+Mộc Sanh và A Thất cắt được đèn ngoài cổng. Kỷ Nam kéo ba lính thành Nam khỏi vùng ống vỡ bằng cách chửi họ là đồ ngu nếu muốn bị thú ăn vì một cái lệnh chưa đọc hết. Lão Phùng và Lý Cù dùng khúc xương kẹt trục chèn van phụ. Di Mạn dẫn mấy người khu xám khiêng người bệnh lên tầng giữa.
+
+Lâm Tịch giữ dây van tới khi lòng bàn tay rách thêm.
+
+Khi mọi thứ tạm yên, nàng ngồi trên bậc thềm, cả người ướt bẩn, cổ họng khô, mắt cay vì bụi đỏ.
+
+Thang Nhuệ đứng cách nàng mười bước.
+
+Đội trưởng an ninh nội thành lúc này không còn sạch như lúc tới. Áo giáp của bà ta dính nước đen, mặt nạ lọc lệch một bên, trên tay áo có vệt máu của lính bị thương.
+
+Bà ta nhìn Lâm Tịch.
+
+"Cô biết trạm này không giữ được lâu."
+
+Lâm Tịch đáp:
+
+"Biết."
+
+"Cá sấu dưới ống, truy binh ngoài cổng, người bệnh trong trạm, nước chưa lọc sạch, không có giấy sở hữu, không có tường phòng thủ đúng chuẩn."
+
+"Bà đang giúp ta đếm việc à?"
+
+Thang Nhuệ không bị chọc giận.
+
+"Ta đang nói sự thật."
+
+"Sự thật của bà thiếu một câu."
+
+"Câu gì?"
+
+Lâm Tịch nhìn máng nước.
+
+Di Mạn đang đổ mẻ nước bẩn đi, bắt đầu lọc lại. Trần Hòe nhóm than. A Thất cắn răng giữ ống bằng tay chưa bị thương. Tiểu Mãn dùng vải lau nồi Mãn. Tần Dã ngồi dựa tường, mắt vẫn theo dõi từng người ra vào.
+
+"Nước đã chảy."
+
+Thang Nhuệ im.
+
+Với người trong thành, một dòng nước chưa đạt chuẩn chỉ là rủi ro.
+
+Với người ngoài thành, nó là lý do để chưa chết.
+
+Tiếng xe tới lần này rất êm.
+
+Không giống xe an ninh.
+
+Một chiếc xe trắng dừng ngoài cổng gãy, thân xe phủ lớp chống xạ mỏng, đèn xanh nhạt chạy dọc mép cửa. Giữa mưa bụi đỏ, chiếc xe sạch đến mức giống một thứ không nên tồn tại ở đây.
+
+A Thất vừa thấy đã chửi nhỏ:
+
+"Áo trắng tới."
+
+Thẩm Bạch bước xuống xe.
+
+Hắn vẫn mặc áo trắng.
+
+Không phải chiếc áo sáng nay. Chiếc này dài hơn, cổ áo cao, găng tay sạch, giày không dính bùn. Sau lưng hắn có hai trợ lý đẩy một thùng y tế và ba thùng nước niêm phong.
+
+Không ai trong trạm vui khi thấy nước.
+
+Điều đó làm Thẩm Bạch hơi mỉm cười.
+
+"Các vị tiến bộ rất nhanh."
+
+Di Mạn cầm dao bếp đứng cạnh máng lọc.
+
+"Ngươi tới chữa bệnh hay tới mua người?"
+
+Thẩm Bạch nhìn bà, rất lịch sự.
+
+"Cả hai việc không nhất thiết mâu thuẫn."
+
+Di Mạn lạnh mặt:
+
+"Vậy là mua người."
+
+Thẩm Bạch không phủ nhận.
+
+Hắn nhìn Lâm Tịch.
+
+"Ta có thể vào không?"
+
+Kỷ Nam nâng súng.
+
+"Không."
+
+Thẩm Bạch nhìn hắn.
+
+"Kỷ Nam. Tổ bảy Hắc Nha. Ta nhớ hồ sơ của anh mất tích."
+
+Kỷ Nam cười lạnh.
+
+"Ta cũng nhớ mặt bác sĩ thích nhìn người trong ống."
+
+Không khí chợt lạnh.
+
+Thẩm Bạch thở dài nhẹ.
+
+"Các anh luôn có ác cảm với người cố sửa chữa hậu quả."
+
+Tần Dã nói:
+
+"Ngươi gọi tháo người ra là sửa?"
+
+Thẩm Bạch nhìn sang hắn.
+
+"HN-07, nếu không có thuốc ổn định gen của ta, anh đã chết trong cấm khu."
+
+"Thuốc của Ngân Thụ."
+
+"Ta điều chỉnh liều."
+
+"Dao cũng cần người mài."
+
+Thẩm Bạch mỉm cười.
+
+"Anh vẫn sắc."
+
+Lâm Tịch đứng dậy.
+
+"Nói việc."
+
+Thẩm Bạch đưa tay. Trợ lý phía sau mở một hộp kim loại. Bên trong là túi truyền, thuốc hạ sốt, dung dịch lọc máu cầm tay, sáu lõi sứ mới, và một tập giấy mỏng đặt trong túi chống nước.
+
+Mắt Mộc Sanh dừng ở lõi sứ.
+
+A Thất cũng thấy.
+
+Nó nuốt nước bọt.
+
+Sáu lõi sứ mới.
+
+Đủ để biến dòng nước đục hiện tại thành nước có thể uống ổn định hơn. Đủ để Hạ Tố, Du Khâu, Tần Dã, những đứa trẻ khu xám, tất cả có thêm nhiều ngày.
+
+Thẩm Bạch biết mọi ánh mắt đã nhìn thấy thứ cần nhìn.
+
+Hắn nói:
+
+"Ta đem tới một đề nghị."
+
+Lâm Tịch nhìn tập giấy.
+
+"Hợp đồng?"
+
+"Một khu bán tự trị."
+
+Đám người khu xám xôn xao.
+
+Thẩm Bạch nói chậm, rõ, như đang đọc một bài giảng trong phòng sạch:
+
+"Ngân Thụ có thể công nhận Trạm Lọc số Chín là khu cư trú thử nghiệm ngoài tường, dưới danh nghĩa dự án phục hồi sinh thái và ổn định dân thải cư. Các người được giữ trạm. Được nhận thiết bị lọc chuẩn thấp. Được cấp thuốc cơ bản. Được miễn truy cứu việc rời thành trái phép trong bảy ngày đầu."
+
+A Thất lẩm bẩm:
+
+"Nghe hay tới mức muốn chạy."
+
+Di Mạn hỏi:
+
+"Đổi lại?"
+
+Thẩm Bạch nhìn Lâm Tịch.
+
+"Cô Lâm Tịch tự nguyện phối hợp kiểm tra sinh học mỗi tháng một lần. Mỗi lần ba ngày. Không cưỡng chế phẫu thuật nếu không có nguy cơ tử vong. Đèn Vàng được đăng ký là mẫu cộng sinh, không tách khỏi cô trong giai đoạn đầu."
+
+Hắn dừng một chút.
+
+"Tần Dã được nhận thuốc ổn định gen theo chu kỳ."
+
+Tần Dã cười khẽ.
+
+"Rất chu đáo."
+
+Thẩm Bạch đáp:
+
+"Ta luôn chu đáo khi đối tượng nghiên cứu có giá trị."
+
+Không ai thích câu đó.
+
+Nhưng không ai có thể giả vờ không nghe thấy những thứ hắn vừa đặt lên bàn: nước, thuốc, giấy, thời gian, miễn truy cứu.
+
+Đối với một nhóm người vừa giành được dòng nước đầu tiên bằng máu, đó không phải mồi nhỏ.
+
+Đó là cả một thành phố thu nhỏ.
+
+Thẩm Bạch nhìn Lâm Tịch.
+
+"Cô muốn tự xây một nơi không bị bán. Rất tốt. Nhưng cô thiếu vật tư, thiếu thuốc, thiếu lõi lọc, thiếu người hiểu bệnh gen, thiếu quyền hợp pháp để người của cô không bị bắn bất cứ lúc nào."
+
+Hắn chỉ tập giấy.
+
+"Ta đưa cô cây cầu."
+
+Lâm Tịch hỏi:
+
+"Cầu dẫn tới đâu?"
+
+"Tới một khả năng sống."
+
+"Và phòng thí nghiệm."
+
+"Phòng thí nghiệm đôi khi cũng cứu người."
+
+"Cũng nhốt người."
+
+Thẩm Bạch không phủ nhận.
+
+"Đúng. Nên mới cần hợp đồng."
+
+Di Mạn bật cười lạnh.
+
+"Giấy có giữ được dao không?"
+
+Thẩm Bạch nhìn bà.
+
+"Không. Nhưng không có giấy, dao tới nhanh hơn."
+
+Lý Cù bước lên, nhìn tập hợp đồng.
+
+"Nếu cô ấy ký, chúng ta có nước?"
+
+Câu hỏi ấy rơi vào trạm lọc như một hòn đá.
+
+Lâm Tịch không quay đầu.
+
+Nàng biết rất nhiều người đang nhìn mình.
+
+Không phải ánh mắt ép nàng chết.
+
+Mà là ánh mắt của người khát nhìn một cánh cửa có nước bên kia.
+
+Điều đó nặng hơn ép buộc.
+
+Tiểu Mãn ôm nồi Mãn, đứng cạnh cha mẹ. Hạ Tố sốt chưa hạ. Du Khâu cần thuốc chống nhiễm trùng. A Thất cần khâu tay. Tần Dã cần liều ổn định tiếp. Ninh ôm Đèn Vàng, mắt đầy sợ hãi nhưng không nói.
+
+Tần Dã nhìn Lâm Tịch.
+
+Hắn không lắc đầu.
+
+Không gật.
+
+Hắn để nàng tự đứng trong quyết định.
+
+Đó là sự tin tưởng.
+
+Cũng là một loại tàn nhẫn cần thiết.
+
+Lâm Tịch bước tới trước hộp kim loại. Nàng cầm một lõi sứ lên.
+
+Trắng, sạch, nặng vừa tay.
+
+Một cái lõi như vậy có thể cứu nhiều người hơn một câu kiên cường.
+
+Nàng đặt nó xuống.
+
+"Ta không ký."
+
+Đám đông xao động.
+
+Thẩm Bạch nhìn nàng.
+
+"Cô chắc?"
+
+"Không."
+
+Câu trả lời làm hắn hơi nhướng mày.
+
+Lâm Tịch nói:
+
+"Ta không chắc. Ta rất muốn những thứ này. Ta muốn thuốc cho Tần Dã. Muốn lõi lọc cho nước. Muốn Hạ Tố không chết vì một cơn sốt ngu ngốc. Muốn bọn trẻ uống mà không cần đếm từng giọt."
+
+Nàng nhìn tập hợp đồng.
+
+"Nhưng ta không ký một tờ giấy biến cơ thể ta thành van nước của cả trạm."
+
+Không ai nói gì.
+
+Lâm Tịch quay sang đám người khu xám.
+
+"Nếu nước của các ngươi phải chảy qua phòng thí nghiệm của ta, vậy ta chỉ đổi cái vòi từ tay thành Nam sang tay Ngân Thụ. Hôm nay là ta. Ngày mai là người khác. Luật đầu tiên vừa viết sẽ thành trò cười."
+
+Lý Cù cúi đầu.
+
+Trần Hòe siết thùng nhựa.
+
+Thẩm Bạch nói:
+
+"Cao thượng rất dễ nói khi người khác chịu khát cùng cô."
+
+Lâm Tịch gật đầu.
+
+"Đúng."
+
+Nàng nhìn thẳng vào hắn.
+
+"Nên ta không nói cao thượng. Ta nói điều kiện khác."
+
+Thẩm Bạch mỉm cười.
+
+"Ta nghe."
+
+"Thuốc cứu người bị thương hôm nay, để lại. Nước, để lại một thùng. Lõi sứ, để lại hai cái. Đổi lại, ta cho ông lấy mẫu nước, mẫu rêu, mẫu vảy cá sấu, và một lần kiểm máu tại chỗ, trước mặt Di Mạn, Tần Dã, Hứa Linh nếu bà ấy tới, và ít nhất ba người khu xám chứng kiến. Không rời trạm. Không gây mê. Không giữ mẫu ngoài lượng ghi trên giấy."
+
+Thẩm Bạch nhìn nàng rất lâu.
+
+"Cô đang trả giá với Ngân Thụ bằng mẫu nước bẩn?"
+
+"Không. Ta đang trả giá bằng thứ ông thật sự muốn."
+
+"Máu của cô?"
+
+"Sự ổn định ngoài buồng nuôi."
+
+Lần này, nụ cười của Thẩm Bạch nhạt đi.
+
+Lâm Tịch biết mình đoán đúng.
+
+Nếu Ngân Thụ chỉ cần bắt nàng, Thang Nhuệ đã nổ súng hoặc phun khí mê. Thẩm Bạch tự tới vì hắn cần nàng sống, tỉnh, hợp tác ở một mức nào đó. "Mẫu sống ngoài buồng nuôi" không chỉ là cơ thể nàng, mà là cách nàng sống với Đèn Vàng, nước bẩn, phóng xạ, người khác.
+
+Hắn cần quan sát.
+
+Vậy quan sát cũng có giá.
+
+Thẩm Bạch nói:
+
+"Một lần kiểm máu đổi hai lõi lọc và thuốc, cô đánh giá mình cao quá."
+
+Lâm Tịch đáp:
+
+"Vậy ông đi."
+
+A Thất suýt ngừng thở.
+
+Di Mạn không ngẩng đầu, nhưng khóe miệng động một chút.
+
+Thẩm Bạch nhìn nàng.
+
+Sau lưng hắn, Thang Nhuệ rõ ràng không hài lòng. Nhưng bà ta cũng không ra lệnh bắn. Súng có thể lấy trạm. Không lấy được sự ổn định.
+
+Một lát sau, Thẩm Bạch cười.
+
+"Cô học rất nhanh."
+
+"Ta đói nên học."
+
+"Được. Thuốc để lại. Một thùng nước. Hai lõi sứ. Kiểm máu tại chỗ. Nhưng ta thêm một điều kiện."
+
+"Nói."
+
+"Ta được ở lại quan sát trạm lọc vận hành trong đêm nay."
+
+Kỷ Nam lập tức:
+
+"Không."
+
+Tần Dã cũng nói:
+
+"Không."
+
+Thẩm Bạch nhìn hai người.
+
+"Các anh sợ ta?"
+
+Tần Dã đáp:
+
+"Ghê tởm không phải sợ."
+
+Thẩm Bạch không giận.
+
+Lâm Tịch suy nghĩ.
+
+Nếu để hắn ở lại, nguy hiểm. Nếu không để, hắn có thể rút hết. Nhưng quan sát trước mặt mọi người khác với đưa nàng vào phòng trắng. Cũng là dịp để trạm lọc nhìn kỹ loại người cầm dao sạch sẽ nhất.
+
+"Được." Nàng nói. "Ông ở lại. Không trợ lý. Không vũ khí. Không vào khu người bệnh nếu Di Mạn không cho. Không chạm Đèn Vàng. Không lấy mẫu thứ gì nếu không đọc to trước mặt mọi người."
+
+Thẩm Bạch tháo găng tay, ném vào thùng khử khuẩn.
+
+"Được."
+
+Di Mạn nói:
+
+"Ta còn chưa đồng ý cho hắn vào khu người bệnh."
+
+Lâm Tịch đáp:
+
+"Bà có quyền đuổi."
+
+Di Mạn cầm dao bếp.
+
+"Tốt."
+
+Thẩm Bạch bước qua cổng gãy.
+
+Khi hắn đi qua vạch máu khô, Lâm Tịch đưa tay chặn lại.
+
+"Một việc nữa."
+
+"Gì?"
+
+Nàng chỉ tấm biển luật.
+
+"Đọc."
+
+Thẩm Bạch nhìn nàng.
+
+"Cô muốn ta đọc luật của cô?"
+
+"Muốn vào trạm thì đọc."
+
+Thang Nhuệ cau mày.
+
+Đám người khu xám im thin thít.
+
+Thẩm Bạch cúi mắt nhìn tấm biển.
+
+Một giây.
+
+Hai giây.
+
+Rồi hắn đọc bằng giọng rất sạch:
+
+"Người sốt, mất máu, trẻ nhỏ uống trước..."
+
+Chữ than xấu xí được giọng áo trắng đọc lên nghe kỳ lạ đến mức A Thất suýt bật cười. Nhưng không ai cười.
+
+Vì khoảnh khắc ấy, dù chỉ rất nhỏ, luật không còn nằm trong miệng người mạnh.
+
+Nó nằm trên một tấm biển cũ.
+
+Ai muốn bước vào đều phải nhìn thấy.
+
+## Chương 186: Máu Không Được Rời Trạm
+
+Thẩm Bạch lấy máu Lâm Tịch dưới ánh mắt của ba mươi bảy người.
+
+A Thất đếm.
+
+Nó ngồi trên thùng linh kiện, tay băng vải treo trước ngực, miệng lẩm bẩm từng người như đọc số ốc vít. Ba mươi bảy không tính cá sấu, không tính lính thành Nam đứng ngoài cổng, không tính Đèn Vàng trong hộp.
+
+"Tính Đèn Vàng không?" nó hỏi.
+
+Ninh lập tức ôm hộp sát hơn.
+
+Di Mạn nói:
+
+"Không nói nhảm."
+
+Thẩm Bạch đặt khay dụng cụ lên bàn sắt đã lau bằng nước thô. Hắn mở từng món, đọc to:
+
+"Kim lấy máu vô trùng. Ống mẫu rỗng, dung tích năm mililit. Chất chống đông. Tem niêm tại chỗ. Dao trích da dự phòng, không dùng nếu lấy tĩnh mạch thành công."
+
+Di Mạn đứng đối diện hắn, dao bếp đặt ngang bàn.
+
+"Dao dự phòng bỏ ra xa."
+
+Thẩm Bạch nhìn bà.
+
+"Nếu ven xẹp..."
+
+"Bỏ ra xa."
+
+Hắn mỉm cười, đặt dao trích da vào hộp, đẩy sang bên kia bàn.
+
+Tần Dã ngồi cạnh Lâm Tịch. Hắn không nên ngồi lâu, nhưng không ai bảo được hắn nằm xuống lúc này. Một tay hắn đặt trên đầu gối, tay kia đặt gần súng.
+
+Lâm Tịch xắn tay áo.
+
+Cổ tay nàng còn vết bỏng muối, lòng bàn tay rách vì dây. Thẩm Bạch nhìn những vết thương đó lâu hơn một bác sĩ bình thường.
+
+"Đau không?"
+
+"Ông hỏi vì quan tâm hay vì ghi chú?"
+
+"Cả hai."
+
+"Vậy ghi: đau, nhưng chưa chết."
+
+A Thất nhỏ giọng:
+
+"Câu này hay."
+
+Di Mạn liếc nó.
+
+Nó im.
+
+Thẩm Bạch buộc dây quanh cánh tay Lâm Tịch. Ngón tay hắn lạnh qua lớp găng mới. Hắn tìm ven rất nhanh, chuyên nghiệp đến mức đáng ghét. Người càng giỏi làm việc với cơ thể người khác, càng khiến người ta sợ nếu không biết lòng họ đặt ở đâu.
+
+Kim châm vào da.
+
+Lâm Tịch không nhìn kim.
+
+Nàng nhìn Đèn Vàng.
+
+Ninh đặt hộp cây trên bàn đối diện. Hai lá nhỏ hơi nghiêng về phía nàng. Dưới ánh đèn trạm lọc, màu vàng của lá không sáng rực, chỉ ấm mờ như đốm lửa giấu trong tro.
+
+Máu chảy vào ống.
+
+Đỏ sẫm.
+
+Rất bình thường.
+
+Nhưng mọi người nhìn nó như nhìn một thứ có thể đổi lấy nước, thuốc, hoặc tai họa.
+
+Thẩm Bạch nói:
+
+"Nhịp tim tăng."
+
+Tần Dã đáp:
+
+"Có người cầm kim trước mặt nàng."
+
+"Không chỉ vì vậy."
+
+"Ngươi muốn bị Di Mạn tát?"
+
+Di Mạn nói:
+
+"Ta đang rảnh một tay."
+
+Thẩm Bạch cười khẽ.
+
+"Ta chỉ ghi nhận phản ứng."
+
+Lâm Tịch hỏi:
+
+"Buồng nuôi là gì?"
+
+Tay Thẩm Bạch không dừng.
+
+"Một hệ thống giữ mẫu sống trong môi trường kiểm soát."
+
+"Người."
+
+"Trong tài liệu gọi là mẫu."
+
+"Ta hỏi ông."
+
+Hắn ngẩng lên nhìn nàng.
+
+"Người. Trẻ em phần lớn. Người lớn chịu nhiễm xạ không ổn định bằng."
+
+Trong trạm lọc, hơi thở của nhiều người cùng nghẹn lại.
+
+Hạ Tố ôm Tiểu Mãn.
+
+Ninh trắng mặt.
+
+Lâm Tịch nghe trong tai có tiếng nước chảy, tiếng bơm cũ, tiếng tim mình.
+
+"Ta từ đó ra?"
+
+Thẩm Bạch rút kim, ép bông lên vết châm.
+
+"Cô muốn câu trả lời khoa học hay câu trả lời thật?"
+
+"Thật."
+
+"Ta không chắc cô gái tên Lâm Tịch ở Khu 17 là cô bé trong hồ sơ R2-LX-017. Nhưng khả năng rất cao. Mã tái hoạt, phản ứng với Đèn Vàng, khả năng chịu nhiễm xạ nhẹ, và việc cô sống sau khi thân thể bị ghi tử vong... tất cả khớp."
+
+A Mục hỏi:
+
+"Vậy người trong thân thể này trước kia..."
+
+Nó dừng lại.
+
+Không biết nên nói tiếp thế nào.
+
+Lâm Tịch nói thay:
+
+"Là một người bị thí nghiệm, rồi bị thả ra hoặc làm mất."
+
+Thẩm Bạch niêm ống máu trước mặt mọi người.
+
+"Có thể."
+
+"Ai làm?"
+
+"Ngân Thụ."
+
+"Ông?"
+
+Thẩm Bạch im một nhịp.
+
+Tần Dã nâng mắt.
+
+Di Mạn nắm chặt dao.
+
+Thẩm Bạch nói:
+
+"Khi dự án đó bắt đầu, ta chưa có quyền quyết định. Nhưng ta đã dùng dữ liệu của nó."
+
+Không phải lời xin lỗi.
+
+Nhưng cũng không phải phủ nhận.
+
+Điều đó khiến nó khó đánh hơn.
+
+Lâm Tịch cầm miếng bông đè lên ven.
+
+"Bao nhiêu trẻ?"
+
+"Lô R2 ghi sáu mươi."
+
+"Sống?"
+
+"Bảy qua tháng thứ ba."
+
+"Còn?"
+
+"Hai hồ sơ thất lạc. Một hồ sơ đóng băng. Còn lại tử vong."
+
+Tiểu Mãn bật khóc rất nhỏ.
+
+Không ai bảo nó im.
+
+Ninh cúi đầu ôm Đèn Vàng, vai run.
+
+Lâm Tịch nhìn ống máu đã niêm.
+
+"Máu không được rời trạm."
+
+Thẩm Bạch nhìn nàng.
+
+"Chúng ta đã thỏa thuận ta được lấy mẫu."
+
+"Lấy mẫu tại chỗ. Không rời trạm. Ông có thể kiểm ở đây, ghi ở đây. Muốn đem dữ liệu đi, đem chữ. Không đem máu."
+
+"Thiết bị ở đây không đủ."
+
+"Vậy ông đợi tới khi đủ."
+
+Thang Nhuệ từ ngoài nói vọng vào:
+
+"Đây là vô lý."
+
+Trần Hòe đang nhóm than, ngẩng đầu:
+
+"Vậy đừng lấy."
+
+Lý Cù gõ gậy xuống nền.
+
+"Máu người ta không phải nước giếng."
+
+Một vài người khu xám phụ họa.
+
+Không mạnh.
+
+Nhưng có.
+
+Thẩm Bạch nhìn quanh.
+
+Đây có lẽ là điều hắn không quen nhất: một phòng thí nghiệm không sạch, một mẫu không nằm yên, và rất nhiều người không hiểu khoa học nhưng hiểu cảm giác bị lấy mất thứ trong người.
+
+Hắn đặt ống máu vào giá.
+
+"Được. Mẫu lưu tại trạm trong hộp lạnh. Ta niêm chung với cô."
+
+"Không." Lâm Tịch nói. "Niêm với Di Mạn."
+
+Di Mạn nhướng mày.
+
+Thẩm Bạch bật cười.
+
+"Cô thật sự xem bà ấy là tòa án?"
+
+Lâm Tịch đáp:
+
+"Không. Là người giữ nồi."
+
+Di Mạn cầm ống niêm, nhìn nó như nhìn một con sâu độc.
+
+"Cái này để đâu?"
+
+Mộc Sanh nói:
+
+"Tủ lạnh y tế trên tầng điều khiển còn dùng được nếu cấp nguồn phụ."
+
+A Thất lập tức:
+
+"Nguồn phụ nào nữa?"
+
+Mộc Sanh nhìn xe Hắc Nha mất ắc quy.
+
+A Thất ôm đầu:
+
+"Ta biết ngay. Cái gì cũng ăn nguồn."
+
+Thẩm Bạch để lại hai lõi sứ, thuốc và một thùng nước như đã thỏa thuận. Thùng nước được Di Mạn mở ngay, chia theo luật trước mặt mọi người. Không ai được cất riêng. Thang Nhuệ nhìn cảnh đó, vẻ mặt khó đọc.
+
+Khi đến lượt một lính thành Nam bị thương mất nửa bàn tay, Di Mạn cũng cho uống.
+
+Một người khu xám lập tức bất mãn:
+
+"Hắn vừa chĩa súng vào chúng ta."
+
+Di Mạn đáp:
+
+"Hắn mất máu. Luật viết vậy."
+
+"Hắn là người của thành!"
+
+Lâm Tịch nhìn người đó.
+
+"Nếu luật chỉ dùng khi thích người uống, nó không phải luật."
+
+Người kia nghẹn lại.
+
+Người lính bị thương cầm bát bằng tay còn lại, mắt lộ vẻ hoang mang sau mặt nạ. Có lẽ hắn không ngờ mình sẽ được uống nước từ chính nhóm người vừa bị hắn chĩa súng.
+
+Hắn uống một ngụm.
+
+Không nói cảm ơn.
+
+Nhưng khi trả bát, hắn đặt xuống bằng cả hai tay có thể.
+
+Thẩm Bạch nhìn cảnh đó rất lâu.
+
+"Cô đang tạo ra thứ rất khó quản."
+
+Lâm Tịch đáp:
+
+"Tốt."
+
+"Khó quản không đồng nghĩa tốt."
+
+"Dễ quản đã biến bọn họ thành hàng thải cư."
+
+Hắn im.
+
+Đêm xuống sâu hơn.
+
+Mưa bụi đỏ ngoài trạm thưa dần. Đèn xe an ninh tắt bớt để không kích thích cá sấu cống. Người khu xám thay phiên giữ hàng nước, thay phiên canh đường, thay phiên nghỉ dưới mái bê tông nứt.
+
+Không ai gọi nơi này là nhà.
+
+Chưa ai dám.
+
+Nhưng cũng không ai vội rời đi.
+
+Nửa đêm, Ninh bỗng kéo tay áo Lâm Tịch.
+
+Cậu bé chỉ vào hộp Đèn Vàng.
+
+Hai lá cây nhỏ mở ra hoàn toàn.
+
+Không nghiêng về phía nàng.
+
+Mà nghiêng về phía đường ống sâu dưới trạm.
+
+Lâm Tịch cúi xuống.
+
+Trong hộp đất, giữa hai lá cũ, có một chấm vàng rất nhỏ nhú lên.
+
+Mầm thứ hai.
+
+Thẩm Bạch cũng nhìn thấy.
+
+Ánh mắt hắn sáng lên.
+
+Tần Dã lập tức nói:
+
+"Lùi lại."
+
+Thẩm Bạch dừng chân.
+
+Lâm Tịch nhìn mầm nhỏ.
+
+Trạm lọc vừa có nước.
+
+Đèn Vàng liền nảy thêm mầm.
+
+Điều đó là hy vọng.
+
+Cũng là tín hiệu.
+
+Từ thiết bị trên cổ tay Thẩm Bạch, một đốm đỏ bỗng nhấp nháy.
+
+Hắn cúi xuống nhìn.
+
+Nụ cười trên mặt biến mất.
+
+Lâm Tịch hỏi:
+
+"Gì?"
+
+Thẩm Bạch im hai giây, rồi nói:
+
+"Đèn Vàng vừa phát tín hiệu sinh trưởng."
+
+A Thất lập tức:
+
+"Nó báo cho ai?"
+
+Thẩm Bạch nhìn Lâm Tịch.
+
+"Không chỉ cho ta."
+
+Ngoài trạm, rất xa trong phế thổ tối, có một tiếng hú dài đáp lại.
+
+Không phải còi thành.
+
+Không phải cá sấu.
+
+Kỷ Nam đứng bật dậy.
+
+"Đó là tín hiệu gọi đàn."
+
+Lâm Tịch nhìn mầm vàng nhỏ trong hộp.
+
+Hy vọng vừa mọc lên.
+
+Và phế thổ đã nghe thấy.

@@ -1,0 +1,361 @@
+# Phần 7: Hợp Đồng Bằng Nước
+
+## Chương 241: Xe Nước Không Dừng
+
+Chiếc xe đổi hàng đầu tiên quay đầu trước vạch trắng.
+
+Nó vốn chở hai bao muối thô, một bao than vụn và ba bó vải lọc cũ. Người kéo xe là ông già từng đổi kim loại với Cổng Nước Xám từ ngày chợ mới dựng. Ông ta nhìn thấy cờ, nhìn thấy Chu Kính, rồi nhìn thấy lính hộ tống Thành Nam đặt tay lên súng.
+
+Sau đó ông quay xe.
+
+Không cần ai đe.
+
+Sợ hãi ở phế thổ rất biết đọc tình huống.
+
+Di Mạn đứng trong cổng, mặt đen như đáy nồi cháy.
+
+"Bao muối đó hôm qua đã hẹn."
+
+Chu Kính nói:
+
+"Giao dịch với tài sản đang tranh chấp phải thông qua bên quản lý hợp pháp."
+
+"Tức là qua ngươi?"
+
+"Qua Thành Nam."
+
+"Khác gì?"
+
+Chu Kính mỉm cười.
+
+"Khác ở chỗ có giấy."
+
+Di Mạn cầm gáo như muốn ném.
+
+Lâm Tịch ngăn nàng lại.
+
+Không phải vì nàng không muốn ném.
+
+Mà vì gáo còn dùng được.
+
+Trong kho, muối chỉ còn một nhúm dưới đáy túi. Không có muối, cháo loãng vẫn sống được, nhưng người sốt, người tiêu chảy, người làm nặng sẽ gục nhanh hơn. Than có thể kiếm cách khác. Vải lọc có thể giặt lại đến rách. Muối thì không thể vắt từ lòng tốt.
+
+Chu Kính biết.
+
+Hắn đánh vào chỗ bếp trước.
+
+Không phải kho súng.
+
+Bếp.
+
+Lâm Tịch nhìn ông già kéo xe đang do dự ở xa.
+
+"Mã Lục."
+
+Thợ vá giày bước ra.
+
+"Gì?"
+
+"Giày của ông ấy ngươi vá chưa?"
+
+"Vá rồi. Còn nợ nửa công."
+
+"A Thất, ghi: ông kéo xe muối nợ Cổng Xám nửa công vá giày. Theo luật chợ, người đang có nợ công được vào khu thanh toán, không tính giao dịch mới."
+
+Chu Kính cau mày.
+
+"Cô đang chơi chữ."
+
+Thẩm Bạch nói rất khẽ:
+
+"Cả hai bên đều vậy."
+
+Lâm Tịch gọi lớn:
+
+"Ông vào trả nợ công. Hàng trên xe niêm lại, chưa giao dịch."
+
+Ông già kéo xe sững sờ.
+
+Lính Thành Nam nhìn Chu Kính.
+
+Chu Kính chưa kịp nói, Bà Hôi đã hét từ chợ:
+
+"Đúng rồi! Nợ không trả là xấu lắm! Cho người ta vào trả nợ!"
+
+Đám đông lập tức hiểu ra.
+
+"Ta cũng nợ vá áo!"
+
+"Ta nợ bát nước hôm qua!"
+
+"Ta nợ công đào rãnh!"
+
+Trong chớp mắt, cả cái chợ nghèo lôi nợ ra như lôi vũ khí. Những món nợ từng làm người ta xấu hổ, lúc này bỗng thành dây nối để hàng hóa không bị Chu Kính cắt đứt.
+
+Chu Kính lạnh giọng:
+
+"Nợ giả."
+
+Lâm Tịch chỉ bảng.
+
+"Ghi từ hôm qua. Có tên, có việc, có người chứng."
+
+Tạ Khuông đứng cạnh bảng, giáo trong tay.
+
+"Muốn kiểm từng món?"
+
+Chu Kính nhìn những dòng chữ đen trên bảng nợ. Hắn có thể nói bảng không hợp pháp. Nhưng nếu nói vậy trước mặt những người đã dùng chính bảng ấy đổi nước suốt mấy ngày, hắn sẽ biến mọi bát nước họ nhận thành thứ vô nghĩa.
+
+Hắn chọn im.
+
+Ông già kéo xe vào khu thanh toán.
+
+Không ai gọi đó là giao dịch.
+
+Nhưng khi Mã Lục nhận nửa công bằng một miếng da giày, Di Mạn "tiện tay" đổi một bát cháo mặn lấy quyền giữ hộ bao muối qua đêm, cả chợ đều giả vờ không thấy.
+
+Giữ hộ là một chữ rất hay.
+
+Ở phế thổ, người nghèo không sở hữu được nhiều thứ, nhưng rất giỏi giữ hộ nhau. Giữ hộ cái nồi khi chủ bị bắt đi kiểm dịch. Giữ hộ cái áo khi người kia xuống cống. Giữ hộ một đứa trẻ trong lúc mẹ đi đổi nước. Giữ hộ tin xấu cho đến khi người nghe có sức đứng.
+
+Di Mạn đặt bao muối vào kho, niêm bằng dây vải xám, ngoài dây treo một mảnh gỗ:
+
+`Muối của lão kéo xe. Cổng giữ hộ. Chưa mua.`
+
+Bà Hôi nhìn dòng chữ, cười đến nhăn cả mặt.
+
+"Chưa mua mà nấu cháo mặn thì sao?"
+
+Di Mạn đáp:
+
+"Thì ghi nợ muối."
+
+"Nợ ai?"
+
+"Người còn sống để đòi."
+
+Ông già kéo xe đứng cạnh cửa kho, nghe câu đó, bỗng cúi đầu rất thấp.
+
+"Ta tên Đàm Lão."
+
+Tiểu Mãn cầm bảng thay A Thất, vội viết.
+
+Đàm Lão nói:
+
+"Đừng ghi lão kéo xe. Ghi tên. Ta sợ sau này chết rồi người ta không biết đòi ai."
+
+Di Mạn nhìn ông, rồi gật.
+
+"Được. Muối của Đàm Lão. Cổng giữ hộ. Nếu dùng trước, trả bằng nước hoặc công sau."
+
+Một bao muối thô bỗng có tên.
+
+Và vì có tên, Chu Kính muốn gọi nó là hàng hóa cũng khó hơn một chút.
+
+Cổng Nước Xám không thắng luật Thành Nam.
+
+Nó chỉ dùng nợ cũ vá một lỗ thủng vừa bị giấy chọc ra.
+
+## Chương 242: Nước Không Ký Một Mình
+
+Chu Kính đổi cách đánh vào giờ thứ tư.
+
+Hắn không phát thẻ nữa.
+
+Hắn phát nước.
+
+Ba thùng nước trong được đặt ngoài vạch. Nước trong đến mức người ta có thể thấy đáy thùng phản chiếu trời xám. So với nước hơi đục của Cổng Nước Xám, nó giống một lời xúc phạm.
+
+Lính hộ tống múc một gáo lên, đổ vào cốc sắt sạch.
+
+Chu Kính nói:
+
+"Người đăng ký lao động tạm trú được nhận nước ngay. Không cần chờ lô, không cần đổi công."
+
+Hàng người ngoài vạch rung lên.
+
+Một bà già thì thào:
+
+"Nước trong..."
+
+Di Mạn nắm chặt gáo của mình.
+
+Cổng Xám có luật.
+
+Thành Nam có nước trong.
+
+Luật rất khó uống khi cổ họng cháy.
+
+Lâm Tịch bước ra, nhìn thùng nước.
+
+"Nguồn?"
+
+Chu Kính đáp:
+
+"Thành Nam."
+
+"Lô?"
+
+"Không cần."
+
+"Người lọc?"
+
+"Cô không có quyền hỏi."
+
+Lâm Tịch quay về phía đám đông.
+
+"Ở Cổng Xám, nhận nước được hỏi lô. Nhận nước ngoài kia thì không."
+
+Một người đàn ông mắng:
+
+"Hỏi lô có làm nước trong hơn không?"
+
+"Không."
+
+"Vậy để ta uống!"
+
+Hắn lao tới thùng nước Thành Nam.
+
+Tạ Khuông định chặn, nhưng Lâm Tịch giơ tay.
+
+Không chặn.
+
+Người đàn ông nhận cốc nước, uống một hơi cạn. Nước chảy qua cằm hắn. Hắn thở ra, mắt đỏ lên vì khoái cảm đơn giản của một cổ họng được cứu.
+
+"Ngon." Hắn nói. "Sạch."
+
+Đám đông càng động.
+
+Hàn Cổ lau miệng.
+
+Môi hắn ướt. Ánh mắt hắn sáng lên rất nhanh, rồi tối xuống cũng rất nhanh khi thấy người khác nhìn mình. Uống nước trong trước mặt những người đang uống nước đục là một kiểu no xấu hổ. Hắn muốn nói thêm vài câu để biện hộ, nhưng cổ họng vừa được cứu khiến mọi lời đều nghẹn lại.
+
+"Ta làm công cả ngày." Hắn nói. "Ta cũng đáng được uống nước trong."
+
+Không ai phản bác.
+
+Vì hắn đúng.
+
+Đó mới là chỗ độc.
+
+Thành Nam không cần đưa thứ giả. Nó đưa thứ thật. Nước thật, thuốc thật, thẻ thật, dấu thật. Mỗi thứ thật ấy đặt lên bàn đều làm luật của Cổng Nước Xám trông nghèo đi, vụng về đi, đục hơn đi.
+
+Lâm Tịch nhìn cốc nước trong tay Hàn Cổ.
+
+Nàng không ghen với nước sạch.
+
+Nàng ghen với sự dễ dàng của nó.
+
+Cổng Xám muốn cho một bát nước phải lọc, ghi lô, kiểm tên, chịu mắng, chịu nghi. Thành Nam chỉ cần mở nắp thùng và nói: ai theo ta thì uống.
+
+Sự hào phóng có điều kiện luôn nhìn đẹp hơn công bằng thiếu thốn.
+
+Lâm Tịch nhìn hắn.
+
+"Tên ngươi?"
+
+Hắn cảnh giác.
+
+"Làm gì?"
+
+"Ghi người uống. Nếu ngày mai ngươi đau bụng, Cổng Xám không chữa người vô danh."
+
+Hắn nghẹn.
+
+Chu Kính nói:
+
+"Cô đe dọa người uống nước?"
+
+Mộc Sanh từ khu bệnh đi ra, mặt mệt nhưng giọng rõ:
+
+"Không. Ta cần biết ai uống gì để chữa."
+
+Bà Hôi hét:
+
+"Đúng! Đau bụng mà không nhớ uống của ai thì bác sĩ thần cũng bó tay!"
+
+Người đàn ông cầm cốc, do dự.
+
+Cuối cùng hắn nói tên.
+
+A Thất không có ở đây, Tiểu Mãn lại cầm bảng, viết chữ xiêu vẹo:
+
+`Hàn Cổ: uống nước Thành Nam, không biết lô.`
+
+Hàn Cổ nhìn dòng chữ, bỗng thấy cốc nước trong tay không còn trong như lúc đầu.
+
+Lâm Tịch nói:
+
+"Ai uống cứ uống. Nhưng ghi."
+
+Chu Kính nhìn nàng như nhìn một cái gai nhỏ mắc trong găng.
+
+Nước của hắn vẫn được uống.
+
+Nhưng không còn vô hình.
+
+Đến cuối giờ thứ tư, hai mươi ba người uống nước Thành Nam. Mười một người ký tạm trú. Mười hai người chỉ uống và ghi tên.
+
+Chu Kính lấy được một phần.
+
+Cổng Nước Xám giữ lại một phần.
+
+Và trên bảng nước, lần đầu tiên có hai cột đặt cạnh nhau:
+
+`Nước Cổng Xám: đục, có lô, có người chịu tên.`
+
+`Nước Thành Nam: trong, không lô, người uống tự ghi.`
+
+Di Mạn nhìn hai dòng, nghiến răng.
+
+"Đọc lên tức chết."
+
+Lâm Tịch đáp:
+
+"Nhưng sống."
+
+Tần Dã nhìn bảng, nói khẽ:
+
+"Hôm nay ngươi học thêm một luật."
+
+"Luật gì?"
+
+"Không phải lúc nào cũng thắng bằng cách ngăn người khác lấy đồ. Có lúc thắng bằng cách bắt món đồ đó để lại dấu."
+
+Lâm Tịch nhìn hai cột nước.
+
+"Nếu ngày mai họ mang bột trắng tới?"
+
+"Ghi."
+
+"Mang thuốc ổn định gen?"
+
+Tần Dã im một nhịp.
+
+"Càng phải ghi."
+
+Nàng quay sang hắn.
+
+"Kể cả nếu thuốc đó cứu anh?"
+
+Hắn nhìn nàng, ánh mắt bình tĩnh nhưng mệt.
+
+"Nhất là nếu thuốc đó cứu ta."
+
+Lâm Tịch ghét câu trả lời ấy.
+
+Vì nó đúng.
+
+Nàng từng nghĩ thứ khó nhất là cứu Tần Dã khi không có thuốc. Bây giờ mới biết, khó hơn có thể là một ngày thuốc xuất hiện trong tay kẻ muốn nàng đổi cả cổng lấy một liều.
+
+Nàng lấy than viết thêm dưới bảng:
+
+`Đồ cứu mạng càng phải ghi nguồn.`
+
+Di Mạn đọc xong, thở dài.
+
+"Nghe như câu nói để sau này tự đâm tim mình."
+
+Lâm Tịch đáp:
+
+"Viết trước, đến lúc đau khỏi giả vờ quên."

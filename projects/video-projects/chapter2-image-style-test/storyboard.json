@@ -1,0 +1,56 @@
+{
+  "title": "chapter2 image style test",
+  "language": "vi",
+  "scenes": [
+    {
+      "id": "scene-001",
+      "duration": 17.58,
+      "image": "assets/scene-001-v4-closeup.png",
+      "audio": "",
+      "narration": "# Phần 2: Người Đàn Ông Không Đứng Dậy Được ## Chương 6: Nước Chỉ Còn Hai Ngụm Nước trong nắp hộp chỉ còn hai ngụm. Lâm Tịch nhìn hai ngụm nước ấy lâu đến mức cổ họng càng lúc càng đau. Nước không trong.",
+      "subtitle": "# Phần 2: Người Đàn Ông Không Đứng Dậy Được ## Chương 6: Nước Chỉ Còn Hai Ngụm Nước trong nắp hộp chỉ còn hai ngụm. Lâm Tịch nhìn hai ngụm nước ấy lâu đến mức cổ họng càng lúc càng đau. Nước không trong.",
+      "text": "",
+      "image_prompt": "Faithfully illustrate this exact story beat from the narration, not a generic apocalypse wallpaper. Visual benchmark: gritty cinematic survival frame like a high-budget wasteland film still, beautiful but grimy scavenger girl beside wounded righteous black-clad man inside a torn tarp shelter, oil lantern glow, rusted barrels, muddy floor, ruined industrial wasteland visible outside when relevant. Prioritize story accuracy, body language, dirty props, readable interaction, consistent faces, and clear facial identity over generic wallpaper. CONTINUITY FROM PREVIOUS SCENE: start of the story sequence. MUST SHOW: Lam Tich, a beautiful but fragile sixteen-year-old Asian wasteland scavenger girl, delicate clear facial features under soot and grime, large wary tired eyes, cracked lips, messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, quiet stubborn survival beauty, not glamorous, not clean, Tan Da, a wounded Asian male mercenary with a clear sharply rendered face, strong straight brows, steady righteous eyes, principled protective aura, restrained masculine dignity, black tactical coat, feverish and unable to stand but still upright in spirit, blood-stained abdomen, not villainous, hostile radioactive wasteland environment matching the narration, Lam Tich carefully raising the metal can lid to Tan Da's lips, small survivor looking toward something unreachable in the distance, rusty water can and unsafe scavenged water, small metal can lid holding the last two sips of yellowish filtered water. Characters: Lam Tich, a beautiful but fragile sixteen-year-old Asian wasteland scavenger girl, delicate clear facial features under soot and grime, large wary tired eyes, cracked lips, messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, quiet stubborn survival beauty, not glamorous, not clean, Tan Da, a wounded Asian male mercenary with a clear sharply rendered face, strong straight brows, steady righteous eyes, principled protective aura, restrained masculine dignity, black tactical coat, feverish and unable to stand but still upright in spirit, blood-stained abdomen, not villainous. Setting: hostile radioactive wasteland environment matching the narration. Shot type: wide establishing shot showing place and scale. Action: Lam Tich carefully raising the metal can lid to Tan Da's lips, small survivor looking toward something unreachable in the distance. Previous action handoff: none. Persistent visual anchors: keep character design and world style consistent. Important props: rusty water can and unsafe scavenged water, small metal can lid holding the last two sips of yellowish filtered water. Mood: tense cinematic survival mood. Composition must make the story action readable at first glance, with foreground story objects, midground characters, and background world context. Use grounded Asian webnovel casting, natural faces, dirty damaged clothes, readable faces when characters are visible, no idol makeup, no clean fantasy armor. Lam Tich may look prettier than before but must remain weak, hungry, dirty, and believable in the wasteland. Tan Da must not look like a faceless villain; show a clearer righteous protective expression whenever his face appears. Keep spatial logic from the previous scene unless the narration clearly changes location. Avoid unrelated cabins, clean modern streets, fantasy armor, random portraits, extra characters, or objects not implied by the narration. premium cinematic post-apocalyptic wasteland webnovel keyframe, grounded survival drama, dirty realistic characters inside a torn tarp shelter or ruined junkyard when the scene implies shelter, rusted barrels, broken plastic sheets, patched canvas, muddy floor, scavenged metal bowls, oil lantern or weak practical light, foreground survival props, midground character action, background ruined industrial wasteland and dusty sky, warm amber practical light against cold polluted daylight, realistic grime, torn cloth, sweat, ash, dried blood, 35mm cinema lens, shallow depth of field, dramatic rim light, subtle film grain, muted natural colors, high contrast but not oversaturated, no text, no watermark. Scene context: # Phần 2: Người Đàn Ông Không Đứng Dậy Được ## Chương 6: Nước Chỉ Còn Hai Ngụm Nước trong nắp hộp chỉ còn hai ngụm. Lâm Tịch nhìn hai ngụm nước ấy lâu đến mức cổ họng càng lúc càng đau. Nước không trong.",
+      "visual_must_show": [
+        "Lam Tich, a beautiful but fragile sixteen-year-old Asian wasteland scavenger girl, delicate clear facial features under soot and grime, large wary tired eyes, cracked lips, messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, quiet stubborn survival beauty, not glamorous, not clean",
+        "Tan Da, a wounded Asian male mercenary with a clear sharply rendered face, strong straight brows, steady righteous eyes, principled protective aura, restrained masculine dignity, black tactical coat, feverish and unable to stand but still upright in spirit, blood-stained abdomen, not villainous",
+        "hostile radioactive wasteland environment matching the narration",
+        "Lam Tich carefully raising the metal can lid to Tan Da's lips",
+        "small survivor looking toward something unreachable in the distance",
+        "rusty water can and unsafe scavenged water",
+        "small metal can lid holding the last two sips of yellowish filtered water"
+      ],
+      "visual_setting": [
+        "hostile radioactive wasteland environment matching the narration"
+      ],
+      "visual_action": [
+        "Lam Tich carefully raising the metal can lid to Tan Da's lips",
+        "small survivor looking toward something unreachable in the distance"
+      ],
+      "visual_props": [
+        "rusty water can and unsafe scavenged water",
+        "small metal can lid holding the last two sips of yellowish filtered water"
+      ],
+      "visual_shot_type": "wide establishing shot showing place and scale",
+      "visual_continuity": {
+        "summary": "start of the story sequence",
+        "anchors": [],
+        "last_action": "none"
+      },
+      "negative_prompt": "solo, one person, missing woman, missing man, cropped head, head out of frame, face out of frame, blurry face, smeared eyes, distorted nose, distorted mouth, faceless, standing gun pose, text, watermark, anime, cartoon, plastic skin, beauty portrait, clean clothes, low quality, bad anatomy, extra limbs, deformed hands",
+      "audio_duration": 17.23,
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052120,
+        "size": "512x704",
+        "hires_scale": 1.25,
+        "upscale_model": ""
+      },
+      "comfy_prompt": "tight emotional close-up inside a dirty post-apocalyptic tarp shelter, beautiful but fragile young Asian scavenger woman in foreground left, soot-smudged delicate face, clear eyes, visible nose and mouth, cracked lips, messy black hair tied back, holding a small metal can lid of yellow water near camera, wounded Asian male mercenary in background right leaning weakly against torn canvas, clear righteous tired face visible, strong brows, protective eyes, black tactical coat, dirty abdomen bandage, warm oil lantern glow on both faces, muddy floor and rusted kettle blurred behind, intimate survival drama, faces large in frame, sharp facial features, cinematic realistic film still, 35mm lens, shallow depth of field, muted colors, realistic grime"
+    }
+  ]
+}

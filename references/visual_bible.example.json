@@ -4,20 +4,21 @@
     "genre": "Vietnamese/Chinese wasteland apocalypse webnovel",
     "base_palette": "polluted crimson sky, ash gray debris, rust brown metal, sickly green radiation hints, muted cinematic contrast",
     "camera_language": "mostly side/back views, readable story action, grounded cinematic realism",
+    "approved_reference_recipe": "cinematic 16:9 shelter interior; Lâm Tịch sits/kneels in the left third with a readable dirty but beautiful three-quarter face; Tần Dã lies or half-reclines in the right third wearing black tactical clothing, wounded abdomen, clear side-profile face; warm oil lantern between them; torn tarp walls and patched canvas frame the scene; foreground rusty bucket, bottle, scraps and survival props; background opens to ruined industrial wasteland with haze and distant structures; warm amber lantern against cold daylight, deep shadows, realistic grime",
     "avoid": ["clean modern city", "fantasy armor", "random beauty portraits", "unrelated cabins", "extra characters"]
   },
   "characters": {
     "Lâm Tịch": {
       "aliases": ["Lam Tich", "nàng", "cô gái"],
-      "appearance": "fragile sixteen-year-old female wasteland scavenger, thin body, dirty torn coat, cracked hands, exhausted but stubborn",
-      "continuity_anchors": ["dirty torn coat", "thin body", "cracked dirty hands", "wary side/back view"],
-      "avoid": ["glamorous beauty portrait", "clean clothes", "luxury outfit"]
+      "appearance": "beautiful but fragile sixteen-year-old Asian wasteland scavenger girl, delicate clear facial features under soot and grime, large wary tired eyes, cracked lips, messy black hair tied back with loose strands, slim malnourished body, dirty torn gray-brown coat, quiet stubborn survival beauty, not glamorous, not clean",
+      "continuity_anchors": ["delicate clear face under grime", "messy black hair tied back", "dirty torn gray-brown coat", "slim malnourished body", "large wary tired eyes", "cracked dirty hands"],
+      "avoid": ["glamorous beauty portrait", "idol makeup", "clean clothes", "luxury outfit", "porcelain skin"]
     },
     "Tần Dã": {
       "aliases": ["Tan Da", "người đàn ông", "lính đánh thuê"],
-      "appearance": "wounded male mercenary, black tactical coat, restrained dangerous aura, blood-stained abdomen",
-      "continuity_anchors": ["black tactical coat", "wounded abdomen", "restrained expression"],
-      "avoid": ["clean soldier uniform", "fantasy armor", "smiling hero pose"]
+      "appearance": "wounded Asian male mercenary with a clear sharply rendered face, strong straight brows, steady righteous eyes, principled protective aura, restrained masculine dignity, wet messy black hair, black tactical coat, lying or half-reclining because he cannot stand, feverish but still upright in spirit, blood-stained abdomen, not villainous",
+      "continuity_anchors": ["clear sharply rendered face", "strong straight brows", "steady righteous eyes", "wet messy black hair", "black tactical coat", "wounded abdomen", "lying or half-reclining pose", "restrained protective expression"],
+      "avoid": ["blurred face", "faceless villain", "standing pose", "clean soldier uniform", "fantasy armor", "smiling hero pose"]
     }
   },
   "locations": {

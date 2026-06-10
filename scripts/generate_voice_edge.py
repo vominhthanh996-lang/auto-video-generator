@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import argparse
 import asyncio
 import json
+import os
 import sys
 import subprocess
 import tempfile
@@ -9,7 +10,11 @@ import re
 from pathlib import Path
 
 
-EXTRA_PACKAGES = Path(r"E:\ThanhMV\python-packages")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WORK_ROOT = REPO_ROOT.parent
+
+EXTRA_PACKAGES = Path(os.environ.get("AUTO_VIDEO_EXTRA_PACKAGES", str(WORK_ROOT / "python-packages")))
 if EXTRA_PACKAGES.exists():
     sys.path.insert(0, str(EXTRA_PACKAGES))
 
@@ -23,6 +28,9 @@ VOICE_PRESETS = {
     "en-male": "en-US-GuyNeural",
 }
 
+TTS_TIMEOUT_SECONDS = int(os.environ.get("AUTO_VIDEO_TTS_TIMEOUT_SECONDS", "90"))
+VOICE_SCENE_ATTEMPTS = max(1, int(os.environ.get("AUTO_VIDEO_VOICE_SCENE_ATTEMPTS", "5")))
+
 VOICE_STYLES = {
     "plain": {
         "rate": "+0%",
@@ -32,52 +40,55 @@ VOICE_STYLES = {
         "paragraph_pause": 0.3,
     },
     "story-emotional": {
-        "rate": "-13%",
+        "rate": "-3%",
         "pitch": "-2Hz",
-        "comma_pause": 0.14,
-        "sentence_pause": 0.42,
-        "paragraph_pause": 0.9,
-        "dialogue_pause": 0.32,
-        "scene_pause": 1.15,
-        "danger_rate": "-8%",
-        "soft_rate": "-18%",
-        "dialogue_rate": "-10%",
-        "inner_rate": "-19%",
-        "reveal_rate": "-15%",
-        "list_rate": "-9%",
-        "cliffhanger_pause": 0.75,
-        "reveal_pause": 0.82,
-        "inner_pause": 0.62,
-        "list_pause": 0.22,
-        "hook_rate_delta": -2,
-        "release_rate_delta": -3,
+        "comma_pause": 0.04,
+        "sentence_pause": 0.16,
+        "paragraph_pause": 0.32,
+        "dialogue_pause": 0.12,
+        "scene_pause": 0.42,
+        "danger_rate": "-1%",
+        "soft_rate": "-7%",
+        "dialogue_rate": "-2%",
+        "inner_rate": "-8%",
+        "reveal_rate": "-5%",
+        "list_rate": "-1%",
+        "cliffhanger_pause": 0.32,
+        "reveal_pause": 0.34,
+        "inner_pause": 0.26,
+        "list_pause": 0.07,
+        "hook_rate_delta": 1,
+        "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 155,
+        "max_unit_chars": 700,
     },
     "wasteland-dark": {
-        "rate": "-15%",
+        "rate": "+3%",
         "pitch": "-3Hz",
-        "comma_pause": 0.16,
-        "sentence_pause": 0.5,
-        "paragraph_pause": 1.05,
-        "dialogue_pause": 0.36,
-        "scene_pause": 1.35,
-        "danger_rate": "-7%",
-        "soft_rate": "-20%",
-        "dialogue_rate": "-11%",
-        "inner_rate": "-22%",
-        "reveal_rate": "-17%",
-        "list_rate": "-10%",
-        "cliffhanger_pause": 0.9,
-        "reveal_pause": 0.95,
-        "inner_pause": 0.72,
-        "list_pause": 0.24,
-        "hook_rate_delta": -2,
-        "release_rate_delta": -4,
+        "max_inserted_pause": 0.0,
+        "tight_punctuation": True,
+        "short_sentence_as_comma": True,
+        "comma_pause": 0.025,
+        "sentence_pause": 0.07,
+        "paragraph_pause": 0.12,
+        "dialogue_pause": 0.04,
+        "scene_pause": 0.2,
+        "danger_rate": "+5%",
+        "soft_rate": "-2%",
+        "dialogue_rate": "+4%",
+        "inner_rate": "-4%",
+        "reveal_rate": "+0%",
+        "list_rate": "+4%",
+        "cliffhanger_pause": 0.09,
+        "reveal_pause": 0.1,
+        "inner_pause": 0.08,
+        "list_pause": 0.02,
+        "hook_rate_delta": 2,
+        "release_rate_delta": -1,
         "max_rate_jump": 5,
         "max_pitch_jump": 3,
-        "max_unit_chars": 145,
+        "max_unit_chars": 700,
     },
 }
 
@@ -101,25 +112,25 @@ CHARACTER_ARCHETYPES = {
         "hints": ("thật thà", "chân thật", "thành thật", "ngây ngô", "chất phác"),
         "rate_delta": -2,
         "pitch_delta": 0,
-        "pause_delta": 0.08,
+        "pause_delta": 0.03,
     },
     "righteous": {
         "hints": ("chính khí", "ngay thẳng", "chính trực", "kiên định", "bảo vệ", "không lùi"),
         "rate_delta": -1,
         "pitch_delta": -1,
-        "pause_delta": 0.04,
+        "pause_delta": 0.02,
     },
     "evil": {
         "hints": ("tà ác", "ác độc", "nham hiểm", "tàn nhẫn", "độc ác", "sát ý"),
         "rate_delta": -4,
         "pitch_delta": -3,
-        "pause_delta": 0.12,
+        "pause_delta": 0.05,
     },
     "hypocrite": {
         "hints": ("giả nhân giả nghĩa", "đạo mạo", "ra vẻ", "miệng thì", "ngoài mặt", "giả vờ tử tế"),
         "rate_delta": -3,
         "pitch_delta": 1,
-        "pause_delta": 0.1,
+        "pause_delta": 0.04,
     },
     "flattering": {
         "hints": ("nịnh nọt", "lấy lòng", "xun xoe", "cười nịnh", "dạ dạ", "vâng vâng"),
@@ -137,7 +148,7 @@ CHARACTER_ARCHETYPES = {
         "hints": ("lạnh lùng", "lạnh nhạt", "vô cảm", "bình tĩnh", "không cảm xúc", "lạnh xuống"),
         "rate_delta": -5,
         "pitch_delta": -2,
-        "pause_delta": 0.12,
+        "pause_delta": 0.04,
     },
     "afraid": {
         "hints": ("run rẩy", "sợ hãi", "hoảng", "kinh hãi", "tái mặt", "nín thở"),
@@ -176,9 +187,13 @@ def relpath(path, base):
         return str(path.resolve())
 
 
+def run_quiet(cmd):
+    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
 async def synthesize(text, output, voice, rate, pitch):
     communicate = edge_tts.Communicate(text=text, voice=voice, rate=rate, pitch=pitch)
-    await communicate.save(str(output))
+    await asyncio.wait_for(communicate.save(str(output)), timeout=TTS_TIMEOUT_SECONDS)
 
 
 def parse_rate(rate):
@@ -225,7 +240,7 @@ def load_character_bible(path):
     if not path or not path.exists():
         return {}
     data = json.loads(path.read_text(encoding="utf-8-sig"))
-    return data.get("characters") or {}
+    return data
 
 
 def apply_learning(profile, learning):
@@ -297,13 +312,68 @@ def detect_archetypes(text, profile):
 def matched_characters(text, profile):
     lower = text.lower()
     matches = []
-    bible = profile.get("_character_bible") or {}
+    bible = (profile.get("_character_bible") or {}).get("characters") or {}
     for character_name, character in bible.items():
         aliases = [character_name]
         aliases.extend(character.get("aliases") or [])
         if any(str(alias).lower() in lower for alias in aliases):
             matches.append((character_name, character))
     return matches
+
+
+def resolve_voice(value):
+    if not value:
+        return None
+    return VOICE_PRESETS.get(value, value)
+
+
+def character_voice(character):
+    return resolve_voice((character or {}).get("voice"))
+
+
+def voice_for_character(character_name, profile):
+    bible = (profile.get("_character_bible") or {}).get("characters") or {}
+    return character_voice(bible.get(character_name))
+
+
+def speaker_from_context(text, profile):
+    matches = matched_characters(text, profile)
+    if not matches:
+        return None
+    return matches[0][0]
+
+
+def unit_opens_dialogue(text):
+    return any(mark in text for mark in ('"', "“", "‘", "「", "『"))
+
+
+def unit_closes_dialogue(text):
+    stripped = text.rstrip()
+    return stripped.endswith('"') or any(mark in text for mark in ("”", "’", "」", "』"))
+
+
+def voice_for_text(text, default_voice, profile, speaker_hint=None):
+    bible = profile.get("_character_bible") or {}
+    narrator = (bible.get("narrator") or {}).get("voice")
+    narrator_voice = resolve_voice(narrator) or default_voice
+    if not is_dialogue(text):
+        return narrator_voice
+    if speaker_hint:
+        voice = voice_for_character(speaker_hint, profile)
+        resolved = resolve_voice(voice)
+        if resolved:
+            return resolved
+    for _character_name, character in matched_characters(text, profile):
+        voice = resolve_voice(character.get("voice"))
+        if voice:
+            return voice
+    lane = dialogue_lane(text)
+    defaults = bible.get("defaults") or {}
+    voice = defaults.get(f"{lane}_dialogue_voice") or defaults.get("dialogue_voice")
+    resolved = resolve_voice(voice)
+    if resolved:
+        return resolved
+    return narrator_voice
 
 
 def archetype_delta(traits, key):
@@ -343,7 +413,8 @@ def line_gap(text, profile):
         base = profile.get("dialogue_pause", profile["sentence_pause"])
         base += archetype_delta(archetypes, "pause_delta")
         base += learning_delta(text, archetypes, profile, "sentence_pause_delta")
-        return max(0.08, base)
+        minimum_gap = 0.02 if profile.get("tight_punctuation") else 0.08
+        return max(minimum_gap, base)
     if is_cliffhanger(text):
         return profile.get("cliffhanger_pause", profile["sentence_pause"] + 0.15)
     if is_reveal(text):
@@ -354,6 +425,8 @@ def line_gap(text, profile):
         return profile.get("list_pause", profile["comma_pause"])
     if "\n\n" in text:
         return profile["paragraph_pause"]
+    if profile.get("tight_punctuation") and text.endswith(("?", "!", ":", "...")):
+        return profile["sentence_pause"]
     if text.endswith(("?", "!", ":", "…", "...")):
         return profile["sentence_pause"] + 0.15
     if text.endswith((".", "。")):
@@ -366,6 +439,39 @@ def line_gap(text, profile):
 def split_performance_units(text, max_chars=180):
     normalized = re.sub(r"[ \t]+", " ", text.strip())
     normalized = re.sub(r"\n{3,}", "\n\n", normalized)
+    max_chars = max(700, int(max_chars))
+    quote_pattern = re.compile(r'(".*?"|â€œ.*?â€|ã€Œ.*?ã€|ã€Ž.*?ã€)')
+    merged_pieces = []
+    for paragraph in re.split(r"\n\n+", normalized):
+        paragraph = paragraph.strip()
+        if not paragraph:
+            continue
+        position = 0
+        blocks = []
+        for match in quote_pattern.finditer(paragraph):
+            if match.start() > position:
+                blocks.append(paragraph[position:match.start()].strip())
+            blocks.append(match.group(0).strip())
+            position = match.end()
+        if position < len(paragraph):
+            blocks.append(paragraph[position:].strip())
+        for block in [item for item in blocks if item]:
+            if len(block) <= max_chars:
+                merged_pieces.append(block)
+                continue
+            current = ""
+            for sentence in re.split(r"(?<=[.!?â€¦ã€‚ï¼ï¼Ÿ])\s+", block):
+                sentence = sentence.strip()
+                if not sentence:
+                    continue
+                if current and len(current) + len(sentence) + 1 > max_chars:
+                    merged_pieces.append(current.strip())
+                    current = sentence
+                else:
+                    current = f"{current} {sentence}".strip()
+            if current:
+                merged_pieces.append(current.strip())
+    return merged_pieces or [text]
     pieces = []
     for paragraph in re.split(r"(\n\n+)", normalized):
         if not paragraph.strip():
@@ -389,6 +495,53 @@ def split_performance_units(text, max_chars=180):
             if current:
                 pieces.append(current.strip())
     return pieces or [text]
+
+
+def prepare_tts_text(text, profile):
+    if not profile.get("tight_punctuation"):
+        return text
+    spoken = re.sub(r"[ \t]+", " ", text.strip())
+    spoken = re.sub(r"\s*[,，]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[;；:：]\s*", ", ", spoken)
+    if profile.get("short_sentence_as_comma"):
+        spoken = re.sub(r"\s*[.。]\s+(?=\S)", ", ", spoken)
+        spoken = re.sub(r"\s*[!?！？]\s+(?=\S)", ", ", spoken)
+    else:
+        spoken = re.sub(r"\s*[.。]\s+(?=\S)", ". ", spoken)
+        spoken = re.sub(r"\s*[!?！？]\s+(?=\S)", "! ", spoken)
+    spoken = re.sub(r",\s*,+", ", ", spoken)
+    spoken = re.sub(r"\s+", " ", spoken)
+    return spoken.strip()
+
+
+def sanitize_for_tts_fallback(text):
+    spoken = text.strip()
+    replacements = {
+        '"': " ",
+        "“": " ",
+        "”": " ",
+        "‘": " ",
+        "’": " ",
+        "「": " ",
+        "」": " ",
+        "『": " ",
+        "』": " ",
+    }
+    for old, new in replacements.items():
+        spoken = spoken.replace(old, new)
+    spoken = re.sub(r"[#*_`~]+", " ", spoken)
+    spoken = re.sub(r"\s*[-–—]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[;:]\s*", ", ", spoken)
+    spoken = re.sub(r"\s*[!?]+\s*", ". ", spoken)
+    spoken = re.sub(r"\s*[.]+\s*", ". ", spoken)
+    spoken = re.sub(r"\s*,\s*,+", ", ", spoken)
+    spoken = re.sub(r"\s+", " ", spoken)
+    return spoken.strip(" ,.")
+
+
+def has_spoken_content(text):
+    cleaned = sanitize_for_tts_fallback(text)
+    return bool(re.search(r"[\w\u00C0-\u024F]", cleaned))
 
 
 def rate_for_text(text, profile):
@@ -516,33 +669,83 @@ def make_silence(path, seconds):
     )
 
 
+def trim_chunk_silence(path, aggressive=False):
+    temp_path = path.with_name(f"{path.stem}-trim{path.suffix}")
+    threshold = "-42dB" if aggressive else "-38dB"
+    stop_duration = "0.10" if aggressive else "0.14"
+    subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-i",
+            str(path),
+            "-af",
+            f"silenceremove=start_periods=1:start_silence=0:start_threshold={threshold}:stop_periods=-1:stop_duration={stop_duration}:stop_threshold={threshold}",
+            "-c:a",
+            "libmp3lame",
+            "-q:a",
+            "3",
+            str(temp_path),
+        ],
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    temp_path.replace(path)
+
+
 async def synthesize_performed(text, output, voice, profile):
     units = split_performance_units(text, int(profile.get("max_unit_chars", 180)))
+    units = [unit for unit in units if has_spoken_content(unit)]
+    if not units:
+        units = [text]
     if len(units) == 1:
-        await synthesize_resilient(text, output, voice, profile["rate"], profile["pitch"])
-        return [{"type": classify_unit(text, profile), "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
+        selected_voice = voice_for_text(text, voice, profile)
+        await synthesize_resilient(prepare_tts_text(text, profile), output, selected_voice, profile["rate"], profile["pitch"])
+        trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
+        return [{"type": classify_unit(text, profile), "voice": selected_voice, "rate": profile["rate"], "pitch": profile["pitch"], "pause_after": 0}]
 
     with tempfile.TemporaryDirectory(prefix="edge-tts-perform-") as temp_name:
         temp_dir = Path(temp_name)
         concat_items = []
         raw_plan = []
+        speaker_hint = None
+        active_dialogue_speaker = None
+        max_inserted_pause = profile.get("max_inserted_pause")
         for index, unit in enumerate(units):
+            hinted = speaker_from_context(unit, profile)
+            if hinted and not is_dialogue(unit):
+                speaker_hint = hinted
+            if unit_opens_dialogue(unit) and speaker_hint:
+                active_dialogue_speaker = speaker_hint
             unit_type = classify_unit(unit, profile)
+            if active_dialogue_speaker and not unit_type.startswith("dialogue"):
+                unit_type = f"dialogue-{active_dialogue_speaker}"
             rate, pitch = apply_scene_arc(rate_for_text(unit, profile), pitch_for_text(unit, profile), index, len(units), profile, unit_type)
             gap = line_gap(unit, profile)
+            if max_inserted_pause is not None:
+                gap = min(gap, float(max_inserted_pause))
+            if active_dialogue_speaker:
+                selected_voice = voice_for_character(active_dialogue_speaker, profile) or voice_for_text(unit, voice, profile, speaker_hint)
+            else:
+                selected_voice = voice_for_text(unit, voice, profile, speaker_hint)
             raw_plan.append(
                 {
                     "unit": unit,
                     "type": unit_type,
+                    "voice": selected_voice,
                     "rate": rate,
                     "pitch": pitch,
                     "pause_after": round(gap, 3),
                 }
             )
+            if active_dialogue_speaker and unit_closes_dialogue(unit):
+                active_dialogue_speaker = None
         plan = smooth_performance_plan(raw_plan, profile)
         for index, item in enumerate(plan, 1):
             voice_path = temp_dir / f"voice-{index:03d}.mp3"
-            await synthesize_resilient(item["unit"], voice_path, voice, item["rate"], item["pitch"])
+            await synthesize_resilient(prepare_tts_text(item["unit"], profile), voice_path, item["voice"], item["rate"], item["pitch"])
+            trim_chunk_silence(voice_path, aggressive=bool(profile.get("tight_punctuation")))
             concat_items.append(voice_path)
             gap = item["pause_after"]
             if gap > 0 and index < len(units):
@@ -551,7 +754,8 @@ async def synthesize_performed(text, output, voice, profile):
                 concat_items.append(silence_path)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in concat_items), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_quiet(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
+        trim_chunk_silence(output, aggressive=bool(profile.get("tight_punctuation")))
     return [{key: value for key, value in item.items() if key != "unit"} for item in plan]
 
 
@@ -589,7 +793,19 @@ async def synthesize_resilient(text, output, voice, rate, pitch):
                 output.unlink()
             await asyncio.sleep(2)
 
-    parts = split_text(text)
+    fallback_text = sanitize_for_tts_fallback(text)
+    if fallback_text and fallback_text != text:
+        for _ in range(3):
+            try:
+                await synthesize(fallback_text, output, voice, rate, pitch)
+                return
+            except Exception as exc:
+                last_error = exc
+                if output.exists() and output.stat().st_size == 0:
+                    output.unlink()
+                await asyncio.sleep(1)
+
+    parts = split_text(fallback_text or text)
     if len(parts) == 1:
         words = text.split()
         if len(words) > 8:
@@ -607,7 +823,7 @@ async def synthesize_resilient(text, output, voice, rate, pitch):
             chunk_paths.append(chunk_path)
         list_path = temp_dir / "concat.txt"
         list_path.write_text("".join(f"file '{path.as_posix()}'\n" for path in chunk_paths), encoding="utf-8")
-        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)], check=True)
+        run_quiet(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path), "-c:a", "libmp3lame", "-q:a", "3", str(output)])
 
 
 async def main_async(args):
@@ -639,13 +855,17 @@ async def main_async(args):
     start_index = max(0, args.start_scene - 1)
     end_index = args.end_scene if args.end_scene else len(scenes)
     end_index = min(len(scenes), end_index)
+    warnings = []
     voice_plan = {
         "storyboard": str(storyboard_path),
         "voice": voice,
         "voice_style": args.voice_style,
         "style": style,
         "scenes": [],
+        "warnings": warnings,
     }
+    generated_count = 0
+    failed_count = 0
     for index, scene in enumerate(scenes[start_index:end_index], start=start_index):
         text = scene.get("narration") or scene.get("subtitle") or scene.get("text")
         if not text:
@@ -659,37 +879,86 @@ async def main_async(args):
 
         needs_audio = not audio_path.exists() or audio_path.stat().st_size < 1024 or args.overwrite
         plan = None
+        generated = False
+        failed = False
         if needs_audio:
-            print(f"Generating voice scene {index + 1}/{len(scenes)}: {audio_path}", flush=True)
-            plan = await synthesize_performed(text, audio_path, voice, style)
+            last_error = None
+            for attempt in range(1, VOICE_SCENE_ATTEMPTS + 1):
+                print(f"Generating voice scene {index + 1}/{len(scenes)} attempt {attempt}/{VOICE_SCENE_ATTEMPTS}: {audio_path}", flush=True)
+                try:
+                    if audio_path.exists() and audio_path.stat().st_size < 1024:
+                        audio_path.unlink()
+                    plan = await synthesize_performed(text, audio_path, voice, style)
+                    if not audio_path.exists() or audio_path.stat().st_size < 1024:
+                        raise RuntimeError("voice output missing or too small after synthesis")
+                    generated = True
+                    generated_count += 1
+                    failed = False
+                    break
+                except Exception as exc:
+                    last_error = exc
+                    if audio_path.exists() and audio_path.stat().st_size < 1024:
+                        try:
+                            audio_path.unlink()
+                        except OSError:
+                            pass
+                    if attempt < VOICE_SCENE_ATTEMPTS:
+                        print(f"WARNING scene {index + 1} voice retry {attempt}/{VOICE_SCENE_ATTEMPTS}: {exc}", file=sys.stderr, flush=True)
+                        await asyncio.sleep(min(12, attempt * 2))
+            if needs_audio and not generated:
+                failed = True
+                failed_count += 1
+                warning = {
+                    "scene": index + 1,
+                    "id": scene.get("id") or f"scene-{index + 1:03d}",
+                    "error": str(last_error),
+                }
+                warnings.append(warning)
+                print(f"WARNING scene {index + 1} voice failed after {VOICE_SCENE_ATTEMPTS} attempts: {last_error}", file=sys.stderr, flush=True)
 
-        scene["audio"] = relpath(audio_path, storyboard_dir)
+        if not failed:
+            scene["audio"] = relpath(audio_path, storyboard_dir)
         scene.setdefault("subtitle", text)
         voice_plan["scenes"].append(
             {
                 "id": scene.get("id") or f"scene-{index + 1:03d}",
-                "audio": scene["audio"],
-                "generated": bool(needs_audio),
+                "audio": scene.get("audio", relpath(audio_path, storyboard_dir)),
+                "generated": generated,
+                "failed": failed,
                 "unit_count": len(plan or split_performance_units(text, int(style.get("max_unit_chars", 180)))),
                 "plan": plan or [],
             }
         )
 
     storyboard_path.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    voice_plan["summary"] = {
+        "range": {"start_scene": start_index + 1, "end_scene": end_index},
+        "generated": generated_count,
+        "failed": failed_count,
+        "warnings": len(warnings),
+    }
+    if start_index == 0 and end_index == len(scenes):
+        result = subprocess.run(
+            [sys.executable, str(Path(__file__).resolve().parent / "validate_storyboard.py"), "--storyboard", str(storyboard_path), "--stage", "voice"],
+            check=False,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        if result.returncode != 0:
+            validation_warning = (result.stderr or result.stdout or "").strip()
+            voice_plan["validation_warning"] = validation_warning
+            print(f"WARNING voice validation incomplete; generated={generated_count}, failed={failed_count}", file=sys.stderr, flush=True)
     (storyboard_dir / "voice-plan.json").write_text(json.dumps(voice_plan, ensure_ascii=False, indent=2), encoding="utf-8")
-    subprocess.run(
-        [sys.executable, str(Path(__file__).resolve().parent / "validate_storyboard.py"), "--storyboard", str(storyboard_path), "--stage", "voice"],
-        check=True,
-    )
-    print(json.dumps({"storyboard": str(storyboard_path), "scenes": len(scenes), "voice": voice, "voice_style": args.voice_style}, ensure_ascii=False, indent=2))
+    print(json.dumps({"storyboard": str(storyboard_path), "scenes": len(scenes), "voice": voice, "voice_style": args.voice_style, "generated": generated_count, "failed": failed_count, "warnings": len(warnings)}, ensure_ascii=False, indent=2))
 
 
 def main():
     parser = argparse.ArgumentParser(description="Generate narration with Microsoft Edge TTS.")
     parser.add_argument("--storyboard", required=True, type=Path)
     parser.add_argument("--voice", default="vi-female", help="Preset vi-female, vi-male, en-female, en-male, or full Edge voice name.")
-    parser.add_argument("--voice-style", choices=sorted(VOICE_STYLES), default="story-emotional")
-    parser.add_argument("--learning-file", type=Path, default=Path(r"E:\ThanhMV\auto-video-generator\config\voice_learning.json"))
+    parser.add_argument("--voice-style", choices=sorted(VOICE_STYLES), default="wasteland-dark")
+    parser.add_argument("--learning-file", type=Path, default=REPO_ROOT / "config" / "voice_learning.json")
     parser.add_argument("--character-bible", type=Path, default=None)
     parser.add_argument("--rate", default="auto")
     parser.add_argument("--pitch", default="auto")
@@ -702,3 +971,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

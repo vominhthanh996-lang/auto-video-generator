@@ -59,7 +59,7 @@ def chapter_storyboard(title, chapter, scene_count, scene_duration, aspect, fps,
 def main():
     parser = argparse.ArgumentParser(description="Create a long-form video project scaffold.")
     parser.add_argument("--title", required=True)
-    parser.add_argument("--root", default=r"E:\ThanhMV\video-projects")
+    parser.add_argument("--root", default=str(Path(__file__).resolve().parent.parent.parent / "video-projects"))
     parser.add_argument("--minutes", type=int, default=30)
     parser.add_argument("--chapter-minutes", type=int, default=5)
     parser.add_argument("--scene-duration", type=int, default=12)

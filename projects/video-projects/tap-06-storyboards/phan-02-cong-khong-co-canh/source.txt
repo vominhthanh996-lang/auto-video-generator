@@ -1,0 +1,659 @@
+# Phần 2: Cổng Không Có Cánh
+
+## Chương 191: Xe Rác Làm Tường
+
+Cổng của Trạm Số Chín được dựng bằng những thứ thành Nam không cần.
+
+Ba xe rác gãy bánh.
+
+Hai đoạn ống lọc bỏ hoang.
+
+Một tấm biển "nguồn nước không đạt chuẩn" bị úp ngược.
+
+Mười bảy thanh sắt cong.
+
+Một sợi xích gỉ.
+
+Và rất nhiều lời chửi của Lão Phùng.
+
+"Không phải buộc như vậy! Dây mà qua góc sắc thì nửa đêm đứt, rồi cả cái xe đập xuống đầu các ngươi. Lúc đó đừng khóc với ta. Ta không vá đầu."
+
+Hai thanh niên khu xám vội tháo dây buộc lại.
+
+Lão Phùng chống nạnh đứng giữa cổng, tóc bạc dính bụi đỏ, miệng độc như cũ nhưng mắt sáng hơn hôm qua. Người già ở phế thổ thường bị xếp vào nhóm cần bớt nước, bớt đồ ăn, bớt hy vọng. Nhưng ở một cái cổng dựng bằng phế liệu, kinh nghiệm của ông bỗng quý hơn tinh thạch vụn.
+
+A Thất ngồi trên thùng sắt, tay băng treo trước ngực, dùng tay còn lại vẽ sơ đồ cổng lên một miếng gỗ.
+
+"Chỗ này để bảng đọc luật. Chỗ này để thùng bỏ dao. Chỗ này để người đổi than đứng cân. Chỗ này..."
+
+Mộc Sanh nhìn bản vẽ.
+
+"Ngươi vẽ phòng radio to hơn cổng."
+
+"Tầm nhìn dài hạn."
+
+"Cổng chưa đứng nổi."
+
+"Vậy càng cần tinh thần."
+
+Lão Phùng quay đầu:
+
+"Tinh thần có buộc được xích không?"
+
+A Thất lập tức:
+
+"Không. Nhưng tinh thần chỉ đạo người buộc xích."
+
+"Vậy tinh thần xuống đây kéo dây."
+
+"Tay ta bị thương."
+
+"Miệng ngươi không."
+
+A Thất ngậm miệng, ngoan ngoãn nhảy xuống dùng miệng chỉ thật.
+
+Lâm Tịch đứng trên bậc cao nhìn toàn bộ cổng tạm.
+
+Tần Dã ngồi cạnh nàng, trước mặt là bản đồ phòng thủ. Hắn vừa sốt vừa vẽ, tay có lúc run, nhưng đường than trên gỗ rất ổn. Mỗi vị trí canh gác đều có lý do: chỗ nào nhìn được hàng nước, chỗ nào tránh đường ống cá sấu, chỗ nào không để trẻ con đi qua, chỗ nào nếu bị cướp đột nhập thì có thể chặn mà không giẫm lên người bệnh.
+
+Hắn không xuống làm.
+
+Đó là điều làm hắn khó chịu nhất.
+
+Lâm Tịch thấy ngón tay hắn siết cạnh tấm gỗ.
+
+"Muốn xuống?"
+
+"Ừ."
+
+"Không được."
+
+"Ta chưa nói."
+
+"Anh nhìn cổng như muốn tự mình đóng đinh nó."
+
+Hắn im.
+
+Một lúc sau, hắn nói:
+
+"Trước kia ta chỉ cần đứng ở cổng, người khác sẽ biết nên lùi."
+
+"Bây giờ?"
+
+"Bây giờ ta phải nhờ A Thất vẽ bảng."
+
+Lâm Tịch nhìn hắn.
+
+Đó không chỉ là tự giễu.
+
+Đó là nỗi đau của một người từng dùng thân thể làm tường, bây giờ phải học cách làm tường bằng lời, bản đồ và người khác.
+
+Nàng ngồi xuống cạnh hắn.
+
+"Cổng này nếu chỉ dựa vào anh đứng đó, anh ngã thì cổng mất."
+
+Tần Dã nhìn nàng.
+
+"Nếu dựa vào bản đồ?"
+
+"Bản đồ rách thì vẽ lại."
+
+"Nếu người giữ cổng sợ?"
+
+"Thì đổi người. Hoặc đứng cùng."
+
+Hắn nhìn cổng tạm, nơi Lão Phùng đang mắng một thanh niên buộc xích sai lần thứ ba, nơi A Thất đang tranh luận với Mộc Sanh về việc phòng radio có thể kiêm chòi gác, nơi A Mục dẫn mấy đứa trẻ nhặt đá nhỏ lấp lỗ chuột.
+
+"Ngươi đang xây thứ khó bị giết hơn một người."
+
+"Ta đang cố."
+
+"Sẽ chậm."
+
+"Ừ."
+
+"Sẽ loạn."
+
+"Biết."
+
+"Sẽ có người làm ngươi muốn ném ra ngoài cổng."
+
+Lâm Tịch nhìn nhóm râu lởm đang đào rãnh ở xa.
+
+"Đã có."
+
+Tần Dã khẽ cười.
+
+Ho khan chặn giữa chừng.
+
+Lâm Tịch lập tức đưa nước. Hắn uống một ngụm đúng vạch người bệnh, không hơn. Nàng nhìn thấy, cũng không ép.
+
+Vài điều không thể sửa trong một ngày.
+
+Giữa trưa, cổng tạm gặp lần thử đầu tiên.
+
+Một nhóm năm người từ hướng cầu Đông kéo tới. Họ giơ vải trắng, nhưng trên lưng mỗi người đều có cung ngắn. Không phải súng, nhưng mũi tên phế thổ tẩm độc côn trùng có thể giết người chậm hơn súng và đau hơn.
+
+Kỷ Nam đứng sau xe rác bên trái.
+
+"Bỏ cung ngoài vạch."
+
+Người đi đầu, một phụ nữ da đen vì nắng xạ, tóc tết sát đầu, nhìn hắn.
+
+"Bỏ cung rồi bị cướp thì ai chịu?"
+
+Kỷ Nam đáp:
+
+"Không bỏ thì không vào."
+
+"Bọn ta đem than sạch."
+
+Trần Hòe đi tới, nhìn bao than.
+
+"Than sạch cũng đứng ngoài vạch."
+
+Người phụ nữ nhìn nàng, rồi nhìn Lâm Tịch.
+
+"Ai là người nói chuyện?"
+
+Lâm Tịch bước xuống.
+
+"Ta."
+
+"Tên?"
+
+"Lâm Tịch."
+
+"Ta là Sa Đinh, đội nhặt sắt cầu Đông. Bọn ta nghe tin có nước và luật. Luật nói không mang súng vào hàng, không nói cung."
+
+A Thất từ phía sau cổng lập tức tái mặt.
+
+"Lỗ hổng."
+
+Di Mạn cầm cốc đong nói:
+
+"Ghi thêm."
+
+Lâm Tịch nhìn Sa Đinh.
+
+"Không mang vũ khí vào hàng. Súng, cung, dao, nỏ, độc châm đều tính."
+
+Sa Đinh hỏi:
+
+"Nếu ta giao cung, ai giữ?"
+
+A Mục kéo thùng bỏ dao ra.
+
+Sa Đinh cười lạnh.
+
+"Một thằng nhóc?"
+
+A Mục mặt đỏ lên.
+
+Kỷ Nam lạnh giọng:
+
+"Thằng nhóc đó đứng trong cổng. Ngươi chưa."
+
+Không khí căng.
+
+Lâm Tịch nâng tay, ngăn Kỷ Nam nói thêm.
+
+"Vũ khí được buộc tên, đặt trong thùng, Lý Cù ghi. Ra khỏi hàng trả lại. Nếu mất, Trạm Số Chín đền bằng nước phần làm việc của người giữ thùng."
+
+Lý Cù đang ghi lượt nước ngẩng phắt đầu.
+
+"Ta?"
+
+"Ông giữ danh sách."
+
+"Ta giữ tên, không giữ cung."
+
+"Vậy chọn người giữ cung."
+
+Lý Cù nhìn quanh, cuối cùng chỉ người râu lởm đang đào rãnh.
+
+"Hắn."
+
+Người râu lởm lập tức ngẩng đầu.
+
+"Ta?"
+
+Lý Cù nói:
+
+"Ngươi cầm dao quen, biết người khác giấu dao thế nào. Với lại ngươi đang cần làm thêm để đổi nước."
+
+Người râu lởm chửi một câu.
+
+Nhưng không từ chối.
+
+Sa Đinh nhìn cảnh đó, ánh mắt hơi đổi.
+
+"Các ngươi để người từng đem than độc giữ vũ khí?"
+
+Lâm Tịch đáp:
+
+"Đứng trước mặt mọi người. Có người ghi. Có người nhìn. Có phần nước treo trên đầu."
+
+Sa Đinh nhìn người râu lởm.
+
+Hắn bực bội:
+
+"Nhìn gì? Ta giữ thì ta giữ. Mất cái nào cắt nước ta, không cắt ngươi."
+
+Sa Đinh bật cười.
+
+Nụ cười đầu tiên từ lúc tới.
+
+"Được."
+
+Nàng tháo cung, buộc tên lên dây, đặt vào thùng.
+
+Bốn người sau cũng làm theo.
+
+A Thất vội ghi thêm lên bảng:
+
+`Không mang vũ khí vào hàng. Vũ khí ghi tên, gửi trước vạch, trả khi ra.`
+
+Mộc Sanh nhìn chữ.
+
+"Thiếu: độc."
+
+"Đúng."
+
+Nó thêm:
+
+`Độc tính như vũ khí.`
+
+Di Mạn đọc, gật đầu.
+
+"Tạm được."
+
+Sa Đinh đem than vào cân. Than thật sự sạch, khô, không mùi dầu. Trần Hòe kiểm rất lâu mới gật đầu.
+
+"Đổi được."
+
+Sa Đinh không uống ngay.
+
+Nàng nhìn cổng tạm, nhìn thùng vũ khí, nhìn bảng luật càng lúc càng dài.
+
+"Các ngươi làm vậy giữ được bao lâu?"
+
+Lâm Tịch đáp:
+
+"Không biết."
+
+"Thành Nam sẽ tới."
+
+"Đã tới."
+
+"Cướp sẽ tới."
+
+"Đang đợi."
+
+"Thú?"
+
+"Dưới ống có một con."
+
+Sa Đinh im một nhịp.
+
+"Ngươi nói chuyện làm người ta muốn quay về."
+
+A Thất ở bên cạnh thở dài:
+
+"Ta cũng hay nói vậy."
+
+Sa Đinh nhìn nó.
+
+"Ngươi là ai?"
+
+"Tạm thời là người mất radio."
+
+"Radio?"
+
+A Thất chỉ dòng chữ nhỏ trên bảng:
+
+`Phòng radio: chờ sửa.`
+
+Sa Đinh đọc xong, bỗng nói:
+
+"Đội ta có dây đồng tốt."
+
+A Thất lập tức sáng mắt.
+
+Mộc Sanh đặt tay lên vai nó.
+
+"Đổi theo luật."
+
+"Ta biết, ta biết."
+
+Cổng tạm đứng qua buổi trưa.
+
+Nó không đẹp. Xe rác nghiêng, xích gỉ kêu cót két, bảng luật bị gió thổi lệch, thùng vũ khí làm từ một thùng lọc vỡ. Nhưng từng người muốn vào phải dừng lại, đọc, bỏ thứ sắc xuống, nói tên, nói mình mang gì, muốn gì.
+
+Một cánh cổng thật sự không chỉ để ngăn.
+
+Nó bắt người ta chậm lại trước khi biến đói khát thành cướp bóc.
+
+Chiều xuống, khi Lâm Tịch quay về khu máng lọc, nàng thấy Tần Dã ngủ gục bên bản đồ.
+
+Hắn ngủ rất nông.
+
+Một tay vẫn đặt gần súng.
+
+Nhưng trên bản đồ trước mặt, hắn đã vẽ thêm bốn chữ ở vị trí hai trụ bê tông:
+
+`Cổng tạm số Một.`
+
+Lâm Tịch nhìn bốn chữ đó rất lâu.
+
+Rồi lấy than, viết nhỏ bên cạnh:
+
+`Mở từ bên trong.`
+
+## Chương 192: Một Cánh Tay Không Nâng Nổi Súng
+
+Tối đó, Tần Dã sốt cao.
+
+Cơn sốt đến không ồn ào.
+
+Hắn đang nhìn Kỷ Nam hướng dẫn nhóm gác cổng thay ca thì bỗng im. Lâm Tịch ban đầu tưởng hắn mệt, tới khi nàng đưa nước, tay hắn không nhấc lên.
+
+Không phải không muốn.
+
+Là không nhấc nổi.
+
+Cái cốc chạm vào đầu ngón tay hắn, trượt xuống.
+
+Lâm Tịch bắt kịp trước khi nó rơi.
+
+"Tần Dã?"
+
+Hắn nhìn cái cốc, ánh mắt tỉnh táo tới mức làm người ta sợ.
+
+"Tay."
+
+Chỉ một chữ.
+
+Nhưng Lâm Tịch hiểu.
+
+Cánh tay phải của hắn mất lực.
+
+Di Mạn lập tức bỏ máng lọc chạy tới. Thẩm Bạch cũng đứng dậy, nhưng Di Mạn chỉ dao bếp vào hắn.
+
+"Đứng đó. Ta gọi mới tới."
+
+Thẩm Bạch dừng lại.
+
+Hắn không vui, nhưng đã học rất nhanh rằng ở Trạm Số Chín, dao bếp của Di Mạn có quyền ngắn hạn rất cao.
+
+Lâm Tịch đỡ Tần Dã nằm xuống. Hắn không ngất. Điều đó tệ hơn. Người còn tỉnh sẽ nhìn thấy từng phần thân thể mình phản bội.
+
+Kỷ Nam đứng cạnh, mặt tối lại.
+
+"Gen phản phệ?"
+
+Tần Dã đáp:
+
+"Sau vận động quá mức."
+
+"Ngươi gọi bắn đèn, đứng, canh bản đồ cả đêm là vận động?"
+
+"Ừ."
+
+Kỷ Nam chửi.
+
+Không phải chửi hắn.
+
+Chửi cái kiểu người sắp chết vẫn trả lời đúng trọng tâm.
+
+Di Mạn kiểm trán hắn.
+
+"Nóng."
+
+Lâm Tịch nhìn Thẩm Bạch.
+
+"Lại đây."
+
+Thẩm Bạch bước tới, mở hộp y tế. Trước khi chạm vào Tần Dã, hắn nhìn Di Mạn.
+
+"Ta kiểm?"
+
+Di Mạn gật.
+
+"Nói trước khi làm."
+
+"Kiểm đồng tử, mạch cổ, phản xạ tay phải, nhiệt độ da."
+
+Hắn làm từng bước. Tần Dã không phản kháng. Chỉ khi Thẩm Bạch bóp vào ngón tay phải, mắt hắn hơi tối.
+
+"Đau?"
+
+"Không."
+
+Thẩm Bạch nhíu mày.
+
+"Không đau?"
+
+"Không cảm giác."
+
+Lâm Tịch cảm giác có thứ gì rơi trong ngực mình.
+
+Từ lúc cứu Tần Dã tới giờ, nàng đã quen với việc hắn yếu, hắn sốt, hắn phải ngồi xe, hắn đứng được ba bước rồi ngã. Nhưng "không cảm giác" vẫn như một cánh cửa cũ đột nhiên mở lại, để lộ ngày đầu tiên hắn nằm trong kho Khu 17, nửa người tê liệt, không biết mình còn là người hay gánh nặng.
+
+Thẩm Bạch lấy thuốc.
+
+"Cần một liều ổn định và nghỉ tuyệt đối."
+
+Tần Dã nói:
+
+"Không."
+
+Di Mạn:
+
+"Ngươi im."
+
+"Đêm nay cổng..."
+
+Lâm Tịch cắt ngang:
+
+"Cổng có người."
+
+"Bản đồ chưa xong."
+
+"Ta xem được."
+
+"Ngươi thiếu kinh nghiệm."
+
+"Vậy Kỷ Nam xem."
+
+Kỷ Nam đáp:
+
+"Ta xem."
+
+Tần Dã nhìn hắn.
+
+"Ngươi sẽ đặt bẫy chết."
+
+Kỷ Nam cười lạnh.
+
+"Ta có thể nhịn. Dù rất khó."
+
+Tần Dã còn muốn nói, nhưng cơn ho kéo tới. Hắn ho đến vai run, tay phải vẫn nằm im bên người như không thuộc về hắn.
+
+Lâm Tịch giữ vai hắn.
+
+"Đủ rồi."
+
+Hắn nhìn nàng.
+
+Trong ánh mắt ấy không có cầu xin.
+
+Chính vì không có, nàng càng đau.
+
+Tần Dã không sợ đau trước mặt nàng. Hắn sợ trở lại thành người chỉ có thể nằm nghe người khác quyết định.
+
+Lâm Tịch cúi xuống, nói rất thấp:
+
+"Anh từng dạy ta sống. Bây giờ để ta dùng."
+
+Hắn im.
+
+"Nếu sai, anh mắng sau."
+
+"Nếu ngươi chết?"
+
+"Vậy anh khỏi mắng."
+
+Di Mạn quay đầu:
+
+"Đừng nói xui."
+
+Tần Dã nhìn Lâm Tịch rất lâu.
+
+Cuối cùng hắn nhắm mắt.
+
+"Bản đồ."
+
+Lâm Tịch lấy bản đồ gỗ đặt cạnh hắn.
+
+Hắn dùng tay trái, rất chậm, chỉ ba vị trí.
+
+"Không để người mới gác một mình. Không để ánh lửa gần bể trứng. Nếu cổng bên trái bị đánh, đừng cứu cổng. Cứu bơm."
+
+Lâm Tịch ghi nhớ.
+
+"Còn gì?"
+
+"Nếu Thẩm Bạch biến mất khỏi tầm mắt quá mười nhịp, gọi Kỷ Nam bắn chân."
+
+Thẩm Bạch đang chuẩn bị thuốc, khẽ thở dài.
+
+"Ta nghe thấy."
+
+Tần Dã không mở mắt.
+
+"Tốt."
+
+Kỷ Nam cười một tiếng.
+
+"Câu này ta thích."
+
+Thẩm Bạch chích thuốc ổn định. Tần Dã không động. Nhưng khi thuốc vào, mồ hôi lạnh trên trán hắn nhiều hơn.
+
+Lâm Tịch dùng vải lau.
+
+Hắn nói khẽ:
+
+"Ta không thích như vậy."
+
+"Ta biết."
+
+"Không thích nhìn người khác giữ cổng."
+
+"Ta biết."
+
+"Không thích tay không nâng được súng."
+
+"Ta biết."
+
+"Lâm Tịch."
+
+"Ừ."
+
+"Đừng vì ta phá luật."
+
+Tay nàng dừng lại.
+
+Hắn vẫn nhắm mắt.
+
+"Nếu thuốc chỉ còn một liều, mà người khác theo luật cần trước..."
+
+"Đừng nói."
+
+"Nghe."
+
+Nàng cắn răng.
+
+Hắn nói từng chữ rất chậm:
+
+"Đừng vì ta phá luật."
+
+Trong trạm, tiếng máng lọc nhỏ giọt đều đều.
+
+Ngoài cổng, có người đang đọc luật bằng giọng vấp váp.
+
+Lâm Tịch bỗng thấy cái cổng này thật tàn nhẫn.
+
+Nó không chỉ ngăn người xấu ngoài kia.
+
+Nó còn ngăn nàng dùng tình riêng để biến mình thành người mà nàng ghét.
+
+Nàng cúi đầu, đặt trán lên mu bàn tay trái còn cảm giác của hắn.
+
+"Ta sẽ cố."
+
+"Không đủ."
+
+"Ta hứa."
+
+Lúc đó, Tần Dã mới im.
+
+Không lâu sau, hắn thiếp đi.
+
+Di Mạn kéo chăn lên cho hắn, rồi nhìn Lâm Tịch.
+
+"Đi rửa mặt."
+
+"Ta..."
+
+"Đi."
+
+Lâm Tịch đứng dậy.
+
+Chân nàng hơi mềm.
+
+Bên ngoài, cổng tạm số Một kêu cót két trong gió. Người râu lởm và hai đồng bọn vẫn đào rãnh dưới ánh đèn mờ. Sa Đinh của đội nhặt sắt cầu Đông đang giao dây đồng cho Mộc Sanh. Lý Cù ghi tên người gác đêm.
+
+Mọi thứ vẫn đang chạy.
+
+Không vì Tần Dã ngã xuống mà dừng.
+
+Điều đó đáng mừng.
+
+Cũng đáng buồn.
+
+Lâm Tịch rửa mặt bằng nước thô, lau qua loa. Nước lạnh chạm da làm nàng tỉnh hơn.
+
+Khi nàng quay lại cổng, Kỷ Nam đưa cho nàng bản đồ.
+
+"Đội trưởng Lâm."
+
+"Gì?"
+
+"Đêm nay nghe ta, hay nghe hắn?"
+
+Lâm Tịch nhìn bản đồ, nhìn cổng, nhìn bóng Tần Dã nằm bên trong.
+
+"Nghe trạm."
+
+Kỷ Nam khựng lại.
+
+Rồi gật đầu.
+
+"Đáp án được."
+
+Phía xa ngoài phế thổ, có hai đốm sáng di chuyển trong bụi đỏ.
+
+Không phải thú.
+
+Là đèn người.
+
+Kỷ Nam nheo mắt.
+
+"Khách đêm."
+
+Lâm Tịch siết bản đồ.
+
+Ba ngày đầu không được chết.
+
+Ngày đầu tiên còn chưa qua hết.

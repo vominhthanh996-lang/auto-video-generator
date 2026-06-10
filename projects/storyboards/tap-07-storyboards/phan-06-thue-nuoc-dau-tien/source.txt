@@ -1,0 +1,405 @@
+# Phần 6: Thuế Nước Đầu Tiên
+
+## Chương 219: Một Phần Nước Mang Tên Mẫu Kiểm
+
+Người phụ nữ sinh non ngay trong kho than.
+
+Không ai kịp chuẩn bị gì ngoài một tấm vải luộc vội, nửa bát nước ấm và tiếng Di Mạn mắng trời mắng đất để giữ tay mình khỏi run.
+
+Bên ngoài cửa, Tạ Khuông cùng Sa Đinh kéo chốt phụ chống đàn chó hai hàm. Tần Dã chỉ huy từ xe lăn, giọng ngắn, lạnh, từng câu như đóng đinh.
+
+"Đừng bắn mắt. Bắn chân trước."
+
+"Đốt bột ớt."
+
+"Dây lùi kéo Tạ Khuông về."
+
+Tiếng chó cào cửa nghe như ai đó dùng dao cạo vào xương. Con đầu đàn có mảnh bạc trên cổ không lao vào trước. Nó đứng trong bụi, quan sát khe cửa, quan sát người, quan sát cách cổng thở.
+
+Lâm Tịch ôm một cây giáo, lòng bàn tay đầy mồ hôi.
+
+Trong kho than, tiếng trẻ con khóc bật ra rất nhỏ.
+
+Rất mỏng.
+
+Nhưng đủ khiến tất cả người ở sân trong lặng đi một nhịp.
+
+Ở phế thổ, tiếng trẻ sơ sinh không giống hy vọng.
+
+Nó giống một món nợ mới.
+
+Một cái miệng cần nước.
+
+Một thân thể chưa có sức chống bụi.
+
+Một lý do để người lớn sợ chết hơn.
+
+Đàn chó rút trước rạng sáng. Không phải vì thua, mà vì con đầu đàn đã nhìn đủ. Trước khi đi, nó ngoái đầu, mảnh bạc trên cổ lóe lên dưới ánh đèn vàng yếu ớt.
+
+Đứa bé sống.
+
+Người mẹ sốt.
+
+Cổng Nước Xám mất hai mũi tên, một dây kéo, nửa bao than vụn và ba phần nước ấm.
+
+Mộc Sanh ghi những thứ ấy lên bảng y tế. Lâm Tịch đứng bên cạnh nhìn, không bảo bỏ dòng nào.
+
+Sống cũng phải có giá.
+
+Không ghi giá, sau này người ta sẽ tưởng lòng tốt không cần ai trả.
+
+Nhưng ghi giá không làm người ta bớt đau.
+
+Người mẹ tỉnh một lần vào gần sáng. Nàng mở mắt, không hỏi mình ở đâu, cũng không hỏi đứa bé có khỏe không. Câu đầu tiên nàng nói là:
+
+"Ta không có gì trả."
+
+Mộc Sanh đang vắt khăn dừng tay.
+
+Di Mạn quay mặt đi mắng:
+
+"Vừa sinh xong đã nói chuyện nợ, ngươi sợ ta chưa đủ bực à?"
+
+Người mẹ nhìn nàng bằng đôi mắt trũng sâu.
+
+"Không trả, lần sau các ngươi không cứu người như ta nữa."
+
+Câu ấy làm căn phòng im.
+
+Đó không phải lời trách.
+
+Đó là kinh nghiệm.
+
+Ở những nơi nàng từng đi qua, cứu người nghèo thường là một cuộc buôn bán thất bại. Buôn bán thất bại nhiều lần, người ta sẽ không làm nữa. Cho nên người được cứu phải vội vàng chứng minh mình không phải món lỗ.
+
+Lâm Tịch đứng ở cửa, bàn tay đặt trên khung gỗ.
+
+Nàng muốn nói ở đây không như vậy.
+
+Nhưng câu ấy quá rẻ.
+
+Một nơi có thể không như vậy hôm nay, nhưng ngày mai khi bột hết, than tắt, thuốc cạn, nó sẽ trở thành thế nào?
+
+Không ai biết.
+
+Vậy nên nàng nói:
+
+"Ngươi trả bằng tên trước."
+
+Người mẹ ngơ ngác.
+
+"Tên?"
+
+"Tên ngươi. Tên con ngươi. Để khu bệnh biết sáng mai gọi ai còn thở."
+
+Người mẹ im rất lâu, rồi nói:
+
+"Ta tên Sầm Lạc."
+
+Nàng quay đầu nhìn cái hộp gỗ nơi đứa bé đang ngủ.
+
+"Nó chưa có tên."
+
+Di Mạn đặt khăn xuống.
+
+"Vậy đừng đặt vội. Trẻ con ở phế thổ sống qua ba ngày rồi đặt cũng được."
+
+Lời nghe tàn nhẫn.
+
+Nhưng tay nàng khi kéo vải che gió cho đứa bé lại nhẹ đến mức gần như không chạm.
+
+Sầm Lạc nhìn thấy.
+
+Nàng không khóc.
+
+Chỉ nhắm mắt, như cuối cùng cũng dám ngủ một lát.
+
+Đến trưa, một chiếc xe máy bọc thép dừng ngoài vùng cô lập. Người trên xe không xuống. Hắn mặc áo chống bụi có dấu Thành Nam, qua loa phóng thanh đọc lệnh:
+
+`Theo quy định kiểm dịch tạm thời, cụm Cổng Nước Xám phải nộp mỗi ngày ba mươi phần nước lọc làm mẫu kiểm, bắt đầu từ hôm nay. Nếu không nộp, vùng cô lập chuyển cấp đốt sạch.`
+
+Chợ trước cổng im như bị bịt miệng.
+
+Ba mươi phần nước.
+
+Không gọi là thuế.
+
+Nhưng trên phế thổ, thứ bị lấy đều có tên thật trong bụng người nghèo.
+
+Di Mạn chửi ngay:
+
+"Mẫu kiểm cái đầu hắn! Ba mươi phần đủ cho khu bệnh qua một ngày!"
+
+Người đọc lệnh không phản ứng. Hắn chỉ đặt một thùng sắt ngoài vạch.
+
+"Trước khi mặt trời xuống."
+
+Xe máy quay đầu rời đi, để lại bụi và cái thùng rỗng.
+
+Rỗng nhưng nặng hơn đá.
+
+Thùng sắt ấy được đặt ngay ngoài vạch trắng.
+
+Không ai động vào, nhưng từ lúc nó xuất hiện, mọi người đều vô thức tránh xa. Một đứa trẻ không biết chuyện chạy qua, mẹ nó kéo lại mạnh đến mức thằng bé ngã ngồi xuống đất.
+
+"Đừng chạm!"
+
+Đứa trẻ mếu máo:
+
+"Nó rỗng mà."
+
+Người mẹ ôm nó vào lòng, mặt tái xám.
+
+"Rỗng mới đáng sợ."
+
+Lâm Tịch nghe được câu ấy.
+
+Nàng bỗng hiểu vì sao những thứ dùng để thu thuế luôn được làm rất sạch, rất cứng, rất giống đồ không có cảm xúc.
+
+Một cái thùng rỗng có thể khiến người ta tự tưởng tượng phải bỏ vào đó thứ gì: nước của con mình, thuốc của mẹ mình, phần ăn của người sốt, ngày mai của cả trạm.
+
+Thành Nam không cần lính đứng canh.
+
+Cái thùng đã đứng canh thay chúng.
+
+A Thất nhìn Lâm Tịch.
+
+"Tỷ, nộp không?"
+
+Không ai muốn nghe chữ có.
+
+Nhưng không ai dám chắc chữ không sẽ không kéo lửa đến.
+
+Tần Dã nhìn thùng sắt.
+
+"Đây không phải kiểm nước. Đây là kiểm cổ."
+
+Lâm Tịch hỏi:
+
+"Nếu không nộp?"
+
+"Chúng có cớ."
+
+"Nếu nộp?"
+
+"Ngày mai sẽ là bốn mươi."
+
+Lâm Tịch nhắm mắt một hơi.
+
+Nàng bỗng rất nhớ mình từng là một người bình thường ở một thế giới có nước máy. Vặn vòi là nước chảy. Không ai bảo mỗi giọt chảy ra phải chứng minh lòng trung thành.
+
+Nhưng nhớ cũng vô dụng.
+
+Ở đây, vòi nước là chiến trường.
+
+## Chương 220: Thứ Được Gửi Đi
+
+Chiều, Lâm Tịch gọi họp trước bảng nước.
+
+Không chỉ Chim Xám.
+
+Người ngoài vạch cũng được đứng nghe. Người bệnh nằm xa hơn, nhưng A Thất mắc dây loa để họ nghe thấy.
+
+Lâm Tịch chỉ vào thùng sắt của Thành Nam.
+
+"Họ đòi ba mươi phần nước."
+
+Một người đàn ông lập tức nói:
+
+"Nộp đi. Bị đốt thì còn gì?"
+
+Một bà khác mắng:
+
+"Nộp nước của ai? Của con ngươi hay con ta?"
+
+Tiếng cãi nổi lên. Lâm Tịch để họ cãi một lúc.
+
+Tần Dã từng nói, cơn giận nếu bị đậy kín sẽ tìm chỗ thối.
+
+Cãi đến cuối, một ông già chống gậy bước lên.
+
+Ông từng làm công kéo đá ở bãi nam, lưng cong như bị cả đời đè xuống. Hai bàn tay ông đầy vết nứt, trong kẽ móng vẫn còn bột xám dù đã rửa nhiều lần.
+
+"Ta từng nộp thuế nước."
+
+Đám đông dần im.
+
+Ông già nhìn cái thùng sắt ngoài vạch.
+
+"Hồi chưa có Cổng Xám, ở khu bãi nam có một vòi nước của đội quản lý. Ban đầu họ nói mỗi nhà nộp một muỗng tinh thạch vụn để sửa vòi. Sau đó là hai muỗng để thuê người giữ vòi. Rồi ba muỗng vì có người trộm nước. Cuối cùng ai không nộp thì không được đứng dưới bóng cái vòi, kể cả khi trời mưa độc."
+
+Ông ho khan.
+
+"Vòi vẫn hỏng. Người giữ vòi béo lên."
+
+Không ai cười.
+
+Ông nhìn Lâm Tịch.
+
+"Cô gái, ta sợ bị đốt. Nhưng ta cũng sợ cái thùng rỗng này. Nó ăn một lần là biết đường quay lại."
+
+Lâm Tịch gật đầu.
+
+"Ta cũng sợ."
+
+Ông già ngạc nhiên.
+
+Nàng nói:
+
+"Sợ nên mới không cho nó ăn no."
+
+Đợi tiếng người khàn bớt, nàng mới nói:
+
+"Chúng ta không nộp ba mươi phần nước lọc."
+
+Đám đông như ngừng thở.
+
+Nàng nói tiếp:
+
+"Chúng ta nộp ba mươi mẫu kiểm thật."
+
+Mộc Sanh ngẩng phắt đầu.
+
+Lâm Tịch đặt từng thứ lên bàn.
+
+Một lọ nước lô một.
+
+Một lọ nước lô ba đã niêm.
+
+Một túi bột vàng có độc.
+
+Một mảnh than vụn có dính bột.
+
+Một mảnh da cổ con chó hai hàm mà Sa Đinh bắn sượt, trên đó còn lỗ đinh của thẻ bạc.
+
+Một tờ danh sách người đau bụng, kèm thứ họ đã ăn.
+
+Một tờ ghi số nước còn lại trong trạm.
+
+"Mẫu kiểm không phải nước uống." Lâm Tịch nói. "Nếu họ nói kiểm dịch, chúng ta cho họ dịch để kiểm."
+
+Tạ Khuông nhìn nàng.
+
+"Họ sẽ giận."
+
+"Họ vốn đã giận."
+
+"Họ sẽ bảo ngươi chống lệnh."
+
+"Ta sẽ bảo ta làm đúng chữ."
+
+Thẩm Bạch khẽ cười.
+
+"Một trò chơi văn bản rất nguy hiểm."
+
+Lâm Tịch nhìn hắn.
+
+"Ngươi biết viết biên bản kiểu trong thành?"
+
+"Biết."
+
+"Viết."
+
+Thẩm Bạch cúi đầu, cầm bút. Lần đầu tiên, cây bút sạch sẽ của hắn dùng để viết cho một cái cổng bụi bặm.
+
+Biên bản ghi rõ: `Cổng Nước Xám gửi mẫu kiểm dịch gồm nước, độc chất nghi nhiễm, vật chứng lây truyền tin giả, mẫu mô thú biến dị có dấu nhân tạo, danh sách bệnh nhân và lượng tồn kho nước. Không gửi nước uống vì vùng cô lập đang có trẻ sơ sinh, bệnh nhân tiêu chảy và người sốt cao.`
+
+Di Mạn đọc xong, hỏi:
+
+"Câu cuối có cần ghi dữ vậy không?"
+
+Thẩm Bạch đáp:
+
+"Cần. Người trong thành không đọc nước mắt. Họ đọc lý do có thể bị người khác thấy."
+
+Khi mặt trời thấp xuống, Lâm Tịch cùng Tạ Khuông khiêng thùng ra vạch. Trong thùng không có ba mươi phần nước. Có ba mươi gói mẫu nhỏ, niêm bằng dây vải xám.
+
+Người nhận lệnh Thành Nam quay lại. Hắn mở thùng ra, mặt lập tức khó coi.
+
+"Đây là gì?"
+
+Lâm Tịch đáp:
+
+"Mẫu kiểm."
+
+"Lệnh yêu cầu nước lọc."
+
+Thẩm Bạch bước ra, giọng ôn hòa:
+
+"Lệnh yêu cầu mẫu kiểm dịch tạm thời. Chữ nước lọc là diễn giải miệng của ngươi, không có trên văn bản."
+
+Người kia nhìn Thẩm Bạch, nhận ra áo trong thành dưới lớp bụi của hắn, sắc mặt càng xấu.
+
+"Các ngươi đang đùa với Thành Nam?"
+
+Tạ Khuông nói:
+
+"Không. Bọn ta đang khát thật."
+
+Câu ấy làm vài người ngoài vạch bật cười khan. Tiếng cười rất nhỏ, rất ngắn, nhưng đủ khiến người nhận lệnh đỏ mặt.
+
+Hắn đóng thùng lại.
+
+"Ta sẽ báo lên."
+
+Lâm Tịch nói:
+
+"Nhớ báo cả mẫu da chó có dấu bạc."
+
+Người kia khựng một cái, rồi kéo thùng đi.
+
+Đêm đó, không có lửa từ Thành Nam rơi xuống.
+
+Nhưng gần nửa đêm, radio Ngân Thụ đổi giọng:
+
+`Cụm Cổng Nước Xám có dấu hiệu cấu kết bác sĩ phản thành, che giấu nguồn bệnh, cản trở kiểm dịch.`
+
+Thẩm Bạch ngồi bên lò, nghe xong chỉ thở dài.
+
+Di Mạn hỏi:
+
+"Sợ à?"
+
+Hắn nhìn bàn tay mình, cười nhẹ.
+
+"Ta chỉ đang nghĩ, hóa ra có ngày mình bị gọi là phản thành vì viết đúng chính tả."
+
+Di Mạn ngồi xuống đối diện hắn, đưa qua một bát cháo loãng.
+
+"Ăn đi, bác sĩ phản thành."
+
+Thẩm Bạch nhìn bát cháo.
+
+"Ta không có khẩu phần tối."
+
+"Có. Khẩu phần người viết chữ làm Thành Nam nghẹn."
+
+Hắn nhận bát, im lặng một lúc.
+
+"Trong thành, người ta không thưởng việc này bằng cháo."
+
+"Vậy thưởng bằng gì?"
+
+"Bằng một căn phòng kín hơn. Một cái ghế cao hơn. Một câu khen không có tên người nghèo trong đó."
+
+Di Mạn hừ một tiếng.
+
+"Nghe khó nuốt hơn cháo của ta."
+
+Thẩm Bạch cúi đầu ăn.
+
+Cháo loãng đến đáng thương. Nhưng hắn ăn rất chậm, như sợ mình ăn nhanh sẽ lộ ra thật ra mình cũng đói như những người hắn từng đứng trên cao nhìn xuống.
+
+Ngoài sân, Lâm Tịch đi ngang qua cái thùng sắt đã được kéo vào làm vật chứng.
+
+Nàng lấy than viết lên nắp:
+
+`Thùng thuế nước đầu tiên. Chưa cho ăn.`
+
+A Thất nhìn thấy, cười khẽ.
+
+"Tỷ, thùng cũng treo bảng à?"
+
+Lâm Tịch đáp:
+
+"Ừ. Để ngày mai nó đừng giả vờ mình chỉ là thùng."

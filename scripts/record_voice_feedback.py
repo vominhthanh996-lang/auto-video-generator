@@ -4,7 +4,9 @@ import json
 from pathlib import Path
 
 
-DEFAULT_PATH = Path(r"E:\ThanhMV\auto-video-generator\config\voice_learning.json")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+DEFAULT_PATH = REPO_ROOT / "config" / "voice_learning.json"
 
 
 def load(path):

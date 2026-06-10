@@ -1,0 +1,547 @@
+# Phần 7: Ai Được Gọi Là Người Trạm
+
+## Chương 201: Một Cái Tên Trên Bảng
+
+Ngày thứ ba, bảng ghi tên không đủ chỗ.
+
+Không phải bảng luật.
+
+Bảng người.
+
+Lý Cù dùng mặt sau của ba tấm biển cũ để ghi người đang ở lại qua đêm: Chim Xám, người khu xám, đội nhặt sắt cầu Đông, nhóm Chợ Gãy, hai người thương đội đổi muối, ba lính thành Nam chưa rút được, Hứa Đao và hai đồng bọn, Vân Chẩm và đứa trẻ sốt, Tô Mạch, Hạ Tố, Du Khâu, Tiểu Mãn...
+
+Tên chen tên.
+
+Có người không biết chữ, chỉ ấn dấu tay bùn.
+
+Có người không muốn ghi tên thật.
+
+Có người có ba tên: tên cha mẹ đặt, tên chợ gọi, tên nợ nước ghi.
+
+A Thất nhìn bảng, mặt nghiêm trọng.
+
+"Nếu cứ tăng thế này, phòng radio phải kiêm phòng hộ tịch."
+
+Di Mạn nói:
+
+"Phòng radio còn chưa có tường."
+
+"Tầm nhìn dài hạn."
+
+Lý Cù đặt mảnh than xuống.
+
+"Cãi ít. Vấn đề là ai được tính là người trạm."
+
+Câu đó làm sân trước im lại.
+
+Người trạm.
+
+Hai chữ ấy mới xuất hiện, nhưng đã có trọng lượng.
+
+Người trạm được ngủ bên trong cổng. Được tính ca làm. Được uống theo phần. Được nghe tin trước. Được đứng trong hàng không bị hỏi mỗi lần từ đâu tới.
+
+Và quan trọng nhất: khi có nguy hiểm, cổng sẽ cân nhắc đóng sau lưng họ.
+
+Hứa Đao cười khan.
+
+"Ta đào rãnh hai ngày, còn bị gọi là người đem than độc. Ta có tính không?"
+
+Trần Hòe đáp:
+
+"Ngươi tính là phiền phức thường trú."
+
+"Thường trú là có trú."
+
+Sa Đinh của đội cầu Đông nói:
+
+"Đội ta đổi than thật, gác một ca, đuổi thú một lần. Nếu không tính người trạm, sau này gặp cướp nước bọn ta không đứng lại."
+
+Một người khu xám lập tức:
+
+"Các ngươi mới tới!"
+
+Sa Đinh nhìn hắn.
+
+"Ngươi tới trước một ngày."
+
+"Ta bị thành thải ra cùng đợt!"
+
+"Vậy thải sớm hơn là có quyền hơn?"
+
+Không khí nóng lên.
+
+Lâm Tịch nhìn đám người.
+
+Đây là chuyện nàng biết sẽ tới, nhưng tới vẫn thấy đau đầu.
+
+Khi chỉ có Chim Xám, "người mình" rất rõ.
+
+Khi có thêm khu xám, người mình rộng ra.
+
+Khi có người cầu Đông, Chợ Gãy, thương đội, lính thành Nam, tù cắt dây, phụ nữ mang thai, đứa trẻ không biết cha mẹ ở đâu... chữ "mình" bắt đầu có cạnh sắc.
+
+Tần Dã ngồi bên bản đồ, giọng khàn:
+
+"Chia ba loại."
+
+Mọi người nhìn hắn.
+
+Hắn không đứng, nhưng khi hắn nói về phòng thủ, người ta đã học cách nghe.
+
+"Người trạm: ngủ trong cổng, làm ca, giữ luật, được bảo vệ khi cổng đóng."
+
+"Người đổi: vào theo hàng, đổi vật hoặc việc lấy nước, ra trước đêm, không giữ quyền trong trạm."
+
+"Khách nạn: người bệnh, trẻ, người bị truy sát tạm thời. Được vào theo thời hạn, sau đó chọn làm người trạm hoặc rời."
+
+A Thất lập tức ghi nhanh.
+
+Lý Cù cau mày.
+
+"Ai quyết định?"
+
+Tần Dã nhìn Lâm Tịch.
+
+Lâm Tịch không muốn mọi ánh mắt lại dồn hết vào mình.
+
+Nàng nói:
+
+"Không chỉ ta."
+
+Di Mạn gật đầu rất nhanh.
+
+"Đúng. Một người quyết định, sớm muộn thành quan."
+
+Hứa Đao cười:
+
+"Vậy bầu quan?"
+
+"Không." Lâm Tịch nói. "Lập bàn người trạm."
+
+A Thất ngẩng đầu.
+
+"Tên nghe hơi..."
+
+"Đổi sau. Tạm dùng."
+
+Nàng chỉ từng người.
+
+"Chim Xám một ghế. Người khu xám một ghế. Đội làm cổng một ghế. Khu y tế một ghế. Người đổi hàng thường xuyên một ghế. Người giữ máy một ghế. Trẻ con không có ghế, nhưng có người nói thay."
+
+Tiểu Mãn lập tức hỏi:
+
+"Ai nói thay trẻ con?"
+
+Di Mạn đáp:
+
+"Tạm thời ta."
+
+A Thất:
+
+"Bà giữ nồi, giữ cốc, giữ trẻ, giữ y tế, bà sắp giữ cả trạm rồi."
+
+Di Mạn:
+
+"Vậy ngươi giữ miệng."
+
+Lâm Tịch nói tiếp:
+
+"Quyết định ai được gọi là người trạm phải có ít nhất bốn ghế đồng ý, và Di Mạn không phản đối nếu liên quan trẻ, bệnh."
+
+Thẩm Bạch ngồi xa ghi chép, bỗng nói:
+
+"Cô đang tạo hội đồng."
+
+Di Mạn:
+
+"Ngươi đừng đặt tên sạch cho việc bẩn."
+
+Lâm Tịch hỏi đám đông:
+
+"Ai phản đối?"
+
+Rất nhiều người muốn phản đối.
+
+Nhưng chưa ai có phương án tốt hơn.
+
+Sa Đinh hỏi:
+
+"Đội ta có ghế người đổi hàng?"
+
+"Nếu các ngươi đổi ba ngày liên tiếp, gác ít nhất một ca, và chấp nhận không mang vũ khí vào hàng."
+
+"Được."
+
+Hứa Đao hỏi:
+
+"Ta thuộc đội làm cổng?"
+
+Lý Cù hừ:
+
+"Ngươi thuộc đội đào rãnh trước đã."
+
+Hứa Đao nhún vai.
+
+"Cũng là cổng dưới đất."
+
+Vân Chẩm đứng cạnh Trần Hòe, do dự rất lâu mới nói:
+
+"Người từng đem hàng giả... có thể thành người trạm không?"
+
+Đám đông im.
+
+Rất nhiều ánh mắt nhìn nàng.
+
+Vân Chẩm cúi đầu.
+
+Lâm Tịch không trả lời thay.
+
+Nàng nhìn Trần Hòe.
+
+Trần Hòe mím môi.
+
+"Nàng kiểm than chậm nhưng thật. Hôm nay phát hiện một bao mốc."
+
+Lý Cù nói:
+
+"Có lỗi ghi lỗi. Có việc ghi việc."
+
+Di Mạn:
+
+"Đứa trẻ của nàng còn sốt. Đuổi ra bây giờ là chết."
+
+Hứa Đao cười:
+
+"Nếu nàng được, ta cũng có cửa."
+
+Sa Đinh nói:
+
+"Cửa không phải để ngươi đá."
+
+Lâm Tịch nâng tay.
+
+"Vân Chẩm tạm là khách nạn ba ngày. Làm kiểm than đủ ba ngày, không phạm lại, được đề nghị làm người trạm."
+
+Vân Chẩm cúi đầu.
+
+"Ta hiểu."
+
+Không phải ai cũng hài lòng.
+
+Nhưng tên nàng được viết lên bảng.
+
+Không còn là người đem than giả.
+
+Chưa phải người trạm.
+
+Nhưng có đường.
+
+Trong phế thổ, có đường đôi khi quý hơn câu tha thứ.
+
+## Chương 202: Ghế Của Người Không Có Ghế
+
+Bàn người trạm họp lần đầu trên một tấm cửa gãy.
+
+Không có ghế thật.
+
+Mỗi "ghế" là một viên đá đặt trước mặt người đại diện. Chim Xám do Lâm Tịch ngồi. Khu xám là Lý Cù. Đội làm cổng tạm là Hứa Đao sau khi cãi nhau nửa giờ với ba người khác. Khu y tế là Di Mạn. Người giữ máy là Mộc Sanh. Người đổi hàng thường xuyên tạm để Sa Đinh ngồi, vì đội cầu Đông đã đổi than thật, dây đồng và gác thú.
+
+A Thất ngồi bên cạnh với bảng ghi, tự xưng là "ghế không được ngồi".
+
+Tiểu Mãn ngồi sau Di Mạn, ôm nồi Mãn.
+
+"Con không có ghế?"
+
+Di Mạn đáp:
+
+"Con có nồi."
+
+"Nồi có tính không?"
+
+A Thất nghiêm túc:
+
+"Nồi có lịch sử chiến đấu, nên được dự thính."
+
+Mộc Sanh:
+
+"Ghi ít thôi."
+
+Cuộc họp đầu tiên giải quyết ba việc.
+
+Một: người nào được ngủ trong cổng đêm nay.
+
+Hai: ca gác thú.
+
+Ba: xử lý Hắc Tử, tên lính thành Nam đã giao sơ đồ cho cướp.
+
+Tên lính trẻ đó vốn không tên Hắc Tử. Hắn tên Lưu Bân. Nhưng sau khi A Thất ghi nhầm chữ "Bân" thành một cục đen, mọi người bắt đầu gọi hắn là Hắc Tử. Hắn không phản đối. Có lẽ vì tên thật làm hắn xấu hổ hơn.
+
+Thang Nhuệ đứng ngoài bàn, mặt lạnh.
+
+"Hắn là lính của ta."
+
+Lâm Tịch đáp:
+
+"Hắn gây thiệt hại trong trạm."
+
+"Ta đã bù dây đồng và nước."
+
+Mộc Sanh nói:
+
+"Dây đồng chưa đủ. Dây tạm nóng."
+
+Sa Đinh gõ viên đá trước mặt.
+
+"Đội cầu Đông có dây, nhưng không cho không."
+
+Lý Cù nhìn Hắc Tử.
+
+"Hắn làm ba ngày cổng."
+
+Hứa Đao cười:
+
+"Cho lính thành đào rãnh. Ta thích."
+
+Di Mạn hỏi:
+
+"Hắn biết chăm người bị thương không?"
+
+Thang Nhuệ đáp:
+
+"Biết sơ cứu chiến trường."
+
+Di Mạn nhìn Lâm Tịch.
+
+"Khu y tế thiếu tay. Đào rãnh có nhiều người. Cho hắn rửa băng, khiêng nước thô, làm dưới mắt ta. Sai ta đánh."
+
+Hắc Tử tái mặt.
+
+Hứa Đao lập tức bất mãn:
+
+"Sao hắn được vào trong? Hắn hại bơm!"
+
+Di Mạn lạnh giọng:
+
+"Vì hắn biết băng vết thương. Ngươi biết không?"
+
+Hứa Đao:
+
+"Ta biết làm vết thương."
+
+"Vậy ngậm miệng."
+
+A Thất cố nhịn cười đến run vai.
+
+Lâm Tịch hỏi từng ghế.
+
+Chim Xám đồng ý.
+
+Khu xám đồng ý.
+
+Giữ máy đồng ý nếu hắn không vào phòng bơm.
+
+Đổi hàng đồng ý đổi lấy Sa Đinh được kiểm cung ở ca gác.
+
+Đội cổng phản đối.
+
+Khu y tế đồng ý.
+
+Bốn ghế qua.
+
+Hứa Đao trừng mắt.
+
+"Ta phản đối cũng vô dụng?"
+
+Lâm Tịch nói:
+
+"Không vô dụng. Ghi phản đối. Nếu hắn gây chuyện trong khu y tế, ngươi được quyền nhắc bàn đã sai."
+
+Hứa Đao ngẩn ra.
+
+"Nhắc có nước không?"
+
+Di Mạn:
+
+"Ngươi thật sự cái gì cũng đổi ra nước được."
+
+Lâm Tịch đáp:
+
+"Nếu nhắc đúng và giúp tránh thiệt hại, có."
+
+Hứa Đao lập tức dịu.
+
+"Vậy ghi phản đối của ta rõ chút."
+
+A Thất viết:
+
+`Hứa Đao phản đối, chờ có dịp nói "ta đã bảo".`
+
+Mọi người nhìn nó.
+
+Nó ho khan, sửa lại:
+
+`Hứa Đao phản đối vì nguy cơ tái phạm.`
+
+Cuộc họp tiếp tục tới việc người ngủ trong cổng.
+
+Đây mới là dao.
+
+Cổng không chứa hết.
+
+Người bên ngoài đang tới thêm. Nếu mở cho tất cả, nước không đủ, bệnh khó kiểm, cướp dễ trà trộn. Nếu đóng, có người có thể chết ngoài kia.
+
+Lý Cù nói:
+
+"Người bệnh nặng, trẻ nhỏ, người làm ca đêm ở trong. Người đổi hàng chưa tới ba ngày ở ngoài khu chờ."
+
+Sa Đinh không vui.
+
+"Đội ta gác thú."
+
+"Các ngươi có lều."
+
+"Lều chống được thú gắn thẻ?"
+
+Hứa Đao nói:
+
+"Không thích thì về cầu Đông."
+
+Sa Đinh đặt tay lên cung.
+
+Kỷ Nam ho một tiếng.
+
+Không lớn.
+
+Nhưng đủ.
+
+Lâm Tịch nói:
+
+"Đội đổi hàng có ca gác đêm được ngủ trong cổng sau ca, số lượng bằng người gác. Người còn lại ở khu chờ ngoài vạch, trạm treo túi mùi Đèn Vàng gần đó nhưng không bảo đảm hoàn toàn."
+
+Sa Đinh nhìn nàng.
+
+"Nghĩa là chúng ta tự chịu một nửa?"
+
+"Ừ."
+
+"Ngươi nói thật hơn thương đội."
+
+"Vì ta không đủ nước để nói dối."
+
+Sa Đinh gật đầu.
+
+"Đội cầu Đông đồng ý."
+
+Việc cuối cùng là trẻ con.
+
+Tiểu Mãn giơ tay.
+
+Mọi người ngạc nhiên.
+
+Di Mạn hỏi:
+
+"Con nói?"
+
+"Trẻ con có việc không?"
+
+Lâm Tịch ngồi thẳng hơn.
+
+"Có. Nhưng không việc nguy hiểm."
+
+Tiểu Mãn ôm nồi.
+
+"Nếu trẻ con không làm, người lớn sẽ nói trẻ con chỉ uống."
+
+Không ai nói gì.
+
+Vì đã có người nghĩ vậy.
+
+Tiểu Mãn nói tiếp:
+
+"Bọn con có thể nhặt đá nhỏ, vẽ dấu, báo nước đổ, trông nồi, gọi người lớn khi ai ngã. Không ra ngoài cổng. Không xuống phòng bơm."
+
+A Thất nhìn nó, mắt sáng lên.
+
+"Đội ký hiệu."
+
+Di Mạn cau mày.
+
+"Không chạy lung tung."
+
+Tiểu Mãn gật đầu.
+
+"Có dây."
+
+Nó giơ một đoạn dây vải.
+
+"Buộc từng nhóm ba đứa. Một đứa lớn cầm đầu."
+
+Hứa Đao bật cười:
+
+"Như buộc dê."
+
+Tiểu Mãn nhìn hắn.
+
+"Dê không biết báo nước đổ."
+
+Hứa Đao nghẹn.
+
+Lý Cù gõ gậy.
+
+"Ta đồng ý. Trẻ có việc thì ít phá."
+
+Di Mạn nhìn Lâm Tịch.
+
+Lâm Tịch hỏi:
+
+"Con muốn ai làm đầu đội?"
+
+Tiểu Mãn suy nghĩ.
+
+"A Mục."
+
+A Mục đứng sau cột, giật mình.
+
+"Ta?"
+
+"Huynh biết chạy để báo."
+
+A Mục nhìn Lâm Tịch.
+
+Lâm Tịch gật đầu.
+
+"Đội ký hiệu do A Mục giữ, Tiểu Mãn ghi dấu. Việc của trẻ phải qua Di Mạn."
+
+A Thất lập tức viết.
+
+Tiểu Mãn nhìn viên đá trước mặt Di Mạn.
+
+"Vậy trẻ con có ghế chưa?"
+
+Di Mạn lấy một viên đá nhỏ đặt cạnh nồi Mãn.
+
+"Ghế nhỏ. Không quyết định một mình. Nhưng được nói."
+
+Tiểu Mãn cười.
+
+Trong khoảnh khắc ấy, Lâm Tịch bỗng thấy cái bàn cửa gãy này quan trọng hơn bất cứ trận đánh nào.
+
+Không phải vì nó hoàn hảo.
+
+Nó lộn xộn, cãi cọ, thiên vị, thiếu kinh nghiệm, luật còn vá víu.
+
+Nhưng lần đầu tiên, một đứa trẻ hỏi mình có việc không, và được đặt một viên đá nhỏ lên bàn.
+
+Ở thành Nam, có lẽ chuyện đó sẽ không bao giờ xảy ra.
+
+Đêm đó, bảng người trạm thêm ba dòng:
+
+`Người trạm: làm ca, giữ luật, được cổng bảo vệ.`
+
+`Người đổi: đổi vật hoặc việc lấy nước, không tự động ngủ trong cổng.`
+
+`Khách nạn: người bệnh, trẻ, người bị truy tạm. Sau thời hạn phải chọn đường.`
+
+Dòng cuối do Tiểu Mãn vẽ thêm một cái cổng nhỏ.
+
+Cổng có hai nét mở vào trong.

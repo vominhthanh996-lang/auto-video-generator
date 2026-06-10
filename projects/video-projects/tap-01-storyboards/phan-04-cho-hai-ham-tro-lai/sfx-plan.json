@@ -1,0 +1,485 @@
+{
+  "storyboard": "E:\\ThanhMV\\video-projects\\tap-01-storyboards\\phan-04-cho-hai-ham-tro-lai\\storyboard.json",
+  "scenes": [
+    {
+      "scene": 1,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 2,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 3,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 4,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 5,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 6,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 7,
+      "cues": [
+        "suspense",
+        "rain",
+        "wind"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 8,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 9,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 10,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 11,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 12,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 13,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 14,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 15,
+      "cues": [
+        "suspense",
+        "rain",
+        "wind"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 16,
+      "cues": [
+        "scrape"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 17,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 18,
+      "cues": [
+        "scrape"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 19,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 20,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 21,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 22,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 23,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 24,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 25,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 26,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 27,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 28,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 29,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 30,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 31,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 32,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 33,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 34,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 35,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 36,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 37,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 38,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 39,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 40,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 41,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 42,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 43,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 44,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 45,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 46,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 47,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 48,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 49,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 50,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 51,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 52,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 53,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 54,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 55,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 56,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 57,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 58,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 59,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 60,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 61,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 62,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 63,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 64,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 65,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 66,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 67,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 68,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 69,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 70,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 71,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 72,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 73,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 74,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 75,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 76,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 77,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 78,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 79,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 80,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 81,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 82,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 83,
+      "cues": [
+        "scrape"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 84,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 85,
+      "cues": [
+        "suspense"
+      ],
+      "mixed": false
+    },
+    {
+      "scene": 86,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 87,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 88,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 89,
+      "cues": [],
+      "mixed": false
+    },
+    {
+      "scene": 90,
+      "cues": [
+        "suspense",
+        "rain",
+        "wind"
+      ],
+      "mixed": false
+    }
+  ]
+}

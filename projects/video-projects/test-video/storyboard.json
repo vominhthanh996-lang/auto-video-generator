@@ -1,0 +1,29 @@
+{
+    "title":  "Codex video pipeline test",
+    "width":  1080,
+    "height":  1920,
+    "fps":  30,
+    "background_color":  "#111111",
+    "font":  "Arial",
+    "scenes":  [
+                   {
+                       "id":  "scene-01",
+                       "duration":  3,
+                       "image":  "assets/scene-01.png",
+                       "audio":  "assets/scene-01.wav",
+                       "narration":  "Pipeline render test scene one.",
+                       "text":  "Pipeline OK",
+                       "subtitle":  "Pipeline render test scene one."
+                   },
+                   {
+                       "id":  "scene-02",
+                       "duration":  3,
+                       "image":  "assets/scene-02.png",
+                       "audio":  "assets/scene-02.wav",
+                       "narration":  "Scene two confirms subtitles and audio.",
+                       "text":  "Ready for AI",
+                       "subtitle":  "Scene two confirms subtitles and audio."
+                   }
+               ],
+    "music":  null
+}

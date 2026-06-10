@@ -1,0 +1,31 @@
+{
+  "narrator": {
+    "voice": "vi-female",
+    "voice_note": "stable dark wasteland narrator lane"
+  },
+  "defaults": {
+    "dialogue_voice": "vi-female",
+    "male_dialogue_voice": "vi-male",
+    "female_dialogue_voice": "vi-female",
+    "neutral_dialogue_voice": "vi-female"
+  },
+  "characters": {
+    "L?m T?ch": {
+      "gender": "female",
+      "voice": "vi-female",
+      "aliases": [
+        "Lam Tich",
+        "l?m t?ch",
+        "n?ng",
+        "c? g?i",
+        "c?"
+      ],
+      "traits": [
+        "honest",
+        "afraid",
+        "cold"
+      ],
+      "voice_note": "fragile but stubborn, soft inner voice, sharper under survival pressure"
+    }
+  }
+}

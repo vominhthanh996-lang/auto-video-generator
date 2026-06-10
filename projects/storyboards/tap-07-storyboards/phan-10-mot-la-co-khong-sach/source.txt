@@ -1,0 +1,463 @@
+# Phần 10: Một Lá Cờ Không Sạch
+
+## Chương 227: Ngày Thứ Bảy
+
+Ngày thứ bảy không có mặt trời.
+
+Bầu trời phủ một lớp xám trắng, như tro được khuấy vào nước rồi đổ lên đầu mọi người. Gió đứng. Bụi không bay. Thứ yên tĩnh ấy khiến Cổng Nước Xám căng thẳng hơn cả tiếng thú.
+
+Mọi người dậy rất sớm.
+
+Không ai ra lệnh, nhưng ai cũng biết hôm nay phải chờ một thứ gì đó.
+
+Thành Nam có thể đến.
+
+Ngân Thụ có thể đến.
+
+Lửa có thể đến.
+
+Hoặc tệ hơn, không gì đến cả, để nỗi sợ tiếp tục ăn thêm một ngày.
+
+Lâm Tịch cho gọi tất cả người đã ký bảng người trạm. Người chưa ký cũng được đứng nghe. Trước mặt họ là ba thứ: bản sao hồ sơ Trạm Nước Công Cộng Số Chín, bảng tồn kho, và một tấm vải lọc cũ.
+
+Tấm vải vốn dùng để lọc cặn thô. Nó đã ngả màu xám, có vài chỗ cháy, vài chỗ vá bằng chỉ đen. Di Mạn giặt cả đêm cũng không sạch hơn được bao nhiêu.
+
+A Thất hỏi:
+
+"Treo cái này thật hả tỷ?"
+
+"Thật."
+
+"Xấu."
+
+Di Mạn đập nhẹ vào gáy nó.
+
+"Có vải treo là may rồi. Ngươi muốn cờ lụa trong thành à?"
+
+A Thất ôm đầu.
+
+"Em chỉ nói thật."
+
+Tiểu Mãn, đứa bé từng vẽ ký hiệu ở trạm, ngồi bên tấm vải với một mẩu than. Nó vẽ giữa vải một cái bát nước xám. Bên cạnh bát là một cái thìa gỗ nhỏ.
+
+Nó vẽ không đẹp.
+
+Cái bát hơi méo.
+
+Cái thìa giống cái que.
+
+Lúc vẽ, Tiểu Mãn cứ liếm môi.
+
+Không phải vì thèm ăn. Vì sợ.
+
+Một đứa trẻ được giao vẽ ký hiệu cho cả một cái cổng sẽ sợ theo cách rất trẻ con: sợ vẽ xấu, sợ người lớn đổi ý, sợ mình làm cái thìa không giống thì Miên Miên ở đâu đó sẽ không nhận ra.
+
+Nó hỏi Lâm Tịch:
+
+"Nếu vẽ sai thì sao?"
+
+Lâm Tịch ngồi xuống bên cạnh.
+
+"Sai thì sửa."
+
+"Nếu treo lên rồi mới biết sai?"
+
+"Thì hạ xuống sửa."
+
+"Cờ cũng được sửa à?"
+
+Lâm Tịch nhìn tấm vải lọc cũ.
+
+"Cờ của người khác chắc không. Cờ của chúng ta thì được. Người còn sai, cờ sao không sai được."
+
+Tiểu Mãn nghĩ một lúc, rồi nghiêm túc gật đầu.
+
+"Vậy em vẽ méo một chút. Sau này nếu đẹp hơn, người ta biết mình đã sửa."
+
+Nhưng khi mẹ Miên Miên nhìn thấy, bà ngồi xuống rất lâu rồi đưa tay chạm lên hình cái thìa.
+
+"Đừng vẽ nó sạch quá."
+
+Tiểu Mãn ngẩng đầu.
+
+Bà nói:
+
+"Thìa của con bé bị nứt một đường."
+
+Tiểu Mãn gật đầu, cẩn thận thêm một vệt nứt.
+
+Mẹ Miên Miên ngồi xuống cạnh nó.
+
+Bà lấy trong túi ra một mảnh vải nhỏ. Mảnh vải đã được giặt nhiều lần, sạch nhất có thể nhưng vẫn còn vệt ố vàng không tẩy được. Bà đặt mảnh vải lên góc cờ.
+
+"May vào được không?"
+
+Di Mạn nhận ra mảnh vải ấy.
+
+Đó là góc áo của Miên Miên.
+
+Không ai hỏi bà có chắc không.
+
+Có những thứ giữ lại thì đau một mình, đưa ra thì đau trước mặt mọi người. Cả hai đều đau, chỉ khác là cái đau sau có người đứng cạnh.
+
+Di Mạn cầm kim xương mới mài, xỏ chỉ.
+
+Bà khâu rất chậm.
+
+Mỗi mũi kim đi qua vải lọc cũ đều kéo theo một tiếng sột soạt nhỏ, như lá khô. Mẹ Miên Miên nhìn từng mũi kim, tay đặt trên đầu gối, móng tay bấm vào thịt nhưng không khóc.
+
+Đến mũi cuối cùng, bà mới nói:
+
+"Nó thích màu đỏ. Nhưng ở đây không có."
+
+Tạ Khuông đứng sau lưng, lấy sợi dây vải của A Nhĩ trên cán giáo ra, cắt một đoạn rất ngắn.
+
+"Có cái này."
+
+Mảnh vải đã bạc màu, nhìn không còn đỏ rõ nữa. Nhưng mẹ Miên Miên nhận lấy, đặt cạnh vệt nứt của cái thìa.
+
+"Được."
+
+Từ đó lá cờ có thêm một miếng vải nhỏ không cân, như một vết thương được khâu lệch.
+
+Lâm Tịch nhìn tấm vải. Không biết vì sao, ngực nàng đau hơn lúc bị người ta mắng.
+
+Cờ của những nơi khác có thể là chim, kiếm, mặt trời, cây bạc.
+
+Cờ của họ là bát nước chưa trong và cái thìa của một đứa bé không kịp vào cổng.
+
+Tạ Khuông đứng cạnh, nói:
+
+"Treo lên rồi khó hạ."
+
+Lâm Tịch đáp:
+
+"Không treo, người ta cũng không tha."
+
+Tần Dã ngồi dưới cột cổng. Hôm nay sắc mặt hắn không tốt. Thiếu nước, thiếu thuốc, nhiều đêm không ngủ làm vết gene trong người hắn lại âm ỉ. Nhưng hắn vẫn mặc áo khoác cũ chỉnh tề, như thể đi dự một lễ lớn không ai dạy cách làm.
+
+Lâm Tịch đi đến trước mặt mọi người.
+
+"Bảy ngày trước, chúng ta đóng cổng."
+
+Không ai nói.
+
+"Sau đó chúng ta mở chợ, kiểm nước, bắt độc, đổi than, chống thuế nước, phạt người trộm bột, cứu một đứa trẻ sinh non, tìm được giấy cũ nói trạm này từng cấp nước cho dân."
+
+Nàng dừng lại.
+
+"Những việc đó không làm chúng ta sạch. Không làm chúng ta đúng hết. Không làm người chết sống lại. Nhưng làm chúng ta có thứ để trả lời khi người khác hỏi: các ngươi là gì?"
+
+Gió nhẹ nổi lên.
+
+Cái thìa gỗ trên cổng va một tiếng.
+
+Lâm Tịch nói:
+
+"Chúng ta là Cổng Nước Xám."
+
+A Thất kéo dây.
+
+Tấm vải lọc cũ được kéo lên cột thép. Nó không bay đẹp. Nó nặng, ẩm, méo, mép vải còn nhỏ nước bẩn xuống.
+
+Nhưng khi nó lên đến đỉnh cổng, người trong sân đều ngẩng đầu.
+
+Không ai reo.
+
+Chỉ có mẹ Miên Miên khóc.
+
+Khóc rất nhỏ.
+
+Như sợ làm bẩn ngày hôm nay thêm.
+
+Bà Hôi đứng trong đám đông, tay áo còn ám khói đun nước.
+
+Bà nhìn lá cờ một lúc lâu, rồi lặng lẽ lấy từ túi ra một cái nút áo kim loại cũ. Cái nút méo, bên trên có vết rỉ như một vệt máu khô. Bà đặt nó xuống chân cột cờ.
+
+A Thất thấy, hỏi:
+
+"Bà làm gì đó?"
+
+Bà Hôi hừ một tiếng.
+
+"Cờ mới treo mà chân cột trống quá. Xấu."
+
+"Nút áo có ý nghĩa gì?"
+
+"Không có. Nhặt được thì để."
+
+Di Mạn đứng gần đó nói:
+
+"Không có ý nghĩa mà bà giấu trong túi ba ngày?"
+
+Bà Hôi lập tức trừng mắt.
+
+"Ngươi nấu cháo đi, hỏi nhiều làm gì?"
+
+Nhưng bà không lấy cái nút lại.
+
+Sau cái nút của Bà Hôi, Mã Lục đặt xuống một mảnh đế giày đã vá hỏng. Bình đặt một mẩu than cháy hết. Lư Tử đặt một con ốc vít méo. Không ai hẹn ai, chân cột cờ dần có một vòng đồ nhỏ, xấu xí, vô dụng.
+
+Lâm Tịch nhìn những thứ ấy.
+
+Ở thành an toàn, cờ có thể cần lễ, cần kèn, cần người mặc áo sạch đứng đọc lời đẹp.
+
+Ở đây, cờ cần một đống rác người ta không nỡ vứt.
+
+Và cần người còn nhớ vì sao mình không nỡ.
+
+Nhớ cũng là một loại vật tư.
+
+Tần Dã nhìn lá cờ, nói khẽ:
+
+"Không sạch cũng tốt."
+
+Lâm Tịch hỏi:
+
+"Tốt chỗ nào?"
+
+"Sạch quá dễ quên mình từng đi qua bùn."
+
+Lâm Tịch nhìn tay hắn.
+
+Tần Dã nói câu đó rất nhẹ, nhưng ngón tay đang đặt trên bánh xe lại run. Nàng biết không phải vì gió. Hôm nay hắn đã ngồi quá lâu, dùng sức quá nhiều, lại cố giữ lưng thẳng trong suốt lúc treo cờ.
+
+Nàng bước tới, đứng che một nửa gió cho hắn.
+
+Không hỏi có đau không.
+
+Hỏi cũng vô ích.
+
+Nàng chỉ lấy từ túi ra nửa viên thuốc ổn định gen đã được Mộc Sanh cắt lại, đặt vào lòng bàn tay hắn.
+
+Tần Dã nhìn viên thuốc.
+
+"Kho thuốc còn ít."
+
+"Ừ."
+
+"Ta chưa đến mức cần."
+
+"Ta biết."
+
+"Vậy?"
+
+Lâm Tịch đáp:
+
+"Hôm nay cổng treo cờ. Người giữ dây đường về không được ngã trước cờ."
+
+Tần Dã im một lúc.
+
+Rồi hắn nhận thuốc.
+
+Không cảm ơn.
+
+Nhưng khi uống nước, hắn chỉ nhấp một ngụm rất nhỏ, phần còn lại đẩy về phía nàng.
+
+Lâm Tịch nhìn cái cốc.
+
+Cuối cùng cũng nhận.
+
+Hai người không nói thêm.
+
+Lá cờ trên cao rũ xuống trong gió yếu, còn cái cốc sắt ở giữa họ ấm hơn một chút vì vừa qua tay hai người.
+
+## Chương 228: Chủ Hợp Pháp
+
+Buổi trưa, xe của Thành Nam đến.
+
+Trước khi xe xuất hiện, Cổng Nước Xám có một khoảng yên tĩnh rất ngắn.
+
+Không ai biết đó là yên tĩnh cuối cùng của bảy ngày cô lập, nên mọi người dùng nó rất vụng về.
+
+Di Mạn tranh thủ cạo đáy nồi, gom được một lớp cháo cháy mỏng. Nàng bẻ thành từng mảnh nhỏ, chia cho mấy đứa trẻ đang ngồi học ký hiệu nước sạch, nước đục, nước không được uống.
+
+Bình dạy ba người mới cách đốt than trong lon hở miệng. Nàng nói lắp bắp, nhiều chỗ phải nhìn Di Mạn, nhưng khi một người định đặt lon quá sát vải bạt, nàng lập tức quát:
+
+"Muốn ấm hay muốn cháy?"
+
+Giọng quát ấy làm Di Mạn hài lòng đến mức giả vờ không nghe.
+
+Mộc Sanh kiểm vết thương của Tạ Khuông. Hắn cứ nhìn lá cờ.
+
+"Nhìn nữa cờ rơi xuống à?" Mộc Sanh hỏi.
+
+"Ta đang xem dây buộc."
+
+"Dây buộc làm sao?"
+
+"Nếu gió lớn, góc trái sẽ rách."
+
+Mộc Sanh cúi đầu bôi thuốc.
+
+"Vậy lát nữa ngươi nói A Thất gia cố."
+
+Tạ Khuông im một lúc.
+
+"Ta nói nó có nghe không?"
+
+"Ngươi đang giữ một bản hồ sơ và một cái cổng. Nó không nghe thì ngươi mắng."
+
+Tạ Khuông nhíu mày.
+
+"Ta tưởng các ngươi ghét ta mắng."
+
+Mộc Sanh quấn băng mạnh tay hơn một chút.
+
+"Ghét. Nhưng có vài việc cần người mắng mới không lười."
+
+Ở góc sân, ông cụt chân ngồi cạnh kho nước, tập mở chốt van bằng một cây gậy móc. Con gái ông đứng cạnh, mặt vẫn sưng vì khóc. Ông mở được một lần, nàng lập tức quay mặt đi lau mắt.
+
+Ông giả vờ không thấy.
+
+Trên bảng, ba cột `Kéo đi`, `Ở lại giữ`, `Gửi tên` đã đầy chữ. Có chữ đẹp, chữ xấu, dấu tay thay tên, ký hiệu trẻ con vẽ. Nó giống một bản đồ của nỗi sợ, nhưng cũng giống một thứ trật tự mà nỗi sợ chưa nuốt được.
+
+Lâm Tịch đi qua từng chỗ.
+
+Nàng không nói gì lớn.
+
+Chỉ sửa một sợi dây, nhặt một cái bát úp lệch, đổi chỗ một thùng nước ra xa mép nắng, nhắc A Thất ăn nửa miếng bột trước khi tay nó run đến không cầm được bút.
+
+Đó là khoảnh khắc rất nhỏ.
+
+Nhỏ đến mức nếu có người kể lại, có lẽ sẽ bỏ qua.
+
+Nhưng sau này, khi nghĩ về ngày thứ bảy, Lâm Tịch lại nhớ nhất chính khoảng yên tĩnh ấy.
+
+Vì trong một lát ngắn ngủi, Cổng Nước Xám không giống một mục tiêu bị cô lập.
+
+Nó giống một nơi có buổi trưa.
+
+Không phải xe đốt.
+
+Là một chiếc xe đen dài, bánh bọc cao su cũ, hai bên có bốn lính hộ tống. Phía sau xe treo dấu kiểm dịch, phía trước lại cắm cờ nhỏ của phòng quản lý tài sản ngoại vi.
+
+Thẩm Bạch nhìn thấy lá cờ ấy, mắt hơi đổi.
+
+"Không phải đội xử lý dịch."
+
+"Là ai?"
+
+"Người đi lấy đồ bằng giấy."
+
+Xe dừng ngoài vạch chợ. Một người đàn ông trung niên bước xuống. Hắn mặc áo khoác tro, giày sạch, tóc chải gọn. Trên mặt không có vẻ kiêu căng quá lộ, nhưng cũng không có vẻ nhìn người ngoài thành như người cùng loài.
+
+Hắn đi đến trước vạch, không bước qua.
+
+"Ai là người đại diện Cổng Nước Xám?"
+
+Lâm Tịch bước ra.
+
+"Nói việc."
+
+Người đàn ông nhìn nàng, rồi nhìn lá cờ vừa treo trên cổng.
+
+"Ta là Chu Kính, ủy quyền viên phòng quản lý tài sản ngoại vi Thành Nam. Theo hồ sơ phục hồi quyền sở hữu, Trạm Nước Số Chín thuộc tài sản được thu hồi để tái quy hoạch. Các ngươi đang chiếm dụng trái phép."
+
+A Thất tức đến bật cười:
+
+"Bảy ngày trước còn bảo chúng ta là ổ dịch, hôm nay đã thành tài sản?"
+
+Chu Kính không nhìn nó.
+
+Hắn lấy từ cặp da ra một xấp giấy, giơ lên.
+
+"Đây là lệnh thu hồi có dấu Thành Nam và bản chuyển nhượng từ chủ sở hữu hợp pháp trước đây."
+
+Thẩm Bạch bước lên.
+
+"Trạm Số Chín từng là trạm nước công cộng, không chuyển nhượng cho đơn vị thương mại trong thời kỳ thiên tai."
+
+Chu Kính nhìn hắn, hơi nhíu mày.
+
+"Bác sĩ Thẩm. Không ngờ gặp ngươi ở đây."
+
+Thẩm Bạch cười rất nhẹ.
+
+"Ta cũng không ngờ mình còn được gọi là bác sĩ."
+
+Chu Kính mở xấp giấy.
+
+"Quy định không chuyển nhượng đã hết hiệu lực sau Sắc lệnh Tái Thiết lần thứ ba. Chủ sở hữu quyền quản lý khẩn cấp đã ký bàn giao cho Thành Nam. Từ hôm nay, người trong trạm có hai lựa chọn: đăng ký thành lao động tạm trú dưới quyền quản lý mới, hoặc rời khỏi khu vực trong sáu giờ."
+
+Chợ trước cổng xôn lên.
+
+Sáu giờ.
+
+Một cái cổng dựng bằng máu, nước, bột, than, người chết và người sống, trong miệng hắn chỉ cần sáu giờ để trở thành chỗ người khác.
+
+Lâm Tịch đưa tay.
+
+"Cho ta xem giấy."
+
+Chu Kính do dự, rồi đưa bản sao qua vạch. Tạ Khuông nhận trước, kiểm mép giấy, không thấy độc mới chuyển cho Lâm Tịch.
+
+Lâm Tịch nhìn các dòng chữ dày đặc. Nàng hiểu không hết, nhưng thấy được dấu đỏ, số hiệu, ngày tháng, chữ ký.
+
+Nàng đưa cho Thẩm Bạch.
+
+Thẩm Bạch đọc nhanh. Đến trang cuối, tay hắn dừng lại.
+
+"Có vấn đề?"
+
+Thẩm Bạch không đáp. Hắn đưa giấy cho Tần Dã.
+
+Tần Dã nhận lấy.
+
+Ban đầu vẻ mặt hắn vẫn bình thường.
+
+Nhưng khi nhìn thấy chữ ký cuối trang, toàn bộ thân thể hắn cứng lại.
+
+Rất nhẹ.
+
+Nhẹ đến mức người khác không phát hiện.
+
+Nhưng Lâm Tịch thấy.
+
+Ngón tay hắn ấn lên mép giấy, móng tay gần như trắng bệch.
+
+Nàng cúi xuống.
+
+Chữ ký ấy chỉ có hai chữ:
+
+`Tần Sách.`
+
+Lâm Tịch chưa từng nghe tên này.
+
+Nhưng nàng nghe Tần Dã thở.
+
+Không phải thở vì đau gene.
+
+Là một kiểu đau cũ hơn.
+
+Chu Kính nhìn sắc mặt hắn, mỉm cười như đã chờ khoảnh khắc này.
+
+"Xem ra có người nhận ra."
+
+Tần Dã ngẩng đầu.
+
+Mắt hắn tối đến mức làm người ta quên mất hắn đang ngồi trên xe lăn.
+
+"Giấy này từ đâu ra?"
+
+Chu Kính đáp:
+
+"Từ người có quyền ký nó."
+
+Tần Dã nói từng chữ:
+
+"Tần Sách đã chết."
+
+Chu Kính vẫn cười.
+
+"Vậy có lẽ ngươi nên hỏi, ai đã thay người chết ký tên."
+
+Gió thổi qua lá cờ lọc cũ.
+
+Cái bát nước xám và cái thìa gỗ méo mó run lên trên nền trời xám trắng.
+
+Bảy ngày cô lập kết thúc.
+
+Nhưng Cổng Nước Xám vừa bị kéo vào một cánh cửa khác.
+
+Cánh cửa mang họ Tần.

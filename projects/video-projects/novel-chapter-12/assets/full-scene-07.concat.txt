@@ -1,0 +1,2 @@
+file 'E:/ThanhMV/temp/tts-chunks/scene-07/chunk-01.mp3'
+file 'E:/ThanhMV/temp/tts-chunks/scene-07/chunk-02.mp3'

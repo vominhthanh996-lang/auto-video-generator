@@ -1,0 +1,973 @@
+# Phần 2: Một Cốc Nước Có Tên Người Khác
+
+## Chương 171: Trả Lại Một Lượt Nước
+
+A Mục trở lại hàng nước với túi điểm trong tay.
+
+Nó đi rất chậm.
+
+Không phải vì không sợ bị nhận ra. Nó sợ. Sợ đến mức bàn tay cầm túi điểm ướt mồ hôi, sợ người gác nhớ mặt nó, sợ Lâm Tịch phía sau hẻm bị bắt, sợ thằng bé kia nhìn nó rồi khóc lớn hơn.
+
+Nhưng nó vẫn quay lại.
+
+Lâm Tịch đứng ở đầu hẻm, cách nó mười mấy bước, không đi theo.
+
+Có vài món nợ phải tự tay trả.
+
+Nếu nàng đi thay, A Mục chỉ học được rằng đội trưởng sẽ dọn hậu quả cho mình. Phế thổ không thiếu người được người khác dọn hộ một lần rồi cả đời tưởng mình không cần nhìn xuống chân.
+
+Hàng nước đã ổn lại. Người gác đang cúi đầu kiểm máy phụ, sắc mặt khó coi. Màn hình trắng đã tắt, nhưng ai từng thấy ánh trắng đó đều lảng mắt khỏi Lâm Tịch.
+
+Ánh trắng của Ngân Thụ không giống ánh đèn thường.
+
+Nó không soi đường.
+
+Nó soi giá.
+
+Thằng bé ôm bình nứt đứng ở cuối hàng, miếng bánh khô cầm trong tay chưa ăn. Người mẹ của nó đang dỗ nó nín, giọng khàn đến mức mỗi chữ đều như cào qua cổ.
+
+A Mục dừng trước mặt hai mẹ con.
+
+Nó đưa túi điểm ra.
+
+"Lượt nước của ngươi."
+
+Người mẹ nhìn túi điểm, rồi nhìn nó.
+
+"Ngươi đá bình của nó?"
+
+A Mục mím môi.
+
+"Ừ."
+
+"Vì cô gái kia?"
+
+A Mục không đáp.
+
+Đó là đáp án.
+
+Người mẹ cười khan.
+
+"Vậy ngươi trả một lượt nước là xong?"
+
+A Mục siết tay.
+
+Nó chỉ có từng đó.
+
+Trong kho, Tần Dã còn sốt. A Hành cần thuốc. Ninh cần nước pha bột sạch. Di Mạn phải nấu cháo loãng cho cả đám người vừa từ cấm khu về. Một lượt nước với người khác là một bình. Với Chim Xám lúc này, nó là một lần kéo dài hơi thở.
+
+Nó cúi đầu.
+
+"Không xong."
+
+Người mẹ im.
+
+A Mục nói tiếp:
+
+"Nhưng ta chỉ có cái này."
+
+Thằng bé nhìn nó. Nó nhỏ hơn A Mục vài tuổi, mắt to vì đói, môi nứt thành đường trắng. Nó nhìn túi điểm như nhìn một con cá đã nướng chín.
+
+"Mẹ."
+
+Người mẹ không nhận ngay.
+
+Bà nhìn về phía đầu hẻm.
+
+Lâm Tịch biết bà đã thấy mình.
+
+Nàng không tránh.
+
+Người mẹ hỏi A Mục:
+
+"Cô ta là ai?"
+
+A Mục nghĩ một chút.
+
+Nếu nói là đội trưởng, người ta sẽ sợ.
+
+Nếu nói là người bị Ngân Thụ tìm, người ta sẽ chạy.
+
+Nếu nói là người tốt, chính nó cũng thấy câu đó quá nhẹ.
+
+Cuối cùng nó nói:
+
+"Là người bắt ta quay lại."
+
+Người mẹ nhìn nó rất lâu.
+
+Rồi nhận túi điểm.
+
+"Vậy ngươi may."
+
+A Mục ngẩng lên.
+
+Người mẹ kéo thằng bé lên trước.
+
+"Trong phế thổ, còn có người bắt mình quay lại trả nợ là may."
+
+A Mục đứng chết lặng giữa tiếng nước bắt đầu chảy.
+
+Vòi nước nhả ra mười hai nhịp.
+
+Không nhiều.
+
+Một, hai, ba.
+
+Tiếng nước rơi vào bình nứt nghe trong đến mức đau tai.
+
+Bốn, năm, sáu.
+
+Thằng bé nhìn bình, rồi nhìn miếng bánh trong tay. Nó do dự một lúc, bẻ miếng bánh làm đôi, đưa nửa nhỏ hơn cho A Mục.
+
+A Mục không nhận.
+
+"Không cần."
+
+Thằng bé vẫn đưa.
+
+"Mẹ nói trả nợ."
+
+A Mục nhìn nửa miếng bánh nhỏ đến đáng thương.
+
+Trong đời nó từng trộm linh kiện, từng lừa người say, từng giấu một con dao gãy dưới áo để phòng người lớn cướp đồ. Nhưng chưa từng có ai bị nó hại rồi đưa lại cho nó nửa miếng bánh.
+
+Nó nhận.
+
+Nước chảy tới nhịp mười hai thì ngắt.
+
+Người mẹ ôm bình lên. Bà đi ngang qua A Mục, nói rất khẽ:
+
+"Bảo cô gái kia đừng đứng gần máy nước nữa. Máy thấy cô ta rồi."
+
+A Mục quay đầu.
+
+"Bà biết gì?"
+
+Người mẹ không dừng.
+
+"Ta từng lau sàn ở khu nuôi cấy. Người trên bàn thí nghiệm cũng có tên. Chỉ là không ai gọi."
+
+Nói xong, bà kéo đứa bé biến vào chợ tro.
+
+A Mục đứng yên một lúc mới chạy về đầu hẻm.
+
+Lâm Tịch nhìn nửa miếng bánh trong tay nó.
+
+"Được trả?"
+
+A Mục gật đầu, giọng hơi nghẹn.
+
+"Nhỏ hơn phần ta đưa."
+
+"Vậy giữ kỹ."
+
+"Vì sao?"
+
+"Đó là bằng chứng ngươi chưa hỏng."
+
+A Mục cúi đầu, nhét nửa miếng bánh vào trong áo, cẩn thận hơn cả giấu tinh thạch.
+
+Hai người rời điểm nước theo lối sau chợ tro. Lâm Tịch không đi đường chính nữa. Sau khi hồ sơ bật sáng, mọi lối có máy quét đều có thể là miệng bẫy.
+
+Trên đường về, nàng ghé qua một quầy bán giấy lọc cũ. Chủ quầy là một ông lão cụt hai ngón tay, tóc bạc vàng vì bụi xạ. Trên sạp bày đủ thứ: vải lọc đã giặt, lõi sứ nứt, than vụn, bình gốm bị mẻ, giấy cư trú giả nhìn qua đã biết giả.
+
+Lâm Tịch chỉ vào túi than.
+
+"Đổi."
+
+Ông lão nhìn nàng từ đầu tới chân.
+
+"Không nhận tên Chim Xám."
+
+A Mục lập tức căng người.
+
+Lâm Tịch lấy một miếng kim loại nhỏ từ túi ra. Đó là mảnh vỏ của con thú uống kim loại trong đường ống Tập 4, Mộc Sanh giữ lại vì nó chịu nhiệt tốt.
+
+Ông lão nhìn mảnh vỏ, mắt hơi sáng.
+
+"Hàng đường ống?"
+
+"Ừ."
+
+"Nhiễm không?"
+
+"Nhiễm nhẹ. Rửa axit hai lần dùng được làm tấm chắn."
+
+"Ngươi biết hàng."
+
+"Ta biết đói."
+
+Ông lão cười.
+
+"Biết đói tốt hơn biết hàng."
+
+Ông đưa nàng một túi than, hai lớp vải lọc và một lõi sứ cũ chỉ nứt ở miệng.
+
+A Mục nhìn đồ trên tay ông, rồi nhìn mảnh kim loại.
+
+"Lỗ."
+
+Ông lão liếc nó.
+
+"Thằng nhãi này miệng sắc."
+
+A Mục nói:
+
+"Mảnh đó đổi được ba lõi."
+
+"Nếu ta muốn sống lâu, ta chỉ bán hai."
+
+"Ông sợ dính dáng tới bọn ta."
+
+"Đúng."
+
+A Mục không nói được nữa.
+
+Lâm Tịch nhận đồ.
+
+"Thêm một tin."
+
+Ông lão nhướng mắt.
+
+"Tin gì?"
+
+"Điểm nước nào chưa đổi sang nhận diện cấp một?"
+
+Ông lão nhìn nàng.
+
+"Tin đó đắt."
+
+Lâm Tịch đặt thêm nửa viên tinh thạch xám lên sạp.
+
+Đó là nửa viên cuối cùng nàng giữ riêng, vốn định dùng khi cả đội hết đường.
+
+A Mục nhìn tay nàng, môi mấp máy, nhưng không ngăn.
+
+Ông lão thu tinh thạch rất nhanh.
+
+"Cổng Nam cũ có một máy dân dụng chưa đổi. Nhưng thẻ lấy nước ở đó toàn là thẻ lao dịch. Mỗi thẻ có tên người, ca làm, số đội."
+
+"Có nước?"
+
+"Có. Xấu, nhưng uống được sau lọc."
+
+"Bao lâu nữa đổi máy?"
+
+"Trưa."
+
+Lâm Tịch tính thời gian.
+
+Chưa đầy ba giờ.
+
+Ông lão hạ giọng:
+
+"Đừng tham. Cổng Nam cũ gần khu thải người."
+
+"Khu thải người?"
+
+"Những kẻ hôm nay bị từ chối gia hạn cư trú sẽ bị gom ra đó. Trẻ con, người bệnh, người nợ nước, người có giấy tờ bẩn. Trong thành gọi là điểm chuyển tiếp."
+
+Ông cười nhạt.
+
+"Ngoài thành gọi là chỗ ném."
+
+Lâm Tịch cầm túi than.
+
+"Cảm ơn."
+
+"Đừng cảm ơn. Ta lấy tiền."
+
+"Lấy tiền mà nói thật cũng đáng cảm ơn."
+
+Ông lão nhìn nàng thêm một lần.
+
+"Cô gái, nếu hồ sơ của ngươi thật sự thuộc Ngân Thụ, chạy khỏi thành không đủ."
+
+"Vậy phải làm gì?"
+
+Ông lão kéo khăn che nửa mặt.
+
+"Phải làm cho nhiều người cùng chạy. Một người chạy là hàng thất lạc. Nhiều người chạy là rối loạn trị an. Ngân Thụ ghét rối loạn hơn ghét mất hàng."
+
+Lâm Tịch không đáp.
+
+Khi nàng quay đi, ông lão nói sau lưng:
+
+"Nhưng rối loạn sẽ chết người."
+
+Lâm Tịch dừng nửa bước.
+
+"Ta biết."
+
+Ông lão cười khẽ.
+
+"Ngươi còn nhỏ. Chưa biết hết đâu."
+
+Trên đường về, A Mục hỏi:
+
+"Chị thật sự muốn đưa nhiều người chạy?"
+
+Lâm Tịch nhìn bức tường thành phía xa. Trên tường, kính chắn xạ phản chiếu ánh trời trắng bệnh. Bên dưới tường, những người không đủ điểm cư trú đang xếp hàng chờ phán quyết.
+
+"Ta không muốn."
+
+A Mục ngẩn ra.
+
+Lâm Tịch nói:
+
+"Ta chỉ muốn người của mình sống. Ta cũng không muốn làm anh hùng."
+
+"Vậy..."
+
+"Nhưng nếu cổng Nam cũ có nước, và khu thải người ở ngay cạnh đó, chúng ta sẽ nhìn thấy họ."
+
+Nàng bước nhanh hơn.
+
+"Có vài chuyện, trước khi nhìn thấy còn có thể nói là không biết. Nhìn thấy rồi, không cứu thì phải nhớ cả đời."
+
+A Mục cúi đầu.
+
+Nửa miếng bánh trong áo nó cọ vào ngực, khô cứng, nhỏ bé, nhưng làm nó đau.
+
+Khi hai người về tới kho, Tần Dã đã uống xong liều thuốc bằng túi nước Kỷ Nam đem tới. Sắc mặt hắn vẫn trắng, nhưng mắt tỉnh hơn.
+
+Hắn nghe Lâm Tịch nói xong chuyện máy nước, không hỏi nàng có sợ không.
+
+Hắn chỉ hỏi:
+
+"Ngươi thấy mấy dòng?"
+
+"Bốn. Dòng cuối là trạng thái mẫu sống ổn định ngoài buồng nuôi."
+
+Hứa Linh đang ghi liều thuốc bỗng làm gãy đầu bút.
+
+Lâm Tịch nhìn bà.
+
+"Bà biết buồng nuôi?"
+
+Hứa Linh cúi đầu nhặt đầu bút gãy. Bà mất rất lâu mới nói:
+
+"Ta biết tên."
+
+"Chỉ tên?"
+
+"Ta từng ký giấy chuyển máu vào đó."
+
+Không khí trong phòng như bị rút bớt.
+
+Hứa Linh nói tiếp, giọng khô:
+
+"Năm năm trước. Một lô mẫu nhiễm xạ sống sót sau thử nghiệm Đèn Vàng. Phần lớn chết trong ba tháng. Có một hồ sơ biến mất."
+
+Lâm Tịch nhìn bà.
+
+"Lâm Tịch?"
+
+Hứa Linh không nhìn nàng.
+
+"Ta không biết tên. Lúc đó hồ sơ dùng mã."
+
+"Mã gì?"
+
+Bà im lặng.
+
+Tần Dã chống tay muốn ngồi dậy. Cơn đau làm trán hắn rịn mồ hôi.
+
+"Nói."
+
+Hứa Linh nhìn hắn, rồi nhìn Lâm Tịch.
+
+"R2-LX-017."
+
+Đúng mã tối qua.
+
+A Thất chửi một câu rất bẩn.
+
+Di Mạn không mắng nó.
+
+Ninh ôm hộp Đèn Vàng đứng sau bàn, mặt trắng bệch. Cây nhỏ trong hộp khẽ rung, không có gió.
+
+Lâm Tịch đột nhiên thấy cổ tay mình đau.
+
+Như thể chiếc vòng nhận diện trong tấm ảnh cũ vẫn còn nằm đó, chỉ là da thịt đã mọc qua nó nhiều năm.
+
+Nàng hỏi:
+
+"Nguyên chủ... cô bé thân thể này, là từ buồng nuôi ra?"
+
+Hứa Linh đáp:
+
+"Có thể."
+
+"Vì sao lại ở Khu 17?"
+
+"Có thể thất lạc. Có thể bị thả ra. Có thể có người cứu."
+
+"Hoặc có người cần xem mẫu sống ngoài buồng nuôi được bao lâu."
+
+Không ai nói tiếp.
+
+Vì khả năng cuối cùng quá giống Ngân Thụ.
+
+Một tiếng gõ vang lên.
+
+Không phải Kỷ Nam.
+
+Lần này tiếng gõ lịch sự hơn, nhẹ hơn, sạch hơn.
+
+Thẩm Bạch đứng ngoài cửa.
+
+Áo trắng của hắn không dính chút bụi nào, giữa khu xám nhìn chói mắt như một lời xúc phạm.
+
+Hắn mỉm cười với Lâm Tịch.
+
+"Ta nghe nói thẻ nước của các ngươi gặp chút vấn đề."
+
+Di Mạn đặt tay lên dao bếp.
+
+A Thất ôm radio lùi lại.
+
+Tần Dã nhìn hắn, mắt lạnh xuống.
+
+Thẩm Bạch làm như không thấy.
+
+Hắn đặt một hộp nước tinh khiết lên bàn ngoài cửa.
+
+Sáu chai.
+
+Mỗi chai trong đến mức có thể nhìn thấy ánh đèn xuyên qua.
+
+"Đừng hiểu lầm. Đây không phải điều kiện."
+
+Lâm Tịch không chạm vào hộp nước.
+
+"Vậy là gì?"
+
+Thẩm Bạch nhìn nàng, giọng ôn hòa:
+
+"Là lời nhắc. Ngân Thụ có thể khóa nước của cô. Ta thì có thể đem nước tới."
+
+Hắn dừng một chút.
+
+"Lâm Tịch, cô không cần chạy ra phế thổ. Ngoài đó rất bẩn."
+
+Lâm Tịch nhìn sáu chai nước.
+
+Trong phế thổ, một chai nước sạch có thể đổi được một mạng.
+
+Sáu chai đặt trước cửa, không khác sáu sợi dây buộc bằng thủy tinh.
+
+Nàng hỏi:
+
+"Nếu ta nhận?"
+
+Thẩm Bạch cười nhẹ.
+
+"Vậy hôm nay Tần Dã không chết khát. A Hành cũng không cần pha thuốc bằng nước xấu."
+
+"Nếu ta không nhận?"
+
+"Ta vẫn để lại."
+
+Hắn lùi nửa bước.
+
+"Vì người ra quyết định không nên khát."
+
+Nói xong, hắn xoay người rời đi.
+
+Không ép.
+
+Không ký giấy.
+
+Không đe dọa.
+
+Chỉ để nước lại.
+
+Đó mới là chỗ đáng sợ nhất.
+
+Trong kho, mọi ánh mắt đều nhìn hộp nước.
+
+Lâm Tịch nghe cổ họng mình khô đến đau.
+
+Nàng cũng nhìn.
+
+Rất lâu.
+
+Rồi nàng nói:
+
+"Không uống."
+
+A Thất nhắm mắt.
+
+Không ai phản đối ngay.
+
+Nhưng cũng không ai thấy quyết định đó dễ chịu.
+
+Di Mạn là người đầu tiên bước tới. Bà không đá hộp nước đi, cũng không mở ra. Bà lấy một mảnh vải bẩn phủ lên nó.
+
+"Để đó."
+
+Lâm Tịch nhìn bà.
+
+Di Mạn nói:
+
+"Không uống, nhưng cũng không phí. Nước không có tội. Người đưa nước mới có."
+
+Tần Dã khẽ ho.
+
+"Cổng Nam cũ."
+
+Lâm Tịch quay lại.
+
+Hắn nhìn bản đồ Kỷ Nam để trên bàn.
+
+"Đi trước trưa. Lấy nước, nhìn khu thải người, rồi quyết định rời thành lúc nào."
+
+Lâm Tịch gật đầu.
+
+Ngoài cửa, hộp nước sạch nằm dưới mảnh vải bẩn.
+
+Nó không phát ra âm thanh.
+
+Nhưng cả kho đều nghe thấy nó đang hỏi một câu:
+
+Khi khát tới tận xương, người ta còn có thể từ chối sạch sẽ được bao lâu?
+
+## Chương 172: Cổng Nam Cũ
+
+Cổng Nam cũ không giống cổng thành.
+
+Nó giống một vết sẹo bị khâu qua loa.
+
+Hai cánh thép lớn đã gỉ, mặt ngoài phủ lớp bụi đỏ dày đến mức không còn thấy dấu hiệu cảnh báo ban đầu. Trên cao treo ba cái loa hỏng, dây điện rủ xuống như gân chết. Cổng chính không mở nữa. Người ta chỉ dùng một lối phụ bên hông, đủ cho xe chở rác và người bị đuổi đi qua.
+
+Máy nước dân dụng nằm sát tường, bên dưới mái tôn thủng. Đúng như ông lão bán than nói, nó chưa đổi sang nhận diện cấp một. Thân máy dán đầy giấy cảnh báo: nước chưa xử lý hoàn toàn, tự chịu rủi ro, mỗi thẻ lao dịch một lượt.
+
+Lâm Tịch tới đó cùng A Thất, A Mục và Mộc Sanh.
+
+Tần Dã muốn đi.
+
+Không ai cho.
+
+Hắn không cãi lâu. Chỉ vẽ lại đường rút trên bản đồ, đánh dấu ba điểm có thể bị chặn, rồi đưa con dao gãy của mình cho Lâm Tịch.
+
+"Không dùng để đánh."
+
+"Vậy dùng làm gì?"
+
+"Cắt dây."
+
+Lâm Tịch hiểu.
+
+Trong thành, dây đôi khi nguy hiểm hơn dao.
+
+A Thất mang theo ba thẻ lao dịch cũ. Hai thẻ nó đổi từ đám trẻ tháo máy, một thẻ là của Lão Phùng thời còn sửa cống cho khu Nam. Thẻ cũ đến mức ảnh trên đó giống một vệt mốc.
+
+"Nếu máy nuốt thẻ, ta sẽ khóc."
+
+Mộc Sanh nói:
+
+"Khóc nhỏ thôi. Ta không muốn bị chú ý."
+
+"Tỷ có biết an ủi không?"
+
+"Biết. Nhưng ta tiết kiệm."
+
+A Mục đi cạnh Lâm Tịch, hôm nay yên lặng hơn thường. Nửa miếng bánh của thằng bé ở điểm nước được nó bọc lại bằng vải, giấu trong ngực như bùa.
+
+Khu thải người nằm phía bên kia máy nước.
+
+Ban đầu Lâm Tịch nghĩ mình đã quen thấy người nghèo.
+
+Khu 17 từng có người đói đến mức moi giày cũ ra luộc. Đường ray phía Nam từng có trẻ con ngủ trong toa tàu chứa xác thú. Khu xám trong thành có người tính từng giọt nước rửa bát.
+
+Nhưng khu thải người vẫn làm nàng đứng khựng.
+
+Không phải vì quá hỗn loạn.
+
+Mà vì nó quá có trật tự.
+
+Người bị từ chối cư trú đứng thành ba hàng. Hàng người bệnh. Hàng nợ nước. Hàng giấy tờ không hợp lệ. Mỗi người cầm một tờ giấy xám, trên giấy đóng dấu đỏ: chuyển tiếp ngoài tường.
+
+Không ai giải thích ngoài tường là đâu.
+
+Vì mọi người đều biết.
+
+Ngoài tường là nơi thành không cần nghe tiếng ho nữa.
+
+A Thất siết ba cái thẻ trong tay.
+
+"Bao nhiêu người?"
+
+Mộc Sanh nhìn nhanh.
+
+"Hơn một trăm."
+
+"Hơn một trăm người bị ném trong một buổi sáng?"
+
+Không ai trả lời nó.
+
+Một cô bé ở hàng người bệnh đang ôm cái nồi méo. Trong nồi có hai bộ quần áo trẻ con, một túi bột vàng và một con búp bê làm bằng vải lọc cũ. Mẹ cô bé ngồi dưới đất, ho ra máu trên khăn, nhưng vẫn cố dùng ngón tay lau vết bẩn trên mặt con.
+
+Cách đó không xa, một người đàn ông trung niên quỳ trước bàn đăng ký.
+
+"Con trai ta còn trong khu lao dịch. Cho ta đợi nó tan ca."
+
+Nhân viên đăng ký không ngẩng đầu.
+
+"Giấy của ông hết hạn lúc sáu giờ."
+
+"Nó tan ca lúc tám giờ."
+
+"Vậy nó có thể xin tìm thân nhân ngoài tường."
+
+"Nó mới mười hai."
+
+"Theo quy định, mười hai tuổi có thể tự nộp đơn."
+
+Người đàn ông há miệng.
+
+Không phát ra tiếng.
+
+Lâm Tịch nhìn bàn đăng ký.
+
+Trên bàn có nước.
+
+Một bình thủy tinh trong, đặt cạnh tay nhân viên. Bình nước đầy hơn nửa. Mặt ngoài bình còn đọng hơi lạnh.
+
+A Mục cũng nhìn thấy.
+
+Nó cúi đầu.
+
+Lâm Tịch biết nó đang nghĩ tới cái bình nó đá buổi sáng.
+
+Nàng đặt tay lên vai nó.
+
+"Không phải lỗi của ngươi."
+
+A Mục nói rất nhỏ:
+
+"Nhưng nếu sau này chúng ta có bàn đăng ký thì sao?"
+
+Câu hỏi ấy làm Lâm Tịch lạnh sống lưng.
+
+Nàng nhìn khu thải người, nhìn máy nước, nhìn cổng cũ gỉ sét.
+
+Người ta không trở thành ác quỷ trong một ngày.
+
+Có thể ban đầu cũng chỉ là một cái bàn.
+
+Một cái bình nước.
+
+Một câu "theo quy định".
+
+A Thất đã cắm thẻ lao dịch đầu tiên vào máy.
+
+Máy kêu rè rè, rồi nhả nước.
+
+Dòng nước vàng nhạt chảy vào túi da.
+
+A Thất thở phào.
+
+"Được."
+
+Mộc Sanh lập tức đặt túi thứ hai.
+
+Lâm Tịch không rời mắt khỏi khu thải người.
+
+Một xe chở rác trống chạy tới. Người gác cổng bắt đầu quát từng hàng chuẩn bị ra ngoài. Cô bé ôm nồi bị đám đông đẩy ngã. Con búp bê vải lọc rơi xuống đất, lăn tới gần rãnh nước thải.
+
+Lâm Tịch bước lên một bước.
+
+Mộc Sanh nắm cổ tay nàng.
+
+"Đội trưởng."
+
+Lâm Tịch dừng lại.
+
+Mộc Sanh nhìn nàng, ánh mắt bình tĩnh nhưng tay siết rất mạnh.
+
+"Chúng ta tới lấy nước."
+
+"Ta biết."
+
+"Nếu gây chuyện ở đây, không ai về được."
+
+"Ta biết."
+
+Cô bé kia bò dưới đất tìm búp bê. Người gác đá cái nồi của nó sang một bên.
+
+A Mục thở gấp.
+
+A Thất nhìn máy nước, nhìn Lâm Tịch, rồi nhìn cô bé.
+
+Nước trong túi da sắp đầy.
+
+Mười hai nhịp.
+
+Máy ngắt.
+
+A Thất rút thẻ ra.
+
+Nó bỗng nói:
+
+"Ta có một cách ngu."
+
+Mộc Sanh nhìn nó.
+
+"Thường ngày ngươi có nhiều."
+
+"Cách này đặc biệt ngu."
+
+"Nói."
+
+A Thất giơ thẻ thứ ba.
+
+"Máy này dùng thẻ lao dịch, không dùng nhận diện mặt. Ta có thể làm nó nhả thêm ba lượt trước khi tự khóa. Nhưng tiếng cảnh báo sẽ vang."
+
+Lâm Tịch hỏi:
+
+"Bao lâu?"
+
+"Nửa phút. Có thể ít hơn. Sau đó chúng ta chạy."
+
+Mộc Sanh nói:
+
+"Ba lượt nước không cứu được hơn trăm người."
+
+A Thất đáp:
+
+"Không cứu. Nhưng làm hàng rối."
+
+A Mục ngẩng phắt đầu.
+
+Lâm Tịch nhìn nó.
+
+Ông lão bán than nói: một người chạy là hàng thất lạc. Nhiều người chạy là rối loạn trị an.
+
+Rối loạn sẽ chết người.
+
+Nhưng im lặng cũng vậy.
+
+Lâm Tịch hỏi:
+
+"Nếu máy khóa, lần sau không còn nước ở đây."
+
+A Thất cười méo.
+
+"Dù sao trưa cũng đổi máy."
+
+Mộc Sanh không phản đối nữa.
+
+Nàng chỉ lấy cờ lê ra.
+
+"Ta đập hộp cảnh báo sau mười nhịp. Thêm được vài giây."
+
+A Mục nói:
+
+"Ta kéo cô bé kia."
+
+Lâm Tịch nhìn nó.
+
+"Chỉ kéo cô bé?"
+
+A Mục cắn răng.
+
+"Và mẹ nó nếu kéo được."
+
+Lâm Tịch gật đầu.
+
+Nàng rút con dao gãy Tần Dã đưa, cắt dây buộc tấm bạt trên xe rác gần đó.
+
+Tấm bạt rơi xuống, bụi đỏ tung lên.
+
+Người gác quay đầu.
+
+"Làm gì đó?"
+
+A Thất cắm thẻ thứ ba vào máy.
+
+Máy kêu một tiếng rất lạ.
+
+Không phải tiếng cấp nước.
+
+Là tiếng bị lừa.
+
+Nước phụt ra mạnh hơn bình thường.
+
+A Thất hét:
+
+"Nước rơi!"
+
+Trong phế thổ, hai chữ đó đủ khiến mọi trật tự gãy một nhịp.
+
+Người ở khu thải người quay đầu. Người bệnh, người nợ nước, người cầm giấy xám, người gác, nhân viên đăng ký, tất cả đều nhìn dòng nước đang phun ra khỏi vòi.
+
+Mộc Sanh đập cờ lê vào hộp cảnh báo.
+
+Tiếng kim loại vỡ vang lên chát chúa.
+
+Lâm Tịch ném tấm bạt xuống rãnh, chặn đường nước thải, khiến nước sạch từ vòi tràn ra một vũng nhỏ trên nền xi măng thay vì chảy mất.
+
+Đám người lao tới.
+
+Không ai cần ra lệnh.
+
+Không ai còn nhớ hàng.
+
+Cô bé ôm nồi ngẩng đầu.
+
+A Mục đã chạy tới, kéo nó dậy.
+
+"Mẹ ngươi đâu?"
+
+Cô bé khóc:
+
+"Kia."
+
+A Mục nhìn người đàn bà ho máu nằm bên hàng người bệnh.
+
+Nó do dự một phần rất nhỏ của giây.
+
+Rồi quay đầu hét:
+
+"Lâm Tịch!"
+
+Lâm Tịch đã chạy tới.
+
+Nàng và A Mục mỗi người kéo một bên, đỡ người đàn bà dậy. Người đàn bà nhẹ đến đáng sợ, như trong áo chỉ còn xương và cơn ho.
+
+Người gác rút dùi cui.
+
+Mộc Sanh chặn trước mặt hắn.
+
+Nàng không đánh.
+
+Chỉ giơ cờ lê còn dính mảnh hộp cảnh báo, nói:
+
+"Máy hỏng. Ngươi nên cứu máy."
+
+Người gác nhìn đám người đang hứng nước, mặt biến sắc.
+
+Với hắn, máy hỏng có thể bị phạt.
+
+Một cô bé bị đẩy ra ngoài tường thì không.
+
+Hắn quay sang máy.
+
+Đó là sự thật của thành Nam.
+
+A Thất ôm ba túi nước chạy trước, miệng còn lẩm bẩm:
+
+"Ta sẽ bị máy nước ghi thù. Ta chắc chắn sẽ bị máy nước ghi thù."
+
+Lâm Tịch kéo người đàn bà qua lối sau xe rác. A Mục ôm cô bé chạy theo. Mộc Sanh lùi cuối cùng, cờ lê trong tay không hạ.
+
+Sau lưng họ, còi cảnh báo cuối cùng vang lên.
+
+Nhưng không còn là còi cấp một lạnh lẽo.
+
+Mà là còi hỏng máy nước.
+
+Trong thành, có những thứ hỏng còn được quan tâm hơn người.
+
+Họ chạy qua ba ngõ, hai đống rác, một hàng tường phủ rêu xám. Khi tới điểm hẹn, Lão Phùng đã đợi sẵn với xe kéo.
+
+Ông nhìn người đàn bà ho máu và cô bé ôm nồi, mặt méo đi.
+
+"Ta nhớ là các ngươi đi lấy nước."
+
+A Thất đặt ba túi nước lên xe, thở như sắp chết.
+
+"Có lấy."
+
+Lão Phùng chỉ người đàn bà.
+
+"Cái này cũng là nước?"
+
+Lâm Tịch nhìn ông.
+
+"Là nợ."
+
+Lão Phùng im.
+
+Rồi ông kéo tấm vải phủ xe ra.
+
+"Nợ thì đặt lên. Nhẹ tay. Người này sắp rơi hết xương rồi."
+
+Cô bé ôm nồi đứng cạnh A Mục, run bần bật.
+
+Lâm Tịch ngồi xổm xuống trước mặt nó.
+
+"Tên gì?"
+
+Cô bé lí nhí:
+
+"Tiểu Mãn."
+
+"Mẹ ngươi?"
+
+"Hạ Tố."
+
+"Còn ai nữa không?"
+
+Cô bé lắc đầu, rồi lại gật.
+
+"Cha ở ngoài tường."
+
+Lâm Tịch không hỏi còn sống không.
+
+Trong phế thổ, có vài câu hỏi không nên hỏi trước trẻ con.
+
+Nàng chỉ nói:
+
+"Tạm thời đi với chúng ta."
+
+Tiểu Mãn nhìn nàng.
+
+"Có nước không?"
+
+Lâm Tịch nhìn ba túi nước trên xe.
+
+Có.
+
+Nhưng không đủ.
+
+Nàng đáp:
+
+"Có một ít."
+
+Tiểu Mãn ôm cái nồi chặt hơn.
+
+"Con có thể uống ít."
+
+A Mục quay mặt đi.
+
+Lâm Tịch đưa tay xoa đầu nó. Tóc cô bé khô và ráp như cỏ chết.
+
+"Không ai trong đội được nói câu đó để đổi lấy chỗ đứng."
+
+Tiểu Mãn không hiểu.
+
+Nhưng A Mục hiểu.
+
+Nó nhìn Lâm Tịch.
+
+Lâm Tịch đứng dậy.
+
+Ngoài xa, cổng Nam cũ đang đóng lại. Đám người bị thải ra vẫn chen ở sân, một vài người ôm được nước, một vài người ngã dưới đất, một vài người bị kéo đi. Tấm bạt nàng cắt nằm trong rãnh, ngâm giữa nước bẩn và nước sạch lẫn vào nhau.
+
+Không ai được cứu hẳn.
+
+Nhưng có vài người đã lệch khỏi hàng.
+
+Lâm Tịch không biết đó là thắng hay thua.
+
+Nàng chỉ biết, khi quay về kho, Chim Xám sẽ không còn chỉ là một đội bị săn nữa.
+
+Họ đã bắt đầu kéo theo người khác.
+
+Mà trên phế thổ, kéo thêm một người nghĩa là bánh ít đi, nước ít đi, đường rút hẹp lại.
+
+Cũng nghĩa là nếu một ngày dựng được cửa, cửa ấy sẽ không chỉ mở cho chính mình.

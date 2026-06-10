@@ -1,0 +1,695 @@
+# Phần 8: Luật Đầu Tiên Của Chim Xám
+
+## Chương 183: Ai Được Uống Trước
+
+Người khu xám tràn vào trạm lọc lúc bát nước thứ tư còn chưa đầy.
+
+Không phải tràn như cướp.
+
+Mà như nước vỡ bờ.
+
+Ban đầu chỉ có ba người chạy qua cổng gãy: một ông già kéo xe rác, một cô gái ôm thùng nhựa, một thằng bé mặt đầy tro. Sau đó thêm năm người, mười người, rồi cả một nhóm chen nhau dưới mưa bụi đỏ. Phía sau họ là tiếng quát của lính thành Nam, tiếng dùi cui đập vào vỏ xe rác, tiếng bánh thép nghiến đá.
+
+Ông già kéo xe rác vừa vào đã ngã quỵ xuống nền.
+
+"Nước đâu?"
+
+Không ai trong trạm động ngay.
+
+Vì câu đó không giống câu hỏi.
+
+Nó giống tiếng bụng đói của cả khu xám bị ép thành hai chữ.
+
+Di Mạn đứng cạnh máng lọc, tay giữ cái bát sắt. Bát nước trong hơn nước mương, nhưng chỉ đầy lưng chừng. Hạ Tố vừa uống một ngụm. Tần Dã chưa uống. Du Khâu chưa uống. A Thất mất máu. Lâm Tịch cổ tay đang rát. Ngoài kia còn không biết bao nhiêu người khát.
+
+Một cô gái trong nhóm chạy tới nhìn máng nước.
+
+"Có nước thật!"
+
+Câu đó làm đám người phía sau xô lên.
+
+Kỷ Nam lập tức giơ súng.
+
+"Lùi lại."
+
+Không ai lùi.
+
+Không phải vì họ không sợ súng.
+
+Mà vì khi cổ họng khô đến nứt máu, người ta sẽ tính rất nhanh: chết vì đạn có khi còn gọn hơn chết vì khát.
+
+A Mục kéo Tiểu Mãn lùi sau xe. Mộc Sanh đứng chắn trước bảng điều khiển. Lão Phùng cầm khúc xương kẹt trục như cầm gậy. A Thất một tay băng vải, tay kia vẫn giữ ống lọc, mặt trắng nhưng mắt không rời đám người.
+
+Lâm Tịch bước lên một bước.
+
+Di Mạn nói khẽ:
+
+"Đừng đứng sát quá."
+
+Lâm Tịch không dừng.
+
+Ông già kéo xe rác ngẩng đầu nhìn nàng.
+
+"Cô là đứa làm hỏng máy nước cổng Nam?"
+
+A Thất lập tức nhỏ giọng:
+
+"Máy là ta làm."
+
+Không ai nghe nó.
+
+Lâm Tịch đáp:
+
+"Ta ở đó."
+
+"Vậy nước này có phần của chúng ta."
+
+Câu đó vừa ra, nhóm người phía sau lập tức ồn lên.
+
+"Đúng!"
+
+"Nếu không phải bọn ta chặn mương, lính đã vào rồi!"
+
+"Chúng ta cũng bị khóa nước!"
+
+"Trẻ con trong xe ta còn chưa uống từ sáng!"
+
+Tiếng nói chồng lên tiếng bơm, tiếng mưa, tiếng truy binh ngoài xa. Trong trạm lọc, nước nhỏ từng giọt vào bát, chậm đến tàn nhẫn.
+
+Lâm Tịch nhìn từng gương mặt.
+
+Không ai giống kẻ xấu.
+
+Chỉ có người quá khát.
+
+Điều đó còn khó hơn.
+
+Nàng nâng tay lên.
+
+Không ai im.
+
+Nàng đặt bàn tay đang rách xuống mép máng lọc.
+
+Máu thấm qua vải băng, nhỏ một giọt xuống nền cạnh máng.
+
+Di Mạn nhíu mày.
+
+Lâm Tịch nói:
+
+"Ai bước qua vệt máu này để cướp nước, Chim Xám sẽ coi là địch."
+
+Lần này, mọi người im.
+
+Không phải vì câu nói lớn.
+
+Mà vì nàng không hét.
+
+Giọng nàng khàn, cổ họng khô đến mức mỗi chữ đều có cạnh. Nhưng chính vì vậy, nó nghe giống một người đang dùng phần nước còn lại trong người để nói.
+
+Ông già kéo xe rác nhìn vệt máu.
+
+"Cô định giữ nước cho đội mình?"
+
+"Đúng."
+
+Đám người lại xôn xao.
+
+Lâm Tịch nói tiếp:
+
+"Và chia cho người khác. Nhưng không ai cướp."
+
+"Dựa vào đâu cô chia?"
+
+"Dựa vào luật."
+
+Cô gái ôm thùng nhựa cười gằn.
+
+"Thành Nam cũng có luật."
+
+"Vậy nghe xong rồi quyết định có đập ta không."
+
+Câu đó làm cô gái nghẹn lại.
+
+Lâm Tịch nhìn Di Mạn.
+
+"Bà ghi."
+
+Di Mạn cầm một mảnh than, lật tấm biển cảnh báo cũ lên. Mặt sau tấm biển còn đủ trống.
+
+Lâm Tịch nói từng câu.
+
+"Một: người đang sốt, mất máu, trẻ nhỏ dưới mười hai tuổi uống trước. Mỗi lần một ngụm, không đầy bát."
+
+Di Mạn viết.
+
+Chữ bà xấu, cứng, nhưng rõ.
+
+"Hai: người giữ máy, kéo nước, canh cổng, lọc than được phần làm việc. Không làm việc, không được phần thứ hai."
+
+Một người đàn ông trong nhóm khu xám lập tức nói:
+
+"Người già làm gì?"
+
+Lão Phùng quay sang.
+
+"Đếm bát, giữ hàng, nhặt than, canh trẻ con, lau sàn cho khỏi trượt. Người già chưa chết thì có việc."
+
+Ông già kéo xe rác nhìn Lão Phùng.
+
+Hai ông già nhìn nhau như hai cái cây khô cùng xem bên nào gãy trước.
+
+Cuối cùng ông già kéo xe rác hừ một tiếng.
+
+"Được."
+
+Lâm Tịch nói tiếp:
+
+"Ba: ai giấu nước riêng, đổi nước lấy người, bán lượt uống, đuổi người yếu khỏi hàng, mất quyền uống một vòng."
+
+Cô gái ôm thùng hỏi:
+
+"Một vòng là bao lâu?"
+
+Di Mạn đáp:
+
+"Tới khi người cuối cùng trong hàng uống xong."
+
+"Nếu người đó chết khát?"
+
+Lâm Tịch nhìn nàng.
+
+"Vậy đừng bán nước."
+
+Cô gái im.
+
+Lâm Tịch tiếp:
+
+"Bốn: ai cầm vòi, ai giữ bát, ai ghi tên, đều phải đứng trước mặt mọi người. Không có góc riêng."
+
+A Mục ngẩng đầu.
+
+Đây là nửa luật còn lại nó từng hỏi.
+
+Di Mạn viết tới đó, tay dừng một chút.
+
+Rồi bà viết tiếp.
+
+"Năm." Lâm Tịch nói. "Nước này chưa thuộc về Chim Xám. Cũng chưa thuộc về khu xám. Nó thuộc về người làm cho nó chảy và người cần nó để sống. Ai muốn ở lại, phải nhận cả hai phần: uống và làm."
+
+Trong trạm lọc yên xuống.
+
+Bên ngoài, tiếng lính thành Nam lại gần hơn.
+
+Một đứa bé trong nhóm khu xám khóc nấc.
+
+Ông già kéo xe rác nhìn tấm biển.
+
+"Cô lấy gì bảo đảm cô không đổi luật khi cô muốn?"
+
+Lâm Tịch không trả lời ngay.
+
+Nàng nhìn Di Mạn.
+
+Di Mạn đặt mảnh than xuống.
+
+"Ta tát."
+
+Mọi người ngẩn ra.
+
+Di Mạn chỉ Tần Dã.
+
+"Hắn cũng nói vậy. Ta tát rất đau."
+
+A Thất không nhịn được:
+
+"Có thể xác nhận. Từng thấy."
+
+Không khí căng thẳng rạn ra một đường rất nhỏ.
+
+Không thành tiếng cười lớn, nhưng đủ để vài người nhớ mình còn có thể thở.
+
+Lâm Tịch nhìn ông già.
+
+"Ta không bảo đảm bằng lời. Ta cho các ngươi nhìn. Ai thấy ta đổi luật để lợi cho mình, được nói trước đám đông."
+
+Cô gái ôm thùng hỏi:
+
+"Nói xong cô nghe?"
+
+"Nếu đúng."
+
+"Nếu cô bảo sai?"
+
+Tần Dã nói từ phía sau:
+
+"Vậy hỏi Di Mạn."
+
+Di Mạn lạnh mặt:
+
+"Đừng kéo ta lên làm quan."
+
+Tần Dã đáp:
+
+"Người giữ nồi thường công bằng hơn người giữ súng."
+
+Di Mạn mắng:
+
+"Ngươi sốt hỏng đầu rồi."
+
+Nhưng bà không phủ nhận.
+
+Ông già kéo xe rác chống tay đứng dậy. Ông nhìn vệt máu trước máng lọc, nhìn dòng nước nhỏ từng giọt, nhìn đám người khu xám phía sau mình.
+
+"Ta tên Lý Cù. Trước kia giữ bãi rác Nam. Ta giữ hàng."
+
+Cô gái ôm thùng nhựa nói:
+
+"Ta tên Trần Hòe. Ta biết đốt than lọc."
+
+Người đàn ông vừa hỏi người già làm gì nói:
+
+"Ta đẩy xe. Ta kéo được bơm phụ nếu cần."
+
+Một thằng bé giơ tay:
+
+"Ta chạy nhanh."
+
+A Thất nhìn nó.
+
+"Chạy nhanh không được đứng gần bảng điều khiển."
+
+Thằng bé hỏi:
+
+"Vậy đứng đâu?"
+
+A Thất suy nghĩ rất nghiêm túc.
+
+"Đứng chỗ cần chạy."
+
+Mộc Sanh liếc nó.
+
+"Câu này vô dụng nhưng không sai."
+
+Người đầu tiên uống theo luật mới không phải người Chim Xám.
+
+Là một đứa trẻ khu xám sốt đến mê man, được mẹ bế vào sau cùng. Di Mạn đỡ đầu nó, cho một ngụm rất nhỏ. Đứa bé nuốt xuống, khóc yếu đi một chút.
+
+Người thứ hai là Tần Dã.
+
+Hắn chỉ uống nửa ngụm, rồi đẩy bát lại.
+
+Di Mạn cau mày.
+
+"Uống hết phần."
+
+"Đủ."
+
+"Luật nói người bệnh uống trước, không nói người bệnh được làm màu."
+
+Tần Dã nhìn bà.
+
+Di Mạn nhìn lại.
+
+Cuối cùng hắn uống thêm nửa ngụm.
+
+A Thất nhỏ giọng:
+
+"Luật đầu tiên đã bắt được người khó nhất."
+
+Lâm Tịch nghe thấy.
+
+Nàng không cười.
+
+Nàng nhìn hàng người bắt đầu hình thành trước máng lọc. Không đẹp. Không ngay. Có người chen, có người cãi, có người nhìn bát nước bằng ánh mắt quá đói. Nhưng Lý Cù đứng đầu hàng, Trần Hòe bắt đầu nhóm than, Lão Phùng chỉ một đám thanh niên đi khiêng ống, A Mục dẫn mấy đứa trẻ ra góc khô.
+
+Luật không làm người ta thành tốt ngay.
+
+Nhưng nó làm cái xấu phải đi vòng lâu hơn một chút.
+
+Ngoài trạm, tiếng súng cảnh cáo vang lên.
+
+Một viên đạn bắn vào tường bê tông, bụi rơi xuống.
+
+Kỷ Nam quay đầu.
+
+"Hết thời gian."
+
+Lâm Tịch nhìn bát nước thứ sáu vừa đầy.
+
+"Đưa nước cho người cần. Ai còn đứng được, theo ta ra cửa."
+
+Di Mạn hỏi:
+
+"Cháu định làm gì?"
+
+Lâm Tịch cầm tấm biển cảnh báo đã viết luật, dựng nó lên cạnh máng lọc.
+
+"Cho thành Nam thấy chúng ta không trốn."
+
+## Chương 184: Người Cầm Vòi Đứng Ở Đâu
+
+Lính thành Nam tới trước cổng gãy với áo giáp nhựa, mặt nạ lọc và đèn quét.
+
+Họ không đông như Lâm Tịch tưởng.
+
+Mười bảy người.
+
+Hai xe.
+
+Một súng máy nhẹ đặt trên mui xe đầu.
+
+Không cần đông. Với một nhóm chạy nạn, một khẩu súng máy đã đủ để viết lại mọi luật vừa dựng lên.
+
+Người dẫn đội là một phụ nữ tóc cắt sát, trên cổ áo có vạch bạc của đội an ninh nội thành. Bà ta nhìn trạm lọc, nhìn đám người khu xám, nhìn máng nước đang nhỏ giọt phía trong, rồi dừng mắt trên Lâm Tịch.
+
+"Lâm Tịch."
+
+Giọng bà ta vang qua bộ khuếch đại, sạch và phẳng.
+
+"Theo lệnh kiểm soát sinh học cấp một, cô phải lập tức giao nộp bản thân, mẫu thực vật liên quan, và tất cả vật phẩm lấy từ khu cấm."
+
+A Thất đứng sau Lâm Tịch, lẩm bẩm:
+
+"Nghe như gọi đồ thất lạc."
+
+Tần Dã ngồi trên bậc thềm gãy phía sau, súng đặt ngang đầu gối, giọng thấp:
+
+"Đúng vậy."
+
+Lâm Tịch không bước ra khỏi bóng trạm.
+
+Nàng đứng đúng vạch máu đã khô trước máng lọc, nơi lúc nãy nàng dùng để chặn người cướp nước. Bây giờ nó cũng là ranh giới giữa trạm lọc và súng thành Nam.
+
+"Tên bà?"
+
+Người phụ nữ ngừng một nhịp.
+
+"Đội trưởng an ninh Thang Nhuệ."
+
+"Thang đội trưởng, chúng ta đang lọc nước cho người bệnh. Muốn nói, chờ hết lượt đầu."
+
+Một lính phía sau Thang Nhuệ quát:
+
+"Cô không có quyền ra điều kiện."
+
+Đám người khu xám phía trong xao động. Vài người lùi lại. Vài người ôm con chặt hơn. Có người nhìn bát nước, nhìn súng, rồi nhìn cửa sau, tính đường chạy.
+
+Không ai trách họ.
+
+Sợ súng là bản năng lành mạnh.
+
+Lâm Tịch nói:
+
+"Ta không ra điều kiện. Ta đang nói luật của trạm."
+
+Thang Nhuệ nhìn tấm biển dựng bên máng lọc.
+
+Đèn quét lướt qua những chữ than xấu xí:
+
+`Người sốt, mất máu, trẻ nhỏ uống trước.`
+
+`Ai làm thì có phần làm.`
+
+`Ai cầm vòi phải đứng trước mặt mọi người.`
+
+Thang Nhuệ cười rất khẽ.
+
+"Một nhóm đối tượng chưa đăng ký chiếm dụng tài sản bỏ hoang của thành, tự đặt luật?"
+
+Lý Cù chống gậy đứng sau Lâm Tịch.
+
+"Tài sản bỏ hoang mà sao chúng ta sửa thì các người tới nhanh vậy?"
+
+Một vài người khu xám bật tiếng phụ họa.
+
+Thang Nhuệ nhìn ông.
+
+"Ông là ai?"
+
+"Người bị các người thải lúc sáng."
+
+"Vậy theo quy định, ông không còn quyền cư trú trong phạm vi thành Nam."
+
+Lý Cù gật đầu.
+
+"Đúng. Nên ta đứng ngoài thành hỏi chuyện nước ngoài thành."
+
+A Thất thì thầm:
+
+"Ông già này được."
+
+Di Mạn:
+
+"Nhỏ giọng. Còn sống rồi khen."
+
+Thang Nhuệ không mất bình tĩnh.
+
+Người trong hệ thống đáng sợ ở chỗ đó. Họ có thể bị nói trúng, nhưng mặt vẫn không đỏ. Vì mặt họ không đại diện cho chính họ, mà đại diện cho con dấu sau lưng.
+
+Bà ta giơ tay.
+
+Một lính mở thiết bị chiếu. Trên màn sáng hiện lên hồ sơ của Lâm Tịch.
+
+Ảnh mờ.
+
+Mã NT-R2-LX-017.
+
+Trạng thái: mẫu sống cấp một.
+
+Phía dưới là danh sách tiếp xúc: Tần Dã, Di Mạn, A Thất, Ninh, Mộc Sanh, A Mục, Lão Phùng...
+
+Và thêm một dòng mới:
+
+`Khu Trạm Lọc số Chín: nguy cơ lây lan tiếp xúc xã hội.`
+
+Đám người khu xám nhìn thấy chữ "lây lan", lập tức hỗn loạn.
+
+"Lây gì?"
+
+"Cô ta có bệnh?"
+
+"Mẫu sống là sao?"
+
+"Chúng ta uống nước có sao không?"
+
+Lâm Tịch cảm giác cổ họng mình thắt lại.
+
+Đây mới là dao thật.
+
+Không phải súng.
+
+Là biến nàng thành thứ khiến người khác sợ chạm vào.
+
+Thang Nhuệ nói:
+
+"Người tiếp xúc gần với mẫu phải tái kiểm. Trạm này phải niêm phong. Ai hợp tác sẽ được cấp nước cứu trợ tạm thời."
+
+Hai chữ "nước cứu trợ" rơi vào đám đông như mồi thả xuống hồ cá.
+
+Lâm Tịch nghe tiếng người nuốt nước bọt.
+
+Nàng không trách.
+
+Nếu sáng nay, trước khi có máng nước này, có người đem tới một thùng nước sạch và bảo giao một người lạ ra, rất nhiều người sẽ gật đầu. Có lẽ chính nàng ở ngày đầu xuyên tới cũng sẽ do dự.
+
+Thang Nhuệ nhìn nàng.
+
+"Cô thấy không? Không cần làm khó nhau. Cô bước ra, những người này có nước."
+
+Tiểu Mãn ôm nồi Mãn đứng cạnh Hạ Tố, mặt tái mét.
+
+Lâm Tịch nhìn cô bé.
+
+Nàng chợt nhớ câu hỏi của Tiểu Mãn: nước của mình thì sao?
+
+Nước của mình là thứ không cần bán người để uống.
+
+Nếu hôm nay nàng bước ra, những người này có thể có nước một ngày.
+
+Nhưng ngày mai, họ sẽ học rằng mỗi lần khát chỉ cần tìm một người có giá trị hơn mình để giao.
+
+Lâm Tịch bước tới máng lọc.
+
+Nàng cầm bát nước vừa đầy lên.
+
+Mọi người nhìn nàng.
+
+Thang Nhuệ cũng nhìn.
+
+Lâm Tịch không uống.
+
+Nàng đưa bát cho Lý Cù.
+
+"Ông giữ hàng. Ông uống phần của người làm việc."
+
+Lý Cù sửng sốt.
+
+"Ta?"
+
+"Luật viết vậy."
+
+Ông già cầm bát, tay run. Ông nhìn súng máy ngoài cổng, nhìn hồ sơ chiếu trên màn sáng, rồi nhìn bát nước.
+
+Một lúc lâu sau, ông uống một ngụm.
+
+Sau đó ông quay đầu nói với đám người khu xám:
+
+"Không lây. Nước chỉ hơi tanh."
+
+A Thất nhỏ giọng:
+
+"Đánh giá chuyên nghiệp ghê."
+
+Vài người bật cười.
+
+Căng thẳng lại rạn một đường.
+
+Trần Hòe, cô gái ôm thùng nhựa, bước ra nhận bát thứ hai sau khi nhóm than lọc ổn định. Nàng uống, lau miệng, rồi quay sang Thang Nhuệ.
+
+"Nước cứu trợ của các người ở đâu?"
+
+Thang Nhuệ nhìn nàng.
+
+Trần Hòe hỏi tiếp:
+
+"Xe chở nước đâu? Bình đâu? Danh sách cấp đâu? Hay vẫn là miệng nói?"
+
+Một người đàn ông khu xám nói:
+
+"Sáng nay cũng nói tạm dừng. Dừng tới giờ."
+
+Người khác phụ họa:
+
+"Máy nước hỏng chưa sửa."
+
+"Thẻ nợ nước bị khóa sai."
+
+"Trẻ con bị đẩy ra cổng!"
+
+Tiếng nói bắt đầu dâng lên.
+
+Không phải vì họ bỗng yêu Lâm Tịch.
+
+Mà vì bát nước vừa truyền qua tay họ đã chứng minh một điều rất nhỏ nhưng rất chết người: nước không nhất thiết phải chảy từ tay thành.
+
+Thang Nhuệ hạ giọng:
+
+"Các người đang bị kích động."
+
+Di Mạn đặt bát xuống.
+
+"Đúng. Bị khát kích động."
+
+Lâm Tịch nhìn Thang Nhuệ.
+
+"Muốn niêm phong trạm, đưa lệnh giấy. Muốn lấy người, đưa nước trước. Không phải nước cứu trợ miệng nói. Nước thật, thuốc thật, xe thật. Trước khi có, không ai qua vạch."
+
+Thang Nhuệ chậm rãi tháo găng tay.
+
+"Cô đang thương lượng với thành Nam?"
+
+"Không."
+
+"Vậy là gì?"
+
+Lâm Tịch nhìn bát nước trong tay Trần Hòe, nhìn vệt máu khô trên nền, nhìn Ninh đang ôm Đèn Vàng, nhìn Tần Dã cố ngồi thẳng dù môi còn trắng.
+
+"Ta đang cho các người thấy người cầm vòi đứng ở đâu."
+
+Nàng chỉ xuống vạch máu.
+
+"Ở trước mặt mọi người."
+
+Thang Nhuệ nhìn nàng rất lâu.
+
+Sau đó bà ta giơ tay.
+
+Súng máy trên mui xe chậm rãi quay nòng.
+
+Đám người trong trạm lập tức hoảng loạn.
+
+Kỷ Nam nâng súng.
+
+Tần Dã cũng nâng súng.
+
+Không khí căng như dây sắp đứt.
+
+Đúng lúc đó, từ tầng dưới vang lên một tiếng va cực mạnh.
+
+Con cá sấu cống ngầm đập vào đường ống.
+
+Không chỉ một lần.
+
+Nhiều lần.
+
+Cả trạm rung lên.
+
+Máng lọc lắc mạnh, nước văng ra.
+
+Mộc Sanh biến sắc.
+
+"Áp suất tăng."
+
+A Thất hét:
+
+"Van phụ sắp bật!"
+
+Tần Dã nhìn về phía phòng bơm, rồi lập tức nói:
+
+"Tắt đèn ngoài cổng!"
+
+Lâm Tịch hiểu ngay.
+
+Cá sấu bị ánh đèn, tiếng súng và dòng bơm kích thích. Nếu nó phá đường ống lúc này, không chỉ mất nước. Cả trạm có thể ngập, trứng thú vỡ, người bệnh chết trong hỗn loạn.
+
+Lâm Tịch quay sang Thang Nhuệ.
+
+"Tắt đèn!"
+
+Thang Nhuệ lạnh giọng:
+
+"Cô không có quyền..."
+
+Một đường ống phụ bên ngoài bỗng nổ tung.
+
+Nước đen phun ra như roi, quất thẳng vào xe an ninh đầu tiên. Súng máy lệch khỏi mui xe, lính gần đó ngã nhào.
+
+Từ miệng ống vỡ, một cái bóng xám dài trườn ra nửa thân.
+
+Không phải con mẹ.
+
+Một con non lớn hơn con cắn A Thất, mắt vàng đục, răng dính rêu.
+
+Đám lính thành Nam lập tức chĩa súng.
+
+Tần Dã quát:
+
+"Đừng bắn!"
+
+Quá muộn.
+
+Một viên đạn nổ.
+
+Con non rít lên.
+
+Dưới lòng trạm, con mẹ đáp lại bằng một tiếng va làm nền bê tông nứt ra.
+
+Lâm Tịch nhìn Thang Nhuệ.
+
+"Bây giờ bà muốn bắt ta, hay muốn sống?"
+
+Lần đầu tiên, mặt Thang Nhuệ đổi sắc.
+
+Không nhiều.
+
+Nhưng đủ.
+
+Lâm Tịch quay đầu:
+
+"Mộc Sanh, khóa van phụ! A Thất, cắt đèn! Kỷ Nam, kéo lính khỏi miệng ống nếu họ chịu nghe. Ai còn đứng được, khiêng người bệnh lên tầng!"
+
+Không ai hỏi nàng lấy quyền ở đâu.
+
+Vì trong khoảnh khắc đó, người biết cách giữ nước sống lâu hơn người có con dấu.
+
+Và mọi ánh mắt, kể cả ánh mắt của vài lính thành Nam, đều quay về phía cô gái đứng trước vạch máu.

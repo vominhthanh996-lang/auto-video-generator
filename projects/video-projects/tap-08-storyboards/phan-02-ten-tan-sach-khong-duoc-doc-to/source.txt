@@ -1,0 +1,433 @@
+# Phần 2: Tên Tần Sách Không Được Đọc To
+
+## Chương 231: Người Được Báo Tử
+
+Tần Dã không kể chuyện Tần Sách trước đám đông.
+
+Hắn chỉ bảo A Thất kéo một tấm bạt giữa bàn giấy và sân trong, rồi yêu cầu mọi người tiếp tục việc của mình: lò lọc không được tắt, kho bột không được mở riêng, người nghe lén bị trói nhưng phải cho nước, Chu Kính ngoài vạch cứ để hắn đứng ngoài vạch.
+
+Những câu ấy rất Tần Dã.
+
+Ngắn.
+
+Đủ dùng.
+
+Không để ai nghe thấy trong đó có một mảnh xương đang nứt.
+
+Lâm Tịch đứng cạnh tấm bạt, nhìn hắn bẻ đôi một viên than vụn để đánh dấu trên bản đồ. Tay hắn vẫn chắc. Nét than không lệch. Chỉ có cổ tay trái hơi cứng hơn bình thường, như toàn bộ thân thể đang cố chứng minh rằng nó không phản bội chủ nhân đúng lúc này.
+
+"Anh không cần kể ngay." Nàng nói.
+
+Tần Dã không ngẩng đầu.
+
+"Ta biết."
+
+"Cũng không cần kể hết."
+
+Lần này, đầu ngón tay hắn dừng lại.
+
+Rất lâu sau, hắn nói:
+
+"Nếu ta không kể, các ngươi không biết giấy tử ở đâu."
+
+"Vậy kể phần cần dùng."
+
+Hắn ngước mắt nhìn nàng.
+
+Lâm Tịch nói:
+
+"Không kể phần sẽ làm anh mất máu vô ích."
+
+Bên ngoài tấm bạt, Di Mạn đang mắng ai đó vì tự tiện mở nắp nồi cháo. A Thất chạy qua chạy lại, miệng ngậm bút than. Ninh gõ tín hiệu báo chợ chưa loạn. Cổng Nước Xám vẫn sống bằng những việc nhỏ, mặc cho một cái tên cũ vừa rơi xuống như đá.
+
+Tần Dã nhìn những bóng người lay động sau tấm bạt.
+
+"Tần Sách là anh ta."
+
+Lâm Tịch không hỏi "anh ruột sao".
+
+Nàng chờ.
+
+"Không cùng mẹ. Cùng họ, cùng đội huấn luyện. Trong Hắc Nha, người cùng lò gene được tính là anh em nếu sống qua ba năm đầu."
+
+Giọng hắn đều đều.
+
+"Hắn lớn hơn ta sáu tuổi. Khi ta còn chưa biết tháo khóa cổ, hắn đã biết giấu dao trong đế giày. Khi ta bị sốt gene lần đầu, hắn đổi nửa phần nước để lấy khăn lạnh. Khi ta giết người lần đầu, hắn bảo nôn xong thì lau miệng, đừng để người thuê thấy mình còn trẻ."
+
+Lâm Tịch cảm thấy ngực mình nặng xuống.
+
+Không có câu nào giống lời thương.
+
+Nhưng mỗi câu đều có vết tay.
+
+"Hắn chết khi nào?"
+
+"Bảy năm trước. Nhiệm vụ dẹp loạn tuyến nước ngoại vi."
+
+"Trạm Số Chín?"
+
+"Không. Tuyến trên của nó. Khi đó Thành Nam muốn thu hồi các trạm công cộng cũ. Hắc Nha nhận nhiệm vụ hộ tống đội kỹ thuật. Tần Sách dẫn đội trước. Báo cáo ghi hắn chết trong nổ ống áp lực."
+
+"Ngươi thấy xác?"
+
+Tần Dã im.
+
+Lâm Tịch biết câu trả lời trước khi hắn nói.
+
+"Không."
+
+Ở phế thổ, không thấy xác không có nghĩa người sống.
+
+Nhưng cũng không cho người ở lại được chôn nỗi đau tử tế.
+
+Tần Dã lấy từ cổ áo ra một mảnh kim loại nhỏ. Lâm Tịch từng thấy nó vài lần, tưởng là mảnh thẻ đạn cũ. Bây giờ nhìn kỹ mới thấy trên đó khắc một hàng chữ gần mòn:
+
+`TS-01`
+
+"Thẻ nhận dạng của hắn được trả về. Dính máu. Có dấu cháy. Đủ để kết tử."
+
+"Ai trả?"
+
+"Hắc Nha."
+
+"Ngươi tin?"
+
+Tần Dã nhìn mảnh thẻ.
+
+"Lúc đó tin."
+
+Hai chữ ấy lạnh hơn gió.
+
+Bên ngoài, Chu Kính bỗng cất giọng, không quá lớn nhưng đủ để người trong chợ nghe:
+
+"Tần Sách, mã quản lý khẩn cấp TS-01, người ký bàn giao hợp pháp quyền quản lý Trạm Nước Số Chín..."
+
+Tần Dã ngẩng phắt đầu.
+
+Lâm Tịch bước ra trước khi hắn kịp đẩy xe.
+
+Chu Kính đang đứng cạnh xe đen, cầm một bản giấy khác. Hắn đọc rất rõ, từng chữ gọn gàng:
+
+"...đã xác nhận chuyển nhượng quyền quản lý tuyến nước ngoại vi cho Thành Nam trong tình trạng tỉnh táo, tự nguyện, có nhân chứng y tế."
+
+Đám đông xôn lên.
+
+Lâm Tịch đi đến vạch trắng.
+
+"Ngươi đọc cái đó làm gì?"
+
+Chu Kính nhìn nàng.
+
+"Công bố thông tin liên quan."
+
+"Hay kích người liên quan?"
+
+"Nếu người liên quan không có gì cần giấu, vì sao sợ đọc?"
+
+Câu này ném thẳng vào Tần Dã.
+
+Một vài ánh mắt trong sân vô thức quay về phía tấm bạt.
+
+Lâm Tịch bỗng hiểu trò của hắn.
+
+Không phải chỉ lấy trạm.
+
+Mà là làm Tần Dã thành một cái hố. Ai tin hắn thì bị kéo vào quá khứ Hắc Nha. Ai sợ Hắc Nha thì sẽ muốn ký lao động tạm trú để thoát khỏi cái họ Tần.
+
+Lâm Tịch nói:
+
+"Cổng Nước Xám có luật đọc tên."
+
+Chu Kính nhướng mày.
+
+"Luật gì?"
+
+"Tên người chết đọc để ghi nợ. Không đọc để ép người sống quỳ."
+
+Chu Kính cười.
+
+"Tần Sách chưa chắc đã chết."
+
+Trong sân, tiếng xôn xao lớn hơn.
+
+Tấm bạt sau lưng Lâm Tịch khẽ động.
+
+Nàng không quay lại.
+
+"Vậy càng không đến lượt ngươi đọc như đọc món hàng."
+
+Chu Kính nhìn nàng một lúc.
+
+"Cô đang bảo vệ một lính đánh thuê biến đổi gen từng thuộc Hắc Nha. Cô có biết Hắc Nha từng làm gì với các tuyến nước ngoại vi không?"
+
+Câu hỏi ấy như một mũi dao có nhiều cạnh.
+
+Người trong chợ biết Hắc Nha.
+
+Biết theo cách người nghèo biết tên những thứ từng đi qua và để lại xác: không rõ hết, nhưng đủ sợ.
+
+Tạ Khuông ở cổng siết giáo.
+
+Di Mạn đặt gáo xuống.
+
+A Thất đứng chết trân.
+
+Lâm Tịch đáp:
+
+"Biết một phần."
+
+"Vậy cô vẫn để hắn giữ bản đồ?"
+
+"Ừ."
+
+"Vẫn để hắn dạy luật gác?"
+
+"Ừ."
+
+"Vẫn tin hắn?"
+
+Lâm Tịch nhìn Chu Kính.
+
+"Ta tin việc hắn làm trước mặt ta. Còn việc hắn từng làm, chúng ta sẽ hỏi hắn, không mượn miệng ngươi."
+
+Chu Kính hơi nheo mắt.
+
+Câu này không làm quá khứ biến mất.
+
+Nhưng nó giành lại quyền hỏi.
+
+Tần Dã ở sau tấm bạt không bước ra.
+
+Lâm Tịch biết hắn nghe thấy.
+
+Có đôi lúc bảo vệ một người không phải đứng ra nói người đó vô tội.
+
+Mà là không để kẻ khác chọn thay cách người đó bị xét xử.
+
+## Chương 232: Cốc Nước Không Được Trả
+
+Sau khi Chu Kính đọc tên Tần Sách, người đầu tiên đến tìm Tần Dã không phải Lâm Tịch.
+
+Là Bà Hôi.
+
+Bà ta chui qua mép bạt như một cái bóng khô, trong tay cầm một cốc nước. Không phải nước trong. Là nước lô phụ, hơi đục, phần của bà sau nửa ngày đun nước thô.
+
+Tần Dã nhìn cốc.
+
+"Ta không cần."
+
+Bà Hôi đặt xuống cạnh bánh xe.
+
+"Ta cũng không hỏi."
+
+Lâm Tịch đứng ngoài bạt, nghe câu ấy, bỗng muốn cười một chút.
+
+Tần Dã nhìn bà.
+
+"Ngươi vào làm gì?"
+
+"Xem người Hắc Nha có mọc thêm răng không."
+
+"Thấy chưa?"
+
+"Chưa. Nhưng mặt khó coi hơn hôm qua."
+
+Tần Dã không đáp.
+
+Bà Hôi kéo một cái thùng nhỏ ngồi xuống, như thể nơi này là quầy hàng của bà.
+
+"Hồi trước Hắc Nha từng cướp xe thuốc của khu ta."
+
+Không khí trong bạt im đi.
+
+Tần Dã nói:
+
+"Ta không ở nhiệm vụ đó."
+
+"Ta biết."
+
+"Vậy ngươi nói làm gì?"
+
+Bà Hôi nhìn cốc nước mình đặt xuống.
+
+"Để ngươi biết ta không quên. Ta không quên mà vẫn đưa nước, vậy đám ngoài kia đừng giả vờ hễ nghe Hắc Nha là tay mình sạch."
+
+Tần Dã nhìn bà rất lâu.
+
+Bà Hôi hừ một tiếng.
+
+"Đừng nhìn ta như nhìn người tốt. Ta bán thuốc giả đấy."
+
+"Ta biết."
+
+"Biết thì uống nước."
+
+"Vì sao?"
+
+"Vì nếu ngươi ngã lúc này, tên sạch ngoài kia sẽ cười rất khó nghe."
+
+Tần Dã cuối cùng cầm cốc.
+
+Không uống ngay.
+
+Bà Hôi đứng dậy.
+
+Trước khi ra khỏi bạt, bà nói:
+
+"Hắc Nha cướp xe thuốc của khu ta. Nhưng người trong khu cũng từng bán đường cho Hắc Nha. Người nghèo mà, đói lên thì tay nào cũng bẩn được. Cho nên ta không thích nghe thằng giày sạch kia đọc tội như thể hắn sinh ra từ nước lọc."
+
+Bà đi rồi.
+
+Cốc nước vẫn trong tay Tần Dã.
+
+Lâm Tịch bước vào.
+
+"Bà ấy đưa nước thật?"
+
+"Ừ."
+
+"Anh uống chưa?"
+
+"Chưa."
+
+"Sợ độc?"
+
+"Không."
+
+"Vậy?"
+
+Tần Dã nhìn mặt nước đục.
+
+"Không quen."
+
+Lâm Tịch hiểu.
+
+Không quen được người mình có thể từng làm hại, trực tiếp hoặc gián tiếp, đưa cho một cốc nước.
+
+Không quen nợ đến từ nơi đáng lẽ chỉ có oán.
+
+Nàng ngồi xuống trước mặt hắn.
+
+"Ở đây nhiều thứ phải học lại."
+
+"Ta học chậm."
+
+"Không sao. Anh dạy ta sống cũng đâu nhanh."
+
+Hắn nhìn nàng.
+
+Lâm Tịch giơ tay, chỉ cái cốc.
+
+"Uống đi. Không uống bà ấy vào mắng nữa."
+
+Tần Dã nhấp một ngụm.
+
+Nước đục.
+
+Hơi mùi than.
+
+Không ngon.
+
+Nhưng hắn nuốt xuống.
+
+Bên ngoài, A Thất gọi lớn:
+
+"Tỷ! Chu Kính phát cái gì đó cho người ngoài vạch!"
+
+Lâm Tịch lập tức đứng dậy.
+
+Ra đến cổng, nàng thấy lính hộ tống của Chu Kính đang phát những tấm thẻ gỗ mỏng. Trên thẻ có dấu tạm của Thành Nam và bốn chữ:
+
+`Lao động tạm trú.`
+
+Chu Kính nói với đám đông bằng giọng rất dễ nghe:
+
+"Ai đăng ký trước thời hạn sáu giờ sẽ được giữ lại làm công dưới quyền quản lý hợp pháp, được cấp nước, cháo, chỗ ngủ và miễn truy cứu hành vi chiếm dụng trước đó."
+
+Đám đông lặng đi.
+
+Nước.
+
+Cháo.
+
+Chỗ ngủ.
+
+Miễn truy cứu.
+
+Bốn thứ ấy đối với người ngoài vạch không phải lời dụ.
+
+Là tiếng bụng réo có đóng dấu.
+
+Một người đàn ông run rẩy bước lên.
+
+Tạ Khuông chặn lại.
+
+"Nghĩ kỹ."
+
+Người kia nhìn hắn, mắt đỏ.
+
+"Con ta sốt. Nghĩ kỹ có hạ sốt không?"
+
+Tạ Khuông nghẹn.
+
+Chu Kính không cần cười. Hắn chỉ đưa thẻ.
+
+Lâm Tịch nhìn bàn tay người đàn ông đang vươn ra.
+
+Không thể mắng.
+
+Không thể gọi hắn là phản bội.
+
+Khi một người dùng cơn sốt của con mình để cầm thẻ, chữ phản bội quá nhẹ và quá độc.
+
+Nàng bước lên.
+
+"Ai muốn ký có thể đọc điều kiện trước."
+
+Chu Kính nhìn nàng.
+
+"Ta sẽ giải thích."
+
+"Không. Người ký đọc. Không đọc được thì Cổng Nước Xám đọc giúp. Đọc to từng dòng."
+
+Người đàn ông khựng lại.
+
+Trên thẻ gỗ chỉ có bốn chữ đẹp.
+
+Nhưng giấy đi kèm trong tay lính hộ tống dày hơn nhiều.
+
+Thẩm Bạch nhận ra, nói:
+
+"Đưa bản điều kiện."
+
+Chu Kính giữ nụ cười.
+
+"Không cần làm phức tạp."
+
+Lâm Tịch đáp:
+
+"Ở đây nhận nước còn được hỏi lô. Nhận thân phận càng phải hỏi chữ."
+
+Bà Hôi đứng trong đám đông bỗng hét:
+
+"Đọc đi! Ta bán thuốc giả còn bị đọc tội, thẻ sạch của hắn sao không đọc?"
+
+Tiếng người bắt đầu nổi lên.
+
+"Đọc!"
+
+"Đọc điều kiện!"
+
+"Có cấp nước thì đọc xem lấy gì đổi!"
+
+Chu Kính nhìn Lâm Tịch.
+
+Lần đầu tiên ánh mắt hắn có chút lạnh thật.
+
+Lâm Tịch biết mình vừa giành được một lát.
+
+Không phải thắng.
+
+Chỉ là giữ bàn tay người đàn ông kia dừng giữa đường thêm một chút.
+
+Trong cuộc chiến với giấy, đôi khi một chút do dự cũng là nước.

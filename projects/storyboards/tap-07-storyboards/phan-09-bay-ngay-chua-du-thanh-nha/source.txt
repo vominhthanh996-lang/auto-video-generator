@@ -1,0 +1,441 @@
+# Phần 9: Bảy Ngày Chưa Đủ Thành Nhà
+
+## Chương 225: Bảng Người Trạm
+
+Ngày thứ sáu, Cổng Nước Xám mở bảng người trạm.
+
+Không phải bảng đổi công.
+
+Không phải bảng bệnh.
+
+Không phải bảng nợ.
+
+Là bảng hỏi một câu rất đơn giản mà không ai thấy đơn giản:
+
+`Ngươi có ở lại không?`
+
+Ở lại nghĩa là nhận phần nước theo luật trạm, trả công khi có thể, chịu kiểm khi giữ hàng, không tự đổi nước công, không dẫn người lạ qua cổng, không bán tin hại người trong trạm.
+
+Ở lại cũng nghĩa là khi Thành Nam đốt, ngươi ở trong vùng bị đốt.
+
+Khi Ngân Thụ gọi tên, tên ngươi nằm cạnh tên Lâm Tịch.
+
+Khi thú biến dị xông cổng, ngươi không còn là khách đứng sau lưng người khác.
+
+A Thất treo bảng dưới mái tôn. Bút than đặt trong một cái lon rỗng. Không ai lên trước.
+
+Chợ ngoài vạch vẫn có người mua bán, nhưng âm thanh nhỏ hơn mọi ngày. Ai cũng nhìn bảng rồi giả vờ mình không nhìn.
+
+Cái bảng không lớn.
+
+Chỉ là một tấm ván tháo từ cửa kho cũ, mặt gỗ còn vết cháy, góc trái bị mọt ăn mất một miếng. Nhưng nó đặt ở đó, dưới mái tôn xám, lại giống một cái hố sâu.
+
+Ký tên vào đó không giống nhận cháo.
+
+Nhận cháo là chuyện của một bữa.
+
+Ký tên là chuyện của ngày mai.
+
+Ngày mai ở phế thổ luôn đáng sợ hơn hôm nay. Hôm nay đã nhìn thấy đói, nhìn thấy khát, nhìn thấy ai đang cầm dao. Ngày mai thì chưa. Ngày mai có thể là lửa, có thể là thuế, có thể là một lệnh thu hồi, có thể là người thân mình bị gọi ra khỏi hàng.
+
+Một người đàn bà ôm can nước đứng trước bảng rất lâu. Con trai nàng kéo tay áo:
+
+"Mẹ, ký đi. Ở đây có cháo."
+
+Nàng cúi đầu mắng nhỏ:
+
+"Cháo hôm nay không nuôi được đầu mày ngày mai."
+
+Đứa bé không hiểu.
+
+Người lớn bên cạnh thì hiểu, nên càng im.
+
+Di Mạn đứng bên nồi cháo, múc từng bát loãng.
+
+"Bảng này không ép. Ai không ký vẫn được nhận nước theo công, vẫn được chữa bệnh nếu có phần thuốc."
+
+Một người hỏi:
+
+"Vậy ký được gì?"
+
+Di Mạn nhìn hắn.
+
+"Được người khác hỏi ngươi còn thở không khi điểm danh ban đêm."
+
+Người kia cười khan.
+
+"Hỏi xong nếu ta không thở thì sao?"
+
+Di Mạn múc một muỗng cháo, đổ lại vào nồi để nó nóng đều.
+
+"Thì ít nhất có người biết ngươi không phải tự dưng biến mất."
+
+"Biết để làm gì?"
+
+"Để cái phần nước ngày mai của ngươi không bị kẻ khác nói là vốn không có ai nhận."
+
+Câu ấy rất thực dụng.
+
+Thực dụng đến mức người hỏi không cãi được.
+
+Ở phế thổ, được thương nhớ là xa xỉ. Nhưng được tính phần, được kiểm tên, được người khác biết mình từng tồn tại, đó là thứ có thể cứu một cái xác khỏi bị đá sang bên đường như bao rác.
+
+Câu ấy làm người kia im.
+
+Ở phế thổ, được nhớ tới không hẳn là hạnh phúc.
+
+Nhưng bị quên chắc chắn là chết nhanh hơn.
+
+Người đầu tiên ký không phải Chim Xám.
+
+Là Bà Hôi.
+
+Bà ta đi lên, mặt nhăn nhúm, trên tay còn mùi khói vì mấy ngày nay bị bắt đun nước thô. Bà ta cầm bút than, viết một cái tên xiêu vẹo.
+
+`Hôi Nương.`
+
+A Thất ngạc nhiên:
+
+"Tên thật của bà?"
+
+Bà Hôi trừng nó.
+
+"Tên giả đẹp hơn tên thật không được à?"
+
+"Được."
+
+"Ghi thêm: từng bán thuốc giả, hiện đun nước."
+
+A Thất nghiêm túc ghi.
+
+Bà Hôi nhìn dòng chữ, miệng mấp máy, cuối cùng không bắt xóa.
+
+Người thứ hai là Mã Lục thợ vá giày. Hắn còn ôm bụng, nhưng vẫn chống gậy lên ký.
+
+"Ta ký vì dép của các ngươi rách quá. Không có ta, chạy thú kiểu gì?"
+
+Người thứ ba là A Chi. Nàng bế đứa con đã hạ sốt, ký xong đặt tay lên dòng nợ công của mình.
+
+"Ta trả."
+
+Lư Tử đứng sau nàng, do dự rất lâu rồi ký tên. Nó viết sai chữ, A Thất không sửa, chỉ viết lại bên cạnh rồi bảo:
+
+"Lần sau tự sửa."
+
+Dần dần, bảng có thêm tên.
+
+Không nhiều.
+
+Nhưng đủ để tấm gỗ trống không còn giống một cái quan tài.
+
+Lâm Tịch đứng xa nhìn. Tần Dã bên cạnh hỏi:
+
+"Sao ngươi không ký?"
+
+Nàng ngẩn ra.
+
+Nàng chưa từng nghĩ mình cần ký.
+
+Cổng này là nàng giữ. Luật này là nàng dựng. Người ngoài gọi tên nàng nhiều đến mức đôi khi nàng thấy cái tên Lâm Tịch không còn nằm trên người mình nữa.
+
+Nhưng Tần Dã nói đúng.
+
+Không ký, nàng giống người đứng ngoài luật.
+
+Lâm Tịch bước tới.
+
+Đám đông tự nhường đường.
+
+Nàng cầm bút than, viết:
+
+`Lâm Tịch. Giữ cổng. Nợ: Miên Miên, nước, những người chưa vào được.`
+
+A Thất nhìn dòng chữ, mắt đỏ.
+
+"Tỷ, nợ này trả sao hết?"
+
+Lâm Tịch đặt bút xuống.
+
+"Không trả hết thì nhớ lâu."
+
+Tần Dã là người ký sau nàng.
+
+Chữ hắn rất đẹp. Đẹp đến không hợp với tấm bảng bẩn.
+
+`Tần Dã. Cố vấn chiến thuật. Nợ: một mạng được nhặt về.`
+
+Lâm Tịch nhìn dòng chữ ấy.
+
+Tần Dã không nhìn nàng.
+
+Nhưng tai hắn đỏ rất nhẹ.
+
+## Chương 226: Người Không Ký
+
+Không phải ai cũng ký.
+
+Một nhóm mười bảy người rời khỏi chợ vào chiều ngày thứ sáu. Họ không chửi, không đập phá. Họ chỉ gói đồ, kéo xe, lặng lẽ đi về phía nam.
+
+Trong đó có người từng nhận nước.
+
+Có người từng được Mộc Sanh hạ sốt.
+
+Có người từng cười khi Bà Hôi bị đọc tội.
+
+Cũng có người mới sáng nay còn giúp đẩy xe than vào sân.
+
+Một cô gái tên Vân Chẩm cởi trả lại chiếc khăn xám Cổng Nước Xám phát cho đội giặt. Nàng gấp khăn rất vuông, đặt lên bàn, rồi cúi đầu như xin lỗi cái khăn.
+
+A Thất nhìn thấy, chạy tới.
+
+"Khăn đó tính công của ngươi, mang đi được."
+
+Vân Chẩm lắc đầu.
+
+"Mang khăn của các ngươi, đi đường bị người ta hỏi."
+
+"Hỏi thì nói đổi công."
+
+"Không ai tin công của người nghèo sạch vậy."
+
+A Thất há miệng, không nói được.
+
+Vân Chẩm nhìn bảng người trạm, ánh mắt dừng trên tên Bà Hôi rồi dời đi rất nhanh.
+
+"Ta không phải không muốn ở. Ta chỉ còn mẹ. Bà ấy nghe chữ cô lập là run. Ta không kéo bà ấy vào thêm một cái tên nữa được."
+
+Nàng nói xong, nhét vào tay A Thất một cái kim xương.
+
+"Cái này nhặt được ở chợ. Đầu hơi cùn, mài lại dùng được. Đừng ghi tên ta."
+
+A Thất nắm cái kim, mắt đỏ.
+
+"Vậy ghi việc được không?"
+
+Vân Chẩm ngẩn ra.
+
+Nó nói:
+
+"Không ghi tên. Ghi có một người từng để lại kim."
+
+Vân Chẩm quay mặt đi.
+
+"Tùy ngươi."
+
+Thế là trên bảng đổi công ngày hôm đó có một dòng rất lạ:
+
+`Một người không ký tên: để lại một kim xương, không lấy khăn.`
+
+Không ai xóa.
+
+Khi họ đi, một vài người trong trạm tức giận.
+
+"Đồ vô ơn."
+
+"Lúc có nước thì chen, lúc ký tên thì chạy."
+
+"Đừng cho họ mang nước!"
+
+Lâm Tịch đứng ở vạch cổng, nhìn nhóm người ấy.
+
+Người dẫn đầu là một ông già lưng còng. Ông ta ôm can nước đã đổi bằng công đào rãnh hôm qua. Thấy Lâm Tịch nhìn, ông ta dừng lại.
+
+"Ta không dám ở."
+
+Giọng ông khàn.
+
+"Ta từng thấy vùng bị đốt. Người trong tường nói chỉ đốt bệnh, nhưng lửa không biết đọc bảng bệnh."
+
+Không ai nói nữa.
+
+Ông già cúi đầu.
+
+"Ta biết các ngươi cứu người. Nhưng ta sợ."
+
+Lâm Tịch hỏi:
+
+"Nước của ông đổi bằng công?"
+
+"Ừ."
+
+"Vậy mang đi."
+
+Một người trong trạm nóng nảy:
+
+"Nhưng họ biết luật, biết kho, biết đường!"
+
+Tần Dã nói:
+
+"Giữ người bằng sợ thì họ sẽ bán ngươi bằng sợ."
+
+Lâm Tịch nhìn nhóm người rời đi.
+
+"Ai đi có thể mang phần đã đổi. Không mang bản đồ đường phụ, không mang tin kho. Ai bán tin làm hại trạm, lần sau không vào vùng chợ nữa."
+
+Ông già gật đầu, kéo xe đi.
+
+Khi nhóm người khuất trong bụi, bảng người trạm bỗng nặng hơn.
+
+Ở lại không còn là theo đám đông.
+
+Ở lại là đã thấy cửa ra mà vẫn quay lưng với nó.
+
+Đêm ngày thứ sáu, Ngân Thụ phát một bản tin mới:
+
+`Một số cư dân đã thoát khỏi cụm Cổng Nước Xám. Khuyến cáo người còn lại rời khỏi ổ bệnh trước khi xử lý cấp cuối.`
+
+Tin ấy làm nhiều người mất ngủ.
+
+Lâm Tịch cũng mất ngủ.
+
+Nàng ngồi dưới cổng, bên cạnh cái thìa gỗ và túi độc. Tần Dã đẩy xe đến, đưa cho nàng nửa miếng bột nướng.
+
+"Ăn."
+
+"Không đói."
+
+"Nói dối tệ."
+
+Nàng nhận, bẻ đôi trả hắn một nửa.
+
+Hắn không nhận.
+
+"Ta ăn rồi."
+
+"Nói dối cũng tệ."
+
+Hai người nhìn nhau một lúc, cuối cùng cùng cười rất nhẹ.
+
+Lâm Tịch nhai bột khô. Nó cứng, hơi cháy, không ngon. Nhưng bụng nàng ấm lên một chút.
+
+"Tần Dã."
+
+"Ừ."
+
+"Nếu ngày mai họ đốt thật thì sao?"
+
+Hắn nhìn khoảng tối ngoài cổng.
+
+"Thì mở những đường đã chuẩn bị. Đưa trẻ con và bệnh nhân xuống phòng điều khiển cũ. Dùng khói ngược làm nhiễu. Để người có thể chạy chạy trước."
+
+"Còn người không chạy được?"
+
+Tần Dã im lặng.
+
+Lâm Tịch biết mình hỏi câu ác.
+
+Hắn là người từng không chạy được.
+
+Rất lâu sau, Tần Dã nói:
+
+"Người không chạy được cũng phải được hỏi muốn ở đâu."
+
+Gió đêm thổi cái thìa gỗ va vào cổng.
+
+Cộc.
+
+Như ai đó gõ cửa.
+
+Lâm Tịch ăn hết nửa miếng bột, đứng dậy.
+
+"Vậy ngày mai hỏi."
+
+"Hỏi gì?"
+
+"Nếu lửa đến, ai muốn được kéo đi, ai muốn tự giữ cổng, ai muốn gửi tên cho người sống."
+
+Tần Dã ngẩng đầu nhìn nàng.
+
+Ánh đèn yếu rơi lên mặt nàng, làm đôi mắt vốn mệt mỏi sáng lên một chút.
+
+"Ngươi càng ngày càng giống người giữ thành."
+
+Lâm Tịch lắc đầu.
+
+"Không. Ta chỉ đang học không làm người giữ tù."
+
+Sáng hôm sau, nàng thật sự hỏi.
+
+Không hỏi bằng một bài diễn thuyết.
+
+Nàng bảo A Thất chia bảng thành ba cột:
+
+`Kéo đi.`
+
+`Ở lại giữ.`
+
+`Gửi tên.`
+
+Ba cột ấy làm rất nhiều người nổi giận.
+
+Một người cụt chân đập gậy xuống đất:
+
+"Ngươi hỏi vậy là muốn bỏ bọn ta?"
+
+Lâm Tịch đứng trước mặt ông.
+
+"Không. Ta hỏi để khi chạy không có ai tự quyết thay ông."
+
+"Ta cụt chân, còn quyết cái gì?"
+
+"Quyết nếu lửa đến, ông muốn nằm trong phòng điều khiển cũ hay ngồi ở kho nước."
+
+Ông cụt chân nhìn nàng như chưa hiểu.
+
+Rất lâu sau, ông hỏi:
+
+"Kho nước làm gì?"
+
+"Nếu cổng cháy, kho nước cần người mở van xả cuối. Người đó có thể không chạy kịp."
+
+Đám đông im bặt.
+
+Ông cụt chân nắm gậy. Mặt ông lúc đỏ lúc trắng.
+
+"Ngươi để người chạy không được đi chết?"
+
+Tần Dã nói:
+
+"Không. Để người chạy không được có quyền không bị giấu vào góc chờ chết."
+
+Ông nhìn Tần Dã.
+
+Hai người đều hiểu câu đó bằng xương.
+
+Một người từng bị thân thể bỏ lại trên mặt đất.
+
+Một người vẫn đang bị nó bỏ lại mỗi ngày.
+
+Ông cụt chân chậm rãi quay sang bảng.
+
+"Ghi ta ở lại giữ kho nước."
+
+Con gái ông khóc:
+
+"Cha!"
+
+Ông mắng:
+
+"Khóc cái gì. Chân ta không chạy được, tay còn mở van được. Nếu ngươi bị kéo đi mà còn sống, sau này nhớ đốt cho ta một miếng bột không mốc."
+
+A Thất cầm bút, tay run.
+
+Lâm Tịch nói:
+
+"Ghi thêm: nếu trước lúc đó còn người kéo được, ưu tiên kéo ông đi. Ở lại giữ không có nghĩa bị bỏ."
+
+Ông cụt chân nhìn nàng.
+
+"Ngươi phiền thật."
+
+"Ừ."
+
+"Ghi đi."
+
+Hôm đó, nhiều cái tên được đặt vào ba cột. Có người chọn kéo đi mà xấu hổ, có người chọn ở lại mà bị mắng ngu, có người chỉ gửi tên vì không tin mình sống tới lúc cần chọn.
+
+Bảng ấy không làm Cổng Nước Xám mạnh hơn.
+
+Nhưng nó làm một điều khác.
+
+Nó khiến người yếu lần đầu không bị bàn về như đồ đạc.

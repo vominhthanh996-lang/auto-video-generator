@@ -1,0 +1,907 @@
+# Phần 3: Bản Đồ Trạm Lọc Chết
+
+## Chương 173: Người Được Kéo Về
+
+Di Mạn nhìn thấy người đàn bà ho máu trên xe kéo thì mặt tối lại.
+
+Bà không mắng ngay.
+
+Đó mới là dấu hiệu đáng sợ.
+
+Nếu bà còn sức mắng, chuyện thường chưa tới mức không cứu được. Khi Di Mạn im lặng, ngay cả A Thất cũng biết tự ngậm miệng, không dám lấy câu đùa ra đỡ.
+
+Lão Phùng đẩy xe vào kho. Bánh xe nghiến qua nền xi măng, để lại hai vệt nước bẩn. Tiểu Mãn ôm cái nồi méo đi sau, mắt nhìn mọi người như sợ bị đuổi ra ngay nếu thở mạnh.
+
+A Mục đứng cạnh nó.
+
+Nửa bước trước.
+
+Không nhiều.
+
+Nhưng đủ để nếu ai vung tay, cái tát sẽ rơi vào nó trước.
+
+Di Mạn nhìn thấy động tác đó.
+
+Bà thở ra qua mũi.
+
+"Đặt người lên giường phụ."
+
+Mộc Sanh nói:
+
+"Giường phụ đang để dụng cụ."
+
+"Dụng cụ không ho ra máu."
+
+Mộc Sanh không cãi. Nàng lập tức gom kìm, dây, lõi lọc và mấy mảnh kim loại trên giường phụ xuống đất. A Thất chạy tới phụ, suýt làm rơi radio. Lão Phùng bế Hạ Tố lên giường, động tác nhẹ đến mức không giống một ông già hay chửi.
+
+Hạ Tố tỉnh nửa chừng, mắt mở hé.
+
+"Đừng lấy nồi của Mãn..."
+
+Tiểu Mãn lập tức chạy tới.
+
+"Con ở đây."
+
+Hạ Tố nghe tiếng con, tay buông lỏng một chút.
+
+Hứa Linh bước tới kiểm tra. Bà đặt hai ngón tay lên cổ Hạ Tố, rồi vạch mí mắt, nhìn móng tay, nghe ngực.
+
+Sắc mặt bà không tốt.
+
+Lâm Tịch hỏi:
+
+"Cứu được không?"
+
+Hứa Linh đáp:
+
+"Cứu là chữ xa xỉ. Giữ qua đêm thì được thử."
+
+Tiểu Mãn không hiểu hết.
+
+Nhưng nó hiểu "qua đêm".
+
+Nó ôm cái nồi chặt hơn.
+
+Di Mạn lấy một túi nước về phía bàn bếp.
+
+A Thất lập tức nói:
+
+"Túi đó là nước cho thuốc của..."
+
+Nó dừng lại.
+
+Vì Tần Dã đang nhìn nó.
+
+Không dữ.
+
+Chỉ nhìn.
+
+A Thất cúi đầu.
+
+"Ta biết. Ta im."
+
+Di Mạn không nói gì. Bà đổ ra nửa bát, phần còn lại cột lại thật chặt. Sau đó lấy bát nước tới cho Hứa Linh.
+
+Hứa Linh pha thuốc giảm ho và thuốc hạ sốt từ hộp dược cũ. Không phải thuốc tốt. Thuốc tốt phải dùng cho Tần Dã lúc gen sụp. Nhưng Hạ Tố nếu không giảm ho, phổi có thể vỡ mạch trong đêm.
+
+Trong phế thổ, lòng tốt cũng phải xếp hàng.
+
+Không ai thích điều đó.
+
+Nhưng ai cũng sống trong hàng ấy.
+
+Lâm Tịch đứng cạnh bàn, nhìn Di Mạn chia nước. Mỗi động tác của bà đều chính xác. Nước cho Tần Dã. Nước cho Hạ Tố. Nước để lọc lại. Nước pha cháo cho trẻ nhỏ. Nước rửa tay cho Hứa Linh trước khi chích thuốc.
+
+Không có nước cho người lớn uống ngay.
+
+Di Mạn đẩy một cái cốc rỗng về phía Lâm Tịch.
+
+"Nhìn cho kỹ."
+
+Lâm Tịch nhìn bà.
+
+Di Mạn nói:
+
+"Cứu người là chuyện tốt. Nhưng sau khi cứu về, cái bát này sẽ rỗng. Cháu phải nhìn nó. Đội trưởng không được chỉ nhìn người mình kéo vào cửa."
+
+Lâm Tịch cầm cái cốc.
+
+Nó nhẹ.
+
+Nhẹ tới mức như đang trách nàng.
+
+"Ta biết."
+
+"Không. Cháu mới đang học."
+
+Di Mạn không hạ giọng.
+
+"Hôm nay cứu hai người. Ngày mai nếu ngoài cổng có hai mươi người thì sao? Hai trăm người thì sao? Cháu định lấy máu Tần Dã pha nước cho họ uống à?"
+
+Trong kho im phăng phắc.
+
+A Mục cúi đầu rất thấp.
+
+Tiểu Mãn đứng cạnh giường, mặt trắng bệch.
+
+Lâm Tịch không tránh.
+
+"Không."
+
+"Vậy cháu định làm gì?"
+
+Lâm Tịch nhìn cái cốc rỗng.
+
+Nàng có thể nói đi Trạm Lọc số Chín. Có thể nói lấy nước trước khi thành khóa. Có thể nói Kỷ Nam có bản đồ. Những câu đó đều đúng, nhưng chưa chạm vào cái Di Mạn đang hỏi.
+
+Bà không hỏi kế hoạch.
+
+Bà hỏi nàng có biết cái giá của quyết định hay không.
+
+Lâm Tịch nói:
+
+"Ta sẽ đặt luật."
+
+Di Mạn nhìn nàng.
+
+"Luật gì?"
+
+"Người được cứu vào đội không đồng nghĩa được uống trước người cũ. Trẻ nhỏ, người đang dùng thuốc, người lao động nặng được ưu tiên. Người lớn còn đi được phải làm việc trước khi nhận phần đủ. Ai giấu nước, đổi nước riêng, bán chỗ, đuổi người yếu để lấy phần, rời đội."
+
+A Thất há miệng.
+
+"Rời đội trong phế thổ gần bằng chết."
+
+Lâm Tịch nhìn nó.
+
+"Vậy đừng làm."
+
+Nó ngậm miệng.
+
+Di Mạn hỏi:
+
+"Nếu người phạm luật là A Mục?"
+
+A Mục ngẩng đầu.
+
+Lâm Tịch đáp:
+
+"Cũng vậy."
+
+"Nếu là ta?"
+
+Lâm Tịch khựng một chút.
+
+Di Mạn nhìn thẳng vào nàng.
+
+Không cho nàng né.
+
+Lâm Tịch siết cái cốc.
+
+"Cũng vậy."
+
+Di Mạn nhìn nàng thêm một lúc, rồi cầm cái cốc rỗng từ tay nàng.
+
+"Tạm nghe được."
+
+A Thất thở phào nhỏ.
+
+Di Mạn lập tức liếc nó.
+
+"Ngươi thở cái gì? Lát nữa ngươi đi lọc nước."
+
+"Ta tưởng ta vừa sống qua một phiên xử."
+
+"Ngươi sống qua rồi nên phải làm việc."
+
+Không khí trong kho lỏng ra một chút.
+
+Nhưng chỉ một chút.
+
+Tần Dã nằm trên giường chính, mắt vẫn mở. Lâm Tịch đi tới cạnh hắn.
+
+"Ta đem người về."
+
+"Ta thấy."
+
+"Ngươi không mắng?"
+
+"Di Mạn mắng tốt hơn ta."
+
+Lâm Tịch hơi muốn cười, nhưng cổ họng khô quá, cười không ra.
+
+Tần Dã nhìn nàng.
+
+"Làm đội trưởng không phải là không sai."
+
+"Vậy là gì?"
+
+"Là sai xong còn phải chia nước."
+
+Lâm Tịch ngồi xuống bên giường.
+
+"Nghe chẳng oai chút nào."
+
+"Oai thường chết sớm."
+
+"Di Mạn cũng nói vậy."
+
+"Bà ấy thông minh."
+
+Tần Dã ho khẽ. Lâm Tịch lập tức đưa tay đỡ, nhưng hắn lắc đầu. Hắn tự chống qua cơn ho, môi trắng bệch.
+
+"Bản đồ."
+
+Lâm Tịch lấy bản đồ vải của Kỷ Nam ra.
+
+Kỷ Nam đứng ở cửa từ lúc nào không biết. Hắn không vào, cũng không đi. Như một cái bóng chưa quyết định mình thuộc bên nào.
+
+Lâm Tịch trải bản đồ lên bàn.
+
+Trạm Lọc số Chín nằm ngoài tường Nam khoảng mười bảy cây số, phía sau khu đầm chết và tuyến cống ngầm cũ. Trên bản đồ, Kỷ Nam đã đánh ba dấu đen.
+
+Một dấu ở cầu cạn sập.
+
+Một dấu ở đầm nước bạc.
+
+Một dấu ở chính trạm lọc.
+
+A Thất ghé mắt nhìn.
+
+"Ba dấu này là gì?"
+
+Kỷ Nam đáp:
+
+"Nơi người thường chết."
+
+"Cảm ơn. Rất cụ thể."
+
+Kỷ Nam chỉ dấu thứ nhất.
+
+"Cầu cạn sập có ổ quạ mù. Chúng không ăn người chết, chúng ăn mắt người sống."
+
+Tiểu Mãn nghe tới đó run lên.
+
+Di Mạn đưa tay bịt tai nó.
+
+Kỷ Nam không xin lỗi.
+
+Hắn chỉ chuyển sang dấu thứ hai.
+
+"Đầm nước bạc nhìn sạch hơn nước thành. Uống một ngụm, ruột chảy trong hai giờ. Chạm lâu, da bong."
+
+A Thất nuốt nước bọt.
+
+"Dấu thứ ba?"
+
+Kỷ Nam nhìn Tần Dã.
+
+"Ở trạm lọc có thứ dưới cống. Hắc Nha từng gọi nó là cá sấu cống ngầm. Cấp Đồng, có thể lên Bạc nếu đã đẻ trứng."
+
+Lão Phùng chửi thề.
+
+"Ngươi biết đường này mà còn bảo chúng ta đi?"
+
+Kỷ Nam đáp:
+
+"Các ngươi muốn nước ngoài quyền kiểm soát của thành. Nước loại đó hoặc có chủ, hoặc có thú, hoặc có xác."
+
+"Trạm này có gì?"
+
+"Có cả ba."
+
+Trong kho yên xuống.
+
+Mộc Sanh nhìn bản đồ, ánh mắt dừng ở ký hiệu máy lọc.
+
+"Nếu bơm chính chưa nổ, ta có thể sửa."
+
+A Thất lập tức nhìn nàng.
+
+"Tỷ nhìn cái bản đồ chết chóc này mà thấy bơm?"
+
+"Ngươi nhìn thấy gì?"
+
+"Mắt chim, nước độc và cá sấu."
+
+"Vậy ngươi phụ trách sợ. Ta phụ trách bơm."
+
+A Thất nghẹn.
+
+Lâm Tịch nhìn bản đồ.
+
+"Đi khi nào?"
+
+Tần Dã đáp:
+
+"Đêm nay."
+
+Di Mạn cau mày.
+
+"Ngươi điên à? Đêm nay Hạ Tố chưa qua cơn, ngươi chưa đứng nổi, nước chưa lọc xong."
+
+Tần Dã nhìn bà.
+
+"Sáng mai cổng khóa."
+
+Kỷ Nam gật đầu.
+
+"Ta vừa đi qua chốt Đông. Đội nội thành đã xuống khu xám. Chưa bắt người, nhưng đang niêm danh sách."
+
+Lâm Tịch hỏi:
+
+"Có tên ta?"
+
+"Không chỉ ngươi."
+
+Kỷ Nam nhìn quanh kho.
+
+"Chim Xám bị ghi là nhóm tiếp xúc mẫu sống cấp một. Nếu ở lại, người bị đưa đi tái kiểm sẽ không chỉ có Lâm Tịch."
+
+A Thất cười khô.
+
+"Hay thật. Chúng ta từ đội nhặt rác biến thành đồ đính kèm."
+
+Mộc Sanh nói:
+
+"Đồ đính kèm thường bị tháo trước."
+
+"Tỷ đừng nói nữa. Ta lạnh."
+
+Di Mạn nhìn Hạ Tố trên giường phụ, nhìn Tiểu Mãn, nhìn Ninh ôm Đèn Vàng, nhìn Tần Dã, rồi nhìn ba túi nước vừa lấy về.
+
+"Nếu đi đêm nay, mang theo người bệnh thế nào?"
+
+Không ai trả lời ngay.
+
+Vì đó là câu hỏi thật.
+
+Lâm Tịch nhìn Hạ Tố. Người đàn bà ấy vừa được kéo khỏi khu thải người, thậm chí chưa biết tên từng người trong kho. Mang bà đi sẽ chậm. Bỏ bà lại, chẳng khác gì vừa giật khỏi cửa chết rồi ném về cửa khác.
+
+Tiểu Mãn ôm cái nồi, mắt mở to.
+
+Nó không khóc.
+
+Chính vì không khóc, câu hỏi càng nặng.
+
+Lâm Tịch nói:
+
+"Mang."
+
+Di Mạn nhắm mắt.
+
+"Vậy phải có xe."
+
+Lão Phùng gõ tay lên xe kéo.
+
+"Xe này không qua được đầm."
+
+Mộc Sanh nói:
+
+"Có thể đổi bánh."
+
+"Bánh đâu?"
+
+"Trong kho sửa cũ của Sở."
+
+A Thất giơ tay yếu ớt.
+
+"Kho đó khóa."
+
+Mộc Sanh nhìn nó.
+
+"Ngươi biết mở."
+
+"Ta biết, nhưng ta không muốn biết trước mặt nhiều nhân chứng như vậy."
+
+Kỷ Nam bỗng nói:
+
+"Ta có một xe gấp của Hắc Nha."
+
+Mọi người nhìn hắn.
+
+Hắn không thoải mái quay mặt đi.
+
+"Giấu ngoài khu ống cũ. Chở được hai người nằm, ba thùng nước, chịu đường xấu."
+
+Lão Phùng hừ một tiếng.
+
+"Bây giờ mới nói?"
+
+"Ta chưa quyết định cho các ngươi."
+
+"Giờ quyết định rồi?"
+
+Kỷ Nam nhìn Tần Dã.
+
+"Ta chưa tha thứ. Nhưng ta muốn hắn sống tới lúc ta hỏi hết."
+
+Tần Dã thản nhiên:
+
+"Lý do đủ dùng."
+
+Lâm Tịch nhìn từng người trong kho.
+
+"Vậy chia việc."
+
+Nàng lấy than, vải lọc, lõi sứ đặt lên bàn.
+
+"Di Mạn, Hứa Linh, giữ người bệnh qua ba giờ tới. Mộc Sanh, A Thất, chuẩn bị lọc và sửa xe. Lão Phùng, lấy đồ nhẹ nhất có thể, bỏ thứ không cần. Ninh giữ Đèn Vàng. A Mục theo ta đi lấy thuốc và giấy."
+
+A Mục hỏi:
+
+"Giấy gì?"
+
+Lâm Tịch nhìn mảnh thẻ chết.
+
+"Tất cả giấy có tên chúng ta."
+
+Tần Dã nói:
+
+"Không lấy hết được."
+
+"Vậy đốt."
+
+Trong phòng, Di Mạn ngẩng đầu.
+
+Lâm Tịch nói tiếp:
+
+"Nếu thành muốn biến chúng ta thành hồ sơ, trước khi đi ít nhất phải làm chúng mất công viết lại."
+
+A Thất nhìn nàng.
+
+Mắt nó sáng lên một chút.
+
+"Câu này được."
+
+Di Mạn lấy khăn buộc tóc lại.
+
+"Được cái gì. Làm việc."
+
+Mọi người tản ra.
+
+Không ai nói "chúng ta sẽ sống".
+
+Trong phế thổ, câu đó quá lớn, dễ kinh động thứ không nên kinh động.
+
+Họ chỉ bắt đầu thu đồ.
+
+Một cái nồi.
+
+Ba túi nước.
+
+Một hộp Đèn Vàng.
+
+Một radio hỏng.
+
+Một bản đồ trạm lọc chết.
+
+Một người đàn ông vừa đứng được ba bước.
+
+Một người đàn bà ho máu.
+
+Một đứa trẻ ôm búp bê vải lọc.
+
+Và một đội người nghèo đang chuẩn bị rời khỏi nơi mà họ từng dùng hết sức để bước vào.
+
+## Chương 174: Đốt Tên Trước Khi Rời Đi
+
+Kho hồ sơ phụ của khu xám nằm sau nhà giặt công cộng.
+
+Nó không có lính canh.
+
+Không phải vì không quan trọng, mà vì người nghèo hiếm khi muốn trộm giấy tờ của chính mình. Trong thành Nam, giấy tờ là thứ đè lên người ta, nhưng cũng là thứ chứng minh người ta còn được tính là người. Ít ai tự tay đốt sợi dây đang buộc cổ mình, vì ngoài dây đó ra, họ chẳng còn gì để bám.
+
+Lâm Tịch mang A Mục tới khi trời vừa ngả chiều.
+
+Ánh sáng thành Nam lúc chiều không vàng. Nó trắng xám, lọc qua mái chắn xạ, rơi xuống mặt người như bụi bột.
+
+A Mục đứng trước cửa kho, nhìn ổ khóa.
+
+"A Thất nên tới."
+
+"Nó đang sửa xe."
+
+"Ta mở khóa không giỏi bằng nó."
+
+"Nhưng ngươi ít để lại dấu hơn."
+
+A Mục ngẩng lên.
+
+"Sao chị biết?"
+
+"A Thất mở khóa như khoe tay nghề. Ngươi mở như sợ bị đánh."
+
+Nó im một lúc.
+
+"Ngày trước nếu bị bắt, ta sẽ bị đánh thật."
+
+Lâm Tịch đưa cho nó một đoạn dây thép nhỏ.
+
+"Hôm nay nếu bị bắt, chúng ta chạy."
+
+"Nếu chạy không thoát?"
+
+"Ta kéo ngươi."
+
+A Mục cúi đầu mở khóa.
+
+Ổ khóa cũ hơn vẻ ngoài. Có lẽ vì nơi này lưu giấy người nghèo, nên không ai muốn dùng khóa tốt. Sau sáu nhịp thở, nó bật ra một tiếng khẽ.
+
+A Mục thở phào.
+
+"Được."
+
+Hai người lách vào.
+
+Bên trong kho có mùi giấy ẩm, mốc, mực cũ và thuốc diệt côn trùng rẻ tiền. Từng kệ hồ sơ xếp từ sàn tới trần. Mỗi kệ ghi mã khu, mã đội, mã nợ nước, mã bệnh, mã tử vong chờ hủy.
+
+Lâm Tịch đứng giữa những cái tên bị xếp thành bó.
+
+Bỗng nàng thấy lạnh.
+
+Không phải cái lạnh của gió.
+
+Là cái lạnh của việc nhận ra một đời người có thể mỏng hơn ba tờ giấy, buộc bằng dây gai, đặt trên kệ thứ bảy, ngăn thứ ba, chờ ai đó đóng dấu.
+
+A Mục kéo tay áo nàng.
+
+"Tìm gì trước?"
+
+"Chim Xám."
+
+Họ tìm thấy hồ sơ Chim Xám trong ngăn tạm trú khu Nam. Không dày, vì đội mới vào thành chưa lâu. Nhưng trên tập giấy đã có dấu đỏ mới:
+
+`Tiếp xúc mẫu sống cấp một. Chờ phân loại.`
+
+A Mục đọc xong, mặt tái đi.
+
+"Phân loại là gì?"
+
+Lâm Tịch rút tập giấy ra.
+
+"Là trước khi xử lý, người ta cần biết ngươi thuộc sọt nào."
+
+Nàng tìm tiếp.
+
+Tên Di Mạn. Tên A Thất. Tên Mộc Sanh. Tên Lão Phùng. Tên Ninh. Tên A Mục. Tên A Hành. Tên Tiểu Bảo. Tên Tiểu Ngô. Tên Tiểu Mai.
+
+Tên Tần Dã không nằm trong tập đó.
+
+Hắn nằm ở ngăn khác.
+
+Hắc Nha.
+
+Mã HN-07.
+
+Trạng thái: tài sản chiến đấu hư hỏng, quyền truy cập tạm giữ, liên quan hồ sơ Tần Sách.
+
+Lâm Tịch nhìn dòng chữ rất lâu.
+
+A Mục hỏi nhỏ:
+
+"Tài sản?"
+
+"Ừ."
+
+"Họ gọi anh ấy là tài sản?"
+
+"Họ cũng gọi ta vậy."
+
+A Mục cắn môi.
+
+"Đốt hết đi."
+
+Lâm Tịch không lập tức làm.
+
+Nàng rút vài tờ quan trọng cho vào túi: mã truy cập cổng phụ, lịch tái kiểm, danh sách người bị niêm phong ở khu xám, tuyến chuyển giao thuốc gen. Những thứ có thể cứu mạng sau này không được đốt vì tức giận.
+
+Sau đó nàng đưa phần còn lại cho A Mục.
+
+"Xé nhỏ."
+
+A Mục làm rất nhanh.
+
+Tiếng giấy rách vang lên trong kho tối.
+
+Rất nhỏ.
+
+Nhưng mỗi tiếng đều giống một cái tên thoát khỏi móc treo.
+
+Khi tới tập hồ sơ tử vong Khu 17, tay Lâm Tịch dừng lại.
+
+Nàng thấy tên mình.
+
+Không phải hồ sơ mới.
+
+Hồ sơ cũ.
+
+Lâm Tịch, nữ, khu ngoài thành số 17, tình trạng: chết do nhiễm xạ và suy kiệt, thi thể không thu hồi, hồ sơ chờ hủy.
+
+Bên dưới có một dòng ghi chú thêm bằng mực khác:
+
+`Không hủy. Theo dõi khả năng tái hoạt.`
+
+Ngày ký trước ngày nàng tỉnh lại ba hôm.
+
+Ba hôm.
+
+Nghĩa là trước khi nàng mở mắt trong đống rác, đã có người biết cái xác đó có thể sống lại.
+
+Không.
+
+Không phải sống lại.
+
+Tái hoạt.
+
+A Mục thấy mặt nàng, không dám hỏi.
+
+Lâm Tịch gấp tờ giấy lại, bỏ vào trong áo.
+
+Tờ này không đốt.
+
+Có vài vết thương phải giữ làm chứng.
+
+Ngoài kho vang lên tiếng bước chân.
+
+A Mục lập tức tắt đèn pin nhỏ.
+
+Lâm Tịch kéo nó ngồi xuống sau kệ hồ sơ.
+
+Cửa kho bị đẩy mở.
+
+Hai người đi vào.
+
+Một giọng nam trẻ:
+
+"Danh sách Chim Xám chuyển lên nội thành chưa?"
+
+Giọng còn lại già hơn:
+
+"Chưa. Quan Dực giữ."
+
+"Ông ta muốn chết à? Lệnh Ngân Thụ cấp một."
+
+"Quan Dực nói hồ sơ khu xám cần đủ quy trình."
+
+Người trẻ cười lạnh.
+
+"Quy trình? Khi mẫu chạy khỏi thành, ông ta lấy quy trình chặn đạn à?"
+
+Lâm Tịch và A Mục nhìn nhau.
+
+Quan Dực đang kéo thời gian.
+
+Người già hạ giọng:
+
+"Ngươi nói nhỏ thôi. Bên trên còn chưa thống nhất. Thẩm bác sĩ muốn giữ người sống, đội an ninh muốn khóa khu, Ngân Thụ chỉ gửi quyền truy cập, chưa gửi phương án."
+
+"Phương án tới trước tối. Ta nghe nói nếu không đưa được người, sẽ khóa toàn bộ khu xám."
+
+A Mục siết tay.
+
+Khóa toàn bộ khu xám.
+
+Không phải chỉ Chim Xám.
+
+Tất cả người ở khu này sẽ bị chặn nước, chặn cổng, chặn thuốc, cho tới khi có người giao Lâm Tịch ra.
+
+Người già thở dài.
+
+"Một cô gái thôi mà."
+
+Người trẻ đáp:
+
+"Không phải cô gái. Là hồ sơ cấp một."
+
+Hai người lấy một thùng giấy rồi rời đi.
+
+Cửa đóng lại.
+
+A Mục không thở trong mấy giây, sau đó mới run giọng:
+
+"Họ sẽ dùng cả khu ép chị."
+
+"Ừ."
+
+"Vậy chúng ta đi, khu xám sẽ..."
+
+"Bị phạt."
+
+Lâm Tịch nói ra hai chữ đó, cổ họng như có cát.
+
+A Mục nhìn nàng.
+
+"Vậy làm sao?"
+
+Không có đáp án sạch.
+
+Ở Khu 17, nàng từng nghĩ chỉ cần đem người mình thương đi là được. Vào thành rồi, nàng hiểu mỗi bước chân đều dẫm lên dây của người khác. Nếu nàng ở lại, Chim Xám bị bắt. Nếu nàng đi, khu xám bị khóa. Nếu nàng đầu hàng, Đèn Vàng vào phòng thí nghiệm, Tần Dã bị tháo mã HN-07, đội nàng biến thành danh sách phụ.
+
+Nàng nhắm mắt.
+
+Trong đầu hiện lên cốc nước rỗng Di Mạn đưa.
+
+Đội trưởng không được chỉ nhìn người mình kéo vào cửa.
+
+Lâm Tịch mở mắt.
+
+"Không thể lặng lẽ đi."
+
+A Mục ngẩn ra.
+
+"Vậy?"
+
+"Phải làm cho họ không kịp khóa khu."
+
+"Bằng cách nào?"
+
+Lâm Tịch nhìn những kệ hồ sơ.
+
+Trong này có tên của rất nhiều người đang bị nợ nước, bị đẩy ra ngoài, bị chờ phân loại, bị chuyển tiếp ngoài tường.
+
+Giấy tờ là dây.
+
+Nhưng nếu quá nhiều dây cùng cháy, người cầm dây cũng sẽ bỏng tay.
+
+Nàng lấy từ túi ra hộp đánh lửa nhỏ.
+
+A Mục hoảng hốt:
+
+"Đốt kho?"
+
+"Không. Đốt một góc."
+
+"Khác nhau nhiều không?"
+
+"Khác. Đốt kho là giết người bị kẹt tên. Đốt góc lưu chuyển là làm hệ thống nghẹn."
+
+Nàng chỉ kệ bên trái.
+
+"Tập chuyển tiếp hôm nay, tập khóa nước tạm thời, tập tái kiểm khu xám. Xé trước, đốt sau. Chừa hồ sơ bệnh và giấy trẻ nhỏ."
+
+A Mục nhìn nàng.
+
+"Chị biết làm rồi."
+
+"Biết gì?"
+
+"Làm người xấu vừa đủ."
+
+Lâm Tịch khựng lại.
+
+Câu đó không giống khen.
+
+Nhưng cũng không hoàn toàn là trách.
+
+Nàng nói:
+
+"Nhắc ta nếu ta quá tay."
+
+A Mục gật đầu.
+
+"Nếu chị nghe."
+
+"Ta sẽ cố."
+
+Hai người bắt đầu xé.
+
+Không có nhạc, không có lời hô, không có cảm giác anh hùng. Chỉ có tiếng giấy rách, tiếng tim đập, tiếng bụi rơi từ kệ, tiếng bước chân có thể quay lại bất cứ lúc nào.
+
+Lâm Tịch đốt chồng giấy đầu tiên trong thùng sắt đựng rác.
+
+Lửa bùng lên rất nhỏ.
+
+Ánh lửa soi qua mắt nàng, làm nàng trong một khoảnh khắc thấy mình xa lạ.
+
+Không còn là cô gái nhặt được hộp thịt trong túi người chết.
+
+Không còn là người chỉ muốn gom tinh thạch vào thành.
+
+Nàng đang đốt tên người khác để mua thời gian cho mình và cho họ.
+
+Đúng hay sai?
+
+Không biết.
+
+Nhưng nước sẽ không chờ nàng nghĩ xong.
+
+Khói bắt đầu chui qua khe cửa.
+
+Chuông báo cháy ré lên.
+
+Lâm Tịch kéo A Mục chạy theo lối sau. Trước khi rời kho, nàng quay đầu nhìn những kệ hồ sơ còn lại.
+
+Không đủ.
+
+Nhưng đủ làm thành Nam bận rộn một đêm.
+
+Khi hai người lao ra hẻm, phía xa đã có người hét:
+
+"Kho hồ sơ cháy!"
+
+Còi báo động chuyển hướng.
+
+Không phải về kho Đèn Vàng.
+
+Mà về nhà giặt công cộng.
+
+A Mục vừa chạy vừa cười một tiếng rất khẽ, như sợ bản thân không được phép cười.
+
+"Chúng ta làm thành nghẹn thật rồi."
+
+Lâm Tịch không cười.
+
+Trong áo nàng, tờ hồ sơ cũ ghi "theo dõi khả năng tái hoạt" cọ vào da.
+
+Nàng bỗng hiểu, rời thành đêm nay không chỉ là chạy khỏi Ngân Thụ.
+
+Nàng phải chạy khỏi cái khả năng một ngày nào đó, mình cũng nhìn người khác như hồ sơ.
+
+Khi họ về tới kho, trời đã tối.
+
+Trên bàn, bản đồ Trạm Lọc số Chín được ghim bằng con dao gãy của Tần Dã.
+
+Ba túi nước đã lọc được đặt cạnh nhau.
+
+Xe gấp Hắc Nha nằm ngoài sân, bánh đen, khung thấp, như một con thú phục trong bóng tối.
+
+Tần Dã ngồi trên mép giường.
+
+Không đứng.
+
+Nhưng ngồi thẳng.
+
+Hắn nhìn Lâm Tịch, rồi nhìn vệt tro trên tay nàng.
+
+"Đốt?"
+
+"Một góc."
+
+"Tốt."
+
+"Không hỏi đúng sai?"
+
+Tần Dã chống tay lên đầu gối. Cơn đau làm ngón tay hắn trắng bệch, nhưng giọng vẫn ổn.
+
+"Ra khỏi thành rồi hỏi. Trong thành, câu đúng sai thường bị người có nước viết trước."
+
+Di Mạn buộc thùng đồ cuối cùng lên xe.
+
+"Nói chuyện xong chưa? Xong thì đi. Ta không muốn bị bắt khi đang ôm nồi."
+
+A Thất đeo radio lên lưng.
+
+Mộc Sanh khóa hộp dụng cụ.
+
+Ninh ôm Đèn Vàng.
+
+Tiểu Mãn ngồi cạnh mẹ trên xe, cái nồi méo đặt trong lòng.
+
+Kỷ Nam đứng ngoài cửa, nhìn con đường tối dẫn về phía cổng phụ.
+
+Lâm Tịch quay đầu nhìn kho Đèn Vàng.
+
+Nơi này chưa phải nhà.
+
+Nhưng từng có cháo nóng, tiếng cãi nhau, thuốc, nước, người ngủ gục vì canh nhau sống qua đêm.
+
+Rời khỏi một nơi như vậy, dù biết nó là lồng, vẫn thấy đau.
+
+Tần Dã nói sau lưng nàng:
+
+"Đi thôi."
+
+Lâm Tịch gật đầu.
+
+Đội Chim Xám rời kho trong tiếng còi báo cháy của thành Nam.
+
+Sau lưng họ, thành bắt đầu khóa cửa.
+
+Trước mặt họ, phế thổ mở ra.
+
+Không sạch hơn.
+
+Không tốt hơn.
+
+Nhưng ít nhất, cửa ngoài đó không giả vờ là vì muốn bảo vệ họ.

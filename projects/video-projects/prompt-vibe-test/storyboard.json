@@ -1,0 +1,33 @@
+{
+  "title": "Prompt Vibe Test",
+  "language": "vi",
+  "format": "youtube",
+  "width": 1920,
+  "height": 1080,
+  "aspect_ratio": "16:9",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-001",
+      "duration": 12,
+      "image": "assets/scene-001.png",
+      "audio": "",
+      "narration": "Lâm Tịch nằm trong một đống rác dưới bầu trời đỏ. Ba con chó hai hàm đang xé một cái xác cạnh chiếc xe tải lật, còn nàng chỉ dám nín thở sau bức tường bê tông sập.",
+      "subtitle": "",
+      "text": "",
+      "image_prompt": "tense predator encounter, mutated two-jawed dogs tearing at a corpse beside an overturned truck, survivor hiding behind broken concrete, a fragile young female wasteland scavenger in a dirty torn coat, exhausted but alert, side or back view, premium cinematic post-apocalyptic webnovel keyframe, YouTube story visual, one clear main subject, readable danger, emotional survival drama, foreground debris framing, midground character action, background ruined world, toxic crimson red sky, ash wind, wet rusted metal, cracked concrete, torn plastic bags, dramatic rim light, shallow depth of field, 35mm cinema lens, subtle film grain, muted natural colors, high contrast but not oversaturated, no text, no watermark",
+      "negative_prompt": "low quality, blurry, jpeg artifacts, cartoon, anime, plastic skin, oversaturated, bad anatomy, deformed hands, distorted face, extra limbs, duplicate body, ugly face, text, watermark, logo, messy composition, flat lighting, bad perspective, AI artifacts, empty landscape, generic fantasy art, beauty portrait, clean clothes, modern city, white speckles, random colored dots, noisy artifacts, oversharpened, waxy skin",
+      "local_image": {
+        "provider": "comfy-local",
+        "mode": "sd15-low-vram",
+        "checkpoint": "dreamshaper_8.safetensors",
+        "vae": "",
+        "loras": [],
+        "seed": 23052026,
+        "size": "768x512",
+        "hires_scale": 1.5,
+        "upscale_model": ""
+      }
+    }
+  ]
+}

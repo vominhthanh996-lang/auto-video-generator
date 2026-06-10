@@ -1,0 +1,315 @@
+# Phần 12: Sáng Sau Giấy Chưa Khô
+
+## Chương 251: Bữa Sáng Của Bên Tranh Chấp
+
+Sáng hôm sau, Cổng Nước Xám ăn bữa sáng của bên tranh chấp.
+
+Cháo loãng, mặn hơn hôm qua một chút vì đã ghi nợ muối của Đàm Lão. Bột nướng cắt mỏng như vỏ cây. Nước chia theo lô, mỗi người nhận xong phải nhìn bảng ký hiệu: nước Cổng Xám, nước Thành Nam, nước đun lại, nước bệnh nhân.
+
+Không ai thấy mình thắng.
+
+Nhưng mọi người vẫn xếp hàng.
+
+Đó là dấu hiệu quan trọng hơn tiếng reo.
+
+La Tứ bế La Đậu ra nhận cháo. Đứa bé đã hạ sốt, mắt còn lờ đờ, nhưng biết ôm bát bằng hai tay. La Tứ đặt tấm thẻ lao động tạm trú lên bàn đăng ký.
+
+Lâm Tịch nhìn hắn.
+
+"Trả?"
+
+"Không." Hắn nói. "Gửi."
+
+"Gửi?"
+
+"Ta sợ mình giữ thì lúc nó sốt lại cầm chạy. Gửi ở bảng. Khi nào ta muốn ký, ta tới lấy. Lúc đó các ngươi đọc lại điều kiện cho ta nghe."
+
+A Thất ghi:
+
+`La Tứ gửi thẻ. Lý do: sợ lúc con sốt mình quên chữ.`
+
+La Tứ xấu hổ quay mặt.
+
+Nhưng không bắt xóa.
+
+Ngay sau hắn, thêm ba người đem thẻ tới gửi. Không phải trả, không phải xé. Gửi.
+
+Bà Hôi nhìn đống thẻ, nói:
+
+"Cổng này sắp mở cả kho giữ hộ đồ ngu."
+
+Di Mạn đáp:
+
+"Có chỗ gửi đồ ngu còn hơn để người ta ôm đồ ngu chạy mất."
+
+Bà Hôi nghĩ một lát.
+
+"Cũng đúng."
+
+Thế là trên bảng có thêm mục:
+
+`Kho giữ hộ lựa chọn nguy hiểm.`
+
+Tên nghe rất kỳ.
+
+Nhưng dùng được.
+
+Ở một góc khác, Hàn Cổ, người đã uống nước Thành Nam, tới báo bụng không đau. Mộc Sanh ghi vào bảng theo dõi. Hắn đứng đó một lúc, ngập ngừng:
+
+"Nước đó thật sự sạch."
+
+Di Mạn nhìn hắn.
+
+"Rồi?"
+
+"Ta chỉ nói vậy."
+
+"Sợ chúng ta ghét?"
+
+Hắn im.
+
+Di Mạn múc cho hắn nửa bát cháo.
+
+"Nước sạch không có tội. Người dùng nước sạch làm dây xích mới có tội. Ăn đi."
+
+Hàn Cổ nhận bát, mắt đỏ.
+
+Lâm Tịch nhìn cảnh đó, trong lòng nhẹ đi một chút.
+
+Đây là việc khó nhất sau một đêm bị chia rẽ: không để người từng dao động biến thành kẻ thù cho dễ xử.
+
+Kẻ thù thật đang ở ngoài kia.
+
+Nó có giấy sạch, nước trong, thuốc thật, thẻ gỗ, giọng radio, xe áo xám và những cái tên chết chưa chịu nằm yên.
+
+Người trong cổng chỉ có bụng đói, tay run, lựa chọn sai một nửa, và một cái bảng càng ngày càng chật.
+
+Tần Dã không ra ăn sáng ngay.
+
+Lâm Tịch đem phần của hắn tới cạnh radio. Hắn đang chép lại đoạn âm thanh bằng chữ. Chữ của hắn đẹp, nhưng có chỗ mực đậm hơn vì đầu bút dừng quá lâu.
+
+`Đừng tin bản ghi đầu tiên.`
+
+`Người ký là người bị giữ tay.`
+
+`Đừng đọc tên ta quá to.`
+
+Lâm Tịch đặt bát xuống.
+
+"Ăn."
+
+"Lát."
+
+"Không có lát. Bên tranh chấp cũng phải ăn."
+
+Hắn ngẩng lên, nhìn nàng.
+
+"Bên tranh chấp?"
+
+"Ừ. Thân phận mới. Nghe oai hơn ổ dịch."
+
+Tần Dã khẽ cười.
+
+Nụ cười rất ngắn, nhưng đủ làm A Thất ở bàn bên cạnh lén nhìn rồi cúi đầu giả vờ sửa dây.
+
+Tần Dã cầm bát cháo.
+
+"Ta muốn gửi một thứ vào kho giữ hộ."
+
+Lâm Tịch hỏi:
+
+"Thẻ?"
+
+Hắn lấy mảnh thẻ TS-01 từ cổ áo ra.
+
+Mảnh thẻ cũ, mép cháy, chữ gần mòn. Nó từng là bằng chứng Tần Sách chết. Bây giờ nó không còn chắc là gì nữa.
+
+"Gửi cái này." Hắn nói. "Ta giữ lâu quá, dễ tin sai."
+
+Lâm Tịch không nhận ngay.
+
+"Anh chắc?"
+
+"Không."
+
+"Vậy sao gửi?"
+
+"Vì không chắc nên gửi."
+
+Nàng hiểu.
+
+Có những thứ giữ trên người quá lâu sẽ mọc rễ vào thịt. Khi sự thật đổi hướng, người ta vẫn theo trọng lượng cũ mà đi. Tần Dã không vứt thẻ. Hắn chỉ đặt nó vào nơi có người khác cùng nhìn.
+
+Lâm Tịch nhận thẻ bằng hai tay.
+
+"Ghi thế nào?"
+
+Tần Dã nhìn mảnh thẻ.
+
+"TS-01. Từng là giấy chết. Hiện là vật chứng chưa kết luận."
+
+A Thất viết dòng đó rất chậm.
+
+Viết xong, nó hỏi:
+
+"Người giữ hộ?"
+
+Tần Dã nói:
+
+"Cổng."
+
+A Thất ghi:
+
+`Người giữ hộ: Cổng Nước Xám.`
+
+Tần Dã nhìn dòng chữ ấy, bát cháo trong tay bốc hơi rất mỏng.
+
+Lần đầu tiên sau nhiều năm, cái chết của Tần Sách không chỉ nằm trên cổ hắn.
+
+## Chương 252: Cái Giá Của Nói Nhỏ
+
+Đến giữa trưa, tin Tần Sách truyền ra chợ.
+
+Không phải toàn bộ.
+
+Chỉ những mảnh méo mó: người chết nói qua radio, HN-07 là lính Hắc Nha, Thành Nam dùng giấy giả, Ngân Thụ đuổi theo bản ghi, Cổng Xám giấu người chết trong máy.
+
+Tin thật bị xé nhỏ còn nguy hiểm hơn tin giả, vì mỗi mảnh đều có một chút máu đúng.
+
+Thằng bé bán tin đội mũ len treo bảng mới:
+
+`Tin Tần Sách: thật một nửa, bịa một nửa, giá tùy nửa.`
+
+Di Mạn nhìn thấy, suýt cầm gáo đập nó.
+
+Lâm Tịch ngăn lại.
+
+"Để nó bán."
+
+"Ngươi điên?"
+
+"Nhưng bắt nó ghi nguồn."
+
+Thằng bé lập tức ôm bảng.
+
+"Ta nghe từ ba người!"
+
+"Ghi ba người hay ghi nghe chợ?"
+
+"Nghe chợ."
+
+"Vậy treo chữ nghe chợ."
+
+Nó bĩu môi, nhưng viết:
+
+`Nguồn: nghe chợ. Chưa kiểm.`
+
+Bà Hôi đứng cạnh cười:
+
+"Tin nghe chợ mà cũng bán?"
+
+Thằng bé đáp:
+
+"Bà từng bán thuốc giả."
+
+Bà Hôi nghẹn.
+
+Di Mạn bật cười.
+
+Tiếng cười làm căng thẳng vơi đi một chút, nhưng không xóa được ánh mắt người ta nhìn Tần Dã khi hắn đi ngang. Có người tránh mắt. Có người nhìn lâu hơn. Có người tò mò, có người sợ, có người thương hại.
+
+Tần Dã ghét nhất ánh mắt thương hại.
+
+Lâm Tịch biết.
+
+Nàng cũng biết mình không thể ra lệnh cho cả chợ không nhìn.
+
+Vậy nên nàng làm một việc khác.
+
+Nàng đặt một cái bàn nhỏ dưới bảng luật, treo dòng:
+
+`Ai có câu hỏi về Hắc Nha, Tần Sách, HN-07, ghi ra. Không hỏi bằng cách nhìn chằm chằm.`
+
+A Thất đọc xong, ho sặc.
+
+"Tỷ, cái này cũng thành luật?"
+
+"Ừ."
+
+Tạ Khuông đứng gần đó, gật đầu.
+
+"Nên có. Nhìn chằm chằm dễ ăn đấm."
+
+Tần Dã đi tới, thấy dòng chữ, dừng lại.
+
+Lâm Tịch hơi căng.
+
+"Nếu anh không thích, ta gỡ."
+
+Hắn nhìn nàng.
+
+"Ai trả lời?"
+
+"Câu nào liên quan cổng, ta trả lời. Câu nào liên quan Hắc Nha chung, Lương Tiêu trả lời nếu muốn ở lại. Câu nào liên quan anh, anh có quyền không trả lời."
+
+"Nếu họ nói ta trốn?"
+
+"Ghi: người bị hỏi có quyền trốn câu hỏi làm mình chảy máu vô ích."
+
+Tần Dã nhìn dòng giấy trống trên bàn.
+
+Rất lâu sau, hắn nói:
+
+"Thêm một câu."
+
+"Câu gì?"
+
+"Không dùng câu hỏi để bán tin."
+
+Lâm Tịch gật.
+
+A Thất viết thêm.
+
+Đến chiều, trên bàn có bảy câu hỏi.
+
+`Hắc Nha có từng cắt nước khu bãi nam không?`
+
+`HN-07 có giết người không?`
+
+`Tần Sách còn sống thì có tới lấy cổng không?`
+
+`Nếu Tần Dã bị gọi đi, cổng có giao không?`
+
+`Người chết nói qua radio có bị nhiễm xạ không?`
+
+`Cổng Xám có nhận người Hắc Nha khác không?`
+
+`Nếu ta sợ Hắc Nha thì có bị trừ nước không?`
+
+Câu cuối cùng làm Lâm Tịch đứng rất lâu.
+
+Nàng viết câu trả lời trước:
+
+`Không. Sợ không bị trừ nước. Làm hại người khác vì sợ mới bị ghi.`
+
+Tần Dã đọc câu ấy.
+
+Không nói gì.
+
+Nhưng tối đó, khi Lâm Tịch đi ngang qua radio, nàng thấy bên cạnh bát cháo của mình có nửa miếng bột nướng.
+
+Không ai nhận đã đặt.
+
+Nàng nhìn Tần Dã.
+
+Hắn đang cúi đầu sửa bản đồ, như không liên quan.
+
+Lâm Tịch cầm nửa miếng bột, ăn chậm.
+
+Hơi cháy.
+
+Nhưng ấm.
+
+Nói nhỏ cũng có giá.
+
+Giá là phải tạo đủ chỗ cho những câu hỏi không thể hét lên.

@@ -1,0 +1,17 @@
+﻿{
+    "part":  "tap02_part1",
+    "pass_threshold_working":  46,
+    "pass_threshold_final":  46,
+    "locked_pass_assets_count":  46,
+    "active_fail_scene_numbers":  [
+
+                                  ],
+    "latest_round_fail_folder":  "E:\\ThanhMV\\auto-video-generator\\projects\\storyboards\\tap-02-storyboards\\phan-01-duong-ray-khong-dan-ve-nha\\review-fail-20260608-round14-pass46",
+    "notes":  [
+                  "Current working pass threshold is 46%.",
+                  "The previously active regenerated fail batch is now cleared: all scenes have either passed at threshold or been superseded by pass images in assets.",
+                  "Kept additional pass scenes from this run: 009, 013, 014, 022, 030, 034, 038, 039, 040, 045, 062, 065.",
+                  "Scene 003 comparison variant remains in scratch_compare only; live scene-003 was not overwritten.",
+                  "ComfyUI timed out once on scene-034 with hires enabled; queue was interrupted cleanly and subsequent runs used --hires-scale 1 to avoid standing."
+              ]
+}

@@ -1,0 +1,833 @@
+# Phần 4: Rời Thành Không Phải Trốn Chạy
+
+## Chương 175: Cổng Phụ Dưới Mưa Bụi
+
+Mưa bụi đỏ rơi lúc đội Chim Xám tới cổng phụ.
+
+Không phải mưa thật.
+
+Trong thành Nam, mưa thật phải qua lưới lọc, qua ống thu, qua bể kiểm xạ, rồi mới được gọi là nước. Thứ đang rơi xuống lúc này chỉ là bụi mịn trộn hơi ẩm, dính lên khẩu trang thành một lớp bùn mỏng màu máu loãng.
+
+Lâm Tịch kéo cao khăn che mặt.
+
+Xe gấp Hắc Nha đi rất êm. Đó là điểm đáng sợ của đồ quân dụng cũ: dù bị giấu ngoài ống rỉ nhiều năm, dù bánh xe đã mòn, nó vẫn lăn qua nền vỡ không phát ra tiếng thừa.
+
+Tần Dã nằm ở nửa trước của xe, lưng kê bằng túi vải. Hạ Tố nằm phía sau, Tiểu Mãn ngồi kẹp giữa hai người bệnh, hai tay ôm cái nồi méo và búp bê vải lọc. Ninh ngồi cạnh hộp Đèn Vàng, mắt không rời hai chiếc lá nhỏ.
+
+A Thất đẩy bên trái.
+
+Mộc Sanh đẩy bên phải.
+
+Lão Phùng đi cuối, trên vai vác cái bao nhẹ nhất mà Di Mạn có thể chịu bỏ lại sau ba lần chửi.
+
+Di Mạn đi giữa đội. Bà không cầm dao bếp nữa. Dao bếp nằm trong túi Lâm Tịch. Tay bà ôm cái nồi sắt đen, trong nồi nhét ba cái bát, một túi muối nhỏ, nửa gói bột vàng và cái thìa mẻ.
+
+Kỷ Nam đi trước dò đường.
+
+Hắn không nói mình quen cổng phụ tới mức nào.
+
+Nhưng mỗi lần có ánh đèn quét qua, hắn đều biết nên đứng vào bóng nào.
+
+Cổng phụ dưới tường Nam chỉ mở cho xe rác, đội sửa ống và người bị chuyển tiếp. Đêm nay, vì kho hồ sơ cháy, hai trạm kiểm chính bị kéo người đi. Chốt cổng chỉ còn bốn lính gác và một máy quét cũ.
+
+Không dễ.
+
+Nhưng dễ hơn sáng mai.
+
+A Thất nhìn máy quét từ xa, giọng thấp:
+
+"Nếu nó quét hộp Đèn Vàng thì sao?"
+
+Mộc Sanh đáp:
+
+"Thì ngươi ném radio làm nhiễu."
+
+"Radio là con ta."
+
+"Vậy ôm con ngươi ở lại."
+
+"Tỷ càng ngày càng ác."
+
+Di Mạn nói:
+
+"Hai đứa bớt nói. Nói nữa ta cho cả radio lẫn người vào nồi."
+
+Tiểu Mãn nghe vậy ôm nồi chặt hơn, mặt đầy hoảng sợ.
+
+Di Mạn nhìn thấy, giọng dịu xuống một chút.
+
+"Không phải nồi của con."
+
+Tiểu Mãn nhỏ giọng:
+
+"Nồi này của mẹ con."
+
+"Vậy giữ kỹ. Ra ngoài tường, cái nồi còn đáng tin hơn nhiều người."
+
+Cô bé gật đầu rất nghiêm túc.
+
+Lâm Tịch đi sát xe, một tay đặt gần dao bếp trong túi, một tay giữ mảnh thẻ chết. Nàng không định dùng nó. Nhưng có thứ cầm trong tay mới nhớ mình đang bị ai gọi là tài sản.
+
+Tới cách cổng phụ ba mươi bước, Kỷ Nam dừng lại.
+
+"Từ đây không tránh máy được."
+
+Lâm Tịch hỏi:
+
+"Thẻ nào qua được?"
+
+Kỷ Nam đưa ra một thẻ đen mờ, góc thẻ có dấu Hắc Nha bị cạo xước.
+
+"Xe sửa ống cũ. Qua được một xe, bốn người."
+
+A Thất nhìn cả đội.
+
+"Chúng ta nhiều hơn bốn người một chút."
+
+Lão Phùng nói:
+
+"Ngươi có thể tính mình là nửa người nếu sợ."
+
+"Ta nhỏ nhưng hữu dụng."
+
+"Vậy càng không được tính nửa."
+
+Không ai cười lớn.
+
+Nhưng căng thẳng dịu đi nửa nhịp.
+
+Lâm Tịch nhìn Kỷ Nam.
+
+"Cách còn lại?"
+
+"Có một lối xả bùn dưới cổng. Trẻ con chui được. Người lớn phải tháo lưới."
+
+Mộc Sanh lập tức hỏi:
+
+"Lưới gì?"
+
+"Thép chống thú cấp Gỉ. Cũ, nhưng còn điện."
+
+A Thất ôm radio.
+
+"Ta ghét câu 'còn điện'."
+
+Tần Dã bỗng mở mắt.
+
+"Không chia đội."
+
+Lâm Tịch cúi xuống.
+
+"Anh tỉnh?"
+
+"Đau quá nên tỉnh."
+
+Giọng hắn khàn, nhưng đầu óc rõ. Hắn nhìn cổng phụ, rồi nhìn vị trí đèn quét.
+
+"Đi bằng cổng. Đừng chui lối bùn."
+
+Kỷ Nam cau mày.
+
+"Thẻ chỉ qua bốn người."
+
+Tần Dã nói:
+
+"Không qua bằng thẻ. Qua bằng hỗn loạn."
+
+A Thất lập tức nhăn mặt.
+
+"Lại hỗn loạn. Hôm nay ta đã gây hỏng một máy nước, nghe hai chữ này tim ta mệt."
+
+Tần Dã nhìn nó.
+
+"Máy quét cổng phụ lấy nguồn từ hộp điện bên phải. Cắt nguồn, cổng chuyển sang mở tay trong mười hai giây để xe rác không kẹt."
+
+Mộc Sanh nhìn theo hướng hắn nói.
+
+"Hộp điện có khóa."
+
+"Khóa quân dụng cũ."
+
+Kỷ Nam nói:
+
+"Ta mở."
+
+Tần Dã lắc đầu.
+
+"Ngươi mở, lính nhận ra Hắc Nha. A Mục mở."
+
+A Mục đứng phía sau khựng lại.
+
+"Ta?"
+
+Tần Dã nhìn nó.
+
+"Ngươi mở như sợ bị đánh."
+
+A Mục nhìn Lâm Tịch.
+
+Lâm Tịch gật đầu.
+
+"Ta ở cạnh ngươi."
+
+"Nếu tay ta run?"
+
+"Run thì mở chậm. Không sao. Chỉ cần đừng bỏ chạy."
+
+A Mục nuốt nước bọt.
+
+Kế hoạch được chia bằng những câu rất ngắn.
+
+Kỷ Nam đi trước thu hút lính gác bằng thẻ xe sửa ống. Mộc Sanh và A Thất đẩy xe tới vạch chờ. Lâm Tịch và A Mục vòng sang hộp điện. Lão Phùng, Di Mạn giữ Tiểu Mãn và Hạ Tố. Ninh không được rời Đèn Vàng nửa bước.
+
+Không ai hỏi nếu thất bại thì sao.
+
+Vì thất bại rất rõ.
+
+Bị giữ.
+
+Bị phân loại.
+
+Bị biến thành hồ sơ sống.
+
+Kỷ Nam bước ra trước.
+
+"Xe sửa ống khu Nam, lệnh chuyển bùn thải."
+
+Lính gác cổng cầm đèn soi mặt hắn.
+
+"Đêm nay cấm ra."
+
+"Kho hồ sơ cháy. Tuyến bùn số ba nghẹt. Nếu sáng mai bùn tràn vào khu giữa, ngươi ký biên bản?"
+
+Lính gác do dự.
+
+Người trong thành có thể không sợ dân khu xám chết, nhưng rất sợ phải ký biên bản.
+
+Hắn quay sang hỏi người bên cạnh.
+
+Lâm Tịch nhân lúc đó kéo A Mục tới hộp điện.
+
+Hộp điện nằm dưới mái che rách, khóa phủ một lớp bụi dày. A Mục quỳ xuống, lấy dây thép ra. Tay nó run thật.
+
+Lâm Tịch đứng chắn phía ngoài.
+
+Đèn quét lướt qua lưng nàng.
+
+Rất chậm.
+
+Nàng nghe A Mục thở.
+
+Một nhịp.
+
+Hai nhịp.
+
+Ba nhịp.
+
+Bên kia, lính gác bắt đầu mất kiên nhẫn.
+
+"Mở thùng xe."
+
+A Thất lập tức nói:
+
+"Không nên. Bùn thải khu Nam hôm nay có phản ứng khí. Mở ở đây, nếu ai ngất thì ta không chịu trách nhiệm."
+
+Lính gác chửi:
+
+"Ngươi dọa ta?"
+
+"Không. Ta dọa mũi ngươi."
+
+Mộc Sanh đá vào chân A Thất.
+
+A Mục làm rơi dây thép.
+
+Âm thanh rất nhỏ, nhưng Lâm Tịch nghe như dao rơi.
+
+Nó nhìn nàng, mặt trắng.
+
+Lâm Tịch không cúi xuống nhặt thay.
+
+Nàng chỉ nói:
+
+"Nhặt lên."
+
+A Mục run giọng:
+
+"Ta làm không được."
+
+"Làm chậm cũng được."
+
+"Nếu hại mọi người..."
+
+"Không phải chỉ ngươi đang hại hay cứu. Cả đội đang ở đây."
+
+A Mục nhìn nàng.
+
+Lâm Tịch nói:
+
+"Ta không cần ngươi không sợ. Ta cần ngươi mở khóa trong lúc sợ."
+
+A Mục cúi đầu, nhặt dây thép lên.
+
+Lần này, tay nó vẫn run.
+
+Nhưng không rơi nữa.
+
+Ổ khóa bật.
+
+Mộc Sanh lập tức nghe tiếng nắp hộp điện mở. Nàng đẩy xe nhích lên nửa bước.
+
+Kỷ Nam nói to:
+
+"Nếu không mở cổng, ta quay về báo tắc tuyến. Tên ngươi là gì?"
+
+Lính gác càng khó chịu.
+
+Ngay lúc hắn cúi nhìn bảng tên trên áo mình, Lâm Tịch kéo cần ngắt.
+
+Đèn máy quét tắt phụt.
+
+Cổng phụ phát ra một tiếng rít dài.
+
+Mộc Sanh và A Thất đẩy xe lao qua.
+
+Lão Phùng kéo phía sau.
+
+Di Mạn ôm nồi chạy cạnh Tiểu Mãn.
+
+Ninh cúi sát hộp Đèn Vàng.
+
+Kỷ Nam đẩy lính gác sang một bên bằng vai, không rút súng.
+
+Lâm Tịch kéo A Mục chạy cuối.
+
+"Đứng lại!"
+
+Tiếng súng lên đạn vang sau lưng.
+
+Tần Dã trên xe bỗng chống tay ngồi dậy.
+
+Không ai kịp ngăn.
+
+Hắn nhấc khẩu súng ngắn Kỷ Nam giấu dưới đệm xe, bắn một phát vào đèn cảnh báo trên cổng.
+
+Đèn nổ tung.
+
+Bóng tối đổ xuống.
+
+Viên đạn không trúng người.
+
+Nhưng tiếng nổ đủ khiến lính gác cúi đầu.
+
+Xe gấp lao qua vạch cổng.
+
+Mười hai giây hết.
+
+Cổng phụ bắt đầu đóng.
+
+Lâm Tịch và A Mục còn cách ba bước.
+
+A Mục vấp.
+
+Lâm Tịch kéo nó.
+
+Cánh cổng thép hạ xuống sau lưng nàng, gió ép bụi đỏ phả vào gáy.
+
+Một bàn tay từ phía ngoài vươn tới.
+
+Tần Dã.
+
+Hắn nghiêng khỏi xe, mặt trắng như giấy, tay duỗi ra trong cơn đau.
+
+"Lâm Tịch."
+
+Nàng bắt lấy tay hắn.
+
+Không phải vì hắn kéo được nàng.
+
+Với tình trạng hiện tại, hắn không kéo nổi một người trưởng thành.
+
+Nhưng bàn tay ấy làm nàng biết mình không chạy một mình.
+
+Kỷ Nam nắm cổ áo nàng kéo mạnh.
+
+Lâm Tịch và A Mục lăn qua khe cổng trong giây cuối.
+
+Cổng thép sập xuống.
+
+Tiếng kim loại đập nền vang lên sau lưng họ.
+
+Thành Nam bị chặn lại ở phía trong.
+
+Phế thổ mở ra phía ngoài.
+
+Mưa bụi đỏ rơi dày hơn.
+
+A Thất nằm bò trên đất, ôm radio.
+
+"Ta còn sống không?"
+
+Mộc Sanh đáp:
+
+"Tạm thời."
+
+"Tạm thời nghe không yên tâm."
+
+"Phế thổ mà. Ngươi muốn bảo hành à?"
+
+Di Mạn kéo Tiểu Mãn đứng dậy, phủ khăn lên đầu cô bé.
+
+Lão Phùng kiểm xe.
+
+Ninh mở hộp nhìn Đèn Vàng.
+
+Tần Dã vừa buông tay Lâm Tịch đã ngã trở lại đệm, môi bật máu.
+
+Lâm Tịch lập tức bò dậy.
+
+"Tần Dã!"
+
+Hứa Linh không có ở đây. Họ đã không thể mang bà theo vì bà phải ở lại che dấu hướng rời đi và giữ A Hành. Điều đó bây giờ biến thành một khoảng trống đáng sợ.
+
+Di Mạn vội mở túi thuốc.
+
+Tần Dã nhắm mắt, giọng rất thấp:
+
+"Không chết."
+
+Lâm Tịch đè vải lên môi hắn.
+
+"Anh vừa mới nói không dùng thân thể cũ để che cho ta nữa."
+
+"Ta bắn đèn."
+
+"Anh ngồi dậy."
+
+"Đèn cao."
+
+Nếu không phải đang sợ, Lâm Tịch đã muốn mắng hắn.
+
+Nàng chỉ siết miếng vải.
+
+Máu đỏ thấm ra.
+
+Rất ít.
+
+Nhưng trong mưa bụi đỏ, chút máu ấy sáng đến nhức mắt.
+
+Kỷ Nam đứng bên cạnh, nhìn Tần Dã, sắc mặt khó tả.
+
+"Ngươi vẫn thích làm chuyện thừa."
+
+Tần Dã không mở mắt.
+
+"Quen rồi."
+
+Kỷ Nam im.
+
+Một lúc sau, hắn quay đi.
+
+"Đi. Còi trong thành sẽ gọi đội truy ra cổng khác. Chúng ta có nửa giờ."
+
+Lâm Tịch đứng dậy.
+
+Sau lưng, cổng phụ đóng kín. Bên kia là kho Đèn Vàng, Hứa Linh, A Hành, Quan Dực có thể đang kéo thời gian, những người khu xám có thể bị khóa nước vì nàng.
+
+Trước mặt là đầm chết, quạ mù, trạm lọc cũ và con thú dưới cống.
+
+Nàng từng dùng hết sức để vào thành.
+
+Bây giờ nàng dùng hết sức để rời đi.
+
+Không phải vì ngoài kia tốt hơn.
+
+Mà vì ít nhất ngoài kia, nếu có một cái cổng mới, nàng muốn nó mở từ bên trong.
+
+## Chương 176: Người Không Muốn Đi
+
+Họ không đi thẳng tới Trạm Lọc số Chín.
+
+Tần Dã nói không được.
+
+Kỷ Nam cũng nói không được.
+
+Khi hai người từng thuộc Hắc Nha cùng nói một hướng là chết, ngay cả A Thất cũng không đủ gan tranh luận.
+
+Đội rẽ vào tuyến mương khô phía Tây, men theo bức tường thành thêm hai cây số để tránh đèn truy quét đầu tiên. Mương khô sâu hơn đầu người, đáy phủ rác nhựa và xương thú nhỏ. Mỗi bước đi đều có tiếng lạo xạo rất khẽ.
+
+Mưa bụi đỏ không rơi xuống được nhiều trong mương.
+
+Nhưng mùi ẩm mốc thì nặng hơn.
+
+Hạ Tố tỉnh lại giữa đường.
+
+Bà ho hai tiếng, rồi lập tức đưa tay tìm con.
+
+Tiểu Mãn nắm tay bà.
+
+"Con đây."
+
+Hạ Tố quay đầu nhìn xe, nhìn những khuôn mặt lạ, nhìn bức tường thành đang xa dần.
+
+Ánh mắt bà hoảng lên.
+
+"Không. Không được."
+
+Di Mạn đang kiểm túi nước, ngẩng đầu.
+
+"Gì?"
+
+Hạ Tố cố ngồi dậy.
+
+"Ta phải về."
+
+Tiểu Mãn sợ hãi:
+
+"Mẹ?"
+
+Hạ Tố ôm con vào lòng, thở gấp.
+
+"Ta phải về cổng Nam. Chồng ta ở ngoài đó. Hắn hẹn nếu ta bị thải ra, sẽ chờ ở bãi biển số ba."
+
+Lâm Tịch đi bên cạnh xe, dừng bước.
+
+"Bãi biển số ba cách đây bao xa?"
+
+Kỷ Nam đáp:
+
+"Ngược hướng. Năm cây số. Gần vùng cát nhiễm."
+
+Hạ Tố nhìn Lâm Tịch.
+
+"Ta biết cô cứu mẹ con ta. Ta cảm ơn. Nhưng ta không thể đi với các ngươi."
+
+Tiểu Mãn ôm chặt cái nồi.
+
+"Cha đang chờ?"
+
+Hạ Tố vuốt tóc con.
+
+"Ừ."
+
+A Thất nhìn Kỷ Nam.
+
+"Bãi biển số ba có sống được không?"
+
+Kỷ Nam nói thẳng:
+
+"Nếu không có đồ chống xạ, qua đêm khó."
+
+Hạ Tố cắn răng.
+
+"Hắn có áo chì."
+
+Kỷ Nam nhìn bà.
+
+"Áo chì cũ ở bãi biển số ba thường bị cắt ruột bán rồi."
+
+Hạ Tố không đáp.
+
+Vì bà biết.
+
+Nhưng có những hy vọng người ta biết là giả vẫn không dám buông.
+
+Tiểu Mãn nhìn mẹ, rồi nhìn Lâm Tịch.
+
+Nó không nói muốn đi đâu.
+
+Trẻ con nghèo học được một việc rất sớm: mong muốn của mình thường làm người lớn khó xử.
+
+Di Mạn đặt túi nước xuống.
+
+"Ngươi bệnh thế này, quay lại là chết."
+
+Hạ Tố cười khẽ, môi nứt.
+
+"Đi với các ngươi chắc sống?"
+
+Không ai trả lời được.
+
+Lão Phùng thở dài.
+
+"Ít nhất có nước."
+
+"Nước của các ngươi." Hạ Tố nói. "Không phải của ta."
+
+Di Mạn cau mày.
+
+"Vừa rồi đã uống rồi thì còn phân cái gì?"
+
+"Uống một ngụm và đem con đi theo cả đời không giống nhau."
+
+Câu đó làm Di Mạn im.
+
+Lâm Tịch nhìn Hạ Tố.
+
+Đây không phải phản bội.
+
+Đây là người ta còn một người để tìm.
+
+Nàng không thể dùng câu "ta cứu ngươi" để biến người khác thành người của mình. Nếu làm vậy, nàng khác gì thành Nam dùng nước để buộc cổ?
+
+Tần Dã mở mắt.
+
+"Không quay cả đội."
+
+Hạ Tố nhìn hắn.
+
+"Ta không cần các ngươi đưa."
+
+Tiểu Mãn hoảng:
+
+"Mẹ!"
+
+Hạ Tố ôm con.
+
+"Con đi với mẹ."
+
+A Mục bỗng nói:
+
+"Bà đi thì con bé chết."
+
+Hạ Tố nhìn nó, mắt đỏ lên.
+
+"Ngươi nghĩ ta không biết?"
+
+A Mục bị câu đó làm nghẹn.
+
+Hạ Tố cúi đầu, hôn lên tóc Tiểu Mãn.
+
+"Nhưng nếu cha nó thật sự đang chờ, ta bỏ hắn lại, sau này nó sẽ hỏi ta mỗi đêm."
+
+Tiểu Mãn khóc.
+
+"Con không hỏi."
+
+Hạ Tố cũng khóc.
+
+"Bây giờ con không hỏi. Lớn lên sẽ hỏi."
+
+Trong mương khô, mọi âm thanh đều bị tường đất giữ lại. Tiếng khóc nhỏ của hai mẹ con vì vậy nghe rất gần, như nằm trong ngực từng người.
+
+Lâm Tịch nhớ tới nguyên chủ.
+
+Cô gái cùng tên chết một mình trong đống rác. Không biết trước khi chết có từng mong ai tới tìm không. Không biết có ai từng hẹn nàng ở một bãi biển số ba nào đó không.
+
+Nếu có, người đó đã không tới.
+
+Hoặc tới muộn.
+
+Hoặc cũng chết trên đường.
+
+Lâm Tịch nói:
+
+"Chúng ta không quay cả đội."
+
+Hạ Tố ngẩng lên.
+
+Lâm Tịch nhìn Kỷ Nam.
+
+"Có đường nào vòng qua bãi biển số ba mà không chậm quá lâu?"
+
+Kỷ Nam cau mày.
+
+"Có. Nhưng không đi xe được. Hai người tối đa."
+
+"Bao lâu?"
+
+"Một giờ rưỡi đi về nếu không gặp gì."
+
+A Thất ôm đầu.
+
+"Cái câu 'nếu không gặp gì' của ngươi ở ngoài phế thổ nghe như lời nguyền."
+
+Lâm Tịch nói:
+
+"Ta đi."
+
+Tần Dã lập tức:
+
+"Không."
+
+"Ta chưa nói hết."
+
+"Nói hết vẫn không."
+
+Lâm Tịch nhìn hắn.
+
+"Ta không thể để cả đội quay lại. Nhưng cũng không thể kéo Hạ Tố đi trong khi bà ấy còn người hẹn ngoài đó."
+
+Tần Dã chống tay muốn ngồi dậy, nhưng đau đến mức hơi thở đứt đoạn. Di Mạn đè vai hắn xuống.
+
+"Nằm yên. Ngươi cãi bằng mắt được rồi."
+
+Tần Dã nhìn Lâm Tịch.
+
+"Ngươi bị định vị."
+
+"Vậy càng không nên để cả đội theo."
+
+"Ngươi là mục tiêu."
+
+"Ta cũng là đội trưởng."
+
+Hai người nhìn nhau.
+
+Không ai chịu lùi trước.
+
+Kỷ Nam bỗng nói:
+
+"Ta đi với nàng."
+
+Tần Dã nhìn hắn.
+
+Kỷ Nam cười nhạt.
+
+"Đừng nhìn như muốn giết ta. Hiện tại ngươi không đứng nổi."
+
+Tần Dã đáp:
+
+"Ta có thể bắn."
+
+"Vậy giữ đạn cho người đuổi tới."
+
+Không khí căng đến mức A Thất vô thức ôm radio sát hơn.
+
+Di Mạn nhìn Lâm Tịch.
+
+"Đi rồi về. Không cứu thêm một đoàn người."
+
+Lâm Tịch không hứa ngay.
+
+Di Mạn lập tức nói:
+
+"Đừng im. Ta biết cái im đó."
+
+Lâm Tịch thở ra.
+
+"Ta sẽ cố không kéo cả bãi biển về."
+
+"Câu đó chẳng yên tâm chút nào."
+
+"Nhưng thật."
+
+Di Mạn chửi nhỏ một câu, rồi nhét vào tay nàng một túi nước nhỏ và hai miếng bánh khô.
+
+"Một cho cháu, một cho người cần bịt miệng."
+
+Kỷ Nam kiểm súng.
+
+A Mục bước tới.
+
+"Ta đi."
+
+Lâm Tịch lắc đầu.
+
+"Ngươi ở lại."
+
+"Ta mở khóa được."
+
+"Ở đây cũng cần."
+
+"Ta không muốn lại đứng nhìn."
+
+Lâm Tịch đặt tay lên vai nó.
+
+"Ở lại với Tiểu Mãn. Nếu mẹ nó không quay lại, ngươi là người biết cảm giác vừa làm sai vừa phải sống tiếp."
+
+A Mục cứng người.
+
+Câu đó rất nặng.
+
+Nhưng nó hiểu.
+
+Tiểu Mãn ôm Hạ Tố, khóc đến không ra tiếng.
+
+Lâm Tịch ngồi xuống trước mặt cô bé.
+
+"Ta đi nhìn một lần."
+
+Tiểu Mãn hỏi:
+
+"Nếu cha con không ở đó?"
+
+Lâm Tịch nhìn nó.
+
+Nàng rất muốn nói một câu dễ nghe.
+
+Nhưng trẻ con phế thổ không cần lời nói dối mềm. Chúng đã bị lời nói dối của người lớn làm đau quá nhiều.
+
+"Vậy ta sẽ về nói thật."
+
+Tiểu Mãn khóc lớn hơn.
+
+Hạ Tố nắm tay Lâm Tịch.
+
+Tay bà nóng vì sốt.
+
+"Nếu hắn ở đó..."
+
+"Ta sẽ đưa hắn tới đây nếu còn sống."
+
+"Nếu không còn?"
+
+Lâm Tịch im một nhịp.
+
+"Ta sẽ mang thứ chứng minh hắn từng chờ."
+
+Hạ Tố buông tay.
+
+"Cảm ơn."
+
+Tần Dã gọi:
+
+"Lâm Tịch."
+
+Nàng đứng lên, đi tới cạnh xe.
+
+Hắn đưa cho nàng con dao gãy.
+
+Nàng nói:
+
+"Ta có rồi."
+
+"Mang thêm."
+
+"Anh còn gì?"
+
+"Kỷ Nam."
+
+Kỷ Nam ở bên cạnh lạnh mặt:
+
+"Ta không phải dao dự phòng của ngươi."
+
+Tần Dã nhìn hắn.
+
+"Tạm dùng."
+
+Kỷ Nam cười tức.
+
+"Ngươi bị liệt mà miệng vẫn đáng ghét."
+
+"Đỡ hơn ngươi nguyên vẹn mà não ít."
+
+A Thất suýt bật cười, bị Mộc Sanh bịt miệng.
+
+Lâm Tịch nhận dao.
+
+Hai con dao gãy.
+
+Một cái để cắt dây.
+
+Một cái để nhắc nàng có người đang nằm trên xe, không cho phép nàng chết vì mềm lòng quá mức.
+
+Nàng và Kỷ Nam rời mương khô, vòng về hướng bãi biển số ba.
+
+Sau lưng, Tiểu Mãn không khóc thành tiếng nữa.
+
+Càng như vậy, Lâm Tịch càng đi nhanh.
+
+Trên phế thổ, người không muốn đi đôi khi không phải vì ngu.
+
+Mà vì họ còn một câu hẹn chưa được nghe trả lời.
