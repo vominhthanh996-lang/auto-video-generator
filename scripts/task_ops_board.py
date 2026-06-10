@@ -490,7 +490,34 @@ def append_unique_note(scene: dict, key: str, note: str) -> None:
         values = []
     if note not in values:
         values.append(note)
-    scene[key] = values
+    scene[key] = values[-10:]
+
+
+def fail_detail_map(request: dict) -> dict[int, dict]:
+    details: dict[int, dict] = {}
+    for item in request.get("fail_details") or []:
+        try:
+            scene_no = int(item.get("scene") or item.get("scene_number") or item.get("index") or 0)
+        except Exception:
+            scene_no = 0
+        if scene_no:
+            details[scene_no] = item
+    return details
+
+
+def classify_fail_reason(reason: str, fix_hint: str) -> str:
+    text = f"{reason} {fix_hint}".lower()
+    if any(token in text for token in ["pose", "standing", "portrait", "glamour", "bikini", "crop"]):
+        return "pose_drift"
+    if any(token in text for token in ["missing prop", "object", "radio", "board", "water", "medicine", "trade", "door", "gate"]):
+        return "missing_story_object"
+    if any(token in text for token in ["male", "man", "belly", "feminine", "masculine"]):
+        return "male_identity_clothing"
+    if any(token in text for token in ["child", "age", "old", "elder", "young"]):
+        return "age_identity"
+    if any(token in text for token in ["setting", "wasteland", "location", "background", "environment"]):
+        return "location_mismatch"
+    return "story_beat_mismatch"
 
 
 def regen_failed_qa(task_name: str) -> dict:
@@ -512,6 +539,7 @@ def regen_failed_qa(task_name: str) -> dict:
     failed = [index for index in failed if 1 <= index <= len(scenes)]
     if not failed:
         return {"task": task_name, "started": False, "errors": ["QA failed but no fail scenes were listed."]}
+    details_by_scene = fail_detail_map(request)
 
     now = dt.datetime.now()
     reject_dir = project_root / "reject" / f"qa-{now.strftime('%Y%m%d-%H%M%S')}"
@@ -531,9 +559,25 @@ def regen_failed_qa(task_name: str) -> dict:
             missing.append(index)
         scene.pop("image", None)
         scene.pop("local_image", None)
-        append_unique_note(scene, "local_prompt_frontload", "QA rescue: draw the exact narrated action first; no generic standing pose, no glamour pose, no bikini-like framing.")
-        append_unique_note(scene, "local_rescue_notes", "QA rescue: make required props, location, and character action readable in this frame.")
-        append_unique_note(scene, "local_rescue_notes", "QA rescue: male characters must wear masculine layered wasteland clothing with covered waist; female styling must stay story-first and practical.")
+        detail = details_by_scene.get(index) or {}
+        reason = str(detail.get("reason") or detail.get("fail_reason") or "")
+        fix_hint = str(detail.get("fix_hint") or detail.get("hint") or "")
+        scene["qa_rescue_mode"] = True
+        scene["qa_retry_limit"] = 5
+        scene["qa_failure_type"] = classify_fail_reason(reason, fix_hint)
+        scene["qa_last_fail_score"] = detail.get("approximate_score_percent") or detail.get("score_percent") or detail.get("score")
+        if reason:
+            scene["qa_last_fail_reason"] = reason[:500]
+        if fix_hint:
+            scene["qa_local_fix_hint"] = fix_hint[:500]
+        append_unique_note(scene, "local_prompt_frontload", "QA rescue: story beat is the source of truth; draw the exact narrated action, object, place, danger, exchange, injury, creature, or reaction first.")
+        append_unique_note(scene, "local_prompt_frontload", "QA rescue: characters are supporting the beat unless the narration itself is a character-focused beat; no default standing pose or glamour portrait.")
+        append_unique_note(scene, "local_rescue_notes", "QA rescue: required props, location, body action, creature/threat, and story pressure must be readable in one frame.")
+        append_unique_note(scene, "local_rescue_notes", "QA rescue: male characters use masculine layered wasteland clothing with covered waist; female styling stays feminine, sexy only when the beat calls for it, and never bikini-bottom/two-piece.")
+        if reason:
+            append_unique_note(scene, "local_rescue_notes", f"Previous Codex QA fail reason: {reason[:260]}")
+        if fix_hint:
+            append_unique_note(scene, "local_rescue_notes", f"Previous Codex QA fix hint: {fix_hint[:260]}")
 
     storyboard["scenes"] = scenes
     storyboard_path.write_text(json.dumps(storyboard, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -546,6 +590,8 @@ def regen_failed_qa(task_name: str) -> dict:
         "scenes": failed,
         "moved": moved,
         "missing_existing_images": missing,
+        "per_scene_retry_limit": 5,
+        "check_engine": "python-lightweight-beat-integrity-v1",
     }
     request["summary"] = f"Moved {len(moved)} failed image(s) to reject and queued {len(failed)} scene(s) for regeneration."
     write_json(request_path, request)

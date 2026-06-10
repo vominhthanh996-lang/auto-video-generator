@@ -85,6 +85,13 @@ WASTELAND_ACTION_STYLE_RULE = (
     "Even when a character is attractive, the frame must stay wasteland first and must not look like a clean studio, beachwear shoot, gym fashion shoot, cosplay portrait, or modern city fashion image."
 )
 
+BEAT_FIRST_VISUAL_RULE = (
+    "Beat-first visual priority: choose the image center from the current story beat before choosing a character pose. "
+    "Priority order is story beat, then main character only if they drive this beat, then location and objects, then supporting characters, then creatures or threats. "
+    "If the beat is about a message, object, doorway, trade, medicine, water source, wound, animal, monster, tool, vehicle, weather, or crowd reaction, that event or object must be the foreground visual center even when Lam Tich or Tan Da is present. "
+    "Do not force Lam Tich, Tan Da, or any main character into the center when the narration is actually about another person, object, creature, place, or survival event."
+)
+
 FEMALE_FACE_RULE = (
     "Female face rule: adult women must have unmistakably feminine faces with soft female facial structure, delicate jawline, balanced feminine eyes nose and mouth, "
     "no square male jaw, no heavy masculine brow, no male facial structure, while still carrying dirt, ash, fatigue, and wasteland realism."
@@ -176,9 +183,123 @@ def size_for_ratio(ratio: str) -> tuple[int, int]:
     return RATIO_TO_SIZE.get(ratio, RATIO_TO_SIZE["9:16"])
 
 
+def scene_text_blob(scene: dict[str, Any]) -> str:
+    values: list[str] = []
+    for key in [
+        "narration",
+        "beat_subject",
+        "scene_role",
+        "scene_center_kind",
+        "scene_center_subject",
+        "scene_center_object",
+        "scene_center_action",
+        "scene_center_location",
+        "visual_shot_type",
+        "image_prompt",
+        "comfy_prompt",
+        "stability_prompt",
+        "visual",
+        "text",
+    ]:
+        value = scene.get(key)
+        if isinstance(value, str):
+            values.append(value)
+    for key in ["visual_must_show", "visual_action", "visual_actions", "visual_setting", "visual_props", "local_prompt_frontload", "local_rescue_notes"]:
+        value = scene.get(key)
+        if isinstance(value, list):
+            values.extend(str(item) for item in value if str(item).strip())
+    return " ".join(values).lower()
+
+
+def classify_story_beat(scene: dict[str, Any]) -> str:
+    text = scene_text_blob(scene)
+    center_kind = str(scene.get("scene_center_kind") or "").lower()
+    shot_type = str(scene.get("visual_shot_type") or "").lower()
+    if any(token in text for token in ["radio", "broadcast", "message", "transmission", "signal", "speaker", "loa", "tin nhan"]):
+        return "message_signal"
+    if any(token in text for token in ["water", "well", "rain barrel", "medicine", "bandage", "antidote", "ration", "food", "drink", "nuoc", "gieng", "thuoc"]):
+        return "resource_survival"
+    if any(token in text for token in ["trade", "bargain", "seller", "buyer", "market", "price", "crystal", "mutant teeth", "table", "stall", "doi hang", "mua ban"]):
+        return "trade_object"
+    if any(token in text for token in ["door", "gate", "threshold", "checkpoint", "entry", "guard", "lock", "wall", "cong", "cua"]):
+        return "threshold_entry"
+    if any(token in text for token in ["wound", "injured", "bleeding", "bandaged", "stretcher", "wheelchair", "carry", "drag", "keo", "bi thuong"]):
+        return "injury_transport"
+    if any(token in text for token in ["mutant", "beast", "monster", "dog", "hound", "claw", "fang", "attack", "threat", "hung thu", "quai"]):
+        return "creature_threat"
+    if any(token in text for token in ["child", "children", "ninh", "tieu mai", "tieu bao", "writing board", "small board", "dua tre", "tre con"]):
+        return "child_exchange"
+    if any(token in text for token in ["old man", "elder", "old woman", "grandmother", "tool", "repair", "lao", "nguoi gia"]):
+        return "elder_tool"
+    if center_kind in {"object-center", "evidence-center"} or any(token in shot_type for token in ["detail", "insert"]):
+        return "object_evidence"
+    if any(token in text for token in ["walk", "journey", "road", "rail", "train", "truck", "ruins", "rain", "ash", "dust storm", "travel", "di duong"]):
+        return "location_transition"
+    if any(token in text for token in ["reaction", "hesitates", "realizes", "stares", "listens", "fear", "anger", "shock", "phan ung"]):
+        return "moral_reaction"
+    if any(token in text for token in ["lam tich", "tan da", "main character", "hero", "she ", "he "]):
+        return "character_action"
+    return "story_event"
+
+
+def beat_prompt_pack(scene: dict[str, Any]) -> dict[str, str]:
+    beat = classify_story_beat(scene)
+    object_text = str(scene.get("scene_center_object") or "").strip()
+    action_text = str(scene.get("scene_center_action") or "").strip()
+    subject_text = str(scene.get("scene_center_subject") or scene.get("beat_subject") or "").strip()
+    location_text = str(scene.get("scene_center_location") or "").strip()
+    required = {
+        "message_signal": "radio, speaker, written message, signal device, or listening posture must be readable as the story trigger",
+        "resource_survival": "water, medicine, ration, wound-care item, food, or survival resource must be foreground and readable",
+        "trade_object": "trade goods, price object, seller-buyer exchange, table, stall, or payment must be foreground and readable",
+        "threshold_entry": "door, gate, checkpoint, guard line, lock, entry terms, or blocked passage must be readable",
+        "injury_transport": "injured body, wound, bandage, stretcher, wheelchair, carrying, dragging, or treatment action must be readable",
+        "creature_threat": "creature, monster, animal threat, claws, fangs, attack direction, or hiding geometry must be readable",
+        "child_exchange": "child scale, child faces, writing board, handed object, or child-to-child/adult exchange must be readable",
+        "elder_tool": "elderly body language plus the relevant tool, repair, warning, or hand action must be readable",
+        "object_evidence": "the specific evidence object, wound, small prop, hand action, or close detail must dominate the frame",
+        "location_transition": "travel path, rail line, vehicle, weather, ruins, safe-zone wall, or environmental obstacle must be readable",
+        "moral_reaction": "the emotional reaction must point toward the exact object, person, threat, or decision causing it",
+        "character_action": "the named character's current action must be readable, not just their appearance",
+        "story_event": "the exact narrated event must be readable through action, object, setting, and story pressure",
+    }.get(beat, "the exact narrated event must be readable through action, object, setting, and story pressure")
+    anchors = [item for item in [action_text, object_text, location_text, subject_text] if item]
+    anchor_text = "; ".join(anchors[:4]) if anchors else required
+    return {
+        "beat": beat,
+        "required_center": required,
+        "anchor_text": anchor_text,
+        "prompt": (
+            f"beat type: {beat}; story beat source of truth: {anchor_text}; "
+            f"foreground visual center must show: {required}; "
+            "midground shows only the characters needed to perform or react to that beat; "
+            "background shows the exact wasteland location and pressure."
+        ),
+    }
+
+
+def append_scene_note(scene: dict[str, Any], key: str, note: str, limit: int = 8) -> None:
+    values = scene.get(key)
+    if not isinstance(values, list):
+        values = []
+    if note not in values:
+        values.append(note)
+    scene[key] = values[-limit:]
+
+
 def scene_prompt(scene: dict[str, Any]) -> str:
     shot_type = str(scene.get("visual_shot_type") or "").strip().lower()
     must_show = [str(item).strip() for item in (scene.get("visual_must_show") or []) if str(item).strip()]
+    local_rescue_notes = [
+        str(item).strip()
+        for item in (scene.get("local_rescue_notes") or [])
+        if str(item).strip()
+    ]
+    local_prompt_frontload = [
+        str(item).strip()
+        for item in (scene.get("local_prompt_frontload") or [])
+        if str(item).strip()
+    ]
     raw_actions = scene.get("visual_action")
     if raw_actions is None:
         raw_actions = scene.get("visual_actions")
@@ -206,6 +327,7 @@ def scene_prompt(scene: dict[str, Any]) -> str:
     if not any([fallback_prompt, must_show, actions, setting, props, primary_subject]):
         return ""
 
+    beat_pack = beat_prompt_pack(scene)
     combined_text = " ".join([
         fallback_prompt,
         primary_subject,
@@ -409,20 +531,29 @@ def scene_prompt(scene: dict[str, Any]) -> str:
             "half-body or medium framing preferred when anatomy is complex, complete limbs, no fused bodies, no repeated default composition"
         )
 
-    prompt_parts = [
+    prompt_parts = []
+    if local_prompt_frontload:
+        prompt_parts.append(
+            "PRIORITY STORY LOCK FOR THIS EXACT SCENE ONLY: "
+            + " / ".join(local_prompt_frontload[-5:])
+        )
+    prompt_parts.extend([
+        BEAT_FIRST_VISUAL_RULE,
+        beat_pack["prompt"],
         STORY_FIRST_VISUAL_RULE,
         FEMALE_SEXY_BEAT_RULE,
         ACTION_COMPLETENESS_RULE,
         WASTELAND_ACTION_STYLE_RULE,
         face_control,
         "cinematic post-apocalyptic survival frame, current scene only, no repeated shelter tableau, no default two-shot unless the scene truly needs two people",
-    ]
+    ])
     if "lam tich" in combined_text:
         prompt_parts.append("Lam Tich only wears a fitted thick-strap weathered survival top plus rugged shorts; never bikini bottoms or a two-piece swimsuit, and never let her clothing override the current story action")
     if male_only_notes:
         prompt_parts.append("Male characters only: masculine wasteland clothing with covered waist; do not copy Lam Tich clothing or feminine styling onto any male character")
     if scene_center_kind:
         prompt_parts.append(f"visual center for this scene: {scene_center_kind}")
+    prompt_parts.append("required beat center checklist: " + beat_pack["required_center"])
     if story_subjects:
         if child_exchange_focus:
             prompt_parts.append("show exactly these two child subjects and nobody else in the foreground: " + "; ".join(story_subjects[:2]))
@@ -438,15 +569,17 @@ def scene_prompt(scene: dict[str, Any]) -> str:
         prompt_parts.append("narration source of truth for action: " + clean_fragment(narration))
     if story_props:
         prompt_parts.append("this object or prop must stay readable in frame: " + ", ".join(story_props))
+    if local_rescue_notes:
+        prompt_parts.append("local rescue notes for this exact scene only: " + " / ".join(local_rescue_notes[:6]))
     if not story_subjects and fallback_prompt:
         prompt_parts.append(clean_fragment(fallback_prompt))
     prompt = ", ".join(part for part in prompt_parts if part)
     if male_only_notes:
-        prompt = f"{'; '.join(male_only_notes)}, {prompt}"
+        prompt = f"{prompt}, {'; '.join(male_only_notes)}"
     if female_only_notes:
-        prompt = f"{'; '.join(female_only_notes)}, {prompt}"
+        prompt = f"{prompt}, {'; '.join(female_only_notes)}"
     if cast_notes:
-        prompt = f"{'; '.join(cast_notes)}, {prompt}"
+        prompt = f"{prompt}, {'; '.join(cast_notes)}"
     positive_suffix = DEFAULT_POSITIVE_SUFFIX
     if child_present:
         positive_suffix = positive_suffix.replace("clear natural human faces", "clear natural child and adult faces with correct age proportions")
@@ -858,50 +991,192 @@ def save_comfy_image(base_url: str, image_info: dict[str, str], output: Path) ->
     output.write_bytes(download_bytes(base_url, f"/view?{query}"))
 
 
+def image_integrity_checks(path: Path) -> tuple[int, list[str]]:
+    failures: list[str] = []
+    score = 55
+    if not path.exists():
+        return 0, ["image file is missing"]
+    size = path.stat().st_size
+    if size < 50_000:
+        failures.append(f"image file is too small ({size} bytes)")
+    else:
+        score += 20
+    try:
+        from PIL import Image, ImageStat  # type: ignore
+
+        with Image.open(path) as image:
+            width, height = image.size
+            if width < 256 or height < 256:
+                failures.append(f"image dimensions are too small ({width}x{height})")
+            else:
+                score += 10
+            stat = ImageStat.Stat(image.convert("L").resize((64, 64)))
+            brightness = float(stat.mean[0]) if stat.mean else 0.0
+            variance = float(stat.var[0]) if stat.var else 0.0
+            if variance < 18:
+                failures.append("image looks nearly blank or flat by pixel variance")
+            else:
+                score += 10
+            if brightness < 5 or brightness > 250:
+                failures.append("image is almost fully black or white")
+            else:
+                score += 5
+    except Exception:
+        score += 10
+    return min(score, 100), failures
+
+
+def validate_generated_scene(scene: dict[str, Any], image_path: Path, prompt: str, attempt: int) -> dict[str, Any]:
+    beat_pack = beat_prompt_pack(scene)
+    prompt_lower = prompt.lower()
+    failures: list[str] = []
+    required_terms = [term.strip(" .,:;") for term in re.split(r",| or | and ", beat_pack["required_center"].lower()) if term.strip()]
+    matched_terms = [term for term in required_terms if term and term in prompt_lower]
+    if required_terms and not matched_terms:
+        failures.append("prompt does not carry the inferred story-beat center strongly enough")
+    if "generic standing portrait" not in prompt_lower and "no generic standing pose" not in prompt_lower:
+        failures.append("prompt lacks explicit guard against generic standing/posing drift")
+    if any(token in scene_text_blob(scene) for token in ["tan da", "male", "man", "nam", "dan ong"]):
+        male_guard_terms = ["covered waist", "masculine wasteland clothing", "never sport top", "never feminine clothing"]
+        if not any(term in prompt_lower for term in male_guard_terms):
+            failures.append("prompt lacks male-clothing guardrail")
+    image_score, image_failures = image_integrity_checks(image_path)
+    failures.extend(image_failures)
+    prompt_score = 35 if not failures[:2] else 20
+    score = min(100, image_score + prompt_score)
+    passed = score >= 40 and not image_failures and "prompt does not carry" not in " | ".join(failures)
+    return {
+        "status": "passed" if passed else "failed",
+        "passed": passed,
+        "attempt": attempt,
+        "score_percent": score,
+        "beat_type": beat_pack["beat"],
+        "required_center": beat_pack["required_center"],
+        "failures": failures,
+        "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "engine": "python-lightweight-beat-integrity-v1",
+        "note": "This engine checks image integrity and story-beat prompt coverage after each generation; manual OpsBoard QA is still Codex visual review.",
+    }
+
+
+def retry_composition_strategy(scene: dict[str, Any], validation: dict[str, Any], attempt: int) -> str:
+    beat = str(validation.get("beat_type") or "story_event")
+    object_text = str(scene.get("scene_center_object") or "").strip()
+    action_text = str(scene.get("scene_center_action") or "").strip()
+    subject_text = str(scene.get("scene_center_subject") or scene.get("beat_subject") or "").strip()
+    location_text = str(scene.get("scene_center_location") or "").strip()
+    anchor = "; ".join(item for item in [action_text, object_text, location_text, subject_text] if item)
+    beat_strategy = {
+        "message_signal": "compose as an over-shoulder or hand-detail shot where the radio/message device is closest to camera and listeners react behind it",
+        "resource_survival": "compose as dirty hands and the survival resource in the foreground, with thirst, injury, or ration pressure visible behind it",
+        "trade_object": "compose as a trade-table shot with goods/payment between buyer and seller; hands point to the exact object, not faces posing",
+        "threshold_entry": "compose across the door/gate/checkpoint line so the blocked passage and guard distance are readable",
+        "injury_transport": "compose around the wound/stretcher/wheelchair/carrying action; body weight and helper hands must explain the injury",
+        "creature_threat": "compose with the creature threat direction readable first, using claws/fangs/shadow/attack angle and survivor spacing",
+        "child_exchange": "compose at child height with the writing board/handed object between the children or adult and child",
+        "elder_tool": "compose around old hands, tool, repair/warning action, and aged posture, not a generic face portrait",
+        "object_evidence": "compose as a close insert where the evidence object or hand action fills the foreground and only necessary body parts appear",
+        "location_transition": "compose as a travel/route frame where road, rail, vehicle, weather, ruins, or obstacle leads the eye through the scene",
+        "moral_reaction": "compose the reaction line-of-sight toward the cause, with cause visible in frame so emotion is not floating",
+        "character_action": "compose the named character mid-action with hands, feet, tool, wound, or target visible, not a static model stance",
+    }.get(beat, "compose the exact story event with foreground action/object, midground participants, and background wasteland pressure")
+    attempt_strategy = [
+        "use wider framing than the failed attempt so object, action, and location can all be read",
+        "move the required object/action into the lower foreground and make character faces secondary",
+        "reduce glamour lighting and pose energy; use documentary survival blocking with dirty practical motion",
+        "simplify to one clear action and one clear object; remove any invented extra character or fashion pose",
+    ][min(max(attempt - 1, 0), 3)]
+    anchor_text = f" Scene anchors that must remain: {anchor}." if anchor else ""
+    return f"{beat_strategy}; {attempt_strategy}.{anchor_text}"
+
+
+def apply_validator_retry_notes(scene: dict[str, Any], validation: dict[str, Any], attempt: int) -> None:
+    beat = str(validation.get("beat_type") or "story_event")
+    required = str(validation.get("required_center") or "the exact narrated event")
+    failures = "; ".join(str(item) for item in (validation.get("failures") or [])[:3])
+    strategy = retry_composition_strategy(scene, validation, attempt)
+    append_scene_note(
+        scene,
+        "local_prompt_frontload",
+        f"Auto QA retry {attempt}: lock the story beat first ({beat}); foreground must show {required}. New composition for this retry: {strategy}",
+    )
+    append_scene_note(
+        scene,
+        "local_prompt_frontload",
+        f"Auto QA retry {attempt}: this retry must be visibly different from the failed image by changing framing/blocking around the same story beat, not by changing the story.",
+    )
+    if failures:
+        append_scene_note(scene, "local_rescue_notes", f"Auto QA retry {attempt} failed because: {failures}. Fix the same scene, same beat, same required object/action/location.")
+    append_scene_note(scene, "local_rescue_notes", "Auto QA retry rule: do not switch to portrait, pose, bikini, crop-top, or character glamour unless narration explicitly says so.")
+    scene["qa_rescue_mode"] = True
+    scene["qa_retry_limit"] = max(int(scene.get("qa_retry_limit") or 1), attempt + 1)
+
+
 def generate_scene(args: argparse.Namespace, scene: dict[str, Any], index: int, storyboard_dir: Path, assets_dir: Path) -> Path:
     output = resolve(storyboard_dir, scene["image"]) if scene.get("image") else assets_dir / f"scene-{index + 1:02d}.{args.output_format}"
     output.parent.mkdir(parents=True, exist_ok=True)
     if output.exists() and not args.overwrite:
         scene["image"] = relpath(output, storyboard_dir)
         return output
-    prompt = scene_prompt(scene)
-    if not prompt:
-        raise SystemExit(f"Scene {index + 1} has no image prompt.")
     width, height = (args.width, args.height) if args.width and args.height else size_for_ratio(args.aspect_ratio)
-    seed = args.seed + index if args.seed >= 0 else int(time.time() * 1000) % 2_147_483_647
-    scene_reference_image, scene_reference_denoise = scene_reference_policy(scene, args.reference_image, args.reference_denoise)
-    original_reference_image = args.reference_image
-    original_reference_denoise = args.reference_denoise
-    args.reference_image = scene_reference_image
-    args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
-    try:
-        workflow = build_sd15_workflow(args, prompt, seed, width, height)
-    finally:
-        args.reference_image = original_reference_image
-        args.reference_denoise = original_reference_denoise
-    started_at = time.time()
-    history = submit_and_wait(args.comfy_url, workflow, args.timeout, args.poll_seconds)
-    try:
-        save_comfy_image(args.comfy_url, extract_first_image(history), output)
-    except SystemExit as exc:
-        if "no output image was found" not in str(exc):
-            raise
-        if not copy_latest_output_image(args.comfy_output_dir, args.prefix, started_at, output):
-            raise
-    scene["image"] = relpath(output, storyboard_dir)
-    scene["local_image"] = {
-        "provider": "comfy-local",
-        "mode": "sd15-low-vram",
-        "checkpoint": args.checkpoint,
-        "vae": args.vae,
-        "loras": args.lora,
-        "seed": seed,
-        "size": f"{width}x{height}",
-        "hires_scale": args.hires_scale,
-        "upscale_model": args.upscale_model,
-        "reference_image": str(Path(scene_reference_image).resolve()) if scene_reference_image else "",
-        "reference_denoise": scene_reference_denoise if scene_reference_image else None,
-    }
+    max_attempts = 1
+    if args.qa_engine:
+        max_attempts = max(1, min(5, int(scene.get("qa_retry_limit") or args.qa_retry_limit or 5)))
+    final_validation: dict[str, Any] | None = None
+    for attempt in range(1, max_attempts + 1):
+        prompt = scene_prompt(scene)
+        if not prompt:
+            raise SystemExit(f"Scene {index + 1} has no image prompt.")
+        seed = (args.seed + index + attempt - 1) if args.seed >= 0 else int(time.time() * 1000) % 2_147_483_647
+        scene_reference_image, scene_reference_denoise = scene_reference_policy(scene, args.reference_image, args.reference_denoise)
+        original_reference_image = args.reference_image
+        original_reference_denoise = args.reference_denoise
+        args.reference_image = scene_reference_image
+        args.reference_denoise = scene_reference_denoise if scene_reference_denoise is not None else original_reference_denoise
+        try:
+            workflow = build_sd15_workflow(args, prompt, seed, width, height)
+        finally:
+            args.reference_image = original_reference_image
+            args.reference_denoise = original_reference_denoise
+        started_at = time.time()
+        history = submit_and_wait(args.comfy_url, workflow, args.timeout, args.poll_seconds)
+        try:
+            save_comfy_image(args.comfy_url, extract_first_image(history), output)
+        except SystemExit as exc:
+            if "no output image was found" not in str(exc):
+                raise
+            if not copy_latest_output_image(args.comfy_output_dir, args.prefix, started_at, output):
+                raise
+        scene["image"] = relpath(output, storyboard_dir)
+        scene["local_image"] = {
+            "provider": "comfy-local",
+            "mode": "sd15-low-vram",
+            "checkpoint": args.checkpoint,
+            "vae": args.vae,
+            "loras": args.lora,
+            "seed": seed,
+            "size": f"{width}x{height}",
+            "hires_scale": args.hires_scale,
+            "upscale_model": args.upscale_model,
+            "reference_image": str(Path(scene_reference_image).resolve()) if scene_reference_image else "",
+            "reference_denoise": scene_reference_denoise if scene_reference_image else None,
+        }
+        if not args.qa_engine:
+            return output
+        final_validation = validate_generated_scene(scene, output, prompt, attempt)
+        scene["local_image"]["validator"] = final_validation
+        if final_validation["passed"]:
+            return output
+        if attempt < max_attempts:
+            apply_validator_retry_notes(scene, final_validation, attempt)
+            try:
+                output.unlink()
+            except FileNotFoundError:
+                pass
+            continue
+        final_validation["status"] = "skipped_after_failed_attempts"
+        final_validation["passed"] = False
+        scene["local_image"]["validator"] = final_validation
     return output
 
 
@@ -940,6 +1215,8 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=23052026)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--poll-seconds", type=float, default=2.0)
+    parser.add_argument("--qa-engine", action=argparse.BooleanOptionalAction, default=True, help="Run lightweight per-image QA after each generated scene and retry failed images.")
+    parser.add_argument("--qa-retry-limit", type=int, default=5, help="Maximum per-scene QA retries before keeping the final image and continuing.")
     parser.add_argument("--inspect-only", action="store_true", help="Print ComfyUI model inventory and selected local settings, then exit.")
     parser.add_argument("--start-scene", type=int, default=1, help="1-based first scene to generate.")
     parser.add_argument("--end-scene", type=int, default=0, help="1-based last scene to generate. 0 means the final scene.")

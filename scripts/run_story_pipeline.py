@@ -73,6 +73,13 @@ STORY_FIRST_VISUAL_RULE = (
     "Attractive styling is allowed only when it supports the current story beat and must never replace the narrated action."
 )
 
+BEAT_FIRST_VISUAL_RULE = (
+    "Beat-first visual priority: choose the image center from the current story beat before choosing a character pose. "
+    "Priority order is story beat, then main character only if they drive this beat, then location and objects, then supporting characters, then creatures or threats. "
+    "If the beat is about a message, object, doorway, trade, medicine, water source, wound, animal, monster, tool, vehicle, weather, or crowd reaction, that event or object must be the foreground visual center even when Lam Tich or Tan Da is present. "
+    "Do not force Lam Tich, Tan Da, or any main character into the center when the narration is actually about another person, object, creature, place, or survival event."
+)
+
 FEMALE_SEXY_BEAT_RULE = (
     "Female sexy beat rule: when the narration explicitly describes an adult female lead or supporting woman as sexy, seductive, charming, tempting, intimate, or deliberately using attraction, the image must show that beat instead of flattening it into neutral clothing. "
     "Express it through feminine face, confident eye contact, body language, tension with the other character, torn practical wasteland clothing, bare arms or legs when appropriate, and the exact action in the story. "
@@ -1431,6 +1438,7 @@ def visual_prompt_data(narration, style, continuity=None, scene_index=1):
     scene_excerpt = " / ".join(audio_anchor_lines(narration, limit=2)) or compact[:180]
     prompt = (
         "Cinematic realistic wasteland story frame, current narration is the source of truth. "
+        f"{BEAT_FIRST_VISUAL_RULE} "
         f"Show this exact beat: {beat_meta['beat_goal']}. "
         f"Scene center: {scene_center['kind']} centered on {scene_center['subject'] or 'the current narrated subject'}"
         f"{'; central object: ' + scene_center['object'] if scene_center['object'] else ''}. "
